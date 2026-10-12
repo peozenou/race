@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="data-version" content="6d07713affc9">
+  <title>THE RACE 2026 — bilan de la saison</title>
+  <meta name="description" content="Classement après la semaine 33 (2026-10-05) : CHEF en tête avec 17 544 points.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="THE RACE 2026 — bilan de la saison">
+  <meta property="og:description" content="Classement après la semaine 33 (2026-10-05) : CHEF en tête avec 17 544 points.">
+  <meta property="og:url" content="https://peozenou.github.io/race/2026/">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=6d07713affc9">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+  <link rel="stylesheet" href="assets/theme.css?v=6d07713affc9">
+  <script src="assets/d3.min.js"></script>
+  <script src="assets/runtime.js?v=6d07713affc9"></script>
+</head>
+<body>
+<main class="site">
+<div id="dash-root">
+<style>
+.tr{font-family:var(--font-anthropic-sans);color:var(--color-fg);display:flex;flex-direction:column;gap:var(--cds-gap-lg);font-variant-numeric:tabular-nums}
+.tr h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0;line-height:1.2}
+.tr h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0}
+.tr h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-md) 0 var(--cds-gap-xs)}
+.tr .tr-take{margin:var(--cds-gap-xs) 0 0;max-width:62rem;line-height:1.5}
+.tr .tr-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md);line-height:1.45}
+.tr .tr-head-note{margin-bottom:0}
+.tr .tr-tabs{display:flex;gap:var(--cds-gap-xs);border-bottom:1px solid var(--color-border-line);flex-wrap:wrap}
+.tr .tr-tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:var(--cds-pad-sm) var(--cds-pad-md);font:inherit;color:var(--color-fg-muted);cursor:pointer}
+.tr .tr-tab[aria-selected="true"]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
+.tr .tr-page{display:flex;flex-direction:column;gap:var(--cds-gap-md)}
+.tr .tr-page[hidden]{display:none}
+.tr .tr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:var(--cds-gap-md)}
+.tr .tr-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);min-width:0}
+.tr .tr-standings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10.5rem),1fr));gap:var(--cds-gap-md);min-height:9rem}
+.tr .tr-team{border-top-width:4px;display:flex;flex-direction:column;gap:var(--cds-gap-xs)}
+.tr .tr-team-top{display:flex;justify-content:space-between;align-items:baseline;gap:var(--cds-gap-sm);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.tr .tr-team-name{font-weight:var(--cds-font-weight-medium);color:var(--color-fg);font-size:var(--cds-font-size-body)}
+.tr .tr-big{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);line-height:1.1}
+.tr .tr-sub{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.tr .tr-up{color:var(--color-ok)}
+.tr .tr-down{color:var(--color-bad)}
+.tr .tr-chart{position:relative;min-height:260px}
+.tr .tr-chart svg,.tr .tr-mult svg{display:block}
+.tr .tr-tick{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.tr .tr-axis .domain{stroke:var(--cds-chart-axis)}
+.tr .tr-axis .tick line{stroke:var(--cds-chart-axis)}
+.tr .tr-axis text{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.tr .tr-grid-line{stroke:var(--cds-chart-grid);stroke-width:1}
+.tr .tr-endlabel{font-size:var(--cds-font-size-caption);fill:var(--color-fg)}
+.tr .tr-band-label{font-size:var(--cds-font-size-caption);fill:var(--color-fg-muted)}
+.tr .tr-seglabel{font-size:var(--cds-font-size-caption);fill:#1f1f1f;pointer-events:none}
+.tr .tr-legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:0 0 var(--cds-gap-sm)}
+.tr .tr-legend span{display:inline-flex;align-items:center;gap:6px}
+.tr .tr-lg{display:inline-block;width:14px;height:10px;border-radius:2px;border:1px solid var(--color-border-line)}
+.tr .tr-lg-slam{background:color-mix(in srgb, var(--color-fg) 14%, transparent)}
+.tr .tr-lg-m1000{background:color-mix(in srgb, var(--color-fg) 6%, transparent)}
+.tr .tr-lg-last{width:14px;height:0;border:0;border-top:1px dashed var(--cds-chart-reference);border-radius:0}
+.tr .tr-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);white-space:nowrap;z-index:3;display:none}
+.tr .tr-tip-h{color:var(--cds-text-secondary);margin-bottom:2px}
+.tr .tr-tip-r{display:flex;align-items:center;gap:6px}
+.tr .tr-tip-r .tr-tip-v{margin-left:auto;padding-left:var(--cds-gap-sm)}
+.tr .tr-tip-e{color:var(--cds-text-secondary);margin-top:2px}
+.tr .tr-sw{width:8px;height:8px;border-radius:2px;display:inline-block;flex:none}
+.tr .tr-multiples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:var(--cds-gap-md);position:relative;min-height:7rem}
+.tr .tr-mult-label{font-size:var(--cds-font-size-caption);display:flex;justify-content:space-between;gap:var(--cds-gap-sm);margin-bottom:4px}
+.tr .tr-mult-label b{font-weight:var(--cds-font-weight-medium)}
+.tr .tr-matrix-box{overflow-x:auto;min-height:10rem}
+.tr .tr-matrix{width:100%;border-collapse:separate;border-spacing:3px;font-size:var(--cds-font-size-caption)}
+.tr .tr-matrix th{font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);text-align:center;padding:2px 4px}
+.tr .tr-matrix th[scope=row]{text-align:left;color:var(--color-fg)}
+.tr .tr-matrix td{text-align:center;padding:var(--cds-pad-xs);border-radius:4px;min-width:2.4rem}
+.tr .tr-matrix td.tr-self{color:var(--color-fg-muted)}
+.tr .tr-matrix td.tr-total{text-align:right;white-space:nowrap}
+.tr .tr-filter{display:flex;flex-wrap:wrap;gap:var(--cds-gap-xs)}
+.tr .tr-chip{appearance:none;font:inherit;font-size:var(--cds-font-size-caption);border:1px solid var(--color-border-line);background:var(--color-panel);color:var(--color-fg);border-radius:999px;padding:var(--cds-pad-xs) var(--cds-pad-md);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.tr .tr-chip[aria-pressed="true"]{border-color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.tr .tr-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--cds-gap-md);flex-wrap:wrap}
+.tr .tr-search{font:inherit;font-size:var(--cds-font-size-caption);padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);min-width:min(100%,12rem)}
+.tr .tr-scroll{max-height:34rem;overflow:auto;container-type:inline-size}
+.tr .tr-table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption)}
+.tr .tr-table th{position:sticky;top:0;background:var(--color-panel);text-align:right;font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);border-bottom:1px solid var(--color-border-line);padding:0;z-index:1;white-space:nowrap}
+.tr .tr-table th.tr-l{text-align:left}
+.tr .tr-table th button{appearance:none;background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:var(--cds-pad-xs) var(--cds-pad-sm);width:100%;text-align:inherit}
+.tr .tr-table th span.tr-th{display:block;padding:var(--cds-pad-xs) var(--cds-pad-sm)}
+.tr .tr-table td{padding:var(--cds-pad-xs) var(--cds-pad-sm);text-align:right;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.tr .tr-table td.tr-l{text-align:left}
+.tr .tr-click tbody tr{cursor:pointer}
+.tr .tr-click tbody tr:hover{background:var(--color-bg)}
+.tr .tr-table tbody tr[aria-selected="true"]{background:var(--color-bg);box-shadow:inset 3px 0 0 var(--color-fg)}
+.tr .tr-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+@container (max-width: 44rem){.tr .tr-sec{display:none}}
+.tr .tr-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,8.5rem),1fr));gap:var(--cds-gap-md);margin:var(--cds-gap-md) 0}
+.tr .tr-kpi-v{font-family:var(--font-anthropic-serif);font-size:var(--cds-font-size-title);font-weight:400;line-height:1.1}
+.tr .tr-kpi-l{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.tr .tr-bar-row{display:grid;grid-template-columns:5.5rem 1fr 4.5rem;align-items:center;gap:var(--cds-gap-sm);font-size:var(--cds-font-size-caption);margin:6px 0}
+.tr .tr-bar-row .tr-r{text-align:right}
+.tr .tr-bar{height:10px;background:var(--cds-chart-grid);border-radius:999px;overflow:hidden}
+.tr .tr-bar>span{display:block;height:100%;border-radius:999px}
+.tr .tr-fail{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);min-height:inherit;height:100%}
+.tr .tr-fail::before{content:"";width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad)}
+.tr [data-dash-source-state=empty]{color:transparent}
+.tr [data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+.tr .tr-prose ul{margin:0 0 var(--cds-gap-sm);padding-left:1.2rem;line-height:1.5}
+.tr .tr-dl{display:grid;grid-template-columns:minmax(7rem,auto) 1fr;gap:var(--cds-gap-xs) var(--cds-gap-md);margin:0;font-size:var(--cds-font-size-caption)}
+.tr .tr-dl dt{color:var(--color-fg-muted)}
+.tr .tr-dl dd{margin:0}
+.tr .tr-empty-msg{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+</style>
+
+<div class="tr" id="race-season" lang="fr">
+  <header id="overview">
+    <h1>THE RACE 2026 — bilan de la saison</h1>
+    <p class="tr-take" id="takeaway"><span class="dash-skeleton">—</span></p>
+    <p class="tr-note tr-head-note">Instantané du classeur THE RACE 2026 après la mise à jour validée du <span id="head-asof" data-source="standings" data-field="date" data-row="0">—</span> ; il est actualisé chaque semaine. Bilans de matchs, titres, duels, classements et Elo : Tennis Abstract et Tennis Explorer.</p>
+  </header>
+
+  <nav class="tr-tabs" role="tablist" aria-label="Pages du tableau de bord">
+    <button class="tr-tab" role="tab" id="tab-teams" data-tab="teams" aria-selected="true">Équipes</button>
+    <button class="tr-tab" role="tab" id="tab-players" data-tab="players" aria-selected="false">Joueurs</button>
+    <button class="tr-tab" role="tab" id="tab-notes" data-tab="notes" aria-selected="false">Barème et sources</button>
+  </nav>
+
+  <section class="tr-page" id="teams" role="tabpanel" aria-labelledby="tab-teams">
+    <div class="tr-standings" id="standings" data-source="standings"></div>
+
+    <div class="tr-card" id="totals-card">
+      <h2>Total de points au fil de la saison</h2>
+      <p class="tr-note">Race + Duels, cumulés, tels qu'enregistrés dans HEBDO après chaque mise à jour du lundi. Les bandes marquent les tournois du Grand Chelem et les Masters 1000 ; celles après la dernière mise à jour sont les tournois à venir. Survolez pour voir toutes les équipes.</p>
+      <div class="tr-legend" aria-hidden="true">
+        <span><i class="tr-lg tr-lg-slam"></i>Grand Chelem</span>
+        <span><i class="tr-lg tr-lg-m1000"></i>Masters 1000</span>
+        <span><i class="tr-lg tr-lg-last"></i>Dernière mise à jour</span>
+      </div>
+      <div class="tr-chart dash-skeleton" id="totals-chart" data-source="team_weeks calendar team_colors"></div>
+    </div>
+
+    <div class="tr-grid">
+      <div class="tr-card" id="rank-card">
+        <h2>Position après chaque mise à jour</h2>
+        <p class="tr-note">À partir de la semaine 1 ; la semaine 0 est le départ à zéro.</p>
+        <div class="tr-chart dash-skeleton" id="rank-chart" data-source="team_weeks team_colors"></div>
+      </div>
+      <div class="tr-card" id="duels-card">
+        <h2>Duels gagnés entre équipes</h2>
+        <p class="tr-note">Victoires des joueurs de l'équipe en ligne sur ceux de l'équipe en colonne, forfaits compris ; chaque victoire vaut 5 points. Matchs jusqu'au <span id="duel-asof" data-source="players" data-field="matches_through" data-row="0">—</span>.</p>
+        <div class="tr-matrix-box dash-skeleton" id="duel-matrix"></div>
+      </div>
+    </div>
+
+    <div class="tr-card" id="gains-card">
+      <h2>Points gagnés à chaque mise à jour</h2>
+      <p class="tr-note">Variation du total depuis la mise à jour précédente, sur une même échelle pour toutes les équipes. Certaines mises à jour couvrent plus d'une semaine (de mi-mai à début juin).</p>
+      <div class="tr-multiples dash-skeleton" id="gains-chart" data-source="team_weeks team_colors"></div>
+    </div>
+  </section>
+
+  <section class="tr-page" id="players" role="tabpanel" aria-labelledby="tab-players" hidden>
+    <p class="tr-take" id="players-take"><span class="dash-skeleton">—</span></p>
+    <div class="tr-filter" id="team-filter" role="group" aria-label="Équipe"></div>
+
+    <div class="tr-card" id="composition-card">
+      <h2>D'où viennent les points Race de chaque équipe</h2>
+      <p class="tr-note">Points ATP Race de chaque joueur à la dernière mise à jour, empilés par équipe ; survolez un segment pour voir le joueur.</p>
+      <div class="tr-chart dash-skeleton" id="composition-chart" data-source="player_season team_colors"></div>
+    </div>
+
+    <div class="tr-card" id="scatter-card">
+      <h2>Tournois disputés et points par tournoi</h2>
+      <p class="tr-note">Chaque bulle est un joueur : nombre de tournois disputés en 2026 (horizontal) et points Race moyens par tournoi (vertical) ; la surface de la bulle suit son total de points Race. Sont comptés les tournois où il a joué au moins un match, qualifications comprises, hors Coupe Davis et Laver Cup, qui ne rapportent pas de points ATP. Le filtre d'équipe s'applique aussi à ce graphique ; les axes restent à l'échelle des 30 joueurs, pour comparer les équipes entre elles. Données de la semaine 33.</p>
+      <div class="tr-legend" id="scatter-legend" aria-hidden="true"></div>
+      <div class="tr-chart dash-skeleton" id="scatter-chart" data-source="player_events team_colors"></div>
+    </div>
+
+    <div class="tr-card" id="table-card">
+      <div class="tr-card-head">
+        <div>
+          <h2>Joueurs</h2>
+          <p class="tr-note">Points Race et gains : JOUEURS. Bilan, titres, duels, classement ATP et Elo : publication de la semaine 33. Cliquez sur une ligne pour voir la saison du joueur.</p>
+        </div>
+        <input type="search" class="tr-search" id="player-search" placeholder="Rechercher un joueur" aria-label="Rechercher un joueur">
+      </div>
+      <div class="tr-scroll">
+        <table class="tr-table tr-click" id="player-table" data-source="player_season" data-row-key="player">
+          <thead><tr>
+            <th class="tr-l" data-field="short"><button type="button" data-sort="short">Joueur</button></th>
+            <th class="tr-l" data-field="team"><button type="button" data-sort="team">Équipe</button></th>
+            <th data-field="race"><button type="button" data-sort="race">Pts Race</button></th>
+            <th data-field="share"><button type="button" data-sort="share">Part de l'équipe</button></th>
+            <th data-field="gain_week"><button type="button" data-sort="gain_week">Dern. sem.</button></th>
+            <th class="tr-sec" data-field="gain_4"><button type="button" data-sort="gain_4">4 dern. sem.</button></th>
+            <th class="tr-sec tr-l" data-field="series"><span class="tr-th">Tendance</span></th>
+            <th data-field="record"><button type="button" data-sort="win_pct">V–D</button></th>
+            <th class="tr-sec" data-field="titles"><button type="button" data-sort="titles">Titres</button></th>
+            <th data-field="duel_pts"><button type="button" data-sort="duel_pts">Pts duels</button></th>
+            <th class="tr-sec" data-field="atp_rank"><button type="button" data-sort="atp_rank">Rang ATP</button></th>
+            <th class="tr-sec" data-field="elo"><button type="button" data-sort="elo">Elo</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tr-card" id="player-detail">
+      <p class="tr-empty-msg" id="detail-empty">Choisissez un joueur dans le tableau pour voir sa saison.</p>
+      <div id="detail-body" hidden>
+        <h2 id="detail-name"></h2>
+        <p class="tr-note" id="detail-sub"></p>
+        <div class="tr-kpis" id="detail-kpis"></div>
+        <div class="tr-grid">
+          <div>
+            <h3>Points Race à chaque mise à jour</h3>
+            <div class="tr-chart" id="detail-race" data-source="joueurs hebdo"></div>
+          </div>
+          <div>
+            <h3>Bilan par surface</h3>
+            <div id="detail-surface"></div>
+            <h3>Bilan par catégorie de tournoi</h3>
+            <table class="tr-table" id="detail-levels" data-source="player_levels" data-row-key="player,level">
+              <thead><tr><th class="tr-l" data-field="level"><span class="tr-th">Catégorie</span></th><th data-field="w"><span class="tr-th">Gagnés</span></th><th data-field="l"><span class="tr-th">Perdus</span></th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <p class="tr-note" id="detail-extra"></p>
+          </div>
+        </div>
+        <h3>Derniers matchs</h3>
+        <div class="tr-scroll">
+          <table class="tr-table" id="detail-matches" data-source="matches" data-row-key="mid">
+            <thead><tr>
+              <th class="tr-l" data-field="event_date"><span class="tr-th">Semaine du</span></th>
+              <th class="tr-l" data-field="event"><span class="tr-th">Tournoi</span></th>
+              <th class="tr-l" data-field="round"><span class="tr-th">Tour</span></th>
+              <th class="tr-l tr-sec" data-field="surface"><span class="tr-th">Surface</span></th>
+              <th class="tr-l" data-field="result"><span class="tr-th">Résultat</span></th>
+              <th class="tr-l" data-field="opponent"><span class="tr-th">Adversaire</span></th>
+              <th class="tr-sec" data-field="opponent_rank"><span class="tr-th">Rang adv.</span></th>
+              <th class="tr-l tr-sec" data-field="score"><span class="tr-th">Score</span></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tr-page" id="notes" role="tabpanel" aria-labelledby="tab-notes" hidden>
+    <div class="tr-grid">
+      <div class="tr-card tr-prose" id="scoring">
+        <h2>Comment les points sont comptés</h2>
+        <p class="tr-note">Tel que le classeur les calcule.</p>
+        <ul>
+          <li><b>Race</b> : somme des points ATP Race des six joueurs de l'équipe (Tennis Explorer), plus tout ajustement d'équipe approuvé.</li>
+          <li><b>Duels</b> : 5 points pour chaque victoire d'un joueur de l'équipe sur un joueur d'une autre équipe, comptée lorsque la date du tournoi sur Tennis Abstract précède la clôture du lundi.</li>
+          <li><b>Total</b> = Race + Duels. Le classement s'appuie sur les effectifs actuels, et non sur l'appartenance au moment de chaque match.</li>
+        </ul>
+      </div>
+      <div class="tr-card" id="sources-card">
+        <h2>Sources et dates</h2>
+        <p class="tr-note">Ce que lit chaque partie de la page.</p>
+        <dl class="tr-dl">
+          <dt>Totaux d'équipe</dt><dd>Feuille HEBDO du classeur, instantané. Dernière mise à jour : <span id="src-week" data-source="standings" data-field="date" data-row="0">—</span>.</dd>
+          <dt>Points Race des joueurs</dt><dd>Feuille JOUEURS du classeur, instantané.</dd>
+          <dt>Couleurs des équipes</dt><dd>Celles du classeur.</dd>
+          <dt>Matchs et duels</dt><dd>Tennis Abstract ; matchs jusqu'au <span id="src-matches" data-source="players" data-field="matches_through" data-row="0">—</span>.</dd>
+          <dt>Classements ATP et Race</dt><dd>Tennis Explorer, <span id="src-rank" data-source="players" data-field="rankings_date" data-row="0">—</span>.</dd>
+          <dt>Elo et yElo</dt><dd>Tennis Abstract, <span id="src-elo" data-source="players" data-field="elo_date" data-row="0">—</span>.</dd>
+          <dt>Calendrier</dt><dd>Calendrier ATP Tour 2026 (Grand Chelem et Masters 1000).</dd>
+        </dl>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<script>
+dash.calc('standings', {
+  inputs: ['hebdo'],
+  title: 'Classement à la dernière mise à jour',
+  description: "Chaque équipe à la dernière semaine de HEBDO, classée par total, avec la variation depuis la semaine précédente et les écarts avec la tête et avec l'équipe juste devant.",
+  fn: (hebdo) => {
+    const weeks = [...new Set(hebdo.map((r) => r.week))].sort((a, b) => a - b);
+    const last = weeks[weeks.length - 1];
+    const prev = weeks.length > 1 ? weeks[weeks.length - 2] : null;
+    const order = (w) => hebdo.filter((r) => r.week === w).sort((a, b) => b.total - a.total || a.team.localeCompare(b.team));
+    const now = order(last);
+    const before = prev === null ? [] : order(prev);
+    return now.map((r, i) => {
+      const p = before.find((b) => b.team === r.team);
+      return {
+        team: r.team, rank: i + 1, week: r.week, date: r.date, total: r.total, race: r.race, duels: r.duels,
+        change: p ? r.total - p.total : null,
+        previous_rank: p ? before.indexOf(p) + 1 : null,
+        gap_to_leader: now[0].total - r.total,
+        gap_to_next: i > 0 ? now[i - 1].total - r.total : null,
+      };
+    });
+  },
+});
+
+dash.calc('team_weeks', {
+  inputs: ['hebdo'],
+  title: "Totaux d'équipe par semaine",
+  description: "Chaque semaine de HEBDO avec la position de chaque équipe cette semaine-là et les points gagnés depuis la mise à jour précédente.",
+  fn: (hebdo) => {
+    const weeks = [...new Set(hebdo.map((r) => r.week))].sort((a, b) => a - b);
+    const out = [];
+    weeks.forEach((w, k) => {
+      const rows = hebdo.filter((r) => r.week === w).sort((a, b) => b.total - a.total || a.team.localeCompare(b.team));
+      rows.forEach((r, i) => {
+        const prev = k > 0 ? hebdo.find((p) => p.week === weeks[k - 1] && p.team === r.team) : null;
+        out.push({ team: r.team, week: w, date: r.date, total: r.total, race: r.race, duels: r.duels, rank: i + 1, gain: prev ? r.total - prev.total : null });
+      });
+    });
+    return out;
+  },
+});
+
+dash.calc('player_season', {
+  inputs: ['joueurs', 'players'],
+  title: 'Bilan de saison par joueur',
+  description: "Points Race de chaque joueur à la dernière mise à jour, sa part de la somme Race des six joueurs de l'équipe et ses gains récents (JOUEURS), joints par nom à son bilan, ses titres, ses duels, son rang ATP et son Elo.",
+  fn: (joueurs, players) => {
+    const weeks = [...new Set(joueurs.map((r) => r.week))].sort((a, b) => a - b);
+    const last = weeks[weeks.length - 1];
+    const val = new Map(joueurs.map((r) => [r.player + '|' + r.week, r.race]));
+    const at = (n, w) => (w === undefined || !val.has(n + '|' + w) ? null : val.get(n + '|' + w));
+    const teamOf = new Map(joueurs.map((r) => [r.player, r.team]));
+    const sums = new Map();
+    teamOf.forEach((t, n) => sums.set(t, (sums.get(t) || 0) + (at(n, last) || 0)));
+    return [...teamOf.keys()].map((n) => {
+      const p = players.find((x) => x.player === n) || {};
+      const race = at(n, last);
+      const w1 = at(n, weeks[weeks.length - 2]);
+      const w4 = at(n, weeks[weeks.length - 5]);
+      const played = (p.w || 0) + (p.l || 0);
+      const sum = sums.get(teamOf.get(n));
+      return {
+        player: n, short: p.short || n, team: teamOf.get(n), week: last, race,
+        share: sum ? race / sum : null,
+        gain_week: w1 === null || race === null ? null : race - w1,
+        gain_4: w4 === null || race === null ? null : race - w4,
+        series: weeks.map((w) => at(n, w)),
+        w: p.w ?? null, l: p.l ?? null,
+        record: p.w === undefined ? null : `${p.w}–${p.l}`,
+        win_pct: played ? p.w / played : null,
+        titles: p.titles ?? null, duel_pts: p.duel_pts ?? null,
+        atp_rank: p.atp_rank ?? null, elo: p.elo ?? null, yelo: p.yelo ?? null,
+      };
+    });
+  },
+});
+
+dash.calc('duel_matrix', {
+  inputs: ['matches'],
+  title: 'Duels gagnés entre équipes',
+  description: "Victoires (forfaits compris, comme dans le décompte des duels) des joueurs de chaque équipe sur les joueurs d'une autre équipe, avec le total de chaque équipe et ses points à 5 par victoire.",
+  fn: (matches) => {
+    const teams = [...new Set(matches.map((m) => m.team))];
+    const rows = [];
+    teams.forEach((t) => {
+      let all = 0;
+      teams.forEach((o) => {
+        if (t === o) return;
+        const wins = matches.filter((m) => m.team === t && m.opponent_team === o && m.result === 'V').length;
+        all += wins;
+        rows.push({ team: t, opponent_team: o, wins, points: wins * 5 });
+      });
+      rows.push({ team: t, opponent_team: 'Toutes', wins: all, points: all * 5 });
+    });
+    return rows;
+  },
+});
+
+dash.calc('player_levels', {
+  inputs: ['matches'],
+  title: 'Bilan par catégorie de tournoi',
+  description: "Victoires et défaites par joueur et par catégorie de tournoi (Grand Chelem, Masters 1000, ATP 500/250, compétitions par équipes, qualifications, Challenger, ITF), hors forfaits.",
+  fn: (matches) => {
+    const by = new Map();
+    matches.forEach((m) => {
+      if (m.walkover) return;
+      const k = m.player + '|' + m.level;
+      const r = by.get(k) || { player: m.player, level: m.level, w: 0, l: 0 };
+      if (m.result === 'V') r.w += 1; else r.l += 1;
+      by.set(k, r);
+    });
+    return [...by.values()];
+  },
+});
+
+dash.calc('player_events', {
+  inputs: ['matches', 'players'],
+  title: 'Tournois et points par tournoi',
+  description: "Pour chaque joueur : tournois 2026 disputés (au moins un match joué hors forfait, qualifications comprises, hors Coupe Davis et Laver Cup), points Race à la semaine 33 et points Race moyens par tournoi.",
+  fn: (matches, players) => {
+    const seen = new Map();
+    matches.forEach((m) => {
+      if (m.walkover || m.event.startsWith('Coupe Davis') || m.event === 'Laver Cup') return;
+      if (!seen.has(m.player)) seen.set(m.player, new Set());
+      seen.get(m.player).add(m.event + '|' + m.event_date);
+    });
+    return players.map((p) => {
+      const events = seen.has(p.player) ? seen.get(p.player).size : 0;
+      return { player: p.player, short: p.short, team: p.team, events, race_points: p.race_points, points_per_event: events && p.race_points !== null ? p.race_points / events : null };
+    });
+  },
+});
+
+</script>
+
+<script>
+(() => {
+  const TR = (window.TR = {});
+  TR.FOCUS = null;
+  const loc = d3.formatLocale({ decimal: ',', thousands: ' ', grouping: [3], currency: ['', ' €'], minus: '−', percent: ' %' });
+  const f0 = loc.format(',');
+  const fp = loc.format('.0%');
+  const fe = loc.format(',.0f');
+  const f1 = loc.format('.1f');
+  TR.fmt = (v) => (v === null || v === undefined || Number.isNaN(v) ? '—' : f0(v));
+  TR.fmtS = (v) => (v === null || v === undefined ? '—' : v === 0 ? '0' : (v > 0 ? '+' : '−') + f0(Math.abs(v)));
+  TR.pct = (v) => (v === null || v === undefined ? '—' : fp(v));
+  TR.elo = (v) => (v ? fe(v) : '—');
+  TR.dec1 = (v) => (v === null || v === undefined ? '—' : f1(v));
+  TR.ord = (n) => (n === 1 ? '1er' : n + 'e');
+  const dShort = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+  const dLong = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const dMonth = new Intl.DateTimeFormat('fr-FR', { month: 'short', timeZone: 'UTC' });
+  TR.parse = (iso) => new Date(iso + 'T00:00:00Z');
+  TR.date = (iso) => (iso ? dShort.format(TR.parse(iso)) : '—');
+  TR.dateY = (iso) => (iso ? dLong.format(TR.parse(iso)) : '—');
+  TR.month = (d) => dMonth.format(d);
+  TR.range = (a, b) => `${dShort.format(TR.parse(a))} – ${dShort.format(TR.parse(b))}`;
+  TR.order = () => {
+    const h = dash.data('hebdo');
+    if (h.status === 'ok' && h.data.length) return [...new Set(h.data.map((r) => r.team))];
+    const j = dash.data('joueurs');
+    return j.status === 'ok' ? [...new Set(j.data.map((r) => r.team))] : [];
+  };
+  TR.palette = new Map();
+  TR.loadColors = () => {
+    const c = dash.data('team_colors');
+    TR.palette = new Map(c.status === 'ok' ? c.data.map((r) => [r.team, r.color]) : []);
+  };
+  TR.color = (team, order) => {
+    if (TR.palette.has(team)) return TR.palette.get(team);
+    const i = order.indexOf(team);
+    return dash.colors[(i < 0 ? 0 : i) % dash.colors.length];
+  };
+  const enc = (s) => String(s).replace(/%/g, '%25').replace(/&/g, '%26').replace(/=/g, '%3D');
+  TR.where = (obj) => Object.entries(obj).map(([k, v]) => enc(k) + '=' + enc(v)).join('&');
+  TR.mark = (el, source, field, where) => {
+    el.dataset.source = source;
+    if (field) el.dataset.field = field; else delete el.dataset.field;
+    if (where) el.dataset.where = TR.where(where); else delete el.dataset.where;
+    return el;
+  };
+  TR.span = (text, source, field, where, cls) => { const s = document.createElement('span'); s.textContent = text; if (source) TR.mark(s, source, field, where); if (cls) s.className = cls; return s; };
+  TR.text = (t) => document.createTextNode(t);
+  TR.state = (...ids) => {
+    const st = ids.map((id) => dash.data(id).status);
+    if (st.every((s) => s === 'ok')) return 'ok';
+    if (st.some((s) => s === 'error')) return 'error';
+    return 'wait';
+  };
+  TR.fail = (el) => { el.classList.remove('dash-skeleton'); const d = document.createElement('div'); d.className = 'tr-fail'; d.textContent = 'Échec du chargement'; el.replaceChildren(d); };
+  TR.wait = (el) => { el.replaceChildren(); el.classList.add('dash-skeleton'); };
+  TR.ready = (el) => el.classList.remove('dash-skeleton');
+  TR.tip = (box) => { let t = box.querySelector(':scope > .tr-tip'); if (!t) { t = document.createElement('div'); t.className = 'tr-tip'; box.append(t); } return t; };
+  TR.showTip = (tip, box, x, y, header, lines, foot) => {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 'tr-tip-h'; h.textContent = header; tip.append(h);
+    lines.forEach((l) => {
+      const r = document.createElement('div'); r.className = 'tr-tip-r';
+      if (l.color) { const sw = document.createElement('span'); sw.className = 'tr-sw'; sw.style.background = l.color; r.append(sw); }
+      const n = document.createElement('span'); n.textContent = l.name; r.append(n);
+      const v = document.createElement('span'); v.className = 'tr-tip-v'; v.textContent = l.value; r.append(v);
+      tip.append(r);
+    });
+    if (foot) { const e = document.createElement('div'); e.className = 'tr-tip-e'; e.textContent = foot; tip.append(e); }
+    tip.style.display = 'block';
+    const bw = box.clientWidth, tw = tip.offsetWidth, th = tip.offsetHeight;
+    let left = x + 14; if (left + tw > bw) left = x - tw - 14; left = Math.max(0, Math.min(left, bw - tw));
+    let top = y - th - 10; if (top < 0) top = y + 14;
+    tip.style.left = left + 'px'; tip.style.top = top + 'px';
+  };
+  TR.hideTip = (tip) => { tip.style.display = 'none'; };
+  TR.axis = (g) => g.attr('font-size', null).attr('font-family', null).attr('class', 'tr-axis');
+  TR.textWidth = (svg, texts, cls) => {
+    const g = svg.append('g').attr('aria-hidden', 'true');
+    let w = 0;
+    texts.forEach((t) => { const n = g.append('text').attr('class', cls).text(t).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove();
+    return w;
+  };
+  TR.spread = (items, gap, lo, hi) => {
+    items.sort((a, b) => a.y - b.y);
+    for (let i = 0; i < items.length; i += 1) { if (items[i].y < lo) items[i].y = lo; if (i > 0 && items[i].y - items[i - 1].y < gap) items[i].y = items[i - 1].y + gap; }
+    const over = items.length ? items[items.length - 1].y - hi : 0;
+    if (over > 0) {
+      items[items.length - 1].y = hi;
+      for (let i = items.length - 2; i >= 0; i -= 1) if (items[i + 1].y - items[i].y < gap) items[i].y = items[i + 1].y - gap;
+    }
+    return items;
+  };
+  TR.svg = (el, W, H, label) => d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', label);
+  TR.weekAxis = (svg, x, weeks, y0, width) => {
+    const n = Math.max(2, Math.min(10, Math.floor(width / 64)));
+    const ticks = x.ticks(n).filter((t) => Number.isInteger(t) && t >= weeks[0] && t <= weeks[weeks.length - 1]);
+    const g = svg.append('g').attr('transform', `translate(0,${y0})`).call(d3.axisBottom(x).tickValues(ticks).tickFormat((d) => 'Sem. ' + d).tickSizeOuter(0));
+    TR.axis(g);
+  };
+  TR.nearest = (weeks, x, px) => weeks.reduce((a, b) => (Math.abs(x(b) - px) < Math.abs(x(a) - px) ? b : a), weeks[0]);
+
+  /* Total de points au fil de la saison, sur un axe de dates, avec les tournois en bandes */
+  TR.drawTotals = (el, rows, order, cal) => {
+    const W = el.clientWidth; if (!W) return;
+    const H = Math.round(Math.max(260, Math.min(400, W * 0.44)));
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, 'Total de points de chaque équipe au fil de la saison, avec les tournois du Grand Chelem et les Masters 1000');
+    const pts = rows.filter((r) => r.date).map((r) => ({ ...r, d: TR.parse(r.date) }));
+    if (pts.length < 2) return;
+    const series = order.map((t) => ({ team: t, color: TR.color(t, order), pts: pts.filter((r) => r.team === t).sort((a, b) => a.d - b.d) })).filter((s) => s.pts.length);
+    const updates = [...new Map(pts.map((p) => [p.week, p])).values()].sort((a, b) => a.d - b.d);
+    const first = updates[0].d, lastUpd = updates[updates.length - 1].d;
+    const events = (cal || []).map((e) => ({ ...e, s: TR.parse(e.start), x1: d3.utcDay.offset(TR.parse(e.end), 1) })).filter((e) => e.x1 > first);
+    const end = new Date(Math.max(+lastUpd, ...events.map((e) => +e.x1)));
+    const y = d3.scaleLinear([0, d3.max(pts, (r) => r.total) || 1], [0, 1]).nice();
+    const yt = y.ticks(5);
+    const lw = TR.textWidth(svg, yt.map(TR.fmt), 'tr-tick');
+    const ends = series.map((s) => ({ s, p: s.pts[s.pts.length - 1] }));
+    const ew = TR.textWidth(svg, ends.map((e) => `${e.s.team} ${TR.fmt(e.p.total)}`), 'tr-endlabel');
+    const m = { t: 34, b: 26, l: lw + 10 };
+    const frac = (lastUpd - first) / Math.max(1, end - first);
+    const P = Math.max(60, Math.min(W - m.l - 8, (W - m.l - 22 - ew) / Math.max(frac, 0.01)));
+    const x = d3.scaleUtc([first, end], [m.l, m.l + P]);
+    y.range([H - m.b, m.t]);
+    const bands = svg.append('g');
+    const shown = [];
+    events.forEach((e) => {
+      const a = Math.max(x(e.s), m.l), b = Math.min(x(e.x1), m.l + P);
+      if (b <= a) return;
+      bands.append('rect').attr('x', a).attr('y', m.t).attr('width', b - a).attr('height', H - m.b - m.t)
+        .attr('fill', 'var(--color-fg)').attr('fill-opacity', e.level === 'Grand Chelem' ? 0.11 : 0.05);
+      shown.push({ e, cx: (a + b) / 2 });
+    });
+    const rowEnd = [-Infinity, -Infinity];
+    shown.forEach(({ e, cx }) => {
+      const t = bands.append('text').attr('class', 'tr-band-label').attr('text-anchor', 'middle').attr('font-weight', e.level === 'Grand Chelem' ? 600 : null).text(e.short);
+      const w = t.node().getComputedTextLength();
+      const lx = Math.max(m.l + w / 2, Math.min(cx, m.l + P - w / 2));
+      const r = lx - w / 2 > rowEnd[1] + 4 ? 1 : (lx - w / 2 > rowEnd[0] + 4 ? 0 : -1);
+      if (r < 0) { t.remove(); return; }
+      rowEnd[r] = lx + w / 2;
+      t.attr('x', lx).attr('y', r === 1 ? m.t - 6 : m.t - 20);
+    });
+    svg.append('g').selectAll('line').data(yt).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', m.l + P).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').selectAll('text').data(yt).join('text').attr('class', 'tr-tick').attr('x', m.l - 8).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.fmt);
+    const months = d3.utcMonth.range(d3.utcMonth.ceil(first), end);
+    const step = Math.max(1, Math.ceil(months.length / Math.max(2, Math.floor(P / 52))));
+    const xa = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues(months.filter((_, i) => i % step === 0)).tickFormat(TR.month).tickSizeOuter(0));
+    TR.axis(xa);
+    svg.append('line').attr('x1', x(lastUpd)).attr('x2', x(lastUpd)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '3 3');
+    const line = d3.line().x((d) => x(d.d)).y((d) => y(d.total));
+    svg.append('g').attr('fill', 'none').attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .selectAll('path').data(series).join('path').attr('stroke', (s) => s.color).attr('stroke-width', (s) => (s.team === TR.FOCUS ? 3.5 : 2.5)).attr('d', (s) => line(s.pts));
+    const items = TR.spread(ends.map((e) => ({ e, y: y(e.p.total) })), 15, m.t + 4, H - m.b - 4);
+    const lab = svg.append('g').selectAll('g').data(items).join('g').attr('transform', (d) => `translate(${x(lastUpd) + 6},${d.y})`);
+    lab.append('circle').attr('r', 4).attr('cx', 3).attr('fill', (d) => d.e.s.color);
+    lab.append('text').attr('class', 'tr-endlabel').attr('x', 11).attr('dy', '0.32em').attr('font-weight', (d) => (d.e.s.team === TR.FOCUS ? 600 : null)).text((d) => `${d.e.s.team} ${TR.fmt(d.e.p.total)}`);
+    const rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).style('display', 'none');
+    const dots = svg.append('g').style('display', 'none');
+    const tip = TR.tip(el);
+    const evLabel = (e) => `${e.level} · ${e.event} (${TR.range(e.start, e.end)})`;
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', P).attr('height', Math.max(0, H - m.t - m.b)).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const dt = x.invert(px);
+        const evAt = events.find((e) => dt >= e.s && dt < e.x1);
+        const [bx, by] = d3.pointer(ev, el);
+        if (dt > d3.utcDay.offset(lastUpd, 3)) {
+          rule.style('display', 'none'); dots.style('display', 'none');
+          if (evAt) TR.showTip(tip, el, bx, by, 'À venir', [{ name: `${evAt.level} · ${evAt.event}`, value: TR.range(evAt.start, evAt.end) }]);
+          else TR.hideTip(tip);
+          return;
+        }
+        const u = updates.reduce((a, b) => (Math.abs(b.d - dt) < Math.abs(a.d - dt) ? b : a), updates[0]);
+        const at = series.map((s) => ({ s, p: s.pts.find((p) => p.week === u.week) })).filter((d) => d.p).sort((a, b) => b.p.total - a.p.total);
+        rule.style('display', null).attr('x1', x(u.d)).attr('x2', x(u.d));
+        dots.style('display', null).selectAll('circle').data(at).join('circle').attr('r', 4).attr('cx', x(u.d)).attr('cy', (d) => y(d.p.total)).attr('fill', (d) => d.s.color);
+        TR.showTip(tip, el, bx, by, `Semaine ${u.week} · ${TR.dateY(u.date)}`, at.map((d) => ({ color: d.s.color, name: d.s.team, value: TR.fmt(d.p.total) })), evAt ? evLabel(evAt) : null);
+      })
+      .on('pointerleave', () => { rule.style('display', 'none'); dots.style('display', 'none'); TR.hideTip(tip); });
+  };
+
+  /* Position après chaque mise à jour */
+  TR.drawRanks = (el, rows, order) => {
+    const W = el.clientWidth; if (!W) return;
+    const data = rows.filter((r) => r.week >= 1);
+    const weeks = [...new Set(data.map((r) => r.week))].sort((a, b) => a - b);
+    const n = order.length;
+    const H = Math.max(220, 38 * n + 50);
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, "Position de chaque équipe après chaque mise à jour");
+    if (weeks.length < 2 || !n) return;
+    const series = order.map((t) => ({ team: t, color: TR.color(t, order), pts: data.filter((r) => r.team === t).sort((a, b) => a.week - b.week) })).filter((s) => s.pts.length);
+    const ranks = d3.range(1, n + 1);
+    const lw = TR.textWidth(svg, ranks.map(TR.ord), 'tr-tick');
+    const ew = TR.textWidth(svg, order, 'tr-endlabel');
+    const m = { t: 12, r: ew + 22, b: 26, l: lw + 10 };
+    const x = d3.scaleLinear([weeks[0], weeks[weeks.length - 1]], [m.l, W - m.r]);
+    const y = d3.scalePoint(ranks, [m.t + 6, H - m.b - 10]);
+    svg.append('g').selectAll('line').data(ranks).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').selectAll('text').data(ranks).join('text').attr('class', 'tr-tick').attr('x', m.l - 8).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.ord);
+    TR.weekAxis(svg, x, weeks, H - m.b, W - m.l - m.r);
+    const line = d3.line().x((d) => x(d.week)).y((d) => y(d.rank));
+    svg.append('g').attr('fill', 'none').attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .selectAll('path').data(series).join('path').attr('stroke', (s) => s.color).attr('stroke-width', (s) => (s.team === TR.FOCUS ? 3.5 : 2.5)).attr('d', (s) => line(s.pts));
+    const lab = svg.append('g').selectAll('g').data(series).join('g').attr('transform', (s) => `translate(${W - m.r + 6},${y(s.pts[s.pts.length - 1].rank)})`);
+    lab.append('circle').attr('r', 4).attr('cx', 3).attr('fill', (s) => s.color);
+    lab.append('text').attr('class', 'tr-endlabel').attr('x', 11).attr('dy', '0.32em').attr('font-weight', (s) => (s.team === TR.FOCUS ? 600 : null)).text((s) => s.team);
+    const rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).style('display', 'none');
+    const dots = svg.append('g').style('display', 'none');
+    const tip = TR.tip(el);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', Math.max(0, W - m.l - m.r)).attr('height', Math.max(0, H - m.t - m.b)).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const wk = TR.nearest(weeks, x, px);
+        const at = series.map((s) => ({ s, p: s.pts.find((p) => p.week === wk) })).filter((d) => d.p).sort((a, b) => a.p.rank - b.p.rank);
+        rule.style('display', null).attr('x1', x(wk)).attr('x2', x(wk));
+        dots.style('display', null).selectAll('circle').data(at).join('circle').attr('r', 4).attr('cx', x(wk)).attr('cy', (d) => y(d.p.rank)).attr('fill', (d) => d.s.color);
+        const [bx, by] = d3.pointer(ev, el);
+        TR.showTip(tip, el, bx, by, `Semaine ${wk} · ${TR.dateY(at[0] && at[0].p.date)}`, at.map((d) => ({ color: d.s.color, name: `${TR.ord(d.p.rank)} ${d.s.team}`, value: TR.fmt(d.p.total) })));
+      })
+      .on('pointerleave', () => { rule.style('display', 'none'); dots.style('display', 'none'); TR.hideTip(tip); });
+  };
+
+  /* Points gagnés à chaque mise à jour, un petit graphique par équipe */
+  TR.drawGains = (el, rows, order) => {
+    if (!el.clientWidth) return;
+    el.replaceChildren();
+    const data = rows.filter((r) => r.gain !== null && r.week >= 1);
+    const weeks = [...new Set(data.map((r) => r.week))].sort((a, b) => a - b);
+    if (!weeks.length) return;
+    const hi = Math.max(1, d3.max(data, (r) => r.gain));
+    const lo = Math.min(0, d3.min(data, (r) => r.gain));
+    const tip = TR.tip(el);
+    order.forEach((team) => {
+      const pts = data.filter((r) => r.team === team);
+      if (!pts.length) return;
+      const color = TR.color(team, order);
+      const cell = document.createElement('div'); cell.className = 'tr-mult'; cell.id = 'gains-' + team.toLowerCase();
+      const head = document.createElement('div'); head.className = 'tr-mult-label';
+      const nm = document.createElement('b'); const dot = document.createElement('span'); dot.className = 'tr-dot'; dot.style.background = color; nm.append(dot, TR.text(team));
+      const best = pts.reduce((a, b) => (b.gain > a.gain ? b : a), pts[0]);
+      const bestEl = document.createElement('span'); bestEl.className = 'tr-sub';
+      bestEl.append(TR.text('Meilleure : '), TR.span(TR.fmtS(best.gain), 'team_weeks', 'gain', { team, week: best.week }), TR.text(' (sem. ' + best.week + ')'));
+      head.append(nm, bestEl); cell.append(head);
+      el.append(cell);
+      const W = cell.clientWidth || 240, H = 92;
+      const svg = TR.svg(cell, W, H, `Points gagnés par ${team} à chaque mise à jour`);
+      const x = d3.scaleBand(weeks, [0, W]).paddingInner(0.25);
+      const y = d3.scaleLinear([lo, hi], [H - 16, 4]);
+      svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+      svg.append('g').selectAll('rect').data(pts).join('rect')
+        .attr('x', (d) => x(d.week)).attr('width', x.bandwidth())
+        .attr('y', (d) => Math.min(y(d.gain), y(0))).attr('height', (d) => Math.max(d.gain === 0 ? 0 : 1, Math.abs(y(d.gain) - y(0))))
+        .attr('rx', Math.min(2, x.bandwidth() / 2)).attr('fill', color)
+        .on('pointerenter pointermove', (ev, d) => { const [bx, by] = d3.pointer(ev, el); TR.showTip(tip, el, bx, by, `${team} · semaine ${d.week} · ${TR.date(d.date)}`, [{ name: 'Gagnés', value: TR.fmtS(d.gain) }, { name: 'Total', value: TR.fmt(d.total) }]); })
+        .on('pointerleave', () => TR.hideTip(tip));
+      svg.append('text').attr('class', 'tr-tick').attr('x', 0).attr('y', H - 2).text('Sem. ' + weeks[0]);
+      svg.append('text').attr('class', 'tr-tick').attr('x', W).attr('y', H - 2).attr('text-anchor', 'end').text('Sem. ' + weeks[weeks.length - 1]);
+    });
+  };
+
+  /* Grille des duels */
+  TR.drawMatrix = (el, rows, order) => {
+    el.replaceChildren();
+    const teams = order.filter((t) => rows.some((r) => r.team === t));
+    const max = d3.max(rows.filter((r) => r.opponent_team !== 'Toutes'), (r) => r.wins) || 1;
+    const table = document.createElement('table'); table.className = 'tr-matrix'; table.id = 'duel-table';
+    const thead = document.createElement('thead'); const hr = document.createElement('tr');
+    const corner = document.createElement('th'); corner.textContent = 'Vainqueur ↓ contre →'; corner.className = 'tr-sub'; hr.append(corner);
+    teams.forEach((t) => { const th = document.createElement('th'); th.scope = 'col'; th.textContent = t; hr.append(th); });
+    const tt = document.createElement('th'); tt.scope = 'col'; tt.textContent = 'Total'; hr.append(tt);
+    thead.append(hr); table.append(thead);
+    const tb = document.createElement('tbody');
+    teams.forEach((t) => {
+      const tr = document.createElement('tr');
+      const th = document.createElement('th'); th.scope = 'row';
+      const dot = document.createElement('span'); dot.className = 'tr-dot'; dot.style.background = TR.color(t, order);
+      th.append(dot, TR.text(t)); tr.append(th);
+      teams.forEach((o) => {
+        const td = document.createElement('td');
+        if (o === t) { td.className = 'tr-self'; td.textContent = '·'; }
+        else {
+          const r = rows.find((x) => x.team === t && x.opponent_team === o);
+          const wins = r ? r.wins : 0;
+          td.textContent = String(wins);
+          TR.mark(td, 'duel_matrix', 'wins', { team: t, opponent_team: o });
+          if (wins > 0) td.style.background = `color-mix(in srgb, ${TR.color(t, order)} ${Math.round(18 + 62 * wins / max)}%, transparent)`;
+        }
+        tr.append(td);
+      });
+      const tot = rows.find((x) => x.team === t && x.opponent_team === 'Toutes');
+      const td = document.createElement('td'); td.className = 'tr-total';
+      if (tot) td.append(TR.span(String(tot.wins), 'duel_matrix', 'wins', { team: t, opponent_team: 'Toutes' }), TR.text(' · '), TR.span(TR.fmt(tot.points), 'duel_matrix', 'points', { team: t, opponent_team: 'Toutes' }), TR.text(' pts'));
+      tr.append(td);
+      tb.append(tr);
+    });
+    table.append(tb); el.append(table);
+  };
+
+  /* Cartes du classement */
+  TR.drawStandings = (el, rows, order) => {
+    el.replaceChildren();
+    rows.forEach((r) => {
+      const c = document.createElement('div'); c.className = 'tr-card tr-team'; c.id = 'standing-' + r.team.toLowerCase();
+      c.style.borderTopColor = TR.color(r.team, order);
+      const top = document.createElement('div'); top.className = 'tr-team-top';
+      const nm = document.createElement('span'); nm.className = 'tr-team-name';
+      nm.append(TR.span(TR.ord(r.rank), 'standings', 'rank', { team: r.team }), TR.text(' · ' + r.team));
+      const mv = document.createElement('span');
+      if (r.previous_rank !== null && r.previous_rank !== r.rank) {
+        const up = r.previous_rank > r.rank;
+        mv.className = up ? 'tr-up' : 'tr-down';
+        mv.append(TR.text(up ? '▲ était ' : '▼ était '), TR.span(TR.ord(r.previous_rank), 'standings', 'previous_rank', { team: r.team }));
+      }
+      top.append(nm, mv); c.append(top);
+      c.append(TR.span(TR.fmt(r.total), 'standings', 'total', { team: r.team }, 'tr-big'));
+      const sub = document.createElement('div'); sub.className = 'tr-sub';
+      sub.append(TR.text('Race '), TR.span(TR.fmt(r.race), 'standings', 'race', { team: r.team }), TR.text(' · Duels '), TR.span(TR.fmt(r.duels), 'standings', 'duels', { team: r.team }));
+      c.append(sub);
+      const ch = document.createElement('div'); ch.className = 'tr-sub';
+      ch.append(TR.span(TR.fmtS(r.change), 'standings', 'change', { team: r.team }), TR.text(' depuis la dernière mise à jour'));
+      c.append(ch);
+      const gap = document.createElement('div'); gap.className = 'tr-sub';
+      if (r.rank === 1) gap.textContent = 'En tête';
+      else gap.append(TR.span(TR.fmt(r.gap_to_leader), 'standings', 'gap_to_leader', { team: r.team }), TR.text(' derrière la tête'));
+      c.append(gap);
+      el.append(c);
+    });
+  };
+
+  /* Composition : points Race par joueur, empilés par équipe */
+  TR.drawComposition = (el, ps, order, team) => {
+    const W = el.clientWidth; if (!W) return;
+    const sums = order.map((t) => ({ t, sum: d3.sum(ps.filter((p) => p.team === t), (p) => p.race || 0) })).sort((a, b) => b.sum - a.sum);
+    const teams = (team && team !== 'All' ? sums.filter((s) => s.t === team) : sums).map((s) => s.t);
+    const rowH = 30, gap = 14;
+    const H = teams.length * (rowH + gap) + 8;
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, 'Points Race par joueur, empilés par équipe');
+    const lw = TR.textWidth(svg, teams, 'tr-endlabel');
+    const m = { l: lw + 12, r: 8 };
+    const x = d3.scaleLinear([0, d3.max(sums, (s) => s.sum) || 1], [m.l, W - m.r]);
+    const tip = TR.tip(el);
+    teams.forEach((t, i) => {
+      const y0 = 4 + i * (rowH + gap);
+      const color = TR.color(t, order);
+      svg.append('text').attr('class', 'tr-endlabel').attr('x', m.l - 8).attr('y', y0 + rowH / 2).attr('dy', '0.32em').attr('text-anchor', 'end').attr('font-weight', t === TR.FOCUS ? 600 : null).text(t);
+      const segs = ps.filter((p) => p.team === t && (p.race || 0) > 0).sort((a, b) => b.race - a.race);
+      let acc = 0;
+      segs.forEach((p) => {
+        const a = x(acc), b = x(acc + p.race);
+        acc += p.race;
+        svg.append('rect').attr('x', a).attr('y', y0).attr('width', Math.max(0, b - a)).attr('height', rowH).attr('rx', 3)
+          .attr('fill', color).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+          .on('pointerenter pointermove', (ev) => { const [bx, by] = d3.pointer(ev, el); TR.showTip(tip, el, bx, by, `${t} · ${p.short}`, [{ name: 'Points Race', value: TR.fmt(p.race) }, { name: "Part de l'équipe", value: TR.pct(p.share) }]); })
+          .on('pointerleave', () => TR.hideTip(tip));
+        const label = svg.append('text').attr('class', 'tr-seglabel').attr('x', a + 6).attr('y', y0 + rowH / 2).attr('dy', '0.32em').text(p.short);
+        if (label.node().getComputedTextLength() > b - a - 10) label.remove();
+      });
+    });
+  };
+
+  /* Nuage : tournois disputés vs points Race par tournoi, bulle = total Race */
+  TR.drawScatter = (el, rows, order, team) => {
+    const W = el.clientWidth; if (!W) return;
+    const H = Math.round(Math.max(300, Math.min(480, W * 0.52)));
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, 'Tournois disputés et points Race moyens par tournoi pour chaque joueur, taille selon le total de points Race');
+    const data = rows.filter((d) => d.events > 0 && d.points_per_event !== null).sort((a, b) => b.race_points - a.race_points);
+    if (!data.length) return;
+    const shown = !team || team === 'All' ? data : data.filter((d) => d.team === team);
+    const maxR = Math.max(12, Math.min(28, W / 30));
+    const r = d3.scaleSqrt([0, d3.max(data, (d) => d.race_points) || 1], [0, maxR]);
+    const y = d3.scaleLinear([0, d3.max(data, (d) => d.points_per_event) || 1], [0, 1]).nice();
+    const yt = y.ticks(5);
+    const lw = TR.textWidth(svg, yt.map(TR.fmt), 'tr-tick');
+    const m = { t: maxR + 4, r: maxR + 8, b: 42, l: lw + 30 };
+    const x = d3.scaleLinear([0, d3.max(data, (d) => d.events) || 1], [m.l, W - m.r]).nice();
+    y.range([H - m.b, m.t]);
+    const xt = x.ticks(Math.max(2, Math.min(10, Math.floor((W - m.l - m.r) / 60))));
+    svg.append('g').selectAll('line').data(yt).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').selectAll('line').data(xt).join('line').attr('class', 'tr-grid-line').attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', m.t).attr('y2', H - m.b);
+    svg.append('g').selectAll('text').data(yt).join('text').attr('class', 'tr-tick').attr('x', m.l - 8).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.fmt);
+    const xa = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues(xt).tickFormat(TR.fmt).tickSizeOuter(0));
+    TR.axis(xa);
+    svg.append('text').attr('class', 'tr-tick').attr('x', (m.l + W - m.r) / 2).attr('y', H - 6).attr('text-anchor', 'middle').text('Tournois disputés');
+    svg.append('text').attr('class', 'tr-tick').attr('transform', `translate(12,${(m.t + H - m.b) / 2}) rotate(-90)`).attr('text-anchor', 'middle').text('Points Race par tournoi');
+    const tip = TR.tip(el);
+    svg.append('g').selectAll('circle').data(shown).join('circle')
+      .attr('cx', (d) => x(d.events)).attr('cy', (d) => y(d.points_per_event)).attr('r', (d) => Math.max(3, r(d.race_points)))
+      .attr('fill', (d) => TR.color(d.team, order)).attr('fill-opacity', 0.82)
+      .attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+      .on('pointerenter pointermove', (ev, d) => {
+        const [bx, by] = d3.pointer(ev, el);
+        TR.showTip(tip, el, bx, by, `${d.short} · ${d.team}`, [
+          { color: TR.color(d.team, order), name: 'Tournois disputés', value: TR.fmt(d.events) },
+          { name: 'Points Race', value: TR.fmt(d.race_points) },
+          { name: 'Points par tournoi', value: TR.fmt(Math.round(d.points_per_event)) },
+        ]);
+      })
+      .on('pointerleave', () => TR.hideTip(tip));
+    const placed = [];
+    const keys = r.ticks(4).filter((v) => v > 0);
+    if (keys.length) {
+      const ks = [keys[0], keys[keys.length - 1]].filter((v, i, a) => a.indexOf(v) === i);
+      const big = r(ks[ks.length - 1]);
+      const kx = W - m.r - 4, ky = m.t + 2 * big;
+      const g = svg.append('g').attr('aria-hidden', 'true');
+      let kw = 0;
+      ks.forEach((v) => {
+        g.append('circle').attr('cx', kx - big).attr('cy', ky - r(v)).attr('r', r(v)).attr('fill', 'none').attr('stroke', 'var(--cds-chart-axis)');
+        const t = g.append('text').attr('class', 'tr-tick').attr('x', kx - 2 * big - 6).attr('y', ky - 2 * r(v)).attr('dy', '0.32em').attr('text-anchor', 'end').text(`${TR.fmt(v)} pts`);
+        kw = Math.max(kw, t.node().getComputedTextLength());
+      });
+      placed.push({ x0: kx - 2 * big - 10 - kw, x1: kx + 2, y0: m.t - 8, y1: ky + 2 });
+    }
+    const hits = (b) => placed.some((p) => b.x0 < p.x1 && b.x1 > p.x0 && b.y0 < p.y1 && b.y1 > p.y0);
+    shown.forEach((d) => {
+      const cx = x(d.events), cy = y(d.points_per_event), rr = Math.max(3, r(d.race_points));
+      const t = svg.append('text').attr('class', 'tr-endlabel').attr('dy', '0.32em').attr('font-weight', d.team === TR.FOCUS ? 600 : null).text(d.short);
+      const w = t.node().getComputedTextLength();
+      const dg = rr * 0.72 + 3;
+      const tries = [[cx + rr + 4, cy, 'start'], [cx - rr - 4, cy, 'end'], [cx, cy - rr - 8, 'middle'], [cx, cy + rr + 9, 'middle'], [cx + dg, cy - dg - 4, 'start'], [cx - dg, cy - dg - 4, 'end'], [cx + dg, cy + dg + 4, 'start'], [cx - dg, cy + dg + 4, 'end']];
+      const ok = tries.map(([tx, ty, anchor]) => {
+        const x0 = anchor === 'start' ? tx : anchor === 'end' ? tx - w : tx - w / 2;
+        return { tx, ty, anchor, b: { x0, x1: x0 + w, y0: ty - 7, y1: ty + 7 } };
+      }).find((c) => c.b.x0 >= m.l && c.b.x1 <= W - 2 && c.b.y0 >= 0 && c.b.y1 <= H - m.b && !hits(c.b));
+      if (!ok) { t.remove(); return; }
+      placed.push(ok.b);
+      t.attr('x', ok.tx).attr('y', ok.ty).attr('text-anchor', ok.anchor);
+    });
+  };
+
+  TR.spark = (series, color) => {
+    const w = 84, h = 20;
+    const pts = series.map((v, i) => [i, v]).filter((d) => d[1] !== null);
+    const svg = d3.create('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`).attr('aria-hidden', 'true');
+    if (pts.length > 1) {
+      const x = d3.scaleLinear([0, series.length - 1], [1, w - 1]);
+      const y = d3.scaleLinear([0, d3.max(pts, (d) => d[1]) || 1], [h - 2, 2]);
+      svg.append('path').attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line().x((d) => x(d[0])).y((d) => y(d[1]))(pts));
+    }
+    return svg.node();
+  };
+
+  TR.detailRace = (el, rows, hebdo, color) => {
+    const W = el.clientWidth; if (!W) return;
+    const H = 200;
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, 'Points Race du joueur choisi à chaque mise à jour');
+    const pts = rows.slice().sort((a, b) => a.week - b.week);
+    if (pts.length < 2) return;
+    const dates = new Map(hebdo.map((h) => [h.week, h.date]));
+    const y = d3.scaleLinear([0, d3.max(pts, (d) => d.race) || 1], [0, 1]).nice();
+    const yt = y.ticks(4);
+    const lw = TR.textWidth(svg, yt.map(TR.fmt), 'tr-tick');
+    const m = { t: 8, r: 10, b: 24, l: lw + 8 };
+    const weeks = pts.map((d) => d.week);
+    const x = d3.scaleLinear([weeks[0], weeks[weeks.length - 1]], [m.l, W - m.r]);
+    y.range([H - m.b, m.t]);
+    svg.append('g').selectAll('line').data(yt).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').selectAll('text').data(yt).join('text').attr('class', 'tr-tick').attr('x', m.l - 6).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.fmt);
+    TR.weekAxis(svg, x, weeks, H - m.b, W - m.l - m.r);
+    svg.append('path').attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line().x((d) => x(d.week)).y((d) => y(d.race))(pts));
+    const dot = svg.append('circle').attr('r', 4).attr('fill', color).style('display', 'none');
+    const tip = TR.tip(el);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', Math.max(0, W - m.l - m.r)).attr('height', Math.max(0, H - m.t - m.b)).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const wk = TR.nearest(weeks, x, px);
+        const p = pts.find((d) => d.week === wk);
+        dot.style('display', null).attr('cx', x(wk)).attr('cy', y(p.race));
+        const [bx, by] = d3.pointer(ev, el);
+        TR.showTip(tip, el, bx, by, `Semaine ${wk}${dates.get(wk) ? ' · ' + TR.dateY(dates.get(wk)) : ''}`, [{ name: 'Points Race', value: TR.fmt(p.race) }]);
+      })
+      .on('pointerleave', () => { dot.style('display', 'none'); TR.hideTip(tip); });
+  };
+})();
+</script>
+
+<script>
+(() => {
+  const TR = window.TR;
+  const $ = (id) => document.getElementById(id);
+  const PAGES = ['teams', 'players', 'notes'];
+  let active = 'teams';
+  const sort = { key: 'race', dir: -1 };
+  let query = '';
+
+  const show = (tab, link) => {
+    active = PAGES.includes(tab) ? tab : 'teams';
+    PAGES.forEach((p) => { $(p).hidden = p !== active; $('tab-' + p).setAttribute('aria-selected', String(p === active)); });
+    if (link) dash.setLink(active);
+    render();
+  };
+  document.querySelectorAll('.tr-tab').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab, true)));
+
+  $('player-search').addEventListener('input', (e) => { query = e.target.value.trim().toLowerCase(); render(); });
+  $('player-table').querySelector('thead').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-sort]');
+    if (!b) return;
+    const k = b.dataset.sort;
+    if (sort.key === k) sort.dir = -sort.dir; else { sort.key = k; sort.dir = ['short', 'team', 'atp_rank'].includes(k) ? 1 : -1; }
+    render();
+  });
+  $('player-table').querySelector('tbody').addEventListener('click', (e) => {
+    const tr = e.target.closest('tr[data-key]');
+    if (!tr) return;
+    dash.setParams({ player: tr.dataset.key });
+    const d = $('player-detail'); if (d) d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+  $('team-filter').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-team]');
+    if (b) dash.setParams({ team: b.dataset.team });
+  });
+
+  const fillTable = (tbody, rows, cols, keyOf) => {
+    tbody.replaceChildren();
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = keyOf(r);
+      cols.forEach((c) => {
+        const td = document.createElement('td');
+        if (c.l) td.className = 'tr-l';
+        if (c.sec) td.classList.add('tr-sec');
+        if (c.node) td.append(c.node(r)); else td.textContent = c.fmt ? c.fmt(r[c.f]) : (r[c.f] ?? '—');
+        tr.append(td);
+      });
+      tbody.append(tr);
+    });
+  };
+  const enc = (s) => encodeURIComponent(String(s));
+
+  const drawHeader = () => {
+    const el = $('takeaway');
+    const st = TR.state('standings');
+    const asof = $('head-asof');
+    if (st !== 'ok') { if (st === 'error') el.textContent = "Les totaux d'équipe n'ont pas pu être chargés."; return; }
+    const rows = dash.data('standings').data;
+    if (!rows.length) return;
+    asof.textContent = TR.dateY(rows[0].date);
+    const lead = rows[0], second = rows[1];
+    el.replaceChildren(TR.text('Après la semaine '), TR.span(String(lead.week), 'standings', 'week', { team: lead.team }), TR.text(` (${TR.dateY(lead.date)}), ${lead.team} mène avec `), TR.span(TR.fmt(lead.total), 'standings', 'total', { team: lead.team }), TR.text(' points'));
+    if (second) el.append(TR.text(', '), TR.span(TR.fmt(second.gap_to_next), 'standings', 'gap_to_next', { team: second.team }), TR.text(` devant ${second.team}.`));
+    else el.append(TR.text('.'));
+    const best = rows.filter((r) => r.change !== null).reduce((a, b) => (!a || b.change > a.change ? b : a), null);
+    if (best && best.change > 0) el.append(TR.text(` Meilleure progression de la semaine : ${best.team} (`), TR.span(TR.fmtS(best.change), 'standings', 'change', { team: best.team }), TR.text(').'));
+  };
+
+  const drawTeams = (order) => {
+    const st = TR.state('standings', 'team_weeks');
+    const boxes = [$('standings'), $('totals-chart'), $('rank-chart'), $('gains-chart')];
+    if (st === 'error') { boxes.forEach(TR.fail); }
+    else if (st !== 'ok') { boxes.forEach(TR.wait); }
+    else {
+      boxes.forEach(TR.ready);
+      const tw = dash.data('team_weeks').data;
+      const cal = dash.data('calendar');
+      TR.drawStandings($('standings'), dash.data('standings').data, order);
+      TR.drawTotals($('totals-chart'), tw, order, cal.status === 'ok' ? cal.data : []);
+      TR.drawRanks($('rank-chart'), tw, order);
+      TR.drawGains($('gains-chart'), tw, order);
+    }
+    const dm = TR.state('duel_matrix');
+    if (dm === 'error') TR.fail($('duel-matrix'));
+    else if (dm !== 'ok' || !order.length) TR.wait($('duel-matrix'));
+    else { TR.ready($('duel-matrix')); TR.drawMatrix($('duel-matrix'), dash.data('duel_matrix').data, order); }
+    const pl = dash.data('players');
+    $('duel-asof').textContent = pl.status === 'ok' && pl.data.length ? TR.dateY(pl.data[0].matches_through) : '—';
+  };
+
+  const drawPlayers = (order) => {
+    const params = dash.params();
+    const team = params.team || 'All';
+    const filter = $('team-filter');
+    filter.replaceChildren(...['All', ...order].map((t) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'tr-chip'; b.dataset.team = t;
+      b.setAttribute('aria-pressed', String(t === team));
+      if (t !== 'All') { const d = document.createElement('span'); d.className = 'tr-sw'; d.style.background = TR.color(t, order); b.append(d); }
+      b.append(TR.text(t === 'All' ? 'Toutes les équipes' : t));
+      return b;
+    }));
+    const sc = $('scatter-chart');
+    const sst = TR.state('player_events');
+    const legend = $('scatter-legend');
+    legend.replaceChildren(...order.filter((t) => team === 'All' || t === team).map((t) => { const s = document.createElement('span'); const d = document.createElement('i'); d.className = 'tr-dot'; d.style.background = TR.color(t, order); s.append(d, TR.text(t)); return s; }));
+    if (sst === 'error') TR.fail(sc);
+    else if (sst !== 'ok') TR.wait(sc);
+    else { TR.ready(sc); TR.drawScatter(sc, dash.data('player_events').data, order, team); }
+
+    const st = TR.state('player_season');
+    const comp = $('composition-chart');
+    const tbody = $('player-table').querySelector('tbody');
+    const take = $('players-take');
+    if (st !== 'ok') {
+      if (st === 'error') { TR.fail(comp); take.textContent = "Les données des joueurs n'ont pas pu être chargées."; } else TR.wait(comp);
+      tbody.replaceChildren();
+      return;
+    }
+    const ps = dash.data('player_season').data;
+    const ord = order.length ? order : [...new Set(ps.map((p) => p.team))];
+    TR.ready(comp);
+    TR.drawComposition(comp, ps, ord, team);
+
+    const top = ps.filter((p) => p.race !== null).reduce((a, b) => (!a || b.race > a.race ? b : a), null);
+    const pe = dash.data('player_events');
+    const eff = pe.status === 'ok' ? pe.data.filter((p) => p.points_per_event !== null).reduce((a, b) => (!a || b.points_per_event > a.points_per_event ? b : a), null) : null;
+    if (top) {
+      take.replaceChildren(TR.text(`${top.short} (${top.team}) compte le plus de points Race (`), TR.span(TR.fmt(top.race), 'player_season', 'race', { player: top.player }), TR.text(')'));
+      if (eff) take.append(TR.text(`\u202f; ${eff.short} (${eff.team}) a le meilleur rendement, avec `), TR.span(TR.fmt(Math.round(eff.points_per_event)), 'player_events', 'points_per_event', { player: eff.player }), TR.text(' points par tournoi.'));
+      else take.append(TR.text('.'));
+    }
+
+    let rows = ps.filter((p) => team === 'All' || p.team === team);
+    if (query) rows = rows.filter((p) => (p.player + ' ' + p.short + ' ' + p.team).toLowerCase().includes(query));
+    const k = sort.key;
+    rows = rows.slice().sort((a, b) => {
+      const va = a[k], vb = b[k];
+      if (va === null || va === undefined) return 1;
+      if (vb === null || vb === undefined) return -1;
+      return (typeof va === 'string' ? va.localeCompare(vb, 'fr') : va - vb) * sort.dir;
+    });
+    $('player-table').querySelectorAll('th').forEach((th) => {
+      const btn = th.querySelector('button[data-sort]');
+      if (btn) th.setAttribute('aria-sort', btn.dataset.sort === k ? (sort.dir > 0 ? 'ascending' : 'descending') : 'none');
+    });
+    const cols = [
+      { f: 'short', l: true },
+      { f: 'team', l: true, node: (r) => { const s = document.createElement('span'); const d = document.createElement('span'); d.className = 'tr-dot'; d.style.background = TR.color(r.team, ord); s.append(d, TR.text(r.team)); return s; } },
+      { f: 'race', fmt: TR.fmt },
+      { f: 'share', fmt: TR.pct },
+      { f: 'gain_week', fmt: TR.fmtS },
+      { f: 'gain_4', fmt: TR.fmtS, sec: true },
+      { f: 'series', l: true, sec: true, node: (r) => TR.spark(r.series || [], TR.color(r.team, ord)) },
+      { f: 'record', fmt: (v) => v ?? '—' },
+      { f: 'titles', fmt: (v) => (v ?? '—'), sec: true },
+      { f: 'duel_pts', fmt: TR.fmt },
+      { f: 'atp_rank', fmt: (v) => (v ? 'n° ' + v : '—'), sec: true },
+      { f: 'elo', fmt: TR.elo, sec: true },
+    ];
+    fillTable(tbody, rows, cols, (r) => r.player);
+    const sel = params.player;
+    tbody.querySelectorAll('tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.key === sel)));
+    drawDetail(sel, ps, ord);
+  };
+
+  const LEVELS = ['Grand Chelem', 'Masters 1000', 'ATP 500/250', 'Compétition par équipes', 'Qualifications', 'Challenger', 'ITF'];
+  const ROUNDS = { F: 9, '1/2': 8, '1/4': 7, Poule: 6.5, '1/8': 6, '1/16': 5, '1/32': 4, '1/64': 3, Q3: 2, Q2: 1, Q1: 0 };
+
+  const drawDetail = (name, ps, order) => {
+    const empty = $('detail-empty'), body = $('detail-body');
+    const s = ps.find((p) => p.player === name);
+    const ok = TR.state('players', 'matches', 'joueurs', 'hebdo', 'player_levels') === 'ok';
+    if (!name || !s || !ok) { empty.hidden = false; body.hidden = true; return; }
+    empty.hidden = true; body.hidden = false;
+    const p = dash.data('players').data.find((x) => x.player === name) || {};
+    const color = TR.color(s.team, order);
+    const w = { player: name };
+    $('detail-name').textContent = p.full || s.short;
+    $('detail-sub').replaceChildren(TR.text(s.team + ' · ATP '), TR.span(p.atp_rank ? 'n° ' + p.atp_rank : '—', 'players', 'atp_rank', w), TR.text(' · Race '), TR.span(p.race_rank ? 'n° ' + p.race_rank : '—', 'players', 'race_rank', w), TR.text(' · '), TR.span(TR.dec1(p.age), 'players', 'age', w), TR.text(' ans'));
+    const kpi = (label, nodes) => { const d = document.createElement('div'); const v = document.createElement('div'); v.className = 'tr-kpi-v'; v.append(...nodes); const l = document.createElement('div'); l.className = 'tr-kpi-l'; l.textContent = label; d.append(v, l); return d; };
+    $('detail-kpis').replaceChildren(
+      kpi('Points Race', [TR.span(TR.fmt(s.race), 'player_season', 'race', w)]),
+      kpi('Victoires–défaites', [TR.span(String(p.w ?? '—'), 'players', 'w', w), TR.text('–'), TR.span(String(p.l ?? '—'), 'players', 'l', w)]),
+      kpi('Titres / finales', [TR.span(String(p.titles ?? '—'), 'players', 'titles', w), TR.text(' / '), TR.span(String(p.finals ?? '—'), 'players', 'finals', w)]),
+      kpi('Points de duel', [TR.span(TR.fmt(p.duel_pts), 'players', 'duel_pts', w)]),
+      kpi('Elo', [TR.span(TR.elo(p.elo), 'players', 'elo', w)]),
+      kpi('yElo', [TR.span(TR.elo(p.yelo), 'players', 'yelo', w)]),
+    );
+    TR.detailRace($('detail-race'), dash.data('joueurs').data.filter((r) => r.player === name), dash.data('hebdo').data, color);
+
+    const surf = $('detail-surface'); surf.replaceChildren();
+    [['Dur', 'hard'], ['Terre battue', 'clay'], ['Gazon', 'grass']].forEach(([lab, k]) => {
+      const won = p[k + '_w'] || 0, lost = p[k + '_l'] || 0, n = won + lost;
+      const row = document.createElement('div'); row.className = 'tr-bar-row';
+      const a = document.createElement('span'); a.textContent = lab;
+      const bar = document.createElement('div'); bar.className = 'tr-bar'; const fill = document.createElement('span'); fill.style.width = (n ? (100 * won / n) : 0) + '%'; fill.style.background = color; bar.append(fill);
+      const r = document.createElement('span'); r.className = 'tr-r';
+      r.append(TR.span(String(won), 'players', k + '_w', w), TR.text('–'), TR.span(String(lost), 'players', k + '_l', w));
+      row.append(a, bar, r); surf.append(row);
+    });
+
+    const lv = dash.data('player_levels').data.filter((r) => r.player === name).sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level));
+    fillTable($('detail-levels').querySelector('tbody'), lv, [{ f: 'level', l: true }, { f: 'w' }, { f: 'l' }], (r) => enc(r.player) + ',' + enc(r.level));
+
+    const extra = $('detail-extra'); extra.replaceChildren();
+    if (p.title_events) extra.append(TR.text('Titres : '), TR.span(p.title_events, 'players', 'title_events', w), TR.text('. '));
+    if (p.best_win_opponent) extra.append(TR.text('Meilleure victoire au classement : '), TR.span(p.best_win_opponent, 'players', 'best_win_opponent', w), TR.text(' (n° '), TR.span(String(p.best_win_opp_rank), 'players', 'best_win_opp_rank', w), TR.text(', '), TR.span(p.best_win_event, 'players', 'best_win_event', w), TR.text(').'));
+
+    const ms = dash.data('matches').data.filter((m) => m.player === name)
+      .sort((a, b) => (a.event_date < b.event_date ? 1 : a.event_date > b.event_date ? -1 : (ROUNDS[b.round] ?? 0) - (ROUNDS[a.round] ?? 0))).slice(0, 12);
+    fillTable($('detail-matches').querySelector('tbody'), ms, [
+      { f: 'event_date', l: true, fmt: TR.date }, { f: 'event', l: true }, { f: 'round', l: true }, { f: 'surface', l: true, sec: true },
+      { f: 'result', l: true, node: (m) => { const sp = document.createElement('span'); sp.className = m.result === 'V' ? 'tr-up' : 'tr-down'; sp.textContent = m.result; return sp; } },
+      { f: 'opponent', l: true }, { f: 'opponent_rank', fmt: (v) => (v ? 'n° ' + v : '—'), sec: true }, { f: 'score', l: true, sec: true },
+    ], (m) => m.mid);
+  };
+
+  const drawNotes = () => {
+    const pl = dash.data('players');
+    const p0 = pl.status === 'ok' && pl.data.length ? pl.data[0] : null;
+    $('src-matches').textContent = p0 ? TR.dateY(p0.matches_through) : '—';
+    $('src-rank').textContent = p0 ? TR.dateY(p0.rankings_date) : '—';
+    $('src-elo').textContent = p0 ? TR.dateY(p0.elo_date) : '—';
+    const sd = dash.data('standings');
+    $('src-week').textContent = sd.status === 'ok' && sd.data.length ? `semaine ${sd.data[0].week}, ${TR.dateY(sd.data[0].date)}` : '—';
+  };
+
+  function render() {
+    TR.loadColors();
+    const order = TR.order();
+    drawHeader();
+    if (active === 'teams') drawTeams(order);
+    if (active === 'players') drawPlayers(order);
+    if (active === 'notes') drawNotes();
+  }
+
+  dash.onData(render);
+  const named = location.hash.slice(1);
+  if (PAGES.includes(named)) show(named, false);
+})();
+</script>
+
+</div>
+<footer class="site-foot"><a href="../" style="color:inherit">← Toutes les saisons</a> · THE RACE 2026 · mis à jour chaque semaine après validation du lundi · données Tennis Abstract et Tennis Explorer.</footer>
+</main>
+</body>
+</html>

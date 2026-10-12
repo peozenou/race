@@ -1,0 +1,116 @@
+/* Theme tokens used by the dashboard page, light and dark. */
+:root {
+  --font-anthropic-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-anthropic-serif: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
+
+  --color-bg: #f9f9f7;
+  --color-panel: #ffffff;
+  --color-fg: #0b0b0b;
+  --color-fg-muted: #898781;
+  --color-border-line: rgba(11, 11, 11, 0.10);
+  --color-ok: #006300;
+  --color-bad: #8e2626;
+  --color-warn: #a86b00;
+
+  --cds-border: rgba(11, 11, 11, 0.10);
+  --cds-chart-axis: #c3c2b7;
+  --cds-chart-grid: rgba(11, 11, 11, 0.10);
+  --cds-chart-reference: #898781;
+  --cds-surface-popover: #ffffff;
+  --cds-text-secondary: #52514e;
+  --cds-shadow-popover: 0 8px 24px #0000001f, 0 2px 6px #00000014;
+
+  --cds-font-size-caption: 0.75rem;
+  --cds-font-size-body: 0.875rem;
+  --cds-font-size-heading: 0.9375rem;
+  --cds-font-size-title: 1.375rem;
+  --cds-font-weight-medium: 500;
+  --cds-gap-xs: 0.5rem;
+  --cds-gap-sm: 0.75rem;
+  --cds-gap-md: 1rem;
+  --cds-gap-lg: 1.75rem;
+  --cds-pad-xs: 0.25rem;
+  --cds-pad-sm: 0.5rem;
+  --cds-pad-md: 0.75rem;
+  --cds-pad-lg: 1rem;
+  --cds-radius: 0.5rem;
+  --cds-dur-slow: 0.45s;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0b0b0b;
+    --color-panel: #1a1a19;
+    --color-fg: #f0efec;
+    --color-fg-muted: #6d6b67;
+    --color-border-line: rgba(255, 255, 255, 0.10);
+    --color-ok: #0ca30c;
+    --color-bad: #ec7e7e;
+    --color-warn: #e0a030;
+
+    --cds-border: rgba(255, 255, 255, 0.10);
+    --cds-chart-axis: #383835;
+    --cds-chart-grid: rgba(255, 255, 255, 0.10);
+    --cds-chart-reference: #97958d;
+    --cds-surface-popover: #20201f;
+    --cds-text-secondary: #c3c2b7;
+    --cds-shadow-popover: 0 8px 24px #00000052, 0 2px 6px #0003;
+  }
+}
+
+/* Muted text in dark mode reads better a touch lighter. */
+@media (prefers-color-scheme: dark) {
+  :root { --color-fg-muted: #9a988f; }
+}
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--cds-font-size-body);
+  line-height: 1.4;
+}
+
+.site {
+  box-sizing: border-box;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 3rem;
+}
+@media (max-width: 640px) {
+  .site { padding: 1rem 1rem 2.5rem; }
+}
+
+#dash-root { min-width: 0; }
+#dash-root *, #dash-root *::before, #dash-root *::after { box-sizing: border-box; }
+
+/* Loading placeholder used by the page while data arrives. */
+.dash-skeleton { position: relative; }
+#dash-root .tr-chart.dash-skeleton,
+#dash-root .tr-standings.dash-skeleton,
+#dash-root .tr-multiples.dash-skeleton,
+#dash-root .tr-matrix-box.dash-skeleton {
+  border-radius: var(--cds-radius);
+  background: linear-gradient(90deg, transparent 0%, var(--cds-chart-grid) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: race-shimmer 1.4s ease-in-out infinite;
+}
+span.dash-skeleton { color: var(--color-fg-muted); }
+@keyframes race-shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+@media (prefers-reduced-motion: reduce) { .dash-skeleton { animation: none !important; } }
+
+/* The small multiples are measured one by one as they are added; keeping
+   empty grid tracks (auto-fill) gives every cell its final width at once. */
+#dash-root .tr .tr-multiples { grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
+
+.site-foot {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-line);
+  font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted);
+}
