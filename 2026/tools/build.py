@@ -44,7 +44,11 @@ def main() -> None:
     version = data_version()
     week, date, leader, total = latest_week()
     title = "THE RACE 2026 — bilan de la saison"
-    desc = f"Classement après la semaine {week} ({date}) : {leader} en tête avec {total:,} points.".replace(",", " ")
+    mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
+            "septembre", "octobre", "novembre", "décembre"]
+    y, m, d = (int(x) for x in date.split("-"))
+    pts = f"{total:,}".replace(",", "\u202f")
+    desc = f"Classement après la semaine {week} ({d} {mois[m - 1]} {y}) : {leader} en tête avec {pts} points."
     preview = (ROOT / "preview.png").exists()
     og_image = (
         f'  <meta property="og:image" content="{SITE_URL}preview.png?v={version}">\n'
