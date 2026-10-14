@@ -566,7 +566,7 @@ dash.calc('player_events', {
           else TR.hideTip(tip);
           return;
         }
-        const u = updates.reduce((a, b) => (Math.abs(b.d - dt) < Math.abs(a.d - dt) ? b : a), updates[0]);
+        const u = updates.reduce((a, b) => (Math.abs(b.d - dt) <= Math.abs(a.d - dt) ? b : a), updates[0]); // ties (two updates the same day) go to the later one
         const at = series.map((s) => ({ s, p: s.pts.find((p) => p.week === u.week) })).filter((d) => d.p).sort((a, b) => b.p.total - a.p.total);
         rule.style('display', null).attr('x1', x(u.d)).attr('x2', x(u.d));
         dots.style('display', null).selectAll('circle').data(at).join('circle').attr('r', 4).attr('cx', x(u.d)).attr('cy', (d) => y(d.p.total)).attr('fill', (d) => d.s.color);
