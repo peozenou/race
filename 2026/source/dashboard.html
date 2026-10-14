@@ -124,7 +124,7 @@
       </div>
       <div class="tr-card" id="duels-card">
         <h2>Duels gagnés entre équipes</h2>
-        <p class="tr-note">Victoires des joueurs de l'équipe en ligne sur ceux de l'équipe en colonne, forfaits compris ; chaque victoire vaut 5 points. Matchs jusqu'au <span id="duel-asof" data-source="players" data-field="matches_through" data-row="0">—</span>.</p>
+        <p class="tr-note">Victoires des joueurs de l'équipe en ligne sur ceux de l'équipe en colonne, forfaits compris ; chaque victoire vaut 5 points. Tournois commencés jusqu'au <span id="duel-asof" data-source="players" data-field="matches_through" data-row="0">—</span>.</p>
         <div class="tr-matrix-box dash-skeleton" id="duel-matrix"></div>
       </div>
     </div>
@@ -148,7 +148,7 @@
 
     <div class="tr-card" id="scatter-card">
       <h2>Tournois disputés et points par tournoi</h2>
-      <p class="tr-note">Chaque bulle est un joueur : nombre de tournois disputés en 2026 (horizontal) et points Race moyens par tournoi (vertical) ; la surface de la bulle suit son total de points Race. Sont comptés les tournois où il a joué au moins un match, qualifications comprises, hors Coupe Davis et Laver Cup, qui ne rapportent pas de points ATP. Le filtre d'équipe s'applique aussi à ce graphique ; les axes restent à l'échelle des 30 joueurs, pour comparer les équipes entre elles. Données de la semaine 33.</p>
+      <p class="tr-note">Chaque bulle est un joueur : nombre de tournois disputés en 2026 (horizontal) et points Race moyens par tournoi (vertical) ; la surface de la bulle suit son total de points Race. Sont comptés les tournois où il a joué au moins un match, qualifications comprises, hors Coupe Davis et Laver Cup, qui ne rapportent pas de points ATP. Le filtre d'équipe s'applique aussi à ce graphique ; les axes restent à l'échelle de tous les joueurs, pour comparer les équipes entre elles. Données de la dernière mise à jour.</p>
       <div class="tr-legend" id="scatter-legend" aria-hidden="true"></div>
       <div class="tr-chart dash-skeleton" id="scatter-chart" data-source="player_events team_colors"></div>
     </div>
@@ -157,7 +157,7 @@
       <div class="tr-card-head">
         <div>
           <h2>Joueurs</h2>
-          <p class="tr-note">Points Race et gains : JOUEURS. Bilan, titres, duels, classement ATP et Elo : publication de la semaine 33. Cliquez sur une ligne pour voir la saison du joueur.</p>
+          <p class="tr-note">Points Race et gains : JOUEURS. Bilan, titres, duels, classement ATP et Elo : dernière mise à jour. Cliquez sur une ligne pour voir la saison du joueur.</p>
         </div>
         <input type="search" class="tr-search" id="player-search" placeholder="Rechercher un joueur" aria-label="Rechercher un joueur">
       </div>
@@ -233,6 +233,7 @@
           <li><b>Race</b> : somme des points ATP Race des six joueurs de l'équipe (Tennis Explorer), plus tout ajustement d'équipe approuvé.</li>
           <li><b>Duels</b> : 5 points pour chaque victoire d'un joueur de l'équipe sur un joueur d'une autre équipe, comptée lorsque la date du tournoi sur Tennis Abstract précède la clôture du lundi.</li>
           <li><b>Total</b> = Race + Duels. Le classement s'appuie sur les effectifs actuels, et non sur l'appartenance au moment de chaque match.</li>
+          <li><b>Transferts</b> : l'équipe garde les points Race et de duel acquis par le joueur sortant ; le joueur entrant ne compte que les points gagnés après son arrivée. <span id="transfers-list" data-source="players">—</span></li>
         </ul>
       </div>
       <div class="tr-card" id="sources-card">
@@ -242,7 +243,7 @@
           <dt>Totaux d'équipe</dt><dd>Feuille HEBDO du classeur, instantané. Dernière mise à jour : <span id="src-week" data-source="standings" data-field="date" data-row="0">—</span>.</dd>
           <dt>Points Race des joueurs</dt><dd>Feuille JOUEURS du classeur, instantané.</dd>
           <dt>Couleurs des équipes</dt><dd>Celles du classeur.</dd>
-          <dt>Matchs et duels</dt><dd>Tennis Abstract ; matchs jusqu'au <span id="src-matches" data-source="players" data-field="matches_through" data-row="0">—</span>.</dd>
+          <dt>Matchs et duels</dt><dd>Tennis Abstract, copiés dans le classeur ; tournois commencés jusqu'au <span id="src-matches" data-source="players" data-field="matches_through" data-row="0">—</span>.</dd>
           <dt>Classements ATP et Race</dt><dd>Tennis Explorer, <span id="src-rank" data-source="players" data-field="rankings_date" data-row="0">—</span>.</dd>
           <dt>Elo et yElo</dt><dd>Tennis Abstract, <span id="src-elo" data-source="players" data-field="elo_date" data-row="0">—</span>.</dd>
           <dt>Calendrier</dt><dd>Calendrier ATP Tour 2026 (Grand Chelem et Masters 1000).</dd>
@@ -372,7 +373,7 @@ dash.calc('player_levels', {
 dash.calc('player_events', {
   inputs: ['matches', 'players'],
   title: 'Tournois et points par tournoi',
-  description: "Pour chaque joueur : tournois 2026 disputés (au moins un match joué hors forfait, qualifications comprises, hors Coupe Davis et Laver Cup), points Race à la semaine 33 et points Race moyens par tournoi.",
+  description: "Pour chaque joueur : tournois 2026 disputés (au moins un match joué hors forfait, qualifications comprises, hors Coupe Davis et Laver Cup), points Race à la dernière mise à jour et points Race moyens par tournoi.",
   fn: (matches, players) => {
     const seen = new Map();
     matches.forEach((m) => {
@@ -844,7 +845,13 @@ dash.calc('player_events', {
     el.replaceChildren(); el.style.minHeight = H + 'px';
     const svg = TR.svg(el, W, H, 'Points Race du joueur choisi à chaque mise à jour');
     const pts = rows.slice().sort((a, b) => a.week - b.week);
-    if (pts.length < 2) return;
+    if (pts.length < 2) {
+      el.replaceChildren(); el.style.minHeight = '';
+      const n = document.createElement('p'); n.className = 'tr-empty-msg';
+      n.textContent = pts.length ? `Arrivé dans l'équipe à la semaine ${pts[0].week} : ses points comptent à partir des mises à jour suivantes.` : 'Pas encore de points comptés pour l’équipe.';
+      el.append(n);
+      return;
+    }
     const dates = new Map(hebdo.map((h) => [h.week, h.date]));
     const y = d3.scaleLinear([0, d3.max(pts, (d) => d.race) || 1], [0, 1]).nice();
     const yt = y.ticks(4);
@@ -1097,6 +1104,20 @@ dash.calc('player_events', {
     $('src-matches').textContent = p0 ? TR.dateY(p0.matches_through) : '—';
     $('src-rank').textContent = p0 ? TR.dateY(p0.rankings_date) : '—';
     $('src-elo').textContent = p0 ? TR.dateY(p0.elo_date) : '—';
+    const tl = $('transfers-list');
+    if (p0) {
+      const moves = new Map();
+      pl.data.filter((p) => p.transfer_date).forEach((p) => {
+        const k = p.team + '|' + p.transfer_date;
+        const m = moves.get(k) || { team: p.team, date: p.transfer_date, out: [], in: [] };
+        const name = p.short.replace(/ \((sorti|entré)\)$/, '');
+        if (/\(sorti\)$/.test(p.short)) m.out.push(name); else m.in.push(name);
+        moves.set(k, m);
+      });
+      tl.textContent = moves.size
+        ? [...moves.values()].map((m) => `${m.team} : ${m.out.join(', ') || '—'} sorti, ${m.in.join(', ') || '—'} entré le ${TR.dateY(m.date)}.`).join(' ')
+        : 'Aucun transfert cette saison.';
+    } else tl.textContent = '—';
     const sd = dash.data('standings');
     $('src-week').textContent = sd.status === 'ok' && sd.data.length ? `semaine ${sd.data[0].week}, ${TR.dateY(sd.data[0].date)}` : '—';
   };
