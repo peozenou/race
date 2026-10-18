@@ -1,29 +1,75 @@
-# race
-Tennis fantasy race folder with Tristan, Remy, François, and Jules. THE RACE — ligue de fantasy tennis entre amis : classements, duels entre équipes et statistiques des joueurs, saison par saison. Saison 2026 en cours, mise à jour chaque lundi ; saisons précédentes à venir.
+# THE RACE
 
-**Site :** https://peozenou.github.io/race/ · saison 2026 : https://peozenou.github.io/race/2026/
+THE RACE is a fantasy tennis league with five teams. This repository holds the public season dashboards and the approved professional-player data they use.
 
-## Organisation
+[All seasons](https://peozenou.github.io/race/) · [2026 dashboard](https://peozenou.github.io/race/2026/)
 
-| Dossier | Contenu |
+Repository documentation is maintained in English. Existing worksheet names, JSON field names and the dashboard's French interface retain their established names.
+
+## Start here
+
+- [Weekly update workflow](docs/weekly-workflow.md): the six-step sequence, individual skill triggers, Sunday/Monday handoff, audit clearance and progress tracking.
+- [Dashboard data and release contract](docs/data-and-releases.md): the six JSON datasets, source authority, transfer history, validation and the handoff to Claude.
+
+## Weekly process
+
+The Race update runs in this order:
+
+| Step | Task | Codex skill |
+|---|---|---|
+| 1 | Update player statistics from Tennis Abstract's displayed Serve/Return tables | `$race-update-ta` |
+| 2 | Update Tennis Explorer ranking tables in LIVE and the frozen weekly snapshot | `$race-update-te` |
+| 3 | Update HEBDO, TEAMS, JOUEURS, BILAN and derived team calculations | `$race-update-summary` |
+| 4 | Verify steps 1–3 and obtain Patrick's clearance of the reviewed state | `$race-audit` |
+| 5 | Export the cleared data to this repository's existing JSON data store | `$race-export-dashboard` |
+| 6 | Prepare and verify an unsent weekly Gmail draft | `$race-draft-email` |
+
+`$update-the-race` coordinates the sequence, displays all six steps and resumes the first incomplete step of the identified run. Each step can also be triggered separately. Step 5 waits for Patrick's explicit clearance at step 4.
+
+Two tasks run independently of that sequence and each other:
+
+- `$tennis-update-elo`: update the separate Elo-Import workbook from both complete Tennis Abstract Elo/yElo reports. Unchanged reports do not hold up Race.
+- `$tiago-update-data`: maintain private MatchTrack statistics and user-supplied UTR observations. Its two submodules have separate outcomes; their data stays outside this public repository.
+
+Step 1 can begin provisionally on Sunday. Monday's cutoff and pending-result recheck completes it before steps 2–6 proceed. These are on-demand workflows; documenting them does not configure a schedule. Routine HEBDO/BILAN PNG production has been removed.
+
+The skills and local progress helpers are installed in Patrick's Codex environment. This repository documents their operating contract; cloning it does not install skills or grant access to Sheets, Gmail or private data.
+
+## Repository layout
+
+| Path | Purpose |
 |---|---|
-| `index.html` | Page d'accueil : liste des saisons |
-| `2026/` | Tableau de bord de la saison 2026 (même code que la version maîtresse tenue dans Claude) |
-| `2026/data/` | Données de la semaine : totaux d'équipe (HEBDO), points Race des joueurs (JOUEURS), statistiques des joueurs, matchs, calendrier, couleurs |
-| `2026/source/dashboard.html` | Code de la page exporté du tableau de bord Claude |
-| `2026/assets/` | Petit moteur qui charge les données (`runtime.js`), thème (`theme.css`), d3 v7.9.0 (licence ISC, © Mike Bostock) |
-| `2026/tutoriel.mp4` | Vidéo de 1 min 30 : comment naviguer dans le tableau de bord 2026 |
-| `2026/tools/` | `build.py` reconstruit `2026/index.html` ; `preview.py` régénère l'image d'aperçu WhatsApp ; `tutorial.py` réenregistre la vidéo |
+| `index.html` | Season landing page |
+| `2026/` | Published 2026 dashboard |
+| `2026/data/` | Approved JSON data for the dashboard |
+| `2026/source/dashboard.html` | Dashboard source maintained with Claude |
+| `2026/assets/` | Data-loading runtime, theme and vendored d3 v7.9.0 |
+| `2026/tools/build.py` | Build `2026/index.html` and its data-version token |
+| `2026/tools/preview.py` | Optional social-preview image generation |
+| `2026/tools/tutorial.py` | Optional tutorial recording |
+| `2026/tutoriel.mp4` | Dashboard navigation tutorial |
+| `docs/` | Workflow and data-release documentation |
 
-Une saison précédente s'ajoute dans son propre dossier (`2025/`, `2024/`…) et une carte sur la page d'accueil.
+A historical season can have its own directory, such as `2025/`, and a corresponding landing-page entry. Resolve its actual workbook and data contract before adding it. Current acquisition adapters are season-specific.
 
-## Mise à jour hebdomadaire
+## Publish an approved data release
 
-Après validation de la mise à jour du lundi :
+After steps 1–4 and Patrick's clearance, step 5 prepares a complete candidate release from the reviewed workbook state, validates all six JSON datasets and checks the current repository head. It commits only the intended release files and any necessary generated page output, then verifies them from GitHub.
 
-1. Remplacer les fichiers de `2026/data/` par le nouvel instantané (mêmes noms).
-2. Si la page a changé dans Claude, remplacer `2026/source/dashboard.html`.
-3. `python3 2026/tools/build.py` (et `2026/tools/preview.py` sur un serveur local pour une nouvelle image d'aperçu).
-4. Commit et push sur `main` : GitHub Pages republie en une à deux minutes.
+When data or dashboard source changes, rebuild the generated page from the repository root:
 
-Sources : Tennis Abstract (matchs, bilans, Elo/yElo) et Tennis Explorer (classements et points ATP et Race).
+```sh
+python3 2026/tools/build.py
+```
+
+The builder reads all six JSON files and `2026/source/dashboard.html`. It updates the generated page's metadata and cache-version token. A documentation-only change does not require this build. Preview images and tutorial recordings are separate, optional tasks.
+
+Keep three outcomes distinct: **data exported to GitHub**, **dashboard rebuilt**, and **live dashboard verified**. Check the served data and page version before claiming the live site contains a release. Step 6 may prepare the email after a verified data export while a dashboard refresh is pending, provided the draft describes that state accurately. A saved or validated draft is not authorization to send it.
+
+## Sources and history
+
+Tennis Abstract's displayed player tables own match statistics; its complete Elo/yElo reports own ratings. Tennis Explorer owns Race/ATP ranking snapshots. Approved league rules and transfer records own fantasy scoring. Preserve their separate source dates and missing-value meanings.
+
+There are 30 active selections, six per team. Published history can include outgoing players as well as the active roster, so public datasets can contain more than 30 player records. Preserve approved transfer credit and frozen history rather than filtering everything down to the current selection.
+
+See the [data and release contract](docs/data-and-releases.md) for validation, publication and rollback details. d3 is distributed under the ISC license, copyright Mike Bostock.

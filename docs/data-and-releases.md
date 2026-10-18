@@ -1,0 +1,102 @@
+# Dashboard data and release contract
+
+The dashboard uses the existing six-file JSON data store in `2026/data/`. Google Sheets is the operational review surface; a public JSON release is a downstream export of a cleared workbook state. A data refresh should preserve the consumed schemas and source meanings.
+
+## Source authority
+
+| Source | Owns | Boundary |
+|---|---|---|
+| Tennis Abstract displayed Serve/Return | Player match statistics | Displayed blanks remain blank; hidden raw data must not fill them |
+| Tennis Abstract complete Elo/yElo reports | Published rating snapshots | Keep separate publication dates, complete tables and historical pairs |
+| Tennis Explorer | Race/ATP ranking snapshots | Verify actual publication, table/page coverage and unique identities |
+| Approved league rules and transfer records | Fantasy points and retained credits | Preserve versioned rules, scoped exceptions, offsets and frozen history |
+| Cleared workbook readback | Exported operational results | Bind public output to the same reviewed inputs and cutoff |
+
+Race points can legitimately decrease in a published ranking. Investigate anomalies against dated source evidence; do not replace observations with a running maximum. Missing rows, missing statistics, genuine published zeros and approved league exceptions are different states.
+
+## Datasets
+
+| File | Grain and key fields | Export source |
+|---|---|---|
+| `hebdo.json` | Team × competition week: `week`, `date`, `team`, `race`, `duels`, `total` | Cleared HEBDO effective history, including the established week-0 baseline |
+| `joueurs.json` | Player/contribution × week: `team`, `player`, `week`, `race` | Cleared JOUEURS history plus approved outgoing/incoming contribution mappings |
+| `players.json` | Active and retained outgoing player summaries | Approved player/summary values, selected TE/Elo snapshots and transfer metadata |
+| `matches.json` | Player perspective on a match | Approved current-season player inputs and documented perspective/contest mapping |
+| `calendar.json` | Event schedule | Existing approved calendar unless an event update is separately in scope |
+| `team_colors.json` | Team palette: `team`, `color` | Existing approved five-team palette |
+
+The runtime accepts row arrays and supported row wrappers; preserve the actual current representation and complete key sets when exporting. Existing field names stay unchanged even though this documentation is English.
+
+The current player summary schema includes identity/team/display labels; wins/losses, walkovers, tour-level and surface counts; titles/finals; duel statistics; serve/return metrics; best-win fields; ATP/Race rankings and points; Elo/surface Elo/yElo; age; `matches_through`, `rankings_date`, `elo_date` and `transfer_date`.
+
+The match schema includes `mid`, `player`, `short`, `team`, `event_date`, `event`, `level`, `surface`, `round`, `result`, `walkover`, `opponent`, `opponent_team`, `opponent_rank` and `score`. Inspect actual keys before modifying an export. Do not add a field or change its meaning merely to simplify a new script.
+
+## Identities, dates and transfers
+
+There are 30 active selections, six per team. Historical public datasets may contain more players or current-week contribution rows because outgoing earned credit is retained. A transfer does not authorize deletion of the outgoing player's matches, points or history. The Sinner/Lehecka representation already illustrates this distinction; do not enforce a blanket 30-row limit on public files.
+
+Maintain an explicit source-to-export identity and transfer mapping. Display names and labels such as “entered” or “left” are not a substitute for the approved ledger. Distinguish a player's raw TE points, outgoing credit kept by a team, incoming gains after entry and a deliberately held incoming contribution. An unknown entry baseline is not an observed zero. Keep the baseline unresolved and guard the dependent gains until verified.
+
+Preserve frozen history when a slot changes identity. Do not recast an outgoing player's historical points as the incoming player's past performance. If a compatibility view uses slot history, document that lineage in private release evidence and preserve the established public representation deliberately.
+
+Keep competition dates and actual ranking/rating publication dates separate. `hebdo.date` retains the approved workbook's competition/update-date meaning. Do not relabel a competition Monday to an earlier ranking publication date. `rankings_date` and `elo_date` retain the selected source dates. TA's `event_date` may be the tournament start date; it is not automatically the match's completion timestamp.
+
+Keep a stable source-key mapping privately for contests and player perspectives. Export IDs such as `M0001` are display identifiers, not proof of a stable contest key. Two selected players can legitimately create two perspectives on one contest; duplicate the perspective neither within one file nor on rerun.
+
+## Missing values and calculations
+
+Preserve nulls and their source reasons in release evidence. Do not turn a failed lookup into zero or carry an older value forward as a new observation. If the dashboard cannot safely display an approved null, identify that compatibility issue rather than fabricate a value.
+
+Prefer approved effective summary cells to a fresh calculation. When recomputation is needed, document eligibility, classification and denominators. Do not average displayed percentages to create a count-weighted rate without actual counts. Keep walkover/retirement handling, main-tour definitions, title/final criteria, surfaces, duel rules and transfer boundaries consistent with the cleared workbook. Missing opportunities yield an unavailable rate, not an invented percentage.
+
+Reconcile each team's Race, Duels and any explicit adjustment to Total. An adjustment already included in Race must not be added again. Do not expect unadjusted current-player TE sums to equal a team total when retained transfer credit or approved offsets apply.
+
+## Step-5 release procedure
+
+1. **Confirm clearance and state.** Read Patrick's exact final review approval and its workbook/source/roster/rules/cutoff fingerprint. Freshly reread the relevant Sheet values before extraction. A changed dependency returns to its owning step for verification and renewed affected clearance.
+2. **Read current repository state.** Check remote HEAD, current schemas and any concurrent data/dashboard changes. Build on that state; a local checkout can be stale.
+3. **Prepare an immutable candidate.** Include all six datasets and a private manifest, source-to-export comparison and Claude handoff note. Preserve unchanged calendar/colors and the current source/dashboard design unless separately in scope.
+4. **Validate all fields and coverage.** Compare exported values against independently prepared cleared-source evidence, not an expected file generated from the candidate itself. Run structural and internal checks as well as the source comparison.
+5. **Review the bounded diff.** Keep it to intended data files and necessary existing build output. Detect concurrent edits before publication. Prefer one commit for the complete release so the branch does not expose a mixture of six sequential file updates.
+6. **Commit and read back.** Verify all intended file hashes at the resulting GitHub commit. Save the commit, previous version and exact row/field counts in the private release receipt.
+7. **Record dashboard state separately.** Rebuild when needed, then verify the served page/data/version before claiming the live dashboard is current. A GitHub file update alone is not live verification.
+
+Required validation includes unique grains, five teams, 30 active selections, explicit archived membership, complete expected historical/current contribution sets, correct source dates, all five totals, consistent transfer rules, native types, missingness and no private fields. Exact public row counts come from the approved release contract rather than a hardcoded historical count.
+
+The locally installed `check_dashboard.py` helper checks six-file structure/internal consistency against an independently prepared expectation contract. It does not read Sheets or establish source truth by itself. It is part of the Codex skill environment and is not assumed to exist after cloning this repository.
+
+## Build and deployment
+
+From the repository root:
+
+```sh
+python3 2026/tools/build.py
+```
+
+The existing builder reads the six datasets and `2026/source/dashboard.html`, computes a data-version hash and writes `2026/index.html`. The generated page's metadata and asset/data cache version must match the release. Keep changes to Claude's dashboard source intentional; do not overwrite concurrent source, runtime, theme, tutorial or landing-page changes with a stale local copy.
+
+Documentation-only commits do not need a dashboard rebuild. Social-preview generation and tutorial recording are optional separate work. Do not treat the removed weekly HEBDO/BILAN PNG step as a requirement to regenerate these existing site assets.
+
+Track outcomes separately:
+
+| Outcome | Evidence |
+|---|---|
+| Candidate staged | Complete local bundle and validation evidence |
+| GitHub data export verified | Resulting commit and readback hashes of the intended data files |
+| Claude handoff prepared | Release note with source/date/scope/check instructions |
+| Dashboard rebuilt | Generated page and data-version match the intended release |
+| Live verified | Served page and datasets match the recorded release/version |
+
+Step 5 is complete at the verified GitHub export with its prepared handoff. A dashboard refresh can remain pending, and the step-6 email must describe that accurately. Do not contact another assistant automatically.
+
+## Claude handoff and rollback
+
+The handoff should state the release ID, target competition week/date, cutoff, true source dates, GitHub commit, changed files/counts, five totals, retained qualifications, transfer holds, schema/null/lineage considerations and build/live status. Include checks for team/player filters, history charts, table counts, source-date labels and preserved tutorial behavior.
+
+Keep the previous approved commit and release manifest. If publication is wrong, prepare a bounded revert or corrective revision from the verified previous state, record why it was superseded and repeat affected checks. Do not force-push or discard unrelated concurrent work.
+
+## Public/private boundary
+
+Publish only the approved professional-player datasets and intended dashboard assets/documentation. Keep private junior statistics, MatchTrack files, UTR observations, mail headers/addresses, credentials, personal filesystem paths, Sheet backup payloads and human approval records out of this repository. Mentioning the independent private workflow does not make its inputs public.
+
+Record detailed source manifests, null reasons, checks, approval hashes, backup links, stable identity mappings and revision history in private run/release storage. A future public provenance format would require its own explicit schema and publication decision; it is not an automatic seventh dashboard dataset.
