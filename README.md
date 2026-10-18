@@ -11,6 +11,18 @@ Repository documentation is maintained in English. Existing worksheet names, JSO
 - [Weekly update workflow](docs/weekly-workflow.md): the six-step sequence, individual skill triggers, Sunday/Monday handoff, audit clearance and progress tracking.
 - [Dashboard data and release contract](docs/data-and-releases.md): the six JSON datasets, source authority, transfer history, validation and the handoff to Claude.
 
+## Contributors and responsibilities
+
+ChatGPT/Codex and Claude contribute to the process, with Patrick making the final decisions.
+
+| Contributor | Main responsibilities |
+|---|---|
+| ChatGPT / Codex | Source acquisition, Google Sheets updates, audits, progress tracking, cleared GitHub data exports and unsent Gmail drafts; independent Elo and private-statistics workflows |
+| Claude | Dashboard development and updates using the approved GitHub data release, including the dashboard source, presentation and release checks |
+| Patrick | Final data clearance, roster/scoring decisions and explicit email-sending authorization |
+
+GitHub is the shared handoff point. Each contributor checks the latest repository state and preserves the other's changes. Handoffs are explicitly triggered; automatic communication between ChatGPT/Codex and Claude is not configured. See [contributors and handoff](docs/weekly-workflow.md#contributors-and-handoff) for the collaboration contract.
+
 ## Weekly process
 
 The Race update runs in this order:

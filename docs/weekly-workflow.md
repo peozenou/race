@@ -19,6 +19,24 @@ The order is **1 → 2 → 3 → 4 → Patrick's clearance → 5 → 6**. Read-o
 
 TEAMS may be a worksheet, named table or equivalent team block in the actual workbook. Resolve that mapping before claiming it was updated. Do not create an assumed tab solely to match the process label.
 
+## Contributors and handoff
+
+**ChatGPT/Codex and Claude are both contributors.** Their primary responsibilities are complementary:
+
+| Contributor | Responsibility |
+|---|---|
+| ChatGPT / Codex | Prepare and verify source data, update Google Sheets, maintain progress and evidence, perform the audit, export the cleared GitHub release and prepare the unsent Gmail draft. Also handle the independent Elo and private-statistics tasks. |
+| Claude | Develop and update the dashboard from the cleared GitHub data release, maintain its source and presentation, and check that the dashboard reflects the intended release. |
+| Patrick | Clear the final reviewed data state, decide roster/scoring changes and explicitly authorize any email sending. |
+
+The Codex skills implement the task sequence in Patrick's installed environment. ChatGPT can contribute to planning, review and analysis using the access available in its session; contributor roles do not imply that every assistant has the same tools or private-data access.
+
+GitHub provides the shared, versioned handoff. After Patrick clears step 4, the step-5 handoff identifies the verified data commit, source dates, scope and remaining dashboard checks. Claude uses that identified release for dashboard work. Preparing the handoff does not automatically notify or start Claude; Patrick explicitly triggers the next contributor. No automatic ChatGPT/Codex–Claude communication is configured.
+
+Before editing or publishing, either contributor checks the current remote HEAD and the latest relevant documentation, then preserves the other's concurrent changes. Both can update repository documentation and make scoped technical fixes when asked. Dashboard work does not silently change cleared data or league rules: a discovered data issue returns to the owning update/audit step, with affected clearance and release status reviewed again.
+
+Patrick's step-4 clearance, dashboard verification, draft validation and email-sending authorization remain separate records. Keep private junior information and detailed approval evidence outside the public handoff.
+
 ## Coordinator and individual triggers
 
 Use `$update-the-race` to identify the run, display progress or continue an overall weekly update. Use a task's own skill to perform only that task. A one-step request stops at that step's verified result and progress summary. An overall update continues in order through the existing approval boundaries.
