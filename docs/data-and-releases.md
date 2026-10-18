@@ -57,17 +57,17 @@ Reconcile each team's Race, Duels and any explicit adjustment to Total. An adjus
 2. **Read current repository state.** Check remote HEAD, current schemas and any concurrent data/dashboard changes. Build on that state; a local checkout can be stale.
 3. **Prepare an immutable candidate.** Include all six datasets and a private manifest, source-to-export comparison and Claude handoff note. Preserve unchanged calendar/colors and the current source/dashboard design unless separately in scope.
 4. **Validate all fields and coverage.** Compare exported values against independently prepared cleared-source evidence, not an expected file generated from the candidate itself. Run structural and internal checks as well as the source comparison.
-5. **Review the bounded diff.** Keep it to intended data files and necessary existing build output. Detect concurrent edits before publication. Prefer one commit for the complete release so the branch does not expose a mixture of six sequential file updates.
-6. **Commit and read back.** Verify all intended file hashes at the resulting GitHub commit. Save the commit, previous version and exact row/field counts in the private release receipt.
-7. **Record dashboard state separately.** Rebuild when needed, then verify the served page/data/version before claiming the live dashboard is current. A GitHub file update alone is not live verification.
+5. **Review the bounded data diff.** Keep it to the six intended data files on a dedicated release branch. Detect concurrent edits. Prefer one commit for the complete data release; production publication and generated page output belong to Claude in step 6.
+6. **Commit, read back and hand off.** Verify all six hashes at the release-branch commit. Save release ID/branch/commit, previous version, counts and the Claude handoff in the private receipt. Keep production pending until Claude completes step 6.
+The step-5 handoff is not dashboard production. Pass the exact release to Claude for the required step 6 described below.
 
 Required validation includes unique grains, five teams, 30 active selections, explicit archived membership, complete expected historical/current contribution sets, correct source dates, all five totals, consistent transfer rules, native types, missingness and no private fields. Exact public row counts come from the approved release contract rather than a hardcoded historical count.
 
 The locally installed `check_dashboard.py` helper checks six-file structure/internal consistency against an independently prepared expectation contract. It does not read Sheets or establish source truth by itself. It is part of the Codex skill environment and is not assumed to exist after cloning this repository.
 
-## Build and deployment
+## Step 6 — Claude build, publication and live verification
 
-From the repository root:
+Claude owns this production step. Read the [production runbook](claude-dashboard-production.md), the exact approved data release and current remote HEAD. Incorporate that release, make the data-driven dashboard update and run the existing builder from the repository root:
 
 ```sh
 python3 2026/tools/build.py
@@ -87,7 +87,7 @@ Track outcomes separately:
 | Dashboard rebuilt | Generated page and data-version match the intended release |
 | Live verified | Served page and datasets match the recorded release/version |
 
-Step 5 is complete at the verified GitHub export with its prepared handoff. A dashboard refresh can remain pending, and the step-6 email must describe that accurately. Do not contact another assistant automatically.
+Step 5 is complete at the verified release-branch export with its prepared handoff. Step 6 remains `awaiting_claude` until Claude publishes and verifies the updated live dashboard. Step 7 is blocked until that production receipt matches the approved release, then saves an unsent Gmail draft containing the verified live dashboard link. Do not contact another assistant automatically.
 
 ## Claude handoff and rollback
 

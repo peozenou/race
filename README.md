@@ -8,7 +8,8 @@ Repository documentation is maintained in English. Existing worksheet names, JSO
 
 ## Start here
 
-- [Weekly update workflow](docs/weekly-workflow.md): the six-step sequence, individual skill triggers, Sunday/Monday handoff, audit clearance and progress tracking.
+- [Weekly update workflow](docs/weekly-workflow.md): the seven-step sequence, individual skill triggers, Sunday/Monday handoff, audit clearance and progress tracking.
+- [Claude dashboard production](docs/claude-dashboard-production.md): the step-6 update, build, publication and live-verification runbook.
 - [Dashboard data and release contract](docs/data-and-releases.md): the six JSON datasets, source authority, transfer history, validation and the handoff to Claude.
 
 ## Contributors and responsibilities
@@ -18,7 +19,7 @@ ChatGPT/Codex and Claude contribute to the process, with Patrick making the fina
 | Contributor | Main responsibilities |
 |---|---|
 | ChatGPT / Codex | Source acquisition, Google Sheets updates, audits, progress tracking, cleared GitHub data exports and unsent Gmail drafts; independent Elo and private-statistics workflows |
-| Claude | Dashboard development and updates using the approved GitHub data release, including the dashboard source, presentation and release checks |
+| Claude | Own step 6: update, build, publish and verify the live Race dashboard using the approved step-5 release |
 | Patrick | Final data clearance, roster/scoring decisions and explicit email-sending authorization |
 
 GitHub is the shared handoff point. Each contributor checks the latest repository state and preserves the other's changes. Handoffs are explicitly triggered; automatic communication between ChatGPT/Codex and Claude is not configured. See [contributors and handoff](docs/weekly-workflow.md#contributors-and-handoff) for the collaboration contract.
@@ -27,23 +28,24 @@ GitHub is the shared handoff point. Each contributor checks the latest repositor
 
 The Race update runs in this order:
 
-| Step | Task | Codex skill |
+| Step | Task | Owner / entry point |
 |---|---|---|
 | 1 | Update player statistics from Tennis Abstract's displayed Serve/Return tables | `$race-update-ta` |
 | 2 | Update Tennis Explorer ranking tables in LIVE and the frozen weekly snapshot | `$race-update-te` |
 | 3 | Update HEBDO, TEAMS, JOUEURS, BILAN and derived team calculations | `$race-update-summary` |
 | 4 | Verify steps 1–3 and obtain Patrick's clearance of the reviewed state | `$race-audit` |
 | 5 | Export the cleared data to this repository's existing JSON data store | `$race-export-dashboard` |
-| 6 | Prepare and verify an unsent weekly Gmail draft | `$race-draft-email` |
+| 6 | Update, publish and verify the live Race dashboard from the approved release | Claude — [production runbook](docs/claude-dashboard-production.md); `$race-publish-dashboard` tracks the handoff/result |
+| 7 | Prepare and verify an unsent Gmail draft linking the updated dashboard | `$race-draft-email` |
 
-`$update-the-race` coordinates the sequence, displays all six steps and resumes the first incomplete step of the identified run. Each step can also be triggered separately. Step 5 waits for Patrick's explicit clearance at step 4.
+`$update-the-race` coordinates the sequence, displays all seven steps and resumes the first incomplete step of the identified run. Each step can also be triggered separately. Step 5 waits for Patrick's explicit clearance at step 4. Step 6 is owned by Claude. Step 7 waits for verified dashboard production and includes that updated dashboard link.
 
 Two tasks run independently of that sequence and each other:
 
 - `$tennis-update-elo`: update the separate Elo-Import workbook from both complete Tennis Abstract Elo/yElo reports. Unchanged reports do not hold up Race.
 - `$tiago-update-data`: maintain private MatchTrack statistics and user-supplied UTR observations. Its two submodules have separate outcomes; their data stays outside this public repository.
 
-Step 1 can begin provisionally on Sunday. Monday's cutoff and pending-result recheck completes it before steps 2–6 proceed. These are on-demand workflows; documenting them does not configure a schedule. Routine HEBDO/BILAN PNG production has been removed.
+Step 1 can begin provisionally on Sunday. Monday's cutoff and pending-result recheck completes it before steps 2–7 proceed. These are on-demand workflows; documenting them does not configure a schedule. Routine HEBDO/BILAN PNG production has been removed.
 
 The skills and local progress helpers are installed in Patrick's Codex environment. This repository documents their operating contract; cloning it does not install skills or grant access to Sheets, Gmail or private data.
 
@@ -66,7 +68,7 @@ A historical season can have its own directory, such as `2025/`, and a correspon
 
 ## Publish an approved data release
 
-After steps 1–4 and Patrick's clearance, step 5 prepares a complete candidate release from the reviewed workbook state, validates all six JSON datasets and checks the current repository head. It commits only the intended release files and any necessary generated page output, then verifies them from GitHub.
+After steps 1–4 and Patrick's clearance, step 5 prepares a complete candidate release from the reviewed workbook state, validates all six JSON datasets and checks the current repository head. It commits the six approved data files to a dedicated release branch, verifies them from GitHub and prepares the exact handoff. Claude then owns step 6: incorporate the release, update/build the dashboard, publish to production and verify the served version/data before step 7.
 
 When data or dashboard source changes, rebuild the generated page from the repository root:
 
@@ -76,7 +78,7 @@ python3 2026/tools/build.py
 
 The builder reads all six JSON files and `2026/source/dashboard.html`. It updates the generated page's metadata and cache-version token. A documentation-only change does not require this build. Preview images and tutorial recordings are separate, optional tasks.
 
-Keep three outcomes distinct: **data exported to GitHub**, **dashboard rebuilt**, and **live dashboard verified**. Check the served data and page version before claiming the live site contains a release. Step 6 may prepare the email after a verified data export while a dashboard refresh is pending, provided the draft describes that state accurately. A saved or validated draft is not authorization to send it.
+Keep three outcomes distinct: **data exported to GitHub**, **dashboard rebuilt**, and **live dashboard verified**. Check the served data and page version before claiming the live site contains a release. Step 7 prepares the email only after Claude's step-6 production is verified and links the updated live dashboard. A pending, stale or failed deployment blocks drafting. A saved or validated draft is not authorization to send it.
 
 ## Sources and history
 

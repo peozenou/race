@@ -2,7 +2,7 @@
 
 Process version: 18 October 2026.
 
-The weekly Race update consists of six ordered tasks. Each task has a specific owner, a completion record and an individual skill trigger. Elo and private player development statistics run independently. A failed source blocks the output that depends on it; it does not undo verified work in unrelated modules.
+The weekly Race update consists of seven ordered tasks. Each task has a specific owner, a completion record and an individual skill trigger. Elo and private player development statistics run independently. A failed source blocks the output that depends on it; it does not undo verified work in unrelated modules.
 
 ## Sequence and write ownership
 
@@ -13,9 +13,10 @@ The weekly Race update consists of six ordered tasks. Each task has a specific o
 | 3 | `$race-update-summary` | Derived team blocks in LIVE/snapshot; HEBDO, TEAMS, JOUEURS and BILAN | Formulas, five team totals, transfer rules, week alignment and historical protection are verified |
 | 4 | `$race-audit` | Independent external/internal checks and the final review packet | Required checks support the release and Patrick clears that exact reviewed state |
 | 5 | `$race-export-dashboard` | The cleared professional-player data release in this repository | The full source-to-export comparison and GitHub commit readback are verified; the Claude handoff is prepared |
-| 6 | `$race-draft-email` | One unsent Gmail draft to the verified league recipients | The saved draft's recipients, body, links and unsent status have been read back |
+| 6 | Claude — `$race-publish-dashboard` coordinates the handoff/result | Update, build, publish and verify the live Race dashboard from step 5 | Claude completion/deployment evidence and live data/version match the approved release; production URL is verified |
+| 7 | `$race-draft-email` | One unsent Gmail draft linking the updated dashboard | Step-6 production is verified and the saved draft's dashboard link, recipients, body and unsent status have been read back |
 
-The order is **1 → 2 → 3 → 4 → Patrick's clearance → 5 → 6**. Read-only preparation may overlap, but publication follows that sequence. Copying a prior snapshot's derived team blocks during step 2 does not make those calculations current; step 3 owns them.
+The order is **1 → 2 → 3 → 4 → Patrick's clearance → 5 → Claude production (6) → Gmail draft (7)**. Read-only preparation may overlap, but publication follows that sequence. Copying a prior snapshot's derived team blocks during step 2 does not make those calculations current; step 3 owns them.
 
 TEAMS may be a worksheet, named table or equivalent team block in the actual workbook. Resolve that mapping before claiming it was updated. Do not create an assumed tab solely to match the process label.
 
@@ -26,16 +27,16 @@ TEAMS may be a worksheet, named table or equivalent team block in the actual wor
 | Contributor | Responsibility |
 |---|---|
 | ChatGPT / Codex | Prepare and verify source data, update Google Sheets, maintain progress and evidence, perform the audit, export the cleared GitHub release and prepare the unsent Gmail draft. Also handle the independent Elo and private-statistics tasks. |
-| Claude | Develop and update the dashboard from the cleared GitHub data release, maintain its source and presentation, and check that the dashboard reflects the intended release. |
+| Claude | Own step 6: update/build the dashboard from the exact approved release, publish it to production and verify the live data, version and presentation before Gmail drafting. |
 | Patrick | Clear the final reviewed data state, decide roster/scoring changes and explicitly authorize any email sending. |
 
 The Codex skills implement the task sequence in Patrick's installed environment. ChatGPT can contribute to planning, review and analysis using the access available in its session; contributor roles do not imply that every assistant has the same tools or private-data access.
 
-GitHub provides the shared, versioned handoff. After Patrick clears step 4, the step-5 handoff identifies the verified data commit, source dates, scope and remaining dashboard checks. Claude uses that identified release for dashboard work. Preparing the handoff does not automatically notify or start Claude; Patrick explicitly triggers the next contributor. No automatic ChatGPT/Codex–Claude communication is configured.
+GitHub provides the shared, versioned handoff. After Patrick clears step 4, the step-5 handoff identifies the verified data commit, source dates, scope and remaining dashboard checks. Claude uses that identified release for the mandatory step-6 production stage. The coordinator records `awaiting_claude` and keeps step 7 pending until the production completion evidence is verified. Preparing the handoff does not automatically notify or start Claude; Patrick explicitly triggers the next contributor. No automatic ChatGPT/Codex–Claude communication is configured.
 
 Before editing or publishing, either contributor checks the current remote HEAD and the latest relevant documentation, then preserves the other's concurrent changes. Both can update repository documentation and make scoped technical fixes when asked. Dashboard work does not silently change cleared data or league rules: a discovered data issue returns to the owning update/audit step, with affected clearance and release status reviewed again.
 
-Patrick's step-4 clearance, dashboard verification, draft validation and email-sending authorization remain separate records. Keep private junior information and detailed approval evidence outside the public handoff.
+Patrick's step-4 clearance, Claude's step-6 production verification, step-7 draft validation and email-sending authorization remain separate records. Keep private junior information and detailed approval evidence outside the public handoff.
 
 ## Coordinator and individual triggers
 
@@ -47,10 +48,11 @@ Examples:
 |---|---|
 | “Start this week's Race update.” | Resolve one target Monday and competition week, show progress and begin the next authorized step |
 | “Run step 2 only for the same run.” | Verify step 1's completion; run the TE module without silently executing other steps |
-| “Show the weekly progress.” | Show all six steps and exact blockers; do not repeat writes |
+| “Show the weekly progress.” | Show all seven steps and exact blockers; do not repeat writes |
 | “Continue.” | Resume the identified run from its first incomplete step using verified evidence and unchanged approvals |
 | “Audit the update.” | Execute step 4 and present the exact state for Patrick's clearance |
-| “Continue with the export and draft.” | After clearance, complete steps 5 and 6 within their defined scopes |
+| “Continue after clearance.” | Prepare the step-5 release/handoff, await Claude's verified step-6 production, then prepare step 7 |
+| “Run dashboard production in Claude.” | Give Claude the exact release and [step-6 runbook](claude-dashboard-production.md); return its completion evidence to the coordinator |
 
 If more than one run is unresolved, identify the candidates before resuming. Do not choose a run from a folder timestamp alone. These skills are local Codex capabilities; the documentation does not install them into another assistant's environment.
 
@@ -97,7 +99,7 @@ Use PASS only for checked evidence, QUALIFIED for an explicit bounded exception,
 
 ## Progress and recovery
 
-Every stage completion, blocker, review and resume shows the same six-row table. Include the verified completed count out of six, actual source/capture dates, current step, exact next action and resume location. Independent tasks appear separately and do not change the denominator.
+Every stage completion, blocker, review and resume shows the same seven-row table. Include the verified completed count out of seven, actual source/capture dates, current step, exact next action and resume location. Independent tasks appear separately and do not change the denominator.
 
 | Status | Meaning |
 |---|---|
@@ -107,10 +109,11 @@ Every stage completion, blocker, review and resume shows the same six-row table.
 | Awaiting write approval | Exact Sheet preview ready for Patrick |
 | Blocked | Named missing input, source or failed check prevents the dependent action |
 | Awaiting review | Step-4 audit packet ready; Patrick's clearance pending |
+| Awaiting Claude | Step-5 handoff ready; Claude's step-6 production or its live verification is pending |
 | Done / qualified | Named completion criteria verified, with any bounded qualification explicit |
 | Stale | A changed upstream dependency invalidates the previous result |
 
-A staged local export is not a GitHub export. A local email preview is not a Gmail draft. Step 4 is complete only after clearance; step 6 is complete when the unsent draft is saved and read back. Optional draft validation and sending remain separate outcomes.
+A staged local export is not a GitHub export. A local email preview is not a Gmail draft. Step 4 is complete only after clearance; step 6 is complete only after Claude's production is verified live; step 7 is complete when the draft containing that verified dashboard link is saved and read back. Optional draft validation and sending remain separate outcomes.
 
 When a source, roster, rule or affected workbook value changes, invalidate the owning step and its dependents, preserve earlier receipts and review the affected scope again. Fresh Sheet reads before export and drafting detect edits outside the run. Local receipt hashes alone cannot detect external changes. A previously published release or saved draft remains a historical artifact and is deliberately superseded; invalidation does not erase it.
 
@@ -120,12 +123,23 @@ When a source, roster, rule or affected workbook value changes, invalidate the o
 
 **Private statistics — `$tiago-update-data`.** MatchTrack imports and user-supplied UTR observations have separate statuses and destinations. Validate real export schemas, scoring progression, final scores, duplicates, revisions and partial coverage. Missing observations stay missing. An unresolved match record does not block the supplied-UTR submodule or any Race/Elo task. Keep all junior measurements, raw files, observations and private run evidence outside this repository and the league email.
 
-## Export, Claude handoff and email
+## Data export, Claude production and email
 
-After clearance, step 5 freshly verifies that the reviewed source state is unchanged, prepares all six existing JSON files and reconciles every exported field. Start from current remote HEAD rather than a potentially stale local checkout. Preserve transfer lineage and unrelated dashboard changes. See the [data and release contract](data-and-releases.md).
+After clearance, step 5 freshly verifies that the reviewed source state is unchanged, prepares all six existing JSON files and reconciles every exported field. Export the data to a dedicated release branch and verify the exact release commit/hashes; production publication belongs to Claude in step 6. Start from current remote HEAD rather than a potentially stale local checkout. Preserve transfer lineage and unrelated dashboard changes. See the [data and release contract](data-and-releases.md).
 
-The handoff to Claude identifies the cleared release, source dates, commit, changed files/counts, five totals, qualifications, transfer holds and required dashboard checks. Preparing that handoff does not automatically message another assistant. Distinguish verified GitHub export, dashboard rebuild and live verification.
+The handoff to Claude identifies the cleared release ID/branch/commit, source dates/cutoff, all six data hashes, changed counts, five totals, qualifications, transfer holds, previous production version and required dashboard checks. Preparing the handoff does not automatically message or start Claude; Patrick explicitly triggers that contributor.
 
-Step 6 locates the previous relevant sent league email for actual recipient headers and style, preserves intended multiple addresses, checks for an existing current-run draft and saves one unsent draft. Use only cleared facts and verified links, and describe any pending dashboard refresh accurately. Exclude junior information and stale attachments. Draft validation is separate from authorization to send.
+**Step 6 is production owned by Claude.** Follow [Claude dashboard production](claude-dashboard-production.md). Claude incorporates the exact approved data, performs the release-driven dashboard update, runs the existing build, publishes the data and required generated page/source changes together to production, then verifies the live URL, all six data hashes, build/data version, competition week/date, totals and UI behavior. Preserve unrelated source/design/tutorial changes. Data/rule discrepancies return to the owning data/audit step for revised clearance.
+
+A successful build, commit or deployment still in progress does not complete step 6. Record `awaiting_claude` or the exact production blocker until the served dashboard matches. The coordinator requires Claude's actual completion evidence, production commit/URL, live version/hashes, verification timestamp and browser checks. A stale/wrong release cannot pass under a freshness qualification.
+
+Step 7 locates the previous relevant sent league email for actual recipient headers and style, preserves intended multiple addresses, checks for an existing current-run draft and saves one unsent draft. Use only cleared facts and include the updated live dashboard link verified in step 6. Recheck the production version before saving. If production is pending, stale or failed, keep drafting blocked; an export-only link or disclosure of an old dashboard does not satisfy this step. Exclude junior information and stale attachments. Draft validation is separate from authorization to send.
 
 Routine PNG production and automatic image replacement are outside this weekly process. Preserve historical images. Skill installation and these documents do not create a scheduler, source-specific one-click launcher or proof that a live weekly run has occurred.
+
+
+## Migrating earlier progress records
+
+New runs use seven steps. Existing six-step ledgers retain a byte-for-byte legacy backup and their earlier Gmail result as history: old step 6 is not evidence of Claude production. The explicit `race_run.py migrate-seven` operation preserves verified steps 1–5 and unchanged audit clearance, inserts pending Claude production as step 6 and pending Gmail as step 7. Recheck any existing draft after production before reusing it. Missing legacy release/hash metadata is reverified in a new step-5 receipt without unnecessary Sheet writes.
+
+Production-only changes invalidate steps 6–7 while preserving the unchanged cleared data/export. Changes to actual source data, rules or workbook values invalidate the owning earlier stage and affected clearance. Completed historical weeks are not reopened or relabeled automatically.
