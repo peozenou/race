@@ -6,8 +6,8 @@
   "release_id": "2026-10-19-w35-r1",
   "data_commit_sha": "8246a06b84f1b8c6ab316f8a7a29f16fabf71c1d",
   "previous_production_commit": "82b00d99680e3d751abba5fe955280b0ba57bd07",
-  "dashboard_commit_sha": "40f99671f51dcac75f99243408892422d2ded247",
-  "dashboard_commit_parent_chain": "82b00d9 -> 8246a06 (release data) -> 73942d5 (week-35 build) -> 5b77627 (Sinner/Lehecka lineup line) -> eeb19ea (docs only) -> 40f9967 (two shades for the replacement line)",
+  "dashboard_commit_sha": "66eb5f8a2e2314a870f5100ebc9cf66bc33c8c8d",
+  "dashboard_commit_parent_chain": "82b00d9 -> 8246a06 (release data) -> 73942d5 (week-35 build) -> 5b77627 (Sinner/Lehecka lineup line) -> eeb19ea (docs only) -> 40f9967 (two shades for the replacement line) -> 4ebf6b0 (docs only) -> 66eb5f8 (replacement-line documentation and Notes tab wording)",
   "dashboard_url": "https://peozenou.github.io/race/2026/",
   "handoff_hashes_verified_before_use": true,
   "live_data_sha256": {
@@ -24,9 +24,9 @@
     "page-requested /data/<name>.json?v=<data version>",
     "in-page fetch from a second desktop Chrome session (first build 73942d5)"
   ],
-  "build_data_version": "4b6740dc0231",
-  "live_data_version": "4b6740dc0231",
-  "live_index_html_sha256": "0533f832e0d6443ed9d652fbb3b95793dacbf2243fd312cd7350626fb41ddc7d",
+  "build_data_version": "b6605eabf5b6",
+  "live_data_version": "b6605eabf5b6",
+  "live_index_html_sha256": "2da3e007421ca0f7876e3bd5dfaab649ba2e86a25e96daccae3fa7918c47e70a",
   "live_index_matches_commit": true,
   "live_week": 35,
   "live_competition_date": "2026-10-19",
@@ -78,7 +78,7 @@
     "kouame": "Credited 324 shown with note: 300 raw TE Race + approved +24 adjustment.",
     "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won are not referenced by the dashboard source; no zero or invented rate is displayed."
   },
-  "dashboard_source_changes": "Presentation only: hold/adjustment display, ranking/Elo date labels (73942d5); single replacement lineup line Sinner/Lehecka (5b77627); two shades of the team colour for the outgoing/incoming parts of a replacement line (40f9967). Six datasets unchanged.",
+  "dashboard_source_changes": "Presentation only: hold/adjustment display, ranking/Elo date labels (73942d5); single replacement lineup line Sinner/Lehecka (5b77627); two shades of the team colour for the outgoing/incoming parts of a replacement line (40f9967); Notes tab and player_season description mention the two shades (66eb5f8). Six datasets unchanged.",
   "ui_checks_verified": true,
   "ui_checks": {
     "page_errors": 0,
@@ -91,7 +91,7 @@
     "team_filter_CHEF_DOC_All": "PASS",
     "sorting_and_search": "PASS",
     "player_detail_history_chart_and_tooltip": "PASS (Jodar, Sinner, Kouame); Lehecka shows hold message",
-    "notes_tab_scoring_and_sources": "PASS",
+    "notes_tab_scoring_and_sources": "PASS (transfers note states the single replacement line and the two shades)",
     "tab_navigation": "PASS",
     "mobile_390px_no_horizontal_scroll": "PASS",
     "tutoriel_mp4_served": "PASS (200, 6 536 024 bytes, identical size to repo)",
@@ -100,8 +100,16 @@
     "replacement_line_detail": "PASS (Lehecka/Sinner switch, post Race chart, notes)",
     "replacement_line_two_shades": "PASS (live, light and dark): composition bar split per player with legend; tooltip Sinner 7 950 / Lehecka 0 / total 7 950 with pending note; post detail bands, player chips and surface bars use team colour (Sinner) and darker shade (Lehecka). Also checked locally against an unpublished test copy with Lehecka credited 170: darker segment and band render, tooltip total 8 120."
   },
-  "live_verified_at": "2026-10-20T15:27:48-04:00",
+  "live_verified_at": "2026-10-20T15:35:35-04:00",
   "observations": [
+    {
+      "what": "fetch of page and six datasets (66eb5f8)",
+      "at": "2026-10-20T15:35:05-04:00"
+    },
+    {
+      "what": "headless Chromium UI and two-shade checks on the live URL (66eb5f8), completed",
+      "at": "2026-10-20T15:35:35-04:00"
+    },
     {
       "what": "fetch of page and six datasets (40f9967)",
       "at": "2026-10-20T15:27:09-04:00"
@@ -121,28 +129,28 @@
   ],
   "deployment": {
     "route": "GitHub Pages, deploy from branch main",
-    "actions_run_id": 39483424175,
-    "actions_run_url": "https://github.com/peozenou/race/actions/runs/39483424175",
+    "actions_run_id": 39484624228,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/39484624228",
     "jobs": {
       "build": "success",
       "deploy": "success",
       "report-build-status": "success"
     },
-    "deployment_id": 7209031774,
+    "deployment_id": 7209202900,
     "deployment_status": "success",
-    "deployment_status_at": "2026-10-20T19:26:56Z",
-    "served_last_modified": "Tue, 20 Oct 2026 19:26:43 GMT"
+    "deployment_status_at": "2026-10-20T19:35:00Z",
+    "served_last_modified": "Tue, 20 Oct 2026 19:34:55 GMT"
   },
   "push": {
-    "at": "2026-10-20T19:26:04Z",
     "ref": "main",
-    "from": "eeb19ea",
-    "to": "40f9967",
-    "force": false
+    "from": "4ebf6b0",
+    "to": "66eb5f8",
+    "force": false,
+    "at": "2026-10-20T19:34:32Z"
   },
   "public_repo_private_material_scan": "No fingerprint, approval, junior or personal data in the production diff.",
   "step7": "BLOCKED until r2 is cleared, published and verified live; the week-35 email should use the r2 totals.",
-  "presentation_revision": 3,
+  "presentation_revision": 4,
   "requested_data_change": {
     "request": "Count Lehecka's CHEF entry from the start of week 34 with baseline 2,055 Race points (Tennis Explorer 5 Oct 2026, the ranking in force on 12 Oct); pending audit and clearance",
     "requires": "step 3 rework, step 4 re-audit and renewed clearance, release 2026-10-19-w35-r2, new Claude step 6",
