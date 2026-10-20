@@ -7,19 +7,19 @@ Owner: **Claude**. Prepared 20 October 2026, America/New_York. This is the publi
 | Field | Value |
 |---|---|
 | `owner` | Claude |
-| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 2) |
+| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 3) |
 | `release_id` | `2026-10-19-w35-r1` |
 | `data_commit_sha` | [`8246a06b84f1b8c6ab316f8a7a29f16fabf71c1d`](https://github.com/peozenou/race/commit/8246a06b84f1b8c6ab316f8a7a29f16fabf71c1d) |
-| `dashboard_commit_sha` | [`5b776276f246fcdc1748b884d16704fcd1fb299f`](https://github.com/peozenou/race/commit/5b776276f246fcdc1748b884d16704fcd1fb299f) |
-| Production history | `82b00d9` → `8246a06` (release data, fast-forward) → [`73942d5`](https://github.com/peozenou/race/commit/73942d5bebadd34ac476b8e8a4e61e61e4690263) (week-35 build) → `5b77627` (Sinner/Lehecka lineup line) |
+| `dashboard_commit_sha` | [`40f99671f51dcac75f99243408892422d2ded247`](https://github.com/peozenou/race/commit/40f99671f51dcac75f99243408892422d2ded247) |
+| Production history | `82b00d9` → `8246a06` (release data, fast-forward) → [`73942d5`](https://github.com/peozenou/race/commit/73942d5bebadd34ac476b8e8a4e61e61e4690263) (week-35 build) → [`5b77627`](https://github.com/peozenou/race/commit/5b776276f246fcdc1748b884d16704fcd1fb299f) (Sinner/Lehecka lineup line) → `eeb19ea` (docs only) → `40f9967` (two shades for the replacement line) |
 | `dashboard_url` | https://peozenou.github.io/race/2026/ |
-| `build_data_version` / `live_data_version` | `d926b326a7fb` / `d926b326a7fb` |
+| `build_data_version` / `live_data_version` | `4b6740dc0231` / `4b6740dc0231` |
 | `live_week` | 35, Monday 19 October 2026 (competition week, not ISO week) |
 | `ui_checks_verified` | true |
-| `live_verified_at` | 2026-10-20T14:56:57-04:00 (data fetch 14:56:42-04:00) |
-| Deployment | GitHub Pages run [39479004023](https://github.com/peozenou/race/actions/runs/39479004023): build, deploy and report all success at 18:56:10Z; deployment 7208392543 success; served `index.html` byte-identical to the commit (SHA-256 `7aa3e29227baa6f34cee5fb4367e61ba12cf09f22b5c8e3bae5fd7e8fe6d9efa`) |
+| `live_verified_at` | 2026-10-20T15:27:48-04:00 (data fetch 15:27:09-04:00) |
+| Deployment | GitHub Pages run [39483424175](https://github.com/peozenou/race/actions/runs/39483424175): build, deploy and report all success at 19:26:56Z; deployment 7209031774 success; served `index.html` byte-identical to the commit (SHA-256 `0533f832e0d6443ed9d652fbb3b95793dacbf2243fd312cd7350626fb41ddc7d`) |
 
-The first week-35 build (`73942d5`, run [39472725729](https://github.com/peozenou/race/actions/runs/39472725729)) was verified live at 2026-10-20T14:15:26-04:00, including an in-page SHA-256 check in a second desktop Chrome session. Commits after `5b77627` that touch only `docs/` do not change the dashboard: `git diff 5b77627..HEAD -- 2026` is empty for them.
+Earlier production states were each verified live: the first week-35 build (`73942d5`, run [39472725729](https://github.com/peozenou/race/actions/runs/39472725729)) at 2026-10-20T14:15:26-04:00, including an in-page SHA-256 check in a second desktop Chrome session, and `5b77627` (run [39479004023](https://github.com/peozenou/race/actions/runs/39479004023)) at 14:56:57-04:00. Every production commit kept the six approved datasets unchanged. Commits after `40f9967` that touch only `docs/` do not change the dashboard: `git diff 40f9967..HEAD -- 2026` is empty for them.
 
 ### Live datasets
 
@@ -46,12 +46,13 @@ All six served files match the approved step-5 hashes, both at the plain URL and
 
 Source dates shown separately from the competition Monday: Tennis Explorer rankings 19 Oct 2026; Elo/yElo 28 Sep 2026; Sinner's retained rankings 5 Oct 2026. Kouame's approved +24 appears once (300 raw, 324 credited). The five active-player aggregate fields that are null in `players.json` (`tpw`, `rpw`, `ace_pct`, `first_won`, `second_won`) are not displayed anywhere, so no zero or invented rate is shown.
 
-Browser checks (headless Chromium on the live URL): 0 console errors, 0 page errors, 0 failed requests; standings cards; season, rank and gains charts; duel matrix; tooltips; 30-line player table (six per team); team filters; sorting; search; player detail with history chart; Sinner/Lehecka detail with player switch; notes tab; tab navigation; 390 px mobile width without horizontal scroll; `tutoriel.mp4` served. Reports and screenshots are in [`evidence/`](evidence/).
+Browser checks (headless Chromium on the live URL, light and dark colour schemes): 0 console errors, 0 page errors, 0 failed requests; standings cards; season, rank and gains charts; duel matrix; tooltips; 30-line player table (six per team); team filters; sorting; search; player detail with history chart; Sinner/Lehecka detail with player switch and two shades; notes tab; tab navigation; 390 px mobile width without horizontal scroll; `tutoriel.mp4` served. Reports and screenshots are in [`evidence/`](evidence/).
 
 ### Presentation changes in step 6 (dashboard source only; datasets untouched)
 
 - **One lineup line per post.** An outgoing and an incoming player with the same team and `transfer_date` (short labels ending `(sorti)` and `(entré)`) are shown as one line, **Sinner/Lehecka**, so each team lists six posts. The line adds both players' credited Race and duel points (currently 7,950 + 75) and shows the incoming player's record, rank and Elo; its detail switches between the two seasons and charts the post's credited Race. The tournaments chart keeps one bubble per player.
   - **Export contract:** keep both player records, the `(sorti)` / `(entré)` labels and the same `transfer_date` on both. No schema change.
+- **Two shades for a replacement line (requested 20 Oct).** Within the Sinner/Lehecka line, the outgoing player's credited points keep the CHEF colour (`#93c47d`) and the incoming player's take a darker shade of it (`#678958`; generally the team colour darkened one step). This applies to the team composition bar (one segment split in two, with a legend and a tooltip giving each player's part and the post total), the post chart in the detail (stacked bands) and the detail's player chips and surface bars. Lehecka's darker part has no width while his credit is held at 0; it appears automatically once a cleared release credits him. This was checked locally against an unpublished test copy with Lehecka credited 170 (no such data is published).
 - **Pending incoming contribution.** While Lehecka's credited JOUEURS value is 0, the line notes that his contribution is pending and his 2,225 raw Race points are not yet counted; gains show "—", not 0. The note disappears once JOUEURS credits him.
 - Kouame's adjustment note; archived ranking date and Elo date labelled separately.
 
@@ -87,6 +88,7 @@ Browser checks (headless Chromium on the live URL): 0 console errors, 0 page err
 ## Files
 
 - [`completion.json`](completion.json): machine-readable completion note (public fields).
-- [`evidence/live-data-73942d5.json`](evidence/live-data-73942d5.json), [`evidence/live-data-5b77627.json`](evidence/live-data-5b77627.json): served page version, headers and the six dataset hashes.
-- [`evidence/live-ui-73942d5.json`](evidence/live-ui-73942d5.json), [`evidence/live-ui-5b77627.json`](evidence/live-ui-5b77627.json): browser-check outputs.
-- `evidence/5b77627-*.png`: live screenshots (teams, players, Sinner/Lehecka detail for each player, notes, mobile).
+- [`evidence/live-data-40f9967.json`](evidence/live-data-40f9967.json) (current), [`evidence/live-data-5b77627.json`](evidence/live-data-5b77627.json), [`evidence/live-data-73942d5.json`](evidence/live-data-73942d5.json): served page version, headers and the six dataset hashes.
+- [`evidence/live-ui-40f9967.json`](evidence/live-ui-40f9967.json) (current, including the two-shade checks in light and dark), [`evidence/live-ui-5b77627.json`](evidence/live-ui-5b77627.json), [`evidence/live-ui-73942d5.json`](evidence/live-ui-73942d5.json): browser-check outputs.
+- `evidence/40f9967-*.png`: live screenshots of the two shades (composition bar with tooltip, dark mode, Sinner/Lehecka detail, mobile).
+- `evidence/5b77627-*.png`: live screenshots of the previous state (teams, players, Sinner/Lehecka detail for each player, notes, mobile).
