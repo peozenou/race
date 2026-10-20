@@ -125,7 +125,7 @@ When a source, roster, rule or affected workbook value changes, invalidate the o
 
 ## Data export, Claude production and email
 
-After clearance, step 5 freshly verifies that the reviewed source state is unchanged, prepares all six existing JSON files and reconciles every exported field. Export the data to a dedicated release branch and verify the exact release commit/hashes; production publication belongs to Claude in step 6. Start from current remote HEAD rather than a potentially stale local checkout. Preserve transfer lineage and unrelated dashboard changes. See the [data and release contract](data-and-releases.md).
+After clearance, step 5 freshly verifies that the reviewed source state is unchanged, prepares all six existing JSON files and reconciles every exported field. Export the data to a dedicated release branch and verify the exact release commit/hashes; production publication belongs to Claude in step 6. Start from current remote HEAD rather than a potentially stale local checkout. Preserve transfer lineage and unrelated dashboard changes. Keep both records of a transferred pair, their ` (sorti)` / ` (entré)` labels and one shared `transfer_date`: the dashboard uses them to build its replacement line. See the [data and release contract](data-and-releases.md).
 
 The handoff to Claude identifies the cleared release ID/branch/commit, source dates/cutoff, all six data hashes, changed counts, five totals, qualifications, transfer holds, previous production version and required dashboard checks. Preparing the handoff does not automatically message or start Claude; Patrick explicitly triggers that contributor.
 

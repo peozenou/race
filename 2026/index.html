@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="4b6740dc0231">
+  <meta name="data-version" content="b6605eabf5b6">
   <title>THE RACE 2026 — bilan de la saison</title>
   <meta name="description" content="Classement après la semaine 35 (19 octobre 2026) : CHEF en tête avec 18 254 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — bilan de la saison">
   <meta property="og:description" content="Classement après la semaine 35 (19 octobre 2026) : CHEF en tête avec 18 254 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=4b6740dc0231">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=b6605eabf5b6">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=4b6740dc0231">
+  <link rel="stylesheet" href="assets/theme.css?v=b6605eabf5b6">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=4b6740dc0231"></script>
+  <script src="assets/runtime.js?v=b6605eabf5b6"></script>
 </head>
 <body>
 <main class="site">
@@ -343,7 +343,7 @@ const RACE_QUAL = {
 dash.calc('player_season', {
   inputs: ['joueurs', 'players'],
   title: 'Bilan de saison par joueur',
-  description: "Une ligne par poste de l'équipe (six par équipe) : points Race comptés à la dernière mise à jour, part de la somme Race de l'équipe et gains récents (JOUEURS), joints par nom au bilan, aux titres, aux duels, au rang ATP et à l'Elo. Un remplacement en cours de saison forme une seule ligne « sortant/entrant » qui additionne les deux contributions ; bilan, rang et Elo sont ceux du joueur entrant, les points de duel ceux du poste. Une contribution retenue en attente du point de départ d'un transfert n'a pas de gain affiché.",
+  description: "Une ligne par poste de l'équipe (six par équipe) : points Race comptés à la dernière mise à jour, part de la somme Race de l'équipe et gains récents (JOUEURS), joints par nom au bilan, aux titres, aux duels, au rang ATP et à l'Elo. Un remplacement en cours de saison forme une seule ligne « sortant/entrant » qui additionne les deux contributions ; bilan, rang et Elo sont ceux du joueur entrant, les points de duel ceux du poste. Les graphiques distinguent les deux parts : couleur de l'équipe pour le sortant, teinte plus foncée pour l'entrant. Une contribution retenue en attente du point de départ d'un transfert n'a pas de gain affiché.",
   fn: (joueurs, players) => {
     const weeks = [...new Set(joueurs.map((r) => r.week))].sort((a, b) => a - b);
     const last = weeks[weeks.length - 1];
@@ -1339,7 +1339,7 @@ dash.calc('player_events', {
         ? [...moves.values()].map((m) => `${m.team} : ${m.out.join(', ') || '—'} sorti, ${m.in.join(', ') || '—'} entré le ${TR.dateY(m.date)}.`).join(' ')
         : 'Aucun transfert cette saison.')
         + held.map((r) => ` La contribution de ${r.slot ? r.slot.inShort : r.short.replace(/ \((sorti|entré)\)$/, '')} reste retenue à 0 tant que son total Race à son arrivée n'est pas établi.`).join('')
-        + (ps.status === 'ok' && ps.data.some((r) => r.slot) ? ' Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe.' : '');
+        + (ps.status === 'ok' && ps.data.some((r) => r.slot) ? ' Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe ; dans les graphiques, la part du joueur sortant garde la couleur de l’équipe et celle du joueur entrant prend une teinte plus foncée.' : '');
       const latest = pl.data.reduce((a, x) => (x.rankings_date && x.rankings_date > a ? x.rankings_date : a), '');
       const older = pl.data.filter((x) => x.rankings_date && x.rankings_date !== latest);
       $('src-rank-out').textContent = older.length ? ' Classements conservés à une autre date : ' + older.map((x) => `${x.short}, ${TR.dateY(x.rankings_date)}`).join(' ; ') + '.' : '';

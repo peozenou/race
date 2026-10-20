@@ -33,11 +33,24 @@ The match schema includes `mid`, `player`, `short`, `team`, `event_date`, `event
 
 ## Identities, dates and transfers
 
-There are 30 active selections, six per team. Historical public datasets may contain more players or current-week contribution rows because outgoing earned credit is retained. A transfer does not authorize deletion of the outgoing player's matches, points or history. The Sinner/Lehecka representation already illustrates this distinction; do not enforce a blanket 30-row limit on public files.
+There are 30 active selections, six per team. Historical public datasets may contain more players or current-week contribution rows because outgoing earned credit is retained. A transfer does not authorize deletion of the outgoing player's matches, points or history. The 2026 Sinner/Lehecka transfer illustrates this distinction: `players.json` holds 31 player records, while the dashboard shows 30 lineup lines. Do not enforce a blanket 30-row limit on public files.
 
 Maintain an explicit source-to-export identity and transfer mapping. Display names and labels such as “entered” or “left” are not a substitute for the approved ledger. Distinguish a player's raw TE points, outgoing credit kept by a team, incoming gains after entry and a deliberately held incoming contribution. An unknown entry baseline is not an observed zero. Keep the baseline unresolved and guard the dependent gains until verified.
 
 Preserve frozen history when a slot changes identity. Do not recast an outgoing player's historical points as the incoming player's past performance. If a compatibility view uses slot history, document that lineage in private release evidence and preserve the established public representation deliberately.
+
+### Replacement lines on the dashboard
+
+The dashboard keeps six posts per team by showing an in-season replacement as one lineup line, labelled `outgoing/incoming` (for example **Sinner/Lehecka**). It builds that line from the exported data without a separate mapping file:
+
+- **Pairing rule.** Exactly one outgoing and one incoming player of the same team share the same `transfer_date`. Their `short` labels end in ` (sorti)` and ` (entré)`. Any other combination (two out and one in, for instance) is shown as separate player lines.
+- **Values.** The line's Race points, share, gains and post history add both players' credited JOUEURS contributions, and its duel points add both players' `duel_pts`. Record, titles, ranks and Elo are the incoming player's. The detail view switches between the two players' seasons. Tournament bubbles stay one per player.
+- **Colours.** The outgoing player's part keeps the team colour from `team_colors.json`. The incoming player's part uses a darker shade of it, the team colour darkened one step (CHEF `#93c47d` becomes `#678958`). This applies to the team composition bar (one segment split in two, with a legend and per-player tooltip), the post chart in the detail (stacked bands), and the detail's player buttons and surface bars. No colour is added to `team_colors.json`.
+- **Held incoming contribution.** While the incoming player's credited JOUEURS value is 0 under an unresolved entry baseline, the line shows his part as pending. It shows no gains and gives his darker segment no width, and notes that his raw TE Race points are not yet counted. The display switches off by itself once a cleared release credits him.
+
+**Export contract for step 5:** keep both player records, the ` (sorti)` / ` (entré)` labels and one shared `transfer_date` for the pair. Keep both players' JOUEURS rows. No schema change is involved.
+
+Per-player display qualifications (a held incoming contribution, an approved Race adjustment such as Kouame's +24) are listed in the dashboard source (`RACE_QUAL` in `2026/source/dashboard.html`). When a release introduces a new hold or adjustment, the step-5 handoff names it, so Claude can add it in step 6.
 
 Keep competition dates and actual ranking/rating publication dates separate. `hebdo.date` retains the approved workbook's competition/update-date meaning. Do not relabel a competition Monday to an earlier ranking publication date. `rankings_date` and `elo_date` retain the selected source dates. TA's `event_date` may be the tournament start date; it is not automatically the match's completion timestamp.
 
@@ -91,7 +104,7 @@ Step 5 is complete at the verified release-branch export with its prepared hando
 
 ## Claude handoff and rollback
 
-The handoff should state the release ID, target competition week/date, cutoff, true source dates, GitHub commit, changed files/counts, five totals, retained qualifications, transfer holds, schema/null/lineage considerations and build/live status. Include checks for team/player filters, history charts, table counts, source-date labels and preserved tutorial behavior.
+The handoff should state the release ID, target competition week/date, cutoff, true source dates, GitHub commit, changed files/counts, five totals, retained qualifications, transfer holds, schema/null/lineage considerations and build/live status. Include checks for team/player filters, history charts, table counts, replacement lines, source-date labels and preserved tutorial behavior. Name any new held contribution or approved Race adjustment the dashboard must qualify.
 
 Keep the previous approved commit and release manifest. If publication is wrong, prepare a bounded revert or corrective revision from the verified previous state, record why it was superseded and repeat affected checks. Do not force-push or discard unrelated concurrent work.
 

@@ -85,6 +85,6 @@ Keep three outcomes distinct: **data exported to GitHub**, **dashboard rebuilt**
 
 Tennis Abstract's displayed player tables own match statistics; its complete Elo/yElo reports own ratings. Tennis Explorer owns Race/ATP ranking snapshots. Approved league rules and transfer records own fantasy scoring. Preserve their separate source dates and missing-value meanings.
 
-There are 30 active selections, six per team. Published history can include outgoing players as well as the active roster, so public datasets can contain more than 30 player records. Preserve approved transfer credit and frozen history rather than filtering everything down to the current selection.
+There are 30 active selections, six per team. Published history can include outgoing players as well as the active roster, so public datasets can contain more than 30 player records. Preserve approved transfer credit and frozen history rather than filtering everything down to the current selection. The dashboard shows each in-season replacement as one lineup line, such as Sinner/Lehecka, so every team lists six posts. In its charts, the outgoing player's credited points keep the team colour and the incoming player's take a darker shade. See [replacement lines](docs/data-and-releases.md#replacement-lines-on-the-dashboard).
 
 See the [data and release contract](docs/data-and-releases.md) for validation, publication and rollback details. d3 is distributed under the ISC license, copyright Mike Bostock.

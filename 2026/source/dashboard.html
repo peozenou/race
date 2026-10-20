@@ -316,7 +316,7 @@ const RACE_QUAL = {
 dash.calc('player_season', {
   inputs: ['joueurs', 'players'],
   title: 'Bilan de saison par joueur',
-  description: "Une ligne par poste de l'équipe (six par équipe) : points Race comptés à la dernière mise à jour, part de la somme Race de l'équipe et gains récents (JOUEURS), joints par nom au bilan, aux titres, aux duels, au rang ATP et à l'Elo. Un remplacement en cours de saison forme une seule ligne « sortant/entrant » qui additionne les deux contributions ; bilan, rang et Elo sont ceux du joueur entrant, les points de duel ceux du poste. Une contribution retenue en attente du point de départ d'un transfert n'a pas de gain affiché.",
+  description: "Une ligne par poste de l'équipe (six par équipe) : points Race comptés à la dernière mise à jour, part de la somme Race de l'équipe et gains récents (JOUEURS), joints par nom au bilan, aux titres, aux duels, au rang ATP et à l'Elo. Un remplacement en cours de saison forme une seule ligne « sortant/entrant » qui additionne les deux contributions ; bilan, rang et Elo sont ceux du joueur entrant, les points de duel ceux du poste. Les graphiques distinguent les deux parts : couleur de l'équipe pour le sortant, teinte plus foncée pour l'entrant. Une contribution retenue en attente du point de départ d'un transfert n'a pas de gain affiché.",
   fn: (joueurs, players) => {
     const weeks = [...new Set(joueurs.map((r) => r.week))].sort((a, b) => a - b);
     const last = weeks[weeks.length - 1];
@@ -1312,7 +1312,7 @@ dash.calc('player_events', {
         ? [...moves.values()].map((m) => `${m.team} : ${m.out.join(', ') || '—'} sorti, ${m.in.join(', ') || '—'} entré le ${TR.dateY(m.date)}.`).join(' ')
         : 'Aucun transfert cette saison.')
         + held.map((r) => ` La contribution de ${r.slot ? r.slot.inShort : r.short.replace(/ \((sorti|entré)\)$/, '')} reste retenue à 0 tant que son total Race à son arrivée n'est pas établi.`).join('')
-        + (ps.status === 'ok' && ps.data.some((r) => r.slot) ? ' Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe.' : '');
+        + (ps.status === 'ok' && ps.data.some((r) => r.slot) ? ' Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe ; dans les graphiques, la part du joueur sortant garde la couleur de l’équipe et celle du joueur entrant prend une teinte plus foncée.' : '');
       const latest = pl.data.reduce((a, x) => (x.rankings_date && x.rankings_date > a ? x.rankings_date : a), '');
       const older = pl.data.filter((x) => x.rankings_date && x.rankings_date !== latest);
       $('src-rank-out').textContent = older.length ? ' Classements conservés à une autre date : ' + older.map((x) => `${x.short}, ${TR.dateY(x.rankings_date)}`).join(' ; ') + '.' : '';

@@ -23,6 +23,8 @@ The current public season URL is [THE RACE 2026](https://peozenou.github.io/race
 
 Incorporate the exact six-file approved release. Update the dashboard as needed to reflect that release, including current week/date, source labels, transfer state, tables and charts. Preserve the established French interface, existing design and unrelated work unless Patrick requests a broader change. A routine weekly production task does not authorize an unrelated redesign.
 
+Transfers are presented as described in [replacement lines on the dashboard](data-and-releases.md#replacement-lines-on-the-dashboard). The dashboard shows one `outgoing/incoming` line per post. The outgoing player's part uses the team colour and the incoming player's part a darker shade of it. When the handoff names a new held contribution or approved Race adjustment, add it to `RACE_QUAL` in the dashboard source.
+
 Do not silently modify cleared league data or scoring rules to make the presentation agree. If a data/identity/transfer issue is discovered, return it to the owning data/audit step and wait for the affected state to be verified and cleared again.
 
 From the repository root, run the existing builder:
@@ -46,7 +48,7 @@ Verify the canonical public dashboard URL in a browser and compare it with the r
 1. All six served JSON datasets match the approved step-5 hashes. Confirm that a mixture of old/new cached files is not being served.
 2. The served page's data-version token matches the verified build, and the page loads without release-related errors.
 3. The intended competition week/date and all five team totals match the approved release. Preserve true source dates separately from the competition Monday.
-4. Player/team filters, ranking/statistics tables, player history and team-history charts work with the actual active/archived transfer representation.
+4. Player/team filters, ranking/statistics tables, player history and team-history charts work with the actual active/archived transfer representation. Each team shows six lineup lines. A replacement line adds both players' credited points, shows its two shades in the composition bar and post chart, and switches between the two players in its detail view.
 5. Approved source qualifications, retained outgoing credit, incoming holds and null meanings are represented accurately. Missing data is not silently presented as an observed zero.
 6. Existing navigation, tooltip and tutorial behavior remains intact within the affected scope.
 
