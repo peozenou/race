@@ -21,6 +21,8 @@
 .tr .tr-sub{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
 .tr .tr-up{color:var(--color-ok)}
 .tr .tr-down{color:var(--color-bad)}
+.tr .tr-muted{color:var(--color-fg-muted);font-style:italic}
+.tr .tr-mark{color:var(--color-fg-muted);margin-left:1px;cursor:help}
 .tr .tr-chart{position:relative;min-height:260px}
 .tr .tr-chart svg,.tr .tr-mult svg{display:block}
 .tr .tr-tick{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
@@ -157,7 +159,7 @@
       <div class="tr-card-head">
         <div>
           <h2>Joueurs</h2>
-          <p class="tr-note">Points Race et gains : JOUEURS. Bilan, titres, duels, classement ATP et Elo : dernière mise à jour. Cliquez sur une ligne pour voir la saison du joueur.</p>
+          <p class="tr-note">Points Race et gains : JOUEURS, c'est-à-dire la contribution comptée pour l'équipe. Bilan, titres, duels et classement ATP : dernière mise à jour ; Elo au <span id="tbl-elo" data-source="players" data-field="elo_date" data-row="0">—</span>. Cliquez sur une ligne pour voir la saison du joueur.</p>
         </div>
         <input type="search" class="tr-search" id="player-search" placeholder="Rechercher un joueur" aria-label="Rechercher un joueur">
       </div>
@@ -180,6 +182,7 @@
           <tbody></tbody>
         </table>
       </div>
+      <p class="tr-note" id="player-qual" data-source="player_season" hidden></p>
     </div>
 
     <div class="tr-card" id="player-detail">
@@ -188,6 +191,7 @@
         <h2 id="detail-name"></h2>
         <p class="tr-note" id="detail-sub"></p>
         <div class="tr-kpis" id="detail-kpis"></div>
+        <p class="tr-note" id="detail-qual" hidden></p>
         <div class="tr-grid">
           <div>
             <h3>Points Race à chaque mise à jour</h3>
@@ -244,7 +248,7 @@
           <dt>Points Race des joueurs</dt><dd>Feuille JOUEURS du classeur, instantané.</dd>
           <dt>Couleurs des équipes</dt><dd>Celles du classeur.</dd>
           <dt>Matchs et duels</dt><dd>Tennis Abstract, copiés dans le classeur ; tournois commencés jusqu'au <span id="src-matches" data-source="players" data-field="matches_through" data-row="0">—</span>.</dd>
-          <dt>Classements ATP et Race</dt><dd>Tennis Explorer, <span id="src-rank" data-source="players" data-field="rankings_date" data-row="0">—</span>.</dd>
+          <dt>Classements ATP et Race</dt><dd>Tennis Explorer, <span id="src-rank" data-source="players" data-field="rankings_date" data-row="0">—</span>.<span id="src-rank-out" data-source="players" data-field="rankings_date"></span></dd>
           <dt>Elo et yElo</dt><dd>Tennis Abstract, <span id="src-elo" data-source="players" data-field="elo_date" data-row="0">—</span>.</dd>
           <dt>Calendrier</dt><dd>Calendrier ATP Tour 2026 (Grand Chelem et Masters 1000).</dd>
         </dl>
@@ -297,10 +301,19 @@ dash.calc('team_weeks', {
   },
 });
 
+// Approved qualifications shown on the page (release 2026-10-19-w35-r1); the data files are not altered.
+// 'hold': an incoming player's contribution stays at 0 until the transfer entry baseline is established.
+// 'adjust': an approved team adjustment is included in the credited JOUEURS contribution.
+// Each entry applies only while the latest JOUEURS week confirms it (hold: credited 0; adjust: credited differs from raw Race).
+const RACE_QUAL = {
+  'Lehecka Jiri': { kind: 'hold' },
+  'Kouame Moise': { kind: 'adjust' },
+};
+
 dash.calc('player_season', {
   inputs: ['joueurs', 'players'],
   title: 'Bilan de saison par joueur',
-  description: "Points Race de chaque joueur à la dernière mise à jour, sa part de la somme Race des six joueurs de l'équipe et ses gains récents (JOUEURS), joints par nom à son bilan, ses titres, ses duels, son rang ATP et son Elo.",
+  description: "Points Race de chaque joueur à la dernière mise à jour, sa part de la somme Race des six joueurs de l'équipe et ses gains récents (JOUEURS), joints par nom à son bilan, ses titres, ses duels, son rang ATP et son Elo. Une contribution retenue en attente du point de départ d'un transfert n'a ni part ni gain affichés.",
   fn: (joueurs, players) => {
     const weeks = [...new Set(joueurs.map((r) => r.week))].sort((a, b) => a - b);
     const last = weeks[weeks.length - 1];
@@ -316,12 +329,18 @@ dash.calc('player_season', {
       const w4 = at(n, weeks[weeks.length - 5]);
       const played = (p.w || 0) + (p.l || 0);
       const sum = sums.get(teamOf.get(n));
+      const raw = p.race_points ?? null;
+      const q = RACE_QUAL[n];
+      const qual = !q ? null
+        : q.kind === 'hold' ? (race === 0 && p.transfer_date ? 'hold' : null)
+        : q.kind === 'adjust' ? (race !== null && raw !== null && race !== raw ? 'adjust' : null) : null;
+      const held = qual === 'hold';
       return {
-        player: n, short: p.short || n, team: teamOf.get(n), week: last, race,
-        share: sum ? race / sum : null,
-        gain_week: w1 === null || race === null ? null : race - w1,
-        gain_4: w4 === null || race === null ? null : race - w4,
-        series: weeks.map((w) => at(n, w)),
+        player: n, short: p.short || n, team: teamOf.get(n), week: last, race, raw, qual,
+        share: held ? null : sum ? race / sum : null,
+        gain_week: held || w1 === null || race === null ? null : race - w1,
+        gain_4: held || w4 === null || race === null ? null : race - w4,
+        series: weeks.map((w) => (held ? null : at(n, w))),
         w: p.w ?? null, l: p.l ?? null,
         record: p.w === undefined ? null : `${p.w}–${p.l}`,
         win_pct: played ? p.w / played : null,
@@ -439,6 +458,14 @@ dash.calc('player_events', {
   };
   TR.span = (text, source, field, where, cls) => { const s = document.createElement('span'); s.textContent = text; if (source) TR.mark(s, source, field, where); if (cls) s.className = cls; return s; };
   TR.text = (t) => document.createTextNode(t);
+  // Short explanations for the approved qualifications flagged by player_season (RACE_QUAL).
+  TR.qualText = (r) => {
+    const p = (dash.data('players').data || []).find((x) => x.player === r.player) || {};
+    if (r.qual === 'hold') return `contribution retenue à 0 depuis son arrivée le ${TR.dateY(p.transfer_date)}, en attente de son total Race à cette date ; ses ${TR.fmt(r.raw)} points Race Tennis Explorer ne sont pas encore comptés pour ${r.team}.`;
+    if (r.qual === 'adjust') return `contribution comptée de ${TR.fmt(r.race)}, soit ses ${TR.fmt(r.raw)} points Race Tennis Explorer et un ajustement approuvé de ${TR.fmtS(r.race - r.raw)}.`;
+    return '';
+  };
+  TR.withMark = (node, r) => { const w = document.createElement('span'); const m = document.createElement('sup'); m.className = 'tr-mark'; m.textContent = '*'; m.title = TR.qualText(r); w.append(node, m); return w; };
   TR.state = (...ids) => {
     const st = ids.map((id) => dash.data(id).status);
     if (st.every((s) => s === 'ok')) return 'ok';
@@ -1000,6 +1027,8 @@ dash.calc('player_events', {
       return;
     }
     const ps = dash.data('player_season').data;
+    const pl0 = dash.data('players').data[0];
+    $('tbl-elo').textContent = pl0 ? TR.dateY(pl0.elo_date) : '—';
     const ord = order.length ? order : [...new Set(ps.map((p) => p.team))];
     TR.ready(comp);
     TR.drawComposition(comp, ps, ord, team);
@@ -1029,7 +1058,11 @@ dash.calc('player_events', {
     const cols = [
       { f: 'short', l: true },
       { f: 'team', l: true, node: (r) => { const s = document.createElement('span'); const d = document.createElement('span'); d.className = 'tr-dot'; d.style.background = TR.color(r.team, ord); s.append(d, TR.text(r.team)); return s; } },
-      { f: 'race', fmt: TR.fmt },
+      { f: 'race', node: (r) => {
+        if (r.qual === 'hold') { const s = TR.span('en attente', null, null, null, 'tr-muted'); s.title = TR.qualText(r); return TR.withMark(s, r); }
+        const s = TR.span(TR.fmt(r.race));
+        return r.qual ? TR.withMark(s, r) : s;
+      } },
       { f: 'share', fmt: TR.pct },
       { f: 'gain_week', fmt: TR.fmtS },
       { f: 'gain_4', fmt: TR.fmtS, sec: true },
@@ -1041,6 +1074,10 @@ dash.calc('player_events', {
       { f: 'elo', fmt: TR.elo, sec: true },
     ];
     fillTable(tbody, rows, cols, (r) => r.player);
+    const qn = $('player-qual');
+    const qs = ps.filter((r) => r.qual && (team === 'All' || r.team === team));
+    qn.hidden = !qs.length;
+    qn.replaceChildren(...qs.flatMap((r, i) => [TR.text((i ? ' ' : '') + '* ' + r.short.replace(/ \((sorti|entré)\)$/, '') + ' (' + r.team + ') : '), TR.text(TR.qualText(r))]));
     const sel = params.player;
     tbody.querySelectorAll('tr').forEach((tr) => tr.setAttribute('aria-selected', String(tr.dataset.key === sel)));
     drawDetail(sel, ps, ord);
@@ -1060,16 +1097,28 @@ dash.calc('player_events', {
     const w = { player: name };
     $('detail-name').textContent = p.full || s.short;
     $('detail-sub').replaceChildren(TR.text(s.team + ' · ATP '), TR.span(p.atp_rank ? 'n° ' + p.atp_rank : '—', 'players', 'atp_rank', w), TR.text(' · Race '), TR.span(p.race_rank ? 'n° ' + p.race_rank : '—', 'players', 'race_rank', w), TR.text(' · '), TR.span(TR.dec1(p.age), 'players', 'age', w), TR.text(' ans'));
+    const allP = dash.data('players').data;
+    const latestRank = allP.reduce((a, x) => (x.rankings_date && x.rankings_date > a ? x.rankings_date : a), '');
+    if (p.rankings_date && p.rankings_date !== latestRank) $('detail-sub').append(TR.text(' · classements au '), TR.span(TR.dateY(p.rankings_date), 'players', 'rankings_date', w));
     const kpi = (label, nodes) => { const d = document.createElement('div'); const v = document.createElement('div'); v.className = 'tr-kpi-v'; v.append(...nodes); const l = document.createElement('div'); l.className = 'tr-kpi-l'; l.textContent = label; d.append(v, l); return d; };
+    const qd = $('detail-qual'); qd.replaceChildren();
+    if (s.qual) qd.append(TR.text('* ' + TR.qualText(s).replace(/^./, (c) => c.toUpperCase())));
+    if (/\(sorti\)$/.test(s.short) && p.transfer_date) qd.append(TR.text(`Sorti de l'équipe le ${TR.dateY(p.transfer_date)} : ${s.team} garde ses `), TR.span(TR.fmt(s.race), 'player_season', 'race', w), TR.text(' points Race et ses '), TR.span(TR.fmt(p.duel_pts), 'players', 'duel_pts', w), TR.text(' points de duel.'));
+    qd.hidden = !qd.childNodes.length;
     $('detail-kpis').replaceChildren(
-      kpi('Points Race', [TR.span(TR.fmt(s.race), 'player_season', 'race', w)]),
+      kpi(s.qual === 'hold' ? 'Points Race comptés' : 'Points Race', s.qual === 'hold' ? [TR.span('en attente', 'player_season', 'race', w, 'tr-muted'), TR.span('*', null, null, null, 'tr-mark')] : s.qual ? [TR.span(TR.fmt(s.race), 'player_season', 'race', w), TR.span('*', null, null, null, 'tr-mark')] : [TR.span(TR.fmt(s.race), 'player_season', 'race', w)]),
       kpi('Victoires–défaites', [TR.span(String(p.w ?? '—'), 'players', 'w', w), TR.text('–'), TR.span(String(p.l ?? '—'), 'players', 'l', w)]),
       kpi('Titres / finales', [TR.span(String(p.titles ?? '—'), 'players', 'titles', w), TR.text(' / '), TR.span(String(p.finals ?? '—'), 'players', 'finals', w)]),
       kpi('Points de duel', [TR.span(TR.fmt(p.duel_pts), 'players', 'duel_pts', w)]),
       kpi('Elo', [TR.span(TR.elo(p.elo), 'players', 'elo', w)]),
       kpi('yElo', [TR.span(TR.elo(p.yelo), 'players', 'yelo', w)]),
     );
-    TR.detailRace($('detail-race'), dash.data('joueurs').data.filter((r) => r.player === name), dash.data('hebdo').data, color);
+    if (s.qual === 'hold') {
+      const dr = $('detail-race'); dr.style.minHeight = '';
+      const n = document.createElement('p'); n.className = 'tr-empty-msg';
+      n.textContent = `Contribution retenue depuis son arrivée le ${TR.dateY(p.transfer_date)} : pas de courbe tant que son total Race à cette date n'est pas établi.`;
+      dr.replaceChildren(n);
+    } else TR.detailRace($('detail-race'), dash.data('joueurs').data.filter((r) => r.player === name), dash.data('hebdo').data, color);
 
     const surf = $('detail-surface'); surf.replaceChildren();
     [['Dur', 'hard'], ['Terre battue', 'clay'], ['Gazon', 'grass']].forEach(([lab, k]) => {
@@ -1114,10 +1163,16 @@ dash.calc('player_events', {
         if (/\(sorti\)$/.test(p.short)) m.out.push(name); else m.in.push(name);
         moves.set(k, m);
       });
-      tl.textContent = moves.size
+      const ps = dash.data('player_season');
+      const held = ps.status === 'ok' ? ps.data.filter((r) => r.qual === 'hold') : [];
+      tl.textContent = (moves.size
         ? [...moves.values()].map((m) => `${m.team} : ${m.out.join(', ') || '—'} sorti, ${m.in.join(', ') || '—'} entré le ${TR.dateY(m.date)}.`).join(' ')
-        : 'Aucun transfert cette saison.';
-    } else tl.textContent = '—';
+        : 'Aucun transfert cette saison.')
+        + held.map((r) => ` La contribution de ${r.short.replace(/ \((sorti|entré)\)$/, '')} reste retenue à 0 tant que son total Race à son arrivée n'est pas établi.`).join('');
+      const latest = pl.data.reduce((a, x) => (x.rankings_date && x.rankings_date > a ? x.rankings_date : a), '');
+      const older = pl.data.filter((x) => x.rankings_date && x.rankings_date !== latest);
+      $('src-rank-out').textContent = older.length ? ' Classements conservés à une autre date : ' + older.map((x) => `${x.short}, ${TR.dateY(x.rankings_date)}`).join(' ; ') + '.' : '';
+    } else { tl.textContent = '—'; $('src-rank-out').textContent = ''; }
     const sd = dash.data('standings');
     $('src-week').textContent = sd.status === 'ok' && sd.data.length ? `semaine ${sd.data[0].week}, ${TR.dateY(sd.data[0].date)}` : '—';
   };
