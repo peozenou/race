@@ -1,0 +1,157 @@
+{
+  "owner": "Claude",
+  "step": 6,
+  "run_id": "2026-10-19-w35",
+  "production_status": "LIVE_DASHBOARD_VERIFIED",
+  "release_id": "2026-10-19-w35-r1",
+  "data_commit_sha": "8246a06b84f1b8c6ab316f8a7a29f16fabf71c1d",
+  "previous_production_commit": "82b00d99680e3d751abba5fe955280b0ba57bd07",
+  "dashboard_commit_sha": "5b776276f246fcdc1748b884d16704fcd1fb299f",
+  "dashboard_commit_parent_chain": "82b00d9 -> 8246a06 (release data) -> 73942d5 (week-35 build) -> 5b77627 (Sinner/Lehecka lineup line)",
+  "dashboard_url": "https://peozenou.github.io/race/2026/",
+  "handoff_hashes_verified_before_use": true,
+  "live_data_sha256": {
+    "hebdo": "4ac943b83332663419c566fa57528cf77ee41c02738627498289e502c3ea97d9",
+    "joueurs": "dc9e22e13d85fda2c93142db35eaf5289d29408e68e12890774a91cd87ab1792",
+    "players": "d3a4e8e3fba59d18a3a0be0af1c61f47c50d6e395954d8098a80e9759e96b742",
+    "matches": "ce004bb80c89bf2151109b43bbf0f7c7802899fd1efacabd91802ec7fa35b78e",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "live_data_sha256_match_approved": true,
+  "live_data_checked_variants": [
+    "canonical /data/<name>.json",
+    "page-requested /data/<name>.json?v=<data version>",
+    "in-page fetch from a second desktop Chrome session (first build)"
+  ],
+  "build_data_version": "d926b326a7fb",
+  "live_data_version": "d926b326a7fb",
+  "live_index_html_sha256": "7aa3e29227baa6f34cee5fb4367e61ba12cf09f22b5c8e3bae5fd7e8fe6d9efa",
+  "live_index_matches_commit": true,
+  "live_week": 35,
+  "live_competition_date": "2026-10-19",
+  "live_totals": {
+    "CHEF": 18254,
+    "DOC": 16113,
+    "CHAN": 14625,
+    "PAT": 11926,
+    "JULES": 11087
+  },
+  "live_weekly_gains": {
+    "CHEF": 710,
+    "DOC": 538,
+    "CHAN": 860,
+    "PAT": 620,
+    "JULES": 420
+  },
+  "live_race_duels": {
+    "CHEF": [
+      18069,
+      185
+    ],
+    "DOC": [
+      15988,
+      125
+    ],
+    "CHAN": [
+      14455,
+      170
+    ],
+    "PAT": [
+      11786,
+      140
+    ],
+    "JULES": [
+      10992,
+      95
+    ]
+  },
+  "live_source_labels": {
+    "rankings": "Tennis Explorer, 19 oct. 2026; Sinner (sorti) retained at 5 oct. 2026",
+    "elo_yelo": "Tennis Abstract, 28 sept. 2026",
+    "matches_through": "19 oct. 2026",
+    "competition_update": "semaine 35, 19 oct. 2026"
+  },
+  "transfer_and_qualification_presentation": {
+    "sinner": "Archived 'Sinner (sorti)': CHEF keeps 7 950 Race + 75 duel points; history chart retained.",
+    "lehecka": "Active 'Lehecka (entré)': credited contribution shown as 'en attente' (no share, gain or curve); raw TE Race 2 225 shown separately; JOUEURS data still 0.",
+    "kouame": "Credited 324 shown with note: 300 raw TE Race + approved +24 adjustment.",
+    "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won are not referenced by the dashboard source; no zero or invented rate is displayed."
+  },
+  "dashboard_source_changes": "Presentation only: hold/adjustment display, ranking/Elo date labels (73942d5); single replacement lineup line Sinner/Lehecka (5b77627). Six datasets unchanged.",
+  "ui_checks_verified": true,
+  "ui_checks": {
+    "page_errors": 0,
+    "console_errors": 0,
+    "failed_requests": 0,
+    "team_standings_cards": "PASS",
+    "totals_rank_gains_charts_and_duel_matrix_render": "PASS",
+    "totals_chart_tooltip": "PASS",
+    "players_table_31_rows": "PASS",
+    "team_filter_CHEF_DOC_All": "PASS",
+    "sorting_and_search": "PASS",
+    "player_detail_history_chart_and_tooltip": "PASS (Jodar, Sinner, Kouame); Lehecka shows hold message",
+    "notes_tab_scoring_and_sources": "PASS",
+    "tab_navigation": "PASS",
+    "mobile_390px_no_horizontal_scroll": "PASS",
+    "tutoriel_mp4_served": "PASS (200, 6 536 024 bytes, identical size to repo)",
+    "landing_page": "PASS (200)",
+    "players_table_rows": "PASS (30 lineup lines, 6 per team; CHEF shows Sinner/Lehecka)",
+    "replacement_line_detail": "PASS (Lehecka/Sinner switch, post Race chart, notes)"
+  },
+  "live_verified_at": "2026-10-20T14:56:57-04:00",
+  "observations": [
+    {
+      "what": "fetch of page and six datasets",
+      "at": "2026-10-20T14:56:42-04:00"
+    },
+    {
+      "what": "headless Chromium UI checks on the live URL",
+      "at": "2026-10-20T14:56:57-04:00"
+    },
+    {
+      "what": "first build 73942d5: in-page SHA-256 check in a second desktop Chrome session",
+      "at": "2026-10-20T14:15:26-04:00"
+    }
+  ],
+  "deployment": {
+    "route": "GitHub Pages, deploy from branch main",
+    "actions_run_id": 39479004023,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/39479004023",
+    "jobs": {
+      "build": "success",
+      "deploy": "success",
+      "report-build-status": "success"
+    },
+    "deployment_id": 7208392543,
+    "deployment_status": "success",
+    "deployment_status_at": "2026-10-20T18:56:10Z",
+    "served_last_modified": "Tue, 20 Oct 2026 18:56:02 GMT"
+  },
+  "push": {
+    "at": "2026-10-20T18:55:33Z",
+    "ref": "main",
+    "from": "73942d5",
+    "to": "5b77627",
+    "force": false
+  },
+  "public_repo_private_material_scan": "No fingerprint, approval, junior or personal data in the production diff.",
+  "step7": "BLOCKED until r2 is cleared, published and verified live; the week-35 email should use the r2 totals.",
+  "presentation_revision": 2,
+  "requested_data_change": {
+    "request": "Count Lehecka's CHEF entry from the start of week 34 with baseline 2,055 Race points (Tennis Explorer 5 Oct 2026, the ranking in force on 12 Oct); pending audit and clearance",
+    "requires": "step 3 rework, step 4 re-audit and renewed clearance, release 2026-10-19-w35-r2, new Claude step 6",
+    "expected": {
+      "JOUEURS_Lehecka_w34": 0,
+      "JOUEURS_Lehecka_w35": 170,
+      "CHEF_w35_race_duels_total": [
+        18239,
+        185,
+        18424
+      ],
+      "CHEF_weekly_gain": 880,
+      "grand_total": 72175
+    }
+  },
+  "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage."
+}

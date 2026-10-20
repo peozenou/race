@@ -70,6 +70,8 @@ Return a concrete completion note to Patrick/the coordinator. Include:
 | `live_verified_at` | Timezone-aware timestamp of the real live observation |
 | Evidence references | Claude completion, production/deployment details and served data/browser checks |
 
+Claude also saves a public copy of the completion note, without the workbook fingerprint or approval records, with its live evidence under `docs/production/<season>/<release_id>/` (for example [2026-10-19-w35-r1](production/2026/2026-10-19-w35-r1/HANDOVER.md)).
+
 The private coordinator receipt also binds the same cleared workbook fingerprint, saves Claude's actual completion evidence and records the immutable receipt hash. Do not upload private approvals, junior data or personal account details merely to supply that evidence. A receipt's assertion is not a substitute for inspecting the real result.
 
 After verification, step 6 becomes done (or a specifically accepted bounded qualification with the correct live release). Step 7 can then create the unsent Gmail draft with that exact updated dashboard URL and bind it to this production receipt/commit. Optional draft validation and permission to send remain separate.

@@ -1,0 +1,163 @@
+{
+ "observed_at": "2026-10-20T14:56:42-04:00",
+ "page": {
+  "status": 200,
+  "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+  "etag": "\"6ad7b942-15ac6\"",
+  "age": "0",
+  "x_cache": "MISS",
+  "data_version": "d926b326a7fb",
+  "asset_tokens": [
+   "d926b326a7fb"
+  ]
+ },
+ "data": {
+  "hebdo": {
+   "canonical": {
+    "status": 200,
+    "sha256": "4ac943b83332663419c566fa57528cf77ee41c02738627498289e502c3ea97d9",
+    "match": true,
+    "bytes": 17358,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "4ac943b83332663419c566fa57528cf77ee41c02738627498289e502c3ea97d9",
+    "match": true,
+    "bytes": 17358,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  },
+  "joueurs": {
+   "canonical": {
+    "status": 200,
+    "sha256": "dc9e22e13d85fda2c93142db35eaf5289d29408e68e12890774a91cd87ab1792",
+    "match": true,
+    "bytes": 75608,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "dc9e22e13d85fda2c93142db35eaf5289d29408e68e12890774a91cd87ab1792",
+    "match": true,
+    "bytes": 75608,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  },
+  "players": {
+   "canonical": {
+    "status": 200,
+    "sha256": "d3a4e8e3fba59d18a3a0be0af1c61f47c50d6e395954d8098a80e9759e96b742",
+    "match": true,
+    "bytes": 26531,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "d3a4e8e3fba59d18a3a0be0af1c61f47c50d6e395954d8098a80e9759e96b742",
+    "match": true,
+    "bytes": 26531,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  },
+  "matches": {
+   "canonical": {
+    "status": 200,
+    "sha256": "ce004bb80c89bf2151109b43bbf0f7c7802899fd1efacabd91802ec7fa35b78e",
+    "match": true,
+    "bytes": 499236,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "ce004bb80c89bf2151109b43bbf0f7c7802899fd1efacabd91802ec7fa35b78e",
+    "match": true,
+    "bytes": 499236,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  },
+  "calendar": {
+   "canonical": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "match": true,
+    "bytes": 1971,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "match": true,
+    "bytes": 1971,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  },
+  "team_colors": {
+   "canonical": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "match": true,
+    "bytes": 170,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   },
+   "as_requested_by_page": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "match": true,
+    "bytes": 170,
+    "last_modified": "Tue, 20 Oct 2026 18:56:02 GMT",
+    "age": "0"
+   }
+  }
+ },
+ "all_match": true,
+ "live_week": 35,
+ "live_rows": [
+  [
+   "CHEF",
+   "2026-10-19",
+   18069,
+   185,
+   18254
+  ],
+  [
+   "DOC",
+   "2026-10-19",
+   15988,
+   125,
+   16113
+  ],
+  [
+   "CHAN",
+   "2026-10-19",
+   14455,
+   170,
+   14625
+  ],
+  [
+   "PAT",
+   "2026-10-19",
+   11786,
+   140,
+   11926
+  ],
+  [
+   "JULES",
+   "2026-10-19",
+   10992,
+   95,
+   11087
+  ]
+ ]
+}

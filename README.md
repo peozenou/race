@@ -63,6 +63,7 @@ The skills and local progress helpers are installed in Patrick's Codex environme
 | `2026/tools/tutorial.py` | Optional tutorial recording |
 | `2026/tutoriel.mp4` | Dashboard navigation tutorial |
 | `docs/` | Workflow and data-release documentation |
+| `docs/production/` | Claude's public step-6 production notes and live evidence, one folder per release |
 
 A historical season can have its own directory, such as `2025/`, and a corresponding landing-page entry. Resolve its actual workbook and data contract before adding it. Current acquisition adapters are season-specific.
 
