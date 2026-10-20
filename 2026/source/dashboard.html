@@ -45,6 +45,7 @@
 .tr .tr-tip-r .tr-tip-v{margin-left:auto;padding-left:var(--cds-gap-sm)}
 .tr .tr-tip-e{color:var(--cds-text-secondary);margin-top:2px}
 .tr .tr-sw{width:8px;height:8px;border-radius:2px;display:inline-block;flex:none}
+.tr .tr-legend .tr-lg-slot{display:flex;flex-wrap:wrap;align-items:center;gap:4px var(--cds-gap-md)}
 .tr .tr-multiples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:var(--cds-gap-md);position:relative;min-height:7rem}
 .tr .tr-mult-label{font-size:var(--cds-font-size-caption);display:flex;justify-content:space-between;gap:var(--cds-gap-sm);margin-bottom:4px}
 .tr .tr-mult-label b{font-weight:var(--cds-font-weight-medium)}
@@ -145,6 +146,7 @@
     <div class="tr-card" id="composition-card">
       <h2>D'où viennent les points Race de chaque équipe</h2>
       <p class="tr-note">Points ATP Race de chaque joueur à la dernière mise à jour, empilés par équipe ; survolez un segment pour voir le joueur.</p>
+      <div class="tr-legend" id="composition-legend" hidden></div>
       <div class="tr-chart dash-skeleton" id="composition-chart" data-source="player_season team_colors"></div>
     </div>
 
@@ -384,6 +386,7 @@ dash.calc('player_season', {
         gain_4: held || w4 === null || race === null ? null : race - w4,
         duel_pts: a.duel_pts === null && b.duel_pts === null ? null : (a.duel_pts || 0) + (b.duel_pts || 0),
         slot: s, out_race: a.race, in_race: b.race,
+        out_series: weeks.map((w) => at(s.out, w)), in_series: weeks.map((w) => at(s.in, w)),
       }));
     });
     return out;
@@ -487,6 +490,9 @@ dash.calc('player_events', {
     const i = order.indexOf(team);
     return dash.colors[(i < 0 ? 0 : i) % dash.colors.length];
   };
+  // Darker shade of a team colour: the incoming player's part of a replacement line.
+  TR.shade = (c) => { const k = d3.color(c); return k ? k.darker(1).formatHex() : c; };
+  TR.swatch = (c) => { const s = document.createElement('span'); s.className = 'tr-sw'; s.style.background = c; s.setAttribute('aria-hidden', 'true'); return s; };
   const enc = (s) => String(s).replace(/%/g, '%25').replace(/&/g, '%26').replace(/=/g, '%3D');
   TR.where = (obj) => Object.entries(obj).map(([k, v]) => enc(k) + '=' + enc(v)).join('&');
   TR.mark = (el, source, field, where) => {
@@ -813,14 +819,52 @@ dash.calc('player_events', {
       segs.forEach((p) => {
         const a = x(acc), b = x(acc + p.race);
         acc += p.race;
-        svg.append('rect').attr('x', a).attr('y', y0).attr('width', Math.max(0, b - a)).attr('height', rowH).attr('rx', 3)
-          .attr('fill', color).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
-          .on('pointerenter pointermove', (ev) => { const [bx, by] = d3.pointer(ev, el); TR.showTip(tip, el, bx, by, `${t} · ${p.short}`, [{ name: 'Points Race', value: TR.fmt(p.race) }, { name: "Part de l'équipe", value: TR.pct(p.share) }]); })
+        const fits = (node, room) => { if (node.node().getComputedTextLength() > room - 10) { node.remove(); return false; } return true; };
+        const seglabel = (lx, text) => svg.append('text').attr('class', 'tr-seglabel').attr('x', lx + 6).attr('y', y0 + rowH / 2).attr('dy', '0.32em').text(text);
+        if (!p.slot) {
+          svg.append('rect').attr('x', a).attr('y', y0).attr('width', Math.max(0, b - a)).attr('height', rowH).attr('rx', 3)
+            .attr('fill', color).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+            .on('pointerenter pointermove', (ev) => { const [bx, by] = d3.pointer(ev, el); TR.showTip(tip, el, bx, by, `${t} · ${p.short}`, [{ name: 'Points Race', value: TR.fmt(p.race) }, { name: "Part de l'équipe", value: TR.pct(p.share) }]); })
+            .on('pointerleave', () => TR.hideTip(tip));
+          fits(seglabel(a, p.short), b - a);
+          return;
+        }
+        // Replacement line: one post, outgoing part in the team colour, incoming part in a darker shade.
+        const dark = TR.shade(color);
+        const outPts = p.out_race || 0, inPts = p.in_race || 0;
+        const m = x(acc - p.race + outPts);
+        const g = svg.append('g')
+          .on('pointerenter pointermove', (ev) => {
+            const [bx, by] = d3.pointer(ev, el);
+            TR.showTip(tip, el, bx, by, `${t} · ${p.short}`, [
+              { color, name: `${p.slot.outShort} (sorti)`, value: TR.fmt(outPts) },
+              { color: dark, name: `${p.slot.inShort} (entré)`, value: TR.fmt(inPts) },
+              { name: 'Total du poste', value: TR.fmt(p.race) },
+              { name: "Part de l'équipe", value: TR.pct(p.share) },
+            ], p.qual === 'hold' ? `Contribution de ${p.slot.inShort} en attente de son total Race au ${TR.dateY(p.slot.date)}.` : undefined);
+          })
           .on('pointerleave', () => TR.hideTip(tip));
-        const label = svg.append('text').attr('class', 'tr-seglabel').attr('x', a + 6).attr('y', y0 + rowH / 2).attr('dy', '0.32em').text(p.short);
-        if (label.node().getComputedTextLength() > b - a - 10) label.remove();
+        g.append('rect').attr('x', a).attr('y', y0).attr('width', Math.max(0, b - a)).attr('height', rowH).attr('rx', 3)
+          .attr('fill', color).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5);
+        if (inPts > 0) g.append('rect').attr('x', m).attr('y', y0 + 0.75).attr('width', Math.max(0, b - 0.75 - m)).attr('height', rowH - 1.5).attr('rx', 2.25).attr('fill', dark);
+        // Name each part when both fit; otherwise name the post across the whole segment.
+        const inLabel = inPts > 0 ? seglabel(m, p.slot.inShort) : null;
+        if (inLabel && fits(inLabel, b - m)) fits(seglabel(a, p.slot.outShort), m - a);
+        else if (!fits(seglabel(a, p.short), b - a)) fits(seglabel(a, p.slot.outShort), m - a);
       });
     });
+    const legend = document.getElementById('composition-legend');
+    if (legend) {
+      const slots = ps.filter((p) => p.slot && teams.includes(p.team));
+      legend.replaceChildren(...slots.map((p) => {
+        const c = TR.color(p.team, order);
+        const item = document.createElement('div'); item.className = 'tr-lg-slot';
+        const entry = (sw, text) => { const e = document.createElement('span'); if (sw) e.append(TR.swatch(sw)); e.append(TR.text(text)); return e; };
+        item.append(entry(null, `${p.team}, poste ${p.short} :`), entry(c, `${p.slot.outShort} (jusqu’au ${TR.date(p.slot.date)})`), entry(TR.shade(c), `${p.slot.inShort} (depuis le ${TR.date(p.slot.date)}${p.qual === 'hold' ? ', contribution en attente' : ''})`));
+        return item;
+      }));
+      legend.hidden = !slots.length;
+    }
   };
 
   /* Nuage : tournois disputés vs points Race par tournoi, bulle = total Race */
@@ -906,11 +950,13 @@ dash.calc('player_events', {
     return svg.node();
   };
 
-  TR.detailRace = (el, rows, hebdo, color) => {
+  // split (replacement line): rows also carry `out` and `in`; the bands stack the outgoing player's credited points
+  // in the team colour and the incoming player's in split.dark.
+  TR.detailRace = (el, rows, hebdo, color, split) => {
     const W = el.clientWidth; if (!W) return;
     const H = 200;
     el.replaceChildren(); el.style.minHeight = H + 'px';
-    const svg = TR.svg(el, W, H, 'Points Race du joueur choisi à chaque mise à jour');
+    const svg = TR.svg(el, W, H, split ? `Points Race comptés pour le poste ${split.outName}/${split.inName} à chaque mise à jour, part de chaque joueur` : 'Points Race du joueur choisi à chaque mise à jour');
     const pts = rows.slice().sort((a, b) => a.week - b.week);
     if (pts.length < 2) {
       el.replaceChildren(); el.style.minHeight = '';
@@ -930,7 +976,21 @@ dash.calc('player_events', {
     svg.append('g').selectAll('line').data(yt).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
     svg.append('g').selectAll('text').data(yt).join('text').attr('class', 'tr-tick').attr('x', m.l - 6).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.fmt);
     TR.weekAxis(svg, x, weeks, H - m.b, W - m.l - m.r);
-    svg.append('path').attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line().x((d) => x(d.week)).y((d) => y(d.race))(pts));
+    const line = (f) => d3.line().defined((d) => f(d) !== null).x((d) => x(d.week)).y((d) => y(f(d)));
+    const stroke = (path, c) => path.attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const outOf = (d) => d.out ?? 0;
+    const inOf = (d) => (d.in === null || d.in === undefined ? null : d.in);
+    if (split) {
+      // Bottom band: outgoing player's credited points; top band: the incoming player's, drawn only once he is credited.
+      svg.append('path').attr('fill', color).attr('fill-opacity', 0.3).attr('d', d3.area().x((d) => x(d.week)).y0(y(0)).y1((d) => y(outOf(d)))(pts));
+      const credited = pts.some((d) => (inOf(d) || 0) > 0);
+      if (credited) {
+        const band = pts.filter((d) => inOf(d) !== null);
+        svg.append('path').attr('fill', split.dark).attr('fill-opacity', 0.55).attr('d', d3.area().x((d) => x(d.week)).y0((d) => y(outOf(d))).y1((d) => y(outOf(d) + inOf(d)))(band));
+        stroke(svg.append('path'), color).attr('d', line(outOf)(pts));
+        stroke(svg.append('path'), split.dark).attr('d', line((d) => outOf(d) + inOf(d))(band));
+      } else stroke(svg.append('path'), color).attr('d', line(outOf)(pts));
+    } else stroke(svg.append('path'), color).attr('d', d3.line().x((d) => x(d.week)).y((d) => y(d.race))(pts));
     const dot = svg.append('circle').attr('r', 4).attr('fill', color).style('display', 'none');
     const tip = TR.tip(el);
     svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', Math.max(0, W - m.l - m.r)).attr('height', Math.max(0, H - m.t - m.b)).attr('fill', 'transparent')
@@ -938,9 +998,15 @@ dash.calc('player_events', {
         const [px] = d3.pointer(ev);
         const wk = TR.nearest(weeks, x, px);
         const p = pts.find((d) => d.week === wk);
-        dot.style('display', null).attr('cx', x(wk)).attr('cy', y(p.race));
+        dot.style('display', null).attr('cx', x(wk)).attr('cy', y(p.race)).attr('fill', split && (inOf(p) || 0) > 0 ? split.dark : color);
         const [bx, by] = d3.pointer(ev, el);
-        TR.showTip(tip, el, bx, by, `Semaine ${wk}${dates.get(wk) ? ' · ' + TR.dateY(dates.get(wk)) : ''}`, [{ name: 'Points Race', value: TR.fmt(p.race) }]);
+        const head = `Semaine ${wk}${dates.get(wk) ? ' · ' + TR.dateY(dates.get(wk)) : ''}`;
+        if (!split) { TR.showTip(tip, el, bx, by, head, [{ name: 'Points Race', value: TR.fmt(p.race) }]); return; }
+        TR.showTip(tip, el, bx, by, head, [
+          { color, name: split.outName, value: TR.fmt(outOf(p)) },
+          { color: split.dark, name: split.inName, value: inOf(p) === null ? 'pas encore dans l’équipe' : TR.fmt(inOf(p)) },
+          { name: 'Total du poste', value: TR.fmt(p.race) },
+        ], split.held && inOf(p) !== null ? `Contribution de ${split.inName} en attente de son total Race à son arrivée.` : undefined);
       })
       .on('pointerleave', () => { dot.style('display', 'none'); TR.hideTip(tip); });
   };
@@ -1153,9 +1219,9 @@ dash.calc('player_events', {
     $('detail-name').textContent = s.slot ? s.short : (p.full || s.short);
     if (s.slot) {
       pick.hidden = false;
-      pick.replaceChildren(...[['in', s.slot.inShort + ' (depuis le ' + TR.date(s.slot.date) + ')'], ['out', s.slot.outShort + ' (jusqu’au ' + TR.date(s.slot.date) + ')']].map(([k, label]) => {
+      pick.replaceChildren(...[['in', s.slot.inShort + ' (depuis le ' + TR.date(s.slot.date) + ')', TR.shade(color)], ['out', s.slot.outShort + ' (jusqu’au ' + TR.date(s.slot.date) + ')', color]].map(([k, label, c]) => {
         const b = document.createElement('button'); b.type = 'button'; b.className = 'tr-chip'; b.dataset.pick = k;
-        b.setAttribute('aria-pressed', String((slotPick === 'out' ? 'out' : 'in') === k)); b.textContent = label; return b;
+        b.setAttribute('aria-pressed', String((slotPick === 'out' ? 'out' : 'in') === k)); b.append(TR.swatch(c), TR.text(label)); return b;
       }));
     } else { pick.hidden = true; pick.replaceChildren(); }
     $('detail-sub').replaceChildren(TR.text((s.slot ? (p.full || shown) + ' · ' : '') + s.team + ' · ATP '), TR.span(p.atp_rank ? 'n° ' + p.atp_rank : '—', 'players', 'atp_rank', w), TR.text(' · Race '), TR.span(p.race_rank ? 'n° ' + p.race_rank : '—', 'players', 'race_rank', w), TR.text(' · '), TR.span(TR.dec1(p.age), 'players', 'age', w), TR.text(' ans'));
@@ -1188,7 +1254,8 @@ dash.calc('player_events', {
     $('detail-race-title').textContent = s.slot ? `Points Race comptés pour le poste ${s.short} à chaque mise à jour` : 'Points Race à chaque mise à jour';
     if (s.slot) {
       const wk = [...new Set(dash.data('joueurs').data.map((r) => r.week))].sort((a, b) => a - b);
-      TR.detailRace($('detail-race'), wk.map((wv, i) => ({ week: wv, race: s.series[i] })).filter((r) => r.race !== null), dash.data('hebdo').data, color);
+      TR.detailRace($('detail-race'), wk.map((wv, i) => ({ week: wv, race: s.series[i], out: s.out_series[i], in: s.in_series[i] })).filter((r) => r.race !== null), dash.data('hebdo').data, color,
+        { outName: s.slot.outShort, inName: s.slot.inShort, dark: TR.shade(color), held: s.qual === 'hold' });
     } else if (s.qual === 'hold') {
       const dr = $('detail-race'); dr.style.minHeight = '';
       const n = document.createElement('p'); n.className = 'tr-empty-msg';
@@ -1201,7 +1268,7 @@ dash.calc('player_events', {
       const won = p[k + '_w'] || 0, lost = p[k + '_l'] || 0, n = won + lost;
       const row = document.createElement('div'); row.className = 'tr-bar-row';
       const a = document.createElement('span'); a.textContent = lab;
-      const bar = document.createElement('div'); bar.className = 'tr-bar'; const fill = document.createElement('span'); fill.style.width = (n ? (100 * won / n) : 0) + '%'; fill.style.background = color; bar.append(fill);
+      const bar = document.createElement('div'); bar.className = 'tr-bar'; const fill = document.createElement('span'); fill.style.width = (n ? (100 * won / n) : 0) + '%'; fill.style.background = s.slot && shown === s.slot.in ? TR.shade(color) : color; bar.append(fill);
       const r = document.createElement('span'); r.className = 'tr-r';
       r.append(TR.span(String(won), 'players', k + '_w', w), TR.text('–'), TR.span(String(lost), 'players', k + '_l', w));
       row.append(a, bar, r); surf.append(row);
