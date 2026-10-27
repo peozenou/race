@@ -6273,7 +6273,7 @@
 "team": "CHEF",
 "player": "Lehecka Jiri",
 "week": 35,
-"race": 0
+"race": 170
 },
 {
 "team": "JULES",
@@ -6310,5 +6310,191 @@
 "player": "Bublik Alexander",
 "week": 35,
 "race": 1785
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 36,
+"race": 1985
+},
+{
+"team": "PAT",
+"player": "De Minaur Alex",
+"week": 36,
+"race": 2880
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 36,
+"race": 4480
+},
+{
+"team": "PAT",
+"player": "Engel Justin",
+"week": 36,
+"race": 62
+},
+{
+"team": "PAT",
+"player": "Tien Learner",
+"week": 36,
+"race": 2045
+},
+{
+"team": "PAT",
+"player": "Blanch Darwin",
+"week": 36,
+"race": 372
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 36,
+"race": 9150
+},
+{
+"team": "DOC",
+"player": "Cobolli Flavio",
+"week": 36,
+"race": 3640
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 36,
+"race": 2685
+},
+{
+"team": "DOC",
+"player": "Kouame Moise",
+"week": 36,
+"race": 349
+},
+{
+"team": "DOC",
+"player": "Budkov Kjaer Nicolai",
+"week": 36,
+"race": 313
+},
+{
+"team": "DOC",
+"player": "Bernet Henry",
+"week": 36,
+"race": 131
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 36,
+"race": 4600
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 36,
+"race": 3660
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 36,
+"race": 10
+},
+{
+"team": "CHAN",
+"player": "Michelsen Alex",
+"week": 36,
+"race": 1385
+},
+{
+"team": "CHAN",
+"player": "Paul Tommy",
+"week": 36,
+"race": 2675
+},
+{
+"team": "CHAN",
+"player": "Mensik Jakub",
+"week": 36,
+"race": 2495
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 36,
+"race": 7950
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 36,
+"race": 360
+},
+{
+"team": "CHEF",
+"player": "Jodar Rafael",
+"week": 36,
+"race": 3159
+},
+{
+"team": "CHEF",
+"player": "Fonseca Joao",
+"week": 36,
+"race": 1200
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 36,
+"race": 3425
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 36,
+"race": 2075
+},
+{
+"team": "CHEF",
+"player": "Lehecka Jiri",
+"week": 36,
+"race": 195
+},
+{
+"team": "JULES",
+"player": "Djokovic Novak",
+"week": 36,
+"race": 2840
+},
+{
+"team": "JULES",
+"player": "Musetti Lorenzo",
+"week": 36,
+"race": 1545
+},
+{
+"team": "JULES",
+"player": "Dimitrov Grigor",
+"week": 36,
+"race": 422
+},
+{
+"team": "JULES",
+"player": "Humbert Ugo",
+"week": 36,
+"race": 1270
+},
+{
+"team": "JULES",
+"player": "Tiafoe Frances",
+"week": 36,
+"race": 3380
+},
+{
+"team": "JULES",
+"player": "Bublik Alexander",
+"week": 36,
+"race": 1875
 }
 ]

@@ -43,41 +43,41 @@
 "week": 1,
 "date": "2026-02-02",
 "team": "PAT",
-"race": 465,
+"race": 1680,
 "duels": 20,
-"total": 485
+"total": 1700
 },
 {
 "week": 1,
 "date": "2026-02-02",
 "team": "DOC",
-"race": 675,
+"race": 1573,
 "duels": 0,
-"total": 675
+"total": 1573
 },
 {
 "week": 1,
 "date": "2026-02-02",
 "team": "CHAN",
-"race": 495,
+"race": 3380,
 "duels": 10,
-"total": 505
+"total": 3390
 },
 {
 "week": 1,
 "date": "2026-02-02",
 "team": "CHEF",
-"race": 697,
+"race": 1149,
 "duels": 10,
-"total": 707
+"total": 1159
 },
 {
 "week": 1,
 "date": "2026-02-02",
 "team": "JULES",
-"race": 495,
+"race": 2650,
 "duels": 5,
-"total": 500
+"total": 2655
 },
 {
 "week": 2,
@@ -85,7 +85,7 @@
 "team": "PAT",
 "race": 1680,
 "duels": 45,
-"total": 1825
+"total": 1725
 },
 {
 "week": 2,
@@ -93,7 +93,7 @@
 "team": "DOC",
 "race": 1586,
 "duels": 35,
-"total": 1721
+"total": 1621
 },
 {
 "week": 2,
@@ -101,7 +101,7 @@
 "team": "CHAN",
 "race": 3380,
 "duels": 65,
-"total": 3650
+"total": 3445
 },
 {
 "week": 2,
@@ -109,7 +109,7 @@
 "team": "CHEF",
 "race": 1224,
 "duels": 15,
-"total": 1354
+"total": 1239
 },
 {
 "week": 2,
@@ -117,7 +117,7 @@
 "team": "JULES",
 "race": 2675,
 "duels": 30,
-"total": 2800
+"total": 2705
 },
 {
 "week": 3,
@@ -1427,9 +1427,9 @@
 "week": 35,
 "date": "2026-10-19",
 "team": "CHEF",
-"race": 18069,
+"race": 18239,
 "duels": 185,
-"total": 18254
+"total": 18424
 },
 {
 "week": 35,
@@ -1438,5 +1438,45 @@
 "race": 10992,
 "duels": 95,
 "total": 11087
+},
+{
+"week": 36,
+"date": "2026-10-26",
+"team": "PAT",
+"race": 11824,
+"duels": 140,
+"total": 11964
+},
+{
+"week": 36,
+"date": "2026-10-26",
+"team": "DOC",
+"race": 16268,
+"duels": 130,
+"total": 16398
+},
+{
+"week": 36,
+"date": "2026-10-26",
+"team": "CHAN",
+"race": 14825,
+"duels": 175,
+"total": 15000
+},
+{
+"week": 36,
+"date": "2026-10-26",
+"team": "CHEF",
+"race": 18364,
+"duels": 190,
+"total": 18554
+},
+{
+"week": 36,
+"date": "2026-10-26",
+"team": "JULES",
+"race": 11332,
+"duels": 110,
+"total": 11442
 }
 ]
