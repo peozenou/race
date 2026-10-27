@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="ae164c5669a3">
+  <meta name="data-version" content="7f446c6ee322">
   <title>THE RACE 2026 — bilan de la saison</title>
   <meta name="description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — bilan de la saison">
   <meta property="og:description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=ae164c5669a3">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=7f446c6ee322">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=ae164c5669a3">
+  <link rel="stylesheet" href="assets/theme.css?v=7f446c6ee322">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=ae164c5669a3"></script>
+  <script src="assets/runtime.js?v=7f446c6ee322"></script>
 </head>
 <body>
 <main class="site">
@@ -48,6 +48,7 @@
 .tr .tr-sub{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
 .tr .tr-up{color:var(--color-ok)}
 .tr .tr-down{color:var(--color-bad)}
+.tr .tr-pos{white-space:nowrap;font-variant-numeric:tabular-nums}
 .tr .tr-muted{color:var(--color-fg-muted);font-style:italic}
 .tr .tr-mark{color:var(--color-fg-muted);margin-left:1px;cursor:help}
 .tr .tr-chart{position:relative;min-height:260px}
@@ -195,6 +196,7 @@
       <div class="tr-scroll">
         <table class="tr-table tr-click" id="player-table" data-source="player_season" data-row-key="player">
           <thead><tr>
+            <th class="tr-l" data-field="pos"><button type="button" data-sort="pos" title="Place parmi les 30 postes selon les points Race comptés, et variation depuis la semaine précédente">Rang</button></th>
             <th class="tr-l" data-field="short"><button type="button" data-sort="short">Joueur</button></th>
             <th class="tr-l" data-field="team"><button type="button" data-sort="team">Équipe</button></th>
             <th data-field="race"><button type="button" data-sort="race">Pts Race</button></th>
@@ -416,6 +418,14 @@ dash.calc('player_season', {
         out_series: weeks.map((w) => at(s.out, w)), in_series: weeks.map((w) => at(s.in, w)),
       }));
     });
+    // Position of each lineup line among all lines by credited Race points, this week and the week before
+    // (ties share a position). A line with no credited value that week has no position.
+    const posAt = (i) => {
+      const v = out.map((r) => (r.series && r.series.length > i && i >= 0 ? r.series[i] : null));
+      return v.map((x) => (x === null ? null : 1 + v.filter((y) => y !== null && y > x).length));
+    };
+    const now = posAt(weeks.length - 1), before = posAt(weeks.length - 2);
+    out.forEach((r, i) => { r.pos = now[i]; r.prev_pos = before[i]; r.pos_move = now[i] !== null && before[i] !== null ? before[i] - now[i] : null; });
     return out;
   },
 });
@@ -1063,7 +1073,7 @@ dash.calc('player_events', {
     const b = e.target.closest('button[data-sort]');
     if (!b) return;
     const k = b.dataset.sort;
-    if (sort.key === k) sort.dir = -sort.dir; else { sort.key = k; sort.dir = ['short', 'team', 'atp_rank'].includes(k) ? 1 : -1; }
+    if (sort.key === k) sort.dir = -sort.dir; else { sort.key = k; sort.dir = ['short', 'team', 'atp_rank', 'pos'].includes(k) ? 1 : -1; }
     render();
   });
   $('player-table').querySelector('tbody').addEventListener('click', (e) => {
@@ -1195,6 +1205,22 @@ dash.calc('player_events', {
       if (btn) th.setAttribute('aria-sort', btn.dataset.sort === k ? (sort.dir > 0 ? 'ascending' : 'descending') : 'none');
     });
     const cols = [
+      { f: 'pos', l: true, node: (r) => {
+        const s = document.createElement('span'); s.className = 'tr-pos';
+        s.append(TR.text(r.pos === null ? '—' : String(r.pos)));
+        if (r.pos_move) {
+          const mv = document.createElement('span');
+          const up = r.pos_move > 0;
+          mv.className = up ? 'tr-up' : 'tr-down';
+          mv.textContent = (up ? ' ▲' : ' ▼') + Math.abs(r.pos_move);
+          mv.title = `${up ? 'Gagne' : 'Perd'} ${Math.abs(r.pos_move)} place${Math.abs(r.pos_move) > 1 ? 's' : ''} ; ${TR.ord(r.prev_pos)} la semaine précédente`;
+          mv.setAttribute('aria-label', mv.title);
+          s.append(mv);
+        } else if (r.pos_move === 0) {
+          const eq = document.createElement('span'); eq.className = 'tr-muted'; eq.textContent = ' ='; eq.title = 'Même place que la semaine précédente'; eq.setAttribute('aria-label', eq.title); s.append(eq);
+        }
+        return s;
+      } },
       { f: 'short', l: true },
       { f: 'team', l: true, node: (r) => { const s = document.createElement('span'); const d = document.createElement('span'); d.className = 'tr-dot'; d.style.background = TR.color(r.team, ord); s.append(d, TR.text(r.team)); return s; } },
       { f: 'race', node: (r) => {
