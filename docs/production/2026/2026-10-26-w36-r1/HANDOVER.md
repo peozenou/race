@@ -7,19 +7,19 @@ Owner: **Claude**. Prepared 27 October 2026, America/New_York. This is the publi
 | Field | Value |
 |---|---|
 | `owner` | Claude |
-| `production_status` | `LIVE_DASHBOARD_VERIFIED` |
+| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 2) |
 | `release_id` | `2026-10-26-w36-r1` (branch `data-release/2026-10-26-w36-r1`) |
 | `data_commit_sha` | [`3220344fc042fa9f471aaaaff475f9b82cfc66ef`](https://github.com/peozenou/race/commit/3220344fc042fa9f471aaaaff475f9b82cfc66ef) |
-| `dashboard_commit_sha` | [`8fe2905d6d357ec63d55d302b558374bac7b2389`](https://github.com/peozenou/race/commit/8fe2905d6d357ec63d55d302b558374bac7b2389) |
-| Production history | `6bb71bd` (previous main) → `3220344` (release data, fast-forward) → `8fe2905` (week-36 build). No concurrent changes on `main` to merge. |
+| `dashboard_commit_sha` | [`4e4b2b0afd277077f7196e9d9713cfcecd9779fe`](https://github.com/peozenou/race/commit/4e4b2b0afd277077f7196e9d9713cfcecd9779fe) |
+| Production history | `6bb71bd` (previous main) → `3220344` (release data, fast-forward) → [`8fe2905`](https://github.com/peozenou/race/commit/8fe2905d6d357ec63d55d302b558374bac7b2389) (week-36 build) → `01aadc4` (docs only) → `4e4b2b0` (players-table rank column with arrows). No concurrent changes on `main` to merge. |
 | `dashboard_url` | https://peozenou.github.io/race/2026/ |
-| `build_data_version` / `live_data_version` | `ae164c5669a3` / `ae164c5669a3` |
+| `build_data_version` / `live_data_version` | `7f446c6ee322` / `7f446c6ee322` |
 | `live_week` | 36, Monday 26 October 2026 (competition week, not ISO week) |
-| `ui_checks_verified` | true (40 checks, 0 failures, light and dark) |
-| `live_verified_at` | 2026-10-27T07:06:46-04:00 (data fetch 07:05:54-04:00) |
-| Deployment | GitHub Pages run [40493412269](https://github.com/peozenou/race/actions/runs/40493412269): build, report-build-status and deploy all success; deployment 7356744664 success at 11:05:16Z. Served `index.html` byte-identical to the commit (SHA-256 `1c10bd445e08bcd81ad9353ef5c40dee981d395d97a5188ea0eea36cc5aa5424`). |
+| `ui_checks_verified` | true (43 checks, 0 failures, light and dark) |
+| `live_verified_at` | 2026-10-27T18:54:34-04:00 (data fetch 18:53:47-04:00) |
+| Deployment | GitHub Pages run [40598150235](https://github.com/peozenou/race/actions/runs/40598150235): build, report-build-status and deploy all success; deployment 7372409436 success at 22:53:34Z. Served `index.html` byte-identical to the commit (SHA-256 `511e4c1dd775d93695e7b76af9f79dda12aaa860905f0ed87e662d861b49d7fe`). |
 
-Later commits that touch only `docs/` (such as the one adding this note) do not change the dashboard: `git diff 8fe2905..HEAD -- 2026` is empty for them.
+The first production state, `8fe2905` (data version `ae164c5669a3`, run [40493412269](https://github.com/peozenou/race/actions/runs/40493412269)), was verified live at 2026-10-27T07:06:46-04:00 and superseded the same day by revision 2 at Patrick's request. Both kept the six approved datasets unchanged. Later commits that touch only `docs/` do not change the dashboard: `git diff 4e4b2b0..HEAD -- 2026` is empty for them.
 
 ### Live datasets
 
@@ -55,11 +55,15 @@ Grand total 73,358, up 1,183. Order CHEF, DOC, CHAN, PAT, JULES; CHEF leads DOC 
 - **Nulls.** Rune's Elo, yElo and age show "—". The null aggregate rates are not displayed.
 - **Source dates** shown separately from the competition Monday: Tennis Explorer rankings 26 Oct 2026; Elo/yElo 28 Sep 2026; Sinner's retained rankings 5 Oct 2026; matches through 26 Oct 2026.
 
+- **Rank column (revision 2).** Each line's place among the 30, with movement since week 35: Medvedev, Fils, Fritz, Musetti and Blanch ▲1; Cobolli, Tiafoe, Paul, Michelsen and Draper ▼1; the rest unchanged (=).
+
 Browser checks (headless Chromium on the live URL, light and dark): 0 console errors, 0 page errors, 0 failed requests; standings cards; season, rank and gains charts with tooltip; duel matrix; 30-line player table, six per team under each team filter; sorting; search; detail views for Sinner/Lehecka (both players), Kouame, Bernet and Rune; Notes tab; tab navigation; 390 px mobile width without horizontal scroll; `tutoriel.mp4` served byte-identical to the repository.
 
-### Dashboard source change (datasets untouched)
+### Dashboard source changes (datasets untouched)
 
 `RACE_QUAL` in `2026/source/dashboard.html` now references this release and no longer lists Lehecka's hold, since his entry baseline (2,055) is confirmed and credited. The hold display would have switched itself off anyway; removing it records the resolved state. Kouame's adjustment entry stays. French interface, design, navigation and tutorial are unchanged.
+
+**Revision 2 (`4e4b2b0`, requested by Patrick on 27 October).** The players table gains a sortable **Rang** column: each lineup line's place among the 30 lines by credited JOUEURS Race points, with ▲/▼ and the number of places moved since the previous week, or = when unchanged (hover gives the previous place). Ties share a place; a replacement line is ranked on the post total; the place stays the overall one under a team filter. It reuses the standings cards' ▲/▼ colours.
 
 ## Accepted qualifications carried
 
@@ -69,11 +73,12 @@ Browser checks (headless Chromium on the live URL, light and dark): 0 console er
 
 ## Step 7
 
-**Unblocked.** Production is verified live. The week-36 email may link https://peozenou.github.io/race/2026/, bound to dashboard commit `8fe2905`. Claude has not drafted or sent any email.
+**Re-bind required.** Production changed after the first verification, so any step-7 receipt or draft bound to `8fe2905` must be re-bound to dashboard commit `4e4b2b0` (data version `7f446c6ee322`), verified live at 2026-10-27T18:54:34-04:00. The URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
 
 ## Files
 
 - [`completion.json`](completion.json): machine-readable completion note (public fields).
-- [`evidence/live-data-8fe2905.json`](evidence/live-data-8fe2905.json): served page version, headers, the six dataset hashes in both URL variants, tutorial and landing page.
+- [`evidence/live-data-4e4b2b0.json`](evidence/live-data-4e4b2b0.json) and [`evidence/live-ui-4e4b2b0.json`](evidence/live-ui-4e4b2b0.json) (current, 43 checks); `evidence/4e4b2b0-*.png`: live players table with the rank column.
+- [`evidence/live-data-8fe2905.json`](evidence/live-data-8fe2905.json) (first state): served page version, headers, the six dataset hashes in both URL variants, tutorial and landing page.
 - [`evidence/live-ui-8fe2905.json`](evidence/live-ui-8fe2905.json): browser-check output, light and dark, with the 40 named checks.
 - `evidence/8fe2905-*.png`: live screenshots (teams, CHEF composition with tooltip in light and dark, Sinner/Lehecka detail for each player, Notes tab, mobile).

@@ -1,0 +1,2049 @@
+{
+ "url": "https://peozenou.github.io/race/2026/",
+ "started_at": "2026-10-27T18:53:52-04:00",
+ "checks": {
+  "light_no_errors": {
+   "pass": true,
+   "detail": [
+    [],
+    [],
+    []
+   ]
+  },
+  "light_data_requests_200": {
+   "pass": true,
+   "detail": {
+    "https://peozenou.github.io/race/2026/data/hebdo.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/joueurs.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/players.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/matches.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/calendar.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/team_colors.json?v=7f446c6ee322": 200
+   }
+  },
+  "dark_no_errors": {
+   "pass": true,
+   "detail": [
+    [],
+    [],
+    []
+   ]
+  },
+  "dark_data_requests_200": {
+   "pass": true,
+   "detail": {
+    "https://peozenou.github.io/race/2026/data/hebdo.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/players.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/matches.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/joueurs.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/calendar.json?v=7f446c6ee322": 200,
+    "https://peozenou.github.io/race/2026/data/team_colors.json?v=7f446c6ee322": 200
+   }
+  },
+  "inpage_hashes_match": {
+   "pass": true,
+   "detail": {
+    "hebdo": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+    "joueurs": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+    "players": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+    "matches": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+   }
+  },
+  "week_date_shown": {
+   "pass": true,
+   "detail": [
+    "Après la semaine 36 (26 oct. 2026), CHEF mène avec 18 554 points, 2 156 devant DOC. Meilleure progression de la semaine : CHAN (+375).",
+    "26 oct. 2026"
+   ]
+  },
+  "total_PAT": {
+   "pass": true,
+   "detail": [
+    11824,
+    140,
+    11964,
+    38
+   ]
+  },
+  "standings_text_PAT": {
+   "pass": true,
+   "detail": null
+  },
+  "total_DOC": {
+   "pass": true,
+   "detail": [
+    16268,
+    130,
+    16398,
+    285
+   ]
+  },
+  "standings_text_DOC": {
+   "pass": true,
+   "detail": null
+  },
+  "total_CHAN": {
+   "pass": true,
+   "detail": [
+    14825,
+    175,
+    15000,
+    375
+   ]
+  },
+  "standings_text_CHAN": {
+   "pass": true,
+   "detail": null
+  },
+  "total_CHEF": {
+   "pass": true,
+   "detail": [
+    18364,
+    190,
+    18554,
+    130
+   ]
+  },
+  "standings_text_CHEF": {
+   "pass": true,
+   "detail": null
+  },
+  "total_JULES": {
+   "pass": true,
+   "detail": [
+    11332,
+    110,
+    11442,
+    355
+   ]
+  },
+  "standings_text_JULES": {
+   "pass": true,
+   "detail": null
+  },
+  "history_race_plus_duels": {
+   "pass": true,
+   "detail": [
+    185,
+    0
+   ]
+  },
+  "history_w35_chef_corrected": {
+   "pass": true,
+   "detail": [
+    18239,
+    185,
+    18424,
+    880
+   ]
+  },
+  "history_w1_w2_repaired": {
+   "pass": true,
+   "detail": [
+    {
+     "CHAN": [
+      3380,
+      10,
+      3390,
+      3390
+     ],
+     "JULES": [
+      2650,
+      5,
+      2655,
+      2655
+     ],
+     "PAT": [
+      1680,
+      20,
+      1700,
+      1700
+     ],
+     "DOC": [
+      1573,
+      0,
+      1573,
+      1573
+     ],
+     "CHEF": [
+      1149,
+      10,
+      1159,
+      1159
+     ]
+    },
+    {
+     "CHAN": [
+      3380,
+      65,
+      3445,
+      55
+     ],
+     "JULES": [
+      2675,
+      30,
+      2705,
+      50
+     ],
+     "PAT": [
+      1680,
+      45,
+      1725,
+      25
+     ],
+     "DOC": [
+      1586,
+      35,
+      1621,
+      48
+     ],
+     "CHEF": [
+      1224,
+      15,
+      1239,
+      80
+     ]
+    }
+   ]
+  },
+  "charts_render": {
+   "pass": true,
+   "detail": [
+    {
+     "totals-chart": 1,
+     "rank-chart": 1,
+     "gains-chart": 5,
+     "duel-matrix": 0
+    },
+    "Vainqueur ↓ contre →\tPAT\tDOC\tCHAN\tCHEF\tJULES\tTotal\nPAT\t·\t5\t9\t4\t10\t28 · 140 pts\nDOC\t8\t·\t7\t6\t5\t26 · 130 pts\nCHAN\t8\t6\t·\t9\t12\t35 · 175 pts\nCHEF\t10\t6\t10\t·\t12\t38 · 190 pts\nJULES\t3\t9\t7\t3\t·\t22 · 110 pts"
+   ]
+  },
+  "totals_tooltip": {
+   "pass": true,
+   "detail": "Semaine 33 · 5 oct. 2026\nCHEF\n17 544\nDOC\n15 575\nCHAN\n13 765\nPAT\n11 306\nJULES\n10 657"
+  },
+  "players_30_lines": {
+   "pass": true,
+   "detail": 30
+  },
+  "six_per_team": {
+   "pass": true,
+   "detail": {
+    "PAT": [
+     "Shelton",
+     "De Minaur",
+     "Tien",
+     "Ruud",
+     "Blanch",
+     "Engel"
+    ],
+    "DOC": [
+     "Zverev",
+     "Cobolli",
+     "Fritz",
+     "Kouame",
+     "Budkov Kjaer",
+     "Bernet"
+    ],
+    "CHAN": [
+     "Alcaraz",
+     "Medvedev",
+     "Paul",
+     "Mensik",
+     "Michelsen",
+     "Rune"
+    ],
+    "CHEF": [
+     "Sinner/Lehecka",
+     "Fils",
+     "Jodar",
+     "Rublev",
+     "Fonseca",
+     "Draper"
+    ],
+    "JULES": [
+     "Tiafoe",
+     "Djokovic",
+     "Bublik",
+     "Musetti",
+     "Humbert",
+     "Dimitrov"
+    ]
+   }
+  },
+  "sinner_lehecka_line": {
+   "pass": true,
+   "detail": [
+    "Sinner/Lehecka",
+    "CHEF",
+    "8 145",
+    "44 %",
+    "+25",
+    "+195",
+    "",
+    "36–20",
+    "0",
+    "75",
+    "n° 21",
+    "1 949"
+   ]
+  },
+  "lehecka_not_pending": {
+   "pass": true,
+   "detail": null
+  },
+  "kouame_349_adjust": {
+   "pass": true,
+   "detail": [
+    "Kouame",
+    "DOC",
+    "349*",
+    "2 %",
+    "+25",
+    "+56",
+    "",
+    "32–21",
+    "3",
+    "0",
+    "n° 176",
+    "1 463"
+   ]
+  },
+  "kouame_note": {
+   "pass": true,
+   "detail": "Sinner/Lehecka (CHEF) : Lehecka remplace Sinner depuis le 12 oct. 2026 ; la ligne additionne les points Race et de duel comptés pour les deux joueurs, avec le bilan, le rang et l'Elo de Lehecka. * Kouame (DOC) : contribution comptée de 349, soit ses 325 points Race Tennis Explorer et un ajustement approuvé de +24."
+  },
+  "two_shades_composition": {
+   "pass": true,
+   "detail": [
+    {
+     "fill": "#93c47d",
+     "w": 494.10026495453064
+    },
+    {
+     "fill": "#678958",
+     "w": 11.079288111250321
+    },
+    {
+     "fill": "#93c47d",
+     "w": 207.77082964631893
+    },
+    {
+     "fill": "#93c47d",
+     "w": 191.63446740225424
+    },
+    {
+     "fill": "#93c47d",
+     "w": 125.87575810689407
+    },
+    {
+     "fill": "#93c47d",
+     "w": 72.79561914615533
+    },
+    {
+     "fill": "#93c47d",
+     "w": 21.83868574384678
+    }
+   ]
+  },
+  "two_shade_tooltip": {
+   "pass": true,
+   "detail": "CHEF · Sinner/Lehecka\nSinner (sorti)\n7 950\nLehecka (entré)\n195\nTotal du poste\n8 145\nPart de l'équipe\n44 %"
+  },
+  "detail_switch": {
+   "pass": true,
+   "detail": [
+    "Lehecka (depuis le 12 oct.)",
+    "Sinner (jusqu’au 12 oct.)"
+   ]
+  },
+  "detail_bands_two_shades": {
+   "pass": true,
+   "detail": [
+    "#93c47d",
+    "#678958"
+   ]
+  },
+  "detail_race_tooltip": {
+   "pass": true,
+   "detail": "Semaine 30 · 14 sept. 2026\nSinner\n7 950\nLehecka\npas encore dans l’équipe\nTotal du poste\n7 950"
+  },
+  "bernet_current_doc": {
+   "pass": true,
+   "detail": [
+    [
+     "Bernet"
+    ],
+    []
+   ]
+  },
+  "search_lehecka": {
+   "pass": true,
+   "detail": [
+    "Sinner/Lehecka"
+   ]
+  },
+  "rune_null_elo_age": {
+   "pass": true,
+   "detail": {
+    "name": "Holger Rune",
+    "sub": "CHAN · ATP n° 1202 · Race n° 1184 · — ans",
+    "kpis": "10\nPoints Race\n2–2\nVictoires–défaites\n0 / 0\nTitres / finales\n5\nPoints de duel\n—\nElo\n—\nyElo",
+    "qual": null,
+    "race_svg": 1,
+    "matches_rows": 4
+   }
+  },
+  "sources_dates": {
+   "pass": true,
+   "detail": "Sources et dates\n\nCe que lit chaque partie de la page.\n\nTotaux d'équipe\nFeuille HEBDO du classeur, instantané. Dernière mise à jour : semaine 36, 26 oct. 2026.\nPoints Race des joueurs\nFeuille JOUEURS du classeur, instantané.\nCouleurs des équipes\nCelles du classeur.\nMatchs et duels\nTennis Abstract, copiés dans le classeur ; tournois commencés jusqu'au 26 oct. 2026.\nClassements ATP et Race\nTennis Explorer, 26 oct. 2026. Classements conservés à une autre date : Sinner (sorti), 5 oct. 2026.\nElo et yElo\nTennis Abstract, 28 sept. 2026.\nCalendrier\nCalendrier ATP Tour 2026 (Grand Chelem et Masters 1000)."
+  },
+  "notes_transfer_no_hold": {
+   "pass": true,
+   "detail": "Comment les points sont comptés\n\nTel que le classeur les calcule.\n\nRace : somme des points ATP Race des six joueurs de l'équipe (Tennis Explorer), plus tout ajustement d'équipe approuvé.\nDuels : 5 points pour chaque victoire d'un joueur de l'équipe sur un joueur d'une autre équipe, comptée lorsque la date du tournoi sur Tennis Abstract précède la clôture du lundi.\nTotal = Race + Duels. Le classement s'appuie sur les effectifs actuels, et non sur l'appartenance au moment de chaque match.\nTransferts : l'équipe garde les points Race et de duel acquis par le joueur sortant ; le joueur entrant ne compte que les points gagnés après son arrivée. CHEF : Sinner sorti, Lehecka entré le 12 oct. 2026. Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe ; dans les graphiques, la part du joueur sortant garde la couleur de l’équipe et celle du joueur entrant prend une teinte plus foncée."
+  },
+  "tab_navigation": {
+   "pass": true,
+   "detail": [
+    "#notes",
+    true
+   ]
+  },
+  "light_mobile_no_hscroll": {
+   "pass": true,
+   "detail": [
+    [
+     390,
+     390
+    ],
+    [
+     390,
+     390
+    ]
+   ]
+  },
+  "dark_mobile_no_hscroll": {
+   "pass": true,
+   "detail": [
+    [
+     390,
+     390
+    ],
+    [
+     390,
+     390
+    ]
+   ]
+  },
+  "rank_column_values": {
+   "pass": true,
+   "detail": {
+    "Zverev": "1 =",
+    "Sinner/Lehecka": "2 =",
+    "Medvedev": "5 ▲1",
+    "Cobolli": "6 ▼1",
+    "Fils": "7 ▲1",
+    "Draper": "25 ▼1",
+    "Rune": "30 ="
+   }
+  },
+  "rank_positions_1_to_30": {
+   "pass": true,
+   "detail": null
+  },
+  "rank_moves_net_zero": {
+   "pass": true,
+   "detail": null
+  }
+ },
+ "light": {
+  "console_errors": [],
+  "page_errors": [],
+  "failed_requests": [],
+  "data_requests": {
+   "https://peozenou.github.io/race/2026/data/hebdo.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/joueurs.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/players.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/matches.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/calendar.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/team_colors.json?v=7f446c6ee322": 200
+  },
+  "data_version_meta": "7f446c6ee322",
+  "takeaway": "Après la semaine 36 (26 oct. 2026), CHEF mène avec 18 554 points, 2 156 devant DOC. Meilleure progression de la semaine : CHAN (+375).",
+  "head_asof": "26 oct. 2026",
+  "standings_text": "1er · CHEF\n18 554\nRace 18 364 · Duels 190\n+130 depuis la dernière mise à jour\nEn tête\n2e · DOC\n16 398\nRace 16 268 · Duels 130\n+285 depuis la dernière mise à jour\n2 156 derrière la tête\n3e · CHAN\n15 000\nRace 14 825 · Duels 175\n+375 depuis la dernière mise à jour\n3 554 derrière la tête\n4e · PAT\n11 964\nRace 11 824 · Duels 140\n+38 depuis la dernière mise à jour\n6 590 derrière la tête\n5e · JULES\n11 442\nRace 11 332 · Duels 110\n+355 depuis la dernière mise à jour\n7 112 derrière la tête",
+  "duel_asof": "26 oct. 2026",
+  "duel_matrix_text": "Vainqueur ↓ contre →\tPAT\tDOC\tCHAN\tCHEF\tJULES\tTotal\nPAT\t·\t5\t9\t4\t10\t28 · 140 pts\nDOC\t8\t·\t7\t6\t5\t26 · 130 pts\nCHAN\t8\t6\t·\t9\t12\t35 · 175 pts\nCHEF\t10\t6\t10\t·\t12\t38 · 190 pts\nJULES\t3\t9\t7\t3\t·\t22 · 110 pts",
+  "charts_svg": {
+   "totals-chart": 1,
+   "rank-chart": 1,
+   "gains-chart": 5,
+   "duel-matrix": 0
+  },
+  "inpage_hashes": {
+   "hebdo": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+   "joueurs": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+   "players": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+   "matches": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+   "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "team_weeks": {
+   "w1": {
+    "CHAN": [
+     3380,
+     10,
+     3390,
+     3390
+    ],
+    "JULES": [
+     2650,
+     5,
+     2655,
+     2655
+    ],
+    "PAT": [
+     1680,
+     20,
+     1700,
+     1700
+    ],
+    "DOC": [
+     1573,
+     0,
+     1573,
+     1573
+    ],
+    "CHEF": [
+     1149,
+     10,
+     1159,
+     1159
+    ]
+   },
+   "w2": {
+    "CHAN": [
+     3380,
+     65,
+     3445,
+     55
+    ],
+    "JULES": [
+     2675,
+     30,
+     2705,
+     50
+    ],
+    "PAT": [
+     1680,
+     45,
+     1725,
+     25
+    ],
+    "DOC": [
+     1586,
+     35,
+     1621,
+     48
+    ],
+    "CHEF": [
+     1224,
+     15,
+     1239,
+     80
+    ]
+   },
+   "w35": {
+    "CHEF": [
+     18239,
+     185,
+     18424,
+     880
+    ],
+    "DOC": [
+     15988,
+     125,
+     16113,
+     538
+    ],
+    "CHAN": [
+     14455,
+     170,
+     14625,
+     860
+    ],
+    "PAT": [
+     11786,
+     140,
+     11926,
+     620
+    ],
+    "JULES": [
+     10992,
+     95,
+     11087,
+     420
+    ]
+   },
+   "w36": {
+    "CHEF": [
+     18364,
+     190,
+     18554,
+     130
+    ],
+    "DOC": [
+     16268,
+     130,
+     16398,
+     285
+    ],
+    "CHAN": [
+     14825,
+     175,
+     15000,
+     375
+    ],
+    "PAT": [
+     11824,
+     140,
+     11964,
+     38
+    ],
+    "JULES": [
+     11332,
+     110,
+     11442,
+     355
+    ]
+   },
+   "rows": 185,
+   "race_plus_duels_mismatch": 0
+  },
+  "totals_tooltip": "Semaine 33 · 5 oct. 2026\nCHEF\n17 544\nDOC\n15 575\nCHAN\n13 765\nPAT\n11 306\nJULES\n10 657",
+  "players_take": "Zverev (DOC) compte le plus de points Race (9 150) ; Sinner (sorti) (CHEF) a le meilleur rendement, avec 883 points par tournoi.",
+  "players_rows_all": 30,
+  "table_fields": [
+   "pos",
+   "short",
+   "team",
+   "race",
+   "share",
+   "gain_week",
+   "gain_4",
+   "series",
+   "record",
+   "titles",
+   "duel_pts",
+   "atp_rank",
+   "elo"
+  ],
+  "table_pos": {
+   "Zverev": "1 =",
+   "Sinner/Lehecka": "2 =",
+   "Alcaraz": "3 =",
+   "Shelton": "4 =",
+   "Medvedev": "5 ▲1",
+   "Cobolli": "6 ▼1",
+   "Fils": "7 ▲1",
+   "Tiafoe": "8 ▼1",
+   "Jodar": "9 =",
+   "De Minaur": "10 =",
+   "Djokovic": "11 =",
+   "Fritz": "12 ▲1",
+   "Paul": "13 ▼1",
+   "Mensik": "14 =",
+   "Rublev": "15 =",
+   "Tien": "16 =",
+   "Ruud": "17 =",
+   "Bublik": "18 =",
+   "Musetti": "19 ▲1",
+   "Michelsen": "20 ▼1",
+   "Humbert": "21 =",
+   "Fonseca": "22 =",
+   "Dimitrov": "23 =",
+   "Blanch": "24 ▲1",
+   "Draper": "25 ▼1",
+   "Kouame": "26 =",
+   "Budkov Kjaer": "27 =",
+   "Bernet": "28 =",
+   "Engel": "29 =",
+   "Rune": "30 ="
+  },
+  "table_rows": {
+   "Zverev": [
+    "Zverev",
+    "DOC",
+    "9 150",
+    "56 %",
+    "0",
+    "+500",
+    "",
+    "62–16",
+    "2",
+    "55",
+    "n° 2",
+    "2 111"
+   ],
+   "Sinner/Lehecka": [
+    "Sinner/Lehecka",
+    "CHEF",
+    "8 145",
+    "44 %",
+    "+25",
+    "+195",
+    "",
+    "36–20",
+    "0",
+    "75",
+    "n° 21",
+    "1 949"
+   ],
+   "Alcaraz": [
+    "Alcaraz",
+    "CHAN",
+    "4 600",
+    "31 %",
+    "0",
+    "+550",
+    "",
+    "33–5",
+    "3",
+    "50",
+    "n° 3",
+    "2 149"
+   ],
+   "Shelton": [
+    "Shelton",
+    "PAT",
+    "4 480",
+    "38 %",
+    "0",
+    "+50",
+    "",
+    "40–17",
+    "4",
+    "50",
+    "n° 4",
+    "1 993"
+   ],
+   "Medvedev": [
+    "Medvedev",
+    "CHAN",
+    "3 660",
+    "25 %",
+    "+240",
+    "+790",
+    "",
+    "49–18",
+    "4",
+    "25",
+    "n° 5",
+    "1 956"
+   ],
+   "Cobolli": [
+    "Cobolli",
+    "DOC",
+    "3 640",
+    "22 %",
+    "+100",
+    "+110",
+    "",
+    "35–23",
+    "1",
+    "30",
+    "n° 6",
+    "1 905"
+   ],
+   "Fils": [
+    "Fils",
+    "CHEF",
+    "3 425",
+    "19 %",
+    "+100",
+    "+262",
+    "",
+    "38–14",
+    "2",
+    "45",
+    "n° 8",
+    "2 035"
+   ],
+   "Tiafoe": [
+    "Tiafoe",
+    "JULES",
+    "3 380",
+    "30 %",
+    "0",
+    "+50",
+    "",
+    "44–19",
+    "1",
+    "35",
+    "n° 9",
+    "1 957"
+   ],
+   "Jodar": [
+    "Jodar",
+    "CHEF",
+    "3 159",
+    "17 %",
+    "0",
+    "+650",
+    "",
+    "56–18",
+    "1",
+    "40",
+    "n° 11",
+    "2 001"
+   ],
+   "De Minaur": [
+    "De Minaur",
+    "PAT",
+    "2 880",
+    "24 %",
+    "0",
+    "+520",
+    "",
+    "42–20",
+    "1",
+    "35",
+    "n° 10",
+    "1 959"
+   ],
+   "Djokovic": [
+    "Djokovic",
+    "JULES",
+    "2 840",
+    "25 %",
+    "0",
+    "+510",
+    "",
+    "19–8",
+    "1",
+    "25",
+    "n° 12",
+    "2 047"
+   ],
+   "Fritz": [
+    "Fritz",
+    "DOC",
+    "2 685",
+    "17 %",
+    "+155",
+    "+205",
+    "",
+    "37–20",
+    "1",
+    "45",
+    "n° 13",
+    "1 948"
+   ],
+   "Paul": [
+    "Paul",
+    "CHAN",
+    "2 675",
+    "18 %",
+    "+90",
+    "+290",
+    "",
+    "44–20",
+    "1",
+    "35",
+    "n° 14",
+    "1 951"
+   ],
+   "Mensik": [
+    "Mensik",
+    "CHAN",
+    "2 495",
+    "17 %",
+    "0",
+    "+140",
+    "",
+    "36–20",
+    "1",
+    "40",
+    "n° 16",
+    "1 897"
+   ],
+   "Rublev": [
+    "Rublev",
+    "CHEF",
+    "2 075",
+    "11 %",
+    "0",
+    "+165",
+    "",
+    "33–21",
+    "1",
+    "5",
+    "n° 22",
+    "1 887"
+   ],
+   "Tien": [
+    "Tien",
+    "PAT",
+    "2 045",
+    "17 %",
+    "0",
+    "+50",
+    "",
+    "32–20",
+    "1",
+    "45",
+    "n° 18",
+    "1 943"
+   ],
+   "Ruud": [
+    "Ruud",
+    "PAT",
+    "1 985",
+    "17 %",
+    "0",
+    "+200",
+    "",
+    "31–18",
+    "0",
+    "10",
+    "n° 25",
+    "1 949"
+   ],
+   "Bublik": [
+    "Bublik",
+    "JULES",
+    "1 875",
+    "17 %",
+    "+90",
+    "+190",
+    "",
+    "31–22",
+    "1",
+    "0",
+    "n° 20",
+    "1 886"
+   ],
+   "Musetti": [
+    "Musetti",
+    "JULES",
+    "1 545",
+    "14 %",
+    "+250",
+    "+260",
+    "",
+    "25–12",
+    "1",
+    "25",
+    "n° 26",
+    "1 872"
+   ],
+   "Michelsen": [
+    "Michelsen",
+    "CHAN",
+    "1 385",
+    "9 %",
+    "+40",
+    "+50",
+    "",
+    "37–23",
+    "1",
+    "20",
+    "n° 34",
+    "1 881"
+   ],
+   "Humbert": [
+    "Humbert",
+    "JULES",
+    "1 270",
+    "11 %",
+    "0",
+    "+50",
+    "",
+    "26–24",
+    "0",
+    "20",
+    "n° 38",
+    "1 826"
+   ],
+   "Fonseca": [
+    "Fonseca",
+    "CHEF",
+    "1 200",
+    "7 %",
+    "0",
+    "0",
+    "",
+    "20–13",
+    "0",
+    "20",
+    "n° 40",
+    "1 947"
+   ],
+   "Dimitrov": [
+    "Dimitrov",
+    "JULES",
+    "422",
+    "4 %",
+    "0",
+    "0",
+    "",
+    "13–19",
+    "0",
+    "5",
+    "n° 124",
+    "1 732"
+   ],
+   "Blanch": [
+    "Blanch",
+    "PAT",
+    "372",
+    "3 %",
+    "+38",
+    "+50",
+    "",
+    "30–26",
+    "1",
+    "0",
+    "n° 144",
+    "1 572"
+   ],
+   "Draper": [
+    "Draper",
+    "CHEF",
+    "360",
+    "2 %",
+    "0",
+    "0",
+    "",
+    "8–7",
+    "0",
+    "5",
+    "n° 158",
+    "1 773"
+   ],
+   "Kouame": [
+    "Kouame",
+    "DOC",
+    "349*",
+    "2 %",
+    "+25",
+    "+56",
+    "",
+    "32–21",
+    "3",
+    "0",
+    "n° 176",
+    "1 463"
+   ],
+   "Budkov Kjaer": [
+    "Budkov Kjaer",
+    "DOC",
+    "313",
+    "2 %",
+    "0",
+    "+38",
+    "",
+    "33–31",
+    "0",
+    "0",
+    "n° 180",
+    "1 589"
+   ],
+   "Bernet": [
+    "Bernet",
+    "DOC",
+    "131",
+    "1 %",
+    "0",
+    "+51",
+    "",
+    "25–23",
+    "1",
+    "0",
+    "n° 361",
+    "1 426"
+   ],
+   "Engel": [
+    "Engel",
+    "PAT",
+    "62",
+    "1 %",
+    "0",
+    "0",
+    "",
+    "6–14",
+    "0",
+    "0",
+    "n° 607",
+    "1 411"
+   ],
+   "Rune": [
+    "Rune",
+    "CHAN",
+    "10",
+    "0 %",
+    "0",
+    "+10",
+    "",
+    "2–2",
+    "0",
+    "5",
+    "n° 1202",
+    "—"
+   ]
+  },
+  "player_qual_note_all": "Sinner/Lehecka (CHEF) : Lehecka remplace Sinner depuis le 12 oct. 2026 ; la ligne additionne les points Race et de duel comptés pour les deux joueurs, avec le bilan, le rang et l'Elo de Lehecka. * Kouame (DOC) : contribution comptée de 349, soit ses 325 points Race Tennis Explorer et un ajustement approuvé de +24.",
+  "table_note": "Points Race et gains : JOUEURS, c'est-à-dire la contribution comptée pour l'équipe. Bilan, titres, duels et classement ATP : dernière mise à jour ; Elo au 28 sept. 2026. Cliquez sur une ligne pour voir la saison du joueur.",
+  "team_filter_rows": {
+   "PAT": [
+    "Shelton",
+    "De Minaur",
+    "Tien",
+    "Ruud",
+    "Blanch",
+    "Engel"
+   ],
+   "DOC": [
+    "Zverev",
+    "Cobolli",
+    "Fritz",
+    "Kouame",
+    "Budkov Kjaer",
+    "Bernet"
+   ],
+   "CHAN": [
+    "Alcaraz",
+    "Medvedev",
+    "Paul",
+    "Mensik",
+    "Michelsen",
+    "Rune"
+   ],
+   "CHEF": [
+    "Sinner/Lehecka",
+    "Fils",
+    "Jodar",
+    "Rublev",
+    "Fonseca",
+    "Draper"
+   ],
+   "JULES": [
+    "Tiafoe",
+    "Djokovic",
+    "Bublik",
+    "Musetti",
+    "Humbert",
+    "Dimitrov"
+   ]
+  },
+  "chef_composition_legend": "CHEF, poste Sinner/Lehecka :\nSinner (jusqu’au 12 oct.)\nLehecka (depuis le 12 oct.)",
+  "chef_comp_rects": [
+   {
+    "fill": "#93c47d",
+    "w": 494.10026495453064
+   },
+   {
+    "fill": "#678958",
+    "w": 11.079288111250321
+   },
+   {
+    "fill": "#93c47d",
+    "w": 207.77082964631893
+   },
+   {
+    "fill": "#93c47d",
+    "w": 191.63446740225424
+   },
+   {
+    "fill": "#93c47d",
+    "w": 125.87575810689407
+   },
+   {
+    "fill": "#93c47d",
+    "w": 72.79561914615533
+   },
+   {
+    "fill": "#93c47d",
+    "w": 21.83868574384678
+   }
+  ],
+  "chef_comp_tooltip": "CHEF · Sinner/Lehecka\nSinner (sorti)\n7 950\nLehecka (entré)\n195\nTotal du poste\n8 145\nPart de l'équipe\n44 %",
+  "scatter_bubbles_chef": 9,
+  "sort_race_toggle": [
+   [
+    "10",
+    "62",
+    "131"
+   ],
+   [
+    "9 150",
+    "8 145",
+    "4 600"
+   ]
+  ],
+  "search_lehecka": [
+   "Sinner/Lehecka"
+  ],
+  "search_bernet": [
+   "Bernet"
+  ],
+  "search_machac": [],
+  "details": {
+   "Lehecka Jiri": {
+    "name": "Sinner/Lehecka",
+    "sub": "Jiri Lehecka · CHEF · ATP n° 21 · Race n° 18 · 24,8 ans",
+    "kpis": "8 145\nPoints Race comptés (poste)\n36–20\nVictoires–défaites\n0 / 2\nTitres / finales\n0\nPoints de duel\n1 949\nElo\n1 966\nyElo",
+    "qual": "Lehecka remplace Sinner depuis le 12 oct. 2026 : CHEF garde les 7 950 points Race et les 75 points de duel de Sinner ; Lehecka y ajoute 195 points Race comptés depuis son arrivée.",
+    "race_svg": 1,
+    "matches_rows": 12,
+    "pick_buttons": [
+     "Lehecka (depuis le 12 oct.)",
+     "Sinner (jusqu’au 12 oct.)"
+    ],
+    "race_bands_fills": [
+     "#93c47d",
+     "#678958"
+    ],
+    "race_tooltip": "Semaine 30 · 14 sept. 2026\nSinner\n7 950\nLehecka\npas encore dans l’équipe\nTotal du poste\n7 950",
+    "out_view": {
+     "sub": "Jannik Sinner · CHEF · ATP n° 1 · Race n° 2 · 24,8 ans · classements au 5 oct. 2026",
+     "kpis": "8 145\nPoints Race comptés (poste)\n44–3\nVictoires–défaites\n6 / 6\nTitres / finales\n75\nPoints de duel\n2 297\nElo\n2 323\nyElo",
+     "matches_rows": 12
+    }
+   },
+   "Kouame Moise": {
+    "name": "Moise Kouame",
+    "sub": "DOC · ATP n° 176 · Race n° 165 · 17,5 ans",
+    "kpis": "349*\nPoints Race\n32–21\nVictoires–défaites\n3 / 3\nTitres / finales\n0\nPoints de duel\n1 463\nElo\n1 481\nyElo",
+    "qual": "* Contribution comptée de 349, soit ses 325 points Race Tennis Explorer et un ajustement approuvé de +24.",
+    "race_svg": 1,
+    "matches_rows": 12
+   },
+   "Bernet Henry": {
+    "name": "Henry Bernet",
+    "sub": "DOC · ATP n° 361 · Race n° 368 · 19,5 ans",
+    "kpis": "131\nPoints Race\n25–23\nVictoires–défaites\n1 / 1\nTitres / finales\n0\nPoints de duel\n1 426\nElo\n1 425\nyElo",
+    "qual": null,
+    "race_svg": 1,
+    "matches_rows": 12
+   },
+   "Rune Holger": {
+    "name": "Holger Rune",
+    "sub": "CHAN · ATP n° 1202 · Race n° 1184 · — ans",
+    "kpis": "10\nPoints Race\n2–2\nVictoires–défaites\n0 / 0\nTitres / finales\n5\nPoints de duel\n—\nElo\n—\nyElo",
+    "qual": null,
+    "race_svg": 1,
+    "matches_rows": 4
+   }
+  },
+  "notes_scoring": "Comment les points sont comptés\n\nTel que le classeur les calcule.\n\nRace : somme des points ATP Race des six joueurs de l'équipe (Tennis Explorer), plus tout ajustement d'équipe approuvé.\nDuels : 5 points pour chaque victoire d'un joueur de l'équipe sur un joueur d'une autre équipe, comptée lorsque la date du tournoi sur Tennis Abstract précède la clôture du lundi.\nTotal = Race + Duels. Le classement s'appuie sur les effectifs actuels, et non sur l'appartenance au moment de chaque match.\nTransferts : l'équipe garde les points Race et de duel acquis par le joueur sortant ; le joueur entrant ne compte que les points gagnés après son arrivée. CHEF : Sinner sorti, Lehecka entré le 12 oct. 2026. Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe ; dans les graphiques, la part du joueur sortant garde la couleur de l’équipe et celle du joueur entrant prend une teinte plus foncée.",
+  "notes_sources": "Sources et dates\n\nCe que lit chaque partie de la page.\n\nTotaux d'équipe\nFeuille HEBDO du classeur, instantané. Dernière mise à jour : semaine 36, 26 oct. 2026.\nPoints Race des joueurs\nFeuille JOUEURS du classeur, instantané.\nCouleurs des équipes\nCelles du classeur.\nMatchs et duels\nTennis Abstract, copiés dans le classeur ; tournois commencés jusqu'au 26 oct. 2026.\nClassements ATP et Race\nTennis Explorer, 26 oct. 2026. Classements conservés à une autre date : Sinner (sorti), 5 oct. 2026.\nElo et yElo\nTennis Abstract, 28 sept. 2026.\nCalendrier\nCalendrier ATP Tour 2026 (Grand Chelem et Masters 1000).",
+  "hash_after_tabs": "#notes",
+  "teams_visible_again": true,
+  "mobile_scroll_width": [
+   390,
+   390
+  ],
+  "mobile_players_scroll_width": [
+   390,
+   390
+  ]
+ },
+ "dark": {
+  "console_errors": [],
+  "page_errors": [],
+  "failed_requests": [],
+  "data_requests": {
+   "https://peozenou.github.io/race/2026/data/hebdo.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/players.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/matches.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/joueurs.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/calendar.json?v=7f446c6ee322": 200,
+   "https://peozenou.github.io/race/2026/data/team_colors.json?v=7f446c6ee322": 200
+  },
+  "data_version_meta": "7f446c6ee322",
+  "takeaway": "Après la semaine 36 (26 oct. 2026), CHEF mène avec 18 554 points, 2 156 devant DOC. Meilleure progression de la semaine : CHAN (+375).",
+  "head_asof": "26 oct. 2026",
+  "standings_text": "1er · CHEF\n18 554\nRace 18 364 · Duels 190\n+130 depuis la dernière mise à jour\nEn tête\n2e · DOC\n16 398\nRace 16 268 · Duels 130\n+285 depuis la dernière mise à jour\n2 156 derrière la tête\n3e · CHAN\n15 000\nRace 14 825 · Duels 175\n+375 depuis la dernière mise à jour\n3 554 derrière la tête\n4e · PAT\n11 964\nRace 11 824 · Duels 140\n+38 depuis la dernière mise à jour\n6 590 derrière la tête\n5e · JULES\n11 442\nRace 11 332 · Duels 110\n+355 depuis la dernière mise à jour\n7 112 derrière la tête",
+  "duel_asof": "26 oct. 2026",
+  "duel_matrix_text": "Vainqueur ↓ contre →\tPAT\tDOC\tCHAN\tCHEF\tJULES\tTotal\nPAT\t·\t5\t9\t4\t10\t28 · 140 pts\nDOC\t8\t·\t7\t6\t5\t26 · 130 pts\nCHAN\t8\t6\t·\t9\t12\t35 · 175 pts\nCHEF\t10\t6\t10\t·\t12\t38 · 190 pts\nJULES\t3\t9\t7\t3\t·\t22 · 110 pts",
+  "charts_svg": {
+   "totals-chart": 1,
+   "rank-chart": 1,
+   "gains-chart": 5,
+   "duel-matrix": 0
+  },
+  "inpage_hashes": {
+   "hebdo": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+   "joueurs": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+   "players": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+   "matches": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+   "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "team_weeks": {
+   "w1": {
+    "CHAN": [
+     3380,
+     10,
+     3390,
+     3390
+    ],
+    "JULES": [
+     2650,
+     5,
+     2655,
+     2655
+    ],
+    "PAT": [
+     1680,
+     20,
+     1700,
+     1700
+    ],
+    "DOC": [
+     1573,
+     0,
+     1573,
+     1573
+    ],
+    "CHEF": [
+     1149,
+     10,
+     1159,
+     1159
+    ]
+   },
+   "w2": {
+    "CHAN": [
+     3380,
+     65,
+     3445,
+     55
+    ],
+    "JULES": [
+     2675,
+     30,
+     2705,
+     50
+    ],
+    "PAT": [
+     1680,
+     45,
+     1725,
+     25
+    ],
+    "DOC": [
+     1586,
+     35,
+     1621,
+     48
+    ],
+    "CHEF": [
+     1224,
+     15,
+     1239,
+     80
+    ]
+   },
+   "w35": {
+    "CHEF": [
+     18239,
+     185,
+     18424,
+     880
+    ],
+    "DOC": [
+     15988,
+     125,
+     16113,
+     538
+    ],
+    "CHAN": [
+     14455,
+     170,
+     14625,
+     860
+    ],
+    "PAT": [
+     11786,
+     140,
+     11926,
+     620
+    ],
+    "JULES": [
+     10992,
+     95,
+     11087,
+     420
+    ]
+   },
+   "w36": {
+    "CHEF": [
+     18364,
+     190,
+     18554,
+     130
+    ],
+    "DOC": [
+     16268,
+     130,
+     16398,
+     285
+    ],
+    "CHAN": [
+     14825,
+     175,
+     15000,
+     375
+    ],
+    "PAT": [
+     11824,
+     140,
+     11964,
+     38
+    ],
+    "JULES": [
+     11332,
+     110,
+     11442,
+     355
+    ]
+   },
+   "rows": 185,
+   "race_plus_duels_mismatch": 0
+  },
+  "totals_tooltip": "Semaine 33 · 5 oct. 2026\nCHEF\n17 544\nDOC\n15 575\nCHAN\n13 765\nPAT\n11 306\nJULES\n10 657",
+  "players_take": "Zverev (DOC) compte le plus de points Race (9 150) ; Sinner (sorti) (CHEF) a le meilleur rendement, avec 883 points par tournoi.",
+  "players_rows_all": 30,
+  "table_fields": [
+   "pos",
+   "short",
+   "team",
+   "race",
+   "share",
+   "gain_week",
+   "gain_4",
+   "series",
+   "record",
+   "titles",
+   "duel_pts",
+   "atp_rank",
+   "elo"
+  ],
+  "table_pos": {
+   "Zverev": "1 =",
+   "Sinner/Lehecka": "2 =",
+   "Alcaraz": "3 =",
+   "Shelton": "4 =",
+   "Medvedev": "5 ▲1",
+   "Cobolli": "6 ▼1",
+   "Fils": "7 ▲1",
+   "Tiafoe": "8 ▼1",
+   "Jodar": "9 =",
+   "De Minaur": "10 =",
+   "Djokovic": "11 =",
+   "Fritz": "12 ▲1",
+   "Paul": "13 ▼1",
+   "Mensik": "14 =",
+   "Rublev": "15 =",
+   "Tien": "16 =",
+   "Ruud": "17 =",
+   "Bublik": "18 =",
+   "Musetti": "19 ▲1",
+   "Michelsen": "20 ▼1",
+   "Humbert": "21 =",
+   "Fonseca": "22 =",
+   "Dimitrov": "23 =",
+   "Blanch": "24 ▲1",
+   "Draper": "25 ▼1",
+   "Kouame": "26 =",
+   "Budkov Kjaer": "27 =",
+   "Bernet": "28 =",
+   "Engel": "29 =",
+   "Rune": "30 ="
+  },
+  "table_rows": {
+   "Zverev": [
+    "Zverev",
+    "DOC",
+    "9 150",
+    "56 %",
+    "0",
+    "+500",
+    "",
+    "62–16",
+    "2",
+    "55",
+    "n° 2",
+    "2 111"
+   ],
+   "Sinner/Lehecka": [
+    "Sinner/Lehecka",
+    "CHEF",
+    "8 145",
+    "44 %",
+    "+25",
+    "+195",
+    "",
+    "36–20",
+    "0",
+    "75",
+    "n° 21",
+    "1 949"
+   ],
+   "Alcaraz": [
+    "Alcaraz",
+    "CHAN",
+    "4 600",
+    "31 %",
+    "0",
+    "+550",
+    "",
+    "33–5",
+    "3",
+    "50",
+    "n° 3",
+    "2 149"
+   ],
+   "Shelton": [
+    "Shelton",
+    "PAT",
+    "4 480",
+    "38 %",
+    "0",
+    "+50",
+    "",
+    "40–17",
+    "4",
+    "50",
+    "n° 4",
+    "1 993"
+   ],
+   "Medvedev": [
+    "Medvedev",
+    "CHAN",
+    "3 660",
+    "25 %",
+    "+240",
+    "+790",
+    "",
+    "49–18",
+    "4",
+    "25",
+    "n° 5",
+    "1 956"
+   ],
+   "Cobolli": [
+    "Cobolli",
+    "DOC",
+    "3 640",
+    "22 %",
+    "+100",
+    "+110",
+    "",
+    "35–23",
+    "1",
+    "30",
+    "n° 6",
+    "1 905"
+   ],
+   "Fils": [
+    "Fils",
+    "CHEF",
+    "3 425",
+    "19 %",
+    "+100",
+    "+262",
+    "",
+    "38–14",
+    "2",
+    "45",
+    "n° 8",
+    "2 035"
+   ],
+   "Tiafoe": [
+    "Tiafoe",
+    "JULES",
+    "3 380",
+    "30 %",
+    "0",
+    "+50",
+    "",
+    "44–19",
+    "1",
+    "35",
+    "n° 9",
+    "1 957"
+   ],
+   "Jodar": [
+    "Jodar",
+    "CHEF",
+    "3 159",
+    "17 %",
+    "0",
+    "+650",
+    "",
+    "56–18",
+    "1",
+    "40",
+    "n° 11",
+    "2 001"
+   ],
+   "De Minaur": [
+    "De Minaur",
+    "PAT",
+    "2 880",
+    "24 %",
+    "0",
+    "+520",
+    "",
+    "42–20",
+    "1",
+    "35",
+    "n° 10",
+    "1 959"
+   ],
+   "Djokovic": [
+    "Djokovic",
+    "JULES",
+    "2 840",
+    "25 %",
+    "0",
+    "+510",
+    "",
+    "19–8",
+    "1",
+    "25",
+    "n° 12",
+    "2 047"
+   ],
+   "Fritz": [
+    "Fritz",
+    "DOC",
+    "2 685",
+    "17 %",
+    "+155",
+    "+205",
+    "",
+    "37–20",
+    "1",
+    "45",
+    "n° 13",
+    "1 948"
+   ],
+   "Paul": [
+    "Paul",
+    "CHAN",
+    "2 675",
+    "18 %",
+    "+90",
+    "+290",
+    "",
+    "44–20",
+    "1",
+    "35",
+    "n° 14",
+    "1 951"
+   ],
+   "Mensik": [
+    "Mensik",
+    "CHAN",
+    "2 495",
+    "17 %",
+    "0",
+    "+140",
+    "",
+    "36–20",
+    "1",
+    "40",
+    "n° 16",
+    "1 897"
+   ],
+   "Rublev": [
+    "Rublev",
+    "CHEF",
+    "2 075",
+    "11 %",
+    "0",
+    "+165",
+    "",
+    "33–21",
+    "1",
+    "5",
+    "n° 22",
+    "1 887"
+   ],
+   "Tien": [
+    "Tien",
+    "PAT",
+    "2 045",
+    "17 %",
+    "0",
+    "+50",
+    "",
+    "32–20",
+    "1",
+    "45",
+    "n° 18",
+    "1 943"
+   ],
+   "Ruud": [
+    "Ruud",
+    "PAT",
+    "1 985",
+    "17 %",
+    "0",
+    "+200",
+    "",
+    "31–18",
+    "0",
+    "10",
+    "n° 25",
+    "1 949"
+   ],
+   "Bublik": [
+    "Bublik",
+    "JULES",
+    "1 875",
+    "17 %",
+    "+90",
+    "+190",
+    "",
+    "31–22",
+    "1",
+    "0",
+    "n° 20",
+    "1 886"
+   ],
+   "Musetti": [
+    "Musetti",
+    "JULES",
+    "1 545",
+    "14 %",
+    "+250",
+    "+260",
+    "",
+    "25–12",
+    "1",
+    "25",
+    "n° 26",
+    "1 872"
+   ],
+   "Michelsen": [
+    "Michelsen",
+    "CHAN",
+    "1 385",
+    "9 %",
+    "+40",
+    "+50",
+    "",
+    "37–23",
+    "1",
+    "20",
+    "n° 34",
+    "1 881"
+   ],
+   "Humbert": [
+    "Humbert",
+    "JULES",
+    "1 270",
+    "11 %",
+    "0",
+    "+50",
+    "",
+    "26–24",
+    "0",
+    "20",
+    "n° 38",
+    "1 826"
+   ],
+   "Fonseca": [
+    "Fonseca",
+    "CHEF",
+    "1 200",
+    "7 %",
+    "0",
+    "0",
+    "",
+    "20–13",
+    "0",
+    "20",
+    "n° 40",
+    "1 947"
+   ],
+   "Dimitrov": [
+    "Dimitrov",
+    "JULES",
+    "422",
+    "4 %",
+    "0",
+    "0",
+    "",
+    "13–19",
+    "0",
+    "5",
+    "n° 124",
+    "1 732"
+   ],
+   "Blanch": [
+    "Blanch",
+    "PAT",
+    "372",
+    "3 %",
+    "+38",
+    "+50",
+    "",
+    "30–26",
+    "1",
+    "0",
+    "n° 144",
+    "1 572"
+   ],
+   "Draper": [
+    "Draper",
+    "CHEF",
+    "360",
+    "2 %",
+    "0",
+    "0",
+    "",
+    "8–7",
+    "0",
+    "5",
+    "n° 158",
+    "1 773"
+   ],
+   "Kouame": [
+    "Kouame",
+    "DOC",
+    "349*",
+    "2 %",
+    "+25",
+    "+56",
+    "",
+    "32–21",
+    "3",
+    "0",
+    "n° 176",
+    "1 463"
+   ],
+   "Budkov Kjaer": [
+    "Budkov Kjaer",
+    "DOC",
+    "313",
+    "2 %",
+    "0",
+    "+38",
+    "",
+    "33–31",
+    "0",
+    "0",
+    "n° 180",
+    "1 589"
+   ],
+   "Bernet": [
+    "Bernet",
+    "DOC",
+    "131",
+    "1 %",
+    "0",
+    "+51",
+    "",
+    "25–23",
+    "1",
+    "0",
+    "n° 361",
+    "1 426"
+   ],
+   "Engel": [
+    "Engel",
+    "PAT",
+    "62",
+    "1 %",
+    "0",
+    "0",
+    "",
+    "6–14",
+    "0",
+    "0",
+    "n° 607",
+    "1 411"
+   ],
+   "Rune": [
+    "Rune",
+    "CHAN",
+    "10",
+    "0 %",
+    "0",
+    "+10",
+    "",
+    "2–2",
+    "0",
+    "5",
+    "n° 1202",
+    "—"
+   ]
+  },
+  "player_qual_note_all": "Sinner/Lehecka (CHEF) : Lehecka remplace Sinner depuis le 12 oct. 2026 ; la ligne additionne les points Race et de duel comptés pour les deux joueurs, avec le bilan, le rang et l'Elo de Lehecka. * Kouame (DOC) : contribution comptée de 349, soit ses 325 points Race Tennis Explorer et un ajustement approuvé de +24.",
+  "table_note": "Points Race et gains : JOUEURS, c'est-à-dire la contribution comptée pour l'équipe. Bilan, titres, duels et classement ATP : dernière mise à jour ; Elo au 28 sept. 2026. Cliquez sur une ligne pour voir la saison du joueur.",
+  "team_filter_rows": {
+   "PAT": [
+    "Shelton",
+    "De Minaur",
+    "Tien",
+    "Ruud",
+    "Blanch",
+    "Engel"
+   ],
+   "DOC": [
+    "Zverev",
+    "Cobolli",
+    "Fritz",
+    "Kouame",
+    "Budkov Kjaer",
+    "Bernet"
+   ],
+   "CHAN": [
+    "Alcaraz",
+    "Medvedev",
+    "Paul",
+    "Mensik",
+    "Michelsen",
+    "Rune"
+   ],
+   "CHEF": [
+    "Sinner/Lehecka",
+    "Fils",
+    "Jodar",
+    "Rublev",
+    "Fonseca",
+    "Draper"
+   ],
+   "JULES": [
+    "Tiafoe",
+    "Djokovic",
+    "Bublik",
+    "Musetti",
+    "Humbert",
+    "Dimitrov"
+   ]
+  },
+  "chef_composition_legend": "CHEF, poste Sinner/Lehecka :\nSinner (jusqu’au 12 oct.)\nLehecka (depuis le 12 oct.)",
+  "chef_comp_rects": [
+   {
+    "fill": "#93c47d",
+    "w": 494.10026495453064
+   },
+   {
+    "fill": "#678958",
+    "w": 11.079288111250321
+   },
+   {
+    "fill": "#93c47d",
+    "w": 207.77082964631893
+   },
+   {
+    "fill": "#93c47d",
+    "w": 191.63446740225424
+   },
+   {
+    "fill": "#93c47d",
+    "w": 125.87575810689407
+   },
+   {
+    "fill": "#93c47d",
+    "w": 72.79561914615533
+   },
+   {
+    "fill": "#93c47d",
+    "w": 21.83868574384678
+   }
+  ],
+  "chef_comp_tooltip": "CHEF · Sinner/Lehecka\nSinner (sorti)\n7 950\nLehecka (entré)\n195\nTotal du poste\n8 145\nPart de l'équipe\n44 %",
+  "scatter_bubbles_chef": 9,
+  "sort_race_toggle": [
+   [
+    "10",
+    "62",
+    "131"
+   ],
+   [
+    "9 150",
+    "8 145",
+    "4 600"
+   ]
+  ],
+  "search_lehecka": [
+   "Sinner/Lehecka"
+  ],
+  "search_bernet": [
+   "Bernet"
+  ],
+  "search_machac": [],
+  "details": {
+   "Lehecka Jiri": {
+    "name": "Sinner/Lehecka",
+    "sub": "Jiri Lehecka · CHEF · ATP n° 21 · Race n° 18 · 24,8 ans",
+    "kpis": "8 145\nPoints Race comptés (poste)\n36–20\nVictoires–défaites\n0 / 2\nTitres / finales\n0\nPoints de duel\n1 949\nElo\n1 966\nyElo",
+    "qual": "Lehecka remplace Sinner depuis le 12 oct. 2026 : CHEF garde les 7 950 points Race et les 75 points de duel de Sinner ; Lehecka y ajoute 195 points Race comptés depuis son arrivée.",
+    "race_svg": 1,
+    "matches_rows": 12,
+    "pick_buttons": [
+     "Lehecka (depuis le 12 oct.)",
+     "Sinner (jusqu’au 12 oct.)"
+    ],
+    "race_bands_fills": [
+     "#93c47d",
+     "#678958"
+    ],
+    "race_tooltip": "Semaine 30 · 14 sept. 2026\nSinner\n7 950\nLehecka\npas encore dans l’équipe\nTotal du poste\n7 950",
+    "out_view": {
+     "sub": "Jannik Sinner · CHEF · ATP n° 1 · Race n° 2 · 24,8 ans · classements au 5 oct. 2026",
+     "kpis": "8 145\nPoints Race comptés (poste)\n44–3\nVictoires–défaites\n6 / 6\nTitres / finales\n75\nPoints de duel\n2 297\nElo\n2 323\nyElo",
+     "matches_rows": 12
+    }
+   },
+   "Kouame Moise": {
+    "name": "Moise Kouame",
+    "sub": "DOC · ATP n° 176 · Race n° 165 · 17,5 ans",
+    "kpis": "349*\nPoints Race\n32–21\nVictoires–défaites\n3 / 3\nTitres / finales\n0\nPoints de duel\n1 463\nElo\n1 481\nyElo",
+    "qual": "* Contribution comptée de 349, soit ses 325 points Race Tennis Explorer et un ajustement approuvé de +24.",
+    "race_svg": 1,
+    "matches_rows": 12
+   },
+   "Bernet Henry": {
+    "name": "Henry Bernet",
+    "sub": "DOC · ATP n° 361 · Race n° 368 · 19,5 ans",
+    "kpis": "131\nPoints Race\n25–23\nVictoires–défaites\n1 / 1\nTitres / finales\n0\nPoints de duel\n1 426\nElo\n1 425\nyElo",
+    "qual": null,
+    "race_svg": 1,
+    "matches_rows": 12
+   },
+   "Rune Holger": {
+    "name": "Holger Rune",
+    "sub": "CHAN · ATP n° 1202 · Race n° 1184 · — ans",
+    "kpis": "10\nPoints Race\n2–2\nVictoires–défaites\n0 / 0\nTitres / finales\n5\nPoints de duel\n—\nElo\n—\nyElo",
+    "qual": null,
+    "race_svg": 1,
+    "matches_rows": 4
+   }
+  },
+  "notes_scoring": "Comment les points sont comptés\n\nTel que le classeur les calcule.\n\nRace : somme des points ATP Race des six joueurs de l'équipe (Tennis Explorer), plus tout ajustement d'équipe approuvé.\nDuels : 5 points pour chaque victoire d'un joueur de l'équipe sur un joueur d'une autre équipe, comptée lorsque la date du tournoi sur Tennis Abstract précède la clôture du lundi.\nTotal = Race + Duels. Le classement s'appuie sur les effectifs actuels, et non sur l'appartenance au moment de chaque match.\nTransferts : l'équipe garde les points Race et de duel acquis par le joueur sortant ; le joueur entrant ne compte que les points gagnés après son arrivée. CHEF : Sinner sorti, Lehecka entré le 12 oct. 2026. Dans les tableaux, chaque remplacement forme une seule ligne « sortant/entrant », pour garder six postes par équipe ; dans les graphiques, la part du joueur sortant garde la couleur de l’équipe et celle du joueur entrant prend une teinte plus foncée.",
+  "notes_sources": "Sources et dates\n\nCe que lit chaque partie de la page.\n\nTotaux d'équipe\nFeuille HEBDO du classeur, instantané. Dernière mise à jour : semaine 36, 26 oct. 2026.\nPoints Race des joueurs\nFeuille JOUEURS du classeur, instantané.\nCouleurs des équipes\nCelles du classeur.\nMatchs et duels\nTennis Abstract, copiés dans le classeur ; tournois commencés jusqu'au 26 oct. 2026.\nClassements ATP et Race\nTennis Explorer, 26 oct. 2026. Classements conservés à une autre date : Sinner (sorti), 5 oct. 2026.\nElo et yElo\nTennis Abstract, 28 sept. 2026.\nCalendrier\nCalendrier ATP Tour 2026 (Grand Chelem et Masters 1000).",
+  "hash_after_tabs": "#notes",
+  "teams_visible_again": true,
+  "mobile_scroll_width": [
+   390,
+   390
+  ],
+  "mobile_players_scroll_width": [
+   390,
+   390
+  ]
+ },
+ "finished_at": "2026-10-27T18:54:34-04:00",
+ "failed": []
+}

@@ -7,8 +7,8 @@
   "release_branch": "data-release/2026-10-26-w36-r1",
   "data_commit_sha": "3220344fc042fa9f471aaaaff475f9b82cfc66ef",
   "previous_production_commit": "6bb71bd2afa7505ee4b0d52dce6a729219c3f9c3",
-  "dashboard_commit_sha": "8fe2905d6d357ec63d55d302b558374bac7b2389",
-  "dashboard_commit_parent_chain": "6bb71bd -> 3220344 (release data, fast-forward) -> 8fe2905 (week-36 build)",
+  "dashboard_commit_sha": "4e4b2b0afd277077f7196e9d9713cfcecd9779fe",
+  "dashboard_commit_parent_chain": "6bb71bd -> 3220344 (release data, fast-forward) -> 8fe2905 (week-36 build) -> 01aadc4 (docs only) -> 4e4b2b0 (players-table rank column with movement arrows)",
   "dashboard_url": "https://peozenou.github.io/race/2026/",
   "handoff_hashes_verified_before_use": true,
   "release_diff_scope": "3220344 changes only 2026/data/hebdo.json, joueurs.json, matches.json and players.json; calendar.json and team_colors.json unchanged",
@@ -23,7 +23,7 @@
   "live_data_sha256_match_approved": true,
   "live_data_checked_variants": [
     "canonical /data/<name>.json",
-    "page-requested /data/<name>.json?v=ae164c5669a3",
+    "page-requested /data/<name>.json?v=7f446c6ee322",
     "in-page fetch + crypto.subtle SHA-256 in headless Chromium (light and dark sessions)"
   ],
   "live_row_counts": {
@@ -34,9 +34,9 @@
     "calendar": 13,
     "team_colors": 5
   },
-  "build_data_version": "ae164c5669a3",
-  "live_data_version": "ae164c5669a3",
-  "live_index_html_sha256": "1c10bd445e08bcd81ad9353ef5c40dee981d395d97a5188ea0eea36cc5aa5424",
+  "build_data_version": "7f446c6ee322",
+  "live_data_version": "7f446c6ee322",
+  "live_index_html_sha256": "511e4c1dd775d93695e7b76af9f79dda12aaa860905f0ed87e662d861b49d7fe",
   "live_index_matches_commit": true,
   "live_week": 36,
   "live_competition_date": "2026-10-26",
@@ -55,19 +55,46 @@
     "JULES": 355
   },
   "live_race_duels": {
-    "CHEF": [18364, 190],
-    "DOC": [16268, 130],
-    "CHAN": [14825, 175],
-    "PAT": [11824, 140],
-    "JULES": [11332, 110]
+    "CHEF": [
+      18364,
+      190
+    ],
+    "DOC": [
+      16268,
+      130
+    ],
+    "CHAN": [
+      14825,
+      175
+    ],
+    "PAT": [
+      11824,
+      140
+    ],
+    "JULES": [
+      11332,
+      110
+    ]
   },
   "live_grand_total": 73358,
   "live_grand_total_change": 1183,
   "live_history_checks": {
     "team_week_rows": 185,
     "race_plus_duels_mismatches": 0,
-    "week1_totals": {"PAT": 1700, "DOC": 1573, "CHAN": 3390, "CHEF": 1159, "JULES": 2655},
-    "week2_totals": {"PAT": 1725, "DOC": 1621, "CHAN": 3445, "CHEF": 1239, "JULES": 2705},
+    "week1_totals": {
+      "PAT": 1700,
+      "DOC": 1573,
+      "CHAN": 3390,
+      "CHEF": 1159,
+      "JULES": 2655
+    },
+    "week2_totals": {
+      "PAT": 1725,
+      "DOC": 1621,
+      "CHAN": 3445,
+      "CHEF": 1239,
+      "JULES": 2705
+    },
     "week35_CHEF_corrected_total": 18424
   },
   "live_source_labels": {
@@ -84,15 +111,18 @@
     "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won remain null in players.json and are not displayed.",
     "archived_sinner": "Detail shows rankings at 5 oct. 2026 and his own matches through 7 Oct."
   },
-  "dashboard_source_changes": "RACE_QUAL comment set to release 2026-10-26-w36-r1 and the Lehecka 'hold' entry removed (entry baseline 2 055 confirmed and credited); Kouame 'adjust' kept. Interface, design, navigation and tutorial unchanged. Six datasets incorporated unmodified.",
+  "dashboard_source_changes": "RACE_QUAL comment set to release 2026-10-26-w36-r1 and the Lehecka 'hold' entry removed (entry baseline 2 055 confirmed and credited); Kouame 'adjust' kept. Interface, design, navigation and tutorial unchanged. Six datasets incorporated unmodified. Revision 2 (4e4b2b0, requested 27 Oct): players table gains a sortable 'Rang' column — each lineup line's place among the 30 lines by credited JOUEURS Race points, with ▲/▼ places moved since the previous week (= when unchanged); ties share a place; replacement lines use the post total.",
   "ui_checks_verified": true,
   "ui_checks": {
-    "total_checks": 40,
+    "total_checks": 43,
     "failed": 0,
     "page_errors": 0,
     "console_errors": 0,
     "failed_requests": 0,
-    "color_schemes": ["light", "dark"],
+    "color_schemes": [
+      "light",
+      "dark"
+    ],
     "standings_five_totals_and_gains": "PASS",
     "week_and_date_header": "PASS (semaine 36, 26 oct. 2026)",
     "corrected_history_in_page": "PASS (185 team-weeks, Race + Duels = Total; weeks 1-2 repaired; CHEF w35 18 424)",
@@ -111,30 +141,68 @@
     "tab_navigation": "PASS",
     "mobile_390px_no_horizontal_scroll": "PASS (teams and players, light and dark)",
     "tutoriel_mp4_served": "PASS (200, 6 536 024 bytes, byte-identical to repository)",
-    "landing_page": "PASS (200)"
+    "landing_page": "PASS (200)",
+    "rank_column_arrows": "PASS (places 1–30; e.g. Zverev 1 =, Sinner/Lehecka 2 =, Medvedev 5 ▲1, Cobolli 6 ▼1, Fils 7 ▲1, Draper 25 ▼1, Rune 30 =; moves net to zero)"
   },
-  "live_verified_at": "2026-10-27T07:06:46-04:00",
+  "live_verified_at": "2026-10-27T18:54:34-04:00",
   "observations": [
-    {"what": "fetch of page, six datasets (two variants), tutorial and landing page (8fe2905)", "at": "2026-10-27T07:05:54-04:00"},
-    {"what": "headless Chromium UI checks on the live URL, light and dark (8fe2905), completed", "at": "2026-10-27T07:06:46-04:00"}
+    {
+      "what": "fetch of page, six datasets (two variants), tutorial and landing page (4e4b2b0)",
+      "at": "2026-10-27T18:53:47-04:00"
+    },
+    {
+      "what": "headless Chromium UI checks on the live URL, light and dark (4e4b2b0), completed",
+      "at": "2026-10-27T18:54:34-04:00"
+    },
+    {
+      "what": "fetch of page, six datasets (two variants), tutorial and landing page (8fe2905)",
+      "at": "2026-10-27T07:05:54-04:00"
+    },
+    {
+      "what": "headless Chromium UI checks on the live URL, light and dark (8fe2905), completed",
+      "at": "2026-10-27T07:06:46-04:00"
+    }
   ],
   "deployment": {
     "route": "GitHub Pages, deploy from branch main (existing 'pages build and deployment' workflow)",
-    "actions_run_id": 40493412269,
-    "actions_run_url": "https://github.com/peozenou/race/actions/runs/40493412269",
-    "jobs": {"build": "success", "report-build-status": "success", "deploy": "success"},
-    "deployment_id": 7356744664,
+    "actions_run_id": 40598150235,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/40598150235",
+    "jobs": {
+      "build": "success",
+      "report-build-status": "success",
+      "deploy": "success"
+    },
+    "deployment_id": 7372409436,
     "deployment_status": "success",
-    "deployment_status_at": "2026-10-27T11:05:16Z",
-    "served_last_modified": "Tue, 27 Oct 2026 11:05:10 GMT"
+    "deployment_status_at": "2026-10-27T22:53:34Z",
+    "served_last_modified": "Tue, 27 Oct 2026 22:53:28 GMT",
+    "previous": {
+      "actions_run_id": 40493412269,
+      "deployment_id": 7356744664,
+      "commit": "8fe2905"
+    }
   },
-  "push": {"ref": "main", "from": "6bb71bd", "to": "8fe2905", "force": false, "at": "2026-10-27T11:04:45Z"},
+  "push": {
+    "ref": "main",
+    "from": "01aadc4",
+    "to": "4e4b2b0",
+    "force": false,
+    "at": "2026-10-27T22:53:08Z"
+  },
   "accepted_qualifications_carried": [
     "69 historical zero cells lack matching saved source rows; not a general missing-equals-zero rule",
     "Tennis Abstract omits the known Kouame loss at Jingshan",
     "Elo/yElo remains dated 28 September 2026"
   ],
   "public_repo_private_material_scan": "No workbook fingerprint, approval record, junior or personal data in the production diff or evidence.",
-  "step7": "UNBLOCKED: production verified live. Use https://peozenou.github.io/race/2026/ bound to dashboard commit 8fe2905. No email drafted or sent by Claude.",
-  "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage."
+  "step7": "Re-bind required: production changed after the first verification. Use https://peozenou.github.io/race/2026/ bound to dashboard commit 4e4b2b0 (data version 7f446c6ee322). Datasets, totals and week unchanged. No email drafted or sent by Claude.",
+  "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage.",
+  "presentation_revision": 2,
+  "superseded_production": {
+    "dashboard_commit_sha": "8fe2905d6d357ec63d55d302b558374bac7b2389",
+    "data_version": "ae164c5669a3",
+    "live_index_html_sha256": "1c10bd445e08bcd81ad9353ef5c40dee981d395d97a5188ea0eea36cc5aa5424",
+    "live_verified_at": "2026-10-27T07:06:46-04:00",
+    "superseded_by": "presentation change requested by Patrick on 2026-10-27; datasets unchanged"
+  }
 }
