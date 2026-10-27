@@ -304,12 +304,12 @@ dash.calc('team_weeks', {
   },
 });
 
-// Approved qualifications shown on the page (release 2026-10-19-w35-r1); the data files are not altered.
+// Approved qualifications shown on the page (release 2026-10-26-w36-r1); the data files are not altered.
 // 'hold': an incoming player's contribution stays at 0 until the transfer entry baseline is established.
 // 'adjust': an approved team adjustment is included in the credited JOUEURS contribution.
 // Each entry applies only while the latest JOUEURS week confirms it (hold: credited 0; adjust: credited differs from raw Race).
+// Lehecka's hold ended with w35-r2/w36-r1: entry baseline confirmed at 2 055 (TE, 5 Oct 2026), credited from week 35.
 const RACE_QUAL = {
-  'Lehecka Jiri': { kind: 'hold' },
   'Kouame Moise': { kind: 'adjust' },
 };
 
