@@ -1,0 +1,140 @@
+{
+  "owner": "Claude",
+  "step": 6,
+  "run_id": "2026-10-26-w36",
+  "production_status": "LIVE_DASHBOARD_VERIFIED",
+  "release_id": "2026-10-26-w36-r1",
+  "release_branch": "data-release/2026-10-26-w36-r1",
+  "data_commit_sha": "3220344fc042fa9f471aaaaff475f9b82cfc66ef",
+  "previous_production_commit": "6bb71bd2afa7505ee4b0d52dce6a729219c3f9c3",
+  "dashboard_commit_sha": "8fe2905d6d357ec63d55d302b558374bac7b2389",
+  "dashboard_commit_parent_chain": "6bb71bd -> 3220344 (release data, fast-forward) -> 8fe2905 (week-36 build)",
+  "dashboard_url": "https://peozenou.github.io/race/2026/",
+  "handoff_hashes_verified_before_use": true,
+  "release_diff_scope": "3220344 changes only 2026/data/hebdo.json, joueurs.json, matches.json and players.json; calendar.json and team_colors.json unchanged",
+  "live_data_sha256": {
+    "hebdo": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+    "joueurs": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+    "players": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+    "matches": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "live_data_sha256_match_approved": true,
+  "live_data_checked_variants": [
+    "canonical /data/<name>.json",
+    "page-requested /data/<name>.json?v=ae164c5669a3",
+    "in-page fetch + crypto.subtle SHA-256 in headless Chromium (light and dark sessions)"
+  ],
+  "live_row_counts": {
+    "hebdo": 185,
+    "joueurs": 1083,
+    "players": 31,
+    "matches": 1549,
+    "calendar": 13,
+    "team_colors": 5
+  },
+  "build_data_version": "ae164c5669a3",
+  "live_data_version": "ae164c5669a3",
+  "live_index_html_sha256": "1c10bd445e08bcd81ad9353ef5c40dee981d395d97a5188ea0eea36cc5aa5424",
+  "live_index_matches_commit": true,
+  "live_week": 36,
+  "live_competition_date": "2026-10-26",
+  "live_totals": {
+    "CHEF": 18554,
+    "DOC": 16398,
+    "CHAN": 15000,
+    "PAT": 11964,
+    "JULES": 11442
+  },
+  "live_weekly_gains": {
+    "CHEF": 130,
+    "DOC": 285,
+    "CHAN": 375,
+    "PAT": 38,
+    "JULES": 355
+  },
+  "live_race_duels": {
+    "CHEF": [18364, 190],
+    "DOC": [16268, 130],
+    "CHAN": [14825, 175],
+    "PAT": [11824, 140],
+    "JULES": [11332, 110]
+  },
+  "live_grand_total": 73358,
+  "live_grand_total_change": 1183,
+  "live_history_checks": {
+    "team_week_rows": 185,
+    "race_plus_duels_mismatches": 0,
+    "week1_totals": {"PAT": 1700, "DOC": 1573, "CHAN": 3390, "CHEF": 1159, "JULES": 2655},
+    "week2_totals": {"PAT": 1725, "DOC": 1621, "CHAN": 3445, "CHEF": 1239, "JULES": 2705},
+    "week35_CHEF_corrected_total": 18424
+  },
+  "live_source_labels": {
+    "rankings": "Tennis Explorer, 26 oct. 2026; Sinner (sorti) retained at 5 oct. 2026",
+    "elo_yelo": "Tennis Abstract, 28 sept. 2026",
+    "matches_through": "26 oct. 2026",
+    "competition_update": "semaine 36, 26 oct. 2026"
+  },
+  "transfer_and_qualification_presentation": {
+    "sinner_lehecka": "One CHEF lineup line 'Sinner/Lehecka' credited 8 145 (Sinner 7 950 in the CHEF colour #93c47d + Lehecka 195 in the darker shade #678958) and 75 duel points; gains +25 week, +195 four weeks. Both records, separate histories and the player switch are kept. Lehecka is no longer shown as pending anywhere on the page.",
+    "kouame": "Credited 349 shown with note: 325 raw TE Race + approved +24 adjustment, applied once.",
+    "bernet": "Current DOC selection; Machac absent from the table and search.",
+    "rune": "Elo, yElo and age shown as '—' (null), not zero.",
+    "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won remain null in players.json and are not displayed.",
+    "archived_sinner": "Detail shows rankings at 5 oct. 2026 and his own matches through 7 Oct."
+  },
+  "dashboard_source_changes": "RACE_QUAL comment set to release 2026-10-26-w36-r1 and the Lehecka 'hold' entry removed (entry baseline 2 055 confirmed and credited); Kouame 'adjust' kept. Interface, design, navigation and tutorial unchanged. Six datasets incorporated unmodified.",
+  "ui_checks_verified": true,
+  "ui_checks": {
+    "total_checks": 40,
+    "failed": 0,
+    "page_errors": 0,
+    "console_errors": 0,
+    "failed_requests": 0,
+    "color_schemes": ["light", "dark"],
+    "standings_five_totals_and_gains": "PASS",
+    "week_and_date_header": "PASS (semaine 36, 26 oct. 2026)",
+    "corrected_history_in_page": "PASS (185 team-weeks, Race + Duels = Total; weeks 1-2 repaired; CHEF w35 18 424)",
+    "totals_rank_gains_charts_and_duel_matrix": "PASS",
+    "totals_chart_tooltip": "PASS",
+    "players_table": "PASS (31 records as 30 lineup lines)",
+    "team_filter_six_per_team": "PASS (all five teams)",
+    "sorting_and_search": "PASS",
+    "replacement_line_two_shades_composition": "PASS (#93c47d and #678958 segments with width; tooltip Sinner 7 950 / Lehecka 195 / total 8 145)",
+    "replacement_line_detail": "PASS (two picks, post chart with two bands, tooltip, switch to Sinner)",
+    "lehecka_not_pending": "PASS (no 'en attente' text on any page)",
+    "kouame_adjustment_note": "PASS",
+    "bernet_current_doc": "PASS",
+    "rune_nulls": "PASS",
+    "notes_sources_and_transfers": "PASS",
+    "tab_navigation": "PASS",
+    "mobile_390px_no_horizontal_scroll": "PASS (teams and players, light and dark)",
+    "tutoriel_mp4_served": "PASS (200, 6 536 024 bytes, byte-identical to repository)",
+    "landing_page": "PASS (200)"
+  },
+  "live_verified_at": "2026-10-27T07:06:46-04:00",
+  "observations": [
+    {"what": "fetch of page, six datasets (two variants), tutorial and landing page (8fe2905)", "at": "2026-10-27T07:05:54-04:00"},
+    {"what": "headless Chromium UI checks on the live URL, light and dark (8fe2905), completed", "at": "2026-10-27T07:06:46-04:00"}
+  ],
+  "deployment": {
+    "route": "GitHub Pages, deploy from branch main (existing 'pages build and deployment' workflow)",
+    "actions_run_id": 40493412269,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/40493412269",
+    "jobs": {"build": "success", "report-build-status": "success", "deploy": "success"},
+    "deployment_id": 7356744664,
+    "deployment_status": "success",
+    "deployment_status_at": "2026-10-27T11:05:16Z",
+    "served_last_modified": "Tue, 27 Oct 2026 11:05:10 GMT"
+  },
+  "push": {"ref": "main", "from": "6bb71bd", "to": "8fe2905", "force": false, "at": "2026-10-27T11:04:45Z"},
+  "accepted_qualifications_carried": [
+    "69 historical zero cells lack matching saved source rows; not a general missing-equals-zero rule",
+    "Tennis Abstract omits the known Kouame loss at Jingshan",
+    "Elo/yElo remains dated 28 September 2026"
+  ],
+  "public_repo_private_material_scan": "No workbook fingerprint, approval record, junior or personal data in the production diff or evidence.",
+  "step7": "UNBLOCKED: production verified live. Use https://peozenou.github.io/race/2026/ bound to dashboard commit 8fe2905. No email drafted or sent by Claude.",
+  "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage."
+}
