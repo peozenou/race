@@ -7,19 +7,19 @@ Owner: **Claude**. Prepared 27 October 2026, America/New_York. This is the publi
 | Field | Value |
 |---|---|
 | `owner` | Claude |
-| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 3) |
+| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 4) |
 | `release_id` | `2026-10-26-w36-r1` (branch `data-release/2026-10-26-w36-r1`) |
 | `data_commit_sha` | [`3220344fc042fa9f471aaaaff475f9b82cfc66ef`](https://github.com/peozenou/race/commit/3220344fc042fa9f471aaaaff475f9b82cfc66ef) |
-| `dashboard_commit_sha` | [`f98d2ad6a6f4f710de101b3fd1b12d85b7897901`](https://github.com/peozenou/race/commit/f98d2ad6a6f4f710de101b3fd1b12d85b7897901) |
-| Production history | `6bb71bd` (previous main) → `3220344` (release data, fast-forward) → [`8fe2905`](https://github.com/peozenou/race/commit/8fe2905d6d357ec63d55d302b558374bac7b2389) (week-36 build) → `01aadc4` (docs only) → [`4e4b2b0`](https://github.com/peozenou/race/commit/4e4b2b0afd277077f7196e9d9713cfcecd9779fe) (players-table rank column) → `8548472` (docs only) → `f98d2ad` (header title, takeaway, sources line). No concurrent changes on `main` to merge. |
+| `dashboard_commit_sha` | [`dbb14d51dbc5cac3b2574d5de4f6fe67e6fff5b1`](https://github.com/peozenou/race/commit/dbb14d51dbc5cac3b2574d5de4f6fe67e6fff5b1) |
+| Production history | `6bb71bd` (previous main) → `3220344` (release data, fast-forward) → [`8fe2905`](https://github.com/peozenou/race/commit/8fe2905d6d357ec63d55d302b558374bac7b2389) (week-36 build) → `01aadc4` (docs only) → [`4e4b2b0`](https://github.com/peozenou/race/commit/4e4b2b0afd277077f7196e9d9713cfcecd9779fe) (players-table rank column) → `8548472` (docs only) → [`f98d2ad`](https://github.com/peozenou/race/commit/f98d2ad6a6f4f710de101b3fd1b12d85b7897901) (header title, takeaway, sources line) → `5a8dbb8` (docs only) → `dbb14d5` (composition card title and note). No concurrent changes on `main` to merge. |
 | `dashboard_url` | https://peozenou.github.io/race/2026/ |
-| `build_data_version` / `live_data_version` | `0a47e72f8a89` / `0a47e72f8a89` |
+| `build_data_version` / `live_data_version` | `b65d0faa0c3a` / `b65d0faa0c3a` |
 | `live_week` | 36, Monday 26 October 2026 (competition week, not ISO week) |
-| `ui_checks_verified` | true (45 checks, 0 failures, light and dark) |
-| `live_verified_at` | 2026-10-27T21:55:09-04:00 (data fetch 21:54:24-04:00) |
-| Deployment | GitHub Pages run [40617701722](https://github.com/peozenou/race/actions/runs/40617701722): build, report-build-status and deploy all success; deployment 7375065980 success at 2026-10-28T01:54:02Z. Served `index.html` byte-identical to the commit (SHA-256 `562a376910e5996bf43fefe9ffd39adc372148047ad1c4abb8c90b92b74ada41`). |
+| `ui_checks_verified` | true (47 checks, 0 failures, light and dark) |
+| `live_verified_at` | 2026-10-27T22:05:41-04:00 (data fetch 22:04:56-04:00) |
+| Deployment | GitHub Pages run [40618760406](https://github.com/peozenou/race/actions/runs/40618760406): build, report-build-status and deploy all success; deployment 7375212458 success at 2026-10-28T02:04:54Z. Served `index.html` byte-identical to the commit (SHA-256 `c30cddaf7593e9e1733e3837c8cb48fb683b61487324bfad104e67e13e24a830`). |
 
-Earlier production states, each verified live and superseded the same day at Patrick's request: `8fe2905` (data version `ae164c5669a3`, run [40493412269](https://github.com/peozenou/race/actions/runs/40493412269)) at 2026-10-27T07:06:46-04:00, and `4e4b2b0` (data version `7f446c6ee322`, run [40598150235](https://github.com/peozenou/race/actions/runs/40598150235)) at 18:54:34-04:00. All kept the six approved datasets unchanged. Later commits that touch only `docs/` do not change the dashboard: `git diff f98d2ad..HEAD -- 2026` is empty for them.
+Earlier production states, each verified live and superseded the same day at Patrick's request: `8fe2905` (data version `ae164c5669a3`, run [40493412269](https://github.com/peozenou/race/actions/runs/40493412269)) at 2026-10-27T07:06:46-04:00, and `4e4b2b0` (data version `7f446c6ee322`, run [40598150235](https://github.com/peozenou/race/actions/runs/40598150235)) at 18:54:34-04:00, and `f98d2ad` (data version `0a47e72f8a89`, run [40617701722](https://github.com/peozenou/race/actions/runs/40617701722)) at 21:55:09-04:00. All kept the six approved datasets unchanged. Later commits that touch only `docs/` do not change the dashboard: `git diff dbb14d5..HEAD -- 2026` is empty for them.
 
 ### Live datasets
 
@@ -67,6 +67,8 @@ Browser checks (headless Chromium on the live URL, light and dark): 0 console er
 
 **Revision 3 (`f98d2ad`, requested by Patrick on 27 October).** Header title **THE RACE 2026 — Bilan 36e semaine** (also the page `<title>`, set in `build.py`; the week number follows HEBDO). Takeaway: « Après la semaine 36 (26 oct. 2026), CHEF est devant avec 18 554 points, suivi de DOC. Meilleure progression de la semaine : CHAN (+375), notamment grâce à Medvedev (+240). » The named player is the best-progressing team's line with the largest credited JOUEURS gain that week; ties are all named. The head note is replaced by « Sources : Tennis Abstract et Tennis Explorer », linking to tennisabstract.com and tennisexplorer.com.
 
+**Revision 4 (`dbb14d5`, requested by Patrick on 27 October).** The composition card on the Joueurs tab is titled **Contributions par équipe**, with the note « Points Race de chaque joueur à la dernière mise à jour, total cumulé par équipe ; le détail par joueur s’obtient en passant dessus. » The tab's summary sentence already read « Zverev (DOC) compte le plus de points Race (9 150) … », so it was left as is.
+
 ## Accepted qualifications carried
 
 - 69 historical zero cells lack matching saved source rows; this is not a general missing-equals-zero rule.
@@ -75,12 +77,13 @@ Browser checks (headless Chromium on the live URL, light and dark): 0 console er
 
 ## Step 7
 
-**Re-bind required.** Production changed after the first verification, so any step-7 receipt or draft bound to `8fe2905` or `4e4b2b0` must be re-bound to dashboard commit `f98d2ad` (data version `0a47e72f8a89`), verified live at 2026-10-27T21:55:09-04:00. The URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
+**Re-bind required.** Production changed after the first verification, so any step-7 receipt or draft bound to an earlier commit must be re-bound to dashboard commit `dbb14d5` (data version `b65d0faa0c3a`), verified live at 2026-10-27T22:05:41-04:00. The URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
 
 ## Files
 
 - [`completion.json`](completion.json): machine-readable completion note (public fields).
-- [`evidence/live-data-f98d2ad.json`](evidence/live-data-f98d2ad.json) and [`evidence/live-ui-f98d2ad.json`](evidence/live-ui-f98d2ad.json) (current, 45 checks); `evidence/f98d2ad-08-header-light.png`: live header.
+- [`evidence/live-data-dbb14d5.json`](evidence/live-data-dbb14d5.json) and [`evidence/live-ui-dbb14d5.json`](evidence/live-ui-dbb14d5.json) (current, 47 checks).
+- [`evidence/live-data-f98d2ad.json`](evidence/live-data-f98d2ad.json) and [`evidence/live-ui-f98d2ad.json`](evidence/live-ui-f98d2ad.json) (revision 3, 45 checks); `evidence/f98d2ad-08-header-light.png`: live header.
 - [`evidence/live-data-4e4b2b0.json`](evidence/live-data-4e4b2b0.json) and [`evidence/live-ui-4e4b2b0.json`](evidence/live-ui-4e4b2b0.json) (revision 2, 43 checks); `evidence/4e4b2b0-*.png`: live players table with the rank column.
 - [`evidence/live-data-8fe2905.json`](evidence/live-data-8fe2905.json) (first state): served page version, headers, the six dataset hashes in both URL variants, tutorial and landing page.
 - [`evidence/live-ui-8fe2905.json`](evidence/live-ui-8fe2905.json): browser-check output, light and dark, with the 40 named checks.
