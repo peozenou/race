@@ -2,7 +2,8 @@
  * Minimal stand-alone runtime for the THE RACE 2026 dashboard page.
  * It provides the small `dash` API the page code expects (data, calc,
  * onData, params, colors, setLink) and loads the weekly data files
- * from ./data/ so the same page runs on any static host.
+ * from ./data/ so the same page runs on any static host. League history
+ * files (../history/data/) load on first use.
  */
 (function () {
   'use strict';
@@ -15,6 +16,15 @@
     matches: 'data/matches.json',
     calendar: 'data/calendar.json',
     team_colors: 'data/team_colors.json',
+  };
+  // League history (2019 onwards), loaded only when a page first asks for it (Historique tab).
+  const LAZY = {
+    hist_seasons: '../history/data/seasons.json',
+    hist_hebdo: '../history/data/hebdo.json',
+    hist_rosters: '../history/data/rosters.json',
+    hist_players: '../history/data/players.json',
+    hist_ranks: '../history/data/ranks.json',
+    hist_calendar: '../history/data/calendar.json',
   };
   const DEFAULT_PARAMS = { player: null, team: 'All' };
 
@@ -32,9 +42,18 @@
     return json;
   };
 
-  const isDataset = (id) => Object.prototype.hasOwnProperty.call(DATASETS, id);
+  const has = (o, id) => Object.prototype.hasOwnProperty.call(o, id);
+  const isDataset = (id) => has(DATASETS, id) || has(LAZY, id);
+  const load = (id, url) => {
+    state[id] = { status: 'loading', data: [] };
+    fetch(url + (VERSION ? '?v=' + encodeURIComponent(VERSION) : ''), { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then((json) => { state[id] = { status: 'ok', data: rowsOf(json) }; notify(); })
+      .catch((err) => { console.error('[race] could not load', url, err); state[id] = { status: 'error', data: [], message: String(err) }; notify(); });
+  };
 
   function datasetResult(id) {
+    if (!state[id] && has(LAZY, id)) load(id, LAZY[id]);
     const s = state[id];
     if (!s) return { status: 'loading', data: [], columns: [], message: '', refreshing: false, meta: [] };
     const data = s.data || [];
@@ -101,13 +120,7 @@
   window.dash = api;
 
   // Load every data file once.
-  Object.entries(DATASETS).forEach(([id, url]) => {
-    state[id] = { status: 'loading', data: [] };
-    fetch(url + (VERSION ? '?v=' + encodeURIComponent(VERSION) : ''), { cache: 'no-cache' })
-      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then((json) => { state[id] = { status: 'ok', data: rowsOf(json) }; notify(); })
-      .catch((err) => { console.error('[race] could not load', url, err); state[id] = { status: 'error', data: [], message: String(err) }; notify(); });
-  });
+  Object.entries(DATASETS).forEach(([id, url]) => load(id, url));
 
   // Redraw when the available width changes (phone rotation, window resize).
   let lastWidth = 0;

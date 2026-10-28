@@ -20,13 +20,17 @@ import pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE_URL = "https://peozenou.github.io/race/2026/"
 DATA_FILES = ["hebdo", "joueurs", "players", "matches", "calendar", "team_colors"]
+HISTORY_FILES = ["seasons", "hebdo", "rosters", "players", "ranks", "calendar"]  # ../history/data, Historique tab
 
 
 def data_version() -> str:
     h = hashlib.sha256()
     for name in DATA_FILES:
         h.update((ROOT / "data" / f"{name}.json").read_bytes())
+    for name in HISTORY_FILES:
+        h.update((ROOT.parent / "history" / "data" / f"{name}.json").read_bytes())
     h.update((ROOT / "source" / "dashboard.html").read_bytes())
+    h.update((ROOT / "assets" / "runtime.js").read_bytes())
     return h.hexdigest()[:12]
 
 

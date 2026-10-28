@@ -93,6 +93,28 @@
 .tr .tr-dl dt{color:var(--color-fg-muted)}
 .tr .tr-dl dd{margin:0}
 .tr .tr-empty-msg{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.tr .tr-hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,11.5rem),1fr));gap:var(--cds-gap-sm)}
+.tr .tr-ed{appearance:none;font:inherit;text-align:left;color:inherit;background:var(--color-panel);border:1px solid var(--color-border-line);border-top-width:4px;border-radius:var(--cds-radius);padding:var(--cds-pad-md);cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0}
+.tr .tr-ed[aria-pressed="true"]{border-color:var(--color-fg);box-shadow:inset 0 0 0 1px var(--color-fg)}
+.tr .tr-ed-y{display:flex;justify-content:space-between;align-items:baseline;gap:var(--cds-gap-xs)}
+.tr .tr-ed-y b{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);line-height:1.1}
+.tr .tr-ed ol{margin:2px 0 0;padding:0;list-style:none;font-size:var(--cds-font-size-caption)}
+.tr .tr-ed li{display:flex;justify-content:space-between;gap:var(--cds-gap-xs)}
+.tr .tr-tag{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);border:1px solid var(--color-border-line);border-radius:999px;padding:0 6px;white-space:nowrap}
+.tr .tr-roster{border-collapse:separate;border-spacing:2px;font-size:var(--cds-font-size-caption);min-width:52rem;width:100%;table-layout:fixed}
+.tr .tr-roster col.tr-rh{width:4.5rem}
+.tr .tr-roster th{font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);text-align:left;padding:2px 4px;white-space:nowrap}
+.tr .tr-roster th[scope=row]{color:var(--color-fg)}
+.tr .tr-roster td{vertical-align:top;padding:var(--cds-pad-xs) 6px;border-radius:4px;line-height:1.45;overflow-wrap:anywhere}
+.tr .tr-roster td.tr-none{color:var(--color-fg-muted);text-align:center;vertical-align:middle}
+.tr .tr-pl{display:block;border-radius:3px;padding:0 3px;margin:0 -3px 2px;cursor:default}
+.tr .tr-pl.tr-hl{background:var(--color-fg);color:var(--color-panel)}
+.tr .tr-pl.tr-hl .tr-ex,.tr .tr-pl.tr-hl .tr-mv{color:inherit}
+.tr .tr-ex{color:var(--color-fg-muted);font-size:0.68rem;margin-left:3px;white-space:nowrap}
+.tr .tr-mv{color:var(--color-fg-muted);margin-left:2px}
+.tr .tr-path{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px}
+.tr .tr-seg{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.tr .tr-gap{color:var(--color-fg-muted);font-style:italic;white-space:nowrap}
 </style>
 
 <div class="tr" id="race-season" lang="fr">
@@ -105,6 +127,7 @@
   <nav class="tr-tabs" role="tablist" aria-label="Pages du tableau de bord">
     <button class="tr-tab" role="tab" id="tab-teams" data-tab="teams" aria-selected="true">Équipes</button>
     <button class="tr-tab" role="tab" id="tab-players" data-tab="players" aria-selected="false">Joueurs</button>
+    <button class="tr-tab" role="tab" id="tab-history" data-tab="history" aria-selected="false">Historique</button>
     <button class="tr-tab" role="tab" id="tab-notes" data-tab="notes" aria-selected="false">Barème et sources</button>
   </nav>
 
@@ -235,6 +258,126 @@
     </div>
   </section>
 
+  <section class="tr-page" id="history" role="tabpanel" aria-labelledby="tab-history" hidden>
+    <p class="tr-take" id="hist-take"><span class="dash-skeleton">—</span></p>
+    <div class="tr-kpis" id="hist-kpis"></div>
+
+    <div class="tr-card" id="hist-honours-card">
+      <h2>Palmarès</h2>
+      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite).</p>
+      <div class="tr-scroll">
+        <table class="tr-table" id="hist-honours" data-source="hist_honours" data-row-key="team">
+          <thead><tr>
+            <th class="tr-l"><span class="tr-th">Équipe</span></th>
+            <th><span class="tr-th">Titres</span></th>
+            <th class="tr-l tr-sec"><span class="tr-th">Années</span></th>
+            <th class="tr-sec"><span class="tr-th">2e</span></th>
+            <th class="tr-sec"><span class="tr-th">3e</span></th>
+            <th class="tr-sec"><span class="tr-th">Dernière place</span></th>
+            <th class="tr-l tr-sec"><span class="tr-th">Éditions</span></th>
+            <th class="tr-l"><span class="tr-th">Rang moyen</span></th>
+            <th><span class="tr-th">Part moyenne</span></th>
+            <th><span class="tr-th">2026 (en cours)</span></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tr-card" id="hist-bump-card">
+      <h2>Classement final de chaque édition</h2>
+      <p class="tr-note">Position de chaque équipe à la fin de chaque édition ; 2026 en pointillé, à la dernière mise à jour. Survolez pour voir les totaux.</p>
+      <div class="tr-chart dash-skeleton" id="hist-bump" data-source="hist_season_list team_colors"></div>
+    </div>
+
+    <div class="tr-card" id="hist-editions-card">
+      <h2>Les éditions une à une</h2>
+      <p class="tr-note">Choisissez une édition pour voir sa course, ses meilleurs joueurs et ses transferts.</p>
+      <div class="tr-hgrid" id="hist-editions" data-source="hist_season_list"></div>
+      <div id="hist-season" hidden>
+        <h3 id="hist-season-title"></h3>
+        <p class="tr-take" id="hist-season-take"></p>
+        <div class="tr-legend" id="hist-season-legend" aria-hidden="true">
+          <span><i class="tr-lg tr-lg-slam"></i>Grand Chelem</span>
+          <span><i class="tr-lg tr-lg-m1000"></i>Masters 1000</span>
+        </div>
+        <div class="tr-chart" id="hist-season-chart" data-source="hist_hebdo hist_calendar"></div>
+        <div class="tr-grid">
+          <div>
+            <h3>Meilleurs joueurs de l'édition</h3>
+            <p class="tr-note" id="hist-top-note"></p>
+            <div class="tr-scroll">
+              <table class="tr-table" id="hist-top" data-source="hist_players">
+                <thead><tr>
+                  <th class="tr-l"><span class="tr-th">Joueur</span></th>
+                  <th class="tr-l"><span class="tr-th">Équipe</span></th>
+                  <th><span class="tr-th">Points comptés</span></th>
+                  <th><span class="tr-th">V–D</span></th>
+                  <th><span class="tr-th">Titres</span></th>
+                  <th><span class="tr-th">Rang ATP</span></th>
+                </tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3>Transferts en cours de saison</h3>
+            <div class="tr-prose" id="hist-transfers"></div>
+            <h3>Remarques sur les données</h3>
+            <div class="tr-prose tr-note" id="hist-issues"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tr-card" id="hist-rosters-card">
+      <h2>Compositions des équipes</h2>
+      <p class="tr-note">Les six joueurs de chaque équipe à chaque édition. « ex-… » signale un joueur passé auparavant par une autre équipe ; ↗ arrivé et ↘ parti en cours de saison. Survolez un nom pour le retrouver dans les autres éditions. * Édition en cours.</p>
+      <div class="tr-matrix-box dash-skeleton" id="hist-rosters" data-source="hist_roster_all team_colors"></div>
+    </div>
+
+    <div class="tr-card" id="hist-movers-card">
+      <h2>Joueurs passés par plusieurs équipes</h2>
+      <p class="tr-note">Parcours de chaque joueur sélectionné par au moins deux équipes, dans l'ordre des éditions ; les éditions où il n'était dans aucune équipe apparaissent en italique.</p>
+      <div class="tr-scroll">
+        <table class="tr-table" id="hist-movers" data-source="hist_movers" data-row-key="key">
+          <thead><tr>
+            <th class="tr-l"><span class="tr-th">Joueur</span></th>
+            <th class="tr-l"><span class="tr-th">Parcours</span></th>
+            <th><span class="tr-th">Équipes</span></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tr-card" id="hist-departures-card">
+      <div class="tr-card-head">
+        <div>
+          <h2>Que deviennent les joueurs partis ?</h2>
+          <p class="tr-note" id="hist-dep-note">Chaque départ d'une équipe, en fin d'édition ou en cours de saison, avec le classement ATP du joueur en fin d'année ensuite, qu'il ait rejoint une autre équipe ou non. ▲ : mieux classé aujourd'hui qu'à son départ.</p>
+        </div>
+      </div>
+      <div class="tr-filter" id="hist-dep-filter" role="group" aria-label="Équipe quittée"></div>
+      <div class="tr-scroll">
+        <table class="tr-table" id="hist-departures" data-source="hist_departures" data-row-key="id">
+          <thead><tr>
+            <th class="tr-l"><span class="tr-th">Joueur</span></th>
+            <th class="tr-l"><span class="tr-th">Quitte</span></th>
+            <th class="tr-l"><span class="tr-th">Départ</span></th>
+            <th><span class="tr-th">Rang ATP au départ</span></th>
+            <th class="tr-l"><span class="tr-th">Ensuite</span></th>
+            <th class="tr-l tr-sec"><span class="tr-th">Rang ATP en fin d'année</span></th>
+            <th><span class="tr-th">Meilleur rang depuis</span></th>
+            <th><span class="tr-th">Rang actuel</span></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="tr-note" id="hist-dep-src"></p>
+    </div>
+  </section>
+
   <section class="tr-page" id="notes" role="tabpanel" aria-labelledby="tab-notes" hidden>
     <div class="tr-grid">
       <div class="tr-card tr-prose" id="scoring">
@@ -258,6 +401,7 @@
           <dt>Classements ATP et Race</dt><dd>Tennis Explorer, <span id="src-rank" data-source="players" data-field="rankings_date" data-row="0">—</span>.<span id="src-rank-out" data-source="players" data-field="rankings_date"></span></dd>
           <dt>Elo et yElo</dt><dd>Tennis Abstract, <span id="src-elo" data-source="players" data-field="elo_date" data-row="0">—</span>.</dd>
           <dt>Calendrier</dt><dd>Calendrier ATP Tour 2026 (Grand Chelem et Masters 1000).</dd>
+          <dt>Historique</dt><dd>Classeurs THE RACE 2019 à 2025 convertis au format de ce tableau, corrections documentées (dossier <a href="https://github.com/peozenou/race/tree/main/history" target="_blank" rel="noopener">history</a>) ; 2026 à la dernière mise à jour. Classements ATP de fin d'année : Jeff Sackmann (2019 à 2023), Tennis Explorer (2024 à 2026).</dd>
         </dl>
       </div>
     </div>
@@ -461,6 +605,158 @@ dash.calc('player_events', {
   },
 });
 
+// ---------------------------------------------------------------- Historique (league history 2019 onwards)
+// Completed editions come from ../history/data (converted workbooks, corrections documented there);
+// the current edition is always read from this season's live data.
+const HIST_CURRENT = 2026;
+const histBase = (s) => String(s || '').replace(/ \((sorti|entré)\)$/, '');
+
+dash.calc('hist_season_list', {
+  inputs: ['hist_seasons', 'standings', 'players'],
+  title: 'Éditions de THE RACE',
+  description: "Une ligne par édition : barème, statut, équipes, classement final (dernière mise à jour pour l'édition en cours), champion et nombre de transferts en cours de saison.",
+  fn: (seasons, standings, players) => {
+    const out = seasons.filter((s) => s.season < HIST_CURRENT).map((s) => ({
+      season: s.season, scoring: s.scoring_system, status: s.status, teams: s.teams.slice(),
+      standings: s.final_standings.map((f) => ({ rank: f.rank, team: f.team, total: f.total, race: f.race, duels: f.duels })),
+      champion: s.champion, week: s.final_week, date: s.final_date,
+      transfers: (s.transfers || []).map((t) => ({ team: t.team, out: t.out, in: t.in, date: t.date })),
+    }));
+    if (standings.length) {
+      const moves = new Map();
+      players.filter((p) => p.transfer_date).forEach((p) => {
+        const k = p.team + '|' + p.transfer_date;
+        const m = moves.get(k) || { team: p.team, date: p.transfer_date, out: [], in: [] };
+        (/\(sorti\)$/.test(p.short || '') ? m.out : m.in).push(p.full);
+        moves.set(k, m);
+      });
+      out.push({
+        season: HIST_CURRENT, scoring: 'race', status: 'in_progress', teams: standings.map((r) => r.team),
+        standings: standings.map((r) => ({ rank: r.rank, team: r.team, total: r.total, race: r.race, duels: r.duels })),
+        champion: null, week: standings[0].week, date: standings[0].date,
+        transfers: [...moves.values()].map((m) => ({ team: m.team, out: m.out.join(', '), in: m.in.join(', '), date: m.date })),
+      });
+    }
+    return out.sort((a, b) => a.season - b.season);
+  },
+});
+
+dash.calc('hist_honours', {
+  inputs: ['hist_season_list'],
+  title: 'Palmarès par équipe',
+  description: "Pour chaque équipe, sur les éditions terminées qu'elle a disputées : titres (et années), deuxièmes et troisièmes places, dernières places, nombre d'éditions et années couvertes, rang final moyen, part moyenne du total des points de toutes les équipes ; plus sa position actuelle dans l'édition en cours.",
+  fn: (list) => {
+    const done = list.filter((s) => s.status === 'complete');
+    const now = list.find((s) => s.status === 'in_progress');
+    const teams = [...new Set(list.flatMap((s) => s.teams))];
+    return teams.map((t) => {
+      const eds = done.map((s) => {
+        const f = s.standings.find((x) => x.team === t);
+        if (!f) return null;
+        const sum = s.standings.reduce((a, x) => a + (x.total || 0), 0);
+        return { season: s.season, rank: f.rank, last: f.rank === s.standings.length, share: sum ? f.total / sum : null };
+      }).filter(Boolean);
+      const years = eds.map((e) => e.season);
+      const cur = now ? now.standings.find((x) => x.team === t) : null;
+      return {
+        team: t, editions: eds.length,
+        first: years.length ? Math.min(...years) : null, last: years.length ? Math.max(...years) : null,
+        titles: eds.filter((e) => e.rank === 1).length, title_years: eds.filter((e) => e.rank === 1).map((e) => e.season),
+        second: eds.filter((e) => e.rank === 2).length, third: eds.filter((e) => e.rank === 3).length,
+        last_place: eds.filter((e) => e.last).length,
+        avg_rank: eds.length ? eds.reduce((a, e) => a + e.rank, 0) / eds.length : null,
+        avg_share: eds.length ? eds.reduce((a, e) => a + (e.share || 0), 0) / eds.length : null,
+        current_rank: cur ? cur.rank : null, current_week: now ? now.week : null,
+      };
+    }).sort((a, b) => b.titles - a.titles || b.second - a.second || (a.avg_rank ?? 99) - (b.avg_rank ?? 99));
+  },
+});
+
+dash.calc('hist_roster_all', {
+  inputs: ['hist_rosters', 'hist_players', 'players'],
+  title: 'Effectifs de toutes les éditions',
+  description: "Une ligne par passage d'un joueur dans une équipe (édition, équipe, dates d'arrivée et de départ en cours de saison), avec une clé stable par joueur (identifiant ATP) ; l'édition en cours vient des données de la saison.",
+  fn: (rosters, hplayers, players) => {
+    const keyOf = new Map();
+    rosters.forEach((r) => keyOf.set(r.player, r.atp_id ? 'atp:' + r.atp_id : 'name:' + r.player));
+    const info = new Map(hplayers.map((p) => [p.season + '|' + p.team + '|' + p.player, p]));
+    const rows = rosters.filter((r) => r.season < HIST_CURRENT).map((r) => {
+      const p = info.get(r.season + '|' + r.team + '|' + r.player) || {};
+      return { season: r.season, team: r.team, player: r.player, full: r.full, key: keyOf.get(r.player),
+        short: histBase(p.short) || r.player, start: r.start, end: r.end, points: p.league_points ?? null };
+    });
+    players.forEach((p) => rows.push({
+      season: HIST_CURRENT, team: p.team, player: p.player, full: p.full, key: keyOf.get(p.player) || 'name:' + p.player,
+      short: histBase(p.short), start: /\(entré\)$/.test(p.short || '') ? p.transfer_date : null,
+      end: /\(sorti\)$/.test(p.short || '') ? p.transfer_date : null, points: p.race_points ?? null,
+    }));
+    return rows;
+  },
+});
+
+dash.calc('hist_movers', {
+  inputs: ['hist_roster_all'],
+  title: 'Joueurs passés par plusieurs équipes',
+  description: "Chaque joueur sélectionné par au moins deux équipes, avec son parcours édition par édition : équipe, années consécutives regroupées, arrivées et départs en cours de saison, et éditions sans équipe.",
+  fn: (rows) => {
+    const by = new Map();
+    rows.forEach((r) => { if (!by.has(r.key)) by.set(r.key, []); by.get(r.key).push(r); });
+    const out = [];
+    by.forEach((st, key) => {
+      const teams = [...new Set(st.map((r) => r.team))];
+      if (teams.length < 2) return;
+      st.sort((a, b) => a.season - b.season || String(a.start || '').localeCompare(String(b.start || '')));
+      const segs = [];
+      st.forEach((r) => {
+        const prev = segs[segs.length - 1];
+        if (prev && prev.team === r.team && !prev.end && !r.start && (r.season === prev.to + 1 || r.season === prev.to)) { prev.to = r.season; prev.end = r.end; return; }
+        if (prev && r.season > prev.to + 1) segs.push({ gap: true, from: prev.to + 1, to: r.season - 1 });
+        segs.push({ team: r.team, from: r.season, to: r.season, start: r.start, end: r.end });
+      });
+      out.push({ key, player: st[st.length - 1].full, short: st[st.length - 1].short, teams: teams.length, segs, first: st[0].season });
+    });
+    return out.sort((a, b) => b.teams - a.teams || a.first - b.first || a.short.localeCompare(b.short, 'fr'));
+  },
+});
+
+dash.calc('hist_departures', {
+  inputs: ['hist_roster_all', 'hist_ranks'],
+  title: 'Joueurs partis et leur classement ensuite',
+  description: "Chaque départ d'une équipe (fin d'édition sans être reconduit, ou transfert en cours de saison) : rang ATP de fin d'année de la saison du départ, équipe suivante éventuelle, rang ATP en fin de chaque année suivante, meilleur rang depuis et rang actuel.",
+  fn: (rows, ranks) => {
+    const rk = new Map(ranks.map((r) => [r.person_key + '|' + r.season, r]));
+    const teamsIn = new Map();
+    rows.forEach((r) => { if (!teamsIn.has(r.season)) teamsIn.set(r.season, new Set()); teamsIn.get(r.season).add(r.team); });
+    const rankOf = (k, y) => { const r = rk.get(k + '|' + y); return r ? r.atp_rank : null; };
+    const out = [];
+    rows.forEach((r) => {
+      const mid = !!r.end;
+      const notKept = !mid && r.season < HIST_CURRENT && teamsIn.has(r.season + 1) && teamsIn.get(r.season + 1).has(r.team)
+        && !rows.some((x) => x.key === r.key && x.team === r.team && x.season === r.season + 1);
+      if (!mid && !notKept) return;
+      const next = rows.filter((x) => x.key === r.key && (x.season > r.season || (mid && x.season === r.season && x.start && x.start >= r.end)))
+        .sort((a, b) => a.season - b.season || String(a.start || '').localeCompare(String(b.start || '')))[0];
+      const later = [];
+      for (let y = r.season + 1; y <= HIST_CURRENT; y += 1) {
+        const team = rows.filter((x) => x.key === r.key && x.season === y).map((x) => x.team);
+        later.push({ season: y, rank: rankOf(r.key, y), team: team.length ? [...new Set(team)].join('/') : null });
+      }
+      const ranked = later.filter((l) => l.rank !== null);
+      const best = ranked.length ? ranked.reduce((a, b) => (b.rank < a.rank ? b : a)) : null;
+      const at = rankOf(r.key, r.season);
+      const now = rankOf(r.key, HIST_CURRENT);
+      out.push({
+        id: [r.key, r.team, r.season, r.end || 'fin'].join('|'), key: r.key, player: r.full, short: r.short, team: r.team,
+        season: r.season, mid, date: mid ? r.end : r.season + '-12-31', end: r.end,
+        rank_at: at, next_team: next ? next.team : null, next_season: next ? next.season : null,
+        later, best_rank: best ? best.rank : null, best_season: best ? best.season : null,
+        current_rank: now,
+        move: at !== null && now !== null ? at - now : null,
+      });
+    });
+    return out.sort((a, b) => b.date.localeCompare(a.date) || a.short.localeCompare(b.short, 'fr'));
+  },
+});
 </script>
 
 <script>
@@ -1022,6 +1318,139 @@ dash.calc('player_events', {
       })
       .on('pointerleave', () => { dot.style('display', 'none'); TR.hideTip(tip); });
   };
+
+  /* ---------------------------------------------------------------- Historique */
+  TR.years = (a, b) => (a === null || a === undefined ? '—' : a === b ? String(a) : `${a}–${b}`);
+  TR.teamTag = (team, order) => { const s = document.createElement('span'); s.className = 'tr-seg'; const d = document.createElement('span'); d.className = 'tr-dot'; d.style.background = TR.color(team, order); d.style.marginRight = '0'; s.append(d, TR.text(team)); return s; };
+
+  /* Classement final de chaque édition (2026 : dernière mise à jour, en pointillé) */
+  TR.drawBump = (el, list, order) => {
+    const W = el.clientWidth; if (!W) return;
+    const seasons = list.map((s) => s.season);
+    const n = Math.max(...list.map((s) => s.standings.length));
+    const H = Math.max(220, 40 * n + 60);
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, 'Classement final de chaque équipe à chaque édition de THE RACE');
+    const ranks = d3.range(1, n + 1);
+    const lw = TR.textWidth(svg, ranks.map(TR.ord), 'tr-tick');
+    const ew = TR.textWidth(svg, order, 'tr-endlabel');
+    const m = { t: 14, r: ew + 24, b: 28, l: lw + 12 };
+    const x = d3.scalePoint(seasons, [m.l + 10, W - m.r]);
+    const y = d3.scalePoint(ranks, [m.t + 6, H - m.b - 10]);
+    svg.append('g').selectAll('line').data(ranks).join('line').attr('class', 'tr-grid-line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    svg.append('g').selectAll('text').data(ranks).join('text').attr('class', 'tr-tick').attr('x', m.l - 8).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end').text(TR.ord);
+    const step = Math.max(1, Math.ceil(seasons.length / Math.max(2, Math.floor((W - m.l - m.r) / 52))));
+    svg.append('g').selectAll('text').data(seasons.filter((_, i) => i % step === 0)).join('text').attr('class', 'tr-tick')
+      .attr('x', (d) => x(d)).attr('y', H - 8).attr('text-anchor', 'middle').attr('font-style', (d) => (d === HIST_CURRENT ? 'italic' : null)).text((d) => (d === HIST_CURRENT ? d + ' *' : d));
+    const pts = (t) => list.map((s) => { const f = s.standings.find((r) => r.team === t); return f ? { season: s.season, rank: f.rank, total: f.total, live: s.status !== 'complete' } : null; });
+    const g = svg.append('g').attr('fill', 'none').attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    order.forEach((t) => {
+      const ps = pts(t);
+      const color = TR.color(t, order);
+      for (let i = 1; i < ps.length; i += 1) {
+        if (!ps[i] || !ps[i - 1]) continue;
+        g.append('line').attr('x1', x(ps[i - 1].season)).attr('y1', y(ps[i - 1].rank)).attr('x2', x(ps[i].season)).attr('y2', y(ps[i].rank))
+          .attr('stroke', color).attr('stroke-width', 2.5).attr('stroke-dasharray', ps[i].live ? '4 4' : null);
+      }
+      ps.filter(Boolean).forEach((p) => svg.append('circle').attr('cx', x(p.season)).attr('cy', y(p.rank)).attr('r', p.rank === 1 && !p.live ? 6 : 4)
+        .attr('fill', p.live ? 'var(--color-panel)' : color).attr('stroke', color).attr('stroke-width', 2));
+      const lastP = ps.filter(Boolean).pop();
+      if (lastP) svg.append('text').attr('class', 'tr-endlabel').attr('x', x(lastP.season) + 10).attr('y', y(lastP.rank)).attr('dy', '0.32em').text(t);
+    });
+    const tip = TR.tip(el);
+    const rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).style('display', 'none');
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', Math.max(0, W - m.l - m.r + 10)).attr('height', Math.max(0, H - m.t - m.b)).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px] = d3.pointer(ev);
+        const yr = seasons.reduce((a, b) => (Math.abs(x(b) - px) < Math.abs(x(a) - px) ? b : a), seasons[0]);
+        const s = list.find((e) => e.season === yr);
+        rule.style('display', null).attr('x1', x(yr)).attr('x2', x(yr));
+        const [bx, by] = d3.pointer(ev, el);
+        TR.showTip(tip, el, bx, by, s.status === 'complete' ? `Édition ${yr}` : `${yr} · en cours, semaine ${s.week}`,
+          s.standings.map((r) => ({ color: TR.color(r.team, order), name: `${TR.ord(r.rank)} ${r.team}`, value: TR.fmt(r.total) })),
+          s.scoring === 'bareme' ? 'Points au barème (avant 2022)' : null);
+      })
+      .on('pointerleave', () => { rule.style('display', 'none'); TR.hideTip(tip); });
+  };
+
+  /* Une carte par édition */
+  TR.drawEditions = (el, list, order, pick) => {
+    el.replaceChildren(...list.map((s) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'tr-ed'; b.dataset.season = s.season;
+      b.setAttribute('aria-pressed', String(s.season === pick));
+      const lead = s.standings[0];
+      b.style.borderTopColor = lead ? TR.color(lead.team, order) : 'var(--color-border-line)';
+      const head = document.createElement('div'); head.className = 'tr-ed-y';
+      const yb = document.createElement('b'); yb.textContent = s.season;
+      const tag = document.createElement('span'); tag.className = 'tr-tag';
+      tag.textContent = s.status === 'complete' ? (s.scoring === 'bareme' ? 'barème' : 'Race') + ' · ' + s.teams.length + ' équipes' : `en cours · sem. ${s.week}`;
+      head.append(yb, tag); b.append(head);
+      const champ = document.createElement('div'); champ.className = 'tr-sub';
+      champ.textContent = s.status === 'complete' ? `Champion : ${s.champion}` : `En tête : ${lead ? lead.team : '—'}`;
+      b.append(champ);
+      const ol = document.createElement('ol');
+      s.standings.forEach((r) => {
+        const li = document.createElement('li');
+        const nm = document.createElement('span'); nm.append(TR.text(TR.ord(r.rank) + ' '), TR.teamTag(r.team, order));
+        const v = document.createElement('span'); v.textContent = TR.fmt(r.total);
+        li.append(nm, v); ol.append(li);
+      });
+      b.append(ol);
+      return b;
+    }));
+  };
+
+  /* Compositions : équipes en lignes, éditions en colonnes */
+  TR.drawRosterMatrix = (el, rows, order, seasons) => {
+    el.replaceChildren();
+    const table = document.createElement('table'); table.className = 'tr-roster'; table.id = 'hist-roster-table';
+    const cg = document.createElement('colgroup'); const c0 = document.createElement('col'); c0.className = 'tr-rh'; cg.append(c0, ...seasons.map(() => document.createElement('col'))); table.append(cg);
+    const thead = document.createElement('thead'); const hr = document.createElement('tr');
+    hr.append(document.createElement('th'));
+    seasons.forEach((y) => { const th = document.createElement('th'); th.scope = 'col'; th.textContent = y === HIST_CURRENT ? y + ' *' : y; if (y === HIST_CURRENT) th.title = 'Édition en cours'; hr.append(th); });
+    thead.append(hr); table.append(thead);
+    const tb = document.createElement('tbody');
+    const before = (r, x) => x.season < r.season || (x.season === r.season && x.end && r.start && x.end <= r.start);
+    order.forEach((t) => {
+      const tr = document.createElement('tr');
+      const th = document.createElement('th'); th.scope = 'row'; th.append(TR.teamTag(t, order)); tr.append(th);
+      seasons.forEach((y) => {
+        const td = document.createElement('td');
+        const st = rows.filter((r) => r.team === t && r.season === y).sort((a, b) => (b.points ?? -1) - (a.points ?? -1));
+        if (!st.length) { td.className = 'tr-none'; td.textContent = '—'; tr.append(td); return; }
+        td.style.background = `color-mix(in srgb, ${TR.color(t, order)} 12%, transparent)`;
+        st.forEach((r) => {
+          const sp = document.createElement('span'); sp.className = 'tr-pl'; sp.dataset.key = r.key; sp.textContent = r.short;
+          const prev = rows.filter((x) => x.key === r.key && x.team !== r.team && before(r, x)).sort((a, b) => a.season - b.season).pop();
+          if (r.start) { const mv = document.createElement('span'); mv.className = 'tr-mv'; mv.textContent = '↗'; mv.title = `Arrivé le ${TR.dateY(r.start)}`; sp.append(mv); }
+          if (r.end) { const mv = document.createElement('span'); mv.className = 'tr-mv'; mv.textContent = '↘'; mv.title = `Parti le ${TR.dateY(r.end)}`; sp.append(mv); }
+          if (prev) { const ex = document.createElement('span'); ex.className = 'tr-ex'; ex.textContent = 'ex-' + prev.team; ex.title = `${prev.team} en ${prev.season}`; sp.append(ex); }
+          sp.title = r.full + (r.start ? `, arrivé le ${TR.dateY(r.start)}` : '') + (r.end ? `, parti le ${TR.dateY(r.end)}` : '');
+          td.append(sp);
+        });
+        tr.append(td);
+      });
+      tb.append(tr);
+    });
+    table.append(tb); el.append(table);
+    const hl = (key, on) => el.querySelectorAll(`.tr-pl[data-key="${CSS.escape(key)}"]`).forEach((n) => n.classList.toggle('tr-hl', on));
+    table.addEventListener('pointerover', (e) => { const sp = e.target.closest('.tr-pl'); if (sp) hl(sp.dataset.key, true); });
+    table.addEventListener('pointerout', (e) => { const sp = e.target.closest('.tr-pl'); if (sp) hl(sp.dataset.key, false); });
+  };
+
+  /* Petite courbe de classement ATP (échelle log, le haut = mieux classé) */
+  TR.rankSpark = (pts, color) => {
+    const w = 96, h = 22;
+    const svg = d3.create('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`).attr('aria-hidden', 'true');
+    const known = pts.filter((p) => p.rank !== null);
+    if (!known.length) return svg.node();
+    const x = d3.scaleLinear([0, Math.max(1, pts.length - 1)], [3, w - 3]);
+    const y = d3.scaleLog([1, 500], [3, h - 3]).clamp(true);
+    svg.append('path').attr('fill', 'none').attr('stroke', color).attr('stroke-width', 1.75).attr('stroke-linejoin', 'round')
+      .attr('d', d3.line().defined((p) => p.rank !== null).x((p, i) => x(i)).y((p) => y(p.rank))(pts));
+    pts.forEach((p, i) => { if (p.rank !== null) svg.append('circle').attr('cx', x(i)).attr('cy', y(p.rank)).attr('r', 2).attr('fill', p.team ? color : 'var(--color-panel)').attr('stroke', color); });
+    return svg.node();
+  };
 })();
 </script>
 
@@ -1029,11 +1458,13 @@ dash.calc('player_events', {
 (() => {
   const TR = window.TR;
   const $ = (id) => document.getElementById(id);
-  const PAGES = ['teams', 'players', 'notes'];
+  const PAGES = ['teams', 'players', 'history', 'notes'];
   let active = 'teams';
   const sort = { key: 'race', dir: -1 };
   let query = '';
   let slotPick = 'in'; // season shown in the detail of a replacement line: incoming ('in') or outgoing ('out') player
+  let histPick = null; // edition shown in the Historique detail (default: last completed edition)
+  let histDepTeam = 'All'; // team filter of the departures table
 
   const show = (tab, link) => {
     active = PAGES.includes(tab) ? tab : 'teams';
@@ -1061,6 +1492,14 @@ dash.calc('player_events', {
   $('detail-pick').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-pick]');
     if (b) { slotPick = b.dataset.pick; render(); }
+  });
+  $('hist-editions').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-season]');
+    if (b) { histPick = Number(b.dataset.season); render(); }
+  });
+  $('hist-dep-filter').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-team]');
+    if (b) { histDepTeam = b.dataset.team; render(); }
   });
   $('team-filter').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-team]');
@@ -1362,12 +1801,215 @@ dash.calc('player_events', {
     $('src-week').textContent = sd.status === 'ok' && sd.data.length ? `semaine ${sd.data[0].week}, ${TR.dateY(sd.data[0].date)}` : '—';
   };
 
+  // French notes on each edition's data (detail in history/README.md and history/data/corrections.json).
+  const HIST_NOTES = {
+    2019: ["Trois équipes. Les résultats d'Auger-Aliassime avant fin juin ne sont pas comptés dans le classeur, sans doute un changement d'effectif ; laissés tels quels."],
+    2020: ["Saison interrompue par le Covid entre février et août.", "Corrigé : à Hambourg, la formule de CHEF oubliait la finale de Rublev (+20) ; le total de CHEF rejoint celui de SCORES (430).", "En attente de décision : la ligne « Vienne » contient les résultats de Nour-Soultan, si bien que Vienne (gagné par Rublev) n'a jamais été compté. Les +60 points de CHEF le feraient passer de la 4e à la 3e place."],
+    2021: ["Corrigé : la formule des Grands Chelems de CHEF oubliait les quarts de finale, compensés par un 60 saisi à Roland-Garros ; points replacés aux bonnes semaines, total inchangé."],
+    2022: ["Seul le classement final a été conservé : pas de course semaine par semaine ni de points de duel par joueur."],
+    2023: ["Corrigé : CHAN avait été oublié dans la mise à jour de la semaine 28 (semaines 28 à 32).", "Les points des joueurs s'arrêtent à la semaine 37 ; 11 petits écarts de calendrier avec HEBDO subsistent."],
+    2024: ["Corrigé : deux cellules HEBDO de CHEF (semaines 2 et 24) ; rangs des adversaires ajoutés à partir des classements ATP hebdomadaires.", "Non résolu : en fin de saison, 240 points de duel pour CHEF dans HEBDO contre 230 d'après les matchs ; HEBDO conservé."],
+    2025: ["Corrigé : l'onglet de la semaine 35 contenait la Race 2024 ; semaine reconstruite à partir de la semaine 34 et des points du Masters.", "Corrigé : duels recalculés match par match (la colonne HEBDO avait décroché), et semaine 12 de JULES.", "Non résolu : l'onglet Tennis Abstract de Kouame est vide, il n'a donc pas de matchs."],
+    2026: ["Édition en cours : données de la dernière mise à jour publiée."],
+  };
+
+  const drawHistory = (order) => {
+    const st = TR.state('hist_season_list', 'hist_honours');
+    const take = $('hist-take');
+    const boxes = [$('hist-bump'), $('hist-rosters')];
+    if (st !== 'ok') {
+      if (st === 'error') { boxes.forEach(TR.fail); take.textContent = "L'historique n'a pas pu être chargé."; } else boxes.forEach(TR.wait);
+      return;
+    }
+    const list = dash.data('hist_season_list').data;
+    const hon = dash.data('hist_honours').data;
+    const teams = [...new Set([...order, ...TR.palette.keys(), ...list.flatMap((s) => s.teams)])].filter((t) => list.some((s) => s.teams.includes(t)));
+    const done = list.filter((s) => s.status === 'complete');
+    const now = list.find((s) => s.status !== 'complete');
+    if (histPick === null || !list.some((s) => s.season === histPick)) histPick = done.length ? done[done.length - 1].season : list[list.length - 1].season;
+
+    // Header
+    const winners = hon.filter((h) => h.titles > 0);
+    const nil = hon.filter((h) => h.titles === 0);
+    const yl = (h) => h.title_years.join(', ');
+    take.replaceChildren(TR.text(`${list.length} éditions depuis ${list[0].season}. `));
+    if (winners.length) {
+      const [a, ...rest] = winners;
+      take.append(TR.text(`${a.team} compte le plus de titres (${a.titles} : ${yl(a)})`));
+      if (rest.length) take.append(TR.text(', devant ' + rest.map((h) => `${h.team} (${h.titles} : ${yl(h)})`).join(', ')));
+      take.append(TR.text('.'));
+    }
+    if (nil.length) take.append(TR.text(' ' + nil.map((h) => `${h.team}, arrivé en ${h.first}, n'a pas encore de titre`).join(' ; ') + '.'));
+    if (now && now.standings.length) take.append(TR.text(` En ${now.season}, ${now.standings[0].team} mène après la semaine ${now.week}.`));
+
+    // KPIs
+    const rost = TR.state('hist_roster_all') === 'ok' ? dash.data('hist_roster_all').data : [];
+    const movers = TR.state('hist_movers') === 'ok' ? dash.data('hist_movers').data : [];
+    const deps = TR.state('hist_departures') === 'ok' ? dash.data('hist_departures').data : [];
+    const kpi = (v, l) => { const d = document.createElement('div'); const a = document.createElement('div'); a.className = 'tr-kpi-v'; a.textContent = v; const b = document.createElement('div'); b.className = 'tr-kpi-l'; b.textContent = l; d.append(a, b); return d; };
+    $('hist-kpis').replaceChildren(
+      kpi(String(list.length), `éditions (${TR.years(list[0].season, list[list.length - 1].season)})`),
+      kpi(String(teams.length), 'équipes'),
+      kpi(rost.length ? String(new Set(rost.map((r) => r.key)).size) : '—', 'joueurs sélectionnés'),
+      kpi(movers.length ? String(movers.length) : '—', 'passés par plusieurs équipes'),
+      kpi(deps.length ? String(deps.length) : '—', 'départs suivis'),
+    );
+
+    // Palmarès
+    const htb = $('hist-honours').querySelector('tbody');
+    htb.replaceChildren(...hon.map((h) => {
+      const tr = document.createElement('tr'); tr.dataset.key = h.team;
+      const td = (v, l) => { const c = document.createElement('td'); if (l) c.className = 'tr-l'; if (v instanceof Node) c.append(v); else c.textContent = v; tr.append(c); return c; };
+      td(TR.teamTag(h.team, teams), true);
+      td(String(h.titles));
+      td(h.title_years.length ? h.title_years.join(', ') : '—', true).classList.add('tr-sec');
+      [h.second, h.third, h.last_place].forEach((v) => td(String(v)).classList.add('tr-sec'));
+      td(`${h.editions} (${TR.years(h.first, h.last)})`, true).classList.add('tr-sec');
+      td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
+      td(TR.pct(h.avg_share));
+      td(h.current_rank ? `${TR.ord(h.current_rank)} (sem. ${h.current_week})` : '—');
+      return tr;
+    }));
+
+    // Classement final de chaque édition
+    TR.ready($('hist-bump'));
+    TR.drawBump($('hist-bump'), list, teams);
+
+    // Éditions
+    TR.drawEditions($('hist-editions'), list, teams, histPick);
+    const ed = list.find((x) => x.season === histPick);
+    $('hist-season').hidden = !ed;
+    if (ed) {
+      const y = ed.season, live = ed.status !== 'complete', unit = ed.scoring === 'bareme' ? 'points au barème' : 'points';
+      $('hist-season-title').textContent = live ? `Édition ${y} (en cours)` : `Édition ${y}`;
+      const [a, b] = ed.standings;
+      const tk = $('hist-season-take');
+      tk.textContent = live
+        ? `Après la semaine ${ed.week} (${TR.dateY(ed.date)}), ${a.team} mène avec ${TR.fmt(a.total)} points, ${TR.fmt(a.total - b.total)} devant ${b.team}.`
+        : `${a.team} remporte l'édition avec ${TR.fmt(a.total)} ${unit}, ${TR.fmt(a.total - b.total)} devant ${b.team}` + (ed.week ? ` (classement final de la semaine ${ed.week}, ${TR.dateY(ed.date)}).` : '.');
+      if (ed.scoring === 'bareme') tk.append(TR.text(' Barème de l’époque : points selon le tour atteint dans les tournois ATP, plus 5 points par duel gagné.'));
+      // course of the edition
+      const chartEl = $('hist-season-chart');
+      let rows = [], cal = [];
+      if (live) {
+        const tw = dash.data('team_weeks'); rows = tw.status === 'ok' ? tw.data : [];
+        const c = dash.data('calendar'); cal = c.status === 'ok' ? c.data : [];
+      } else {
+        const hh = dash.data('hist_hebdo'), hc = dash.data('hist_calendar');
+        if (hh.status === 'ok') rows = hh.data.filter((r) => r.season === y && r.week !== null && r.total !== null).map((r) => ({ team: r.team, week: r.week, date: r.date, total: r.total }));
+        if (hc.status === 'ok') cal = hc.data.filter((r) => r.season === y);
+      }
+      const noRace = rows.filter((r) => r.date).length < 2;
+      $('hist-season-legend').hidden = noRace;
+      if (noRace) {
+        chartEl.replaceChildren(); chartEl.style.minHeight = '0';
+        const n = document.createElement('p'); n.className = 'tr-empty-msg';
+        n.textContent = TR.state('hist_hebdo') === 'wait' && !live ? 'Chargement…' : `Pas de course semaine par semaine pour ${y} : seul le classement final a été conservé.`;
+        chartEl.append(n);
+      } else TR.drawTotals(chartEl, rows, ed.standings.map((r) => r.team), cal);
+      // top players
+      const tb = $('hist-top').querySelector('tbody');
+      let top = [];
+      if (live) {
+        const ps = dash.data('player_season');
+        top = ps.status === 'ok' ? ps.data.filter((r) => r.race !== null).map((r) => ({ short: r.short, team: r.team, pts: r.race, w: r.w, l: r.l, titles: r.titles, rank: r.atp_rank })) : [];
+        $('hist-top-note').textContent = 'Points Race comptés pour l’équipe à la dernière mise à jour ; un remplacement forme une seule ligne.';
+      } else {
+        const hp = dash.data('hist_players');
+        top = hp.status === 'ok' ? hp.data.filter((r) => r.season === y && r.league_points !== null).map((r) => ({ short: r.short, team: r.team, pts: r.league_points, w: r.w, l: r.l, titles: r.titles, rank: r.atp_rank })) : [];
+        $('hist-top-note').textContent = ed.scoring === 'bareme'
+          ? 'Points au barème rapportés à l’équipe (hors duels), fin de saison ; rang ATP de fin d’année.'
+          : 'Points Race comptés pour l’équipe à la dernière mise à jour de l’édition ; rang ATP en fin de saison.';
+      }
+      top.sort((p, q) => q.pts - p.pts);
+      fillTable(tb, top.slice(0, 10), [
+        { f: 'short', l: true },
+        { f: 'team', l: true, node: (r) => TR.teamTag(r.team, teams) },
+        { f: 'pts', fmt: TR.fmt },
+        { f: 'w', node: (r) => TR.text(r.w === null || r.w === undefined ? '—' : `${r.w}–${r.l}`) },
+        { f: 'titles', fmt: (v) => (v ?? '—') },
+        { f: 'rank', fmt: (v) => (v ? TR.ord(v) : '—') },
+      ], (r) => r.team + '|' + r.short);
+      // transfers and notes
+      const tf = $('hist-transfers');
+      tf.replaceChildren();
+      if (!ed.transfers.length) { const p0 = document.createElement('p'); p0.className = 'tr-empty-msg'; p0.textContent = 'Aucun transfert en cours de saison.'; tf.append(p0); }
+      else { const ul = document.createElement('ul'); ed.transfers.forEach((t) => { const li = document.createElement('li'); li.append(TR.teamTag(t.team, teams), TR.text(` : ${t.out} sort, ${t.in} entre le ${TR.dateY(t.date)}.`)); ul.append(li); }); tf.append(ul); }
+      const is = $('hist-issues');
+      const ul = document.createElement('ul'); (HIST_NOTES[y] || []).forEach((t) => { const li = document.createElement('li'); li.textContent = t; ul.append(li); });
+      is.replaceChildren(ul);
+    }
+
+    // Compositions
+    const ra = TR.state('hist_roster_all');
+    if (ra === 'error') TR.fail($('hist-rosters'));
+    else if (ra !== 'ok') TR.wait($('hist-rosters'));
+    else { TR.ready($('hist-rosters')); TR.drawRosterMatrix($('hist-rosters'), rost, teams, list.map((s) => s.season)); }
+
+    // Joueurs passés par plusieurs équipes
+    const mt = $('hist-movers').querySelector('tbody');
+    fillTable(mt, movers, [
+      { f: 'short', l: true },
+      { f: 'segs', l: true, node: (r) => {
+        const w = document.createElement('span'); w.className = 'tr-path';
+        r.segs.forEach((g, i) => {
+          if (i) w.append(TR.text('→'));
+          if (g.gap) { const s0 = document.createElement('span'); s0.className = 'tr-gap'; s0.textContent = `sans équipe ${TR.years(g.from, g.to)}`; w.append(s0); return; }
+          const s1 = TR.teamTag(g.team, teams);
+          s1.append(TR.text(' ' + TR.years(g.from, g.to) + (g.start ? ` (dès le ${TR.date(g.start)})` : '') + (g.end ? ` (jusqu’au ${TR.date(g.end)})` : '')));
+          w.append(s1);
+        });
+        return w;
+      } },
+      { f: 'teams' },
+    ], (r) => r.key);
+
+    // Départs
+    const df = $('hist-dep-filter');
+    const left = ['All', ...teams.filter((t) => deps.some((d) => d.team === t))];
+    df.replaceChildren(...left.map((t) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'tr-chip'; b.dataset.team = t; b.setAttribute('aria-pressed', String(t === histDepTeam));
+      if (t !== 'All') b.append(TR.swatch(TR.color(t, teams)));
+      b.append(TR.text(t === 'All' ? 'Toutes les équipes' : `Partis de ${t}`)); return b;
+    }));
+    const dr = deps.filter((d) => histDepTeam === 'All' || d.team === histDepTeam);
+    fillTable($('hist-departures').querySelector('tbody'), dr, [
+      { f: 'short', l: true },
+      { f: 'team', l: true, node: (r) => TR.teamTag(r.team, teams) },
+      { f: 'date', l: true, node: (r) => TR.text(r.mid ? TR.dateY(r.end) : `fin ${r.season}`) },
+      { f: 'rank_at', node: (r) => { const s0 = TR.span(r.rank_at ? TR.ord(r.rank_at) : '—'); s0.title = `Classement ATP de fin ${r.season}`; return s0; } },
+      { f: 'next_team', l: true, node: (r) => {
+        if (!r.next_team) return TR.span('aucune équipe', null, null, null, 'tr-muted');
+        const w = document.createElement('span'); w.className = 'tr-seg'; w.append(TR.teamTag(r.next_team, teams), TR.text(` ${r.next_season}${r.next_team === r.team ? ' (retour)' : ''}`)); return w;
+      } },
+      { f: 'later', l: true, sec: true, node: (r) => {
+        const w = document.createElement('span'); w.className = 'tr-seg';
+        if (!r.later.length) { w.append(TR.span('départ en cours de saison', null, null, null, 'tr-muted')); return w; }
+        w.append(TR.rankSpark([{ rank: r.rank_at, team: r.team }, ...r.later], TR.color(r.team, teams)));
+        w.title = [`${r.season} : ${r.rank_at ? TR.ord(r.rank_at) : '—'} (${r.team})`, ...r.later.map((l) => `${l.season}${l.season === HIST_CURRENT ? ' (en cours)' : ''} : ${l.rank ? TR.ord(l.rank) : 'hors top 500'}${l.team ? ' (' + l.team + ')' : ''}`)].join('\n');
+        w.append(TR.text(r.later.map((l) => (l.rank ? l.rank : '—')).join(' · ')));
+        return w;
+      } },
+      { f: 'best_rank', node: (r) => TR.text(r.best_rank ? `${TR.ord(r.best_rank)} (${r.best_season})` : '—') },
+      { f: 'current_rank', node: (r) => {
+        const w = document.createElement('span'); w.className = 'tr-pos';
+        w.append(TR.text(r.current_rank ? TR.ord(r.current_rank) : 'hors top 500'));
+        if (r.move) { const mv = document.createElement('span'); mv.className = r.move > 0 ? 'tr-up' : 'tr-down'; mv.textContent = (r.move > 0 ? ' ▲' : ' ▼') + Math.abs(r.move); mv.title = `${r.move > 0 ? 'Gagne' : 'Perd'} ${Math.abs(r.move)} places depuis son départ`; w.append(mv); }
+        return w;
+      } },
+    ], (r) => r.id);
+    const hr = dash.data('hist_ranks');
+    const cur = hr.status === 'ok' ? hr.data.find((r) => r.season === HIST_CURRENT) : null;
+    $('hist-dep-src').textContent = `Rang ATP de fin d'année : Jeff Sackmann (2019 à 2023) et Tennis Explorer (2024, 2025). Rang actuel : Tennis Explorer au ${cur ? TR.dateY(cur.ranking_date) : '—'}. Les classements Tennis Explorer s'arrêtent au top 500. Points pleins sur la courbe : saisons dans une équipe ; points creux : sans équipe.`;
+  };
+
   function render() {
     TR.loadColors();
     const order = TR.order();
     drawHeader();
     if (active === 'teams') drawTeams(order);
     if (active === 'players') drawPlayers(order);
+    if (active === 'history') drawHistory(order);
     if (active === 'notes') drawNotes();
   }
 

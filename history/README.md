@@ -12,9 +12,16 @@ plus a stacked history that runs from 2019 through the current 2026 release.
 | `history/validation.json` | Every reconciliation check run by the converter (value, reference, pass/fail) |
 | `history/data/corrections.json` | Every change made to a recorded workbook value (recorded → corrected, reason, evidence), plus corrections awaiting a league decision |
 | `history/race_history.sqlite`, `history/csv/` | The consolidated database (see below) |
-| `history/tools/` | `build_history.py` + `common.py` (the converter) and `audit_bareme.py` (2019–2021 tournament audit) |
+| `history/tools/` | `build_history.py` + `common.py` (the converter), `audit_bareme.py` (2019–2021 tournament audit), `player_ranks.py` (builds `ranks.json`), `consolidate.py` (builds the database) |
 
 `2026/data/` is untouched; its rows are copied into `history/data/` unchanged.
+
+## Dashboard
+
+The 2026 dashboard's **Historique** tab reads `seasons`, `hebdo`, `rosters`, `players`, `ranks` and
+`calendar` from `history/data/` (loaded only when the tab is opened); the current edition always comes
+from `2026/data/`. `ranks.json` gives every rostered player's year-end ATP rank: Jeff Sackmann
+(2019–2023) and the Tennis Explorer ATP tables saved in the season workbooks (2024–2026, top 500).
 
 ## Consolidated database
 
@@ -33,6 +40,7 @@ plus a stacked history that runs from 2019 through the current 2026 release.
 | `players` | Season × team × player summary (2026 schema + `league_points`, `slot`) |
 | `matches` | One row per player perspective on a match |
 | `calendar` | Major events per season |
+| `ranks` | Season × player ever rostered: ATP rank at year end (2026: latest), whether or not a team held him |
 | `corrections` | Every applied correction, plus the 2020 Vienna case pending a decision |
 
 Views: `v_team_seasons` (team results by season), `v_team_honours` (titles, average rank and share),

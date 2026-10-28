@@ -72,6 +72,9 @@ CREATE TABLE matches (
 CREATE TABLE calendar (
   season INTEGER, event TEXT, short TEXT, level TEXT, start_date TEXT, end_date TEXT,
   surface TEXT, city TEXT);
+CREATE TABLE ranks (
+  season INTEGER, person_key TEXT, atp_id INTEGER, player TEXT, full_name TEXT, atp_rank INTEGER, atp_points INTEGER,
+  ranking_date TEXT, in_progress INTEGER, league_team TEXT, source TEXT, PRIMARY KEY (season, person_key));
 CREATE TABLE corrections (
   status TEXT, season INTEGER, week INTEGER, team TEXT, field TEXT,
   recorded INTEGER, corrected INTEGER, total_recorded INTEGER, total_corrected INTEGER,
@@ -122,6 +125,7 @@ def main():
     seasons, rosters, hebdo, joueurs = load("seasons"), load("rosters"), load("hebdo"), load("joueurs")
     players, matches, calendar = load("players"), load("matches"), load("calendar")
     colors, corr = load("team_colors"), load("corrections")
+    ranks = load("ranks")
 
     keys = {}
     for r in rosters + players:
@@ -167,6 +171,8 @@ def main():
                     for m in matches])
     ins("calendar", [(c["season"], c["event"], c["short"], c["level"], c["start"], c["end"], c["surface"], c["city"])
                      for c in calendar])
+    ins("ranks", [(r["season"], r["person_key"], r["atp_id"], r["player"], r["full"], r["atp_rank"], r["atp_points"],
+                   r["ranking_date"], int(r["in_progress"]), r["league_team"], r["source"]) for r in ranks])
     ins("corrections", [("applied", c["season"], c["week"], c["team"], c["field"], c["recorded"], c["corrected"],
                          c["total_recorded"], c["total_corrected"], c["reason"], c["evidence"]) for c in corr["applied"]]
         + [("pending", c["season"], c["from_week"], c["team"], "total", None, None, None, None,
