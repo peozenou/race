@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="3bcf8cb6cf9f">
+  <meta name="data-version" content="852a85f45b5b">
   <title>THE RACE 2026 — Bilan 36e semaine</title>
   <meta name="description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — Bilan 36e semaine">
   <meta property="og:description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=3bcf8cb6cf9f">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=852a85f45b5b">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=3bcf8cb6cf9f">
+  <link rel="stylesheet" href="assets/theme.css?v=852a85f45b5b">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=3bcf8cb6cf9f"></script>
+  <script src="assets/runtime.js?v=852a85f45b5b"></script>
 </head>
 <body>
 <main class="site">
@@ -291,7 +291,7 @@
 
     <div class="tr-card" id="hist-honours-card">
       <h2>Palmarès</h2>
-      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite). * CHEF : pas de classement 2019 dans le classeur, moyenne sur ses éditions classées.</p>
+      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes est passé de 4 (2019 à 2024) à 5 (depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite). * CHEF a fini 4e en 2019 sans que ses points soient conservés : sa part moyenne est calculée de 2020 à 2025.</p>
       <div class="tr-scroll">
         <table class="tr-table" id="hist-honours" data-source="hist_honours" data-row-key="team">
           <thead><tr>
@@ -636,9 +636,6 @@ dash.calc('player_events', {
 // Completed editions come from ../history/data (converted workbooks, corrections documented there);
 // the current edition is always read from this season's live data.
 const HIST_CURRENT = 2026;
-// League membership span shown in the palmarès when it starts before the team's first ranked edition
-// (Patrick, 28 Oct 2026: CHEF counts from 2019; the 2019 workbook has no CHEF ranking).
-const HIST_SINCE = { CHEF: 2019 };
 const histBase = (s) => String(s || '').replace(/ \((sorti|entré)\)$/, '');
 
 dash.calc('hist_season_list', {
@@ -684,19 +681,19 @@ dash.calc('hist_honours', {
         const f = s.standings.find((x) => x.team === t);
         if (!f) return null;
         const sum = s.standings.reduce((a, x) => a + (x.total || 0), 0);
-        return { season: s.season, rank: f.rank, last: f.rank === s.standings.length, share: sum ? f.total / sum : null };
+        return { season: s.season, rank: f.rank, last: f.rank === s.standings.length, share: sum && f.total !== null ? f.total / sum : null };
       }).filter(Boolean);
       const years = eds.map((e) => e.season);
       const cur = now ? now.standings.find((x) => x.team === t) : null;
       return {
         team: t, editions: eds.length,
-        first: years.length ? Math.min(HIST_SINCE[t] ?? Infinity, ...years) : null, last: years.length ? Math.max(...years) : null,
-        unranked_from: HIST_SINCE[t] !== undefined && years.length && HIST_SINCE[t] < Math.min(...years) ? HIST_SINCE[t] : null,
+        first: years.length ? Math.min(...years) : null, last: years.length ? Math.max(...years) : null,
         titles: eds.filter((e) => e.rank === 1).length, title_years: eds.filter((e) => e.rank === 1).map((e) => e.season),
         second: eds.filter((e) => e.rank === 2).length, third: eds.filter((e) => e.rank === 3).length,
         last_place: eds.filter((e) => e.last).length,
         avg_rank: eds.length ? eds.reduce((a, e) => a + e.rank, 0) / eds.length : null,
-        avg_share: eds.length ? eds.reduce((a, e) => a + (e.share || 0), 0) / eds.length : null,
+        avg_share: eds.some((e) => e.share !== null) ? d3.mean(eds.filter((e) => e.share !== null), (e) => e.share) : null,
+        share_from: eds.some((e) => e.share === null) ? Math.min(...eds.filter((e) => e.share !== null).map((e) => e.season)) : null,
         current_rank: cur ? cur.rank : null, current_week: now ? now.week : null,
       };
     }).sort((a, b) => b.titles - a.titles || b.second - a.second || (a.avg_rank ?? 99) - (b.avg_rank ?? 99));
@@ -1834,7 +1831,7 @@ dash.calc('hist_departures', {
 
   // French notes on each edition's data (detail in history/README.md and history/data/corrections.json).
   const HIST_NOTES = {
-    2019: ["Trois équipes. Les résultats d'Auger-Aliassime avant fin juin ne sont pas comptés dans le classeur, sans doute un changement d'effectif ; laissés tels quels."],
+    2019: ["CHEF a terminé 4e ; le classeur n'a conservé que PAT, DOC (alors REM) et CHAN, si bien que CHEF n'a ni effectif ni points pour 2019.", "Les résultats d'Auger-Aliassime avant fin juin ne sont pas comptés dans le classeur, sans doute un changement d'effectif ; laissés tels quels."],
     2020: ["Saison interrompue par le Covid entre février et août.", "Corrigé : à Hambourg, la formule de CHEF oubliait la finale de Rublev (+20) ; le total de CHEF rejoint celui de SCORES (430).", "En attente de décision : la ligne « Vienne » contient les résultats de Nour-Soultan, si bien que Vienne (gagné par Rublev) n'a jamais été compté. Les +60 points de CHEF le feraient passer de la 4e à la 3e place."],
     2021: ["Corrigé : la formule des Grands Chelems de CHEF oubliait les quarts de finale, compensés par un 60 saisi à Roland-Garros ; points replacés aux bonnes semaines, total inchangé."],
     2022: ["Seul le classement final a été conservé : pas de course semaine par semaine ni de points de duel par joueur."],
@@ -1896,9 +1893,9 @@ dash.calc('hist_departures', {
       td(h.title_years.length ? h.title_years.join(', ') : '—', true).classList.add('tr-sec');
       [h.second, h.third, h.last_place].forEach((v) => td(String(v)).classList.add('tr-sec'));
       td(`${h.editions} (${TR.years(h.first, h.last)})`, true).classList.add('tr-sec');
-      const rc = td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
-      if (h.unranked_from !== null) { const m0 = document.createElement('sup'); m0.className = 'tr-mark'; m0.textContent = '*'; m0.title = `Pas de classement ${h.team} en ${h.unranked_from} dans le classeur : moyenne sur les ${h.editions} éditions classées.`; rc.append(m0); }
-      td(TR.pct(h.avg_share));
+      td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
+      const sc = td(TR.pct(h.avg_share));
+      if (h.share_from) { const m0 = document.createElement('sup'); m0.className = 'tr-mark'; m0.textContent = '*'; m0.title = `Part moyenne calculée de ${h.share_from} à ${h.last} : pas de points enregistrés avant.`; sc.append(m0); }
       td(h.current_rank ? `${TR.ord(h.current_rank)} (sem. ${h.current_week})` : '—');
       return tr;
     }));

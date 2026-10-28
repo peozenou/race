@@ -839,6 +839,13 @@ def apply_corrections(season, hebdo, joueurs, matches, book, roster, teams):
 
 
 # --------------------------------------------------------------------------- main
+# Final placings stated by the league that the season workbook does not hold (no roster, no points).
+LEAGUE_RECORD = {
+    2019: [{"team": "CHEF", "rank": 4, "source": "Patrick, 28 Oct 2026",
+            "note": "[league record] CHEF finished 4th in 2019; the workbook kept only PAT, REM (DOC) and CHAN, "
+                    "so CHEF has no roster, points or weekly totals for 2019."}],
+}
+
 DATA_ISSUES = {  # status: "corrected" (see corrections.json) or "open"
     2025: ["[corrected] Tab 20251117w35 carried the 2024 Race table; week 35 rebuilt as week 34 + ATP Finals points.",
            "[corrected] HEBDO week-12 JULES Race typed 4,529; the week's team block sums to 4,579.",
@@ -943,6 +950,15 @@ def build():
             "coverage_notes": sorted(set(NOTES[season])), "data_issues": DATA_ISSUES.get(season, []),
             "source_workbooks": sorted({f"THE RACE {season}", f"RESULTATS-THE RACE {season}"} if season <= 2022 else {f"THE RACE {season}"}),
         })
+        for add in LEAGUE_RECORD.get(season, []):  # placings the league recorded outside the workbook
+            meta = seasons_meta[-1]
+            meta["teams"] = meta["teams"] + [add["team"]]
+            meta["final_standings"].append({"rank": add["rank"], "team": add["team"], "race": None, "duels": None, "total": None})
+            meta["final_standings"].sort(key=lambda f: f["rank"])
+            meta["data_issues"] = meta["data_issues"] + [add["note"]]
+            CORRECTIONS.append({"season": season, "week": None, "team": add["team"], "field": "rank", "recorded": None,
+                                "corrected": add["rank"], "total_recorded": None, "total_corrected": None,
+                                "reason": add["note"], "evidence": add["source"]})
         # stacked history
         weeks = collections.defaultdict(list)
         for h in hebdo:
