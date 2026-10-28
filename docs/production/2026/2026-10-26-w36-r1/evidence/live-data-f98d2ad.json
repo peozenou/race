@@ -1,0 +1,125 @@
+{
+ "fetched_at": "2026-10-27T21:54:24-04:00",
+ "base": "https://peozenou.github.io/race/2026/",
+ "index": {
+  "status": 200,
+  "sha256": "562a376910e5996bf43fefe9ffd39adc372148047ad1c4abb8c90b92b74ada41",
+  "bytes": 97448,
+  "matches_commit": true,
+  "data_version": "0a47e72f8a89",
+  "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT",
+  "etag": "\"6ae155b8-17ca8\"",
+  "age": "0",
+  "x_cache": "MISS",
+  "description": "Classement apr\u00e8s la semaine 36 (26 octobre 2026) : CHEF en t\u00eate avec 18\u202f554 points."
+ },
+ "datasets": {
+  "hebdo": {
+   "canonical": {
+    "status": 200,
+    "sha256": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+    "rows": 185,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+    "rows": 185,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "0c4e282a9a9b84379fdac6297edbf8564267a59dc0fe547943953c2fc0da0906",
+   "match": true
+  },
+  "joueurs": {
+   "canonical": {
+    "status": 200,
+    "sha256": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+    "rows": 1083,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+    "rows": 1083,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "c0c6b7b4560a5dee605ebf6cf52f26e89bc74d1b774a5df10005a3f79ab06e06",
+   "match": true
+  },
+  "players": {
+   "canonical": {
+    "status": 200,
+    "sha256": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+    "rows": 31,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+    "rows": 31,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "5f43f14c1e2ee7c6fd107ff7ce4469b5b1e7349408dcf3f49b7afdb0475580e8",
+   "match": true
+  },
+  "matches": {
+   "canonical": {
+    "status": 200,
+    "sha256": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+    "rows": 1549,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+    "rows": 1549,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "8ecad7b2aeccc02cb926a9bb0eb24b7617ad91c91c4b1d459398d9226cd030d6",
+   "match": true
+  },
+  "calendar": {
+   "canonical": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "rows": 13,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "rows": 13,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "match": true
+  },
+  "team_colors": {
+   "canonical": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "rows": 5,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "rows": 5,
+    "last_modified": "Wed, 28 Oct 2026 01:54:00 GMT"
+   },
+   "approved": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "match": true
+  }
+ },
+ "tutorial": {
+  "status": 200,
+  "bytes": 6536024,
+  "sha256": "fbf29796294c47addc3cfbb738db3ee58d707055cd7c929f4f754c799a86a5de",
+  "matches_repo": true
+ },
+ "landing": {
+  "status": 200,
+  "bytes": 4835
+ },
+ "all_six_match": true
+}

@@ -7,8 +7,8 @@
   "release_branch": "data-release/2026-10-26-w36-r1",
   "data_commit_sha": "3220344fc042fa9f471aaaaff475f9b82cfc66ef",
   "previous_production_commit": "6bb71bd2afa7505ee4b0d52dce6a729219c3f9c3",
-  "dashboard_commit_sha": "4e4b2b0afd277077f7196e9d9713cfcecd9779fe",
-  "dashboard_commit_parent_chain": "6bb71bd -> 3220344 (release data, fast-forward) -> 8fe2905 (week-36 build) -> 01aadc4 (docs only) -> 4e4b2b0 (players-table rank column with movement arrows)",
+  "dashboard_commit_sha": "f98d2ad6a6f4f710de101b3fd1b12d85b7897901",
+  "dashboard_commit_parent_chain": "6bb71bd -> 3220344 (release data, fast-forward) -> 8fe2905 (week-36 build) -> 01aadc4 (docs only) -> 4e4b2b0 (players-table rank column with movement arrows) -> 8548472 (docs only) -> f98d2ad (weekly header title, takeaway with best player, linked sources line)",
   "dashboard_url": "https://peozenou.github.io/race/2026/",
   "handoff_hashes_verified_before_use": true,
   "release_diff_scope": "3220344 changes only 2026/data/hebdo.json, joueurs.json, matches.json and players.json; calendar.json and team_colors.json unchanged",
@@ -23,7 +23,7 @@
   "live_data_sha256_match_approved": true,
   "live_data_checked_variants": [
     "canonical /data/<name>.json",
-    "page-requested /data/<name>.json?v=7f446c6ee322",
+    "page-requested /data/<name>.json?v=0a47e72f8a89",
     "in-page fetch + crypto.subtle SHA-256 in headless Chromium (light and dark sessions)"
   ],
   "live_row_counts": {
@@ -34,9 +34,9 @@
     "calendar": 13,
     "team_colors": 5
   },
-  "build_data_version": "7f446c6ee322",
-  "live_data_version": "7f446c6ee322",
-  "live_index_html_sha256": "511e4c1dd775d93695e7b76af9f79dda12aaa860905f0ed87e662d861b49d7fe",
+  "build_data_version": "0a47e72f8a89",
+  "live_data_version": "0a47e72f8a89",
+  "live_index_html_sha256": "562a376910e5996bf43fefe9ffd39adc372148047ad1c4abb8c90b92b74ada41",
   "live_index_matches_commit": true,
   "live_week": 36,
   "live_competition_date": "2026-10-26",
@@ -111,10 +111,10 @@
     "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won remain null in players.json and are not displayed.",
     "archived_sinner": "Detail shows rankings at 5 oct. 2026 and his own matches through 7 Oct."
   },
-  "dashboard_source_changes": "RACE_QUAL comment set to release 2026-10-26-w36-r1 and the Lehecka 'hold' entry removed (entry baseline 2 055 confirmed and credited); Kouame 'adjust' kept. Interface, design, navigation and tutorial unchanged. Six datasets incorporated unmodified. Revision 2 (4e4b2b0, requested 27 Oct): players table gains a sortable 'Rang' column — each lineup line's place among the 30 lines by credited JOUEURS Race points, with ▲/▼ places moved since the previous week (= when unchanged); ties share a place; replacement lines use the post total.",
+  "dashboard_source_changes": "RACE_QUAL comment set to release 2026-10-26-w36-r1 and the Lehecka 'hold' entry removed (entry baseline 2 055 confirmed and credited); Kouame 'adjust' kept. Interface, design, navigation and tutorial unchanged. Six datasets incorporated unmodified. Revision 2 (4e4b2b0, requested 27 Oct): players table gains a sortable 'Rang' column — each lineup line's place among the 30 lines by credited JOUEURS Race points, with ▲/▼ places moved since the previous week (= when unchanged); ties share a place; replacement lines use the post total. Revision 3 (f98d2ad, requested 27 Oct): header title 'THE RACE 2026 — Bilan <n>e semaine' (also the page <title>, set in build.py); takeaway '<leader> est devant avec … points, suivi de <second>. Meilleure progression de la semaine : <team> (+n), notamment grâce à <player> (+n)', the player being the best-progressing team's line with the largest credited JOUEURS gain that week; head note replaced by 'Sources : Tennis Abstract et Tennis Explorer' linking to tennisabstract.com and tennisexplorer.com.",
   "ui_checks_verified": true,
   "ui_checks": {
-    "total_checks": 43,
+    "total_checks": 45,
     "failed": 0,
     "page_errors": 0,
     "console_errors": 0,
@@ -142,10 +142,19 @@
     "mobile_390px_no_horizontal_scroll": "PASS (teams and players, light and dark)",
     "tutoriel_mp4_served": "PASS (200, 6 536 024 bytes, byte-identical to repository)",
     "landing_page": "PASS (200)",
-    "rank_column_arrows": "PASS (places 1–30; e.g. Zverev 1 =, Sinner/Lehecka 2 =, Medvedev 5 ▲1, Cobolli 6 ▼1, Fils 7 ▲1, Draper 25 ▼1, Rune 30 =; moves net to zero)"
+    "rank_column_arrows": "PASS (places 1–30; e.g. Zverev 1 =, Sinner/Lehecka 2 =, Medvedev 5 ▲1, Cobolli 6 ▼1, Fils 7 ▲1, Draper 25 ▼1, Rune 30 =; moves net to zero)",
+    "header_title_takeaway_sources": "PASS ('THE RACE 2026 — Bilan 36e semaine'; '… CHEF est devant avec 18 554 points, suivi de DOC. Meilleure progression de la semaine : CHAN (+375), notamment grâce à Medvedev (+240).'; two working source links)"
   },
-  "live_verified_at": "2026-10-27T18:54:34-04:00",
+  "live_verified_at": "2026-10-27T21:55:09-04:00",
   "observations": [
+    {
+      "what": "fetch of page, six datasets (two variants), tutorial and landing page (f98d2ad)",
+      "at": "2026-10-27T21:54:24-04:00"
+    },
+    {
+      "what": "headless Chromium UI checks on the live URL, light and dark (f98d2ad), completed",
+      "at": "2026-10-27T21:55:09-04:00"
+    },
     {
       "what": "fetch of page, six datasets (two variants), tutorial and landing page (4e4b2b0)",
       "at": "2026-10-27T18:53:47-04:00"
@@ -165,29 +174,36 @@
   ],
   "deployment": {
     "route": "GitHub Pages, deploy from branch main (existing 'pages build and deployment' workflow)",
-    "actions_run_id": 40598150235,
-    "actions_run_url": "https://github.com/peozenou/race/actions/runs/40598150235",
+    "actions_run_id": 40617701722,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/40617701722",
     "jobs": {
       "build": "success",
       "report-build-status": "success",
       "deploy": "success"
     },
-    "deployment_id": 7372409436,
+    "deployment_id": 7375065980,
     "deployment_status": "success",
-    "deployment_status_at": "2026-10-27T22:53:34Z",
-    "served_last_modified": "Tue, 27 Oct 2026 22:53:28 GMT",
-    "previous": {
-      "actions_run_id": 40493412269,
-      "deployment_id": 7356744664,
-      "commit": "8fe2905"
-    }
+    "deployment_status_at": "2026-10-28T01:54:02Z",
+    "served_last_modified": "Wed, 28 Oct 2026 01:54:00 GMT",
+    "previous": [
+      {
+        "actions_run_id": 40493412269,
+        "deployment_id": 7356744664,
+        "commit": "8fe2905"
+      },
+      {
+        "actions_run_id": 40598150235,
+        "deployment_id": 7372409436,
+        "commit": "4e4b2b0"
+      }
+    ]
   },
   "push": {
     "ref": "main",
-    "from": "01aadc4",
-    "to": "4e4b2b0",
+    "from": "8548472",
+    "to": "f98d2ad",
     "force": false,
-    "at": "2026-10-27T22:53:08Z"
+    "at": "2026-10-28T01:53:28Z"
   },
   "accepted_qualifications_carried": [
     "69 historical zero cells lack matching saved source rows; not a general missing-equals-zero rule",
@@ -195,14 +211,22 @@
     "Elo/yElo remains dated 28 September 2026"
   ],
   "public_repo_private_material_scan": "No workbook fingerprint, approval record, junior or personal data in the production diff or evidence.",
-  "step7": "Re-bind required: production changed after the first verification. Use https://peozenou.github.io/race/2026/ bound to dashboard commit 4e4b2b0 (data version 7f446c6ee322). Datasets, totals and week unchanged. No email drafted or sent by Claude.",
+  "step7": "Re-bind required: production changed again. Use https://peozenou.github.io/race/2026/ bound to dashboard commit f98d2ad (data version 0a47e72f8a89). Datasets, totals and week unchanged. No email drafted or sent by Claude.",
   "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage.",
-  "presentation_revision": 2,
+  "presentation_revision": 3,
   "superseded_production": {
     "dashboard_commit_sha": "8fe2905d6d357ec63d55d302b558374bac7b2389",
     "data_version": "ae164c5669a3",
     "live_index_html_sha256": "1c10bd445e08bcd81ad9353ef5c40dee981d395d97a5188ea0eea36cc5aa5424",
     "live_verified_at": "2026-10-27T07:06:46-04:00",
     "superseded_by": "presentation change requested by Patrick on 2026-10-27; datasets unchanged"
-  }
+  },
+  "superseded_production_history": [
+    {
+      "dashboard_commit_sha": "4e4b2b0afd277077f7196e9d9713cfcecd9779fe",
+      "data_version": "7f446c6ee322",
+      "live_index_html_sha256": "511e4c1dd775d93695e7b76af9f79dda12aaa860905f0ed87e662d861b49d7fe",
+      "live_verified_at": "2026-10-27T18:54:34-04:00"
+    }
+  ]
 }
