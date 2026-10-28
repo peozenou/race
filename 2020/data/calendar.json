@@ -1,0 +1,65 @@
+[
+{
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2020-01-20",
+"end": "2020-02-03",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2020-08-24",
+"end": "2020-08-31",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2020-08-31",
+"end": "2020-09-14",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2020-09-14",
+"end": "2020-09-25",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2020-09-28",
+"end": "2020-10-12",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2020-11-02",
+"end": "2020-11-09",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2020-11-16",
+"end": "2020-11-23",
+"surface": "Dur",
+"city": "Londres"
+}
+]

@@ -1,0 +1,146 @@
+[
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 37,
+"race": 15
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 37,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Moutet Corentin",
+"week": 37,
+"race": 5
+},
+{
+"team": "PAT",
+"player": "Coric Borna",
+"week": 37,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 37,
+"race": 15
+},
+{
+"team": "PAT",
+"player": "Seyboth Wild Thiago",
+"week": 37,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 37,
+"race": 380
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 37,
+"race": 535
+},
+{
+"team": "DOC",
+"player": "Monfils Gael",
+"week": 37,
+"race": 20
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 37,
+"race": 220
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 37,
+"race": 65
+},
+{
+"team": "DOC",
+"player": "Goffin David",
+"week": 37,
+"race": 35
+},
+{
+"team": "CHAN",
+"player": "Khachanov Karen",
+"week": 37,
+"race": 35
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 37,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 37,
+"race": 615
+},
+{
+"team": "CHAN",
+"player": "De Minaur Alex",
+"week": 37,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 37,
+"race": 45
+},
+{
+"team": "CHAN",
+"player": "Gaston Hugo",
+"week": 37,
+"race": 15
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 37,
+"race": 110
+},
+{
+"team": "CHEF",
+"player": "Kyrgios Nick",
+"week": 37,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 37,
+"race": 205
+},
+{
+"team": "CHEF",
+"player": "Humbert Ugo",
+"week": 37,
+"race": 5
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 37,
+"race": 215
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 37,
+"race": 280
+}
+]

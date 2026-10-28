@@ -1,0 +1,6326 @@
+{
+ "2019": {
+  "checks": [
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "PAT",
+    "value": 100,
+    "reference": 100,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "DOC",
+    "value": 60,
+    "reference": 60,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "CHAN",
+    "value": 90,
+    "reference": 90,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 30,
+    "team": "PAT",
+    "value": 770,
+    "reference": 770,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 30,
+    "team": "DOC",
+    "value": 715,
+    "reference": 715,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 30,
+    "team": "CHAN",
+    "value": 745,
+    "reference": 745,
+    "ok": true
+   }
+  ]
+ },
+ "2020": {
+  "checks": [
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "PAT",
+    "value": 85,
+    "reference": 85,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "DOC",
+    "value": 90,
+    "reference": 90,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "CHAN",
+    "value": 65,
+    "reference": 65,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "CHEF",
+    "value": 90,
+    "reference": 90,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 19,
+    "team": "PAT",
+    "value": 580,
+    "reference": 580,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 19,
+    "team": "DOC",
+    "value": 760,
+    "reference": 760,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 19,
+    "team": "CHAN",
+    "value": 435,
+    "reference": 435,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 19,
+    "team": "CHEF",
+    "value": 410,
+    "reference": 430,
+    "ok": false
+   }
+  ]
+ },
+ "2021": {
+  "checks": [
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "PAT",
+    "value": 60,
+    "reference": 60,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "DOC",
+    "value": 170,
+    "reference": 170,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "CHAN",
+    "value": 75,
+    "reference": 75,
+    "ok": true
+   },
+   {
+    "check": "player_duels_vs_team_duels",
+    "week": null,
+    "team": "CHEF",
+    "value": 160,
+    "reference": 160,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 37,
+    "team": "PAT",
+    "value": 210,
+    "reference": 210,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 37,
+    "team": "DOC",
+    "value": 1425,
+    "reference": 1425,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 37,
+    "team": "CHAN",
+    "value": 925,
+    "reference": 925,
+    "ok": true
+   },
+   {
+    "check": "hebdo_final_vs_scores_total",
+    "week": 37,
+    "team": "CHEF",
+    "value": 975,
+    "reference": 975,
+    "ok": true
+   }
+  ]
+ },
+ "2022": {
+  "checks": [
+   {
+    "check": "players_vs_team_race",
+    "week": null,
+    "team": "PAT",
+    "value": 11740,
+    "reference": 11740,
+    "ok": true
+   },
+   {
+    "check": "players_vs_team_race",
+    "week": null,
+    "team": "DOC",
+    "value": 16180,
+    "reference": 16180,
+    "ok": true
+   },
+   {
+    "check": "players_vs_team_race",
+    "week": null,
+    "team": "CHAN",
+    "value": 16269,
+    "reference": 16269,
+    "ok": true
+   },
+   {
+    "check": "players_vs_team_race",
+    "week": null,
+    "team": "CHEF",
+    "value": 14313,
+    "reference": 14313,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_bilan",
+    "week": null,
+    "team": "PAT",
+    "value": 120,
+    "reference": 100,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_bilan",
+    "week": null,
+    "team": "DOC",
+    "value": 200,
+    "reference": 170,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_bilan",
+    "week": null,
+    "team": "CHAN",
+    "value": 215,
+    "reference": 190,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_bilan",
+    "week": null,
+    "team": "CHEF",
+    "value": 165,
+    "reference": 120,
+    "ok": false
+   }
+  ]
+ },
+ "2023": {
+  "checks": [
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "PAT",
+    "value": 490,
+    "reference": 490,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "DOC",
+    "value": 615,
+    "reference": 615,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHAN",
+    "value": 500,
+    "reference": 500,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHEF",
+    "value": 270,
+    "reference": 270,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "PAT",
+    "value": 550,
+    "reference": 550,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "DOC",
+    "value": 865,
+    "reference": 865,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHAN",
+    "value": 575,
+    "reference": 575,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHEF",
+    "value": 410,
+    "reference": 410,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "PAT",
+    "value": 700,
+    "reference": 700,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "DOC",
+    "value": 1885,
+    "reference": 1885,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHAN",
+    "value": 1290,
+    "reference": 1290,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHEF",
+    "value": 1100,
+    "reference": 920,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "PAT",
+    "value": 700,
+    "reference": 700,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "DOC",
+    "value": 2725,
+    "reference": 2725,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHAN",
+    "value": 1290,
+    "reference": 1290,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHEF",
+    "value": 1055,
+    "reference": 1055,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "PAT",
+    "value": 700,
+    "reference": 700,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "DOC",
+    "value": 2725,
+    "reference": 2725,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHAN",
+    "value": 1290,
+    "reference": 1290,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHEF",
+    "value": 1055,
+    "reference": 1055,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "PAT",
+    "value": 700,
+    "reference": 700,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "DOC",
+    "value": 2815,
+    "reference": 2905,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHAN",
+    "value": 1425,
+    "reference": 1425,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHEF",
+    "value": 1305,
+    "reference": 1305,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "PAT",
+    "value": 855,
+    "reference": 855,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "DOC",
+    "value": 4235,
+    "reference": 4235,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHAN",
+    "value": 2905,
+    "reference": 2905,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHEF",
+    "value": 1965,
+    "reference": 1965,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "PAT",
+    "value": 950,
+    "reference": 950,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "DOC",
+    "value": 4610,
+    "reference": 4610,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHAN",
+    "value": 3588,
+    "reference": 3588,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHEF",
+    "value": 2315,
+    "reference": 2315,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "PAT",
+    "value": 1015,
+    "reference": 1015,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "DOC",
+    "value": 4855,
+    "reference": 4855,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHAN",
+    "value": 3818,
+    "reference": 3818,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHEF",
+    "value": 2545,
+    "reference": 2545,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "PAT",
+    "value": 1065,
+    "reference": 1065,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "DOC",
+    "value": 5140,
+    "reference": 5140,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHAN",
+    "value": 5603,
+    "reference": 5603,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHEF",
+    "value": 3067,
+    "reference": 3067,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "PAT",
+    "value": 1150,
+    "reference": 1190,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "DOC",
+    "value": 5460,
+    "reference": 5460,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHAN",
+    "value": 7048,
+    "reference": 7048,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHEF",
+    "value": 3772,
+    "reference": 3772,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "PAT",
+    "value": 1540,
+    "reference": 1540,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "DOC",
+    "value": 5555,
+    "reference": 5555,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHAN",
+    "value": 7318,
+    "reference": 7318,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHEF",
+    "value": 3882,
+    "reference": 3882,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "PAT",
+    "value": 1920,
+    "reference": 1900,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "DOC",
+    "value": 6255,
+    "reference": 6255,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHAN",
+    "value": 8123,
+    "reference": 8078,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHEF",
+    "value": 5267,
+    "reference": 5267,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "PAT",
+    "value": 2220,
+    "reference": 2220,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "DOC",
+    "value": 6750,
+    "reference": 6750,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHAN",
+    "value": 8878,
+    "reference": 8878,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHEF",
+    "value": 5535,
+    "reference": 5527,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "PAT",
+    "value": 2235,
+    "reference": 2235,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "DOC",
+    "value": 7060,
+    "reference": 7060,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHAN",
+    "value": 9108,
+    "reference": 9108,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHEF",
+    "value": 5615,
+    "reference": 5607,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "PAT",
+    "value": 2335,
+    "reference": 2335,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "DOC",
+    "value": 7210,
+    "reference": 7210,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHAN",
+    "value": 10068,
+    "reference": 10068,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHEF",
+    "value": 5685,
+    "reference": 5685,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "PAT",
+    "value": 2335,
+    "reference": 2335,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "DOC",
+    "value": 7210,
+    "reference": 7210,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHAN",
+    "value": 10068,
+    "reference": 10068,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHEF",
+    "value": 5685,
+    "reference": 5685,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "PAT",
+    "value": 2836,
+    "reference": 2836,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "DOC",
+    "value": 7720,
+    "reference": 7720,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHAN",
+    "value": 11726,
+    "reference": 11726,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHEF",
+    "value": 5918,
+    "reference": 5918,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "PAT",
+    "value": 3622,
+    "reference": 3622,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "DOC",
+    "value": 9070,
+    "reference": 9070,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHAN",
+    "value": 12978,
+    "reference": 12978,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHEF",
+    "value": 6373,
+    "reference": 6373,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "PAT",
+    "value": 4482,
+    "reference": 4482,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "DOC",
+    "value": 9430,
+    "reference": 9430,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHAN",
+    "value": 12983,
+    "reference": 12983,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHEF",
+    "value": 6385,
+    "reference": 6385,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "PAT",
+    "value": 4677,
+    "reference": 4677,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "DOC",
+    "value": 9680,
+    "reference": 9680,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHAN",
+    "value": 13429,
+    "reference": 13429,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHEF",
+    "value": 6540,
+    "reference": 6540,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "PAT",
+    "value": 4722,
+    "reference": 4722,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "DOC",
+    "value": 9950,
+    "reference": 9950,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHAN",
+    "value": 14269,
+    "reference": 14269,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHEF",
+    "value": 6840,
+    "reference": 6840,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "PAT",
+    "value": 5157,
+    "reference": 5157,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "DOC",
+    "value": 10555,
+    "reference": 10555,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHAN",
+    "value": 17479,
+    "reference": 14269,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHEF",
+    "value": 8110,
+    "reference": 8110,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "PAT",
+    "value": 6077,
+    "reference": 6277,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "DOC",
+    "value": 12921,
+    "reference": 13246,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHAN",
+    "value": 18889,
+    "reference": 19142,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHEF",
+    "value": 9786,
+    "reference": 10111,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 6277,
+    "reference": 6277,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 13246,
+    "reference": 13246,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 19142,
+    "reference": 19142,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 10111,
+    "reference": 10111,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "PAT",
+    "value": 6907,
+    "reference": 6907,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "DOC",
+    "value": 13831,
+    "reference": 13831,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "CHAN",
+    "value": 21285,
+    "reference": 21285,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "CHEF",
+    "value": 10606,
+    "reference": 10606,
+    "ok": true
+   }
+  ]
+ },
+ "2024": {
+  "checks": [
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "PAT",
+    "value": 483,
+    "reference": 483,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "DOC",
+    "value": 530,
+    "reference": 530,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "CHAN",
+    "value": 245,
+    "reference": 245,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "CHEF",
+    "value": 250,
+    "reference": 250,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "PAT",
+    "value": 866,
+    "reference": 866,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "DOC",
+    "value": 845,
+    "reference": 845,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "CHAN",
+    "value": 615,
+    "reference": 615,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "CHEF",
+    "value": 820,
+    "reference": 615,
+    "ok": false
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "PAT",
+    "value": 866,
+    "reference": 866,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "DOC",
+    "value": 845,
+    "reference": 845,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "CHAN",
+    "value": 615,
+    "reference": 615,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "CHEF",
+    "value": 820,
+    "reference": 820,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "PAT",
+    "value": 1246,
+    "reference": 1246,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "DOC",
+    "value": 2535,
+    "reference": 2535,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "CHAN",
+    "value": 2375,
+    "reference": 2375,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "CHEF",
+    "value": 3290,
+    "reference": 3290,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "PAT",
+    "value": 1246,
+    "reference": 1246,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "DOC",
+    "value": 2535,
+    "reference": 2535,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "CHAN",
+    "value": 2475,
+    "reference": 2475,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "CHEF",
+    "value": 3390,
+    "reference": 3390,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "PAT",
+    "value": 1396,
+    "reference": 1396,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "DOC",
+    "value": 2685,
+    "reference": 2685,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "CHAN",
+    "value": 2550,
+    "reference": 2550,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "CHEF",
+    "value": 3415,
+    "reference": 3415,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "PAT",
+    "value": 1486,
+    "reference": 1486,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "DOC",
+    "value": 2990,
+    "reference": 2990,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "CHAN",
+    "value": 2735,
+    "reference": 2735,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "CHEF",
+    "value": 3965,
+    "reference": 3965,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "PAT",
+    "value": 2166,
+    "reference": 2166,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "DOC",
+    "value": 3400,
+    "reference": 3400,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "CHAN",
+    "value": 3000,
+    "reference": 3000,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "CHEF",
+    "value": 4140,
+    "reference": 4140,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "PAT",
+    "value": 3146,
+    "reference": 3146,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "DOC",
+    "value": 3650,
+    "reference": 3650,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "CHAN",
+    "value": 3600,
+    "reference": 3600,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "CHEF",
+    "value": 4590,
+    "reference": 4590,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "PAT",
+    "value": 3146,
+    "reference": 3146,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "DOC",
+    "value": 3650,
+    "reference": 3650,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "CHAN",
+    "value": 3600,
+    "reference": 3600,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "CHEF",
+    "value": 4590,
+    "reference": 4590,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "PAT",
+    "value": 3656,
+    "reference": 3656,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "DOC",
+    "value": 4070,
+    "reference": 4070,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "CHAN",
+    "value": 5580,
+    "reference": 5580,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "CHEF",
+    "value": 5200,
+    "reference": 5200,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "PAT",
+    "value": 3656,
+    "reference": 3656,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "DOC",
+    "value": 4070,
+    "reference": 4070,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "CHAN",
+    "value": 5580,
+    "reference": 5580,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "CHEF",
+    "value": 5200,
+    "reference": 5200,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "PAT",
+    "value": 4086,
+    "reference": 4086,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "DOC",
+    "value": 4800,
+    "reference": 4800,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "CHAN",
+    "value": 6260,
+    "reference": 6260,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "CHEF",
+    "value": 6380,
+    "reference": 6380,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "PAT",
+    "value": 4466,
+    "reference": 4466,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "DOC",
+    "value": 5190,
+    "reference": 5190,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "CHAN",
+    "value": 6445,
+    "reference": 6445,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "CHEF",
+    "value": 6485,
+    "reference": 6485,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "PAT",
+    "value": 5346,
+    "reference": 5346,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "DOC",
+    "value": 6420,
+    "reference": 6420,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "CHAN",
+    "value": 6775,
+    "reference": 6775,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "CHEF",
+    "value": 7025,
+    "reference": 7025,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "PAT",
+    "value": 6071,
+    "reference": 6071,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "DOC",
+    "value": 7165,
+    "reference": 7165,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "CHAN",
+    "value": 6875,
+    "reference": 6875,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "CHEF",
+    "value": 7225,
+    "reference": 7225,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "PAT",
+    "value": 6471,
+    "reference": 6471,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "DOC",
+    "value": 7820,
+    "reference": 7820,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "CHAN",
+    "value": 7435,
+    "reference": 7435,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "CHEF",
+    "value": 9215,
+    "reference": 9215,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "PAT",
+    "value": 6746,
+    "reference": 6746,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "DOC",
+    "value": 10120,
+    "reference": 10120,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "CHAN",
+    "value": 7655,
+    "reference": 7655,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "CHEF",
+    "value": 9630,
+    "reference": 9630,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "PAT",
+    "value": 8746,
+    "reference": 8746,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "DOC",
+    "value": 12495,
+    "reference": 12495,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "CHAN",
+    "value": 10230,
+    "reference": 10230,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "CHEF",
+    "value": 10850,
+    "reference": 10850,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "PAT",
+    "value": 9046,
+    "reference": 9046,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "DOC",
+    "value": 12495,
+    "reference": 12495,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "CHAN",
+    "value": 10445,
+    "reference": 10445,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "CHEF",
+    "value": 11123,
+    "reference": 11123,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "PAT",
+    "value": 9151,
+    "reference": 9151,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "DOC",
+    "value": 13175,
+    "reference": 13175,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "CHAN",
+    "value": 11245,
+    "reference": 11245,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "CHEF",
+    "value": 11813,
+    "reference": 11813,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "PAT",
+    "value": 9279,
+    "reference": 9279,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "DOC",
+    "value": 13485,
+    "reference": 13485,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "CHAN",
+    "value": 11355,
+    "reference": 11355,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "CHEF",
+    "value": 11863,
+    "reference": 11863,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "PAT",
+    "value": 10099,
+    "reference": 10099,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "DOC",
+    "value": 14185,
+    "reference": 14185,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "CHAN",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "CHEF",
+    "value": 12483,
+    "reference": 12483,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "PAT",
+    "value": 10251,
+    "reference": 10251,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "DOC",
+    "value": 14655,
+    "reference": 14655,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "CHAN",
+    "value": 14815,
+    "reference": 14815,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "CHEF",
+    "value": 13023,
+    "reference": 13354,
+    "ok": false
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "PAT",
+    "value": 10616,
+    "reference": 10616,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "DOC",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "CHAN",
+    "value": 15471,
+    "reference": 15471,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "CHEF",
+    "value": 13354,
+    "reference": 13354,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "PAT",
+    "value": 10616,
+    "reference": 10616,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "DOC",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "CHAN",
+    "value": 15471,
+    "reference": 15471,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "CHEF",
+    "value": 13354,
+    "reference": 13354,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "PAT",
+    "value": 11446,
+    "reference": 11446,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "DOC",
+    "value": 15895,
+    "reference": 15895,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "CHAN",
+    "value": 16431,
+    "reference": 16431,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "CHEF",
+    "value": 15734,
+    "reference": 15734,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "PAT",
+    "value": 11661,
+    "reference": 11661,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "DOC",
+    "value": 15955,
+    "reference": 15955,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "CHAN",
+    "value": 16491,
+    "reference": 16491,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "CHEF",
+    "value": 15400,
+    "reference": 15400,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "PAT",
+    "value": 12461,
+    "reference": 12461,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "DOC",
+    "value": 17765,
+    "reference": 17765,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "PAT",
+    "value": 12461,
+    "reference": 12461,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "DOC",
+    "value": 17765,
+    "reference": 17765,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "PAT",
+    "value": 12479,
+    "reference": 12479,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "DOC",
+    "value": 17815,
+    "reference": 17815,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "PAT",
+    "value": 12729,
+    "reference": 12729,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "DOC",
+    "value": 17955,
+    "reference": 17955,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "CHAN",
+    "value": 18316,
+    "reference": 18316,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "CHEF",
+    "value": 19445,
+    "reference": 19445,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "PAT",
+    "value": 12729,
+    "reference": 12729,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "DOC",
+    "value": 17955,
+    "reference": 17955,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "CHAN",
+    "value": 18316,
+    "reference": 18316,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "CHEF",
+    "value": 19445,
+    "reference": 19445,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 12879,
+    "reference": 12879,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 18515,
+    "reference": 18515,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 19006,
+    "reference": 19006,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 20435,
+    "reference": 20435,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 35,
+    "team": "PAT",
+    "value": 12969,
+    "reference": 12969,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 35,
+    "team": "DOC",
+    "value": 18925,
+    "reference": 18925,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 35,
+    "team": "CHAN",
+    "value": 19281,
+    "reference": 19281,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 35,
+    "team": "CHEF",
+    "value": 20525,
+    "reference": 20525,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 36,
+    "team": "PAT",
+    "value": 13981,
+    "reference": 13981,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 36,
+    "team": "DOC",
+    "value": 18845,
+    "reference": 18845,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 36,
+    "team": "CHAN",
+    "value": 19552,
+    "reference": 19552,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 36,
+    "team": "CHEF",
+    "value": 21399,
+    "reference": 21399,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 37,
+    "team": "PAT",
+    "value": 14301,
+    "reference": 14301,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 37,
+    "team": "DOC",
+    "value": 20105,
+    "reference": 20105,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 37,
+    "team": "CHAN",
+    "value": 19982,
+    "reference": 19982,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 37,
+    "team": "CHEF",
+    "value": 21534,
+    "reference": 21534,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 38,
+    "team": "PAT",
+    "value": 14376,
+    "reference": 14376,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 38,
+    "team": "DOC",
+    "value": 20105,
+    "reference": 20105,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 38,
+    "team": "CHAN",
+    "value": 20032,
+    "reference": 20032,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 38,
+    "team": "CHEF",
+    "value": 21592,
+    "reference": 21592,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "PAT",
+    "value": 483,
+    "reference": 483,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "DOC",
+    "value": 530,
+    "reference": 530,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHAN",
+    "value": 245,
+    "reference": 245,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHEF",
+    "value": 250,
+    "reference": 250,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "PAT",
+    "value": 866,
+    "reference": 866,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "DOC",
+    "value": 845,
+    "reference": 845,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHAN",
+    "value": 615,
+    "reference": 615,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHEF",
+    "value": 820,
+    "reference": 615,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "PAT",
+    "value": 866,
+    "reference": 866,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "DOC",
+    "value": 845,
+    "reference": 845,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHAN",
+    "value": 615,
+    "reference": 615,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHEF",
+    "value": 820,
+    "reference": 820,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "PAT",
+    "value": 1246,
+    "reference": 1246,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "DOC",
+    "value": 2535,
+    "reference": 2535,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHAN",
+    "value": 2375,
+    "reference": 2375,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHEF",
+    "value": 3290,
+    "reference": 3290,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "PAT",
+    "value": 1246,
+    "reference": 1246,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "DOC",
+    "value": 2535,
+    "reference": 2535,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHAN",
+    "value": 2475,
+    "reference": 2475,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHEF",
+    "value": 3390,
+    "reference": 3390,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "PAT",
+    "value": 1396,
+    "reference": 1396,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "DOC",
+    "value": 2685,
+    "reference": 2685,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHAN",
+    "value": 2550,
+    "reference": 2550,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHEF",
+    "value": 3415,
+    "reference": 3415,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "PAT",
+    "value": 1486,
+    "reference": 1486,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "DOC",
+    "value": 2990,
+    "reference": 2990,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "CHAN",
+    "value": 2735,
+    "reference": 2735,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "CHEF",
+    "value": 3965,
+    "reference": 3965,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "PAT",
+    "value": 2166,
+    "reference": 2166,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "DOC",
+    "value": 3400,
+    "reference": 3400,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHAN",
+    "value": 3000,
+    "reference": 3000,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHEF",
+    "value": 4140,
+    "reference": 4140,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "PAT",
+    "value": 3146,
+    "reference": 3146,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "DOC",
+    "value": 3650,
+    "reference": 3650,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHAN",
+    "value": 3600,
+    "reference": 3600,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHEF",
+    "value": 4590,
+    "reference": 4590,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "PAT",
+    "value": 3146,
+    "reference": 3146,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "DOC",
+    "value": 3650,
+    "reference": 3650,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHAN",
+    "value": 3600,
+    "reference": 3600,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHEF",
+    "value": 4590,
+    "reference": 4590,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "PAT",
+    "value": 3656,
+    "reference": 3656,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "DOC",
+    "value": 4070,
+    "reference": 4070,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHAN",
+    "value": 5580,
+    "reference": 5580,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHEF",
+    "value": 5200,
+    "reference": 5200,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "PAT",
+    "value": 3656,
+    "reference": 3656,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "DOC",
+    "value": 4070,
+    "reference": 4070,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "CHAN",
+    "value": 5580,
+    "reference": 5580,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "CHEF",
+    "value": 5200,
+    "reference": 5200,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "PAT",
+    "value": 4086,
+    "reference": 4086,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "DOC",
+    "value": 4800,
+    "reference": 4800,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHAN",
+    "value": 6260,
+    "reference": 6260,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHEF",
+    "value": 6380,
+    "reference": 6380,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "PAT",
+    "value": 4466,
+    "reference": 4466,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "DOC",
+    "value": 5190,
+    "reference": 5190,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHAN",
+    "value": 6445,
+    "reference": 6445,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHEF",
+    "value": 6485,
+    "reference": 6485,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "PAT",
+    "value": 5346,
+    "reference": 5346,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "DOC",
+    "value": 6420,
+    "reference": 6420,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHAN",
+    "value": 6775,
+    "reference": 6775,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHEF",
+    "value": 7025,
+    "reference": 7025,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "PAT",
+    "value": 6071,
+    "reference": 6071,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "DOC",
+    "value": 7165,
+    "reference": 7165,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHAN",
+    "value": 6875,
+    "reference": 6875,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHEF",
+    "value": 7225,
+    "reference": 7225,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "PAT",
+    "value": 6471,
+    "reference": 6471,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "DOC",
+    "value": 7820,
+    "reference": 7820,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHAN",
+    "value": 7435,
+    "reference": 7435,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHEF",
+    "value": 9215,
+    "reference": 9215,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "PAT",
+    "value": 6746,
+    "reference": 6746,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "DOC",
+    "value": 10120,
+    "reference": 10120,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHAN",
+    "value": 7655,
+    "reference": 7655,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHEF",
+    "value": 9630,
+    "reference": 9630,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "PAT",
+    "value": 8746,
+    "reference": 8746,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "DOC",
+    "value": 12495,
+    "reference": 12495,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHAN",
+    "value": 10230,
+    "reference": 10230,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHEF",
+    "value": 10850,
+    "reference": 10850,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "PAT",
+    "value": 9046,
+    "reference": 9046,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "DOC",
+    "value": 12495,
+    "reference": 12495,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHAN",
+    "value": 10445,
+    "reference": 10445,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHEF",
+    "value": 11123,
+    "reference": 11123,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "PAT",
+    "value": 9151,
+    "reference": 9151,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "DOC",
+    "value": 13175,
+    "reference": 13175,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "CHAN",
+    "value": 11245,
+    "reference": 11245,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "CHEF",
+    "value": 11813,
+    "reference": 11813,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "PAT",
+    "value": 9279,
+    "reference": 9279,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "DOC",
+    "value": 13485,
+    "reference": 13485,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHAN",
+    "value": 11355,
+    "reference": 11355,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHEF",
+    "value": 11863,
+    "reference": 11863,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "PAT",
+    "value": 10099,
+    "reference": 10099,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "DOC",
+    "value": 14185,
+    "reference": 14185,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHAN",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHEF",
+    "value": 12483,
+    "reference": 12483,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "PAT",
+    "value": 10251,
+    "reference": 10251,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "DOC",
+    "value": 14655,
+    "reference": 14655,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHAN",
+    "value": 14815,
+    "reference": 14815,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHEF",
+    "value": 13023,
+    "reference": 13354,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "PAT",
+    "value": 10616,
+    "reference": 10616,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "DOC",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHAN",
+    "value": 15471,
+    "reference": 15471,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHEF",
+    "value": 13354,
+    "reference": 13354,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "PAT",
+    "value": 10616,
+    "reference": 10616,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "DOC",
+    "value": 14715,
+    "reference": 14715,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "CHAN",
+    "value": 15471,
+    "reference": 15471,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "CHEF",
+    "value": 13354,
+    "reference": 13354,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "PAT",
+    "value": 11446,
+    "reference": 11446,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "DOC",
+    "value": 15895,
+    "reference": 15895,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "CHAN",
+    "value": 16431,
+    "reference": 16431,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "CHEF",
+    "value": 15734,
+    "reference": 15734,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "PAT",
+    "value": 11661,
+    "reference": 11661,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "DOC",
+    "value": 15955,
+    "reference": 15955,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHAN",
+    "value": 16491,
+    "reference": 16491,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHEF",
+    "value": 15400,
+    "reference": 15400,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "PAT",
+    "value": 12461,
+    "reference": 12461,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "DOC",
+    "value": 17765,
+    "reference": 17765,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "PAT",
+    "value": 12461,
+    "reference": 12461,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "DOC",
+    "value": 17765,
+    "reference": 17765,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "PAT",
+    "value": 12479,
+    "reference": 12479,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "DOC",
+    "value": 17815,
+    "reference": 17815,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "CHAN",
+    "value": 17241,
+    "reference": 17241,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "CHEF",
+    "value": 18410,
+    "reference": 18410,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "PAT",
+    "value": 12729,
+    "reference": 12729,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "DOC",
+    "value": 17955,
+    "reference": 17955,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "CHAN",
+    "value": 18316,
+    "reference": 18316,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "CHEF",
+    "value": 19445,
+    "reference": 19445,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "PAT",
+    "value": 12729,
+    "reference": 12729,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "DOC",
+    "value": 17955,
+    "reference": 17955,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHAN",
+    "value": 18316,
+    "reference": 18316,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHEF",
+    "value": 19445,
+    "reference": 19445,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 12879,
+    "reference": 12879,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 18515,
+    "reference": 18515,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 19006,
+    "reference": 19006,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 20435,
+    "reference": 20435,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 35,
+    "team": "PAT",
+    "value": 12969,
+    "reference": 12969,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 35,
+    "team": "DOC",
+    "value": 18925,
+    "reference": 18925,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 35,
+    "team": "CHAN",
+    "value": 19281,
+    "reference": 19281,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 35,
+    "team": "CHEF",
+    "value": 20525,
+    "reference": 20525,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 36,
+    "team": "PAT",
+    "value": 13981,
+    "reference": 13981,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 36,
+    "team": "DOC",
+    "value": 18845,
+    "reference": 18845,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 36,
+    "team": "CHAN",
+    "value": 19552,
+    "reference": 19552,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 36,
+    "team": "CHEF",
+    "value": 21399,
+    "reference": 21399,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "PAT",
+    "value": 14301,
+    "reference": 14301,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "DOC",
+    "value": 20105,
+    "reference": 20105,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "CHAN",
+    "value": 19982,
+    "reference": 19982,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 37,
+    "team": "CHEF",
+    "value": 21534,
+    "reference": 21534,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 38,
+    "team": "PAT",
+    "value": 14376,
+    "reference": 14376,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 38,
+    "team": "DOC",
+    "value": 20105,
+    "reference": 20105,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 38,
+    "team": "CHAN",
+    "value": 20032,
+    "reference": 20032,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 38,
+    "team": "CHEF",
+    "value": 21592,
+    "reference": 21592,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 38,
+    "team": "PAT",
+    "value": 205,
+    "reference": 205,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 38,
+    "team": "DOC",
+    "value": 170,
+    "reference": 170,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 38,
+    "team": "CHAN",
+    "value": 190,
+    "reference": 190,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 38,
+    "team": "CHEF",
+    "value": 230,
+    "reference": 240,
+    "ok": false
+   }
+  ]
+ },
+ "2025": {
+  "checks": [
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "PAT",
+    "value": 465,
+    "reference": 465,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "DOC",
+    "value": 675,
+    "reference": 675,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "CHAN",
+    "value": 495,
+    "reference": 495,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "CHEF",
+    "value": 697,
+    "reference": 697,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 1,
+    "team": "JULES",
+    "value": 495,
+    "reference": 495,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "PAT",
+    "value": 1645,
+    "reference": 1645,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "DOC",
+    "value": 2105,
+    "reference": 2105,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "CHAN",
+    "value": 1625,
+    "reference": 1625,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "CHEF",
+    "value": 3037,
+    "reference": 3037,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 2,
+    "team": "JULES",
+    "value": 1485,
+    "reference": 1485,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "PAT",
+    "value": 1645,
+    "reference": 1645,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "DOC",
+    "value": 2105,
+    "reference": 2105,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "CHAN",
+    "value": 1625,
+    "reference": 1625,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "CHEF",
+    "value": 3137,
+    "reference": 3137,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 3,
+    "team": "JULES",
+    "value": 1510,
+    "reference": 1510,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "PAT",
+    "value": 2455,
+    "reference": 2455,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "DOC",
+    "value": 2555,
+    "reference": 2555,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "CHAN",
+    "value": 2475,
+    "reference": 2475,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "CHEF",
+    "value": 3337,
+    "reference": 3337,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 4,
+    "team": "JULES",
+    "value": 1560,
+    "reference": 1560,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "PAT",
+    "value": 2555,
+    "reference": 2555,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "DOC",
+    "value": 2655,
+    "reference": 2655,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "CHAN",
+    "value": 2675,
+    "reference": 2675,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "CHEF",
+    "value": 3587,
+    "reference": 3587,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 5,
+    "team": "JULES",
+    "value": 1860,
+    "reference": 1860,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "PAT",
+    "value": 2655,
+    "reference": 2655,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "DOC",
+    "value": 2757,
+    "reference": 2757,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "CHAN",
+    "value": 2875,
+    "reference": 2875,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "CHEF",
+    "value": 4617,
+    "reference": 4617,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 6,
+    "team": "JULES",
+    "value": 1860,
+    "reference": 1860,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "PAT",
+    "value": 2805,
+    "reference": 2805,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "DOC",
+    "value": 3807,
+    "reference": 3807,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "CHAN",
+    "value": 3125,
+    "reference": 3125,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "CHEF",
+    "value": 4617,
+    "reference": 4617,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 7,
+    "team": "JULES",
+    "value": 1974,
+    "reference": 1974,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "PAT",
+    "value": 3215,
+    "reference": 3215,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "DOC",
+    "value": 4086,
+    "reference": 4086,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "CHAN",
+    "value": 4805,
+    "reference": 4805,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "CHEF",
+    "value": 6042,
+    "reference": 6042,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 8,
+    "team": "JULES",
+    "value": 2234,
+    "reference": 2234,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "PAT",
+    "value": 3465,
+    "reference": 3465,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "DOC",
+    "value": 4736,
+    "reference": 4736,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "CHAN",
+    "value": 5895,
+    "reference": 5895,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "CHEF",
+    "value": 6322,
+    "reference": 6322,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 9,
+    "team": "JULES",
+    "value": 3444,
+    "reference": 3444,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "PAT",
+    "value": 3495,
+    "reference": 3495,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "DOC",
+    "value": 4769,
+    "reference": 4769,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "CHAN",
+    "value": 6075,
+    "reference": 6075,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "CHEF",
+    "value": 6362,
+    "reference": 6362,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 10,
+    "team": "JULES",
+    "value": 3659,
+    "reference": 3659,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "PAT",
+    "value": 3995,
+    "reference": 3995,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "DOC",
+    "value": 5007,
+    "reference": 5007,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "CHAN",
+    "value": 7155,
+    "reference": 7155,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "CHEF",
+    "value": 6772,
+    "reference": 6772,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 11,
+    "team": "JULES",
+    "value": 4529,
+    "reference": 4529,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "PAT",
+    "value": 4525,
+    "reference": 4525,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "DOC",
+    "value": 5607,
+    "reference": 5607,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "CHAN",
+    "value": 7985,
+    "reference": 7985,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "CHEF",
+    "value": 7022,
+    "reference": 7022,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 12,
+    "team": "JULES",
+    "value": 4579,
+    "reference": 4529,
+    "ok": false
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "PAT",
+    "value": 5895,
+    "reference": 5895,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "DOC",
+    "value": 5877,
+    "reference": 5877,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "CHAN",
+    "value": 8680,
+    "reference": 8680,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "CHEF",
+    "value": 7772,
+    "reference": 7772,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 13,
+    "team": "JULES",
+    "value": 5199,
+    "reference": 5199,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "PAT",
+    "value": 6410,
+    "reference": 6410,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "DOC",
+    "value": 6387,
+    "reference": 6387,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "CHAN",
+    "value": 10340,
+    "reference": 10340,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "CHEF",
+    "value": 8752,
+    "reference": 8752,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 14,
+    "team": "JULES",
+    "value": 5629,
+    "reference": 5629,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "PAT",
+    "value": 6510,
+    "reference": 6510,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "DOC",
+    "value": 6652,
+    "reference": 6652,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "CHAN",
+    "value": 10340,
+    "reference": 10340,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "CHEF",
+    "value": 9182,
+    "reference": 9182,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 15,
+    "team": "JULES",
+    "value": 5929,
+    "reference": 5929,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "PAT",
+    "value": 7010,
+    "reference": 7010,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "DOC",
+    "value": 7132,
+    "reference": 7132,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "CHAN",
+    "value": 13010,
+    "reference": 13010,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "CHEF",
+    "value": 11182,
+    "reference": 11182,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 16,
+    "team": "JULES",
+    "value": 7989,
+    "reference": 7989,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "PAT",
+    "value": 7135,
+    "reference": 7135,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "DOC",
+    "value": 7562,
+    "reference": 7562,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "CHAN",
+    "value": 13085,
+    "reference": 13085,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "CHEF",
+    "value": 11232,
+    "reference": 11232,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 17,
+    "team": "JULES",
+    "value": 8096,
+    "reference": 8096,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "PAT",
+    "value": 7135,
+    "reference": 7135,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "DOC",
+    "value": 7903,
+    "reference": 7903,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "CHAN",
+    "value": 14155,
+    "reference": 14155,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "CHEF",
+    "value": 11862,
+    "reference": 11862,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 18,
+    "team": "JULES",
+    "value": 8096,
+    "reference": 8096,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "PAT",
+    "value": 7225,
+    "reference": 7225,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "DOC",
+    "value": 8203,
+    "reference": 8203,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "CHAN",
+    "value": 14355,
+    "reference": 14355,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "CHEF",
+    "value": 11937,
+    "reference": 11937,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 19,
+    "team": "JULES",
+    "value": 8256,
+    "reference": 8256,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "PAT",
+    "value": 7805,
+    "reference": 7805,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "DOC",
+    "value": 9423,
+    "reference": 9423,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "CHAN",
+    "value": 15775,
+    "reference": 15775,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "CHEF",
+    "value": 14287,
+    "reference": 14287,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 20,
+    "team": "JULES",
+    "value": 9276,
+    "reference": 9276,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "PAT",
+    "value": 7871,
+    "reference": 7871,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "DOC",
+    "value": 9423,
+    "reference": 9423,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "CHAN",
+    "value": 15775,
+    "reference": 15775,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "CHEF",
+    "value": 14377,
+    "reference": 14377,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 21,
+    "team": "JULES",
+    "value": 9276,
+    "reference": 9276,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "PAT",
+    "value": 8661,
+    "reference": 8661,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "DOC",
+    "value": 9613,
+    "reference": 9613,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "CHAN",
+    "value": 15905,
+    "reference": 15905,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "CHEF",
+    "value": 14457,
+    "reference": 14457,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 22,
+    "team": "JULES",
+    "value": 9416,
+    "reference": 9416,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "PAT",
+    "value": 10107,
+    "reference": 10107,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "DOC",
+    "value": 10653,
+    "reference": 10653,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "CHAN",
+    "value": 16525,
+    "reference": 16525,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "CHEF",
+    "value": 14977,
+    "reference": 14977,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 23,
+    "team": "JULES",
+    "value": 9886,
+    "reference": 9886,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "PAT",
+    "value": 10270,
+    "reference": 10270,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "DOC",
+    "value": 11053,
+    "reference": 11053,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "CHAN",
+    "value": 17625,
+    "reference": 17625,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "CHEF",
+    "value": 15777,
+    "reference": 15777,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 24,
+    "team": "JULES",
+    "value": 9936,
+    "reference": 9936,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "PAT",
+    "value": 10397,
+    "reference": 10397,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "DOC",
+    "value": 11183,
+    "reference": 11183,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "CHAN",
+    "value": 17725,
+    "reference": 17725,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "CHEF",
+    "value": 15867,
+    "reference": 15867,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 25,
+    "team": "JULES",
+    "value": 10026,
+    "reference": 10026,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "PAT",
+    "value": 10909,
+    "reference": 10909,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "DOC",
+    "value": 11903,
+    "reference": 11903,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "CHAN",
+    "value": 19845,
+    "reference": 19845,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 26,
+    "team": "JULES",
+    "value": 11296,
+    "reference": 11296,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "PAT",
+    "value": 10909,
+    "reference": 10909,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "DOC",
+    "value": 11903,
+    "reference": 11903,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "CHAN",
+    "value": 19845,
+    "reference": 19845,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 27,
+    "team": "JULES",
+    "value": 11296,
+    "reference": 11296,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "PAT",
+    "value": 10930,
+    "reference": 10930,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "DOC",
+    "value": 11904,
+    "reference": 11904,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "CHAN",
+    "value": 19885,
+    "reference": 19885,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 28,
+    "team": "JULES",
+    "value": 11461,
+    "reference": 11461,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "PAT",
+    "value": 11407,
+    "reference": 11407,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "DOC",
+    "value": 12364,
+    "reference": 12364,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "CHAN",
+    "value": 20775,
+    "reference": 20775,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "CHEF",
+    "value": 18307,
+    "reference": 18307,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 29,
+    "team": "JULES",
+    "value": 11601,
+    "reference": 11601,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "PAT",
+    "value": 11617,
+    "reference": 11617,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "DOC",
+    "value": 12474,
+    "reference": 12474,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "CHAN",
+    "value": 21355,
+    "reference": 21355,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "CHEF",
+    "value": 18437,
+    "reference": 18437,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 30,
+    "team": "JULES",
+    "value": 12121,
+    "reference": 12121,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "PAT",
+    "value": 11895,
+    "reference": 11895,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "DOC",
+    "value": 12514,
+    "reference": 12514,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "CHAN",
+    "value": 21745,
+    "reference": 21745,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "CHEF",
+    "value": 18592,
+    "reference": 18592,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 31,
+    "team": "JULES",
+    "value": 12326,
+    "reference": 12326,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "PAT",
+    "value": 12355,
+    "reference": 12355,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "DOC",
+    "value": 12859,
+    "reference": 12859,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "CHAN",
+    "value": 21865,
+    "reference": 21865,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "CHEF",
+    "value": 19632,
+    "reference": 19632,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 32,
+    "team": "JULES",
+    "value": 12746,
+    "reference": 12746,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "PAT",
+    "value": 12735,
+    "reference": 12735,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "DOC",
+    "value": 13379,
+    "reference": 13379,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "CHAN",
+    "value": 21995,
+    "reference": 21995,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "CHEF",
+    "value": 20752,
+    "reference": 20752,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 33,
+    "team": "JULES",
+    "value": 12786,
+    "reference": 12786,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 12735,
+    "reference": 12735,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 13424,
+    "reference": 13424,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 22085,
+    "reference": 22085,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 20752,
+    "reference": 20752,
+    "ok": true
+   },
+   {
+    "check": "block_total_vs_hebdo",
+    "week": 34,
+    "team": "JULES",
+    "value": 13211,
+    "reference": 13211,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "PAT",
+    "value": 465,
+    "reference": 465,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "DOC",
+    "value": 675,
+    "reference": 675,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHAN",
+    "value": 495,
+    "reference": 495,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "CHEF",
+    "value": 697,
+    "reference": 697,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 1,
+    "team": "JULES",
+    "value": 495,
+    "reference": 495,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "PAT",
+    "value": 1645,
+    "reference": 1645,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "DOC",
+    "value": 2105,
+    "reference": 2105,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHAN",
+    "value": 1625,
+    "reference": 1625,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "CHEF",
+    "value": 3037,
+    "reference": 3037,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 2,
+    "team": "JULES",
+    "value": 1485,
+    "reference": 1485,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "PAT",
+    "value": 1645,
+    "reference": 1645,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "DOC",
+    "value": 2105,
+    "reference": 2105,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHAN",
+    "value": 1625,
+    "reference": 1625,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "CHEF",
+    "value": 3137,
+    "reference": 3137,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 3,
+    "team": "JULES",
+    "value": 1510,
+    "reference": 1510,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "PAT",
+    "value": 2455,
+    "reference": 2455,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "DOC",
+    "value": 2555,
+    "reference": 2555,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHAN",
+    "value": 2475,
+    "reference": 2475,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "CHEF",
+    "value": 3337,
+    "reference": 3337,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 4,
+    "team": "JULES",
+    "value": 1560,
+    "reference": 1560,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "PAT",
+    "value": 2555,
+    "reference": 2555,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "DOC",
+    "value": 2655,
+    "reference": 2655,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHAN",
+    "value": 2675,
+    "reference": 2675,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "CHEF",
+    "value": 3587,
+    "reference": 3587,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 5,
+    "team": "JULES",
+    "value": 1860,
+    "reference": 1860,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "PAT",
+    "value": 2655,
+    "reference": 2655,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "DOC",
+    "value": 2757,
+    "reference": 2757,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHAN",
+    "value": 2875,
+    "reference": 2875,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "CHEF",
+    "value": 4617,
+    "reference": 4617,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 6,
+    "team": "JULES",
+    "value": 1860,
+    "reference": 1860,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "PAT",
+    "value": 2805,
+    "reference": 2805,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "DOC",
+    "value": 3807,
+    "reference": 3807,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "CHAN",
+    "value": 3125,
+    "reference": 3125,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "CHEF",
+    "value": 4617,
+    "reference": 4617,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 7,
+    "team": "JULES",
+    "value": 1974,
+    "reference": 1974,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "PAT",
+    "value": 3215,
+    "reference": 3215,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "DOC",
+    "value": 4086,
+    "reference": 4086,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHAN",
+    "value": 4805,
+    "reference": 4805,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "CHEF",
+    "value": 6042,
+    "reference": 6042,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 8,
+    "team": "JULES",
+    "value": 2234,
+    "reference": 2234,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "PAT",
+    "value": 3465,
+    "reference": 3465,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "DOC",
+    "value": 4736,
+    "reference": 4736,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHAN",
+    "value": 5895,
+    "reference": 5895,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "CHEF",
+    "value": 6322,
+    "reference": 6322,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 9,
+    "team": "JULES",
+    "value": 3444,
+    "reference": 3444,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "PAT",
+    "value": 3495,
+    "reference": 3495,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "DOC",
+    "value": 4769,
+    "reference": 4769,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHAN",
+    "value": 6075,
+    "reference": 6075,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "CHEF",
+    "value": 6362,
+    "reference": 6362,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 10,
+    "team": "JULES",
+    "value": 3659,
+    "reference": 3659,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "PAT",
+    "value": 3995,
+    "reference": 3995,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "DOC",
+    "value": 5007,
+    "reference": 5007,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHAN",
+    "value": 7155,
+    "reference": 7155,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "CHEF",
+    "value": 6772,
+    "reference": 6772,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 11,
+    "team": "JULES",
+    "value": 4529,
+    "reference": 4529,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "PAT",
+    "value": 4525,
+    "reference": 4525,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "DOC",
+    "value": 5607,
+    "reference": 5607,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "CHAN",
+    "value": 7985,
+    "reference": 7985,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "CHEF",
+    "value": 7022,
+    "reference": 7022,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 12,
+    "team": "JULES",
+    "value": 4579,
+    "reference": 4529,
+    "ok": false
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "PAT",
+    "value": 5895,
+    "reference": 5895,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "DOC",
+    "value": 5877,
+    "reference": 5877,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHAN",
+    "value": 8680,
+    "reference": 8680,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "CHEF",
+    "value": 7772,
+    "reference": 7772,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 13,
+    "team": "JULES",
+    "value": 5199,
+    "reference": 5199,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "PAT",
+    "value": 6410,
+    "reference": 6410,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "DOC",
+    "value": 6387,
+    "reference": 6387,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHAN",
+    "value": 10340,
+    "reference": 10340,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "CHEF",
+    "value": 8752,
+    "reference": 8752,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 14,
+    "team": "JULES",
+    "value": 5629,
+    "reference": 5629,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "PAT",
+    "value": 6510,
+    "reference": 6510,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "DOC",
+    "value": 6652,
+    "reference": 6652,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHAN",
+    "value": 10340,
+    "reference": 10340,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "CHEF",
+    "value": 9182,
+    "reference": 9182,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 15,
+    "team": "JULES",
+    "value": 5929,
+    "reference": 5929,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "PAT",
+    "value": 7010,
+    "reference": 7010,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "DOC",
+    "value": 7132,
+    "reference": 7132,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHAN",
+    "value": 13010,
+    "reference": 13010,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "CHEF",
+    "value": 11182,
+    "reference": 11182,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 16,
+    "team": "JULES",
+    "value": 7989,
+    "reference": 7989,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "PAT",
+    "value": 7135,
+    "reference": 7135,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "DOC",
+    "value": 7562,
+    "reference": 7562,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHAN",
+    "value": 13085,
+    "reference": 13085,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "CHEF",
+    "value": 11232,
+    "reference": 11232,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 17,
+    "team": "JULES",
+    "value": 8096,
+    "reference": 8096,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "PAT",
+    "value": 7135,
+    "reference": 7135,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "DOC",
+    "value": 7903,
+    "reference": 7903,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHAN",
+    "value": 14155,
+    "reference": 14155,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "CHEF",
+    "value": 11862,
+    "reference": 11862,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 18,
+    "team": "JULES",
+    "value": 8096,
+    "reference": 8096,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "PAT",
+    "value": 7225,
+    "reference": 7225,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "DOC",
+    "value": 8203,
+    "reference": 8203,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHAN",
+    "value": 14355,
+    "reference": 14355,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "CHEF",
+    "value": 11937,
+    "reference": 11937,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 19,
+    "team": "JULES",
+    "value": 8256,
+    "reference": 8256,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "PAT",
+    "value": 7805,
+    "reference": 7805,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "DOC",
+    "value": 9423,
+    "reference": 9423,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHAN",
+    "value": 15775,
+    "reference": 15775,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "CHEF",
+    "value": 14287,
+    "reference": 14287,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 20,
+    "team": "JULES",
+    "value": 9276,
+    "reference": 9276,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "PAT",
+    "value": 7871,
+    "reference": 7871,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "DOC",
+    "value": 9423,
+    "reference": 9423,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "CHAN",
+    "value": 15775,
+    "reference": 15775,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "CHEF",
+    "value": 14377,
+    "reference": 14377,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 21,
+    "team": "JULES",
+    "value": 9276,
+    "reference": 9276,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "PAT",
+    "value": 8661,
+    "reference": 8661,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "DOC",
+    "value": 9613,
+    "reference": 9613,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHAN",
+    "value": 15905,
+    "reference": 15905,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "CHEF",
+    "value": 14457,
+    "reference": 14457,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 22,
+    "team": "JULES",
+    "value": 9416,
+    "reference": 9416,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "PAT",
+    "value": 10107,
+    "reference": 10107,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "DOC",
+    "value": 10653,
+    "reference": 10653,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHAN",
+    "value": 16525,
+    "reference": 16525,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "CHEF",
+    "value": 14977,
+    "reference": 14977,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 23,
+    "team": "JULES",
+    "value": 9886,
+    "reference": 9886,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "PAT",
+    "value": 10270,
+    "reference": 10270,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "DOC",
+    "value": 11053,
+    "reference": 11053,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHAN",
+    "value": 17625,
+    "reference": 17625,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "CHEF",
+    "value": 15777,
+    "reference": 15777,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 24,
+    "team": "JULES",
+    "value": 9936,
+    "reference": 9936,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "PAT",
+    "value": 10397,
+    "reference": 10397,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "DOC",
+    "value": 11183,
+    "reference": 11183,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHAN",
+    "value": 17725,
+    "reference": 17725,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "CHEF",
+    "value": 15867,
+    "reference": 15867,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 25,
+    "team": "JULES",
+    "value": 10026,
+    "reference": 10026,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "PAT",
+    "value": 10909,
+    "reference": 10909,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "DOC",
+    "value": 11903,
+    "reference": 11903,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "CHAN",
+    "value": 19845,
+    "reference": 19845,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 26,
+    "team": "JULES",
+    "value": 11296,
+    "reference": 11296,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "PAT",
+    "value": 10909,
+    "reference": 10909,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "DOC",
+    "value": 11903,
+    "reference": 11903,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "CHAN",
+    "value": 19845,
+    "reference": 19845,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 27,
+    "team": "JULES",
+    "value": 11296,
+    "reference": 11296,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "PAT",
+    "value": 10930,
+    "reference": 10930,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "DOC",
+    "value": 11904,
+    "reference": 11904,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHAN",
+    "value": 19885,
+    "reference": 19885,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "CHEF",
+    "value": 17777,
+    "reference": 17777,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 28,
+    "team": "JULES",
+    "value": 11461,
+    "reference": 11461,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "PAT",
+    "value": 11407,
+    "reference": 11407,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "DOC",
+    "value": 12364,
+    "reference": 12364,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "CHAN",
+    "value": 20775,
+    "reference": 20775,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "CHEF",
+    "value": 18307,
+    "reference": 18307,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 29,
+    "team": "JULES",
+    "value": 11601,
+    "reference": 11601,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "PAT",
+    "value": 11617,
+    "reference": 11617,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "DOC",
+    "value": 12474,
+    "reference": 12474,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "CHAN",
+    "value": 21355,
+    "reference": 21355,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "CHEF",
+    "value": 18437,
+    "reference": 18437,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 30,
+    "team": "JULES",
+    "value": 12121,
+    "reference": 12121,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "PAT",
+    "value": 11895,
+    "reference": 11895,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "DOC",
+    "value": 12514,
+    "reference": 12514,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "CHAN",
+    "value": 21745,
+    "reference": 21745,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "CHEF",
+    "value": 18592,
+    "reference": 18592,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 31,
+    "team": "JULES",
+    "value": 12326,
+    "reference": 12326,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "PAT",
+    "value": 12355,
+    "reference": 12355,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "DOC",
+    "value": 12859,
+    "reference": 12859,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "CHAN",
+    "value": 21865,
+    "reference": 21865,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "CHEF",
+    "value": 19632,
+    "reference": 19632,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 32,
+    "team": "JULES",
+    "value": 12746,
+    "reference": 12746,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "PAT",
+    "value": 12735,
+    "reference": 12735,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "DOC",
+    "value": 13379,
+    "reference": 13379,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHAN",
+    "value": 21995,
+    "reference": 21995,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "CHEF",
+    "value": 20752,
+    "reference": 20752,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 33,
+    "team": "JULES",
+    "value": 12786,
+    "reference": 12786,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 12735,
+    "reference": 12735,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 13424,
+    "reference": 13424,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 22085,
+    "reference": 22085,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 20752,
+    "reference": 20752,
+    "ok": true
+   },
+   {
+    "check": "joueurs_vs_hebdo",
+    "week": 34,
+    "team": "JULES",
+    "value": 13211,
+    "reference": 13211,
+    "ok": true
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 34,
+    "team": "PAT",
+    "value": 160,
+    "reference": 155,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 34,
+    "team": "DOC",
+    "value": 140,
+    "reference": 130,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 34,
+    "team": "CHAN",
+    "value": 250,
+    "reference": 240,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 34,
+    "team": "CHEF",
+    "value": 245,
+    "reference": 155,
+    "ok": false
+   },
+   {
+    "check": "computed_duels_vs_hebdo",
+    "week": 34,
+    "team": "JULES",
+    "value": 125,
+    "reference": 110,
+    "ok": false
+   }
+  ]
+ }
+}

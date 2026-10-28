@@ -1,0 +1,119 @@
+[
+{
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2022-01-17",
+"end": "2022-01-31",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2022-03-07",
+"end": "2022-03-18",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2022-03-21",
+"end": "2022-04-01",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2022-04-11",
+"end": "2022-04-18",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2022-05-02",
+"end": "2022-05-13",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2022-05-09",
+"end": "2022-05-20",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2022-05-23",
+"end": "2022-06-06",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2022-06-27",
+"end": "2022-07-11",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2022-08-08",
+"end": "2022-08-15",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2022-08-15",
+"end": "2022-08-22",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2022-08-29",
+"end": "2022-09-12",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2022-10-31",
+"end": "2022-11-07",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2022-11-14",
+"end": "2022-11-21",
+"surface": "Dur",
+"city": "Turin"
+}
+]

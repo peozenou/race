@@ -1,0 +1,4106 @@
+[
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 1,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 1,
+"race": 45
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 1,
+"race": 340
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 1,
+"race": 25
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 1,
+"race": 80
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 1,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 1,
+"race": 225
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 1,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 1,
+"race": 160
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 1,
+"race": 55
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 1,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 1,
+"race": 175
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 1,
+"race": 90
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 1,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 1,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 1,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 1,
+"race": 150
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 1,
+"race": 260
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 1,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 1,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 1,
+"race": 45
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 1,
+"race": 20
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 1,
+"race": 45
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 1,
+"race": 160
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 2,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 2,
+"race": 55
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 2,
+"race": 360
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 2,
+"race": 35
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 2,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 2,
+"race": 10
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 2,
+"race": 235
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 2,
+"race": 10
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 2,
+"race": 190
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 2,
+"race": 85
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 2,
+"race": 10
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 2,
+"race": 335
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 2,
+"race": 100
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 2,
+"race": 10
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 2,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 2,
+"race": 35
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 2,
+"race": 160
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 2,
+"race": 270
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 2,
+"race": 10
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 2,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 2,
+"race": 55
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 2,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 2,
+"race": 55
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 2,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 3,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 3,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 3,
+"race": 395
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 3,
+"race": 70
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 3,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 3,
+"race": 10
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 3,
+"race": 585
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 3,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 3,
+"race": 540
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 3,
+"race": 255
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 3,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 3,
+"race": 415
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 3,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 3,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 3,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 3,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 3,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 3,
+"race": 350
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 3,
+"race": 180
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 3,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 3,
+"race": 405
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 3,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 3,
+"race": 225
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 3,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 4,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 4,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 4,
+"race": 70
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 4,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 4,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 4,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 4,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 4,
+"race": 1425
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 4,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 4,
+"race": 255
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 4,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 4,
+"race": 415
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 4,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 4,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 4,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 4,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 4,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 4,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 4,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 4,
+"race": 350
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 4,
+"race": 180
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 4,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 4,
+"race": 360
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 4,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 4,
+"race": 225
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 4,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 5,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 5,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 5,
+"race": 70
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 5,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 5,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 5,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 5,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 5,
+"race": 1425
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 5,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 5,
+"race": 255
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 5,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 5,
+"race": 415
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 5,
+"race": 0
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 5,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 5,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 5,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 5,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 5,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 5,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 5,
+"race": 350
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 5,
+"race": 180
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 5,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 5,
+"race": 360
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 5,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 5,
+"race": 225
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 5,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 6,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 6,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 6,
+"race": 70
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 6,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 6,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 6,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 6,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 6,
+"race": 1425
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 6,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 6,
+"race": 255
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 6,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 6,
+"race": 415
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 6,
+"race": 90
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 6,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 6,
+"race": 180
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 6,
+"race": 270
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 6,
+"race": 0
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 6,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 6,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 6,
+"race": 395
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 6,
+"race": 180
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 6,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 6,
+"race": 360
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 6,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 6,
+"race": 475
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 6,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 8,
+"race": 20
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 8,
+"race": 180
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 8,
+"race": 115
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 8,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 8,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 8,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 8,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 8,
+"race": 1470
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 8,
+"race": 135
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 8,
+"race": 595
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 8,
+"race": 45
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 8,
+"race": 1065
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 8,
+"race": 385
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 8,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 8,
+"race": 975
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 8,
+"race": 360
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 8,
+"race": 550
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 8,
+"race": 70
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 8,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 8,
+"race": 440
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 8,
+"race": 405
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 8,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 8,
+"race": 450
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 8,
+"race": 120
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 8,
+"race": 775
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 8,
+"race": 215
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 9,
+"race": 20
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 9,
+"race": 190
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 9,
+"race": 125
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 9,
+"race": 145
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 9,
+"race": 65
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 9,
+"race": 10
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 9,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 9,
+"race": 1480
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 9,
+"race": 280
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 9,
+"race": 650
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 9,
+"race": 55
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 9,
+"race": 1075
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 9,
+"race": 530
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 9,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 9,
+"race": 1440
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 9,
+"race": 505
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 9,
+"race": 560
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 9,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 9,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 9,
+"race": 495
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 9,
+"race": 415
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 9,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 9,
+"race": 715
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 9,
+"race": 130
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 9,
+"race": 785
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 9,
+"race": 270
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 10,
+"race": 20
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 10,
+"race": 190
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 10,
+"race": 160
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 10,
+"race": 145
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 10,
+"race": 80
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 10,
+"race": 25
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 10,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 10,
+"race": 1480
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 10,
+"race": 360
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 10,
+"race": 685
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 10,
+"race": 70
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 10,
+"race": 1155
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 10,
+"race": 565
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 10,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 10,
+"race": 1520
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 10,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 10,
+"race": 595
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 10,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 10,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 10,
+"race": 575
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 10,
+"race": 495
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 10,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 10,
+"race": 795
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 10,
+"race": 165
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 10,
+"race": 820
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 10,
+"race": 270
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 11,
+"race": 20
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 11,
+"race": 200
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 11,
+"race": 170
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 11,
+"race": 155
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 11,
+"race": 90
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 11,
+"race": 35
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 11,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 11,
+"race": 1490
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 11,
+"race": 370
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 11,
+"race": 695
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 11,
+"race": 80
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 11,
+"race": 1255
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 11,
+"race": 710
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 11,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 11,
+"race": 2040
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 11,
+"race": 550
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 11,
+"race": 1560
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 11,
+"race": 88
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 11,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 11,
+"race": 855
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 11,
+"race": 595
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 11,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 11,
+"race": 805
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 11,
+"race": 210
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 11,
+"race": 1145
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 11,
+"race": 312
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 13,
+"race": 20
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 13,
+"race": 235
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 13,
+"race": 205
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 13,
+"race": 155
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 13,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 13,
+"race": 35
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 13,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 13,
+"race": 1570
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 13,
+"race": 370
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 13,
+"race": 730
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 13,
+"race": 115
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 13,
+"race": 1255
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 13,
+"race": 880
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 13,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 13,
+"race": 3030
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 13,
+"race": 630
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 13,
+"race": 1910
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 13,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 13,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 13,
+"race": 890
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 13,
+"race": 630
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 13,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 13,
+"race": 885
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 13,
+"race": 210
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 13,
+"race": 1735
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 13,
+"race": 312
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 14,
+"race": 65
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 14,
+"race": 235
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 14,
+"race": 465
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 14,
+"race": 210
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 14,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 14,
+"race": 65
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 14,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 14,
+"race": 1580
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 14,
+"race": 380
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 14,
+"race": 775
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 14,
+"race": 125
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 14,
+"race": 1265
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 14,
+"race": 890
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 14,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 14,
+"race": 3040
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 14,
+"race": 640
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 14,
+"race": 1910
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 14,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 14,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 14,
+"race": 1140
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 14,
+"race": 630
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 14,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 14,
+"race": 895
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 14,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 14,
+"race": 1745
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 14,
+"race": 357
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 15,
+"race": 130
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 15,
+"race": 235
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 15,
+"race": 590
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 15,
+"race": 380
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 15,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 15,
+"race": 85
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 15,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 15,
+"race": 1750
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 15,
+"race": 460
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 15,
+"race": 820
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 15,
+"race": 180
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 15,
+"race": 1265
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 15,
+"race": 1240
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 15,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 15,
+"race": 3210
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 15,
+"race": 1230
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 15,
+"race": 1955
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 15,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 15,
+"race": 510
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 15,
+"race": 1140
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 15,
+"race": 630
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 15,
+"race": 1885
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 15,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 15,
+"race": 2095
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 15,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 15,
+"race": 0
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 15,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 16,
+"race": 165
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 16,
+"race": 290
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 16,
+"race": 600
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 16,
+"race": 570
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 16,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 16,
+"race": 95
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 16,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 16,
+"race": 2060
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 16,
+"race": 470
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 16,
+"race": 830
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 16,
+"race": 190
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 16,
+"race": 1320
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 16,
+"race": 1340
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 16,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 16,
+"race": 3220
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 16,
+"race": 1490
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 16,
+"race": 2420
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 16,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 16,
+"race": 520
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 16,
+"race": 1150
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 16,
+"race": 640
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 16,
+"race": 2045
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 16,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 16,
+"race": 2185
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 16,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 16,
+"race": 8
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 16,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 17,
+"race": 180
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 17,
+"race": 290
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 17,
+"race": 600
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 17,
+"race": 570
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 17,
+"race": 105
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 17,
+"race": 95
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 17,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 17,
+"race": 2140
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 17,
+"race": 550
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 17,
+"race": 865
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 17,
+"race": 190
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 17,
+"race": 1355
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 17,
+"race": 1420
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 17,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 17,
+"race": 3300
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 17,
+"race": 1525
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 17,
+"race": 2500
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 17,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 17,
+"race": 520
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 17,
+"race": 1185
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 17,
+"race": 640
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 17,
+"race": 2125
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 17,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 17,
+"race": 2185
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 17,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 17,
+"race": 8
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 17,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 18,
+"race": 180
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 18,
+"race": 290
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 18,
+"race": 610
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 18,
+"race": 580
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 18,
+"race": 115
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 18,
+"race": 165
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 18,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 18,
+"race": 2240
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 18,
+"race": 560
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 18,
+"race": 875
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 18,
+"race": 200
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 18,
+"race": 1365
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 18,
+"race": 1430
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 18,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 18,
+"race": 3310
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 18,
+"race": 1535
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 18,
+"race": 3420
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 18,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 18,
+"race": 530
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 18,
+"race": 1195
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 18,
+"race": 650
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 18,
+"race": 2135
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 18,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 18,
+"race": 2195
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 18,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 18,
+"race": 48
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 18,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 19,
+"race": 180
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 19,
+"race": 290
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 19,
+"race": 610
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 19,
+"race": 580
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 19,
+"race": 115
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 19,
+"race": 165
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 19,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 19,
+"race": 2240
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 19,
+"race": 560
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 19,
+"race": 875
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 19,
+"race": 200
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 19,
+"race": 1365
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 19,
+"race": 1430
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 19,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 19,
+"race": 3310
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 19,
+"race": 1535
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 19,
+"race": 3420
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 19,
+"race": 78
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 19,
+"race": 530
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 19,
+"race": 1195
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 19,
+"race": 650
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 19,
+"race": 2135
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 19,
+"race": 255
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 19,
+"race": 2195
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 19,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 19,
+"race": 48
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 19,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 20,
+"race": 231
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 20,
+"race": 290
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 20,
+"race": 960
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 20,
+"race": 660
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 20,
+"race": 135
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 20,
+"race": 165
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 20,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 20,
+"race": 2590
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 20,
+"race": 640
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 20,
+"race": 875
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 20,
+"race": 200
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 20,
+"race": 1445
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 20,
+"race": 1430
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 20,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 20,
+"race": 4300
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 20,
+"race": 2125
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 20,
+"race": 3455
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 20,
+"race": 86
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 20,
+"race": 530
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 20,
+"race": 1230
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 20,
+"race": 650
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 20,
+"race": 2215
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 20,
+"race": 275
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 20,
+"race": 2275
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 20,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 20,
+"race": 101
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 20,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 22,
+"race": 252
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 22,
+"race": 380
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 22,
+"race": 1365
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 22,
+"race": 840
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 22,
+"race": 215
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 22,
+"race": 175
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 22,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 22,
+"race": 2950
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 22,
+"race": 1090
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 22,
+"race": 965
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 22,
+"race": 290
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 22,
+"race": 1625
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 22,
+"race": 1610
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 22,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 22,
+"race": 4310
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 22,
+"race": 2485
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 22,
+"race": 4175
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 22,
+"race": 113
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 22,
+"race": 575
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 22,
+"race": 1320
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 22,
+"race": 705
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 22,
+"race": 2305
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 22,
+"race": 310
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 22,
+"race": 2320
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 22,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 22,
+"race": 331
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 22,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 23,
+"race": 252
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 23,
+"race": 380
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 23,
+"race": 2205
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 23,
+"race": 860
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 23,
+"race": 215
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 23,
+"race": 175
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 23,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 23,
+"race": 2950
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 23,
+"race": 1450
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 23,
+"race": 965
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 23,
+"race": 290
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 23,
+"race": 1625
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 23,
+"race": 1610
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 23,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 23,
+"race": 4310
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 23,
+"race": 2485
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 23,
+"race": 4175
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 23,
+"race": 118
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 23,
+"race": 575
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 23,
+"race": 1320
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 23,
+"race": 705
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 23,
+"race": 2305
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 23,
+"race": 310
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 23,
+"race": 2320
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 23,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 23,
+"race": 343
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 23,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 24,
+"race": 252
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 24,
+"race": 425
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 24,
+"race": 2205
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 24,
+"race": 930
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 24,
+"race": 260
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 24,
+"race": 210
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 24,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 24,
+"race": 2995
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 24,
+"race": 1450
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 24,
+"race": 1055
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 24,
+"race": 335
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 24,
+"race": 1660
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 24,
+"race": 1645
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 24,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 24,
+"race": 4355
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 24,
+"race": 2530
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 24,
+"race": 4175
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 24,
+"race": 134
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 24,
+"race": 620
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 24,
+"race": 1615
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 24,
+"race": 705
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 24,
+"race": 2350
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 24,
+"race": 310
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 24,
+"race": 2410
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 24,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 24,
+"race": 363
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 24,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 25,
+"race": 252
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 25,
+"race": 425
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 25,
+"race": 2205
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 25,
+"race": 975
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 25,
+"race": 260
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 25,
+"race": 210
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 25,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 25,
+"race": 2995
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 25,
+"race": 1630
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 25,
+"race": 1100
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 25,
+"race": 335
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 25,
+"race": 1705
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 25,
+"race": 1645
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 25,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 25,
+"race": 4400
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 25,
+"race": 2665
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 25,
+"race": 4675
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 25,
+"race": 159
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 25,
+"race": 755
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 25,
+"race": 1615
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 25,
+"race": 705
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 25,
+"race": 2605
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 25,
+"race": 310
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 25,
+"race": 2455
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 25,
+"race": 402
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 25,
+"race": 363
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 25,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 28,
+"race": 282
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 28,
+"race": 605
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 28,
+"race": 2250
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 28,
+"race": 1100
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 28,
+"race": 270
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 28,
+"race": 255
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 28,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 28,
+"race": 3175
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 28,
+"race": 1740
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 28,
+"race": 1280
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 28,
+"race": 380
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 28,
+"race": 1750
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 28,
+"race": 1690
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 28,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 28,
+"race": 5120
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 28,
+"race": 3025
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 28,
+"race": 6675
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 28,
+"race": 189
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 28,
+"race": 765
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 28,
+"race": 1705
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 28,
+"race": 715
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 28,
+"race": 2965
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 28,
+"race": 310
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 28,
+"race": 3175
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 28,
+"race": 582
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 28,
+"race": 363
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 28,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 33,
+"race": 452
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 33,
+"race": 605
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 33,
+"race": 2580
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 33,
+"race": 1360
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 33,
+"race": 340
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 33,
+"race": 345
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 33,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 33,
+"race": 3525
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 33,
+"race": 2670
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 33,
+"race": 1730
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 33,
+"race": 431
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 33,
+"race": 1770
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 33,
+"race": 2255
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 33,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 33,
+"race": 5390
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 33,
+"race": 3045
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 33,
+"race": 7455
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 33,
+"race": 284
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 33,
+"race": 865
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 33,
+"race": 1850
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 33,
+"race": 770
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 33,
+"race": 3280
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 33,
+"race": 336
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 33,
+"race": 4185
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 33,
+"race": 637
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 33,
+"race": 578
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 33,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 34,
+"race": 497
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 34,
+"race": 605
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 34,
+"race": 2625
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 34,
+"race": 1370
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 34,
+"race": 350
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 34,
+"race": 435
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 34,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 34,
+"race": 3570
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 34,
+"race": 2760
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 34,
+"race": 1775
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 34,
+"race": 441
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 34,
+"race": 1815
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 34,
+"race": 2345
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 34,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 34,
+"race": 5435
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 34,
+"race": 3055
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 34,
+"race": 7500
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 34,
+"race": 292
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 34,
+"race": 920
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 34,
+"race": 1940
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 34,
+"race": 780
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 34,
+"race": 3325
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 34,
+"race": 426
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 34,
+"race": 4275
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 34,
+"race": 682
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 34,
+"race": 623
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 34,
+"race": 0
+},
+{
+"team": "PAT",
+"player": "Thiem Dominic",
+"week": 37,
+"race": 497
+},
+{
+"team": "PAT",
+"player": "Shapovalov Denis",
+"week": 37,
+"race": 605
+},
+{
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 37,
+"race": 2625
+},
+{
+"team": "PAT",
+"player": "Musetti Lorenzo",
+"week": 37,
+"race": 1370
+},
+{
+"team": "PAT",
+"player": "Nakashima Brandon",
+"week": 37,
+"race": 350
+},
+{
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 37,
+"race": 1065
+},
+{
+"team": "PAT",
+"player": "Fritz Taylor",
+"week": 37,
+"race": 395
+},
+{
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 37,
+"race": 3570
+},
+{
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 37,
+"race": 3030
+},
+{
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 37,
+"race": 1775
+},
+{
+"team": "DOC",
+"player": "Schwartzman Diego",
+"week": 37,
+"race": 441
+},
+{
+"team": "DOC",
+"player": "Norrie Cameron",
+"week": 37,
+"race": 1860
+},
+{
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 37,
+"race": 2615
+},
+{
+"team": "DOC",
+"player": "Shelton Ben",
+"week": 37,
+"race": 540
+},
+{
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 37,
+"race": 6590
+},
+{
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 37,
+"race": 3055
+},
+{
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 37,
+"race": 8175
+},
+{
+"team": "CHAN",
+"player": "Shang Juncheng",
+"week": 37,
+"race": 335
+},
+{
+"team": "CHAN",
+"player": "Korda Sebastian",
+"week": 37,
+"race": 920
+},
+{
+"team": "CHAN",
+"player": "Tiafoe Frances",
+"week": 37,
+"race": 2210
+},
+{
+"team": "CHEF",
+"player": "Auger Aliassime Felix",
+"week": 37,
+"race": 780
+},
+{
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 37,
+"race": 3640
+},
+{
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 37,
+"race": 516
+},
+{
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 37,
+"race": 4365
+},
+{
+"team": "CHEF",
+"player": "Berrettini Matteo",
+"week": 37,
+"race": 682
+},
+{
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 37,
+"race": 623
+},
+{
+"team": "CHEF",
+"player": "Brooksby Jenson",
+"week": 37,
+"race": 0
+}
+]

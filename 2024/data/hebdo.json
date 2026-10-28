@@ -1,0 +1,1250 @@
+[
+{
+"week": 0,
+"date": "2024-01-01",
+"team": "PAT",
+"race": 50,
+"duels": 10,
+"total": 60
+},
+{
+"week": 0,
+"date": "2024-01-01",
+"team": "DOC",
+"race": 0,
+"duels": 0,
+"total": 0
+},
+{
+"week": 0,
+"date": "2024-01-01",
+"team": "CHAN",
+"race": 16,
+"duels": 0,
+"total": 16
+},
+{
+"week": 0,
+"date": "2024-01-01",
+"team": "CHEF",
+"race": 0,
+"duels": 0,
+"total": 0
+},
+{
+"week": 1,
+"date": "2024-01-08",
+"team": "PAT",
+"race": 483,
+"duels": 10,
+"total": 493
+},
+{
+"week": 1,
+"date": "2024-01-08",
+"team": "DOC",
+"race": 530,
+"duels": 5,
+"total": 535
+},
+{
+"week": 1,
+"date": "2024-01-08",
+"team": "CHAN",
+"race": 245,
+"duels": 0,
+"total": 245
+},
+{
+"week": 1,
+"date": "2024-01-08",
+"team": "CHEF",
+"race": 250,
+"duels": 0,
+"total": 250
+},
+{
+"week": 2,
+"date": "2024-01-15",
+"team": "PAT",
+"race": 866,
+"duels": 15,
+"total": 881
+},
+{
+"week": 2,
+"date": "2024-01-15",
+"team": "DOC",
+"race": 845,
+"duels": 20,
+"total": 865
+},
+{
+"week": 2,
+"date": "2024-01-15",
+"team": "CHAN",
+"race": 615,
+"duels": 15,
+"total": 630
+},
+{
+"week": 2,
+"date": "2024-01-15",
+"team": "CHEF",
+"race": 615,
+"duels": 15,
+"total": 630
+},
+{
+"week": 3,
+"date": "2024-01-22",
+"team": "PAT",
+"race": 866,
+"duels": 15,
+"total": 881
+},
+{
+"week": 3,
+"date": "2024-01-22",
+"team": "DOC",
+"race": 845,
+"duels": 20,
+"total": 865
+},
+{
+"week": 3,
+"date": "2024-01-22",
+"team": "CHAN",
+"race": 615,
+"duels": 15,
+"total": 630
+},
+{
+"week": 3,
+"date": "2024-01-22",
+"team": "CHEF",
+"race": 820,
+"duels": 15,
+"total": 835
+},
+{
+"week": 4,
+"date": "2024-01-29",
+"team": "PAT",
+"race": 1246,
+"duels": 15,
+"total": 1261
+},
+{
+"week": 4,
+"date": "2024-01-29",
+"team": "DOC",
+"race": 2535,
+"duels": 20,
+"total": 2555
+},
+{
+"week": 4,
+"date": "2024-01-29",
+"team": "CHAN",
+"race": 2375,
+"duels": 15,
+"total": 2390
+},
+{
+"week": 4,
+"date": "2024-01-29",
+"team": "CHEF",
+"race": 3290,
+"duels": 15,
+"total": 3305
+},
+{
+"week": 5,
+"date": "2024-02-05",
+"team": "PAT",
+"race": 1246,
+"duels": 15,
+"total": 1261
+},
+{
+"week": 5,
+"date": "2024-02-05",
+"team": "DOC",
+"race": 2535,
+"duels": 20,
+"total": 2555
+},
+{
+"week": 5,
+"date": "2024-02-05",
+"team": "CHAN",
+"race": 2475,
+"duels": 20,
+"total": 2495
+},
+{
+"week": 5,
+"date": "2024-02-05",
+"team": "CHEF",
+"race": 3390,
+"duels": 15,
+"total": 3405
+},
+{
+"week": 6,
+"date": "2024-02-12",
+"team": "PAT",
+"race": 1396,
+"duels": 25,
+"total": 1421
+},
+{
+"week": 6,
+"date": "2024-02-12",
+"team": "DOC",
+"race": 2685,
+"duels": 25,
+"total": 2710
+},
+{
+"week": 6,
+"date": "2024-02-12",
+"team": "CHAN",
+"race": 2550,
+"duels": 20,
+"total": 2570
+},
+{
+"week": 6,
+"date": "2024-02-12",
+"team": "CHEF",
+"race": 3415,
+"duels": 20,
+"total": 3435
+},
+{
+"week": 7,
+"date": "2024-02-19",
+"team": "PAT",
+"race": 1486,
+"duels": 30,
+"total": 1516
+},
+{
+"week": 7,
+"date": "2024-02-19",
+"team": "DOC",
+"race": 2990,
+"duels": 25,
+"total": 3015
+},
+{
+"week": 7,
+"date": "2024-02-19",
+"team": "CHAN",
+"race": 2735,
+"duels": 25,
+"total": 2760
+},
+{
+"week": 7,
+"date": "2024-02-19",
+"team": "CHEF",
+"race": 3965,
+"duels": 20,
+"total": 3985
+},
+{
+"week": 8,
+"date": "2024-02-26",
+"team": "PAT",
+"race": 2166,
+"duels": 50,
+"total": 2216
+},
+{
+"week": 8,
+"date": "2024-02-26",
+"team": "DOC",
+"race": 3400,
+"duels": 25,
+"total": 3425
+},
+{
+"week": 8,
+"date": "2024-02-26",
+"team": "CHAN",
+"race": 3000,
+"duels": 25,
+"total": 3025
+},
+{
+"week": 8,
+"date": "2024-02-26",
+"team": "CHEF",
+"race": 4140,
+"duels": 30,
+"total": 4170
+},
+{
+"week": 9,
+"date": "2024-03-04",
+"team": "PAT",
+"race": 3146,
+"duels": 60,
+"total": 3206
+},
+{
+"week": 9,
+"date": "2024-03-04",
+"team": "DOC",
+"race": 3650,
+"duels": 35,
+"total": 3685
+},
+{
+"week": 9,
+"date": "2024-03-04",
+"team": "CHAN",
+"race": 3600,
+"duels": 55,
+"total": 3655
+},
+{
+"week": 9,
+"date": "2024-03-04",
+"team": "CHEF",
+"race": 4590,
+"duels": 35,
+"total": 4625
+},
+{
+"week": 10,
+"date": "2024-03-11",
+"team": "PAT",
+"race": 3146,
+"duels": 60,
+"total": 3206
+},
+{
+"week": 10,
+"date": "2024-03-11",
+"team": "DOC",
+"race": 3650,
+"duels": 35,
+"total": 3685
+},
+{
+"week": 10,
+"date": "2024-03-11",
+"team": "CHAN",
+"race": 3600,
+"duels": 55,
+"total": 3655
+},
+{
+"week": 10,
+"date": "2024-03-11",
+"team": "CHEF",
+"race": 4590,
+"duels": 35,
+"total": 4625
+},
+{
+"week": 11,
+"date": "2024-03-18",
+"team": "PAT",
+"race": 3656,
+"duels": 65,
+"total": 3721
+},
+{
+"week": 11,
+"date": "2024-03-18",
+"team": "DOC",
+"race": 4070,
+"duels": 55,
+"total": 4125
+},
+{
+"week": 11,
+"date": "2024-03-18",
+"team": "CHAN",
+"race": 5580,
+"duels": 65,
+"total": 5645
+},
+{
+"week": 11,
+"date": "2024-03-18",
+"team": "CHEF",
+"race": 5200,
+"duels": 45,
+"total": 5245
+},
+{
+"week": 12,
+"date": "2024-03-25",
+"team": "PAT",
+"race": 3656,
+"duels": 65,
+"total": 3721
+},
+{
+"week": 12,
+"date": "2024-03-25",
+"team": "DOC",
+"race": 4070,
+"duels": 55,
+"total": 4125
+},
+{
+"week": 12,
+"date": "2024-03-25",
+"team": "CHAN",
+"race": 5580,
+"duels": 65,
+"total": 5645
+},
+{
+"week": 12,
+"date": "2024-03-25",
+"team": "CHEF",
+"race": 5200,
+"duels": 45,
+"total": 5245
+},
+{
+"week": 13,
+"date": "2024-04-01",
+"team": "PAT",
+"race": 4086,
+"duels": 75,
+"total": 4161
+},
+{
+"week": 13,
+"date": "2024-04-01",
+"team": "DOC",
+"race": 4800,
+"duels": 55,
+"total": 4855
+},
+{
+"week": 13,
+"date": "2024-04-01",
+"team": "CHAN",
+"race": 6260,
+"duels": 65,
+"total": 6325
+},
+{
+"week": 13,
+"date": "2024-04-01",
+"team": "CHEF",
+"race": 6380,
+"duels": 45,
+"total": 6425
+},
+{
+"week": 14,
+"date": "2024-04-08",
+"team": "PAT",
+"race": 4466,
+"duels": 80,
+"total": 4546
+},
+{
+"week": 14,
+"date": "2024-04-08",
+"team": "DOC",
+"race": 5190,
+"duels": 70,
+"total": 5260
+},
+{
+"week": 14,
+"date": "2024-04-08",
+"team": "CHAN",
+"race": 6445,
+"duels": 65,
+"total": 6510
+},
+{
+"week": 14,
+"date": "2024-04-08",
+"team": "CHEF",
+"race": 6485,
+"duels": 60,
+"total": 6545
+},
+{
+"week": 15,
+"date": "2024-04-15",
+"team": "PAT",
+"race": 5346,
+"duels": 90,
+"total": 5436
+},
+{
+"week": 15,
+"date": "2024-04-15",
+"team": "DOC",
+"race": 6420,
+"duels": 75,
+"total": 6495
+},
+{
+"week": 15,
+"date": "2024-04-15",
+"team": "CHAN",
+"race": 6775,
+"duels": 65,
+"total": 6840
+},
+{
+"week": 15,
+"date": "2024-04-15",
+"team": "CHEF",
+"race": 7025,
+"duels": 65,
+"total": 7090
+},
+{
+"week": 16,
+"date": "2024-04-22",
+"team": "PAT",
+"race": 6071,
+"duels": 95,
+"total": 6166
+},
+{
+"week": 16,
+"date": "2024-04-22",
+"team": "DOC",
+"race": 7165,
+"duels": 85,
+"total": 7250
+},
+{
+"week": 16,
+"date": "2024-04-22",
+"team": "CHAN",
+"race": 6875,
+"duels": 70,
+"total": 6945
+},
+{
+"week": 16,
+"date": "2024-04-22",
+"team": "CHEF",
+"race": 7225,
+"duels": 85,
+"total": 7310
+},
+{
+"week": 17,
+"date": "2024-05-06",
+"team": "PAT",
+"race": 6471,
+"duels": 100,
+"total": 6571
+},
+{
+"week": 17,
+"date": "2024-05-06",
+"team": "DOC",
+"race": 7820,
+"duels": 100,
+"total": 7920
+},
+{
+"week": 17,
+"date": "2024-05-06",
+"team": "CHAN",
+"race": 7435,
+"duels": 75,
+"total": 7510
+},
+{
+"week": 17,
+"date": "2024-05-06",
+"team": "CHEF",
+"race": 9215,
+"duels": 85,
+"total": 9300
+},
+{
+"week": 18,
+"date": "2024-05-20",
+"team": "PAT",
+"race": 6746,
+"duels": 130,
+"total": 6876
+},
+{
+"week": 18,
+"date": "2024-05-20",
+"team": "DOC",
+"race": 10120,
+"duels": 120,
+"total": 10240
+},
+{
+"week": 18,
+"date": "2024-05-20",
+"team": "CHAN",
+"race": 7655,
+"duels": 95,
+"total": 7750
+},
+{
+"week": 18,
+"date": "2024-05-20",
+"team": "CHEF",
+"race": 9630,
+"duels": 90,
+"total": 9720
+},
+{
+"week": 19,
+"date": "2024-06-10",
+"team": "PAT",
+"race": 8746,
+"duels": 135,
+"total": 8881
+},
+{
+"week": 19,
+"date": "2024-06-10",
+"team": "DOC",
+"race": 12495,
+"duels": 120,
+"total": 12615
+},
+{
+"week": 19,
+"date": "2024-06-10",
+"team": "CHAN",
+"race": 10230,
+"duels": 95,
+"total": 10325
+},
+{
+"week": 19,
+"date": "2024-06-10",
+"team": "CHEF",
+"race": 10850,
+"duels": 95,
+"total": 10945
+},
+{
+"week": 20,
+"date": "2024-06-17",
+"team": "PAT",
+"race": 9046,
+"duels": 135,
+"total": 9181
+},
+{
+"week": 20,
+"date": "2024-06-17",
+"team": "DOC",
+"race": 12495,
+"duels": 125,
+"total": 12620
+},
+{
+"week": 20,
+"date": "2024-06-17",
+"team": "CHAN",
+"race": 10445,
+"duels": 100,
+"total": 10545
+},
+{
+"week": 20,
+"date": "2024-06-17",
+"team": "CHEF",
+"race": 11123,
+"duels": 105,
+"total": 11228
+},
+{
+"week": 21,
+"date": "2024-06-24",
+"team": "PAT",
+"race": 9151,
+"duels": 135,
+"total": 9286
+},
+{
+"week": 21,
+"date": "2024-06-24",
+"team": "DOC",
+"race": 13175,
+"duels": 125,
+"total": 13300
+},
+{
+"week": 21,
+"date": "2024-06-24",
+"team": "CHAN",
+"race": 11245,
+"duels": 100,
+"total": 11345
+},
+{
+"week": 21,
+"date": "2024-06-24",
+"team": "CHEF",
+"race": 11813,
+"duels": 105,
+"total": 11918
+},
+{
+"week": 22,
+"date": "2024-07-01",
+"team": "PAT",
+"race": 9279,
+"duels": 145,
+"total": 9424
+},
+{
+"week": 22,
+"date": "2024-07-01",
+"team": "DOC",
+"race": 13485,
+"duels": 125,
+"total": 13610
+},
+{
+"week": 22,
+"date": "2024-07-01",
+"team": "CHAN",
+"race": 11355,
+"duels": 105,
+"total": 11460
+},
+{
+"week": 22,
+"date": "2024-07-01",
+"team": "CHEF",
+"race": 11863,
+"duels": 115,
+"total": 11978
+},
+{
+"week": 23,
+"date": "2024-07-15",
+"team": "PAT",
+"race": 10099,
+"duels": 145,
+"total": 10244
+},
+{
+"week": 23,
+"date": "2024-07-15",
+"team": "DOC",
+"race": 14185,
+"duels": 125,
+"total": 14310
+},
+{
+"week": 23,
+"date": "2024-07-15",
+"team": "CHAN",
+"race": 14715,
+"duels": 105,
+"total": 14820
+},
+{
+"week": 23,
+"date": "2024-07-15",
+"team": "CHEF",
+"race": 12483,
+"duels": 125,
+"total": 12608
+},
+{
+"week": 24,
+"date": "2024-07-22",
+"team": "PAT",
+"race": 10251,
+"duels": 150,
+"total": 10401
+},
+{
+"week": 24,
+"date": "2024-07-22",
+"team": "DOC",
+"race": 14655,
+"duels": 130,
+"total": 14785
+},
+{
+"week": 24,
+"date": "2024-07-22",
+"team": "CHAN",
+"race": 14815,
+"duels": 110,
+"total": 14925
+},
+{
+"week": 24,
+"date": "2024-07-22",
+"team": "CHEF",
+"race": 13354,
+"duels": 135,
+"total": 13489
+},
+{
+"week": 25,
+"date": "2024-08-05",
+"team": "PAT",
+"race": 10616,
+"duels": 150,
+"total": 10766
+},
+{
+"week": 25,
+"date": "2024-08-05",
+"team": "DOC",
+"race": 14715,
+"duels": 135,
+"total": 14850
+},
+{
+"week": 25,
+"date": "2024-08-05",
+"team": "CHAN",
+"race": 15471,
+"duels": 120,
+"total": 15591
+},
+{
+"week": 25,
+"date": "2024-08-05",
+"team": "CHEF",
+"race": 13354,
+"duels": 145,
+"total": 13499
+},
+{
+"week": 26,
+"date": "2024-08-12",
+"team": "PAT",
+"race": 10616,
+"duels": 155,
+"total": 10771
+},
+{
+"week": 26,
+"date": "2024-08-12",
+"team": "DOC",
+"race": 14715,
+"duels": 145,
+"total": 14860
+},
+{
+"week": 26,
+"date": "2024-08-12",
+"team": "CHAN",
+"race": 15471,
+"duels": 125,
+"total": 15596
+},
+{
+"week": 26,
+"date": "2024-08-12",
+"team": "CHEF",
+"race": 13354,
+"duels": 165,
+"total": 13519
+},
+{
+"week": 27,
+"date": "2024-08-19",
+"team": "PAT",
+"race": 11446,
+"duels": 155,
+"total": 11601
+},
+{
+"week": 27,
+"date": "2024-08-19",
+"team": "DOC",
+"race": 15895,
+"duels": 145,
+"total": 16040
+},
+{
+"week": 27,
+"date": "2024-08-19",
+"team": "CHAN",
+"race": 16431,
+"duels": 125,
+"total": 16556
+},
+{
+"week": 27,
+"date": "2024-08-19",
+"team": "CHEF",
+"race": 15734,
+"duels": 165,
+"total": 15899
+},
+{
+"week": 28,
+"date": "2024-08-26",
+"team": "PAT",
+"race": 11661,
+"duels": 155,
+"total": 11816
+},
+{
+"week": 28,
+"date": "2024-08-26",
+"team": "DOC",
+"race": 15955,
+"duels": 155,
+"total": 16110
+},
+{
+"week": 28,
+"date": "2024-08-26",
+"team": "CHAN",
+"race": 16491,
+"duels": 130,
+"total": 16621
+},
+{
+"week": 28,
+"date": "2024-08-26",
+"team": "CHEF",
+"race": 15400,
+"duels": 190,
+"total": 15590
+},
+{
+"week": 29,
+"date": "2024-09-02",
+"team": "PAT",
+"race": 12461,
+"duels": 155,
+"total": 12616
+},
+{
+"week": 29,
+"date": "2024-09-02",
+"team": "DOC",
+"race": 17765,
+"duels": 155,
+"total": 17920
+},
+{
+"week": 29,
+"date": "2024-09-02",
+"team": "CHAN",
+"race": 17241,
+"duels": 130,
+"total": 17371
+},
+{
+"week": 29,
+"date": "2024-09-02",
+"team": "CHEF",
+"race": 18410,
+"duels": 190,
+"total": 18600
+},
+{
+"week": 30,
+"date": "2024-09-09",
+"team": "PAT",
+"race": 12461,
+"duels": 160,
+"total": 12621
+},
+{
+"week": 30,
+"date": "2024-09-09",
+"team": "DOC",
+"race": 17765,
+"duels": 155,
+"total": 17920
+},
+{
+"week": 30,
+"date": "2024-09-09",
+"team": "CHAN",
+"race": 17241,
+"duels": 140,
+"total": 17381
+},
+{
+"week": 30,
+"date": "2024-09-09",
+"team": "CHEF",
+"race": 18410,
+"duels": 190,
+"total": 18600
+},
+{
+"week": 31,
+"date": "2024-09-16",
+"team": "PAT",
+"race": 12479,
+"duels": 165,
+"total": 12644
+},
+{
+"week": 31,
+"date": "2024-09-16",
+"team": "DOC",
+"race": 17815,
+"duels": 155,
+"total": 17970
+},
+{
+"week": 31,
+"date": "2024-09-16",
+"team": "CHAN",
+"race": 17241,
+"duels": 155,
+"total": 17396
+},
+{
+"week": 31,
+"date": "2024-09-16",
+"team": "CHEF",
+"race": 18410,
+"duels": 215,
+"total": 18625
+},
+{
+"week": 32,
+"date": "2024-09-23",
+"team": "PAT",
+"race": 12729,
+"duels": 165,
+"total": 12894
+},
+{
+"week": 32,
+"date": "2024-09-23",
+"team": "DOC",
+"race": 17955,
+"duels": 160,
+"total": 18115
+},
+{
+"week": 32,
+"date": "2024-09-23",
+"team": "CHAN",
+"race": 18316,
+"duels": 170,
+"total": 18486
+},
+{
+"week": 32,
+"date": "2024-09-23",
+"team": "CHEF",
+"race": 19445,
+"duels": 230,
+"total": 19675
+},
+{
+"week": 33,
+"date": "2024-09-30",
+"team": "PAT",
+"race": 12729,
+"duels": 165,
+"total": 12894
+},
+{
+"week": 33,
+"date": "2024-09-30",
+"team": "DOC",
+"race": 17955,
+"duels": 160,
+"total": 18115
+},
+{
+"week": 33,
+"date": "2024-09-30",
+"team": "CHAN",
+"race": 18316,
+"duels": 170,
+"total": 18486
+},
+{
+"week": 33,
+"date": "2024-09-30",
+"team": "CHEF",
+"race": 19445,
+"duels": 230,
+"total": 19675
+},
+{
+"week": 34,
+"date": "2024-10-07",
+"team": "PAT",
+"race": 12879,
+"duels": 165,
+"total": 13044
+},
+{
+"week": 34,
+"date": "2024-10-07",
+"team": "DOC",
+"race": 18515,
+"duels": 160,
+"total": 18675
+},
+{
+"week": 34,
+"date": "2024-10-07",
+"team": "CHAN",
+"race": 19006,
+"duels": 170,
+"total": 19176
+},
+{
+"week": 34,
+"date": "2024-10-07",
+"team": "CHEF",
+"race": 20435,
+"duels": 230,
+"total": 20665
+},
+{
+"week": 35,
+"date": "2024-10-14",
+"team": "PAT",
+"race": 12969,
+"duels": 195,
+"total": 13164
+},
+{
+"week": 35,
+"date": "2024-10-14",
+"team": "DOC",
+"race": 18925,
+"duels": 160,
+"total": 19085
+},
+{
+"week": 35,
+"date": "2024-10-14",
+"team": "CHAN",
+"race": 19281,
+"duels": 175,
+"total": 19456
+},
+{
+"week": 35,
+"date": "2024-10-14",
+"team": "CHEF",
+"race": 20525,
+"duels": 235,
+"total": 20760
+},
+{
+"week": 36,
+"date": "2024-10-21",
+"team": "PAT",
+"race": 13981,
+"duels": 205,
+"total": 14186
+},
+{
+"week": 36,
+"date": "2024-10-21",
+"team": "DOC",
+"race": 18845,
+"duels": 170,
+"total": 19015
+},
+{
+"week": 36,
+"date": "2024-10-21",
+"team": "CHAN",
+"race": 19552,
+"duels": 190,
+"total": 19742
+},
+{
+"week": 36,
+"date": "2024-10-21",
+"team": "CHEF",
+"race": 21399,
+"duels": 240,
+"total": 21639
+},
+{
+"week": 37,
+"date": "2024-10-28",
+"team": "PAT",
+"race": 14301,
+"duels": 205,
+"total": 14506
+},
+{
+"week": 37,
+"date": "2024-10-28",
+"team": "DOC",
+"race": 20105,
+"duels": 170,
+"total": 20275
+},
+{
+"week": 37,
+"date": "2024-10-28",
+"team": "CHAN",
+"race": 19982,
+"duels": 190,
+"total": 20172
+},
+{
+"week": 37,
+"date": "2024-10-28",
+"team": "CHEF",
+"race": 21534,
+"duels": 240,
+"total": 21774
+},
+{
+"week": 38,
+"date": "2024-11-04",
+"team": "PAT",
+"race": 14376,
+"duels": 205,
+"total": 14581
+},
+{
+"week": 38,
+"date": "2024-11-04",
+"team": "DOC",
+"race": 20105,
+"duels": 170,
+"total": 20275
+},
+{
+"week": 38,
+"date": "2024-11-04",
+"team": "CHAN",
+"race": 20032,
+"duels": 190,
+"total": 20222
+},
+{
+"week": 38,
+"date": "2024-11-04",
+"team": "CHEF",
+"race": 21592,
+"duels": 240,
+"total": 21832
+}
+]

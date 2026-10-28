@@ -1,0 +1,1022 @@
+[
+{
+"season": 2019,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2019-01-14",
+"end": "2019-01-28",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2019,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2019-03-04",
+"end": "2019-03-15",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2019,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2019-03-18",
+"end": "2019-03-29",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2019,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2019-04-15",
+"end": "2019-04-22",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2019,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2019-05-06",
+"end": "2019-05-17",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2019,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2019-05-13",
+"end": "2019-05-24",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2019,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2019-05-27",
+"end": "2019-06-10",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2019,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2019-07-01",
+"end": "2019-07-15",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2019,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2019-08-05",
+"end": "2019-08-12",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2019,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2019-08-12",
+"end": "2019-08-19",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2019,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2019-08-26",
+"end": "2019-09-09",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2019,
+"event": "Shanghai",
+"short": "SHA",
+"level": "Masters 1000",
+"start": "2019-10-07",
+"end": "2019-10-18",
+"surface": "Dur",
+"city": "Shanghai"
+},
+{
+"season": 2019,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2019-10-28",
+"end": "2019-11-04",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2019,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2019-11-11",
+"end": "2019-11-18",
+"surface": "Dur",
+"city": "Londres"
+},
+{
+"season": 2020,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2020-01-20",
+"end": "2020-02-03",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2020,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2020-08-24",
+"end": "2020-08-31",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2020,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2020-08-31",
+"end": "2020-09-14",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2020,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2020-09-14",
+"end": "2020-09-25",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2020,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2020-09-28",
+"end": "2020-10-12",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2020,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2020-11-02",
+"end": "2020-11-09",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2020,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2020-11-16",
+"end": "2020-11-23",
+"surface": "Dur",
+"city": "Londres"
+},
+{
+"season": 2021,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2021-02-08",
+"end": "2021-02-22",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2021,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2021-03-22",
+"end": "2021-04-02",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2021,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2021-04-12",
+"end": "2021-04-19",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2021,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2021-05-03",
+"end": "2021-05-14",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2021,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2021-05-10",
+"end": "2021-05-21",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2021,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2021-05-31",
+"end": "2021-06-14",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2021,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2021-06-28",
+"end": "2021-07-12",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2021,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2021-08-09",
+"end": "2021-08-16",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2021,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2021-08-16",
+"end": "2021-08-23",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2021,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2021-08-30",
+"end": "2021-09-13",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2021,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2021-10-04",
+"end": "2021-10-15",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2021,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2021-11-01",
+"end": "2021-11-08",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2021,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2021-11-15",
+"end": "2021-11-22",
+"surface": "Dur",
+"city": "Turin"
+},
+{
+"season": 2022,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2022-01-17",
+"end": "2022-01-31",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2022,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2022-03-07",
+"end": "2022-03-18",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2022,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2022-03-21",
+"end": "2022-04-01",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2022,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2022-04-11",
+"end": "2022-04-18",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2022,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2022-05-02",
+"end": "2022-05-13",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2022,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2022-05-09",
+"end": "2022-05-20",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2022,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2022-05-23",
+"end": "2022-06-06",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2022,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2022-06-27",
+"end": "2022-07-11",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2022,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2022-08-08",
+"end": "2022-08-15",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2022,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2022-08-15",
+"end": "2022-08-22",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2022,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2022-08-29",
+"end": "2022-09-12",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2022,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2022-10-31",
+"end": "2022-11-07",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2022,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2022-11-14",
+"end": "2022-11-21",
+"surface": "Dur",
+"city": "Turin"
+},
+{
+"season": 2023,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2023-01-16",
+"end": "2023-01-30",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2023,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2023-03-06",
+"end": "2023-03-17",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2023,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2023-03-20",
+"end": "2023-03-31",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2023,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2023-04-10",
+"end": "2023-04-17",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2023,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2023-04-24",
+"end": "2023-05-05",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2023,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2023-05-08",
+"end": "2023-05-19",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2023,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2023-05-29",
+"end": "2023-06-12",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2023,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2023-07-03",
+"end": "2023-07-17",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2023,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2023-08-07",
+"end": "2023-08-14",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2023,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2023-08-14",
+"end": "2023-08-21",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2023,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2023-08-28",
+"end": "2023-09-11",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2023,
+"event": "Shanghai",
+"short": "SHA",
+"level": "Masters 1000",
+"start": "2023-10-02",
+"end": "2023-10-13",
+"surface": "Dur",
+"city": "Shanghai"
+},
+{
+"season": 2023,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2023-10-30",
+"end": "2023-11-06",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2023,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2023-11-13",
+"end": "2023-11-20",
+"surface": "Dur",
+"city": "Turin"
+},
+{
+"season": 2024,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2024-01-15",
+"end": "2024-01-29",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2024,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2024-03-04",
+"end": "2024-03-15",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2024,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2024-03-18",
+"end": "2024-03-29",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2024,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2024-04-08",
+"end": "2024-04-15",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2024,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2024-04-22",
+"end": "2024-05-03",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2024,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2024-05-06",
+"end": "2024-05-17",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2024,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2024-05-27",
+"end": "2024-06-10",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2024,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2024-07-01",
+"end": "2024-07-15",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2024,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2024-08-05",
+"end": "2024-08-12",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2024,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2024-08-12",
+"end": "2024-08-19",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2024,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2024-08-26",
+"end": "2024-09-09",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2024,
+"event": "Shanghai",
+"short": "SHA",
+"level": "Masters 1000",
+"start": "2024-10-02",
+"end": "2024-10-13",
+"surface": "Dur",
+"city": "Shanghai"
+},
+{
+"season": 2024,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2024-10-28",
+"end": "2024-11-04",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2024,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2024-11-10",
+"end": "2024-11-17",
+"surface": "Dur",
+"city": "Turin"
+},
+{
+"season": 2025,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2025-01-13",
+"end": "2025-01-27",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2025,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2025-03-05",
+"end": "2025-03-16",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2025,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2025-03-09",
+"end": "2025-03-20",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2025,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2025-04-06",
+"end": "2025-04-13",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2025,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2025-04-23",
+"end": "2025-05-04",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2025,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2025-05-07",
+"end": "2025-05-18",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2025,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2025-05-26",
+"end": "2025-06-09",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2025,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2025-06-30",
+"end": "2025-07-14",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2025,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2025-07-27",
+"end": "2025-08-03",
+"surface": "Dur",
+"city": "Montréal/Toronto"
+},
+{
+"season": 2025,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2025-08-07",
+"end": "2025-08-14",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2025,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2025-08-25",
+"end": "2025-09-08",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2025,
+"event": "Shanghai",
+"short": "SHA",
+"level": "Masters 1000",
+"start": "2025-10-01",
+"end": "2025-10-12",
+"surface": "Dur",
+"city": "Shanghai"
+},
+{
+"season": 2025,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2025-10-07",
+"end": "2025-10-14",
+"surface": "Dur",
+"city": "Paris"
+},
+{
+"season": 2025,
+"event": "ATP Finals",
+"short": "FIN",
+"level": "ATP Finals",
+"start": "2025-11-09",
+"end": "2025-11-16",
+"surface": "Dur",
+"city": "Turin"
+},
+{
+"season": 2026,
+"event": "Open d'Australie",
+"short": "AO",
+"level": "Grand Chelem",
+"start": "2026-01-18",
+"end": "2026-02-01",
+"surface": "Dur",
+"city": "Melbourne"
+},
+{
+"season": 2026,
+"event": "Indian Wells",
+"short": "IW",
+"level": "Masters 1000",
+"start": "2026-03-04",
+"end": "2026-03-15",
+"surface": "Dur",
+"city": "Indian Wells"
+},
+{
+"season": 2026,
+"event": "Miami",
+"short": "MIA",
+"level": "Masters 1000",
+"start": "2026-03-18",
+"end": "2026-03-29",
+"surface": "Dur",
+"city": "Miami"
+},
+{
+"season": 2026,
+"event": "Monte-Carlo",
+"short": "MC",
+"level": "Masters 1000",
+"start": "2026-04-05",
+"end": "2026-04-12",
+"surface": "Terre battue",
+"city": "Monte-Carlo"
+},
+{
+"season": 2026,
+"event": "Madrid",
+"short": "MAD",
+"level": "Masters 1000",
+"start": "2026-04-22",
+"end": "2026-05-03",
+"surface": "Terre battue",
+"city": "Madrid"
+},
+{
+"season": 2026,
+"event": "Rome",
+"short": "ROM",
+"level": "Masters 1000",
+"start": "2026-05-06",
+"end": "2026-05-17",
+"surface": "Terre battue",
+"city": "Rome"
+},
+{
+"season": 2026,
+"event": "Roland-Garros",
+"short": "RG",
+"level": "Grand Chelem",
+"start": "2026-05-24",
+"end": "2026-06-07",
+"surface": "Terre battue",
+"city": "Paris"
+},
+{
+"season": 2026,
+"event": "Wimbledon",
+"short": "WIM",
+"level": "Grand Chelem",
+"start": "2026-06-29",
+"end": "2026-07-12",
+"surface": "Gazon",
+"city": "Londres"
+},
+{
+"season": 2026,
+"event": "Canada",
+"short": "CAN",
+"level": "Masters 1000",
+"start": "2026-08-02",
+"end": "2026-08-12",
+"surface": "Dur",
+"city": "Montréal"
+},
+{
+"season": 2026,
+"event": "Cincinnati",
+"short": "CIN",
+"level": "Masters 1000",
+"start": "2026-08-13",
+"end": "2026-08-23",
+"surface": "Dur",
+"city": "Cincinnati"
+},
+{
+"season": 2026,
+"event": "US Open",
+"short": "USO",
+"level": "Grand Chelem",
+"start": "2026-08-31",
+"end": "2026-09-13",
+"surface": "Dur",
+"city": "New York"
+},
+{
+"season": 2026,
+"event": "Shanghai",
+"short": "SHA",
+"level": "Masters 1000",
+"start": "2026-10-07",
+"end": "2026-10-18",
+"surface": "Dur",
+"city": "Shanghai"
+},
+{
+"season": 2026,
+"event": "Paris",
+"short": "PAR",
+"level": "Masters 1000",
+"start": "2026-11-02",
+"end": "2026-11-08",
+"surface": "Dur (salle)",
+"city": "Paris"
+}
+]
