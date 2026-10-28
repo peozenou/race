@@ -8605,8 +8605,8 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0028,PAT,atp:200282,De Minaur Alex,De Minaur,2026-01-05,United Cup,Compétition par équipes,Dur,1/4,V,0,Hubert Hurkacz,,83,6-4 4-6 6-4
 2026,2026-M0029,PAT,atp:200282,De Minaur Alex,De Minaur,2026-01-05,United Cup,Compétition par équipes,Dur,Poule,V,0,Jakub Mensik,CHAN,18,6-4 6-1
 2026,2026-M0030,PAT,atp:200282,De Minaur Alex,De Minaur,2026-01-05,United Cup,Compétition par équipes,Dur,Poule,D,0,Casper Ruud,PAT,12,6-3 6-3
-2026,2026-M0031,PAT,atp:211514,Engel Justin,Engel,2026-01-05,Canberra CH,Challenger,Dur,1/8,D,0,Dusan Lajovic,,125,6-4 7-6(4)
-2026,2026-M0032,PAT,atp:211514,Engel Justin,Engel,2026-01-05,Canberra CH,Challenger,Dur,1/16,V,0,Nicolas Mejia,,168,7-6(6) 1-6 7-6(6)
+2026,2026-M0031,PAT,atp:211514,Engel Justin,Engel (sorti),2026-01-05,Canberra CH,Challenger,Dur,1/8,D,0,Dusan Lajovic,,125,6-4 7-6(4)
+2026,2026-M0032,PAT,atp:211514,Engel Justin,Engel (sorti),2026-01-05,Canberra CH,Challenger,Dur,1/16,V,0,Nicolas Mejia,,168,7-6(6) 1-6 7-6(6)
 2026,2026-M0033,DOC,atp:126203,Fritz Taylor,Fritz,2026-01-05,United Cup,Compétition par équipes,Dur,1/2,D,0,Hubert Hurkacz,,83,7-6(1) 7-6(2)
 2026,2026-M0034,DOC,atp:126203,Fritz Taylor,Fritz,2026-01-05,United Cup,Compétition par équipes,Dur,1/4,D,0,Stefanos Tsitsipas,,34,6-4 7-5
 2026,2026-M0035,DOC,atp:126203,Fritz Taylor,Fritz,2026-01-05,United Cup,Compétition par équipes,Dur,Poule,V,0,Jaume Munar,,38,7-6(4) 3-6 7-6(6)
@@ -8692,7 +8692,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0115,JULES,atp:104925,Djokovic Novak,Djokovic,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/16,V,0,Botic Van De Zandschulp,,75,6-3 6-4 7-6(4)
 2026,2026-M0116,JULES,atp:104925,Djokovic Novak,Djokovic,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/32,V,0,Francesco Maestrelli,,141,6-3 6-2 6-2
 2026,2026-M0117,JULES,atp:104925,Djokovic Novak,Djokovic,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/64,V,0,Pedro Martinez,,71,6-3 6-2 6-2
-2026,2026-M0118,PAT,atp:211514,Engel Justin,Engel,2026-01-19,Open d'Australie,Qualifications,Dur,Q1,D,0,George Loffhagen,,212,7-6(4) 7-6(2)
+2026,2026-M0118,PAT,atp:211514,Engel Justin,Engel (sorti),2026-01-19,Open d'Australie,Qualifications,Dur,Q1,D,0,George Loffhagen,,212,7-6(4) 7-6(2)
 2026,2026-M0119,CHEF,atp:211663,Fonseca Joao,Fonseca,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/64,D,0,Eliot Spizzirri,,85,6-4 2-6 6-1 6-2
 2026,2026-M0120,DOC,atp:126203,Fritz Taylor,Fritz,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/8,D,0,Lorenzo Musetti,JULES,5,6-2 7-5 6-4
 2026,2026-M0121,DOC,atp:126203,Fritz Taylor,Fritz,2026-01-19,Open d'Australie,Grand Chelem,Dur,1/16,V,0,Stan Wawrinka,,139,7-6(5) 2-6 6-4 6-4
@@ -8759,8 +8759,8 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0182,PAT,atp:210464,Blanch Darwin,Blanch,2026-01-26,Phan Thiet 2 CH,Challenger,Dur,1/16,V,0,Chase Ferguson,,715,6-0 6-1
 2026,2026-M0183,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-01-27,Manama CH,Challenger,Dur,1/8,D,0,Luca Nardi,,108,6-3 6-0
 2026,2026-M0184,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-01-27,Manama CH,Challenger,Dur,1/16,V,0,Dimitar Kuzmanov,,266,5-7 6-1 7-5
-2026,2026-M0185,PAT,atp:211514,Engel Justin,Engel,2026-01-27,Quimper CH,Challenger,Dur,1/8,D,0,Marc Andrea Huesler,,253,3-6 6-4 7-6(4)
-2026,2026-M0186,PAT,atp:211514,Engel Justin,Engel,2026-01-27,Quimper CH,Challenger,Dur,1/16,V,0,Maks Kasnikowski,,420,6-3 6-2
+2026,2026-M0185,PAT,atp:211514,Engel Justin,Engel (sorti),2026-01-27,Quimper CH,Challenger,Dur,1/8,D,0,Marc Andrea Huesler,,253,3-6 6-4 7-6(4)
+2026,2026-M0186,PAT,atp:211514,Engel Justin,Engel (sorti),2026-01-27,Quimper CH,Challenger,Dur,1/16,V,0,Maks Kasnikowski,,420,6-3 6-2
 2026,2026-M0187,PAT,atp:210464,Blanch Darwin,Blanch,2026-02-02,Brisbane 1 CH,Challenger,Dur,1/16,D,0,Pavle Marinkov,,590,7-6(5) 3-6 6-3
 2026,2026-M0188,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-02-02,Montpellier,ATP 500/250,Dur,1/8,D,0,Luca Nardi,,106,6-2 6-3
 2026,2026-M0189,CHEF,atp:209950,Fils Arthur,Fils,2026-02-02,Montpellier,Qualifications,Dur,1/4,D,0,Felix Auger Aliassime,,8,6-4 6-2
@@ -8776,7 +8776,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0199,CHEF,atp:207733,Draper Jack,Draper,2026-02-05,Coupe Davis QLS R1: NOR vs GBR,Compétition par équipes,Dur,Poule,V,0,Viktor Durasovic,,313,6-2 6-2
 2026,2026-M0200,JULES,atp:122330,Bublik Alexander,Bublik,2026-02-06,Coupe Davis WG1 PO: KAZ vs MON,Compétition par équipes,Dur,Poule,V,0,Hugo Nys,,,6-0 6-3
 2026,2026-M0201,JULES,atp:122330,Bublik Alexander,Bublik,2026-02-06,Coupe Davis WG1 PO: KAZ vs MON,Compétition par équipes,Dur,Poule,D,0,Valentin Vacherot,,27,7-6(4) 7-6(7)
-2026,2026-M0202,PAT,atp:211514,Engel Justin,Engel,2026-02-06,Coupe Davis QLS R1: GER vs PER,Compétition par équipes,Dur,Poule,V,0,Gonzalo Bueno,,217,6-3 6-7(4) [10-6]
+2026,2026-M0202,PAT,atp:211514,Engel Justin,Engel (sorti),2026-02-06,Coupe Davis QLS R1: GER vs PER,Compétition par équipes,Dur,Poule,V,0,Gonzalo Bueno,,217,6-3 6-7(4) [10-6]
 2026,2026-M0203,CHEF,atp:208103,Lehecka Jiri,Lehecka (entré),2026-02-07,Coupe Davis QLS R1: SWE vs CZE,Compétition par équipes,Dur,Poule,V,0,Dragos Nicolae Madaras,,576,6-3 6-4
 2026,2026-M0204,CHAN,atp:126205,Paul Tommy,Paul,2026-02-07,Coupe Davis QLS R1: USA vs HUN,Compétition par équipes,Terre battue,Poule,V,0,Zsombor Piros,,176,7-6(3) 6-3
 2026,2026-M0205,PAT,atp:210464,Blanch Darwin,Blanch,2026-02-09,Brisbane 2 CH,Challenger,Dur,1/4,D,0,Alex Bolt,,178,7-5 6-3
@@ -8794,7 +8794,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0217,PAT,atp:200282,De Minaur Alex,De Minaur,2026-02-09,Rotterdam,ATP 500/250,Dur,1/8,V,0,Stan Wawrinka,,106,6-4 6-2
 2026,2026-M0218,PAT,atp:200282,De Minaur Alex,De Minaur,2026-02-09,Rotterdam,ATP 500/250,Dur,1/16,V,0,Arthur Fils,CHEF,42,7-6(3) 6-2
 2026,2026-M0219,JULES,atp:105777,Dimitrov Grigor,Dimitrov,2026-02-09,Dallas,ATP 500/250,Dur,1/16,D,0,Alex Michelsen,CHAN,41,5-7 6-4 6-4
-2026,2026-M0220,PAT,atp:211514,Engel Justin,Engel,2026-02-09,Pau CH,Challenger,Dur,1/16,D,0,Moez Echargui,,146,7-6(2) 6-4
+2026,2026-M0220,PAT,atp:211514,Engel Justin,Engel (sorti),2026-02-09,Pau CH,Challenger,Dur,1/16,D,0,Moez Echargui,,146,7-6(2) 6-4
 2026,2026-M0221,CHEF,atp:209950,Fils Arthur,Fils,2026-02-09,Rotterdam,ATP 500/250,Dur,1/16,D,0,Alex De Minaur,PAT,8,7-6(3) 6-2
 2026,2026-M0222,CHEF,atp:211663,Fonseca Joao,Fonseca,2026-02-09,Buenos Aires,ATP 500/250,Terre battue,1/8,D,0,Alejandro Tabilo,,71,6-3 3-6 7-5
 2026,2026-M0223,DOC,atp:126203,Fritz Taylor,Fritz,2026-02-09,Dallas,ATP 500/250,Dur,F,D,0,Ben Shelton,PAT,9,3-6 6-3 7-5
@@ -8833,8 +8833,8 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0256,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-02-16,Delray Beach,ATP 500/250,Dur,1/2,D,0,Sebastian Korda,,50,7-6(1) 6-1
 2026,2026-M0257,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-02-16,Delray Beach,Qualifications,Dur,1/4,V,0,Coleman Wong,,137,7-5 6-7(7) 6-2
 2026,2026-M0258,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-02-16,Delray Beach,ATP 500/250,Dur,1/8,V,0,Terence Atmane,,66,7-5 6-4
-2026,2026-M0259,PAT,atp:211514,Engel Justin,Engel,2026-02-16,Lille CH,Challenger,Dur,1/8,D,0,Benjamin Bonzi,,112,6-2 6-2
-2026,2026-M0260,PAT,atp:211514,Engel Justin,Engel,2026-02-16,Lille CH,Challenger,Dur,1/16,V,0,Loann Massard,,609,7-6(5) 6-3
+2026,2026-M0259,PAT,atp:211514,Engel Justin,Engel (sorti),2026-02-16,Lille CH,Challenger,Dur,1/8,D,0,Benjamin Bonzi,,112,6-2 6-2
+2026,2026-M0260,PAT,atp:211514,Engel Justin,Engel (sorti),2026-02-16,Lille CH,Challenger,Dur,1/16,V,0,Loann Massard,,609,7-6(5) 6-3
 2026,2026-M0261,CHEF,atp:209950,Fils Arthur,Fils,2026-02-16,Doha,ATP 500/250,Dur,F,D,0,Carlos Alcaraz,CHAN,1,6-2 6-1
 2026,2026-M0262,CHEF,atp:209950,Fils Arthur,Fils,2026-02-16,Doha,ATP 500/250,Dur,1/2,V,0,Jakub Mensik,CHAN,16,6-4 7-6(4)
 2026,2026-M0263,CHEF,atp:209950,Fils Arthur,Fils,2026-02-16,Doha,Qualifications,Dur,1/4,V,0,Jiri Lehecka,,22,6-3 6-3
@@ -8931,7 +8931,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0354,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-02,Thionville CH,Challenger,Dur,1/4,V,0,Jan Choinski,,122,6-4 7-6(5)
 2026,2026-M0355,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-02,Thionville CH,Challenger,Dur,1/8,V,0,Kei Nishikori,,284,3-6 6-4 6-2
 2026,2026-M0356,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-02,Thionville CH,Challenger,Dur,1/16,V,0,Alex Molcan,,200,6-1 6-2
-2026,2026-M0357,PAT,atp:211514,Engel Justin,Engel,2026-03-02,Thionville CH,Challenger,Dur,1/16,D,0,Giulio Zeppieri,,153,4-6 7-5 6-1
+2026,2026-M0357,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-02,Thionville CH,Challenger,Dur,1/16,D,0,Giulio Zeppieri,,153,4-6 7-5 6-1
 2026,2026-M0358,DOC,name:Kouame Moise,Kouame Moise,Kouame,2026-03-02,Thionville CH,Challenger,Dur,1/4,D,0,Hugo Gaston,,96,3-6 6-3 6-4
 2026,2026-M0359,DOC,name:Kouame Moise,Kouame Moise,Kouame,2026-03-02,Thionville CH,Challenger,Dur,1/8,V,0,Giulio Zeppieri,,153,6-1 1-0 RET
 2026,2026-M0360,DOC,name:Kouame Moise,Kouame Moise,Kouame,2026-03-02,Thionville CH,Challenger,Dur,1/16,V,0,Jelle Sels,,343,6-3 6-0
@@ -9012,8 +9012,8 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0435,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-09,Cherbourg CH,Challenger,Dur,1/16,D,0,Remy Bertola,,212,7-5 6-1
 2026,2026-M0436,PAT,atp:210464,Blanch Darwin,Blanch,2026-03-10,Phoenix CH,Challenger,Dur,1/8,D,0,Billy Harris,,151,3-6 7-6(5) 7-6(6)
 2026,2026-M0437,PAT,atp:210464,Blanch Darwin,Blanch,2026-03-10,Phoenix CH,Challenger,Dur,1/16,V,0,Terence Atmane,,52,6-4 6-4
-2026,2026-M0438,PAT,atp:211514,Engel Justin,Engel,2026-03-16,Murcia CH,Challenger,Terre battue,1/8,D,0,Andrea Pellegrino,,128,3-6 6-2 7-5
-2026,2026-M0439,PAT,atp:211514,Engel Justin,Engel,2026-03-16,Murcia CH,Challenger,Terre battue,1/16,V,0,Abedallah Shelbayh,,306,6-3 3-6 7-5
+2026,2026-M0438,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-16,Murcia CH,Challenger,Terre battue,1/8,D,0,Andrea Pellegrino,,128,3-6 6-2 7-5
+2026,2026-M0439,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-16,Murcia CH,Challenger,Terre battue,1/16,V,0,Abedallah Shelbayh,,306,6-3 3-6 7-5
 2026,2026-M0440,CHAN,atp:207989,Alcaraz Carlos,Alcaraz,2026-03-18,Masters de Miami,Masters 1000,Dur,1/16,D,0,Sebastian Korda,,36,6-3 5-7 6-4
 2026,2026-M0441,CHAN,atp:207989,Alcaraz Carlos,Alcaraz,2026-03-18,Masters de Miami,Masters 1000,Dur,1/32,V,0,Joao Fonseca,CHEF,39,6-4 6-4
 2026,2026-M0442,PAT,atp:210464,Blanch Darwin,Blanch,2026-03-18,Masters de Miami,Masters 1000,Dur,1/32,D,0,Arthur Fils,CHEF,31,6-2 6-3
@@ -9080,13 +9080,13 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0503,DOC,atp:100644,Zverev Alexander,Zverev,2026-03-18,Masters de Miami,Masters 1000,Dur,1/8,V,0,Quentin Halys,,111,7-6(4) 7-6(1)
 2026,2026-M0504,DOC,atp:100644,Zverev Alexander,Zverev,2026-03-18,Masters de Miami,Masters 1000,Dur,1/16,V,0,Marin Cilic,,49,6-2 5-7 6-4
 2026,2026-M0505,DOC,atp:100644,Zverev Alexander,Zverev,2026-03-18,Masters de Miami,Masters 1000,Dur,1/32,V,0,Martin Damm,,133,6-2 6-4
-2026,2026-M0506,PAT,atp:211514,Engel Justin,Engel,2026-03-23,Alicante CH,Challenger,Terre battue,1/16,D,0,Dali Blanch,,433,6-2 6-1
+2026,2026-M0506,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-23,Alicante CH,Challenger,Terre battue,1/16,D,0,Dali Blanch,,433,6-2 6-1
 2026,2026-M0507,PAT,atp:210464,Blanch Darwin,Blanch,2026-03-30,Houston,Qualifications,Terre battue,Q2,D,0,Jack Pinnington Jones,,138,6-4 7-6(4)
 2026,2026-M0508,PAT,atp:210464,Blanch Darwin,Blanch,2026-03-30,Houston,Qualifications,Terre battue,Q1,V,0,Genaro Alberto Olivieri,,201,6-0 5-7 7-6(5)
 2026,2026-M0509,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-30,Marrakech,Qualifications,Terre battue,Q2,D,0,Henrique Rocha,,133,6-1 6-2
 2026,2026-M0510,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-03-30,Marrakech,Qualifications,Terre battue,Q1,V,0,Ilya Ivashka,,681,6-1 5-7 7-6(3)
-2026,2026-M0511,PAT,atp:211514,Engel Justin,Engel,2026-03-30,Menorca CH,Challenger,Terre battue,1/8,D,0,Alejo Sanchez Quilez,,528,6-0 7-5
-2026,2026-M0512,PAT,atp:211514,Engel Justin,Engel,2026-03-30,Menorca CH,Challenger,Terre battue,1/16,V,0,Inaki Montes De La Torre,,345,7-5 1-6 6-3
+2026,2026-M0511,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-30,Menorca CH,Challenger,Terre battue,1/8,D,0,Alejo Sanchez Quilez,,528,6-0 7-5
+2026,2026-M0512,PAT,atp:211514,Engel Justin,Engel (sorti),2026-03-30,Menorca CH,Challenger,Terre battue,1/16,V,0,Inaki Montes De La Torre,,345,7-5 1-6 6-3
 2026,2026-M0513,CHEF,atp:212588,Jodar Rafael,Jodar,2026-03-30,Marrakech,ATP 500/250,Terre battue,F,V,0,Marco Trungelliti,,117,6-3 6-2
 2026,2026-M0514,CHEF,atp:212588,Jodar Rafael,Jodar,2026-03-30,Marrakech,ATP 500/250,Terre battue,1/2,V,0,Camilo Ugo Carabelli,,67,6-2 6-1
 2026,2026-M0515,CHEF,atp:212588,Jodar Rafael,Jodar,2026-03-30,Marrakech,Qualifications,Terre battue,1/4,V,0,Alexandre Muller,,94,6-2 2-0 RET
@@ -9166,7 +9166,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0589,PAT,atp:200282,De Minaur Alex,De Minaur,2026-04-13,Barcelona,ATP 500/250,Terre battue,1/8,D,0,Hamad Medjedovic,,88,6-3 6-4
 2026,2026-M0590,PAT,atp:200282,De Minaur Alex,De Minaur,2026-04-13,Barcelona,ATP 500/250,Terre battue,1/16,V,0,Sebastian Ofner,,86,7-6(7) 6-4
 2026,2026-M0591,CHEF,atp:207733,Draper Jack,Draper,2026-04-13,Barcelona,ATP 500/250,Terre battue,1/16,D,0,Tomas Martin Etcheverry,,29,3-6 6-3 4-1 RET
-2026,2026-M0592,PAT,atp:211514,Engel Justin,Engel,2026-04-13,Munich,ATP 500/250,Terre battue,1/16,D,0,Vit Kopriva,,77,6-3 5-7 6-2
+2026,2026-M0592,PAT,atp:211514,Engel Justin,Engel (sorti),2026-04-13,Munich,ATP 500/250,Terre battue,1/16,D,0,Vit Kopriva,,77,6-3 5-7 6-2
 2026,2026-M0593,CHEF,atp:209950,Fils Arthur,Fils,2026-04-13,Barcelona,ATP 500/250,Terre battue,F,V,0,Andrey Rublev,,15,6-2 7-6(2)
 2026,2026-M0594,CHEF,atp:209950,Fils Arthur,Fils,2026-04-13,Barcelona,ATP 500/250,Terre battue,1/2,V,0,Rafael Jodar,,55,3-6 6-3 6-2
 2026,2026-M0595,CHEF,atp:209950,Fils Arthur,Fils,2026-04-13,Barcelona,Qualifications,Terre battue,1/4,V,0,Lorenzo Musetti,JULES,9,6-3 6-4
@@ -9270,11 +9270,11 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0693,PAT,atp:210464,Blanch Darwin,Blanch,2026-04-27,Mauthausen CH,Challenger,Terre battue,1/4,V,0,Matthew William Donald,,540,6-3 6-4
 2026,2026-M0694,PAT,atp:210464,Blanch Darwin,Blanch,2026-04-27,Mauthausen CH,Challenger,Terre battue,1/8,V,0,Hugo Gaston,,115,3-6 6-3 6-0
 2026,2026-M0695,PAT,atp:210464,Blanch Darwin,Blanch,2026-04-27,Mauthausen CH,Challenger,Terre battue,1/16,V,0,Jurij Rodionov,,162,1-6 6-1 7-6(6)
-2026,2026-M0696,PAT,atp:211514,Engel Justin,Engel,2026-04-27,Mauthausen CH,Challenger,Terre battue,1/16,D,0,Laslo Djere,,267,6-3 6-3
+2026,2026-M0696,PAT,atp:211514,Engel Justin,Engel (sorti),2026-04-27,Mauthausen CH,Challenger,Terre battue,1/16,D,0,Laslo Djere,,267,6-3 6-3
 2026,2026-M0697,JULES,atp:105777,Dimitrov Grigor,Dimitrov,2026-04-28,Aix-en-Provence CH,Challenger,Terre battue,1/16,D,0,Pol Martin Tiffon,,312,6-3 6-4
 2026,2026-M0698,CHAN,atp:210506,Michelsen Alex,Michelsen,2026-04-28,Aix-en-Provence CH,Challenger,Terre battue,1/8,D,0,Pol Martin Tiffon,,312,6-4 3-6 6-3
 2026,2026-M0699,DOC,atp:148679,Bernet Henry,Bernet,2026-05-04,Francavilla al Mare CH,Challenger,Terre battue,1/16,D,0,Facundo Diaz Acosta,,179,5-7 6-3 6-1
-2026,2026-M0700,PAT,atp:211514,Engel Justin,Engel,2026-05-04,Francavilla al Mare CH,Challenger,Terre battue,1/16,D,0,Nikolas Sanchez Izquierdo,,244,6-7(2) 6-2 6-2
+2026,2026-M0700,PAT,atp:211514,Engel Justin,Engel (sorti),2026-05-04,Francavilla al Mare CH,Challenger,Terre battue,1/16,D,0,Nikolas Sanchez Izquierdo,,244,6-7(2) 6-2 6-2
 2026,2026-M0701,JULES,atp:122330,Bublik Alexander,Bublik,2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/16,D,0,Learner Tien,PAT,21,4-6 6-3 7-5
 2026,2026-M0702,JULES,atp:122330,Bublik Alexander,Bublik,2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/32,V,0,Sebastian Baez,,65,6-1 6-2
 2026,2026-M0703,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-05-06,Masters de Rome,Qualifications,Terre battue,Q2,D,0,Dalibor Svrcina,,116,6-4 6-2
@@ -9332,7 +9332,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0755,DOC,atp:100644,Zverev Alexander,Zverev,2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/32,V,0,Daniel Altmaier,,64,7-5 6-3
 2026,2026-M0756,DOC,atp:148679,Bernet Henry,Bernet,2026-05-11,Tunis CH,Challenger,Terre battue,1/16,D,0,Dalibor Svrcina,,116,6-1 6-2
 2026,2026-M0757,PAT,atp:210464,Blanch Darwin,Blanch,2026-05-11,Oeiras 4 CH,Challenger,Terre battue,1/16,D,0,Jack Pinnington Jones,,137,6-3 6-7(4) 7-5
-2026,2026-M0758,PAT,atp:211514,Engel Justin,Engel,2026-05-11,Zagreb CH,Challenger,Terre battue,1/16,D,0,Luka Mikrut,,198,6-4 3-6 6-2
+2026,2026-M0758,PAT,atp:211514,Engel Justin,Engel (sorti),2026-05-11,Zagreb CH,Challenger,Terre battue,1/16,D,0,Luka Mikrut,,198,6-4 3-6 6-2
 2026,2026-M0759,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-05-12,Valencia CH,Challenger,Terre battue,1/16,D,0,Miomir Kecmanovic,,70,6-4 6-4
 2026,2026-M0760,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-05-12,Valencia CH,Challenger,Terre battue,Q2,V,0,Jakub Paul,,533,6-7(8) 6-1 6-4
 2026,2026-M0761,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-05-12,Valencia CH,Challenger,Terre battue,Q1,V,0,Sergi Fita Juan,,1215,6-3 6-2
@@ -9347,7 +9347,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M0770,PAT,atp:200282,De Minaur Alex,De Minaur,2026-05-17,Hamburg,Qualifications,Terre battue,1/4,V,0,Luciano Darderi,,16,6-0 6-3
 2026,2026-M0771,PAT,atp:200282,De Minaur Alex,De Minaur,2026-05-17,Hamburg,ATP 500/250,Terre battue,1/8,V,0,Alejandro Davidovich Fokina,,23,6-2 4-6 6-4
 2026,2026-M0772,PAT,atp:200282,De Minaur Alex,De Minaur,2026-05-17,Hamburg,ATP 500/250,Terre battue,1/16,V,0,Francisco Cerundolo,,27,3-6 6-4 6-3
-2026,2026-M0773,PAT,atp:211514,Engel Justin,Engel,2026-05-17,Hamburg,ATP 500/250,Terre battue,1/16,D,0,Ugo Humbert,JULES,34,6-3 3-6 7-6(2)
+2026,2026-M0773,PAT,atp:211514,Engel Justin,Engel (sorti),2026-05-17,Hamburg,ATP 500/250,Terre battue,1/16,D,0,Ugo Humbert,JULES,34,6-3 3-6 7-6(2)
 2026,2026-M0774,DOC,atp:126203,Fritz Taylor,Fritz,2026-05-17,Geneva,ATP 500/250,Terre battue,1/8,D,0,Alexei Popyrin,,61,6-4 6-4
 2026,2026-M0775,JULES,atp:200005,Humbert Ugo,Humbert,2026-05-17,Hamburg,Qualifications,Terre battue,1/4,D,0,Ignacio Buse,,57,6-3 5-7 6-3
 2026,2026-M0776,JULES,atp:200005,Humbert Ugo,Humbert,2026-05-17,Hamburg,ATP 500/250,Terre battue,1/8,V,0,Karen Khachanov,,15,6-3 3-6 7-6(3)
@@ -9617,7 +9617,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M1040,DOC,atp:100644,Zverev Alexander,Zverev,2026-06-29,Wimbledon,Grand Chelem,Gazon,1/8,V,0,Jiri Lehecka,,14,6-4 7-5 3-6 7-6(6)
 2026,2026-M1041,DOC,atp:100644,Zverev Alexander,Zverev,2026-06-29,Wimbledon,Grand Chelem,Gazon,1/16,V,0,Marcos Giron,,92,6-2 7-6(4) 6-4
 2026,2026-M1042,DOC,atp:100644,Zverev Alexander,Zverev,2026-06-29,Wimbledon,Grand Chelem,Gazon,1/32,V,0,Valentin Royer,,75,6-1 6-3 7-6(3)
-2026,2026-M1043,DOC,atp:100644,Zverev Alexander,Zverev,2026-06-29,Wimbledon,Grand Chelem,Gazon,1/64,V,0,Alexander Blockx,,36,6-4 6-7(8) 7-6(5) 7-6(0)
+2026,2026-M1043,DOC,atp:100644,Zverev Alexander,Zverev,2026-06-29,Wimbledon,Grand Chelem,Gazon,1/64,V,0,Alexander Blockx,PAT,36,6-4 6-7(8) 7-6(5) 7-6(0)
 2026,2026-M1044,DOC,atp:148679,Bernet Henry,Bernet,2026-07-06,Trieste CH,Challenger,Terre battue,1/2,D,0,Hugo Dellien,,162,4-6 7-6(4) 6-4
 2026,2026-M1045,DOC,atp:148679,Bernet Henry,Bernet,2026-07-06,Trieste CH,Challenger,Terre battue,1/4,V,0,Federico Bondioli,,363,2-6 7-6(8) 6-3
 2026,2026-M1046,DOC,atp:148679,Bernet Henry,Bernet,2026-07-06,Trieste CH,Challenger,Terre battue,1/8,V,0,Federico Agustin Gomez,,212,6-3 6-7(10) 6-3
@@ -9749,7 +9749,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M1172,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/2,D,0,Arthur Fils,CHEF,21,6-3 6-4
 2026,2026-M1173,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Qualifications,Dur,1/4,V,0,Tommy Paul,CHAN,24,2-6 6-3 6-4
 2026,2026-M1174,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/8,V,0,Rafael Jodar,CHEF,11,4-6 7-6(3) 6-3
-2026,2026-M1175,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/16,V,0,Alexander Blockx,,32,7-5 4-6 7-5
+2026,2026-M1175,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/16,V,0,Alexander Blockx,PAT,32,7-5 4-6 7-5
 2026,2026-M1176,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/32,V,0,Miomir Kecmanovic,,66,6-1 4-6 6-3
 2026,2026-M1177,PAT,atp:200282,De Minaur Alex,De Minaur,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/8,D,0,Arthur Fils,CHEF,21,6-3 6-4
 2026,2026-M1178,PAT,atp:200282,De Minaur Alex,De Minaur,2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/16,V,0,Arthur Fery,,37,7-5 7-6(3)
@@ -9833,7 +9833,7 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M1256,JULES,atp:122330,Bublik Alexander,Bublik,2026-08-31,US Open,Grand Chelem,Dur,1/64,V,0,J J Wolf,,253,6-4 6-2 3-6 6-1
 2026,2026-M1257,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-08-31,US Open,Qualifications,Dur,Q2,D,0,Christopher Oconnell,,106,7-5 6-4
 2026,2026-M1258,DOC,atp:149282,Budkov Kjaer Nicolai,Budkov Kjaer,2026-08-31,US Open,Qualifications,Dur,Q1,V,0,Maks Kasnikowski,,258,7-6(2) 4-6 6-4
-2026,2026-M1259,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-31,US Open,Grand Chelem,Dur,1/16,D,0,Alexander Blockx,,34,6-7(4) 6-3 6-0 6-3
+2026,2026-M1259,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-31,US Open,Grand Chelem,Dur,1/16,D,0,Alexander Blockx,PAT,34,6-7(4) 6-3 6-0 6-3
 2026,2026-M1260,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-31,US Open,Grand Chelem,Dur,1/32,V,0,Tristan Schoolkate,,180,3-6 6-3 6-4 7-5
 2026,2026-M1261,DOC,atp:207925,Cobolli Flavio,Cobolli,2026-08-31,US Open,Grand Chelem,Dur,1/64,V,0,Francisco Comesana,,119,3-6 2-6 6-3 6-4 6-4
 2026,2026-M1262,PAT,atp:200282,De Minaur Alex,De Minaur,2026-08-31,US Open,Grand Chelem,Dur,1/32,D,0,Botic Van De Zandschulp,,70,6-4 7-5 6-2
@@ -10124,3 +10124,61 @@ season,mid,team,person_key,player,short,event_date,event,level,surface,round,res
 2026,2026-M1547,CHAN,atp:126205,Paul Tommy,Paul,2026-10-19,Lyon,ATP 500/250,Dur,1/4,V,0,Corentin Moutet,,94,6-4 3-6 6-3
 2026,2026-M1548,CHAN,atp:126205,Paul Tommy,Paul,2026-10-19,Lyon,ATP 500/250,Dur,1/8,V,0,Benjamin Bonzi,,100,6-4 6-7(4) 6-3
 2026,2026-M1549,DOC,atp:148679,Bernet Henry,Bernet,2026-10-26,Basel,Qualifications,Dur,Q1,D,0,Daniel Altmaier,,65,7-5 7-6(5)
+2026,2026-M1550,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-10-07,Masters de Shanghai,Masters 1000,Dur,1/32,D,0,Quentin Halys,,48,4-6 7-6(9) 6-4
+2026,2026-M1551,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-09-30,Tokyo,ATP 500/250,Dur,1/16,D,0,Valentin Vacherot,,18,7-6(2) 7-6(4)
+2026,2026-M1552,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-31,US Open,Grand Chelem,Dur,1/4,D,0,Karen Khachanov,,50,6-2 7-5 3-2 RET
+2026,2026-M1553,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-31,US Open,Grand Chelem,Dur,1/8,V,0,Francisco Cerundolo,,25,6-3 4-6 7-5 7-5
+2026,2026-M1554,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-31,US Open,Grand Chelem,Dur,1/16,V,0,Flavio Cobolli,DOC,6,6-7(4) 6-3 6-0 6-3
+2026,2026-M1555,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-31,US Open,Grand Chelem,Dur,1/32,V,0,Marco Trungelliti,,83,6-3 6-2 3-6 6-1
+2026,2026-M1556,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-31,US Open,Grand Chelem,Dur,1/64,V,0,Tomas Barrios Vera,,144,6-3 6-4 6-2
+2026,2026-M1557,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/16,D,0,Flavio Cobolli,DOC,10,7-5 4-6 7-5
+2026,2026-M1558,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-13,Masters de Cincinnati,Masters 1000,Dur,1/32,V,0,Mariano Navone,,44,6-3 6-4
+2026,2026-M1559,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-02,Masters du Canada,Masters 1000,Dur,1/16,D,0,Jiri Lehecka,,12,6-3 6-4
+2026,2026-M1560,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-08-02,Masters du Canada,Masters 1000,Dur,1/32,V,1,Jaume Munar,,45,W/O
+2026,2026-M1561,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-07-20,Estoril,ATP 500/250,Terre battue,F,D,0,Luca Van Assche,,78,6-4 4-6 7-5
+2026,2026-M1562,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-07-20,Estoril,ATP 500/250,Terre battue,1/2,V,0,Luciano Darderi,,21,5-7 7-6(1) 7-6(5)
+2026,2026-M1563,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-07-20,Estoril,ATP 500/250,Terre battue,1/4,V,0,Roman Andres Burruchaga,,60,6-4 5-7 6-4
+2026,2026-M1564,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-07-20,Estoril,ATP 500/250,Terre battue,1/8,V,0,Kyrian Jacquet,,134,3-6 6-4 7-6(4)
+2026,2026-M1565,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-07-13,Umag,ATP 500/250,Terre battue,1/16,D,0,Titouan Droguet,,119,3-6 6-2 6-0
+2026,2026-M1566,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-06-29,Wimbledon,Grand Chelem,Gazon,1/64,D,0,Alexander Zverev,DOC,3,6-4 6-7(8) 7-6(5) 7-6(0)
+2026,2026-M1567,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-05-25,Roland-Garros,Grand Chelem,Terre battue,1/32,D,1,Alex De Minaur,,7,W/O
+2026,2026-M1568,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-05-25,Roland-Garros,Grand Chelem,Terre battue,1/64,V,0,Coleman Wong,,109,6-3 6-4 6-2
+2026,2026-M1569,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/16,D,0,Alexander Zverev,,3,6-1 6-4
+2026,2026-M1570,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/32,V,0,Tallon Griekspoor,,31,6-7(5) 6-3 6-4
+2026,2026-M1571,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-05-06,Masters de Rome,Masters 1000,Terre battue,1/64,V,0,Federico Cina,,225,4-6 6-1 6-3
+2026,2026-M1572,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/2,D,0,Alexander Zverev,,3,6-2 7-5
+2026,2026-M1573,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/4,V,0,Casper Ruud,,15,6-4 6-4
+2026,2026-M1574,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/8,V,0,Francisco Cerundolo,,20,7-6(8) 6-2
+2026,2026-M1575,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/16,V,0,Felix Auger Aliassime,,5,7-6(3) 6-3
+2026,2026-M1576,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/32,V,0,Brandon Nakashima,,32,3-6 6-3 6-4
+2026,2026-M1577,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-22,Masters de Madrid,Masters 1000,Terre battue,1/64,V,0,Cristian Garin,,85,4-6 7-5 7-5
+2026,2026-M1578,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-13,Munich,ATP 500/250,Terre battue,1/8,D,0,Ben Shelton,,6,6-4 7-6(8)
+2026,2026-M1579,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-13,Munich,ATP 500/250,Terre battue,1/16,V,0,Yannick Hanfmann,,51,7-6(2) 6-2
+2026,2026-M1580,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-05,Masters de Monte-Carlo,Masters 1000,Terre battue,1/8,D,0,Alex De Minaur,,6,7-5 7-6(4)
+2026,2026-M1581,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-05,Masters de Monte-Carlo,Masters 1000,Terre battue,1/16,V,0,Flavio Cobolli,,16,6-3 6-3
+2026,2026-M1582,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-05,Masters de Monte-Carlo,Masters 1000,Terre battue,1/32,V,0,Denis Shapovalov,,38,6-4 4-6 6-3
+2026,2026-M1583,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-05,Masters de Monte-Carlo,Qualifications,Terre battue,Q2,V,0,Damir Dzumhur,,81,7-6(8) 6-2
+2026,2026-M1584,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-04-05,Masters de Monte-Carlo,Qualifications,Terre battue,Q1,V,0,Francesco Maestrelli,,113,7-6(3) 6-2
+2026,2026-M1585,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-18,Masters de Miami,Qualifications,Dur,Q2,D,0,Christopher Oconnell,,130,4-6 6-4 6-4
+2026,2026-M1586,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-18,Masters de Miami,Qualifications,Dur,Q1,V,0,Chun Hsin Tseng,,140,7-6(5) 6-3
+2026,2026-M1587,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-10,Cap Cana CH,Challenger,Dur,1/2,D,0,Mariano Navone,,79,3-6 6-3 7-6(3)
+2026,2026-M1588,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-10,Cap Cana CH,Challenger,Dur,1/4,V,0,Coleman Wong,,123,4-6 7-5 6-3
+2026,2026-M1589,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-10,Cap Cana CH,Challenger,Dur,1/8,V,0,Dalibor Svrcina,,109,7-6(3) 6-7(8) 6-3
+2026,2026-M1590,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-10,Cap Cana CH,Challenger,Dur,1/16,V,0,Roberto Cid,,435,6-0 7-5
+2026,2026-M1591,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-03-04,Masters d'Indian Wells,Qualifications,Dur,Q1,D,0,Martin Landaluce,,155,6-0 6-2
+2026,2026-M1592,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-16,Lille CH,Challenger,Dur,F,D,0,Luca Van Assche,,130,6-2 6-4
+2026,2026-M1593,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-16,Lille CH,Challenger,Dur,1/2,V,0,Jerome Kym,,197,6-3 7-6(4)
+2026,2026-M1594,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-16,Lille CH,Challenger,Dur,1/4,V,0,Benjamin Bonzi,,112,6-3 6-4
+2026,2026-M1595,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-16,Lille CH,Challenger,Dur,1/8,V,0,Arthur Bouquier,,358,6-1 7-6(3)
+2026,2026-M1596,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-16,Lille CH,Challenger,Dur,1/16,V,0,Roman Safiullin,,186,6-2 6-2
+2026,2026-M1597,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-09,Pau CH,Challenger,Dur,1/16,D,0,Clement Tabur,,213,6-1 6-4
+2026,2026-M1598,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-02-07,Coupe Davis QLS R1: BEL vs BUL,Compétition par équipes,Terre battue,Poule,V,0,Iliyan Radulov,,663,6-7(3) 6-4 6-1
+2026,2026-M1599,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-19,Open d'Australie,Grand Chelem,Dur,1/64,D,0,Jaime Faria,,151,6-3 3-6 6-3 6-4
+2026,2026-M1600,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-19,Open d'Australie,Qualifications,Dur,Q3,D,0,Jason Kubler,,194,3-6 6-3 1-0 RET
+2026,2026-M1601,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-19,Open d'Australie,Qualifications,Dur,Q2,V,0,Alex Molcan,,206,6-1 6-1
+2026,2026-M1602,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-19,Open d'Australie,Qualifications,Dur,Q1,V,0,Marco Cecchinato,,230,6-3 6-4
+2026,2026-M1603,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-05,Canberra CH,Challenger,Dur,F,V,0,Rafael Jodar,,165,6-4 6-4
+2026,2026-M1604,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-05,Canberra CH,Challenger,Dur,1/2,V,0,James Mccabe,,188,6-3 6-7(3) 6-3
+2026,2026-M1605,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-05,Canberra CH,Challenger,Dur,1/4,V,0,Vit Kopriva,,101,7-5 5-7 6-4
+2026,2026-M1606,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-05,Canberra CH,Challenger,Dur,1/8,V,0,Roberto Carballes Baena,,128,7-6(8) 3-6 7-5
+2026,2026-M1607,PAT,atp:210696,Blockx Alexander,Blockx (entré),2026-01-05,Canberra CH,Challenger,Dur,1/16,V,0,Nicolai Budkov Kjaer,,135,6-2 6-3

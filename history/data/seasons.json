@@ -557,8 +557,8 @@
 "final_week": 36,
 "final_date": "2026-10-26",
 "weeks_recorded": 37,
-"players": 31,
-"matches": 1549,
+"players": 32,
+"matches": 1607,
 "final_standings": [
 {
 "rank": 1,
@@ -571,8 +571,8 @@
 "rank": 2,
 "team": "DOC",
 "race": 16268,
-"duels": 130,
-"total": 16398
+"duels": 140,
+"total": 16408
 },
 {
 "rank": 3,
@@ -584,9 +584,9 @@
 {
 "rank": 4,
 "team": "PAT",
-"race": 11824,
-"duels": 140,
-"total": 11964
+"race": 12509,
+"duels": 145,
+"total": 12654
 },
 {
 "rank": 5,

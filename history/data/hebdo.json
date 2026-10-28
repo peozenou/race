@@ -14933,15 +14933,15 @@
 "week": 19,
 "date": "2026-06-29",
 "team": "PAT",
-"race": 7131,
+"race": 7141,
 "duels": 85,
-"total": 7216,
+"total": 7226,
 "corrected": false,
-"race_recorded": 7131,
+"race_recorded": 7141,
 "duels_recorded": 85,
-"total_recorded": 7216,
+"total_recorded": 7226,
 "rank": 4,
-"share": 0.1546
+"share": 0.1547
 },
 {
 "season": 2026,
@@ -14957,7 +14957,7 @@
 "duels_recorded": 100,
 "total_recorded": 9774,
 "rank": 3,
-"share": 0.2094
+"share": 0.2093
 },
 {
 "season": 2026,
@@ -14989,7 +14989,7 @@
 "duels_recorded": 130,
 "total_recorded": 12319,
 "rank": 1,
-"share": 0.2639
+"share": 0.2638
 },
 {
 "season": 2026,
@@ -15005,7 +15005,7 @@
 "duels_recorded": 65,
 "total_recorded": 6782,
 "rank": 5,
-"share": 0.1453
+"share": 0.1452
 },
 {
 "season": 2026,
@@ -15013,15 +15013,15 @@
 "week": 20,
 "date": "2026-07-06",
 "team": "PAT",
-"race": 7131,
+"race": 7141,
 "duels": 85,
-"total": 7216,
+"total": 7226,
 "corrected": false,
-"race_recorded": 7131,
+"race_recorded": 7141,
 "duels_recorded": 85,
-"total_recorded": 7216,
+"total_recorded": 7226,
 "rank": 4,
-"share": 0.1546
+"share": 0.1547
 },
 {
 "season": 2026,
@@ -15037,7 +15037,7 @@
 "duels_recorded": 100,
 "total_recorded": 9774,
 "rank": 3,
-"share": 0.2094
+"share": 0.2093
 },
 {
 "season": 2026,
@@ -15069,7 +15069,7 @@
 "duels_recorded": 130,
 "total_recorded": 12319,
 "rank": 1,
-"share": 0.2639
+"share": 0.2638
 },
 {
 "season": 2026,
@@ -15085,7 +15085,7 @@
 "duels_recorded": 65,
 "total_recorded": 6782,
 "rank": 5,
-"share": 0.1453
+"share": 0.1452
 },
 {
 "season": 2026,
@@ -15093,15 +15093,15 @@
 "week": 21,
 "date": "2026-07-13",
 "team": "PAT",
-"race": 7373,
+"race": 7383,
 "duels": 85,
-"total": 7458,
+"total": 7468,
 "corrected": false,
-"race_recorded": 7373,
+"race_recorded": 7383,
 "duels_recorded": 85,
-"total_recorded": 7458,
+"total_recorded": 7468,
 "rank": 5,
-"share": 0.1414
+"share": 0.1416
 },
 {
 "season": 2026,
@@ -15110,12 +15110,12 @@
 "date": "2026-07-13",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854,
+"duels": 115,
+"total": 11859,
 "corrected": false,
 "race_recorded": 11744,
-"duels_recorded": 110,
-"total_recorded": 11854,
+"duels_recorded": 115,
+"total_recorded": 11859,
 "rank": 2,
 "share": 0.2248
 },
@@ -15149,7 +15149,7 @@
 "duels_recorded": 140,
 "total_recorded": 14529,
 "rank": 1,
-"share": 0.2755
+"share": 0.2754
 },
 {
 "season": 2026,
@@ -15165,7 +15165,7 @@
 "duels_recorded": 70,
 "total_recorded": 8057,
 "rank": 4,
-"share": 0.1528
+"share": 0.1527
 },
 {
 "season": 2026,
@@ -15173,15 +15173,15 @@
 "week": 22,
 "date": "2026-07-20",
 "team": "PAT",
-"race": 7423,
+"race": 7433,
 "duels": 85,
-"total": 7508,
+"total": 7518,
 "corrected": false,
-"race_recorded": 7423,
+"race_recorded": 7433,
 "duels_recorded": 85,
-"total_recorded": 7508,
+"total_recorded": 7518,
 "rank": 5,
-"share": 0.1415
+"share": 0.1416
 },
 {
 "season": 2026,
@@ -15190,12 +15190,12 @@
 "date": "2026-07-20",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854,
+"duels": 115,
+"total": 11859,
 "corrected": false,
 "race_recorded": 11744,
-"duels_recorded": 110,
-"total_recorded": 11854,
+"duels_recorded": 115,
+"total_recorded": 11859,
 "rank": 2,
 "share": 0.2234
 },
@@ -15213,7 +15213,7 @@
 "duels_recorded": 150,
 "total_recorded": 10840,
 "rank": 3,
-"share": 0.2043
+"share": 0.2042
 },
 {
 "season": 2026,
@@ -15229,7 +15229,7 @@
 "duels_recorded": 140,
 "total_recorded": 14779,
 "rank": 1,
-"share": 0.2785
+"share": 0.2784
 },
 {
 "season": 2026,
@@ -15253,15 +15253,15 @@
 "week": 23,
 "date": "2026-07-27",
 "team": "PAT",
-"race": 7423,
+"race": 7598,
 "duels": 85,
-"total": 7508,
+"total": 7683,
 "corrected": false,
-"race_recorded": 7423,
+"race_recorded": 7598,
 "duels_recorded": 85,
-"total_recorded": 7508,
+"total_recorded": 7683,
 "rank": 5,
-"share": 0.1407
+"share": 0.1435
 },
 {
 "season": 2026,
@@ -15270,14 +15270,14 @@
 "date": "2026-07-27",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854,
+"duels": 115,
+"total": 11859,
 "corrected": false,
 "race_recorded": 11744,
-"duels_recorded": 110,
-"total_recorded": 11854,
+"duels_recorded": 115,
+"total_recorded": 11859,
 "rank": 2,
-"share": 0.2222
+"share": 0.2215
 },
 {
 "season": 2026,
@@ -15293,7 +15293,7 @@
 "duels_recorded": 150,
 "total_recorded": 10940,
 "rank": 3,
-"share": 0.205
+"share": 0.2043
 },
 {
 "season": 2026,
@@ -15309,7 +15309,7 @@
 "duels_recorded": 140,
 "total_recorded": 14819,
 "rank": 1,
-"share": 0.2777
+"share": 0.2768
 },
 {
 "season": 2026,
@@ -15325,7 +15325,7 @@
 "duels_recorded": 70,
 "total_recorded": 8237,
 "rank": 4,
-"share": 0.1544
+"share": 0.1539
 },
 {
 "season": 2026,
@@ -15333,15 +15333,15 @@
 "week": 24,
 "date": "2026-08-03",
 "team": "PAT",
-"race": 7687,
+"race": 7912,
 "duels": 90,
-"total": 7777,
+"total": 8002,
 "corrected": false,
-"race_recorded": 7687,
+"race_recorded": 7912,
 "duels_recorded": 90,
-"total_recorded": 7777,
+"total_recorded": 8002,
 "rank": 5,
-"share": 0.1418
+"share": 0.1452
 },
 {
 "season": 2026,
@@ -15350,14 +15350,14 @@
 "date": "2026-08-03",
 "team": "DOC",
 "race": 12250,
-"duels": 120,
-"total": 12370,
+"duels": 125,
+"total": 12375,
 "corrected": false,
 "race_recorded": 12250,
-"duels_recorded": 120,
-"total_recorded": 12370,
+"duels_recorded": 125,
+"total_recorded": 12375,
 "rank": 2,
-"share": 0.2255
+"share": 0.2246
 },
 {
 "season": 2026,
@@ -15373,7 +15373,7 @@
 "duels_recorded": 150,
 "total_recorded": 11125,
 "rank": 3,
-"share": 0.2028
+"share": 0.2019
 },
 {
 "season": 2026,
@@ -15389,7 +15389,7 @@
 "duels_recorded": 130,
 "total_recorded": 15179,
 "rank": 1,
-"share": 0.2767
+"share": 0.2755
 },
 {
 "season": 2026,
@@ -15405,7 +15405,7 @@
 "duels_recorded": 50,
 "total_recorded": 8412,
 "rank": 4,
-"share": 0.1533
+"share": 0.1527
 },
 {
 "season": 2026,
@@ -15413,15 +15413,15 @@
 "week": 25,
 "date": "2026-08-10",
 "team": "PAT",
-"race": 7687,
+"race": 7912,
 "duels": 90,
-"total": 7777,
+"total": 8002,
 "corrected": false,
-"race_recorded": 7687,
+"race_recorded": 7912,
 "duels_recorded": 90,
-"total_recorded": 7777,
+"total_recorded": 8002,
 "rank": 5,
-"share": 0.1418
+"share": 0.1452
 },
 {
 "season": 2026,
@@ -15430,14 +15430,14 @@
 "date": "2026-08-10",
 "team": "DOC",
 "race": 12250,
-"duels": 120,
-"total": 12370,
+"duels": 125,
+"total": 12375,
 "corrected": false,
 "race_recorded": 12250,
-"duels_recorded": 120,
-"total_recorded": 12370,
+"duels_recorded": 125,
+"total_recorded": 12375,
 "rank": 2,
-"share": 0.2255
+"share": 0.2246
 },
 {
 "season": 2026,
@@ -15453,7 +15453,7 @@
 "duels_recorded": 150,
 "total_recorded": 11125,
 "rank": 3,
-"share": 0.2028
+"share": 0.2019
 },
 {
 "season": 2026,
@@ -15469,7 +15469,7 @@
 "duels_recorded": 130,
 "total_recorded": 15179,
 "rank": 1,
-"share": 0.2767
+"share": 0.2755
 },
 {
 "season": 2026,
@@ -15485,7 +15485,7 @@
 "duels_recorded": 50,
 "total_recorded": 8412,
 "rank": 4,
-"share": 0.1533
+"share": 0.1527
 },
 {
 "season": 2026,
@@ -15493,15 +15493,15 @@
 "week": 26,
 "date": "2026-08-17",
 "team": "PAT",
-"race": 9227,
+"race": 9502,
 "duels": 105,
-"total": 9332,
+"total": 9607,
 "corrected": false,
-"race_recorded": 9227,
+"race_recorded": 9502,
 "duels_recorded": 105,
-"total_recorded": 9332,
+"total_recorded": 9607,
 "rank": 4,
-"share": 0.1607
+"share": 0.1646
 },
 {
 "season": 2026,
@@ -15510,14 +15510,14 @@
 "date": "2026-08-17",
 "team": "DOC",
 "race": 12410,
-"duels": 120,
-"total": 12530,
+"duels": 125,
+"total": 12535,
 "corrected": false,
 "race_recorded": 12410,
-"duels_recorded": 120,
-"total_recorded": 12530,
+"duels_recorded": 125,
+"total_recorded": 12535,
 "rank": 2,
-"share": 0.2157
+"share": 0.2148
 },
 {
 "season": 2026,
@@ -15533,7 +15533,7 @@
 "duels_recorded": 150,
 "total_recorded": 11555,
 "rank": 3,
-"share": 0.1989
+"share": 0.198
 },
 {
 "season": 2026,
@@ -15549,7 +15549,7 @@
 "duels_recorded": 130,
 "total_recorded": 16049,
 "rank": 1,
-"share": 0.2763
+"share": 0.275
 },
 {
 "season": 2026,
@@ -15565,7 +15565,7 @@
 "duels_recorded": 50,
 "total_recorded": 8622,
 "rank": 5,
-"share": 0.1484
+"share": 0.1477
 },
 {
 "season": 2026,
@@ -15573,15 +15573,15 @@
 "week": 27,
 "date": "2026-08-24",
 "team": "PAT",
-"race": 9277,
+"race": 9552,
 "duels": 105,
-"total": 9382,
+"total": 9657,
 "corrected": false,
-"race_recorded": 9277,
+"race_recorded": 9552,
 "duels_recorded": 105,
-"total_recorded": 9382,
+"total_recorded": 9657,
 "rank": 4,
-"share": 0.1547
+"share": 0.1585
 },
 {
 "season": 2026,
@@ -15590,14 +15590,14 @@
 "date": "2026-08-24",
 "team": "DOC",
 "race": 12984,
-"duels": 135,
-"total": 13119,
+"duels": 145,
+"total": 13129,
 "corrected": false,
 "race_recorded": 12984,
-"duels_recorded": 135,
-"total_recorded": 13119,
+"duels_recorded": 145,
+"total_recorded": 13129,
 "rank": 2,
-"share": 0.2164
+"share": 0.2155
 },
 {
 "season": 2026,
@@ -15613,7 +15613,7 @@
 "duels_recorded": 155,
 "total_recorded": 11760,
 "rank": 3,
-"share": 0.194
+"share": 0.193
 },
 {
 "season": 2026,
@@ -15629,7 +15629,7 @@
 "duels_recorded": 130,
 "total_recorded": 17049,
 "rank": 1,
-"share": 0.2812
+"share": 0.2799
 },
 {
 "season": 2026,
@@ -15645,7 +15645,7 @@
 "duels_recorded": 50,
 "total_recorded": 9322,
 "rank": 5,
-"share": 0.1537
+"share": 0.153
 },
 {
 "season": 2026,
@@ -15653,15 +15653,15 @@
 "week": 28,
 "date": "2026-08-31",
 "team": "PAT",
-"race": 9317,
+"race": 9602,
 "duels": 105,
-"total": 9422,
+"total": 9707,
 "corrected": false,
-"race_recorded": 9317,
+"race_recorded": 9602,
 "duels_recorded": 105,
-"total_recorded": 9422,
-"rank": 5,
-"share": 0.1545
+"total_recorded": 9707,
+"rank": 4,
+"share": 0.1584
 },
 {
 "season": 2026,
@@ -15670,14 +15670,14 @@
 "date": "2026-08-31",
 "team": "DOC",
 "race": 13022,
-"duels": 135,
-"total": 13157,
+"duels": 145,
+"total": 13167,
 "corrected": false,
 "race_recorded": 13022,
-"duels_recorded": 135,
-"total_recorded": 13157,
+"duels_recorded": 145,
+"total_recorded": 13167,
 "rank": 2,
-"share": 0.2157
+"share": 0.2148
 },
 {
 "season": 2026,
@@ -15693,7 +15693,7 @@
 "duels_recorded": 155,
 "total_recorded": 11890,
 "rank": 3,
-"share": 0.1949
+"share": 0.194
 },
 {
 "season": 2026,
@@ -15709,7 +15709,7 @@
 "duels_recorded": 130,
 "total_recorded": 17079,
 "rank": 1,
-"share": 0.28
+"share": 0.2786
 },
 {
 "season": 2026,
@@ -15724,8 +15724,8 @@
 "race_recorded": 9402,
 "duels_recorded": 50,
 "total_recorded": 9452,
-"rank": 4,
-"share": 0.155
+"rank": 5,
+"share": 0.1542
 },
 {
 "season": 2026,
@@ -15733,15 +15733,15 @@
 "week": 29,
 "date": "2026-09-07",
 "team": "PAT",
-"race": 9317,
+"race": 9602,
 "duels": 105,
-"total": 9422,
+"total": 9707,
 "corrected": false,
-"race_recorded": 9317,
+"race_recorded": 9602,
 "duels_recorded": 105,
-"total_recorded": 9422,
-"rank": 5,
-"share": 0.1545
+"total_recorded": 9707,
+"rank": 4,
+"share": 0.1584
 },
 {
 "season": 2026,
@@ -15750,14 +15750,14 @@
 "date": "2026-09-07",
 "team": "DOC",
 "race": 13022,
-"duels": 135,
-"total": 13157,
+"duels": 145,
+"total": 13167,
 "corrected": false,
 "race_recorded": 13022,
-"duels_recorded": 135,
-"total_recorded": 13157,
+"duels_recorded": 145,
+"total_recorded": 13167,
 "rank": 2,
-"share": 0.2157
+"share": 0.2148
 },
 {
 "season": 2026,
@@ -15773,7 +15773,7 @@
 "duels_recorded": 155,
 "total_recorded": 11890,
 "rank": 3,
-"share": 0.1949
+"share": 0.194
 },
 {
 "season": 2026,
@@ -15789,7 +15789,7 @@
 "duels_recorded": 130,
 "total_recorded": 17079,
 "rank": 1,
-"share": 0.28
+"share": 0.2786
 },
 {
 "season": 2026,
@@ -15804,8 +15804,8 @@
 "race_recorded": 9402,
 "duels_recorded": 50,
 "total_recorded": 9452,
-"rank": 4,
-"share": 0.155
+"rank": 5,
+"share": 0.1542
 },
 {
 "season": 2026,
@@ -15813,15 +15813,15 @@
 "week": 30,
 "date": "2026-09-14",
 "team": "PAT",
-"race": 10827,
-"duels": 120,
-"total": 10947,
+"race": 11502,
+"duels": 125,
+"total": 11627,
 "corrected": false,
-"race_recorded": 10827,
-"duels_recorded": 120,
-"total_recorded": 10947,
+"race_recorded": 11502,
+"duels_recorded": 125,
+"total_recorded": 11627,
 "rank": 4,
-"share": 0.1636
+"share": 0.172
 },
 {
 "season": 2026,
@@ -15830,14 +15830,14 @@
 "date": "2026-09-14",
 "team": "DOC",
 "race": 15294,
-"duels": 110,
-"total": 15404,
+"duels": 120,
+"total": 15414,
 "corrected": false,
 "race_recorded": 15294,
-"duels_recorded": 110,
-"total_recorded": 15404,
+"duels_recorded": 120,
+"total_recorded": 15414,
 "rank": 2,
-"share": 0.2302
+"share": 0.228
 },
 {
 "season": 2026,
@@ -15853,7 +15853,7 @@
 "duels_recorded": 145,
 "total_recorded": 13050,
 "rank": 3,
-"share": 0.195
+"share": 0.1931
 },
 {
 "season": 2026,
@@ -15869,7 +15869,7 @@
 "duels_recorded": 165,
 "total_recorded": 17154,
 "rank": 1,
-"share": 0.2564
+"share": 0.2538
 },
 {
 "season": 2026,
@@ -15885,7 +15885,7 @@
 "duels_recorded": 80,
 "total_recorded": 10352,
 "rank": 5,
-"share": 0.1547
+"share": 0.1531
 },
 {
 "season": 2026,
@@ -15893,15 +15893,15 @@
 "week": 31,
 "date": "2026-09-21",
 "team": "PAT",
-"race": 10952,
-"duels": 125,
-"total": 11077,
+"race": 11627,
+"duels": 130,
+"total": 11757,
 "corrected": false,
-"race_recorded": 10952,
-"duels_recorded": 125,
-"total_recorded": 11077,
+"race_recorded": 11627,
+"duels_recorded": 130,
+"total_recorded": 11757,
 "rank": 4,
-"share": 0.1651
+"share": 0.1735
 },
 {
 "season": 2026,
@@ -15910,14 +15910,14 @@
 "date": "2026-09-21",
 "team": "DOC",
 "race": 15332,
-"duels": 110,
-"total": 15442,
+"duels": 120,
+"total": 15452,
 "corrected": false,
 "race_recorded": 15332,
-"duels_recorded": 110,
-"total_recorded": 15442,
+"duels_recorded": 120,
+"total_recorded": 15452,
 "rank": 2,
-"share": 0.2302
+"share": 0.228
 },
 {
 "season": 2026,
@@ -15933,7 +15933,7 @@
 "duels_recorded": 155,
 "total_recorded": 13060,
 "rank": 3,
-"share": 0.1947
+"share": 0.1927
 },
 {
 "season": 2026,
@@ -15949,7 +15949,7 @@
 "duels_recorded": 165,
 "total_recorded": 17154,
 "rank": 1,
-"share": 0.2557
+"share": 0.2531
 },
 {
 "season": 2026,
@@ -15965,7 +15965,7 @@
 "duels_recorded": 80,
 "total_recorded": 10352,
 "rank": 5,
-"share": 0.1543
+"share": 0.1527
 },
 {
 "season": 2026,
@@ -15973,15 +15973,15 @@
 "week": 32,
 "date": "2026-09-28",
 "team": "PAT",
-"race": 10954,
-"duels": 135,
-"total": 11089,
+"race": 11629,
+"duels": 140,
+"total": 11769,
 "corrected": false,
-"race_recorded": 10954,
-"duels_recorded": 135,
-"total_recorded": 11089,
+"race_recorded": 11629,
+"duels_recorded": 140,
+"total_recorded": 11769,
 "rank": 4,
-"share": 0.1648
+"share": 0.1731
 },
 {
 "season": 2026,
@@ -15990,14 +15990,14 @@
 "date": "2026-09-28",
 "team": "DOC",
 "race": 15332,
-"duels": 115,
-"total": 15447,
+"duels": 125,
+"total": 15457,
 "corrected": false,
 "race_recorded": 15332,
-"duels_recorded": 115,
-"total_recorded": 15447,
+"duels_recorded": 125,
+"total_recorded": 15457,
 "rank": 2,
-"share": 0.2295
+"share": 0.2273
 },
 {
 "season": 2026,
@@ -16013,7 +16013,7 @@
 "duels_recorded": 160,
 "total_recorded": 13155,
 "rank": 3,
-"share": 0.1955
+"share": 0.1935
 },
 {
 "season": 2026,
@@ -16029,7 +16029,7 @@
 "duels_recorded": 170,
 "total_recorded": 17262,
 "rank": 1,
-"share": 0.2565
+"share": 0.2539
 },
 {
 "season": 2026,
@@ -16045,7 +16045,7 @@
 "duels_recorded": 80,
 "total_recorded": 10352,
 "rank": 5,
-"share": 0.1538
+"share": 0.1522
 },
 {
 "season": 2026,
@@ -16053,15 +16053,15 @@
 "week": 33,
 "date": "2026-10-05",
 "team": "PAT",
-"race": 11166,
-"duels": 140,
-"total": 11306,
+"race": 11841,
+"duels": 145,
+"total": 11986,
 "corrected": false,
-"race_recorded": 11166,
-"duels_recorded": 140,
-"total_recorded": 11306,
+"race_recorded": 11841,
+"duels_recorded": 145,
+"total_recorded": 11986,
 "rank": 4,
-"share": 0.1642
+"share": 0.1724
 },
 {
 "season": 2026,
@@ -16070,14 +16070,14 @@
 "date": "2026-10-05",
 "team": "DOC",
 "race": 15460,
-"duels": 115,
-"total": 15575,
+"duels": 125,
+"total": 15585,
 "corrected": false,
 "race_recorded": 15460,
-"duels_recorded": 115,
-"total_recorded": 15575,
+"duels_recorded": 125,
+"total_recorded": 15585,
 "rank": 2,
-"share": 0.2262
+"share": 0.2241
 },
 {
 "season": 2026,
@@ -16093,7 +16093,7 @@
 "duels_recorded": 170,
 "total_recorded": 13765,
 "rank": 3,
-"share": 0.1999
+"share": 0.198
 },
 {
 "season": 2026,
@@ -16109,7 +16109,7 @@
 "duels_recorded": 175,
 "total_recorded": 17544,
 "rank": 1,
-"share": 0.2548
+"share": 0.2523
 },
 {
 "season": 2026,
@@ -16125,7 +16125,7 @@
 "duels_recorded": 85,
 "total_recorded": 10657,
 "rank": 5,
-"share": 0.1548
+"share": 0.1533
 },
 {
 "season": 2026,
@@ -16133,15 +16133,15 @@
 "week": 34,
 "date": "2026-10-12",
 "team": "PAT",
-"race": 11166,
-"duels": 140,
-"total": 11306,
+"race": 11841,
+"duels": 145,
+"total": 11986,
 "corrected": false,
-"race_recorded": 11166,
-"duels_recorded": 140,
-"total_recorded": 11306,
+"race_recorded": 11841,
+"duels_recorded": 145,
+"total_recorded": 11986,
 "rank": 4,
-"share": 0.1642
+"share": 0.1723
 },
 {
 "season": 2026,
@@ -16150,14 +16150,14 @@
 "date": "2026-10-12",
 "team": "DOC",
 "race": 15460,
-"duels": 115,
-"total": 15575,
+"duels": 125,
+"total": 15585,
 "corrected": false,
 "race_recorded": 15460,
-"duels_recorded": 115,
-"total_recorded": 15575,
+"duels_recorded": 125,
+"total_recorded": 15585,
 "rank": 2,
-"share": 0.2262
+"share": 0.2241
 },
 {
 "season": 2026,
@@ -16173,7 +16173,7 @@
 "duels_recorded": 170,
 "total_recorded": 13765,
 "rank": 3,
-"share": 0.1999
+"share": 0.1979
 },
 {
 "season": 2026,
@@ -16189,7 +16189,7 @@
 "duels_recorded": 175,
 "total_recorded": 17544,
 "rank": 1,
-"share": 0.2548
+"share": 0.2523
 },
 {
 "season": 2026,
@@ -16205,7 +16205,7 @@
 "duels_recorded": 95,
 "total_recorded": 10667,
 "rank": 5,
-"share": 0.1549
+"share": 0.1534
 },
 {
 "season": 2026,
@@ -16213,15 +16213,15 @@
 "week": 35,
 "date": "2026-10-19",
 "team": "PAT",
-"race": 11786,
-"duels": 140,
-"total": 11926,
+"race": 12471,
+"duels": 145,
+"total": 12616,
 "corrected": false,
-"race_recorded": 11786,
-"duels_recorded": 140,
-"total_recorded": 11926,
+"race_recorded": 12471,
+"duels_recorded": 145,
+"total_recorded": 12616,
 "rank": 4,
-"share": 0.1652
+"share": 0.1731
 },
 {
 "season": 2026,
@@ -16230,14 +16230,14 @@
 "date": "2026-10-19",
 "team": "DOC",
 "race": 15988,
-"duels": 125,
-"total": 16113,
+"duels": 135,
+"total": 16123,
 "corrected": false,
 "race_recorded": 15988,
-"duels_recorded": 125,
-"total_recorded": 16113,
+"duels_recorded": 135,
+"total_recorded": 16123,
 "rank": 2,
-"share": 0.2232
+"share": 0.2212
 },
 {
 "season": 2026,
@@ -16253,7 +16253,7 @@
 "duels_recorded": 170,
 "total_recorded": 14625,
 "rank": 3,
-"share": 0.2026
+"share": 0.2007
 },
 {
 "season": 2026,
@@ -16269,7 +16269,7 @@
 "duels_recorded": 185,
 "total_recorded": 18424,
 "rank": 1,
-"share": 0.2553
+"share": 0.2528
 },
 {
 "season": 2026,
@@ -16285,7 +16285,7 @@
 "duels_recorded": 95,
 "total_recorded": 11087,
 "rank": 5,
-"share": 0.1536
+"share": 0.1521
 },
 {
 "season": 2026,
@@ -16293,15 +16293,15 @@
 "week": 36,
 "date": "2026-10-26",
 "team": "PAT",
-"race": 11824,
-"duels": 140,
-"total": 11964,
+"race": 12509,
+"duels": 145,
+"total": 12654,
 "corrected": false,
-"race_recorded": 11824,
-"duels_recorded": 140,
-"total_recorded": 11964,
+"race_recorded": 12509,
+"duels_recorded": 145,
+"total_recorded": 12654,
 "rank": 4,
-"share": 0.1631
+"share": 0.1709
 },
 {
 "season": 2026,
@@ -16310,14 +16310,14 @@
 "date": "2026-10-26",
 "team": "DOC",
 "race": 16268,
-"duels": 130,
-"total": 16398,
+"duels": 140,
+"total": 16408,
 "corrected": false,
 "race_recorded": 16268,
-"duels_recorded": 130,
-"total_recorded": 16398,
+"duels_recorded": 140,
+"total_recorded": 16408,
 "rank": 2,
-"share": 0.2235
+"share": 0.2216
 },
 {
 "season": 2026,
@@ -16333,7 +16333,7 @@
 "duels_recorded": 175,
 "total_recorded": 15000,
 "rank": 3,
-"share": 0.2045
+"share": 0.2025
 },
 {
 "season": 2026,
@@ -16349,7 +16349,7 @@
 "duels_recorded": 190,
 "total_recorded": 18554,
 "rank": 1,
-"share": 0.2529
+"share": 0.2505
 },
 {
 "season": 2026,
@@ -16365,6 +16365,6 @@
 "duels_recorded": 110,
 "total_recorded": 11442,
 "rank": 5,
-"share": 0.156
+"share": 0.1545
 }
 ]

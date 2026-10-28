@@ -1012,6 +1012,7 @@ season,event_date,event,round,winner_team,winner,loser_team,loser,score
 2026,2026-06-29,Wimbledon,1/8,DOC,Fritz Taylor,JULES,Alexander Bublik,7-6(1) 6-4 6-4
 2026,2026-06-29,Wimbledon,F,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-7(7) 7-6(2) 6-3 6-4
 2026,2026-06-29,Wimbledon,1/2,CHEF,Sinner Jannik,JULES,Novak Djokovic,6-4 6-4 6-4
+2026,2026-06-29,Wimbledon,1/64,DOC,Zverev Alexander,PAT,Alexander Blockx,6-4 6-7(8) 7-6(5) 7-6(0)
 2026,2026-07-27,Washington,F,DOC,Fritz Taylor,CHEF,Rafael Jodar,7-6(2) 6-4
 2026,2026-07-27,Washington,1/4,DOC,Fritz Taylor,CHAN,Alex Michelsen,6-1 3-6 7-6(6)
 2026,2026-07-27,Washington,1/4,CHEF,Jodar Rafael,JULES,Lorenzo Musetti,1-6 6-1 6-4
@@ -1023,6 +1024,7 @@ season,event_date,event,round,winner_team,winner,loser_team,loser,score
 2026,2026-08-02,Masters du Canada,1/16,PAT,Tien Learner,CHAN,Tommy Paul,6-3 6-2
 2026,2026-08-13,Masters de Cincinnati,1/4,DOC,Cobolli Flavio,CHAN,Tommy Paul,2-6 6-3 6-4
 2026,2026-08-13,Masters de Cincinnati,1/8,DOC,Cobolli Flavio,CHEF,Rafael Jodar,4-6 7-6(3) 6-3
+2026,2026-08-13,Masters de Cincinnati,1/16,DOC,Cobolli Flavio,PAT,Alexander Blockx,7-5 4-6 7-5
 2026,2026-08-13,Masters de Cincinnati,F,CHEF,Fils Arthur,JULES,Frances Tiafoe,6-3 1-6 6-0
 2026,2026-08-13,Masters de Cincinnati,1/2,CHEF,Fils Arthur,DOC,Flavio Cobolli,6-3 6-4
 2026,2026-08-13,Masters de Cincinnati,1/8,CHEF,Fils Arthur,PAT,Alex De Minaur,6-3 6-4
@@ -1062,3 +1064,4 @@ season,event_date,event,round,winner_team,winner,loser_team,loser,score
 2026,2026-10-19,Lyon,F,JULES,Musetti Lorenzo,DOC,Taylor Fritz,6-3 6-4
 2026,2026-10-19,Lyon,1/2,JULES,Musetti Lorenzo,DOC,Flavio Cobolli,4-6 6-2 7-5
 2026,2026-10-19,Lyon,1/8,JULES,Musetti Lorenzo,DOC,Moise Kouame,6-4 6-4
+2026,2026-08-31,US Open,1/16,PAT,Blockx Alexander,DOC,Flavio Cobolli,6-7(4) 6-3 6-0 6-3
