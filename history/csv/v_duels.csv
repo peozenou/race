@@ -1,0 +1,1064 @@
+season,event_date,event,round,winner_team,winner,loser_team,loser,score
+2019,2019-01-14,Open d'Australie,1/32,PAT,Fritz Taylor,DOC,Gael Monfils,6-3 6-7(8) 7-6(6) 7-6(5)
+2019,2019-02-04,Sofia,1/2,CHAN,Medvedev Daniil,DOC,Gael Monfils,6-2 6-4
+2019,2019-02-11,Buenos Aires,1/2,DOC,Schwartzman Diego,PAT,Dominic Thiem,2-6 6-4 7-6(5)
+2019,2019-02-11,Buenos Aires,F,PAT,Cecchinato Marco,DOC,Diego Schwartzman,6-1 6-2
+2019,2019-02-11,Rotterdam,1/4,CHAN,Wawrinka Stan,PAT,Denis Shapovalov,6-4 7-6(4)
+2019,2019-02-11,Rotterdam,1/2,DOC,Monfils Gael,CHAN,Daniil Medvedev,4-6 6-3 6-4
+2019,2019-02-11,Rotterdam,F,DOC,Monfils Gael,CHAN,Stan Wawrinka,6-3 1-6 6-2
+2019,2019-02-25,Acapulco,1/4,DOC,Zverev Alexander,CHAN,Alex De Minaur,6-4 6-4
+2019,2019-02-25,Dubai,1/16,DOC,Basilashvili Nikoloz,CHAN,Karen Khachanov,6-4 6-1
+2019,2019-02-25,Dubai,1/4,PAT,Coric Borna,DOC,Nikoloz Basilashvili,4-6 6-2 7-6(1)
+2019,2019-03-04,Masters d'Indian Wells,1/32,CHAN,Auger Aliassime Felix,DOC,Stefanos Tsitsipas,6-4 6-2
+2019,2019-03-04,Masters d'Indian Wells,1/4,PAT,Thiem Dominic,DOC,Gael Monfils,W/O
+2019,2019-03-18,Masters de Miami,1/8,CHAN,Auger Aliassime Felix,DOC,Nikoloz Basilashvili,7-6(4) 6-4
+2019,2019-03-18,Masters de Miami,1/8,PAT,Shapovalov Denis,DOC,Stefanos Tsitsipas,4-6 6-3 7-6(3)
+2019,2019-03-18,Masters de Miami,1/4,CHAN,Auger Aliassime Felix,PAT,Borna Coric,7-6(3) 6-2
+2019,2019-04-15,Masters de Monte-Carlo,1/32,CHAN,Wawrinka Stan,PAT,Lucas Pouille,7-5 6-3
+2019,2019-04-15,Masters de Monte-Carlo,1/16,PAT,Cecchinato Marco,CHAN,Stan Wawrinka,0-6 7-5 6-3
+2019,2019-04-15,Masters de Monte-Carlo,1/16,PAT,Fritz Taylor,DOC,Diego Schwartzman,6-4 6-2
+2019,2019-04-15,Masters de Monte-Carlo,1/16,DOC,Zverev Alexander,CHAN,Felix Auger Aliassime,6-1 6-4
+2019,2019-04-15,Masters de Monte-Carlo,1/8,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,6-2 1-6 6-4
+2019,2019-04-22,Barcelona,1/16,PAT,Thiem Dominic,DOC,Diego Schwartzman,6-3 6-3
+2019,2019-04-22,Barcelona,F,PAT,Thiem Dominic,CHAN,Daniil Medvedev,6-4 6-0
+2019,2019-05-06,Masters de Madrid,1/32,CHAN,Auger Aliassime Felix,PAT,Denis Shapovalov,6-2 7-6(7)
+2019,2019-05-06,Masters de Madrid,1/32,DOC,Schwartzman Diego,PAT,Marco Cecchinato,6-0 4-6 6-1
+2019,2019-05-13,Masters de Rome,1/32,PAT,Cecchinato Marco,CHAN,Alex De Minaur,4-6 6-3 6-1
+2019,2019-05-13,Masters de Rome,1/32,PAT,Coric Borna,CHAN,Felix Auger Aliassime,6-7(4) 6-3 6-4
+2019,2019-05-20,Lyon,1/8,PAT,Fritz Taylor,CHAN,Richard Gasquet,W/O
+2019,2019-05-20,Lyon,1/2,CHAN,Auger Aliassime Felix,DOC,Nikoloz Basilashvili,2-6 7-6(3) 6-4
+2019,2019-05-27,Roland-Garros,1/8,PAT,Thiem Dominic,DOC,Gael Monfils,6-4 6-4 6-2
+2019,2019-05-27,Roland-Garros,1/8,CHAN,Wawrinka Stan,DOC,Stefanos Tsitsipas,7-6(6) 5-7 6-4 3-6 8-6
+2019,2019-05-27,Roland-Garros,1/4,PAT,Thiem Dominic,CHAN,Karen Khachanov,6-2 6-4 6-2
+2019,2019-06-10,Stuttgart,1/8,PAT,Pouille Lucas,CHAN,Daniil Medvedev,7-6(6) 4-6 6-2
+2019,2019-06-17,Queen's Club,1/8,CHAN,Medvedev Daniil,PAT,Lucas Pouille,7-6(9) 6-7(5) 6-4
+2019,2019-06-17,Queen's Club,1/4,CHAN,Auger Aliassime Felix,DOC,Stefanos Tsitsipas,7-5 6-2
+2019,2019-06-17,Queen's Club,1/4,CHAN,Medvedev Daniil,DOC,Diego Schwartzman,6-2 6-2
+2019,2019-06-24,Eastbourne,1/2,PAT,Fritz Taylor,DOC,Kyle Edmund,7-6(8) 6-3
+2019,2019-07-01,Wimbledon,1/64,CHAN,De Minaur Alex,PAT,Marco Cecchinato,6-0 6-4 7-6(5)
+2019,2019-07-01,Wimbledon,1/64,PAT,Pouille Lucas,CHAN,Richard Gasquet,6-1 6-4 7-6(4)
+2019,2019-07-22,Atlanta,F,CHAN,De Minaur Alex,PAT,Taylor Fritz,6-3 7-6(2)
+2019,2019-07-29,Los Cabos,F,DOC,Schwartzman Diego,PAT,Taylor Fritz,7-6(6) 6-3
+2019,2019-08-05,Masters du Canada,1/32,DOC,Schwartzman Diego,PAT,Marco Cecchinato,3-6 7-6(5) 6-4
+2019,2019-08-05,Masters du Canada,1/16,CHAN,Medvedev Daniil,DOC,Kyle Edmund,6-3 6-0
+2019,2019-08-05,Masters du Canada,1/4,CHAN,Khachanov Karen,DOC,Alexander Zverev,6-3 6-3
+2019,2019-08-05,Masters du Canada,1/4,CHAN,Medvedev Daniil,PAT,Dominic Thiem,6-3 6-1
+2019,2019-08-12,Masters de Cincinnati,1/32,CHAN,De Minaur Alex,PAT,Marco Cecchinato,6-7(5) 6-1 6-2
+2019,2019-08-12,Masters de Cincinnati,1/32,CHAN,Medvedev Daniil,DOC,Kyle Edmund,6-2 7-5
+2019,2019-08-12,Masters de Cincinnati,1/8,CHAN,Gasquet Richard,DOC,Diego Schwartzman,7-6(6) 6-3
+2019,2019-08-12,Masters de Cincinnati,1/8,PAT,Pouille Lucas,CHAN,Karen Khachanov,6-7(3) 6-4 6-2
+2019,2019-08-26,US Open,1/64,PAT,Shapovalov Denis,CHAN,Felix Auger Aliassime,6-1 6-1 6-4
+2019,2019-08-26,US Open,1/16,DOC,Monfils Gael,PAT,Denis Shapovalov,6-7(5) 7-6(4) 6-4 6-7(6) 6-3
+2019,2019-09-16,St. Petersburg,F,CHAN,Medvedev Daniil,PAT,Borna Coric,6-3 6-1
+2019,2019-09-23,Zhuhai,1/4,CHAN,De Minaur Alex,PAT,Borna Coric,6-2 4-6 6-4
+2019,2019-09-30,Beijing,1/16,PAT,Thiem Dominic,CHAN,Richard Gasquet,6-4 6-1
+2019,2019-09-30,Beijing,1/8,DOC,Zverev Alexander,CHAN,Felix Auger Aliassime,6-3 6-1
+2019,2019-09-30,Beijing,1/2,PAT,Thiem Dominic,CHAN,Karen Khachanov,2-6 7-6(5) 7-5
+2019,2019-09-30,Beijing,F,PAT,Thiem Dominic,DOC,Stefanos Tsitsipas,3-6 6-4 6-1
+2019,2019-10-07,Masters de Shanghai,1/16,CHAN,Khachanov Karen,PAT,Taylor Fritz,6-2 6-4
+2019,2019-10-07,Masters de Shanghai,1/16,DOC,Tsitsipas Stefanos,CHAN,Felix Auger Aliassime,7-6(3) 7-6(3)
+2019,2019-10-07,Masters de Shanghai,1/8,PAT,Thiem Dominic,DOC,Nikoloz Basilashvili,6-3 6-4
+2019,2019-10-07,Masters de Shanghai,1/2,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,7-6(5) 7-5
+2019,2019-10-07,Masters de Shanghai,F,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-4 6-1
+2019,2019-10-21,Basel,1/16,PAT,Fritz Taylor,DOC,Alexander Zverev,7-6(7) 6-4
+2019,2019-10-21,Basel,1/8,CHAN,De Minaur Alex,PAT,Taylor Fritz,6-3 6-3
+2019,2019-10-21,Vienna,1/4,DOC,Schwartzman Diego,CHAN,Karen Khachanov,7-6(6) 6-2
+2019,2019-10-21,Vienna,F,PAT,Thiem Dominic,DOC,Diego Schwartzman,3-6 6-4 6-3
+2019,2019-10-28,Masters de Paris,1/16,DOC,Tsitsipas Stefanos,PAT,Taylor Fritz,7-6(3) 6-3
+2019,2019-10-28,Masters de Paris,1/8,PAT,Shapovalov Denis,DOC,Alexander Zverev,6-2 5-7 6-2
+2019,2019-10-28,Masters de Paris,1/8,DOC,Tsitsipas Stefanos,CHAN,Alex De Minaur,6-3 6-4
+2019,2019-10-28,Masters de Paris,1/4,PAT,Shapovalov Denis,DOC,Gael Monfils,6-2 6-2
+2019,2019-11-11,ATP Finals,Poule,DOC,Tsitsipas Stefanos,CHAN,Daniil Medvedev,7-6(5) 6-4
+2019,2019-11-11,ATP Finals,Poule,DOC,Zverev Alexander,CHAN,Daniil Medvedev,6-4 7-6(4)
+2019,2019-11-11,ATP Finals,1/2,PAT,Thiem Dominic,DOC,Alexander Zverev,7-5 6-3
+2019,2019-11-11,ATP Finals,F,DOC,Tsitsipas Stefanos,PAT,Dominic Thiem,6-7(6) 6-2 7-6(4)
+2019,2019-11-18,Coupe Davis Finals RR: CRO vs RUS,Poule,CHAN,Khachanov Karen,PAT,Borna Coric,6-7(4) 6-4 6-4
+2019,2019-11-21,Coupe Davis Finals QF: AUS vs CAN,Poule,CHAN,De Minaur Alex,PAT,Denis Shapovalov,3-6 6-3 7-5
+2019,2019-11-23,Coupe Davis Finals SF: RUS vs CAN,Poule,PAT,Shapovalov Denis,CHAN,Karen Khachanov,6-4 4-6 6-4
+2020,2020-01-06,ATP Cup,Poule,CHAN,De Minaur Alex,DOC,Alexander Zverev,4-6 7-6(3) 6-2
+2020,2020-01-06,ATP Cup,Poule,CHAN,De Minaur Alex,PAT,Denis Shapovalov,6-7(6) 6-4 6-2
+2020,2020-01-06,ATP Cup,Poule,DOC,Goffin David,PAT,Grigor Dimitrov,4-6 6-2 6-2
+2020,2020-01-06,ATP Cup,Poule,DOC,Hurkacz Hubert,PAT,Dominic Thiem,3-6 6-4 7-6(5)
+2020,2020-01-06,ATP Cup,Poule,DOC,Hurkacz Hubert,PAT,Borna Coric,6-2 6-2
+2020,2020-01-06,ATP Cup,Poule,CHAN,Khachanov Karen,PAT,Taylor Fritz,3-6 7-5 6-1
+2020,2020-01-06,ATP Cup,Poule,CHEF,Kyrgios Nick,DOC,Stefanos Tsitsipas,7-6(7) 6-7(3) 7-6(5)
+2020,2020-01-06,ATP Cup,Poule,DOC,Schwartzman Diego,PAT,Borna Coric,6-2 6-2
+2020,2020-01-06,ATP Cup,Poule,PAT,Shapovalov Denis,DOC,Alexander Zverev,6-2 6-2
+2020,2020-01-06,ATP Cup,Poule,PAT,Shapovalov Denis,DOC,Stefanos Tsitsipas,7-6(6) 7-6(4)
+2020,2020-01-06,ATP Cup,Poule,PAT,Thiem Dominic,DOC,Diego Schwartzman,6-3 7-6(3)
+2020,2020-01-06,ATP Cup,1/4,CHAN,Medvedev Daniil,DOC,Diego Schwartzman,6-4 4-6 6-3
+2020,2020-01-06,Doha,1/2,PAT,Moutet Corentin,CHAN,Stan Wawrinka,3-6 7-5 6-3
+2020,2020-01-06,Doha,F,CHEF,Rublev Andrey,PAT,Corentin Moutet,6-2 7-6(3)
+2020,2020-01-13,Adelaide,1/2,CHEF,Rublev Andrey,CHAN,Felix Auger Aliassime,7-6(5) 6-7(7) 6-4
+2020,2020-01-13,Auckland,1/4,CHEF,Humbert Ugo,PAT,Denis Shapovalov,7-5 6-4
+2020,2020-01-20,Open d'Australie,1/16,CHEF,Kyrgios Nick,CHAN,Karen Khachanov,6-2 7-6(5) 6-7(6) 6-7(7) 7-6(8)
+2020,2020-01-20,Open d'Australie,1/16,CHEF,Rublev Andrey,DOC,David Goffin,2-6 7-6(3) 6-4 7-6(4)
+2020,2020-01-20,Open d'Australie,1/8,PAT,Thiem Dominic,DOC,Gael Monfils,6-2 6-4 6-4
+2020,2020-01-20,Open d'Australie,1/8,DOC,Zverev Alexander,CHEF,Andrey Rublev,6-4 6-4 6-4
+2020,2020-01-20,Open d'Australie,1/4,DOC,Zverev Alexander,CHAN,Stan Wawrinka,1-6 6-3 6-4 6-2
+2020,2020-01-20,Open d'Australie,1/2,PAT,Thiem Dominic,DOC,Alexander Zverev,3-6 6-4 7-6(3) 7-6(4)
+2020,2020-02-10,Rotterdam,1/8,CHAN,Auger Aliassime Felix,PAT,Grigor Dimitrov,6-4 6-2
+2020,2020-02-10,Rotterdam,1/8,CHEF,Sinner Jannik,DOC,David Goffin,7-6(7) 7-5
+2020,2020-02-10,Rotterdam,F,DOC,Monfils Gael,CHAN,Felix Auger Aliassime,6-2 6-4
+2020,2020-02-17,Marseille,1/8,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,1-6 6-1 6-2
+2020,2020-02-17,Marseille,F,DOC,Tsitsipas Stefanos,CHAN,Felix Auger Aliassime,6-3 6-4
+2020,2020-02-24,Acapulco,1/8,PAT,Fritz Taylor,CHEF,Ugo Humbert,6-4 6-1
+2020,2020-02-24,Acapulco,1/4,PAT,Dimitrov Grigor,CHAN,Stan Wawrinka,6-4 6-4
+2020,2020-02-24,Dubai,1/4,DOC,Monfils Gael,CHAN,Richard Gasquet,6-3 6-3
+2020,2020-08-24,Masters de Cincinnati,1/32,PAT,Dimitrov Grigor,CHEF,Ugo Humbert,6-3 6-4
+2020,2020-08-24,Masters de Cincinnati,1/16,DOC,Goffin David,PAT,Borna Coric,7-6(6) 6-4
+2020,2020-08-24,Masters de Cincinnati,1/16,CHEF,Murray Andy,DOC,Alexander Zverev,6-3 3-6 7-5
+2020,2020-08-31,US Open,1/64,CHAN,Khachanov Karen,CHEF,Jannik Sinner,3-6 6-7(7) 6-2 6-0 7-6(4)
+2020,2020-08-31,US Open,1/32,CHAN,Auger Aliassime Felix,CHEF,Andy Murray,6-2 6-3 6-4
+2020,2020-08-31,US Open,1/16,CHAN,Auger Aliassime Felix,PAT,Corentin Moutet,6-1 6-0 6-4
+2020,2020-08-31,US Open,1/16,PAT,Coric Borna,DOC,Stefanos Tsitsipas,6-7(2) 6-4 4-6 7-5 7-6(4)
+2020,2020-08-31,US Open,1/8,PAT,Shapovalov Denis,DOC,David Goffin,6-7(0) 6-3 6-4 6-3
+2020,2020-08-31,US Open,1/8,PAT,Thiem Dominic,CHAN,Felix Auger Aliassime,7-6(4) 6-1 6-1
+2020,2020-08-31,US Open,1/4,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,7-6(6) 6-3 7-6(5)
+2020,2020-08-31,US Open,1/4,PAT,Thiem Dominic,CHAN,Alex De Minaur,6-1 6-2 6-4
+2020,2020-08-31,US Open,1/4,DOC,Zverev Alexander,PAT,Borna Coric,1-6 7-6(5) 7-6(1) 6-3
+2020,2020-08-31,US Open,1/2,PAT,Thiem Dominic,CHAN,Daniil Medvedev,6-2 7-6(7) 7-6(5)
+2020,2020-08-31,US Open,F,PAT,Thiem Dominic,DOC,Alexander Zverev,2-6 4-6 6-4 6-3 7-6(6)
+2020,2020-09-14,Masters de Rome,1/16,DOC,Hurkacz Hubert,CHEF,Andrey Rublev,7-6(6) 3-6 6-2
+2020,2020-09-14,Masters de Rome,1/16,CHEF,Sinner Jannik,DOC,Stefanos Tsitsipas,6-1 6-7(9) 6-2
+2020,2020-09-14,Masters de Rome,1/8,PAT,Dimitrov Grigor,CHEF,Jannik Sinner,4-6 6-4 6-4
+2020,2020-09-14,Masters de Rome,1/8,PAT,Shapovalov Denis,CHEF,Ugo Humbert,6-7(5) 6-1 6-4
+2020,2020-09-14,Masters de Rome,1/2,DOC,Schwartzman Diego,PAT,Denis Shapovalov,6-4 5-7 7-6(4)
+2020,2020-09-21,Hamburg,1/16,CHEF,Humbert Ugo,CHAN,Daniil Medvedev,6-4 6-3
+2020,2020-09-21,Hamburg,F,CHEF,Rublev Andrey,DOC,Stefanos Tsitsipas,6-4 3-6 7-5
+2020,2020-09-28,Roland-Garros,1/64,CHEF,Sinner Jannik,DOC,David Goffin,7-5 6-0 6-3
+2020,2020-09-28,Roland-Garros,1/64,CHAN,Wawrinka Stan,CHEF,Andy Murray,6-1 6-3 6-2
+2020,2020-09-28,Roland-Garros,1/8,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-3 6-3 4-6 6-3
+2020,2020-09-28,Roland-Garros,1/8,DOC,Tsitsipas Stefanos,PAT,Grigor Dimitrov,6-3 7-6(9) 6-2
+2020,2020-09-28,Roland-Garros,1/4,DOC,Schwartzman Diego,PAT,Dominic Thiem,7-6(1) 5-7 6-7(6) 7-6(5) 6-2
+2020,2020-09-28,Roland-Garros,1/4,DOC,Tsitsipas Stefanos,CHEF,Andrey Rublev,7-5 6-2 6-3
+2020,2020-10-12,Cologne 1,F,DOC,Zverev Alexander,CHAN,Felix Auger Aliassime,6-3 6-3
+2020,2020-10-12,St Petersburg,1/4,PAT,Shapovalov Denis,CHAN,Stan Wawrinka,6-4 7-5
+2020,2020-10-12,St Petersburg,1/2,CHEF,Rublev Andrey,PAT,Denis Shapovalov,4-6 6-3 6-4
+2020,2020-10-12,St Petersburg,F,CHEF,Rublev Andrey,PAT,Borna Coric,7-6(5) 6-4
+2020,2020-10-19,Antwerp,1/2,CHAN,De Minaur Alex,PAT,Grigor Dimitrov,7-6(4) 6-7(3) 6-4
+2020,2020-10-19,Antwerp,F,CHEF,Humbert Ugo,CHAN,Alex De Minaur,6-1 7-6(4)
+2020,2020-10-19,Cologne 2,1/2,DOC,Schwartzman Diego,CHAN,Felix Auger Aliassime,6-4 5-7 6-4
+2020,2020-10-19,Cologne 2,1/2,DOC,Zverev Alexander,CHEF,Jannik Sinner,7-6(3) 6-3
+2020,2020-10-26,Vienna,1/16,PAT,Dimitrov Grigor,CHAN,Karen Khachanov,7-6(6) 6-3
+2020,2020-10-26,Vienna,1/8,PAT,Dimitrov Grigor,DOC,Stefanos Tsitsipas,6-7(5) 6-4 6-3
+2020,2020-10-26,Vienna,1/4,CHEF,Rublev Andrey,PAT,Dominic Thiem,7-6(5) 6-2
+2020,2020-11-02,Masters de Paris,1/32,CHAN,Gasquet Richard,PAT,Taylor Fritz,6-0 3-6 6-3
+2020,2020-11-02,Masters de Paris,1/16,CHEF,Humbert Ugo,DOC,Stefanos Tsitsipas,7-6(4) 6-7(6) 7-6(3)
+2020,2020-11-02,Masters de Paris,1/16,DOC,Schwartzman Diego,CHAN,Richard Gasquet,7-5 6-3
+2020,2020-11-02,Masters de Paris,1/8,CHAN,Wawrinka Stan,CHEF,Andrey Rublev,1-6 6-4 6-3
+2020,2020-11-02,Masters de Paris,1/4,CHAN,Medvedev Daniil,DOC,Diego Schwartzman,6-3 6-1
+2020,2020-11-02,Masters de Paris,1/4,DOC,Zverev Alexander,CHAN,Stan Wawrinka,6-3 7-6(1)
+2020,2020-11-02,Masters de Paris,F,CHAN,Medvedev Daniil,DOC,Alexander Zverev,5-7 6-4 6-1
+2020,2020-11-09,Sofia,1/4,CHEF,Sinner Jannik,CHAN,Alex De Minaur,6-7(3) 6-4 6-1
+2020,2020-11-16,ATP Finals,Poule,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-3 6-4
+2020,2020-11-16,ATP Finals,Poule,CHAN,Medvedev Daniil,DOC,Diego Schwartzman,6-3 6-3
+2020,2020-11-16,ATP Finals,Poule,CHEF,Rublev Andrey,PAT,Dominic Thiem,6-2 7-5
+2020,2020-11-16,ATP Finals,Poule,PAT,Thiem Dominic,DOC,Stefanos Tsitsipas,7-6(5) 4-6 6-3
+2020,2020-11-16,ATP Finals,Poule,DOC,Tsitsipas Stefanos,CHEF,Andrey Rublev,6-1 4-6 7-6(6)
+2020,2020-11-16,ATP Finals,F,CHAN,Medvedev Daniil,PAT,Dominic Thiem,4-6 7-6(2) 6-4
+2021,2021-01-04,Delray Beach,F,DOC,Hurkacz Hubert,CHAN,Sebastian Korda,6-3 6-3
+2021,2021-01-05,Antalya,1/2,CHAN,De Minaur Alex,DOC,David Goffin,6-4 3-6 6-2
+2021,2021-02-01,Great Ocean Road Open,1/16,CHAN,Alcaraz Carlos,DOC,David Goffin,6-3 6-3
+2021,2021-02-01,Great Ocean Road Open,1/2,CHEF,Sinner Jannik,CHAN,Karen Khachanov,7-6(4) 4-6 7-6(4)
+2021,2021-02-01,Murray River Open,1/8,PAT,Coric Borna,CHEF,Nick Kyrgios,6-3 6-4
+2021,2021-02-01,Murray River Open,1/2,CHEF,Auger Aliassime Felix,PAT,Corentin Moutet,6-1 6-2
+2021,2021-02-02,ATP Cup,Poule,CHEF,Berrettini Matteo,DOC,Gael Monfils,6-4 6-2
+2021,2021-02-02,ATP Cup,Poule,CHEF,Berrettini Matteo,PAT,Dominic Thiem,6-2 6-4
+2021,2021-02-02,ATP Cup,Poule,CHAN,Medvedev Daniil,DOC,Diego Schwartzman,7-5 6-3
+2021,2021-02-02,ATP Cup,Poule,DOC,Tsitsipas Stefanos,CHAN,Alex De Minaur,6-3 7-5
+2021,2021-02-02,ATP Cup,Poule,DOC,Zverev Alexander,PAT,Denis Shapovalov,6-7(5) 6-3 7-6(4)
+2021,2021-02-02,ATP Cup,1/2,CHAN,Medvedev Daniil,DOC,Alexander Zverev,3-6 6-3 7-5
+2021,2021-02-02,ATP Cup,F,CHAN,Medvedev Daniil,CHEF,Matteo Berrettini,6-4 6-2
+2021,2021-02-08,Open d'Australie,1/64,PAT,Shapovalov Denis,CHEF,Jannik Sinner,3-6 6-3 6-2 4-6 6-4
+2021,2021-02-08,Open d'Australie,1/16,CHEF,Auger Aliassime Felix,PAT,Denis Shapovalov,7-5 7-5 6-3
+2021,2021-02-08,Open d'Australie,1/16,CHEF,Berrettini Matteo,CHAN,Karen Khachanov,7-6(1) 7-6(5) 7-6(5)
+2021,2021-02-08,Open d'Australie,1/16,PAT,Thiem Dominic,CHEF,Nick Kyrgios,4-6 4-6 6-3 6-4 6-4
+2021,2021-02-08,Open d'Australie,1/8,DOC,Tsitsipas Stefanos,CHEF,Matteo Berrettini,W/O
+2021,2021-02-08,Open d'Australie,1/4,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,7-5 6-3 6-2
+2021,2021-02-08,Open d'Australie,1/2,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,6-4 6-2 7-5
+2021,2021-03-01,Rotterdam,1/4,DOC,Tsitsipas Stefanos,CHAN,Karen Khachanov,4-6 6-3 7-5
+2021,2021-03-01,Rotterdam,1/2,CHEF,Rublev Andrey,DOC,Stefanos Tsitsipas,6-3 7-6(2)
+2021,2021-03-08,Marseille,1/8,CHEF,Sinner Jannik,CHAN,Hugo Gaston,6-4 6-1
+2021,2021-03-08,Marseille,1/4,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,6-2 6-4
+2021,2021-03-15,Acapulco,1/16,PAT,Musetti Lorenzo,DOC,Diego Schwartzman,6-3 2-6 6-4
+2021,2021-03-15,Acapulco,1/16,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,6-3 6-1
+2021,2021-03-15,Acapulco,1/8,CHEF,Auger Aliassime Felix,CHAN,Sebastian Korda,6-3 6-4
+2021,2021-03-15,Acapulco,1/4,DOC,Tsitsipas Stefanos,CHEF,Felix Auger Aliassime,7-5 4-6 6-3
+2021,2021-03-15,Acapulco,1/2,DOC,Tsitsipas Stefanos,PAT,Lorenzo Musetti,6-1 6-3
+2021,2021-03-15,Dubai,1/8,PAT,Shapovalov Denis,DOC,Hubert Hurkacz,6-4 6-3
+2021,2021-03-22,Masters de Miami,1/32,CHEF,Sinner Jannik,CHAN,Hugo Gaston,6-2 6-2
+2021,2021-03-22,Masters de Miami,1/16,DOC,Hurkacz Hubert,PAT,Denis Shapovalov,6-3 7-6(6)
+2021,2021-03-22,Masters de Miami,1/16,CHEF,Sinner Jannik,CHAN,Karen Khachanov,4-6 7-6(2) 6-4
+2021,2021-03-22,Masters de Miami,1/8,CHAN,Korda Sebastian,DOC,Diego Schwartzman,6-3 4-6 7-5
+2021,2021-03-22,Masters de Miami,1/4,CHEF,Rublev Andrey,CHAN,Sebastian Korda,7-5 7-6(7)
+2021,2021-03-22,Masters de Miami,1/2,DOC,Hurkacz Hubert,CHEF,Andrey Rublev,6-3 6-4
+2021,2021-03-22,Masters de Miami,F,DOC,Hurkacz Hubert,CHEF,Jannik Sinner,7-6(4) 6-4
+2021,2021-04-12,Masters de Monte-Carlo,F,DOC,Tsitsipas Stefanos,CHEF,Andrey Rublev,6-3 6-3
+2021,2021-04-19,Barcelona,1/16,CHEF,Auger Aliassime Felix,PAT,Lorenzo Musetti,4-6 6-3 6-0
+2021,2021-04-19,Barcelona,1/8,CHEF,Auger Aliassime Felix,PAT,Denis Shapovalov,6-2 6-3
+2021,2021-04-19,Barcelona,1/8,DOC,Schwartzman Diego,PAT,Corentin Moutet,6-4 6-2
+2021,2021-04-19,Barcelona,1/8,DOC,Tsitsipas Stefanos,CHAN,Alex De Minaur,7-5 6-3
+2021,2021-04-19,Barcelona,1/4,DOC,Tsitsipas Stefanos,CHEF,Felix Auger Aliassime,6-3 6-3
+2021,2021-04-19,Barcelona,1/2,DOC,Tsitsipas Stefanos,CHEF,Jannik Sinner,6-3 6-3
+2021,2021-05-03,Masters de Madrid,1/8,PAT,Thiem Dominic,CHAN,Alex De Minaur,7-6(7) 6-4
+2021,2021-05-03,Masters de Madrid,1/2,DOC,Zverev Alexander,PAT,Dominic Thiem,6-3 6-4
+2021,2021-05-03,Masters de Madrid,F,DOC,Zverev Alexander,CHEF,Matteo Berrettini,6-7(8) 6-4 6-3
+2021,2021-05-10,Masters de Rome,1/32,PAT,Musetti Lorenzo,DOC,Hubert Hurkacz,6-4 2-0 RET
+2021,2021-05-10,Masters de Rome,1/16,CHEF,Auger Aliassime Felix,DOC,Diego Schwartzman,6-1 6-3
+2021,2021-05-10,Masters de Rome,1/8,DOC,Tsitsipas Stefanos,CHEF,Matteo Berrettini,7-6(3) 6-2
+2021,2021-05-17,Lyon,1/16,DOC,Monfils Gael,PAT,Thiago Seyboth Wild,7-5 6-4
+2021,2021-05-17,Lyon,1/16,PAT,Musetti Lorenzo,CHEF,Felix Auger Aliassime,7-6(3) 3-6 7-5
+2021,2021-05-17,Lyon,1/8,PAT,Musetti Lorenzo,CHAN,Sebastian Korda,6-3 1-6 6-4
+2021,2021-05-17,Lyon,1/2,DOC,Tsitsipas Stefanos,PAT,Lorenzo Musetti,4-6 6-3 6-0
+2021,2021-05-31,Roland-Garros,1/64,PAT,Musetti Lorenzo,DOC,David Goffin,6-0 7-5 7-6(3)
+2021,2021-05-31,Roland-Garros,1/4,DOC,Tsitsipas Stefanos,CHAN,Daniil Medvedev,6-3 7-6(3) 7-5
+2021,2021-06-14,Halle,1/16,CHEF,Auger Aliassime Felix,DOC,Hubert Hurkacz,6-3 7-5
+2021,2021-06-14,Halle,1/16,PAT,Moutet Corentin,DOC,David Goffin,1-6 7-5 0-0 RET
+2021,2021-06-14,Halle,1/16,CHEF,Rublev Andrey,CHAN,Karen Khachanov,6-3 7-6(5)
+2021,2021-06-14,Halle,1/8,CHEF,Humbert Ugo,DOC,Alexander Zverev,7-6(4) 3-6 6-3
+2021,2021-06-14,Halle,1/4,CHEF,Humbert Ugo,CHAN,Sebastian Korda,6-2 6-7(5) 6-4
+2021,2021-06-14,Queen's Club,1/2,CHEF,Berrettini Matteo,CHAN,Alex De Minaur,6-4 6-4
+2021,2021-06-21,Mallorca,1/8,CHAN,Medvedev Daniil,PAT,Corentin Moutet,6-4 6-2
+2021,2021-06-28,Wimbledon,1/64,DOC,Hurkacz Hubert,PAT,Lorenzo Musetti,6-4 7-6(5) 6-1
+2021,2021-06-28,Wimbledon,1/8,CHEF,Auger Aliassime Felix,DOC,Alexander Zverev,6-4 7-6(6) 3-6 3-6 6-4
+2021,2021-06-28,Wimbledon,1/8,DOC,Hurkacz Hubert,CHAN,Daniil Medvedev,2-6 7-6(2) 3-6 6-3 6-3
+2021,2021-06-28,Wimbledon,1/4,PAT,Shapovalov Denis,CHAN,Karen Khachanov,6-4 3-6 5-7 6-1 6-4
+2021,2021-06-28,Wimbledon,1/2,CHEF,Berrettini Matteo,DOC,Hubert Hurkacz,6-3 6-0 6-7(3) 6-4
+2021,2021-07-24,Jeux Olympiques,1/8,CHEF,Humbert Ugo,DOC,Stefanos Tsitsipas,2-6 7-6(4) 6-2
+2021,2021-07-24,Jeux Olympiques,1/8,CHAN,Khachanov Karen,DOC,Diego Schwartzman,6-1 2-6 6-1
+2021,2021-07-24,Jeux Olympiques,1/4,CHAN,Khachanov Karen,CHEF,Ugo Humbert,7-6(4) 4-6 6-3
+2021,2021-07-24,Jeux Olympiques,F,DOC,Zverev Alexander,CHAN,Karen Khachanov,6-3 6-1
+2021,2021-08-02,Washington,1/8,CHEF,Sinner Jannik,CHAN,Sebastian Korda,7-6(3) 7-6(3)
+2021,2021-08-09,Masters du Canada,1/16,DOC,Tsitsipas Stefanos,CHEF,Ugo Humbert,6-3 6-7(13) 6-1
+2021,2021-08-09,Masters du Canada,1/8,DOC,Tsitsipas Stefanos,CHAN,Karen Khachanov,6-3 6-2
+2021,2021-08-09,Masters du Canada,1/4,CHAN,Medvedev Daniil,DOC,Hubert Hurkacz,2-6 7-6(6) 7-6(5)
+2021,2021-08-16,Masters de Cincinnati,1/16,CHEF,Auger Aliassime Felix,CHAN,Karen Khachanov,6-7(5) 6-3 6-4
+2021,2021-08-16,Masters de Cincinnati,1/16,DOC,Monfils Gael,CHAN,Alex De Minaur,6-3 7-5
+2021,2021-08-16,Masters de Cincinnati,1/16,DOC,Tsitsipas Stefanos,CHAN,Sebastian Korda,7-6(5) 6-3
+2021,2021-08-16,Masters de Cincinnati,1/8,CHEF,Rublev Andrey,DOC,Gael Monfils,7-6(2) 7-6(5)
+2021,2021-08-16,Masters de Cincinnati,1/4,DOC,Tsitsipas Stefanos,CHEF,Felix Auger Aliassime,6-2 5-7 6-1
+2021,2021-08-16,Masters de Cincinnati,1/2,CHEF,Rublev Andrey,CHAN,Daniil Medvedev,2-6 6-3 6-3
+2021,2021-08-16,Masters de Cincinnati,F,DOC,Zverev Alexander,CHEF,Andrey Rublev,6-2 6-3
+2021,2021-08-30,US Open,1/32,CHEF,Berrettini Matteo,PAT,Corentin Moutet,7-6(2) 4-6 6-4 6-3
+2021,2021-08-30,US Open,1/16,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,6-3 4-6 7-6(2) 0-6 7-6(5)
+2021,2021-08-30,US Open,1/16,CHEF,Sinner Jannik,DOC,Gael Monfils,7-6(1) 6-2 4-6 4-6 6-4
+2021,2021-08-30,US Open,1/8,DOC,Zverev Alexander,CHEF,Jannik Sinner,6-4 6-4 7-6(7)
+2021,2021-08-30,US Open,1/4,CHEF,Auger Aliassime Felix,CHAN,Carlos Alcaraz,6-3 3-1 RET
+2021,2021-08-30,US Open,1/2,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-4 7-5 6-2
+2021,2021-09-24,Laver Cup,Poule,CHAN,Medvedev Daniil,PAT,Denis Shapovalov,6-4 6-0
+2021,2021-09-24,Laver Cup,Poule,CHEF,Rublev Andrey,DOC,Diego Schwartzman,4-6 6-3 [11-9]
+2021,2021-09-24,Laver Cup,Poule,DOC,Tsitsipas Stefanos,CHEF,Nick Kyrgios,6-3 6-4
+2021,2021-09-27,San Diego,1/4,CHEF,Rublev Andrey,DOC,Diego Schwartzman,6-1 7-5
+2021,2021-09-27,Sofia,F,CHEF,Sinner Jannik,DOC,Gael Monfils,6-3 6-4
+2021,2021-10-04,Masters d'Indian Wells,1/8,DOC,Tsitsipas Stefanos,CHAN,Alex De Minaur,6-7(3) 7-6(3) 6-2
+2021,2021-10-18,Antwerp,1/8,CHEF,Sinner Jannik,PAT,Lorenzo Musetti,7-5 6-2
+2021,2021-10-18,Antwerp,F,CHEF,Sinner Jannik,DOC,Diego Schwartzman,6-2 6-2
+2021,2021-10-25,Vienna,1/16,DOC,Monfils Gael,PAT,Lorenzo Musetti,7-6(2) 6-4
+2021,2021-10-25,Vienna,1/8,DOC,Zverev Alexander,CHAN,Alex De Minaur,6-2 3-6 6-2
+2021,2021-10-25,Vienna,1/4,CHAN,Alcaraz Carlos,CHEF,Matteo Berrettini,6-1 6-7(2) 7-6(5)
+2021,2021-10-25,Vienna,1/4,DOC,Zverev Alexander,CHEF,Felix Auger Aliassime,6-4 3-6 6-3
+2021,2021-10-25,Vienna,1/2,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,6-3 6-3
+2021,2021-11-01,Masters de Paris,1/16,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,7-6(1) 7-5
+2021,2021-11-01,Masters de Paris,1/2,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-2 6-2
+2021,2021-11-08,NextGen Finals,Poule,CHAN,Korda Sebastian,PAT,Lorenzo Musetti,4-2 4-3(4) 4-2
+2021,2021-11-08,NextGen Finals,Poule,PAT,Musetti Lorenzo,CHAN,Hugo Gaston,4-3(4) 4-3(6) 2-4 3-4(7) 4-2
+2021,2021-11-08,Stockholm,1/2,PAT,Shapovalov Denis,CHEF,Felix Auger Aliassime,6-4 7-5
+2021,2021-11-15,ATP Finals,Poule,CHAN,Medvedev Daniil,DOC,Hubert Hurkacz,6-7(5) 6-3 6-4
+2021,2021-11-15,ATP Finals,Poule,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,6-0 6-7(5) 7-6(8)
+2021,2021-11-15,ATP Finals,Poule,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-3 6-7(3) 7-6(6)
+2021,2021-11-15,ATP Finals,Poule,CHEF,Rublev Andrey,DOC,Stefanos Tsitsipas,6-4 6-4
+2021,2021-11-15,ATP Finals,Poule,CHEF,Sinner Jannik,DOC,Hubert Hurkacz,6-2 6-2
+2021,2021-11-15,ATP Finals,Poule,DOC,Zverev Alexander,CHEF,Matteo Berrettini,7-6(7) 1-0 RET
+2021,2021-11-15,ATP Finals,F,DOC,Zverev Alexander,CHAN,Daniil Medvedev,6-4 6-4
+2022,2022-01-03,ATP Cup,Poule,CHEF,Auger Aliassime Felix,DOC,Alexander Zverev,6-4 4-6 6-3
+2022,2022-01-03,ATP Cup,Poule,CHEF,Auger Aliassime Felix,DOC,Cameron Norrie,7-6(4) 6-3
+2022,2022-01-03,ATP Cup,Poule,CHEF,Humbert Ugo,CHAN,Daniil Medvedev,6-7(5) 7-5 7-6(2)
+2022,2022-01-03,ATP Cup,Poule,CHAN,Medvedev Daniil,CHEF,Matteo Berrettini,6-2 6-7(5) 6-4
+2022,2022-01-03,ATP Cup,1/2,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-4 6-0
+2022,2022-01-03,Adelaide 1,1/16,PAT,Moutet Corentin,CHAN,Holger Rune,7-6(6) 6-4
+2022,2022-01-17,Open d'Australie,1/64,CHEF,Berrettini Matteo,PAT,Brandon Nakashima,4-6 6-2 7-6(5) 6-3
+2022,2022-01-17,Open d'Australie,1/64,CHAN,Korda Sebastian,DOC,Cameron Norrie,6-3 6-0 6-4
+2022,2022-01-17,Open d'Australie,1/32,CHAN,Korda Sebastian,PAT,Corentin Moutet,3-6 6-4 6-7(2) 7-5 7-6(6)
+2022,2022-01-17,Open d'Australie,1/16,CHEF,Berrettini Matteo,CHAN,Carlos Alcaraz,6-2 7-6(3) 4-6 2-6 7-6(5)
+2022,2022-01-17,Open d'Australie,1/8,PAT,Shapovalov Denis,DOC,Alexander Zverev,6-3 7-6(5) 6-3
+2022,2022-01-17,Open d'Australie,1/4,CHEF,Berrettini Matteo,DOC,Gael Monfils,6-4 6-4 3-6 3-6 6-2
+2022,2022-01-17,Open d'Australie,1/4,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-7(4) 3-6 7-6(2) 7-5 6-4
+2022,2022-01-17,Open d'Australie,1/4,DOC,Tsitsipas Stefanos,CHEF,Jannik Sinner,6-3 6-4 6-2
+2022,2022-01-17,Open d'Australie,1/2,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,7-6(5) 4-6 6-4 6-1
+2022,2022-02-07,Buenos Aires,F,PAT,Ruud Casper,DOC,Diego Schwartzman,5-7 6-2 6-3
+2022,2022-02-07,Rotterdam,1/16,DOC,Norrie Cameron,CHEF,Ugo Humbert,6-2 6-4
+2022,2022-02-07,Rotterdam,1/8,PAT,Musetti Lorenzo,DOC,Hubert Hurkacz,6-3 5-7 6-3
+2022,2022-02-07,Rotterdam,1/4,CHEF,Auger Aliassime Felix,DOC,Cameron Norrie,7-5 7-6(4)
+2022,2022-02-07,Rotterdam,F,CHEF,Auger Aliassime Felix,DOC,Stefanos Tsitsipas,6-4 6-2
+2022,2022-02-14,Delray Beach,1/4,DOC,Norrie Cameron,CHAN,Sebastian Korda,6-2 1-6 7-6(4)
+2022,2022-02-14,Marseille,1/16,CHAN,Gaston Hugo,PAT,Corentin Moutet,6-4 6-4
+2022,2022-02-14,Marseille,1/8,DOC,Tsitsipas Stefanos,CHAN,Hugo Gaston,6-3 7-6(4)
+2022,2022-02-14,Rio de Janeiro,1/4,CHAN,Alcaraz Carlos,CHEF,Matteo Berrettini,6-2 2-6 6-2
+2022,2022-02-14,Rio de Janeiro,F,CHAN,Alcaraz Carlos,DOC,Diego Schwartzman,6-4 6-2
+2022,2022-02-21,Acapulco,1/16,DOC,Zverev Alexander,CHEF,Jenson Brooksby,3-6 7-6(10) 6-2
+2022,2022-02-21,Dubai,1/4,DOC,Hurkacz Hubert,CHEF,Jannik Sinner,6-3 6-3
+2022,2022-02-21,Dubai,1/2,CHEF,Rublev Andrey,DOC,Hubert Hurkacz,3-6 7-5 7-6(5)
+2022,2022-03-07,Masters d'Indian Wells,1/64,CHAN,Rune Holger,CHEF,Ugo Humbert,6-3 6-2
+2022,2022-03-07,Masters d'Indian Wells,1/32,CHEF,Berrettini Matteo,CHAN,Holger Rune,6-3 4-6 6-4
+2022,2022-03-07,Masters d'Indian Wells,1/16,CHEF,Brooksby Jenson,DOC,Stefanos Tsitsipas,1-6 6-3 6-2
+2022,2022-03-07,Masters d'Indian Wells,1/16,DOC,Monfils Gael,CHAN,Daniil Medvedev,4-6 6-3 6-1
+2022,2022-03-07,Masters d'Indian Wells,1/8,CHAN,Alcaraz Carlos,DOC,Gael Monfils,7-5 6-1
+2022,2022-03-07,Masters d'Indian Wells,1/8,DOC,Norrie Cameron,CHEF,Jenson Brooksby,6-2 6-4
+2022,2022-03-07,Masters d'Indian Wells,1/8,CHEF,Rublev Andrey,DOC,Hubert Hurkacz,7-6(5) 6-4
+2022,2022-03-07,Masters d'Indian Wells,1/4,CHAN,Alcaraz Carlos,DOC,Cameron Norrie,6-4 6-3
+2022,2022-03-21,Masters de Miami,1/32,CHAN,Karatsev Aslan,CHEF,Ugo Humbert,7-5 6-2
+2022,2022-03-21,Masters de Miami,1/16,DOC,Hurkacz Hubert,CHAN,Aslan Karatsev,7-5 4-6 6-3
+2022,2022-03-21,Masters de Miami,1/16,DOC,Norrie Cameron,CHAN,Hugo Gaston,6-3 7-5
+2022,2022-03-21,Masters de Miami,1/8,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,7-5 6-3
+2022,2022-03-21,Masters de Miami,1/8,CHAN,Medvedev Daniil,CHEF,Jenson Brooksby,7-5 6-1
+2022,2022-03-21,Masters de Miami,1/8,PAT,Ruud Casper,DOC,Cameron Norrie,6-3 6-4
+2022,2022-03-21,Masters de Miami,1/4,DOC,Hurkacz Hubert,CHAN,Daniil Medvedev,7-6(7) 6-3
+2022,2022-03-21,Masters de Miami,1/4,PAT,Ruud Casper,DOC,Alexander Zverev,6-3 1-6 6-3
+2022,2022-03-21,Masters de Miami,1/2,CHAN,Alcaraz Carlos,DOC,Hubert Hurkacz,7-6(5) 7-6(2)
+2022,2022-03-21,Masters de Miami,F,CHAN,Alcaraz Carlos,PAT,Casper Ruud,7-5 6-4
+2022,2022-04-11,Masters de Monte-Carlo,1/16,PAT,Musetti Lorenzo,CHEF,Felix Auger Aliassime,6-2 7-6(2)
+2022,2022-04-11,Masters de Monte-Carlo,1/16,PAT,Ruud Casper,CHAN,Holger Rune,7-6(5) 7-5
+2022,2022-04-11,Masters de Monte-Carlo,1/8,DOC,Schwartzman Diego,PAT,Lorenzo Musetti,2-6 6-4 6-3
+2022,2022-04-11,Masters de Monte-Carlo,1/4,DOC,Zverev Alexander,CHEF,Jannik Sinner,5-7 6-3 7-6(5)
+2022,2022-04-18,Barcelona,1/8,DOC,Schwartzman Diego,PAT,Lorenzo Musetti,6-4 7-5
+2022,2022-04-18,Barcelona,1/4,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,6-4 5-7 6-2
+2022,2022-04-18,Barcelona,1/4,DOC,Schwartzman Diego,CHEF,Felix Auger Aliassime,3-6 6-2 6-3
+2022,2022-04-25,Estoril,1/4,CHAN,Korda Sebastian,CHEF,Felix Auger Aliassime,6-2 6-2
+2022,2022-04-25,Munich,1/8,CHAN,Rune Holger,DOC,Alexander Zverev,6-3 6-2
+2022,2022-05-02,Masters de Madrid,1/32,PAT,Shapovalov Denis,CHEF,Ugo Humbert,7-6(1) 6-3
+2022,2022-05-02,Masters de Madrid,1/16,PAT,Musetti Lorenzo,CHAN,Sebastian Korda,6-4 6-3
+2022,2022-05-02,Masters de Madrid,1/8,CHAN,Alcaraz Carlos,DOC,Cameron Norrie,6-4 6-7(4) 6-3
+2022,2022-05-02,Masters de Madrid,1/8,DOC,Zverev Alexander,PAT,Lorenzo Musetti,6-3 1-0 RET
+2022,2022-05-02,Masters de Madrid,1/4,DOC,Tsitsipas Stefanos,CHEF,Andrey Rublev,6-3 2-6 6-4
+2022,2022-05-02,Masters de Madrid,1/4,DOC,Zverev Alexander,CHEF,Felix Auger Aliassime,6-3 7-5
+2022,2022-05-02,Masters de Madrid,F,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-3 6-1
+2022,2022-05-09,Masters de Rome,1/8,PAT,Ruud Casper,CHEF,Jenson Brooksby,6-3 6-4
+2022,2022-05-09,Masters de Rome,1/4,DOC,Tsitsipas Stefanos,CHEF,Jannik Sinner,7-6(5) 6-2
+2022,2022-05-16,Lyon,1/2,DOC,Norrie Cameron,CHAN,Holger Rune,6-2 5-7 6-4
+2022,2022-05-23,Roland-Garros,1/64,CHAN,Rune Holger,PAT,Denis Shapovalov,6-3 6-1 7-6(4)
+2022,2022-05-23,Roland-Garros,1/64,DOC,Tsitsipas Stefanos,PAT,Lorenzo Musetti,5-7 4-6 6-2 6-3 6-2
+2022,2022-05-23,Roland-Garros,1/16,DOC,Zverev Alexander,PAT,Brandon Nakashima,7-6(2) 6-3 7-6(5)
+2022,2022-05-23,Roland-Garros,1/8,CHAN,Rune Holger,DOC,Stefanos Tsitsipas,7-5 3-6 6-3 6-4
+2022,2022-05-23,Roland-Garros,1/8,PAT,Ruud Casper,DOC,Hubert Hurkacz,6-2 6-3 3-6 6-3
+2022,2022-05-23,Roland-Garros,1/4,PAT,Ruud Casper,CHAN,Holger Rune,6-1 4-6 7-6(2) 6-3
+2022,2022-05-23,Roland-Garros,1/4,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,6-4 6-4 4-6 7-6(7)
+2022,2022-06-06,s Hertogenbosch,1/8,CHAN,Gaston Hugo,CHEF,Jenson Brooksby,3-6 6-3 7-5
+2022,2022-06-13,Halle,1/8,DOC,Hurkacz Hubert,CHEF,Ugo Humbert,7-6(5) 6-3
+2022,2022-06-13,Halle,1/4,DOC,Hurkacz Hubert,CHEF,Felix Auger Aliassime,7-6(2) 7-6(4)
+2022,2022-06-13,Halle,F,DOC,Hurkacz Hubert,CHAN,Daniil Medvedev,6-1 6-4
+2022,2022-06-20,Eastbourne,1/8,DOC,Norrie Cameron,PAT,Brandon Nakashima,6-4 6-2
+2022,2022-06-27,Wimbledon,1/32,CHEF,Humbert Ugo,PAT,Casper Ruud,3-6 6-2 7-5 6-4
+2022,2022-06-27,Wimbledon,1/8,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,6-1 6-4 6-7(8) 6-3
+2022,2022-07-18,Gstaad,1/16,PAT,Thiem Dominic,CHAN,Hugo Gaston,1-6 6-1 7-6(7)
+2022,2022-07-18,Gstaad,1/2,CHEF,Berrettini Matteo,PAT,Dominic Thiem,6-1 6-4
+2022,2022-07-18,Gstaad,F,PAT,Ruud Casper,CHEF,Matteo Berrettini,4-6 7-6(4) 6-2
+2022,2022-07-18,Hamburg,F,PAT,Musetti Lorenzo,CHAN,Carlos Alcaraz,6-4 6-7(6) 6-4
+2022,2022-07-25,Umag,F,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,6-7(5) 6-1 6-1
+2022,2022-08-01,Los Cabos,1/2,DOC,Norrie Cameron,CHEF,Felix Auger Aliassime,6-4 3-6 6-3
+2022,2022-08-01,Los Cabos,F,CHAN,Medvedev Daniil,DOC,Cameron Norrie,7-5 6-0
+2022,2022-08-08,Masters du Canada,1/32,DOC,Norrie Cameron,PAT,Brandon Nakashima,6-4 6-4
+2022,2022-08-08,Masters du Canada,1/8,CHEF,Auger Aliassime Felix,DOC,Cameron Norrie,6-3 6-4
+2022,2022-08-08,Masters du Canada,1/4,PAT,Ruud Casper,CHEF,Felix Auger Aliassime,6-1 6-2
+2022,2022-08-08,Masters du Canada,1/2,DOC,Hurkacz Hubert,PAT,Casper Ruud,5-7 6-3 6-2
+2022,2022-08-15,Masters de Cincinnati,1/32,CHAN,Karatsev Aslan,PAT,Brandon Nakashima,7-5 7-5
+2022,2022-08-15,Masters de Cincinnati,1/32,DOC,Norrie Cameron,CHAN,Holger Rune,7-6(5) 4-6 6-4
+2022,2022-08-15,Masters de Cincinnati,1/16,DOC,Schwartzman Diego,CHAN,Aslan Karatsev,7-6(3) 3-6 6-2
+2022,2022-08-15,Masters de Cincinnati,1/8,CHAN,Medvedev Daniil,PAT,Denis Shapovalov,7-5 7-5
+2022,2022-08-15,Masters de Cincinnati,1/4,DOC,Norrie Cameron,CHAN,Carlos Alcaraz,7-6(4) 6-7(4) 6-4
+2022,2022-08-15,Masters de Cincinnati,1/2,DOC,Tsitsipas Stefanos,CHAN,Daniil Medvedev,7-6(6) 3-6 6-3
+2022,2022-08-29,US Open,1/16,CHAN,Alcaraz Carlos,CHEF,Jenson Brooksby,6-3 6-3 6-3
+2022,2022-08-29,US Open,1/16,DOC,Norrie Cameron,CHAN,Holger Rune,7-5 6-4 6-1
+2022,2022-08-29,US Open,1/16,CHEF,Rublev Andrey,PAT,Denis Shapovalov,6-4 2-6 6-7(3) 6-4 7-6(7)
+2022,2022-08-29,US Open,1/16,CHEF,Sinner Jannik,PAT,Brandon Nakashima,3-6 6-4 6-1 6-2
+2022,2022-08-29,US Open,1/8,CHEF,Rublev Andrey,DOC,Cameron Norrie,6-4 6-4 6-4
+2022,2022-08-29,US Open,1/4,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,6-3 6-7(7) 6-7(0) 7-5 6-3
+2022,2022-08-29,US Open,1/4,PAT,Ruud Casper,CHEF,Matteo Berrettini,6-1 6-4 7-6(4)
+2022,2022-08-29,US Open,F,CHAN,Alcaraz Carlos,PAT,Casper Ruud,6-4 2-6 7-6(1) 6-3
+2022,2022-09-16,Coupe Davis Finals RR: ESP vs CAN,Poule,CHEF,Auger Aliassime Felix,CHAN,Carlos Alcaraz,6-7(3) 6-4 6-2
+2022,2022-09-19,Metz,1/8,DOC,Hurkacz Hubert,PAT,Dominic Thiem,6-3 6-4
+2022,2022-09-19,Metz,1/8,CHAN,Korda Sebastian,PAT,Lorenzo Musetti,6-3 7-6(6)
+2022,2022-09-26,Seoul,1/4,CHEF,Brooksby Jenson,DOC,Cameron Norrie,W/O
+2022,2022-09-26,Seoul,1/2,PAT,Shapovalov Denis,CHEF,Jenson Brooksby,7-5 6-4
+2022,2022-09-26,Sofia,1/2,CHAN,Rune Holger,CHEF,Jannik Sinner,5-7 6-4 5-2 RET
+2022,2022-10-03,Astana,1/2,DOC,Tsitsipas Stefanos,CHEF,Andrey Rublev,4-6 6-4 6-3
+2022,2022-10-10,Florence,1/4,CHEF,Auger Aliassime Felix,PAT,Brandon Nakashima,6-3 6-4
+2022,2022-10-10,Florence,1/2,CHEF,Auger Aliassime Felix,PAT,Lorenzo Musetti,6-2 6-3
+2022,2022-10-10,Gijon,1/2,CHEF,Rublev Andrey,PAT,Dominic Thiem,6-4 6-4
+2022,2022-10-10,Gijon,F,CHEF,Rublev Andrey,CHAN,Sebastian Korda,6-2 6-3
+2022,2022-10-17,Antwerp,1/4,PAT,Thiem Dominic,DOC,Hubert Hurkacz,3-6 7-6(9) 7-6(4)
+2022,2022-10-17,Antwerp,1/2,CHAN,Korda Sebastian,PAT,Dominic Thiem,6-7(4) 6-3 7-6(4)
+2022,2022-10-17,Antwerp,F,CHEF,Auger Aliassime Felix,CHAN,Sebastian Korda,6-3 6-4
+2022,2022-10-17,Naples,F,PAT,Musetti Lorenzo,CHEF,Matteo Berrettini,7-6(5) 6-2
+2022,2022-10-17,Stockholm,1/8,DOC,Norrie Cameron,CHAN,Aslan Karatsev,6-7(8) 6-3 6-4
+2022,2022-10-17,Stockholm,1/4,CHAN,Rune Holger,DOC,Cameron Norrie,6-7(4) 6-3 6-3
+2022,2022-10-17,Stockholm,F,CHAN,Rune Holger,DOC,Stefanos Tsitsipas,6-4 6-4
+2022,2022-10-24,Basel,1/8,CHAN,Rune Holger,CHEF,Ugo Humbert,6-4 6-2
+2022,2022-10-24,Basel,1/2,CHEF,Auger Aliassime Felix,CHAN,Carlos Alcaraz,6-3 6-2
+2022,2022-10-24,Basel,F,CHEF,Auger Aliassime Felix,CHAN,Holger Rune,6-3 7-5
+2022,2022-10-24,Vienna,1/16,CHEF,Rublev Andrey,DOC,Diego Schwartzman,6-4 6-1
+2022,2022-10-24,Vienna,1/8,CHAN,Medvedev Daniil,PAT,Dominic Thiem,6-3 6-3
+2022,2022-10-24,Vienna,1/4,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,6-4 6-2
+2022,2022-10-24,Vienna,F,CHAN,Medvedev Daniil,PAT,Denis Shapovalov,4-6 6-3 6-2
+2022,2022-10-31,Masters de Paris,1/16,PAT,Moutet Corentin,DOC,Cameron Norrie,6-3 5-7 7-6(3)
+2022,2022-10-31,Masters de Paris,1/16,CHAN,Rune Holger,DOC,Hubert Hurkacz,7-5 6-1
+2022,2022-10-31,Masters de Paris,1/8,CHAN,Rune Holger,CHEF,Andrey Rublev,6-4 7-5
+2022,2022-10-31,Masters de Paris,1/8,DOC,Tsitsipas Stefanos,PAT,Corentin Moutet,6-3 7-6(3)
+2022,2022-10-31,Masters de Paris,1/2,CHAN,Rune Holger,CHEF,Felix Auger Aliassime,6-4 6-2
+2022,2022-11-14,ATP Finals,Poule,CHEF,Rublev Andrey,DOC,Stefanos Tsitsipas,3-6 6-3 6-2
+2022,2022-11-14,ATP Finals,Poule,CHEF,Rublev Andrey,CHAN,Daniil Medvedev,6-7(7) 6-3 7-6(7)
+2022,2022-11-14,ATP Finals,Poule,PAT,Ruud Casper,CHEF,Felix Auger Aliassime,7-6(4) 6-4
+2022,2022-11-14,ATP Finals,Poule,DOC,Tsitsipas Stefanos,CHAN,Daniil Medvedev,6-3 6-7(11) 7-6(1)
+2022,2022-11-14,ATP Finals,1/2,PAT,Ruud Casper,CHEF,Andrey Rublev,6-2 6-4
+2022,2022-11-26,Coupe Davis Finals SF: ITA vs CAN,Poule,CHEF,Auger Aliassime Felix,PAT,Lorenzo Musetti,6-3 6-4
+2023,2023-01-02,Adelaide 1,1/4,CHAN,Korda Sebastian,CHEF,Jannik Sinner,7-5 6-1
+2023,2023-01-02,United Cup,Poule,CHEF,Berrettini Matteo,DOC,Hubert Hurkacz,6-4 3-6 6-3
+2023,2023-01-02,United Cup,Poule,CHEF,Berrettini Matteo,PAT,Casper Ruud,6-4 6-4
+2023,2023-01-02,United Cup,Poule,PAT,Fritz Taylor,DOC,Alexander Zverev,6-1 6-4
+2023,2023-01-02,United Cup,Poule,DOC,Norrie Cameron,PAT,Taylor Fritz,6-4 5-7 6-4
+2023,2023-01-02,United Cup,1/2,PAT,Fritz Taylor,DOC,Hubert Hurkacz,7-6(5) 7-6(5)
+2023,2023-01-02,United Cup,1/2,DOC,Tsitsipas Stefanos,CHEF,Matteo Berrettini,4-6 7-6(2) 6-4
+2023,2023-01-02,United Cup,F,PAT,Fritz Taylor,CHEF,Matteo Berrettini,7-6(4) 7-6(6)
+2023,2023-01-02,United Cup,F,CHAN,Tiafoe Frances,PAT,Lorenzo Musetti,6-2 0-0 RET
+2023,2023-01-09,Auckland,1/8,CHEF,Brooksby Jenson,DOC,Diego Schwartzman,6-1 0-0 RET
+2023,2023-01-09,Auckland,1/2,DOC,Norrie Cameron,CHEF,Jenson Brooksby,6-3 6-4
+2023,2023-01-16,Open d'Australie,1/64,CHEF,Rublev Andrey,PAT,Dominic Thiem,6-3 6-4 6-2
+2023,2023-01-16,Open d'Australie,1/32,CHEF,Brooksby Jenson,PAT,Casper Ruud,6-3 7-5 6-7(4) 6-2
+2023,2023-01-16,Open d'Australie,1/16,DOC,Hurkacz Hubert,PAT,Denis Shapovalov,7-6(3) 6-4 1-6 4-6 6-3
+2023,2023-01-16,Open d'Australie,1/8,CHAN,Korda Sebastian,DOC,Hubert Hurkacz,3-6 6-3 6-2 1-6 7-6(7)
+2023,2023-01-16,Open d'Australie,1/8,CHEF,Rublev Andrey,CHAN,Holger Rune,6-3 3-6 6-3 4-6 7-6(9)
+2023,2023-01-16,Open d'Australie,1/8,DOC,Tsitsipas Stefanos,CHEF,Jannik Sinner,6-4 6-4 3-6 4-6 6-3
+2023,2023-02-13,Buenos Aires,F,CHAN,Alcaraz Carlos,DOC,Cameron Norrie,6-3 7-5
+2023,2023-02-13,Rotterdam,1/8,CHEF,Sinner Jannik,DOC,Stefanos Tsitsipas,6-4 6-3
+2023,2023-02-13,Rotterdam,1/4,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-2 6-4
+2023,2023-02-13,Rotterdam,F,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,5-7 6-2 6-2
+2023,2023-02-20,Doha,1/2,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-4 7-6(7)
+2023,2023-02-20,Rio De Janeiro,F,DOC,Norrie Cameron,CHAN,Carlos Alcaraz,5-7 6-4 7-5
+2023,2023-02-27,Acapulco,1/16,CHAN,Rune Holger,PAT,Ben Shelton,6-7(7) 6-4 6-2
+2023,2023-02-27,Acapulco,1/8,DOC,Fritz Taylor,PAT,Denis Shapovalov,6-4 6-4
+2023,2023-02-27,Acapulco,1/4,DOC,Fritz Taylor,CHAN,Frances Tiafoe,6-3 6-4
+2023,2023-02-27,Acapulco,1/4,CHAN,Rune Holger,CHEF,Matteo Berrettini,6-0 1-0 RET
+2023,2023-02-27,Dubai,1/2,CHEF,Rublev Andrey,DOC,Alexander Zverev,6-3 7-6(9)
+2023,2023-02-27,Dubai,F,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,6-2 6-2
+2023,2023-03-06,Masters d'Indian Wells,1/32,DOC,Fritz Taylor,PAT,Ben Shelton,4-6 6-4 6-3
+2023,2023-03-06,Masters d'Indian Wells,1/32,CHAN,Medvedev Daniil,PAT,Brandon Nakashima,6-4 6-3
+2023,2023-03-06,Masters d'Indian Wells,1/32,PAT,Ruud Casper,DOC,Diego Schwartzman,6-2 6-3
+2023,2023-03-06,Masters d'Indian Wells,1/8,CHAN,Alcaraz Carlos,CHEF,Jack Draper,6-2 2-0 RET
+2023,2023-03-06,Masters d'Indian Wells,1/8,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-7(5) 7-6(5) 7-5
+2023,2023-03-06,Masters d'Indian Wells,1/8,DOC,Norrie Cameron,CHEF,Andrey Rublev,6-2 6-4
+2023,2023-03-06,Masters d'Indian Wells,1/4,CHAN,Alcaraz Carlos,CHEF,Felix Auger Aliassime,6-4 6-4
+2023,2023-03-06,Masters d'Indian Wells,1/4,CHEF,Sinner Jannik,DOC,Taylor Fritz,6-4 4-6 6-4
+2023,2023-03-06,Masters d'Indian Wells,1/4,CHAN,Tiafoe Frances,DOC,Cameron Norrie,6-4 6-4
+2023,2023-03-06,Masters d'Indian Wells,1/2,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,7-6(4) 6-3
+2023,2023-03-20,Masters de Miami,1/16,DOC,Fritz Taylor,PAT,Denis Shapovalov,6-4 6-4
+2023,2023-03-20,Masters de Miami,1/16,CHAN,Rune Holger,DOC,Diego Schwartzman,6-4 6-2
+2023,2023-03-20,Masters de Miami,1/8,DOC,Fritz Taylor,CHAN,Holger Rune,6-3 6-4
+2023,2023-03-20,Masters de Miami,1/4,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-4 6-2
+2023,2023-03-20,Masters de Miami,1/2,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,6-7(4) 6-4 6-2
+2023,2023-03-20,Masters de Miami,F,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,7-5 6-3
+2023,2023-04-10,Masters de Monte-Carlo,1/16,DOC,Hurkacz Hubert,CHEF,Jack Draper,6-3 6-7(3) 7-5
+2023,2023-04-10,Masters de Monte-Carlo,1/16,CHAN,Rune Holger,PAT,Dominic Thiem,6-2 6-4
+2023,2023-04-10,Masters de Monte-Carlo,1/16,CHEF,Sinner Jannik,DOC,Diego Schwartzman,6-0 3-1 RET
+2023,2023-04-10,Masters de Monte-Carlo,1/8,CHAN,Medvedev Daniil,DOC,Alexander Zverev,3-6 7-5 7-6(7)
+2023,2023-04-10,Masters de Monte-Carlo,1/8,CHAN,Rune Holger,CHEF,Matteo Berrettini,W/O
+2023,2023-04-10,Masters de Monte-Carlo,1/8,CHEF,Sinner Jannik,DOC,Hubert Hurkacz,3-6 7-6(6) 6-1
+2023,2023-04-10,Masters de Monte-Carlo,1/4,CHEF,Sinner Jannik,PAT,Lorenzo Musetti,6-2 6-2
+2023,2023-04-10,Masters de Monte-Carlo,1/2,CHEF,Rublev Andrey,DOC,Taylor Fritz,5-7 6-1 6-3
+2023,2023-04-10,Masters de Monte-Carlo,1/2,CHAN,Rune Holger,CHEF,Jannik Sinner,1-6 7-5 7-5
+2023,2023-04-10,Masters de Monte-Carlo,F,CHEF,Rublev Andrey,CHAN,Holger Rune,5-7 6-2 7-5
+2023,2023-04-17,Barcelona,1/16,CHEF,Sinner Jannik,DOC,Diego Schwartzman,6-2 6-4
+2023,2023-04-17,Barcelona,1/8,PAT,Musetti Lorenzo,DOC,Cameron Norrie,3-6 6-4 6-1
+2023,2023-04-17,Barcelona,1/8,DOC,Tsitsipas Stefanos,PAT,Denis Shapovalov,6-3 6-2
+2023,2023-04-17,Barcelona,1/4,PAT,Musetti Lorenzo,CHEF,Jannik Sinner,W/O
+2023,2023-04-17,Barcelona,1/2,DOC,Tsitsipas Stefanos,PAT,Lorenzo Musetti,6-4 5-7 6-3
+2023,2023-04-17,Barcelona,F,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,6-3 6-4
+2023,2023-04-17,Munich,1/4,DOC,Fritz Taylor,PAT,Dominic Thiem,6-3 6-4
+2023,2023-04-24,Masters de Madrid,1/32,DOC,Tsitsipas Stefanos,PAT,Dominic Thiem,3-6 6-1 7-6(5)
+2023,2023-04-24,Masters de Madrid,1/8,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-1 6-2
+2023,2023-05-08,Masters de Rome,1/32,CHAN,Rune Holger,CHEF,Arthur Fils,6-3 6-3
+2023,2023-05-08,Masters de Rome,1/16,PAT,Musetti Lorenzo,CHAN,Frances Tiafoe,5-7 6-4 6-3
+2023,2023-05-08,Masters de Rome,1/8,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-2 7-6(3)
+2023,2023-05-08,Masters de Rome,1/8,DOC,Tsitsipas Stefanos,PAT,Lorenzo Musetti,7-5 7-5
+2023,2023-05-08,Masters de Rome,1/2,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,7-5 7-5
+2023,2023-05-08,Masters de Rome,1/2,CHAN,Rune Holger,PAT,Casper Ruud,6-7(2) 6-4 6-2
+2023,2023-05-22,Lyon,1/16,PAT,Nakashima Brandon,DOC,Diego Schwartzman,7-5 6-3
+2023,2023-05-22,Lyon,1/2,CHEF,Fils Arthur,PAT,Brandon Nakashima,7-5 4-6 7-6(5)
+2023,2023-05-29,Roland-Garros,1/16,CHAN,Alcaraz Carlos,PAT,Denis Shapovalov,6-1 6-4 6-2
+2023,2023-05-29,Roland-Garros,1/16,PAT,Musetti Lorenzo,DOC,Cameron Norrie,6-1 6-2 6-4
+2023,2023-05-29,Roland-Garros,1/16,DOC,Zverev Alexander,CHAN,Frances Tiafoe,3-6 7-6(3) 6-1 7-6(5)
+2023,2023-05-29,Roland-Garros,1/8,CHAN,Alcaraz Carlos,PAT,Lorenzo Musetti,6-3 6-2 6-2
+2023,2023-05-29,Roland-Garros,1/4,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,6-2 6-1 7-6(5)
+2023,2023-05-29,Roland-Garros,1/4,PAT,Ruud Casper,CHAN,Holger Rune,6-1 6-2 3-6 6-3
+2023,2023-05-29,Roland-Garros,1/2,PAT,Ruud Casper,DOC,Alexander Zverev,6-3 6-4 6-0
+2023,2023-06-12,Stuttgart,1/4,CHAN,Tiafoe Frances,PAT,Lorenzo Musetti,6-7(6) 7-6(4) 6-2
+2023,2023-06-19,Halle,1/16,DOC,Zverev Alexander,PAT,Dominic Thiem,6-3 6-4
+2023,2023-06-19,Halle,1/8,DOC,Zverev Alexander,PAT,Denis Shapovalov,6-2 6-4
+2023,2023-06-19,Queen's Club,1/4,CHAN,Korda Sebastian,DOC,Cameron Norrie,6-4 7-6(1)
+2023,2023-06-19,Queen's Club,1/4,CHAN,Rune Holger,PAT,Lorenzo Musetti,6-4 7-5
+2023,2023-07-03,Wimbledon,1/64,DOC,Tsitsipas Stefanos,PAT,Dominic Thiem,3-6 7-6(1) 6-2 6-7(5) 7-6(8)
+2023,2023-07-03,Wimbledon,1/32,CHEF,Sinner Jannik,DOC,Diego Schwartzman,7-5 6-1 6-2
+2023,2023-07-03,Wimbledon,1/16,CHEF,Berrettini Matteo,DOC,Alexander Zverev,6-3 7-6(4) 7-6(5)
+2023,2023-07-03,Wimbledon,1/16,DOC,Hurkacz Hubert,PAT,Lorenzo Musetti,7-6(4) 6-4 6-4
+2023,2023-07-03,Wimbledon,1/8,CHAN,Alcaraz Carlos,CHEF,Matteo Berrettini,3-6 6-3 6-3 6-3
+2023,2023-07-17,Bastad,1/4,CHEF,Rublev Andrey,DOC,Alexander Zverev,6-2 6-3
+2023,2023-07-17,Bastad,F,CHEF,Rublev Andrey,PAT,Casper Ruud,7-6(3) 6-0
+2023,2023-07-24,Atlanta,1/16,CHAN,Shang Juncheng,PAT,Ben Shelton,6-4 6-4
+2023,2023-07-24,Hamburg,1/4,CHEF,Fils Arthur,PAT,Casper Ruud,6-0 6-4
+2023,2023-07-24,Hamburg,1/2,DOC,Zverev Alexander,CHEF,Arthur Fils,6-2 6-4
+2023,2023-07-31,Washington,1/16,CHAN,Shang Juncheng,PAT,Ben Shelton,6-2 3-6 6-3
+2023,2023-08-07,Masters du Canada,1/16,CHAN,Alcaraz Carlos,PAT,Ben Shelton,6-3 7-6(3)
+2023,2023-08-07,Masters du Canada,1/8,CHAN,Alcaraz Carlos,DOC,Hubert Hurkacz,3-6 7-6(2) 7-6(3)
+2023,2023-08-07,Masters du Canada,1/8,CHAN,Medvedev Daniil,PAT,Lorenzo Musetti,6-4 6-4
+2023,2023-08-14,Masters de Cincinnati,1/16,CHAN,Medvedev Daniil,PAT,Lorenzo Musetti,6-3 6-2
+2023,2023-08-14,Masters de Cincinnati,1/16,DOC,Tsitsipas Stefanos,PAT,Ben Shelton,7-6(3) 7-6(2)
+2023,2023-08-14,Masters de Cincinnati,1/8,DOC,Zverev Alexander,CHAN,Daniil Medvedev,6-4 5-7 6-4
+2023,2023-08-14,Masters de Cincinnati,1/2,CHAN,Alcaraz Carlos,DOC,Hubert Hurkacz,2-6 7-6(4) 6-3
+2023,2023-08-21,Winston-Salem,1/16,PAT,Nakashima Brandon,CHEF,Arthur Fils,6-7(5) 7-6(5) 6-2
+2023,2023-08-28,US Open,1/32,CHEF,Draper Jack,DOC,Hubert Hurkacz,6-2 6-4 7-5
+2023,2023-08-28,US Open,1/8,DOC,Zverev Alexander,CHEF,Jannik Sinner,6-4 3-6 6-2 4-6 6-3
+2023,2023-08-28,US Open,1/4,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-3 6-2 6-4
+2023,2023-08-28,US Open,1/4,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,6-4 6-3 6-4
+2023,2023-08-28,US Open,1/4,PAT,Shelton Ben,CHAN,Frances Tiafoe,6-2 3-6 7-6(7) 6-2
+2023,2023-09-27,Beijing,1/16,CHEF,Rublev Andrey,DOC,Cameron Norrie,4-6 6-1 6-4
+2023,2023-09-27,Beijing,1/16,CHAN,Rune Holger,CHEF,Felix Auger Aliassime,6-4 6-4
+2023,2023-09-27,Beijing,1/8,CHAN,Alcaraz Carlos,PAT,Lorenzo Musetti,6-2 6-2
+2023,2023-09-27,Beijing,1/4,CHAN,Alcaraz Carlos,PAT,Casper Ruud,6-4 6-2
+2023,2023-09-27,Beijing,1/2,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-4 6-3
+2023,2023-09-27,Beijing,1/2,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,7-6(4) 6-1
+2023,2023-09-27,Beijing,F,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,7-6(2) 7-6(2)
+2023,2023-10-02,Masters de Shanghai,1/32,PAT,Nakashima Brandon,CHAN,Holger Rune,6-0 6-2
+2023,2023-10-02,Masters de Shanghai,1/8,PAT,Shelton Ben,CHEF,Jannik Sinner,2-6 6-3 7-6(5)
+2023,2023-10-02,Masters de Shanghai,1/4,CHAN,Korda Sebastian,PAT,Ben Shelton,6-7(10) 6-2 7-6(6)
+2023,2023-10-02,Masters de Shanghai,1/2,DOC,Hurkacz Hubert,CHAN,Sebastian Korda,6-3 6-4
+2023,2023-10-02,Masters de Shanghai,F,DOC,Hurkacz Hubert,CHEF,Andrey Rublev,6-3 3-6 7-6(8)
+2023,2023-10-16,Antwerp,1/2,CHEF,Fils Arthur,DOC,Stefanos Tsitsipas,7-6(5) 7-6(4)
+2023,2023-10-23,Basel,1/2,CHEF,Auger Aliassime Felix,CHAN,Holger Rune,6-3 6-2
+2023,2023-10-23,Basel,F,CHEF,Auger Aliassime Felix,DOC,Hubert Hurkacz,7-6(3) 7-6(5)
+2023,2023-10-23,Vienna,1/16,CHAN,Medvedev Daniil,CHEF,Arthur Fils,6-4 6-2
+2023,2023-10-23,Vienna,1/16,CHEF,Sinner Jannik,PAT,Ben Shelton,7-6(2) 7-5
+2023,2023-10-23,Vienna,1/16,DOC,Tsitsipas Stefanos,PAT,Dominic Thiem,7-6(5) 6-4
+2023,2023-10-23,Vienna,1/4,CHEF,Rublev Andrey,DOC,Alexander Zverev,6-1 6-7(5) 6-3
+2023,2023-10-23,Vienna,1/4,CHEF,Sinner Jannik,CHAN,Frances Tiafoe,6-3 6-4
+2023,2023-10-23,Vienna,1/2,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,6-4 7-6(6)
+2023,2023-10-23,Vienna,F,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,7-6(7) 4-6 6-3
+2023,2023-10-30,Masters de Paris,1/32,DOC,Hurkacz Hubert,CHAN,Sebastian Korda,6-3 6-7(6) 6-3
+2023,2023-10-30,Masters de Paris,1/16,CHAN,Rune Holger,PAT,Dominic Thiem,6-4 6-2
+2023,2023-10-30,Masters de Paris,1/16,DOC,Tsitsipas Stefanos,CHEF,Felix Auger Aliassime,6-3 7-6(4)
+2023,2023-11-06,Sofia,1/8,CHEF,Draper Jack,PAT,Lorenzo Musetti,7-5 6-2
+2023,2023-11-13,ATP Finals,Poule,CHAN,Alcaraz Carlos,CHEF,Andrey Rublev,7-5 6-2
+2023,2023-11-13,ATP Finals,Poule,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,6-4 6-2
+2023,2023-11-13,ATP Finals,Poule,CHAN,Medvedev Daniil,DOC,Alexander Zverev,7-6(7) 6-4
+2023,2023-11-13,ATP Finals,Poule,CHAN,Rune Holger,DOC,Stefanos Tsitsipas,2-1 RET
+2023,2023-11-13,ATP Finals,Poule,CHEF,Sinner Jannik,DOC,Stefanos Tsitsipas,6-4 6-4
+2023,2023-11-13,ATP Finals,Poule,CHEF,Sinner Jannik,CHAN,Holger Rune,6-2 5-7 6-4
+2023,2023-11-13,ATP Finals,Poule,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,6-7(3) 6-3 6-4
+2023,2023-11-13,ATP Finals,Poule,DOC,Zverev Alexander,CHEF,Andrey Rublev,6-4 6-4
+2023,2023-11-13,ATP Finals,1/2,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-3 6-7(4) 6-1
+2024,2024-01-01,United Cup,Poule,PAT,De Minaur Alex,DOC,Taylor Fritz,6-4 6-2
+2024,2024-01-01,United Cup,1/2,PAT,De Minaur Alex,DOC,Alexander Zverev,5-7 6-3 6-4
+2024,2024-01-08,Adelaide,1/8,DOC,Jarry Nicolas,CHEF,Matteo Arnaldi,6-7(5) 7-6(7) 6-4
+2024,2024-01-15,Open d'Australie,1/32,PAT,De Minaur Alex,CHEF,Matteo Arnaldi,6-3 6-0 6-3
+2024,2024-01-15,Open d'Australie,1/32,DOC,Hurkacz Hubert,CHAN,Jakub Mensik,6-7(9) 6-1 5-7 6-1 6-3
+2024,2024-01-15,Open d'Australie,1/16,CHAN,Medvedev Daniil,CHEF,Felix Auger Aliassime,6-3 6-4 6-3
+2024,2024-01-15,Open d'Australie,1/16,CHEF,Rublev Andrey,CHAN,Sebastian Korda,6-2 7-6(6) 6-4
+2024,2024-01-15,Open d'Australie,1/16,DOC,Zverev Alexander,PAT,Alex Michelsen,6-2 7-6(4) 6-2
+2024,2024-01-15,Open d'Australie,1/8,CHEF,Rublev Andrey,PAT,Alex De Minaur,6-4 6-7(5) 6-7(4) 6-3 6-0
+2024,2024-01-15,Open d'Australie,1/4,CHAN,Medvedev Daniil,DOC,Hubert Hurkacz,7-6(4) 2-6 6-3 5-7 6-4
+2024,2024-01-15,Open d'Australie,1/4,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,6-1 6-3 6-7(2) 6-4
+2024,2024-01-15,Open d'Australie,1/2,CHAN,Medvedev Daniil,DOC,Alexander Zverev,5-7 3-6 7-6(4) 7-6(5) 6-3
+2024,2024-01-15,Open d'Australie,F,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,3-6 3-6 6-4 6-4 6-3
+2024,2024-02-05,Dallas,1/8,CHAN,Tiafoe Frances,PAT,Alex Michelsen,6-4 6-3
+2024,2024-02-12,Buenos Aires,1/2,DOC,Jarry Nicolas,CHAN,Carlos Alcaraz,7-6(2) 6-3
+2024,2024-02-12,Rotterdam,1/16,PAT,De Minaur Alex,CHAN,Sebastian Korda,6-4 6-3
+2024,2024-02-12,Rotterdam,1/4,PAT,De Minaur Alex,CHEF,Andrey Rublev,7-6(5) 4-6 6-3
+2024,2024-02-12,Rotterdam,F,CHEF,Sinner Jannik,PAT,Alex De Minaur,7-5 6-4
+2024,2024-02-19,Doha,1/4,CHAN,Mensik Jakub,CHEF,Andrey Rublev,6-4 7-6(6)
+2024,2024-02-19,Los Cabos,1/2,PAT,Ruud Casper,DOC,Stefanos Tsitsipas,6-4 7-6(4)
+2024,2024-02-26,Acapulco,1/16,PAT,Arnaldi Matteo,DOC,Taylor Fritz,6-4 4-6 6-3
+2024,2024-02-26,Acapulco,1/4,PAT,De Minaur Alex,DOC,Stefanos Tsitsipas,1-6 6-3 6-3
+2024,2024-02-26,Acapulco,1/2,PAT,De Minaur Alex,CHEF,Jack Draper,6-3 2-6 4-0 RET
+2024,2024-02-26,Acapulco,1/2,PAT,Ruud Casper,CHAN,Holger Rune,3-6 6-3 6-4
+2024,2024-02-26,Dubai,1/4,CHEF,Rublev Andrey,CHAN,Sebastian Korda,6-4 4-3 RET
+2024,2024-03-04,Masters d'Indian Wells,1/32,CHAN,Alcaraz Carlos,PAT,Matteo Arnaldi,6-7(5) 6-0 6-1
+2024,2024-03-04,Masters d'Indian Wells,1/32,PAT,Shelton Ben,CHAN,Jakub Mensik,4-6 6-3 6-4
+2024,2024-03-04,Masters d'Indian Wells,1/16,CHAN,Alcaraz Carlos,CHEF,Felix Auger Aliassime,6-2 6-3
+2024,2024-03-04,Masters d'Indian Wells,1/16,CHAN,Rune Holger,CHEF,Lorenzo Musetti,6-2 7-6(5)
+2024,2024-03-04,Masters d'Indian Wells,1/16,PAT,Ruud Casper,CHEF,Arthur Fils,6-2 6-4
+2024,2024-03-04,Masters d'Indian Wells,1/16,DOC,Tsitsipas Stefanos,CHAN,Frances Tiafoe,6-3 6-3
+2024,2024-03-04,Masters d'Indian Wells,1/8,CHAN,Rune Holger,DOC,Taylor Fritz,2-6 7-6(2) 6-3
+2024,2024-03-04,Masters d'Indian Wells,1/8,CHEF,Sinner Jannik,PAT,Ben Shelton,7-6(4) 6-1
+2024,2024-03-04,Masters d'Indian Wells,1/8,DOC,Zverev Alexander,PAT,Alex De Minaur,5-7 6-2 6-3
+2024,2024-03-04,Masters d'Indian Wells,1/4,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-3 6-1
+2024,2024-03-04,Masters d'Indian Wells,1/2,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,1-6 6-3 6-2
+2024,2024-03-18,Masters de Miami,1/64,PAT,Arnaldi Matteo,CHEF,Arthur Fils,6-3 6-4
+2024,2024-03-18,Masters de Miami,1/32,DOC,Jarry Nicolas,CHEF,Jack Draper,7-6(5) 4-6 7-6(2)
+2024,2024-03-18,Masters de Miami,1/32,DOC,Zverev Alexander,CHEF,Felix Auger Aliassime,6-2 6-4
+2024,2024-03-18,Masters de Miami,1/16,DOC,Hurkacz Hubert,CHAN,Sebastian Korda,7-6(5) 6-7(5) 6-3
+2024,2024-03-18,Masters de Miami,1/16,CHEF,Musetti Lorenzo,PAT,Ben Shelton,6-4 7-6(5)
+2024,2024-03-18,Masters de Miami,1/8,CHAN,Alcaraz Carlos,CHEF,Lorenzo Musetti,6-3 6-3
+2024,2024-03-18,Masters de Miami,1/8,DOC,Jarry Nicolas,PAT,Casper Ruud,7-6(3) 6-3
+2024,2024-03-18,Masters de Miami,1/4,CHAN,Medvedev Daniil,DOC,Nicolas Jarry,6-2 7-6(7)
+2024,2024-03-18,Masters de Miami,1/2,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-1 6-2
+2024,2024-04-01,Houston,1/2,PAT,Shelton Ben,DOC,Tomas Martin Etcheverry,6-7(4) 6-4 6-4
+2024,2024-04-01,Houston,F,PAT,Shelton Ben,CHAN,Frances Tiafoe,7-5 4-6 6-3
+2024,2024-04-08,Masters de Monte-Carlo,1/32,DOC,Hurkacz Hubert,CHEF,Jack Draper,6-4 3-6 7-6(2)
+2024,2024-04-08,Masters de Monte-Carlo,1/32,CHEF,Musetti Lorenzo,DOC,Taylor Fritz,6-4 6-4
+2024,2024-04-08,Masters de Monte-Carlo,1/16,CHEF,Sinner Jannik,CHAN,Sebastian Korda,6-1 6-2
+2024,2024-04-08,Masters de Monte-Carlo,1/8,PAT,Ruud Casper,DOC,Hubert Hurkacz,6-4 6-2
+2024,2024-04-08,Masters de Monte-Carlo,1/4,CHEF,Sinner Jannik,CHAN,Holger Rune,6-4 6-7(6) 6-3
+2024,2024-04-08,Masters de Monte-Carlo,1/2,DOC,Tsitsipas Stefanos,CHEF,Jannik Sinner,6-4 3-6 6-4
+2024,2024-04-08,Masters de Monte-Carlo,F,DOC,Tsitsipas Stefanos,PAT,Casper Ruud,6-1 6-4
+2024,2024-04-15,Barcelona,1/8,CHEF,Fils Arthur,PAT,Alex De Minaur,7-5 6-2
+2024,2024-04-15,Barcelona,1/2,PAT,Ruud Casper,DOC,Tomas Martin Etcheverry,7-6(6) 6-4
+2024,2024-04-15,Barcelona,F,PAT,Ruud Casper,DOC,Stefanos Tsitsipas,7-5 6-3
+2024,2024-04-15,Munich,1/4,DOC,Fritz Taylor,CHEF,Jack Draper,4-6 6-3 7-6(1)
+2024,2024-04-22,Masters de Madrid,1/32,DOC,Hurkacz Hubert,CHEF,Jack Draper,6-1 7-5
+2024,2024-04-22,Masters de Madrid,1/32,CHAN,Medvedev Daniil,PAT,Matteo Arnaldi,2-6 6-4 6-4
+2024,2024-04-22,Masters de Madrid,1/16,CHEF,Auger Aliassime Felix,CHAN,Jakub Mensik,6-1 1-0 RET
+2024,2024-04-22,Masters de Madrid,1/8,CHEF,Auger Aliassime Felix,PAT,Casper Ruud,6-4 7-5
+2024,2024-04-22,Masters de Madrid,1/8,PAT,Cerundolo Francisco,DOC,Alexander Zverev,6-3 6-4
+2024,2024-04-22,Masters de Madrid,1/4,DOC,Fritz Taylor,PAT,Francisco Cerundolo,6-1 3-6 6-3
+2024,2024-04-22,Masters de Madrid,1/4,CHEF,Rublev Andrey,CHAN,Carlos Alcaraz,4-6 6-3 6-2
+2024,2024-04-22,Masters de Madrid,1/2,CHEF,Rublev Andrey,DOC,Taylor Fritz,6-4 6-3
+2024,2024-05-06,Masters de Rome,1/32,DOC,Jarry Nicolas,PAT,Matteo Arnaldi,6-2 7-6(6)
+2024,2024-05-06,Masters de Rome,1/32,CHAN,Medvedev Daniil,CHEF,Jack Draper,7-5 6-4
+2024,2024-05-06,Masters de Rome,1/16,PAT,De Minaur Alex,CHEF,Felix Auger Aliassime,6-7(2) 6-4 6-4
+2024,2024-05-06,Masters de Rome,1/16,DOC,Fritz Taylor,CHAN,Sebastian Korda,6-3 6-4
+2024,2024-05-06,Masters de Rome,1/8,DOC,Tsitsipas Stefanos,PAT,Alex De Minaur,6-1 6-2
+2024,2024-05-20,Geneva,1/8,PAT,Michelsen Alex,DOC,Taylor Fritz,6-4 4-6 7-5
+2024,2024-05-27,Roland-Garros,1/64,PAT,Arnaldi Matteo,CHEF,Arthur Fils,6-3 4-6 6-4 6-2
+2024,2024-05-27,Roland-Garros,1/16,PAT,Arnaldi Matteo,CHEF,Andrey Rublev,7-6(6) 6-2 6-4
+2024,2024-05-27,Roland-Garros,1/16,CHEF,Auger Aliassime Felix,PAT,Ben Shelton,6-4 6-2 6-1
+2024,2024-05-27,Roland-Garros,1/16,PAT,Ruud Casper,DOC,Tomas Martin Etcheverry,6-4 1-6 6-2 6-2
+2024,2024-05-27,Roland-Garros,1/8,CHAN,Alcaraz Carlos,CHEF,Felix Auger Aliassime,6-3 6-3 6-1
+2024,2024-05-27,Roland-Garros,1/8,PAT,De Minaur Alex,CHAN,Daniil Medvedev,4-6 6-2 6-1 6-3
+2024,2024-05-27,Roland-Garros,1/8,PAT,Ruud Casper,DOC,Taylor Fritz,7-6(6) 3-6 6-4 6-2
+2024,2024-05-27,Roland-Garros,1/8,DOC,Tsitsipas Stefanos,PAT,Matteo Arnaldi,3-6 7-6(4) 6-2 6-2
+2024,2024-05-27,Roland-Garros,1/8,DOC,Zverev Alexander,CHAN,Holger Rune,4-6 6-1 5-7 7-6(2) 6-2
+2024,2024-05-27,Roland-Garros,1/4,CHAN,Alcaraz Carlos,DOC,Stefanos Tsitsipas,6-3 7-6(3) 6-4
+2024,2024-05-27,Roland-Garros,1/4,DOC,Zverev Alexander,PAT,Alex De Minaur,6-4 7-6(5) 6-4
+2024,2024-05-27,Roland-Garros,1/2,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,2-6 6-3 3-6 6-4 6-3
+2024,2024-05-27,Roland-Garros,1/2,DOC,Zverev Alexander,PAT,Casper Ruud,2-6 6-2 6-4 6-2
+2024,2024-05-27,Roland-Garros,F,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-3 2-6 5-7 6-1 6-2
+2024,2024-06-10,s Hertogenbosch,F,PAT,De Minaur Alex,CHAN,Sebastian Korda,6-2 6-4
+2024,2024-06-17,Halle,1/4,DOC,Zverev Alexander,CHEF,Arthur Fils,6-7(5) 6-3 6-4
+2024,2024-06-17,Halle,F,CHEF,Sinner Jannik,DOC,Hubert Hurkacz,7-6(8) 7-6(2)
+2024,2024-06-17,Queen's Club,1/8,CHEF,Draper Jack,CHAN,Carlos Alcaraz,7-6(3) 6-3
+2024,2024-06-17,Queen's Club,1/4,CHAN,Paul Tommy,CHEF,Jack Draper,6-3 5-7 6-4
+2024,2024-07-01,Wimbledon,1/64,PAT,Mpetshi Perricard Giovanni,CHAN,Sebastian Korda,7-6(5) 6-7(4) 7-6(6) 6-7(4) 6-3
+2024,2024-07-01,Wimbledon,1/32,CHEF,Fils Arthur,DOC,Hubert Hurkacz,7-6(2) 6-4 2-6 6-6 RET
+2024,2024-07-01,Wimbledon,1/8,PAT,De Minaur Alex,CHEF,Arthur Fils,6-2 6-4 4-6 6-3
+2024,2024-07-01,Wimbledon,1/8,CHEF,Sinner Jannik,PAT,Ben Shelton,6-2 6-4 7-6(9)
+2024,2024-07-01,Wimbledon,1/4,CHAN,Medvedev Daniil,CHEF,Jannik Sinner,6-7(7) 6-4 7-6(4) 2-6 6-3
+2024,2024-07-15,Hamburg,1/4,CHEF,Fils Arthur,CHAN,Holger Rune,6-4 4-1 RET
+2024,2024-07-15,Hamburg,F,CHEF,Fils Arthur,DOC,Alexander Zverev,6-3 3-6 7-6(1)
+2024,2024-07-29,Jeux Olympiques,1/32,PAT,Arnaldi Matteo,CHEF,Arthur Fils,6-4 7-6(7)
+2024,2024-07-29,Jeux Olympiques,1/16,DOC,Fritz Taylor,CHEF,Jack Draper,6-7(3) 6-3 6-2
+2024,2024-07-29,Jeux Olympiques,1/8,CHEF,Auger Aliassime Felix,CHAN,Daniil Medvedev,6-3 7-6(5)
+2024,2024-07-29,Jeux Olympiques,1/4,CHEF,Auger Aliassime Felix,PAT,Casper Ruud,6-4 6-7(8) 6-3
+2024,2024-07-29,Jeux Olympiques,1/2,CHAN,Alcaraz Carlos,CHEF,Felix Auger Aliassime,6-1 6-1
+2024,2024-08-05,Masters du Canada,1/16,CHAN,Korda Sebastian,DOC,Taylor Fritz,6-4 7-6(4)
+2024,2024-08-05,Masters du Canada,1/16,CHEF,Rublev Andrey,DOC,Tomas Martin Etcheverry,7-6(3) 6-2
+2024,2024-08-05,Masters du Canada,1/8,DOC,Zverev Alexander,CHAN,Holger Rune,6-3 7-6(5)
+2024,2024-08-05,Masters du Canada,1/4,CHAN,Korda Sebastian,DOC,Alexander Zverev,7-6(5) 1-6 6-4
+2024,2024-08-05,Masters du Canada,1/2,CHEF,Rublev Andrey,PAT,Matteo Arnaldi,6-4 6-2
+2024,2024-08-12,Masters de Cincinnati,1/32,DOC,Etcheverry Tomas Martin,PAT,Matteo Arnaldi,6-3 6-7(3) 6-2
+2024,2024-08-12,Masters de Cincinnati,1/16,CHEF,Auger Aliassime Felix,PAT,Casper Ruud,6-3 6-1
+2024,2024-08-12,Masters de Cincinnati,1/16,CHEF,Draper Jack,DOC,Stefanos Tsitsipas,3-6 6-4 7-5
+2024,2024-08-12,Masters de Cincinnati,1/16,PAT,Shelton Ben,DOC,Tomas Martin Etcheverry,6-7(6) 7-6(7) 6-3
+2024,2024-08-12,Masters de Cincinnati,1/16,CHEF,Sinner Jannik,PAT,Alex Michelsen,6-4 7-5
+2024,2024-08-12,Masters de Cincinnati,1/4,CHAN,Rune Holger,CHEF,Jack Draper,6-4 6-2
+2024,2024-08-12,Masters de Cincinnati,1/4,DOC,Zverev Alexander,PAT,Ben Shelton,3-6 7-6(3) 7-5
+2024,2024-08-12,Masters de Cincinnati,1/2,CHEF,Sinner Jannik,DOC,Alexander Zverev,7-6(9) 5-7 7-6(4)
+2024,2024-08-26,US Open,1/64,DOC,Etcheverry Tomas Martin,PAT,Giovanni Mpetshi Perricard,6-4 6-2 6-3
+2024,2024-08-26,US Open,1/64,CHAN,Mensik Jakub,CHEF,Felix Auger Aliassime,6-2 6-4 6-2
+2024,2024-08-26,US Open,1/32,CHEF,Sinner Jannik,PAT,Alex Michelsen,6-4 6-0 6-2
+2024,2024-08-26,US Open,1/8,DOC,Fritz Taylor,PAT,Casper Ruud,3-6 6-4 6-3 6-2
+2024,2024-08-26,US Open,1/8,CHEF,Sinner Jannik,CHAN,Tommy Paul,7-6(3) 7-6(5) 6-1
+2024,2024-08-26,US Open,1/4,CHEF,Draper Jack,PAT,Alex De Minaur,6-3 7-5 6-2
+2024,2024-08-26,US Open,1/4,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-2 1-6 6-1 6-4
+2024,2024-08-26,US Open,F,CHEF,Sinner Jannik,DOC,Taylor Fritz,6-3 6-4 7-5
+2024,2024-09-20,Laver Cup,Poule,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-2 7-5
+2024,2024-09-20,Laver Cup,Poule,CHAN,Alcaraz Carlos,PAT,Ben Shelton,6-4 6-4
+2024,2024-09-20,Laver Cup,Poule,PAT,Shelton Ben,CHAN,Daniil Medvedev,6-7(6) 7-5 [10-7]
+2024,2024-09-25,Tokyo,1/16,CHEF,Fils Arthur,DOC,Taylor Fritz,6-4 3-6 6-3
+2024,2024-09-25,Tokyo,1/16,PAT,Michelsen Alex,DOC,Stefanos Tsitsipas,4-6 6-1 6-2
+2024,2024-09-25,Tokyo,1/16,CHAN,Paul Tommy,PAT,Matteo Arnaldi,6-3 6-2
+2024,2024-09-25,Tokyo,1/8,CHEF,Draper Jack,DOC,Hubert Hurkacz,6-4 6-4
+2024,2024-09-25,Tokyo,1/4,CHEF,Fils Arthur,PAT,Ben Shelton,7-5 6-7(5) 7-6(2)
+2024,2024-09-25,Tokyo,1/2,CHEF,Fils Arthur,CHAN,Holger Rune,7-6(8) 7-6(10)
+2024,2024-09-26,Beijing,1/16,CHAN,Alcaraz Carlos,PAT,Giovanni Mpetshi Perricard,6-4 6-4
+2024,2024-09-26,Beijing,1/16,CHEF,Sinner Jannik,DOC,Nicolas Jarry,4-6 6-3 6-1
+2024,2024-09-26,Beijing,F,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,6-7(6) 6-4 7-6(3)
+2024,2024-10-02,Masters de Shanghai,1/32,CHAN,Mensik Jakub,CHEF,Andrey Rublev,6-7(7) 6-4 6-3
+2024,2024-10-02,Masters de Shanghai,1/16,CHAN,Medvedev Daniil,PAT,Matteo Arnaldi,5-7 6-4 6-4
+2024,2024-10-02,Masters de Shanghai,1/16,CHEF,Sinner Jannik,DOC,Tomas Martin Etcheverry,6-7(3) 6-4 6-2
+2024,2024-10-02,Masters de Shanghai,1/8,DOC,Fritz Taylor,CHAN,Holger Rune,6-1 6-2
+2024,2024-10-02,Masters de Shanghai,1/8,CHAN,Medvedev Daniil,DOC,Stefanos Tsitsipas,7-6(3) 6-3
+2024,2024-10-02,Masters de Shanghai,1/8,CHEF,Sinner Jannik,PAT,Ben Shelton,6-4 7-6(1)
+2024,2024-10-02,Masters de Shanghai,1/4,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-1 6-4
+2024,2024-10-21,Basel,1/16,CHAN,Rune Holger,DOC,Nicolas Jarry,6-4 7-6(3)
+2024,2024-10-21,Basel,1/16,PAT,Shelton Ben,DOC,Tomas Martin Etcheverry,6-3 6-4
+2024,2024-10-21,Basel,1/8,PAT,Mpetshi Perricard Giovanni,CHEF,Felix Auger Aliassime,6-1 7-6(6)
+2024,2024-10-21,Basel,1/4,CHEF,Fils Arthur,DOC,Stefanos Tsitsipas,7-6(5) 6-3
+2024,2024-10-21,Basel,1/4,PAT,Shelton Ben,CHEF,Andrey Rublev,7-5 6-7(3) 6-4
+2024,2024-10-21,Basel,1/2,PAT,Mpetshi Perricard Giovanni,CHAN,Holger Rune,7-6(6) 6-4
+2024,2024-10-21,Basel,1/2,PAT,Shelton Ben,CHEF,Arthur Fils,6-3 7-6(9)
+2024,2024-10-21,Vienna,1/4,PAT,De Minaur Alex,CHAN,Jakub Mensik,6-7(2) 6-3 6-4
+2024,2024-10-28,Masters de Paris,1/32,PAT,Michelsen Alex,DOC,Hubert Hurkacz,6-1 6-3
+2024,2024-10-28,Masters de Paris,1/32,CHAN,Rune Holger,PAT,Matteo Arnaldi,6-4 6-4
+2024,2024-10-28,Masters de Paris,1/16,CHAN,Alcaraz Carlos,DOC,Nicolas Jarry,7-5 6-1
+2024,2024-10-28,Masters de Paris,1/16,CHEF,Draper Jack,DOC,Taylor Fritz,7-6(6) 4-6 6-4
+2024,2024-10-28,Masters de Paris,1/8,PAT,De Minaur Alex,CHEF,Jack Draper,5-7 6-2 6-3
+2024,2024-10-28,Masters de Paris,1/8,DOC,Zverev Alexander,CHEF,Arthur Fils,6-4 3-6 6-3
+2024,2024-10-28,Masters de Paris,1/4,CHAN,Rune Holger,PAT,Alex De Minaur,6-4 4-6 7-5
+2024,2024-10-28,Masters de Paris,1/2,DOC,Zverev Alexander,CHAN,Holger Rune,6-3 7-6(4)
+2024,2024-11-10,ATP Finals,Poule,CHAN,Alcaraz Carlos,CHEF,Andrey Rublev,6-3 7-6(8)
+2024,2024-11-10,ATP Finals,Poule,DOC,Fritz Taylor,CHAN,Daniil Medvedev,6-4 6-3
+2024,2024-11-10,ATP Finals,Poule,DOC,Fritz Taylor,PAT,Alex De Minaur,5-7 6-4 6-3
+2024,2024-11-10,ATP Finals,Poule,CHAN,Medvedev Daniil,PAT,Alex De Minaur,6-2 6-4
+2024,2024-11-10,ATP Finals,Poule,PAT,Ruud Casper,CHAN,Carlos Alcaraz,6-1 7-5
+2024,2024-11-10,ATP Finals,Poule,PAT,Ruud Casper,CHEF,Andrey Rublev,6-4 5-7 6-2
+2024,2024-11-10,ATP Finals,Poule,CHEF,Sinner Jannik,DOC,Taylor Fritz,6-4 6-4
+2024,2024-11-10,ATP Finals,Poule,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-3 6-4
+2024,2024-11-10,ATP Finals,Poule,CHEF,Sinner Jannik,PAT,Alex De Minaur,6-3 6-4
+2024,2024-11-10,ATP Finals,Poule,DOC,Zverev Alexander,CHAN,Carlos Alcaraz,7-6(5) 6-4
+2024,2024-11-10,ATP Finals,Poule,DOC,Zverev Alexander,PAT,Casper Ruud,7-6(3) 6-3
+2024,2024-11-10,ATP Finals,Poule,DOC,Zverev Alexander,CHEF,Andrey Rublev,6-4 6-4
+2024,2024-11-10,ATP Finals,1/2,CHEF,Sinner Jannik,PAT,Casper Ruud,6-1 6-2
+2024,2024-11-10,ATP Finals,F,CHEF,Sinner Jannik,DOC,Taylor Fritz,6-4 6-4
+2025,2024-12-27,United Cup,Poule,PAT,Ruud Casper,DOC,Hubert Hurkacz,7-5 6-3
+2025,2024-12-27,United Cup,Poule,PAT,Ruud Casper,DOC,Tomas Machac,7-6(6) 5-7 6-4
+2025,2024-12-30,Brisbane,1/16,CHEF,Lehecka Jiri,CHAN,Holger Rune,7-5 6-3
+2025,2024-12-30,Brisbane,1/8,PAT,Mpetshi Perricard Giovanni,JULES,Frances Tiafoe,6-4 7-6(4)
+2025,2024-12-30,Brisbane,1/4,PAT,Mpetshi Perricard Giovanni,CHAN,Jakub Mensik,7-5 7-6(5)
+2025,2024-12-30,Brisbane,1/2,CHEF,Lehecka Jiri,JULES,Grigor Dimitrov,6-4 4-4 RET
+2025,2025-01-06,Auckland,1/8,CHAN,Mensik Jakub,PAT,Ben Shelton,7-6(2) 4-6 7-5
+2025,2025-01-13,Open d'Australie,1/64,CHAN,Michelsen Alex,DOC,Stefanos Tsitsipas,7-5 6-3 2-6 6-4
+2025,2025-01-13,Open d'Australie,1/64,JULES,Musetti Lorenzo,PAT,Matteo Arnaldi,7-6(4) 4-6 7-6(5) 6-3
+2025,2025-01-13,Open d'Australie,1/32,CHAN,Mensik Jakub,PAT,Casper Ruud,6-2 3-6 6-1 6-4
+2025,2025-01-13,Open d'Australie,1/16,JULES,Djokovic Novak,DOC,Tomas Machac,6-1 6-4 6-4
+2025,2025-01-13,Open d'Australie,1/16,JULES,Humbert Ugo,CHEF,Arthur Fils,4-6 7-5 6-4 1-0 RET
+2025,2025-01-13,Open d'Australie,1/16,PAT,Shelton Ben,JULES,Lorenzo Musetti,6-3 3-6 6-4 7-6(5)
+2025,2025-01-13,Open d'Australie,1/8,CHAN,Alcaraz Carlos,CHEF,Jack Draper,7-5 6-1 0-0 RET
+2025,2025-01-13,Open d'Australie,1/8,PAT,De Minaur Alex,CHAN,Alex Michelsen,6-0 7-6(5) 6-3
+2025,2025-01-13,Open d'Australie,1/8,JULES,Djokovic Novak,CHEF,Jiri Lehecka,6-3 6-4 7-6(4)
+2025,2025-01-13,Open d'Australie,1/8,CHEF,Sinner Jannik,CHAN,Holger Rune,6-3 3-6 6-3 6-2
+2025,2025-01-13,Open d'Australie,1/8,DOC,Zverev Alexander,JULES,Ugo Humbert,6-1 2-6 6-3 6-2
+2025,2025-01-13,Open d'Australie,1/4,JULES,Djokovic Novak,CHAN,Carlos Alcaraz,4-6 6-4 6-3 6-4
+2025,2025-01-13,Open d'Australie,1/4,CHEF,Sinner Jannik,PAT,Alex De Minaur,6-3 6-2 6-1
+2025,2025-01-13,Open d'Australie,1/4,DOC,Zverev Alexander,CHAN,Tommy Paul,7-6(1) 7-6(0) 2-6 6-1
+2025,2025-01-13,Open d'Australie,1/2,CHEF,Sinner Jannik,PAT,Ben Shelton,7-6(2) 6-2 6-2
+2025,2025-01-13,Open d'Australie,1/2,DOC,Zverev Alexander,JULES,Novak Djokovic,7-6(5) 0-0 RET
+2025,2025-01-13,Open d'Australie,F,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-3 7-6(4) 6-3
+2025,2025-02-01,Coupe Davis QLS R1: BRA vs FRA,Poule,JULES,Humbert Ugo,CHEF,Joao Fonseca,7-5 6-3
+2025,2025-02-03,Rotterdam,1/8,PAT,De Minaur Alex,CHAN,Jakub Mensik,6-4 6-4
+2025,2025-02-03,Rotterdam,1/8,DOC,Hurkacz Hubert,CHEF,Jiri Lehecka,7-5 2-0 RET
+2025,2025-02-03,Rotterdam,1/4,DOC,Hurkacz Hubert,CHEF,Andrey Rublev,6-7(5) 6-3 6-4
+2025,2025-02-03,Rotterdam,1/2,CHAN,Alcaraz Carlos,DOC,Hubert Hurkacz,6-4 6-7(5) 6-3
+2025,2025-02-03,Rotterdam,F,CHAN,Alcaraz Carlos,PAT,Alex De Minaur,6-4 3-6 6-2
+2025,2025-02-17,Doha,1/16,CHEF,Lehecka Jiri,JULES,Grigor Dimitrov,6-4 6-4
+2025,2025-02-17,Doha,1/4,CHEF,Lehecka Jiri,CHAN,Carlos Alcaraz,6-3 3-6 6-4
+2025,2025-02-17,Doha,1/4,CHEF,Rublev Andrey,PAT,Alex De Minaur,6-1 3-6 7-6(8)
+2025,2025-02-24,Acapulco,1/16,DOC,Machac Tomas,CHAN,Jakub Mensik,6-4 2-6 6-3
+2025,2025-02-24,Acapulco,1/16,DOC,Zverev Alexander,PAT,Matteo Arnaldi,6-7(2) 6-3 6-4
+2025,2025-02-24,Dubai,1/16,JULES,Humbert Ugo,CHEF,Jiri Lehecka,6-3 6-0
+2025,2025-02-24,Dubai,1/8,CHAN,Medvedev Daniil,PAT,Giovanni Mpetshi Perricard,6-4 6-4
+2025,2025-03-05,Masters d'Indian Wells,1/32,PAT,Arnaldi Matteo,CHEF,Andrey Rublev,6-4 7-5
+2025,2025-03-05,Masters d'Indian Wells,1/16,PAT,De Minaur Alex,DOC,Hubert Hurkacz,6-4 6-0
+2025,2025-03-05,Masters d'Indian Wells,1/16,CHEF,Fils Arthur,JULES,Lorenzo Musetti,3-6 7-6(4) 6-3
+2025,2025-03-05,Masters d'Indian Wells,1/16,CHAN,Rune Holger,JULES,Ugo Humbert,5-7 6-4 7-5
+2025,2025-03-05,Masters d'Indian Wells,1/8,CHAN,Alcaraz Carlos,JULES,Grigor Dimitrov,6-1 6-1
+2025,2025-03-05,Masters d'Indian Wells,1/8,CHEF,Draper Jack,DOC,Taylor Fritz,7-5 6-4
+2025,2025-03-05,Masters d'Indian Wells,1/8,CHAN,Rune Holger,DOC,Stefanos Tsitsipas,6-4 6-4
+2025,2025-03-05,Masters d'Indian Wells,1/4,CHEF,Draper Jack,PAT,Ben Shelton,6-4 7-5
+2025,2025-03-05,Masters d'Indian Wells,1/4,CHAN,Medvedev Daniil,CHEF,Arthur Fils,6-4 2-6 7-6(7)
+2025,2025-03-05,Masters d'Indian Wells,1/2,CHEF,Draper Jack,CHAN,Carlos Alcaraz,6-1 0-6 6-4
+2025,2025-03-05,Masters d'Indian Wells,F,CHEF,Draper Jack,CHAN,Holger Rune,6-2 6-2
+2025,2025-03-19,Masters de Miami,1/32,CHEF,Fonseca Joao,JULES,Ugo Humbert,6-4 6-3
+2025,2025-03-19,Masters de Miami,1/32,DOC,Machac Tomas,PAT,Matteo Arnaldi,6-2 1-6 6-3
+2025,2025-03-19,Masters de Miami,1/16,PAT,De Minaur Alex,CHEF,Joao Fonseca,5-7 7-5 6-3
+2025,2025-03-19,Masters de Miami,1/16,CHEF,Fils Arthur,JULES,Frances Tiafoe,7-6(11) 5-7 6-2
+2025,2025-03-19,Masters de Miami,1/8,CHEF,Fils Arthur,DOC,Alexander Zverev,3-6 6-3 6-4
+2025,2025-03-31,Houston,1/4,JULES,Tiafoe Frances,CHAN,Alex Michelsen,7-5 6-1
+2025,2025-04-04,Munich,F,DOC,Zverev Alexander,PAT,Ben Shelton,6-2 6-4
+2025,2025-04-06,Masters de Monte-Carlo,1/16,PAT,De Minaur Alex,DOC,Tomas Machac,3-6 6-0 6-3
+2025,2025-04-06,Masters de Monte-Carlo,1/8,PAT,De Minaur Alex,CHAN,Daniil Medvedev,6-2 6-2
+2025,2025-04-06,Masters de Monte-Carlo,1/4,PAT,De Minaur Alex,JULES,Grigor Dimitrov,6-0 6-0
+2025,2025-04-14,Barcelona,1/4,CHAN,Alcaraz Carlos,PAT,Alex De Minaur,7-5 6-3
+2025,2025-04-14,Barcelona,1/4,CHEF,Fils Arthur,DOC,Stefanos Tsitsipas,2-0 RET
+2025,2025-04-14,Barcelona,1/4,CHAN,Rune Holger,PAT,Casper Ruud,6-4 6-2
+2025,2025-04-14,Barcelona,1/2,CHAN,Alcaraz Carlos,CHEF,Arthur Fils,6-2 6-4
+2025,2025-04-23,Masters de Madrid,1/32,PAT,Arnaldi Matteo,JULES,Novak Djokovic,6-3 6-4
+2025,2025-04-23,Masters de Madrid,1/32,CHAN,Paul Tommy,CHEF,Joao Fonseca,7-6(7) 7-6(3)
+2025,2025-04-23,Masters de Madrid,1/16,CHAN,Mensik Jakub,PAT,Ben Shelton,6-1 6-4
+2025,2025-04-23,Masters de Madrid,1/16,JULES,Musetti Lorenzo,DOC,Stefanos Tsitsipas,7-5 7-6(3)
+2025,2025-04-23,Masters de Madrid,1/8,PAT,Arnaldi Matteo,JULES,Frances Tiafoe,6-3 7-5
+2025,2025-04-23,Masters de Madrid,1/8,CHEF,Draper Jack,CHAN,Tommy Paul,6-2 6-2
+2025,2025-04-23,Masters de Madrid,1/8,JULES,Musetti Lorenzo,PAT,Alex De Minaur,6-4 6-2
+2025,2025-04-23,Masters de Madrid,1/8,PAT,Ruud Casper,DOC,Taylor Fritz,7-5 6-4
+2025,2025-04-23,Masters de Madrid,1/4,CHEF,Draper Jack,PAT,Matteo Arnaldi,6-0 6-4
+2025,2025-04-23,Masters de Madrid,1/4,PAT,Ruud Casper,CHAN,Daniil Medvedev,6-3 7-5
+2025,2025-04-23,Masters de Madrid,1/2,CHEF,Draper Jack,JULES,Lorenzo Musetti,6-3 7-6(4)
+2025,2025-04-23,Masters de Madrid,F,PAT,Ruud Casper,CHEF,Jack Draper,7-5 3-6 6-4
+2025,2025-05-07,Masters de Rome,1/16,CHEF,Fils Arthur,DOC,Stefanos Tsitsipas,2-6 6-4 6-2
+2025,2025-05-07,Masters de Rome,1/16,CHAN,Paul Tommy,DOC,Tomas Machac,6-3 6-7(5) 6-4
+2025,2025-05-07,Masters de Rome,1/8,DOC,Hurkacz Hubert,CHAN,Jakub Mensik,7-6(5) 4-6 7-6(5)
+2025,2025-05-07,Masters de Rome,1/8,JULES,Musetti Lorenzo,CHAN,Daniil Medvedev,7-5 6-4
+2025,2025-05-07,Masters de Rome,1/8,CHAN,Paul Tommy,PAT,Alex De Minaur,7-5 6-3
+2025,2025-05-07,Masters de Rome,1/8,DOC,Zverev Alexander,CHEF,Arthur Fils,7-6(3) 6-1
+2025,2025-05-07,Masters de Rome,1/4,CHAN,Alcaraz Carlos,CHEF,Jack Draper,6-4 6-4
+2025,2025-05-07,Masters de Rome,1/4,JULES,Musetti Lorenzo,DOC,Alexander Zverev,7-6(1) 6-4
+2025,2025-05-07,Masters de Rome,1/4,CHAN,Paul Tommy,DOC,Hubert Hurkacz,7-6(4) 6-3
+2025,2025-05-07,Masters de Rome,1/4,CHEF,Sinner Jannik,PAT,Casper Ruud,6-0 6-1
+2025,2025-05-07,Masters de Rome,1/2,CHAN,Alcaraz Carlos,JULES,Lorenzo Musetti,6-3 7-6(4)
+2025,2025-05-07,Masters de Rome,1/2,CHEF,Sinner Jannik,CHAN,Tommy Paul,1-6 6-0 6-3
+2025,2025-05-07,Masters de Rome,F,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,7-6(5) 6-1
+2025,2025-05-18,Geneva,1/4,JULES,Djokovic Novak,PAT,Matteo Arnaldi,6-4 6-4
+2025,2025-05-18,Geneva,F,JULES,Djokovic Novak,DOC,Hubert Hurkacz,5-7 7-6(2) 7-6(2)
+2025,2025-05-26,Roland-Garros,1/64,CHEF,Fonseca Joao,DOC,Hubert Hurkacz,6-2 6-4 6-2
+2025,2025-05-26,Roland-Garros,1/8,CHAN,Alcaraz Carlos,PAT,Ben Shelton,7-6(8) 6-3 4-6 6-4
+2025,2025-05-26,Roland-Garros,1/8,JULES,Musetti Lorenzo,CHAN,Holger Rune,7-5 3-6 6-3 6-2
+2025,2025-05-26,Roland-Garros,1/4,JULES,Djokovic Novak,DOC,Alexander Zverev,4-6 6-3 6-2 6-4
+2025,2025-05-26,Roland-Garros,1/2,CHAN,Alcaraz Carlos,JULES,Lorenzo Musetti,4-6 7-6(3) 6-0 2-0 RET
+2025,2025-05-26,Roland-Garros,1/2,CHEF,Sinner Jannik,JULES,Novak Djokovic,6-4 7-5 7-6(3)
+2025,2025-05-26,Roland-Garros,F,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,4-6 6-7(4) 6-4 7-6(3) 7-6(2)
+2025,2025-06-09,Stuttgart,1/4,PAT,Shelton Ben,CHEF,Jiri Lehecka,6-4 6-4
+2025,2025-06-09,Stuttgart,1/2,DOC,Zverev Alexander,PAT,Ben Shelton,7-6(8) 7-6(1)
+2025,2025-06-16,Halle,1/8,CHAN,Michelsen Alex,DOC,Stefanos Tsitsipas,7-6(5) 7-5
+2025,2025-06-16,Halle,1/2,CHAN,Medvedev Daniil,DOC,Alexander Zverev,7-6(3) 6-7(1) 6-4
+2025,2025-06-16,Queen's Club,1/16,CHEF,Lehecka Jiri,PAT,Alex De Minaur,6-4 6-2
+2025,2025-06-16,Queen's Club,F,CHAN,Alcaraz Carlos,CHEF,Jiri Lehecka,7-5 6-7(5) 6-2
+2025,2025-06-30,Wimbledon,1/16,DOC,Cobolli Flavio,CHAN,Jakub Mensik,6-2 6-4 6-2
+2025,2025-06-30,Wimbledon,1/8,CHAN,Alcaraz Carlos,CHEF,Andrey Rublev,6-7(5) 6-3 6-4 6-4
+2025,2025-06-30,Wimbledon,1/8,JULES,Djokovic Novak,PAT,Alex De Minaur,1-6 6-4 6-4 6-4
+2025,2025-06-30,Wimbledon,1/8,CHEF,Sinner Jannik,JULES,Grigor Dimitrov,3-6 5-7 2-2 RET
+2025,2025-06-30,Wimbledon,1/4,JULES,Djokovic Novak,DOC,Flavio Cobolli,6-7(6) 6-2 7-5 6-4
+2025,2025-06-30,Wimbledon,1/4,CHEF,Sinner Jannik,PAT,Ben Shelton,7-6(2) 6-4 6-4
+2025,2025-06-30,Wimbledon,1/2,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-4 5-7 6-3 7-6(6)
+2025,2025-06-30,Wimbledon,1/2,CHEF,Sinner Jannik,JULES,Novak Djokovic,6-3 6-3 6-4
+2025,2025-06-30,Wimbledon,F,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,4-6 6-4 6-4 6-4
+2025,2025-07-21,Washington,1/8,PAT,De Minaur Alex,CHEF,Jiri Lehecka,7-6(4) 6-7(6) 6-4
+2025,2025-07-21,Washington,1/8,DOC,Fritz Taylor,PAT,Matteo Arnaldi,6-3 6-4
+2025,2025-07-21,Washington,1/8,JULES,Tiafoe Frances,DOC,Flavio Cobolli,6-1 6-4
+2025,2025-07-21,Washington,1/4,PAT,Shelton Ben,JULES,Frances Tiafoe,7-6(2) 6-4
+2025,2025-07-27,Masters du Canada,1/16,CHAN,Michelsen Alex,JULES,Lorenzo Musetti,3-6 7-6(4) 6-4
+2025,2025-07-27,Masters du Canada,1/16,JULES,Popyrin Alexei,CHAN,Daniil Medvedev,5-7 6-4 6-4
+2025,2025-07-27,Masters du Canada,1/16,DOC,Zverev Alexander,PAT,Matteo Arnaldi,6-7(5) 6-3 6-2
+2025,2025-07-27,Masters du Canada,1/8,PAT,De Minaur Alex,JULES,Frances Tiafoe,6-2 4-6 6-4
+2025,2025-07-27,Masters du Canada,1/8,DOC,Fritz Taylor,CHEF,Jiri Lehecka,7-6(4) 6-7(5) 7-6(5)
+2025,2025-07-27,Masters du Canada,1/8,JULES,Popyrin Alexei,CHAN,Holger Rune,4-6 6-2 6-3
+2025,2025-07-27,Masters du Canada,1/8,PAT,Shelton Ben,DOC,Flavio Cobolli,6-4 4-6 7-6(1)
+2025,2025-07-27,Masters du Canada,1/4,DOC,Fritz Taylor,CHEF,Andrey Rublev,6-3 7-6(4)
+2025,2025-07-27,Masters du Canada,1/4,DOC,Zverev Alexander,JULES,Alexei Popyrin,6-7(8) 6-4 6-3
+2025,2025-07-27,Masters du Canada,1/2,PAT,Shelton Ben,DOC,Taylor Fritz,6-4 6-3
+2025,2025-08-07,Masters de Cincinnati,1/16,CHAN,Alcaraz Carlos,PAT,Hamad Medjedovic,6-4 6-4
+2025,2025-08-07,Masters de Cincinnati,1/16,CHEF,Rublev Andrey,JULES,Alexei Popyrin,6-7(5) 7-6(5) 7-5
+2025,2025-08-07,Masters de Cincinnati,1/8,CHAN,Rune Holger,JULES,Frances Tiafoe,6-4 3-1 RET
+2025,2025-08-07,Masters de Cincinnati,1/8,PAT,Shelton Ben,CHEF,Jiri Lehecka,6-4 6-4
+2025,2025-08-07,Masters de Cincinnati,1/4,CHAN,Alcaraz Carlos,CHEF,Andrey Rublev,6-3 4-6 7-5
+2025,2025-08-07,Masters de Cincinnati,1/4,DOC,Zverev Alexander,PAT,Ben Shelton,6-2 6-2
+2025,2025-08-07,Masters de Cincinnati,1/2,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-4 6-3
+2025,2025-08-07,Masters de Cincinnati,F,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,5-0 RET
+2025,2025-08-25,US Open,1/32,DOC,Machac Tomas,CHEF,Joao Fonseca,7-6(4) 6-2 6-3
+2025,2025-08-25,US Open,1/32,CHEF,Sinner Jannik,JULES,Alexei Popyrin,6-3 6-2 6-2
+2025,2025-08-25,US Open,1/16,JULES,Musetti Lorenzo,DOC,Flavio Cobolli,6-3 6-2 2-0 RET
+2025,2025-08-25,US Open,1/4,CHAN,Alcaraz Carlos,CHEF,Jiri Lehecka,6-4 6-2 6-4
+2025,2025-08-25,US Open,1/4,JULES,Djokovic Novak,DOC,Taylor Fritz,6-3 7-5 3-6 6-4
+2025,2025-08-25,US Open,1/4,CHEF,Sinner Jannik,JULES,Lorenzo Musetti,6-1 6-4 6-2
+2025,2025-08-25,US Open,1/2,CHAN,Alcaraz Carlos,JULES,Novak Djokovic,6-4 7-6(4) 6-2
+2025,2025-08-25,US Open,F,CHAN,Alcaraz Carlos,CHEF,Jannik Sinner,6-2 3-6 6-1 6-4
+2025,2025-09-12,Coupe Davis QLS R2: USA vs CZE,Poule,DOC,Fritz Taylor,CHAN,Jakub Mensik,6-4 6-3
+2025,2025-09-12,Coupe Davis QLS R2: USA vs CZE,Poule,CHEF,Lehecka Jiri,JULES,Frances Tiafoe,6-3 6-2
+2025,2025-09-12,Coupe Davis QLS R2: USA vs CZE,Poule,CHEF,Lehecka Jiri,DOC,Taylor Fritz,6-4 3-6 6-4
+2025,2025-09-12,Coupe Davis QLS R2: USA vs CZE,Poule,CHAN,Mensik Jakub,JULES,Frances Tiafoe,6-1 6-4
+2025,2025-09-13,Coupe Davis WG1 R1: GRE vs BRA,Poule,CHEF,Fonseca Joao,DOC,Stefanos Tsitsipas,6-4 3-6 7-5
+2025,2025-09-19,Laver Cup,Poule,PAT,De Minaur Alex,DOC,Alexander Zverev,6-1 6-4
+2025,2025-09-19,Laver Cup,Poule,PAT,De Minaur Alex,CHAN,Jakub Mensik,6-3 6-4
+2025,2025-09-19,Laver Cup,Poule,CHEF,Fonseca Joao,DOC,Flavio Cobolli,6-4 6-3
+2025,2025-09-19,Laver Cup,Poule,DOC,Fritz Taylor,CHAN,Carlos Alcaraz,6-3 6-2
+2025,2025-09-24,Tokyo,1/16,CHAN,Rune Holger,PAT,Hamad Medjedovic,7-6(7) 6-1
+2025,2025-09-24,Tokyo,1/2,CHAN,Alcaraz Carlos,PAT,Casper Ruud,3-6 6-3 6-4
+2025,2025-09-24,Tokyo,F,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-4 6-4
+2025,2025-09-25,Beijing,1/16,DOC,Cobolli Flavio,CHEF,Andrey Rublev,7-6(3) 6-3
+2025,2025-09-25,Beijing,1/4,PAT,De Minaur Alex,CHAN,Jakub Mensik,4-1 RET
+2025,2025-09-25,Beijing,1/4,CHAN,Medvedev Daniil,DOC,Alexander Zverev,6-3 6-3
+2025,2025-09-25,Beijing,1/2,CHEF,Sinner Jannik,PAT,Alex De Minaur,6-3 4-6 6-2
+2025,2025-10-01,Masters de Shanghai,1/16,CHAN,Rune Holger,JULES,Ugo Humbert,6-4 6-4
+2025,2025-10-01,Masters de Shanghai,1/4,CHAN,Medvedev Daniil,PAT,Alex De Minaur,6-4 6-4
+2025,2025-10-13,Stockholm,1/2,JULES,Humbert Ugo,CHAN,Holger Rune,4-6 2-2 RET
+2025,2025-10-13,Stockholm,F,PAT,Ruud Casper,JULES,Ugo Humbert,6-2 6-3
+2025,2025-10-20,Basel,1/8,CHEF,Fonseca Joao,CHAN,Jakub Mensik,W/O
+2025,2025-10-20,Basel,1/8,JULES,Humbert Ugo,DOC,Taylor Fritz,6-3 6-4
+2025,2025-10-20,Vienna,1/16,JULES,Musetti Lorenzo,PAT,Hamad Medjedovic,6-4 6-3
+2025,2025-10-20,Vienna,1/8,CHEF,Sinner Jannik,DOC,Flavio Cobolli,6-2 7-6(4)
+2025,2025-10-20,Vienna,1/8,DOC,Zverev Alexander,PAT,Matteo Arnaldi,6-4 6-4
+2025,2025-10-20,Vienna,1/2,CHEF,Sinner Jannik,PAT,Alex De Minaur,6-3 6-4
+2025,2025-10-20,Vienna,1/2,DOC,Zverev Alexander,JULES,Lorenzo Musetti,6-4 7-5
+2025,2025-10-20,Vienna,F,CHEF,Sinner Jannik,DOC,Alexander Zverev,3-6 6-3 7-5
+2025,2025-10-27,Masters de Paris,1/16,PAT,Shelton Ben,DOC,Flavio Cobolli,7-6(4) 6-3
+2025,2025-10-27,Masters de Paris,1/8,PAT,Shelton Ben,CHEF,Andrey Rublev,7-6(6) 6-3
+2025,2025-10-27,Masters de Paris,1/4,CHEF,Sinner Jannik,PAT,Ben Shelton,6-3 6-3
+2025,2025-10-27,Masters de Paris,1/4,DOC,Zverev Alexander,CHAN,Daniil Medvedev,2-6 6-3 7-6(5)
+2025,2025-10-27,Masters de Paris,1/2,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-0 6-1
+2025,2025-10-27,Paris,1/16,CHAN,Medvedev Daniil,JULES,Grigor Dimitrov,W/O
+2025,2025-11-09,ATP Finals,Poule,CHAN,Alcaraz Carlos,JULES,Lorenzo Musetti,6-4 6-1
+2025,2025-11-09,ATP Finals,Poule,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-7(2) 7-5 6-3
+2025,2025-11-09,ATP Finals,Poule,CHAN,Alcaraz Carlos,PAT,Alex De Minaur,7-6(5) 6-2
+2025,2025-11-09,ATP Finals,Poule,PAT,De Minaur Alex,DOC,Taylor Fritz,7-6(3) 6-3
+2025,2025-11-09,ATP Finals,Poule,DOC,Fritz Taylor,JULES,Lorenzo Musetti,6-3 6-4
+2025,2025-11-09,ATP Finals,Poule,JULES,Musetti Lorenzo,PAT,Alex De Minaur,7-5 3-6 7-5
+2025,2025-11-09,ATP Finals,Poule,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-4 6-3
+2025,2025-11-09,ATP Finals,Poule,CHEF,Sinner Jannik,PAT,Ben Shelton,6-3 7-6(3)
+2025,2025-11-09,ATP Finals,Poule,DOC,Zverev Alexander,PAT,Ben Shelton,6-3 7-6(6)
+2025,2025-11-09,ATP Finals,1/2,CHEF,Sinner Jannik,PAT,Alex De Minaur,7-5 6-2
+2025,2025-11-09,ATP Finals,F,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,7-6(4) 7-5
+2026,2026-01-04,Brisbane,1/8,CHAN,Medvedev Daniil,JULES,Frances Tiafoe,6-3 6-2
+2026,2026-01-04,Brisbane,1/8,CHAN,Michelsen Alex,PAT,Learner Tien,6-4 6-2
+2026,2026-01-05,United Cup,Poule,PAT,De Minaur Alex,CHAN,Jakub Mensik,6-4 6-1
+2026,2026-01-05,United Cup,Poule,CHAN,Mensik Jakub,PAT,Casper Ruud,7-5 7-6(6)
+2026,2026-01-05,Hong Kong,1/2,JULES,Musetti Lorenzo,CHEF,Andrey Rublev,6-7(3) 7-5 6-4
+2026,2026-01-19,Open d'Australie,F,CHAN,Alcaraz Carlos,JULES,Novak Djokovic,2-6 6-2 6-3 7-5
+2026,2026-01-19,Open d'Australie,1/2,CHAN,Alcaraz Carlos,DOC,Alexander Zverev,6-4 7-6(5) 6-7(3) 6-7(4) 7-5
+2026,2026-01-19,Open d'Australie,1/4,CHAN,Alcaraz Carlos,PAT,Alex De Minaur,7-5 6-2 6-1
+2026,2026-01-19,Open d'Australie,1/8,PAT,De Minaur Alex,JULES,Alexander Bublik,6-4 6-1 6-1
+2026,2026-01-19,Open d'Australie,1/16,PAT,De Minaur Alex,JULES,Frances Tiafoe,6-3 6-4 7-5
+2026,2026-01-19,Open d'Australie,1/2,JULES,Djokovic Novak,CHEF,Jannik Sinner,3-6 6-3 4-6 6-4 6-4
+2026,2026-01-19,Open d'Australie,1/8,JULES,Djokovic Novak,CHAN,Jakub Mensik,W/O
+2026,2026-01-19,Open d'Australie,1/32,CHAN,Mensik Jakub,CHEF,Rafael Jodar,6-2 6-4 6-4
+2026,2026-01-19,Open d'Australie,1/8,JULES,Musetti Lorenzo,DOC,Taylor Fritz,6-2 7-5 6-4
+2026,2026-01-19,Open d'Australie,1/64,PAT,Shelton Ben,JULES,Ugo Humbert,6-3 7-6(2) 7-6(5)
+2026,2026-01-19,Open d'Australie,1/4,CHEF,Sinner Jannik,PAT,Ben Shelton,6-3 6-4 6-4
+2026,2026-01-19,Open d'Australie,1/8,PAT,Tien Learner,CHAN,Daniil Medvedev,6-4 6-0 6-3
+2026,2026-01-19,Open d'Australie,1/4,DOC,Zverev Alexander,PAT,Learner Tien,6-3 6-7(5) 6-1 7-6(3)
+2026,2026-02-09,Rotterdam,1/2,PAT,De Minaur Alex,JULES,Ugo Humbert,6-4 6-3
+2026,2026-02-09,Rotterdam,1/16,PAT,De Minaur Alex,CHEF,Arthur Fils,7-6(3) 6-2
+2026,2026-02-09,Rotterdam,1/16,JULES,Humbert Ugo,CHAN,Daniil Medvedev,7-6(4) 3-6 6-3
+2026,2026-02-09,Dallas,1/16,CHAN,Michelsen Alex,JULES,Grigor Dimitrov,5-7 6-4 6-4
+2026,2026-02-09,Dallas,F,PAT,Shelton Ben,DOC,Taylor Fritz,3-6 6-3 7-5
+2026,2026-02-16,Doha,F,CHAN,Alcaraz Carlos,CHEF,Arthur Fils,6-2 6-1
+2026,2026-02-16,Doha,1/2,CHAN,Alcaraz Carlos,CHEF,Andrey Rublev,7-6(3) 6-4
+2026,2026-02-16,Doha,1/2,CHEF,Fils Arthur,CHAN,Jakub Mensik,6-4 7-6(4)
+2026,2026-02-16,Delray Beach,1/8,DOC,Fritz Taylor,CHEF,Rafael Jodar,7-6(4) 6-4
+2026,2026-02-16,Doha,1/4,CHAN,Mensik Jakub,CHEF,Jannik Sinner,7-6(3) 2-6 6-3
+2026,2026-02-16,Delray Beach,1/2,CHAN,Paul Tommy,PAT,Learner Tien,4-6 6-4 6-3
+2026,2026-02-16,Delray Beach,1/4,CHAN,Paul Tommy,DOC,Taylor Fritz,6-4 6-3
+2026,2026-02-16,Delray Beach,1/4,PAT,Tien Learner,JULES,Frances Tiafoe,7-6(5) 3-6 7-5
+2026,2026-02-23,Acapulco,F,DOC,Cobolli Flavio,JULES,Frances Tiafoe,7-6(4) 6-4
+2026,2026-02-23,Dubai,1/8,CHEF,Rublev Andrey,JULES,Ugo Humbert,6-4 6-7(5) 6-3
+2026,2026-03-04,Masters d'Indian Wells,1/8,CHAN,Alcaraz Carlos,PAT,Casper Ruud,6-1 7-6(2)
+2026,2026-03-04,Masters d'Indian Wells,1/32,CHAN,Alcaraz Carlos,JULES,Grigor Dimitrov,6-2 6-3
+2026,2026-03-04,Masters d'Indian Wells,1/8,CHEF,Draper Jack,JULES,Novak Djokovic,4-6 6-4 7-6(5)
+2026,2026-03-04,Masters d'Indian Wells,1/16,CHEF,Fonseca Joao,CHAN,Tommy Paul,6-2 6-3
+2026,2026-03-04,Masters d'Indian Wells,1/4,CHAN,Medvedev Daniil,CHEF,Jack Draper,6-1 7-5
+2026,2026-03-04,Masters d'Indian Wells,1/16,CHAN,Michelsen Alex,DOC,Taylor Fritz,6-4 7-6(6)
+2026,2026-03-04,Masters d'Indian Wells,1/32,CHAN,Michelsen Alex,JULES,Ugo Humbert,7-5 6-7(5) 7-6(6)
+2026,2026-03-04,Masters d'Indian Wells,F,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,7-6(6) 7-6(4)
+2026,2026-03-04,Masters d'Indian Wells,1/2,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-2 6-4
+2026,2026-03-04,Masters d'Indian Wells,1/4,CHEF,Sinner Jannik,PAT,Learner Tien,6-1 6-2
+2026,2026-03-04,Masters d'Indian Wells,1/16,JULES,Tiafoe Frances,DOC,Flavio Cobolli,6-1 6-2
+2026,2026-03-04,Masters d'Indian Wells,1/4,DOC,Zverev Alexander,CHEF,Arthur Fils,6-2 6-3
+2026,2026-03-04,Masters d'Indian Wells,1/8,DOC,Zverev Alexander,JULES,Frances Tiafoe,6-3 6-4
+2026,2026-03-18,Masters de Miami,1/32,CHAN,Alcaraz Carlos,CHEF,Joao Fonseca,6-4 6-4
+2026,2026-03-18,Masters de Miami,1/4,CHEF,Fils Arthur,CHAN,Tommy Paul,6-7(3) 7-6(4) 7-6(6)
+2026,2026-03-18,Masters de Miami,1/32,CHEF,Fils Arthur,PAT,Darwin Blanch,6-2 6-3
+2026,2026-03-18,Masters de Miami,1/2,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-3 7-6(4)
+2026,2026-03-18,Masters de Miami,1/4,CHEF,Sinner Jannik,JULES,Frances Tiafoe,6-2 6-2
+2026,2026-03-18,Masters de Miami,1/8,CHEF,Sinner Jannik,CHAN,Alex Michelsen,7-5 7-6(4)
+2026,2026-03-18,Masters de Miami,1/16,JULES,Tiafoe Frances,CHAN,Jakub Mensik,7-6(4) 4-6 7-6(11)
+2026,2026-03-30,Houston,1/2,CHAN,Paul Tommy,JULES,Frances Tiafoe,7-5 4-6 7-6(7)
+2026,2026-04-05,Masters de Monte-Carlo,1/4,CHAN,Alcaraz Carlos,JULES,Alexander Bublik,6-3 6-0
+2026,2026-04-05,Masters de Monte-Carlo,1/32,JULES,Humbert Ugo,DOC,Moise Kouame,6-3 7-5
+2026,2026-04-05,Masters de Monte-Carlo,F,CHEF,Sinner Jannik,CHAN,Carlos Alcaraz,7-6(5) 6-3
+2026,2026-04-05,Masters de Monte-Carlo,1/2,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-1 6-4
+2026,2026-04-05,Masters de Monte-Carlo,1/16,CHEF,Sinner Jannik,JULES,Ugo Humbert,6-3 6-0
+2026,2026-04-05,Masters de Monte-Carlo,1/4,DOC,Zverev Alexander,CHEF,Joao Fonseca,7-5 6-7(3) 6-3
+2026,2026-04-13,Barcelona,1/4,CHEF,Fils Arthur,JULES,Lorenzo Musetti,6-3 6-4
+2026,2026-04-13,Munich,F,PAT,Shelton Ben,DOC,Flavio Cobolli,6-2 7-5
+2026,2026-04-13,Munich,1/4,PAT,Shelton Ben,CHEF,Joao Fonseca,6-3 3-6 6-3
+2026,2026-04-22,Masters de Madrid,1/8,DOC,Cobolli Flavio,CHAN,Daniil Medvedev,6-3 5-7 6-4
+2026,2026-04-22,Masters de Madrid,1/32,CHEF,Jodar Rafael,PAT,Alex De Minaur,6-3 6-1
+2026,2026-04-22,Masters de Madrid,1/16,CHAN,Medvedev Daniil,DOC,Nicolai Budkov Kjaer,6-3 6-2
+2026,2026-04-22,Masters de Madrid,F,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-1 6-2
+2026,2026-04-22,Masters de Madrid,1/8,DOC,Zverev Alexander,CHAN,Jakub Mensik,6-4 6-7(4) 6-3
+2026,2026-05-06,Masters de Rome,1/8,CHEF,Jodar Rafael,PAT,Learner Tien,6-1 6-4
+2026,2026-05-06,Masters de Rome,1/8,PAT,Ruud Casper,JULES,Lorenzo Musetti,6-3 6-1
+2026,2026-05-06,Masters de Rome,F,CHEF,Sinner Jannik,PAT,Casper Ruud,6-4 6-4
+2026,2026-05-06,Masters de Rome,1/2,CHEF,Sinner Jannik,CHAN,Daniil Medvedev,6-2 5-7 6-4
+2026,2026-05-06,Masters de Rome,1/16,PAT,Tien Learner,JULES,Alexander Bublik,4-6 6-3 7-5
+2026,2026-05-17,Hamburg,1/16,JULES,Humbert Ugo,PAT,Justin Engel,6-3 3-6 7-6(2)
+2026,2026-05-17,Hamburg,1/2,CHAN,Paul Tommy,PAT,Alex De Minaur,2-6 6-3 6-3
+2026,2026-05-17,Geneva,1/2,PAT,Tien Learner,JULES,Alexander Bublik,6-1 4-6 7-6(5)
+2026,2026-05-17,Geneva,1/4,PAT,Tien Learner,CHAN,Alex Michelsen,6-4 3-6 6-1
+2026,2026-05-25,Roland-Garros,1/16,DOC,Cobolli Flavio,PAT,Learner Tien,6-2 6-2 6-3
+2026,2026-05-25,Roland-Garros,1/8,CHEF,Fonseca Joao,PAT,Casper Ruud,7-5 7-6(8) 5-7 6-2
+2026,2026-05-25,Roland-Garros,1/16,CHEF,Fonseca Joao,JULES,Novak Djokovic,4-6 4-6 6-3 7-5 7-5
+2026,2026-05-25,Roland-Garros,1/16,CHEF,Jodar Rafael,CHAN,Alex Michelsen,7-6(2) 6-7(5) 4-6 6-3 6-3
+2026,2026-05-25,Roland-Garros,1/4,CHAN,Mensik Jakub,CHEF,Joao Fonseca,6-4 6-3 7-6(3)
+2026,2026-05-25,Roland-Garros,1/8,CHAN,Mensik Jakub,CHEF,Andrey Rublev,6-3 7-6(6) 4-6 2-6 6-3
+2026,2026-05-25,Roland-Garros,1/16,CHAN,Mensik Jakub,PAT,Alex De Minaur,0-6 6-2 6-2 6-3
+2026,2026-05-25,Roland-Garros,1/16,PAT,Ruud Casper,CHAN,Tommy Paul,4-6 6-7(4) 6-4 7-6(4) 7-5
+2026,2026-05-25,Roland-Garros,1/2,DOC,Zverev Alexander,CHAN,Jakub Mensik,7-5 6-2 3-6 6-3
+2026,2026-05-25,Roland-Garros,1/4,DOC,Zverev Alexander,CHEF,Rafael Jodar,7-6(3) 6-1 6-3
+2026,2026-06-08,Stuttgart,1/2,DOC,Fritz Taylor,JULES,Alexander Bublik,6-4 6-4
+2026,2026-06-08,Stuttgart,F,PAT,Shelton Ben,DOC,Taylor Fritz,6-4 2-6 6-4
+2026,2026-06-15,Halle,1/4,DOC,Fritz Taylor,PAT,Ben Shelton,6-7(5) 7-6(8) 7-6(3)
+2026,2026-06-15,Queen's Club,1/2,CHAN,Paul Tommy,JULES,Ugo Humbert,6-3 6-3
+2026,2026-06-15,Halle,F,JULES,Tiafoe Frances,DOC,Taylor Fritz,6-4 6-4
+2026,2026-06-15,Halle,1/16,JULES,Tiafoe Frances,DOC,Flavio Cobolli,6-2 7-6(4)
+2026,2026-06-22,Eastbourne,1/2,JULES,Humbert Ugo,CHEF,Jack Draper,7-5 6-3
+2026,2026-06-29,Wimbledon,1/8,DOC,Cobolli Flavio,PAT,Alex De Minaur,7-5 7-6(4) 6-3
+2026,2026-06-29,Wimbledon,1/32,JULES,Dimitrov Grigor,CHAN,Jakub Mensik,7-6(5) 4-6 7-5 6-3
+2026,2026-06-29,Wimbledon,1/8,DOC,Fritz Taylor,JULES,Alexander Bublik,7-6(1) 6-4 6-4
+2026,2026-06-29,Wimbledon,F,CHEF,Sinner Jannik,DOC,Alexander Zverev,6-7(7) 7-6(2) 6-3 6-4
+2026,2026-06-29,Wimbledon,1/2,CHEF,Sinner Jannik,JULES,Novak Djokovic,6-4 6-4 6-4
+2026,2026-07-27,Washington,F,DOC,Fritz Taylor,CHEF,Rafael Jodar,7-6(2) 6-4
+2026,2026-07-27,Washington,1/4,DOC,Fritz Taylor,CHAN,Alex Michelsen,6-1 3-6 7-6(6)
+2026,2026-07-27,Washington,1/4,CHEF,Jodar Rafael,JULES,Lorenzo Musetti,1-6 6-1 6-4
+2026,2026-07-27,Washington,1/8,PAT,Shelton Ben,JULES,Ugo Humbert,6-7(3) 6-3 6-4
+2026,2026-08-02,Masters du Canada,1/16,CHEF,Fonseca Joao,PAT,Casper Ruud,7-6(6) 6-3
+2026,2026-08-02,Masters du Canada,1/16,CHEF,Jodar Rafael,JULES,Lorenzo Musetti,6-4 6-3
+2026,2026-08-02,Masters du Canada,1/4,PAT,Shelton Ben,CHAN,Jakub Mensik,6-3 6-1
+2026,2026-08-02,Masters du Canada,1/8,PAT,Shelton Ben,CHEF,Joao Fonseca,6-3 7-6(3)
+2026,2026-08-02,Masters du Canada,1/16,PAT,Tien Learner,CHAN,Tommy Paul,6-3 6-2
+2026,2026-08-13,Masters de Cincinnati,1/4,DOC,Cobolli Flavio,CHAN,Tommy Paul,2-6 6-3 6-4
+2026,2026-08-13,Masters de Cincinnati,1/8,DOC,Cobolli Flavio,CHEF,Rafael Jodar,4-6 7-6(3) 6-3
+2026,2026-08-13,Masters de Cincinnati,F,CHEF,Fils Arthur,JULES,Frances Tiafoe,6-3 1-6 6-0
+2026,2026-08-13,Masters de Cincinnati,1/2,CHEF,Fils Arthur,DOC,Flavio Cobolli,6-3 6-4
+2026,2026-08-13,Masters de Cincinnati,1/8,CHEF,Fils Arthur,PAT,Alex De Minaur,6-3 6-4
+2026,2026-08-13,Masters de Cincinnati,1/32,DOC,Fritz Taylor,CHAN,Alex Michelsen,6-3 6-4
+2026,2026-08-13,Masters de Cincinnati,1/8,CHAN,Paul Tommy,DOC,Alexander Zverev,4-6 7-6(6) 6-4
+2026,2026-08-13,Masters de Cincinnati,1/16,JULES,Tiafoe Frances,PAT,Learner Tien,6-4 4-6 6-4
+2026,2026-08-31,US Open,1/64,DOC,Fritz Taylor,PAT,Darwin Blanch,6-3 6-2 6-4
+2026,2026-08-31,US Open,1/16,CHAN,Paul Tommy,JULES,Alexander Bublik,6-4 3-6 6-7(4) 6-1 6-3
+2026,2026-08-31,US Open,1/2,PAT,Shelton Ben,JULES,Frances Tiafoe,4-6 6-3 6-3 7-5
+2026,2026-08-31,US Open,1/4,PAT,Shelton Ben,CHAN,Carlos Alcaraz,6-7(5) 6-1 6-3 1-6 7-6(7)
+2026,2026-08-31,US Open,1/4,JULES,Tiafoe Frances,CHAN,Alex Michelsen,5-7 3-6 7-5 6-3 7-6(6)
+2026,2026-08-31,US Open,1/8,JULES,Tiafoe Frances,CHAN,Daniil Medvedev,7-6(1) 6-4 7-6(6)
+2026,2026-08-31,US Open,1/16,PAT,Tien Learner,CHAN,Jakub Mensik,6-3 1-6 6-7(2) 6-3 6-4
+2026,2026-08-31,US Open,F,DOC,Zverev Alexander,PAT,Ben Shelton,6-3 7-6(2) 5-7 6-2
+2026,2026-09-18,Coupe Davis QLS R2: USA vs CZE,Poule,CHAN,Mensik Jakub,PAT,Ben Shelton,5-7 6-4 6-3
+2026,2026-09-18,Coupe Davis WG1 R1: DEN vs BUL,Poule,CHAN,Rune Holger,JULES,Grigor Dimitrov,3-6 6-3 7-6(4)
+2026,2026-09-18,Coupe Davis QLS R2: USA vs CZE,Poule,PAT,Tien Learner,CHAN,Jakub Mensik,6-2 6-4
+2026,2026-09-23,Hangzhou,F,CHAN,Medvedev Daniil,CHEF,Andrey Rublev,7-5 6-4
+2026,2026-09-25,Laver Cup,Poule,CHAN,Alcaraz Carlos,DOC,Taylor Fritz,6-3 4-6 [13-11]
+2026,2026-09-25,Laver Cup,Poule,PAT,De Minaur Alex,DOC,Alexander Zverev,2-6 7-6(5) [11-9]
+2026,2026-09-25,Laver Cup,Poule,CHEF,Jodar Rafael,JULES,Alexander Bublik,6-2 6-3
+2026,2026-09-25,Laver Cup,Poule,PAT,Tien Learner,DOC,Flavio Cobolli,6-3 2-6 [10-7]
+2026,2026-09-25,Laver Cup,Poule,DOC,Zverev Alexander,PAT,Learner Tien,7-6(3) 6-3
+2026,2026-09-30,Beijing,1/4,PAT,De Minaur Alex,CHEF,Andrey Rublev,1-6 6-2 6-3
+2026,2026-09-30,Beijing,F,JULES,Djokovic Novak,PAT,Alex De Minaur,7-6(3) 0-1 RET
+2026,2026-09-30,Beijing,1/2,JULES,Djokovic Novak,CHAN,Daniil Medvedev,7-5 5-3 Def.
+2026,2026-09-30,Beijing,1/4,JULES,Djokovic Novak,DOC,Alexander Zverev,4-6 6-4 6-4
+2026,2026-09-30,Tokyo,1/8,CHEF,Fils Arthur,JULES,Frances Tiafoe,6-3 7-5
+2026,2026-09-30,Beijing,1/16,CHAN,Mensik Jakub,JULES,Alexander Bublik,6-4 7-6(5)
+2026,2026-10-07,Masters de Shanghai,1/2,CHEF,Jodar Rafael,CHAN,Daniil Medvedev,6-3 6-4
+2026,2026-10-07,Masters de Shanghai,1/4,CHEF,Jodar Rafael,PAT,Casper Ruud,4-6 6-4 6-3
+2026,2026-10-07,Masters de Shanghai,1/4,DOC,Zverev Alexander,PAT,Alex De Minaur,6-4 6-4
+2026,2026-10-07,Masters de Shanghai,1/8,DOC,Zverev Alexander,JULES,Alexander Bublik,7-6(6) 4-6 7-6(1)
+2026,2026-10-19,Almaty,1/2,CHAN,Medvedev Daniil,JULES,Alexander Bublik,6-3 0-0 RET
+2026,2026-10-19,Brussels,1/4,CHEF,Fils Arthur,CHAN,Alex Michelsen,6-4 7-6(12)
+2026,2026-10-19,Lyon,1/2,DOC,Fritz Taylor,CHAN,Tommy Paul,6-3 7-5
+2026,2026-10-19,Lyon,F,JULES,Musetti Lorenzo,DOC,Taylor Fritz,6-3 6-4
+2026,2026-10-19,Lyon,1/2,JULES,Musetti Lorenzo,DOC,Flavio Cobolli,4-6 6-2 7-5
+2026,2026-10-19,Lyon,1/8,JULES,Musetti Lorenzo,DOC,Moise Kouame,6-4 6-4

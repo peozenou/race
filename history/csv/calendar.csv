@@ -1,0 +1,103 @@
+season,event,short,level,start_date,end_date,surface,city
+2019,Open d'Australie,AO,Grand Chelem,2019-01-14,2019-01-28,Dur,Melbourne
+2019,Indian Wells,IW,Masters 1000,2019-03-04,2019-03-15,Dur,Indian Wells
+2019,Miami,MIA,Masters 1000,2019-03-18,2019-03-29,Dur,Miami
+2019,Monte-Carlo,MC,Masters 1000,2019-04-15,2019-04-22,Terre battue,Monte-Carlo
+2019,Madrid,MAD,Masters 1000,2019-05-06,2019-05-17,Terre battue,Madrid
+2019,Rome,ROM,Masters 1000,2019-05-13,2019-05-24,Terre battue,Rome
+2019,Roland-Garros,RG,Grand Chelem,2019-05-27,2019-06-10,Terre battue,Paris
+2019,Wimbledon,WIM,Grand Chelem,2019-07-01,2019-07-15,Gazon,Londres
+2019,Canada,CAN,Masters 1000,2019-08-05,2019-08-12,Dur,Montréal/Toronto
+2019,Cincinnati,CIN,Masters 1000,2019-08-12,2019-08-19,Dur,Cincinnati
+2019,US Open,USO,Grand Chelem,2019-08-26,2019-09-09,Dur,New York
+2019,Shanghai,SHA,Masters 1000,2019-10-07,2019-10-18,Dur,Shanghai
+2019,Paris,PAR,Masters 1000,2019-10-28,2019-11-04,Dur,Paris
+2019,ATP Finals,FIN,ATP Finals,2019-11-11,2019-11-18,Dur,Londres
+2020,Open d'Australie,AO,Grand Chelem,2020-01-20,2020-02-03,Dur,Melbourne
+2020,Cincinnati,CIN,Masters 1000,2020-08-24,2020-08-31,Dur,Cincinnati
+2020,US Open,USO,Grand Chelem,2020-08-31,2020-09-14,Dur,New York
+2020,Rome,ROM,Masters 1000,2020-09-14,2020-09-25,Terre battue,Rome
+2020,Roland-Garros,RG,Grand Chelem,2020-09-28,2020-10-12,Terre battue,Paris
+2020,Paris,PAR,Masters 1000,2020-11-02,2020-11-09,Dur,Paris
+2020,ATP Finals,FIN,ATP Finals,2020-11-16,2020-11-23,Dur,Londres
+2021,Open d'Australie,AO,Grand Chelem,2021-02-08,2021-02-22,Dur,Melbourne
+2021,Miami,MIA,Masters 1000,2021-03-22,2021-04-02,Dur,Miami
+2021,Monte-Carlo,MC,Masters 1000,2021-04-12,2021-04-19,Terre battue,Monte-Carlo
+2021,Madrid,MAD,Masters 1000,2021-05-03,2021-05-14,Terre battue,Madrid
+2021,Rome,ROM,Masters 1000,2021-05-10,2021-05-21,Terre battue,Rome
+2021,Roland-Garros,RG,Grand Chelem,2021-05-31,2021-06-14,Terre battue,Paris
+2021,Wimbledon,WIM,Grand Chelem,2021-06-28,2021-07-12,Gazon,Londres
+2021,Canada,CAN,Masters 1000,2021-08-09,2021-08-16,Dur,Montréal/Toronto
+2021,Cincinnati,CIN,Masters 1000,2021-08-16,2021-08-23,Dur,Cincinnati
+2021,US Open,USO,Grand Chelem,2021-08-30,2021-09-13,Dur,New York
+2021,Indian Wells,IW,Masters 1000,2021-10-04,2021-10-15,Dur,Indian Wells
+2021,Paris,PAR,Masters 1000,2021-11-01,2021-11-08,Dur,Paris
+2021,ATP Finals,FIN,ATP Finals,2021-11-15,2021-11-22,Dur,Turin
+2022,Open d'Australie,AO,Grand Chelem,2022-01-17,2022-01-31,Dur,Melbourne
+2022,Indian Wells,IW,Masters 1000,2022-03-07,2022-03-18,Dur,Indian Wells
+2022,Miami,MIA,Masters 1000,2022-03-21,2022-04-01,Dur,Miami
+2022,Monte-Carlo,MC,Masters 1000,2022-04-11,2022-04-18,Terre battue,Monte-Carlo
+2022,Madrid,MAD,Masters 1000,2022-05-02,2022-05-13,Terre battue,Madrid
+2022,Rome,ROM,Masters 1000,2022-05-09,2022-05-20,Terre battue,Rome
+2022,Roland-Garros,RG,Grand Chelem,2022-05-23,2022-06-06,Terre battue,Paris
+2022,Wimbledon,WIM,Grand Chelem,2022-06-27,2022-07-11,Gazon,Londres
+2022,Canada,CAN,Masters 1000,2022-08-08,2022-08-15,Dur,Montréal/Toronto
+2022,Cincinnati,CIN,Masters 1000,2022-08-15,2022-08-22,Dur,Cincinnati
+2022,US Open,USO,Grand Chelem,2022-08-29,2022-09-12,Dur,New York
+2022,Paris,PAR,Masters 1000,2022-10-31,2022-11-07,Dur,Paris
+2022,ATP Finals,FIN,ATP Finals,2022-11-14,2022-11-21,Dur,Turin
+2023,Open d'Australie,AO,Grand Chelem,2023-01-16,2023-01-30,Dur,Melbourne
+2023,Indian Wells,IW,Masters 1000,2023-03-06,2023-03-17,Dur,Indian Wells
+2023,Miami,MIA,Masters 1000,2023-03-20,2023-03-31,Dur,Miami
+2023,Monte-Carlo,MC,Masters 1000,2023-04-10,2023-04-17,Terre battue,Monte-Carlo
+2023,Madrid,MAD,Masters 1000,2023-04-24,2023-05-05,Terre battue,Madrid
+2023,Rome,ROM,Masters 1000,2023-05-08,2023-05-19,Terre battue,Rome
+2023,Roland-Garros,RG,Grand Chelem,2023-05-29,2023-06-12,Terre battue,Paris
+2023,Wimbledon,WIM,Grand Chelem,2023-07-03,2023-07-17,Gazon,Londres
+2023,Canada,CAN,Masters 1000,2023-08-07,2023-08-14,Dur,Montréal/Toronto
+2023,Cincinnati,CIN,Masters 1000,2023-08-14,2023-08-21,Dur,Cincinnati
+2023,US Open,USO,Grand Chelem,2023-08-28,2023-09-11,Dur,New York
+2023,Shanghai,SHA,Masters 1000,2023-10-02,2023-10-13,Dur,Shanghai
+2023,Paris,PAR,Masters 1000,2023-10-30,2023-11-06,Dur,Paris
+2023,ATP Finals,FIN,ATP Finals,2023-11-13,2023-11-20,Dur,Turin
+2024,Open d'Australie,AO,Grand Chelem,2024-01-15,2024-01-29,Dur,Melbourne
+2024,Indian Wells,IW,Masters 1000,2024-03-04,2024-03-15,Dur,Indian Wells
+2024,Miami,MIA,Masters 1000,2024-03-18,2024-03-29,Dur,Miami
+2024,Monte-Carlo,MC,Masters 1000,2024-04-08,2024-04-15,Terre battue,Monte-Carlo
+2024,Madrid,MAD,Masters 1000,2024-04-22,2024-05-03,Terre battue,Madrid
+2024,Rome,ROM,Masters 1000,2024-05-06,2024-05-17,Terre battue,Rome
+2024,Roland-Garros,RG,Grand Chelem,2024-05-27,2024-06-10,Terre battue,Paris
+2024,Wimbledon,WIM,Grand Chelem,2024-07-01,2024-07-15,Gazon,Londres
+2024,Canada,CAN,Masters 1000,2024-08-05,2024-08-12,Dur,Montréal/Toronto
+2024,Cincinnati,CIN,Masters 1000,2024-08-12,2024-08-19,Dur,Cincinnati
+2024,US Open,USO,Grand Chelem,2024-08-26,2024-09-09,Dur,New York
+2024,Shanghai,SHA,Masters 1000,2024-10-02,2024-10-13,Dur,Shanghai
+2024,Paris,PAR,Masters 1000,2024-10-28,2024-11-04,Dur,Paris
+2024,ATP Finals,FIN,ATP Finals,2024-11-10,2024-11-17,Dur,Turin
+2025,Open d'Australie,AO,Grand Chelem,2025-01-13,2025-01-27,Dur,Melbourne
+2025,Indian Wells,IW,Masters 1000,2025-03-05,2025-03-16,Dur,Indian Wells
+2025,Miami,MIA,Masters 1000,2025-03-09,2025-03-20,Dur,Miami
+2025,Monte-Carlo,MC,Masters 1000,2025-04-06,2025-04-13,Terre battue,Monte-Carlo
+2025,Madrid,MAD,Masters 1000,2025-04-23,2025-05-04,Terre battue,Madrid
+2025,Rome,ROM,Masters 1000,2025-05-07,2025-05-18,Terre battue,Rome
+2025,Roland-Garros,RG,Grand Chelem,2025-05-26,2025-06-09,Terre battue,Paris
+2025,Wimbledon,WIM,Grand Chelem,2025-06-30,2025-07-14,Gazon,Londres
+2025,Canada,CAN,Masters 1000,2025-07-27,2025-08-03,Dur,Montréal/Toronto
+2025,Cincinnati,CIN,Masters 1000,2025-08-07,2025-08-14,Dur,Cincinnati
+2025,US Open,USO,Grand Chelem,2025-08-25,2025-09-08,Dur,New York
+2025,Shanghai,SHA,Masters 1000,2025-10-01,2025-10-12,Dur,Shanghai
+2025,Paris,PAR,Masters 1000,2025-10-07,2025-10-14,Dur,Paris
+2025,ATP Finals,FIN,ATP Finals,2025-11-09,2025-11-16,Dur,Turin
+2026,Open d'Australie,AO,Grand Chelem,2026-01-18,2026-02-01,Dur,Melbourne
+2026,Indian Wells,IW,Masters 1000,2026-03-04,2026-03-15,Dur,Indian Wells
+2026,Miami,MIA,Masters 1000,2026-03-18,2026-03-29,Dur,Miami
+2026,Monte-Carlo,MC,Masters 1000,2026-04-05,2026-04-12,Terre battue,Monte-Carlo
+2026,Madrid,MAD,Masters 1000,2026-04-22,2026-05-03,Terre battue,Madrid
+2026,Rome,ROM,Masters 1000,2026-05-06,2026-05-17,Terre battue,Rome
+2026,Roland-Garros,RG,Grand Chelem,2026-05-24,2026-06-07,Terre battue,Paris
+2026,Wimbledon,WIM,Grand Chelem,2026-06-29,2026-07-12,Gazon,Londres
+2026,Canada,CAN,Masters 1000,2026-08-02,2026-08-12,Dur,Montréal
+2026,Cincinnati,CIN,Masters 1000,2026-08-13,2026-08-23,Dur,Cincinnati
+2026,US Open,USO,Grand Chelem,2026-08-31,2026-09-13,Dur,New York
+2026,Shanghai,SHA,Masters 1000,2026-10-07,2026-10-18,Dur,Shanghai
+2026,Paris,PAR,Masters 1000,2026-11-02,2026-11-08,Dur (salle),Paris

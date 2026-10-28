@@ -1,0 +1,13 @@
+season,team,player_out,player_in,transfer_date,frozen_race_out,frozen_duels_out,entry_offset_in
+2023,PAT,Taylor Fritz,Ben Shelton,2023-01-30,395,5,540
+2023,DOC,Ben Shelton,Taylor Fritz,2023-01-30,540,0,395
+2023,CHEF,Jenson Brooksby,Arthur Fils,2023-04-17,0,0,354
+2024,PAT,Lorenzo Musetti,Matteo Arnaldi,2024-02-26,150,,150
+2024,CHEF,Matteo Arnaldi,Lorenzo Musetti,2024-02-26,150,,150
+2024,CHEF,Lorenzo Musetti,Joao Fonseca,2024-06-10,700,,269
+2024,CHAN,Frances Tiafoe,Tommy Paul,2024-06-10,620,,1525
+2024,PAT,Francisco Cerundolo,Giovanni Mpetshi Perricard,2024-06-10,900,,630
+2025,PAT,Juncheng Shang,Hamad Medjedovic,2025-04-21,110,0,405
+2025,PAT,Giovanni Mpetshi Perricard,Justin Engel,2025-06-23,550,10,156
+2025,DOC,Hubert Hurkacz,Flavio Cobolli,2025-06-23,775,15,1210
+2025,JULES,Arthur Cazaux,Alexei Popyrin,2025-06-23,121,0,680
