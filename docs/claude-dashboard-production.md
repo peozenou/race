@@ -25,6 +25,19 @@ Incorporate the exact six-file approved release. Update the dashboard as needed 
 
 Transfers are presented as described in [replacement lines on the dashboard](data-and-releases.md#replacement-lines-on-the-dashboard). The dashboard shows one `outgoing/incoming` line per post. The outgoing player's part uses the team colour and the incoming player's part a darker shade of it. When the handoff names a new held contribution or approved Race adjustment, add it to `RACE_QUAL` in the dashboard source.
 
+### Approved dashboard wording (Patrick, 27 October 2026)
+
+Keep this wording and these presentation choices in every weekly build. They are generated from the data, so a routine release needs no text edit:
+
+| Element | Approved form |
+|---|---|
+| Header title and page `<title>` | `THE RACE 2026 — Bilan <n>e semaine` (week from HEBDO; the page title is set in `build.py`) |
+| Header summary | « Après la semaine <n> (<date>), <1st> est devant avec <total> points, suivi de <2nd>. Meilleure progression de la semaine : <team> (+<gain>), notamment grâce à <player> (+<gain>). » The player is the best-progressing team's lineup line with the largest credited JOUEURS gain that week; ties are all named. |
+| Header source line | « Sources : Tennis Abstract et Tennis Explorer », linking to https://www.tennisabstract.com/ and https://www.tennisexplorer.com/ |
+| Joueurs tab summary | « <player> (<team>) compte le plus de points Race (<pts>) ; <player> (<team>) a le meilleur rendement, avec <n> points par tournoi. » |
+| Team composition card | Title « Contributions par équipe »; note « Points Race de chaque joueur à la dernière mise à jour, total cumulé par équipe ; le détail par joueur s’obtient en passant dessus. » |
+| Players table | First column « Rang »: place among the 30 lineup lines by credited Race points, with ▲/▼ and places moved since the previous week, or = when unchanged |
+
 Do not silently modify cleared league data or scoring rules to make the presentation agree. If a data/identity/transfer issue is discovered, return it to the owning data/audit step and wait for the affected state to be verified and cleared again.
 
 From the repository root, run the existing builder:
