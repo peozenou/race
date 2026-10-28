@@ -763,9 +763,9 @@
 "week": 19,
 "date": "2026-06-29",
 "team": "PAT",
-"race": 7131,
+"race": 7141,
 "duels": 85,
-"total": 7216
+"total": 7226
 },
 {
 "week": 19,
@@ -803,9 +803,9 @@
 "week": 20,
 "date": "2026-07-06",
 "team": "PAT",
-"race": 7131,
+"race": 7141,
 "duels": 85,
-"total": 7216
+"total": 7226
 },
 {
 "week": 20,
@@ -843,17 +843,17 @@
 "week": 21,
 "date": "2026-07-13",
 "team": "PAT",
-"race": 7373,
+"race": 7383,
 "duels": 85,
-"total": 7458
+"total": 7468
 },
 {
 "week": 21,
 "date": "2026-07-13",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854
+"duels": 115,
+"total": 11859
 },
 {
 "week": 21,
@@ -883,17 +883,17 @@
 "week": 22,
 "date": "2026-07-20",
 "team": "PAT",
-"race": 7423,
+"race": 7433,
 "duels": 85,
-"total": 7508
+"total": 7518
 },
 {
 "week": 22,
 "date": "2026-07-20",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854
+"duels": 115,
+"total": 11859
 },
 {
 "week": 22,
@@ -923,17 +923,17 @@
 "week": 23,
 "date": "2026-07-27",
 "team": "PAT",
-"race": 7423,
+"race": 7598,
 "duels": 85,
-"total": 7508
+"total": 7683
 },
 {
 "week": 23,
 "date": "2026-07-27",
 "team": "DOC",
 "race": 11744,
-"duels": 110,
-"total": 11854
+"duels": 115,
+"total": 11859
 },
 {
 "week": 23,
@@ -963,17 +963,17 @@
 "week": 24,
 "date": "2026-08-03",
 "team": "PAT",
-"race": 7687,
+"race": 7912,
 "duels": 90,
-"total": 7777
+"total": 8002
 },
 {
 "week": 24,
 "date": "2026-08-03",
 "team": "DOC",
 "race": 12250,
-"duels": 120,
-"total": 12370
+"duels": 125,
+"total": 12375
 },
 {
 "week": 24,
@@ -1003,17 +1003,17 @@
 "week": 25,
 "date": "2026-08-10",
 "team": "PAT",
-"race": 7687,
+"race": 7912,
 "duels": 90,
-"total": 7777
+"total": 8002
 },
 {
 "week": 25,
 "date": "2026-08-10",
 "team": "DOC",
 "race": 12250,
-"duels": 120,
-"total": 12370
+"duels": 125,
+"total": 12375
 },
 {
 "week": 25,
@@ -1043,17 +1043,17 @@
 "week": 26,
 "date": "2026-08-17",
 "team": "PAT",
-"race": 9227,
+"race": 9502,
 "duels": 105,
-"total": 9332
+"total": 9607
 },
 {
 "week": 26,
 "date": "2026-08-17",
 "team": "DOC",
 "race": 12410,
-"duels": 120,
-"total": 12530
+"duels": 125,
+"total": 12535
 },
 {
 "week": 26,
@@ -1083,17 +1083,17 @@
 "week": 27,
 "date": "2026-08-24",
 "team": "PAT",
-"race": 9277,
+"race": 9552,
 "duels": 105,
-"total": 9382
+"total": 9657
 },
 {
 "week": 27,
 "date": "2026-08-24",
 "team": "DOC",
 "race": 12984,
-"duels": 135,
-"total": 13119
+"duels": 145,
+"total": 13129
 },
 {
 "week": 27,
@@ -1123,17 +1123,17 @@
 "week": 28,
 "date": "2026-08-31",
 "team": "PAT",
-"race": 9317,
+"race": 9602,
 "duels": 105,
-"total": 9422
+"total": 9707
 },
 {
 "week": 28,
 "date": "2026-08-31",
 "team": "DOC",
 "race": 13022,
-"duels": 135,
-"total": 13157
+"duels": 145,
+"total": 13167
 },
 {
 "week": 28,
@@ -1163,17 +1163,17 @@
 "week": 29,
 "date": "2026-09-07",
 "team": "PAT",
-"race": 9317,
+"race": 9602,
 "duels": 105,
-"total": 9422
+"total": 9707
 },
 {
 "week": 29,
 "date": "2026-09-07",
 "team": "DOC",
 "race": 13022,
-"duels": 135,
-"total": 13157
+"duels": 145,
+"total": 13167
 },
 {
 "week": 29,
@@ -1203,17 +1203,17 @@
 "week": 30,
 "date": "2026-09-14",
 "team": "PAT",
-"race": 10827,
-"duels": 120,
-"total": 10947
+"race": 11502,
+"duels": 125,
+"total": 11627
 },
 {
 "week": 30,
 "date": "2026-09-14",
 "team": "DOC",
 "race": 15294,
-"duels": 110,
-"total": 15404
+"duels": 120,
+"total": 15414
 },
 {
 "week": 30,
@@ -1243,17 +1243,17 @@
 "week": 31,
 "date": "2026-09-21",
 "team": "PAT",
-"race": 10952,
-"duels": 125,
-"total": 11077
+"race": 11627,
+"duels": 130,
+"total": 11757
 },
 {
 "week": 31,
 "date": "2026-09-21",
 "team": "DOC",
 "race": 15332,
-"duels": 110,
-"total": 15442
+"duels": 120,
+"total": 15452
 },
 {
 "week": 31,
@@ -1283,17 +1283,17 @@
 "week": 32,
 "date": "2026-09-28",
 "team": "PAT",
-"race": 10954,
-"duels": 135,
-"total": 11089
+"race": 11629,
+"duels": 140,
+"total": 11769
 },
 {
 "week": 32,
 "date": "2026-09-28",
 "team": "DOC",
 "race": 15332,
-"duels": 115,
-"total": 15447
+"duels": 125,
+"total": 15457
 },
 {
 "week": 32,
@@ -1323,17 +1323,17 @@
 "week": 33,
 "date": "2026-10-05",
 "team": "PAT",
-"race": 11166,
-"duels": 140,
-"total": 11306
+"race": 11841,
+"duels": 145,
+"total": 11986
 },
 {
 "week": 33,
 "date": "2026-10-05",
 "team": "DOC",
 "race": 15460,
-"duels": 115,
-"total": 15575
+"duels": 125,
+"total": 15585
 },
 {
 "week": 33,
@@ -1363,17 +1363,17 @@
 "week": 34,
 "date": "2026-10-12",
 "team": "PAT",
-"race": 11166,
-"duels": 140,
-"total": 11306
+"race": 11841,
+"duels": 145,
+"total": 11986
 },
 {
 "week": 34,
 "date": "2026-10-12",
 "team": "DOC",
 "race": 15460,
-"duels": 115,
-"total": 15575
+"duels": 125,
+"total": 15585
 },
 {
 "week": 34,
@@ -1403,17 +1403,17 @@
 "week": 35,
 "date": "2026-10-19",
 "team": "PAT",
-"race": 11786,
-"duels": 140,
-"total": 11926
+"race": 12471,
+"duels": 145,
+"total": 12616
 },
 {
 "week": 35,
 "date": "2026-10-19",
 "team": "DOC",
 "race": 15988,
-"duels": 125,
-"total": 16113
+"duels": 135,
+"total": 16123
 },
 {
 "week": 35,
@@ -1443,17 +1443,17 @@
 "week": 36,
 "date": "2026-10-26",
 "team": "PAT",
-"race": 11824,
-"duels": 140,
-"total": 11964
+"race": 12509,
+"duels": 145,
+"total": 12654
 },
 {
 "week": 36,
 "date": "2026-10-26",
 "team": "DOC",
 "race": 16268,
-"duels": 130,
-"total": 16398
+"duels": 140,
+"total": 16408
 },
 {
 "week": 36,
