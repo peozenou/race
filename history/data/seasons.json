@@ -5,7 +5,8 @@
 "teams": [
 "PAT",
 "DOC",
-"CHAN"
+"CHAN",
+"CHEF"
 ],
 "status": "complete",
 "final_week": 30,
@@ -34,6 +35,13 @@
 "race": 655,
 "duels": 60,
 "total": 715
+},
+{
+"rank": 4,
+"team": "CHEF",
+"race": null,
+"duels": null,
+"total": null
 }
 ],
 "champion": "PAT",
@@ -45,7 +53,8 @@
 "scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
 ],
 "data_issues": [
-"[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded."
+"[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded.",
+"[league record] CHEF finished 4th in 2019; the workbook kept only PAT, REM (DOC) and CHAN, so CHEF has no roster, points or weekly totals for 2019."
 ],
 "source_workbooks": [
 "RESULTATS-THE RACE 2019",

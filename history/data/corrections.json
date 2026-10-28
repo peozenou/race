@@ -1,6 +1,18 @@
 {
 "applied": [
 {
+"season": 2019,
+"week": null,
+"team": "CHEF",
+"field": "rank",
+"recorded": null,
+"corrected": 4,
+"total_recorded": null,
+"total_corrected": null,
+"reason": "[league record] CHEF finished 4th in 2019; the workbook kept only PAT, REM (DOC) and CHAN, so CHEF has no roster, points or weekly totals for 2019.",
+"evidence": "Patrick, 28 Oct 2026"
+},
+{
 "season": 2020,
 "week": 12,
 "team": "CHEF",

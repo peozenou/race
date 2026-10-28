@@ -1,8 +1,9 @@
 season,scoring_system,status,n_teams,final_week,final_date,weeks_recorded,n_players,n_matches,champion,coverage_notes,data_issues,source_workbooks
-2019,bareme,complete,3,30,2019-11-11,30,18,1026,PAT,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
+2019,bareme,complete,4,30,2019-11-11,30,18,1026,PAT,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
 joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.
 matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
-scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points.",[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded.,"RESULTATS-THE RACE 2019, THE RACE 2019"
+scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points.","[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded.
+[league record] CHEF finished 4th in 2019; the workbook kept only PAT, REM (DOC) and CHAN, so CHEF has no roster, points or weekly totals for 2019.","RESULTATS-THE RACE 2019, THE RACE 2019"
 2020,bareme,complete,4,19,2020-11-15,19,24,702,DOC,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
 joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.
 matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
