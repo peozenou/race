@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="7f446c6ee322">
-  <title>THE RACE 2026 — bilan de la saison</title>
+  <meta name="data-version" content="0a47e72f8a89">
+  <title>THE RACE 2026 — Bilan 36e semaine</title>
   <meta name="description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="THE RACE 2026 — bilan de la saison">
+  <meta property="og:title" content="THE RACE 2026 — Bilan 36e semaine">
   <meta property="og:description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=7f446c6ee322">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=0a47e72f8a89">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=7f446c6ee322">
+  <link rel="stylesheet" href="assets/theme.css?v=0a47e72f8a89">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=7f446c6ee322"></script>
+  <script src="assets/runtime.js?v=0a47e72f8a89"></script>
 </head>
 <body>
 <main class="site">
@@ -33,6 +33,8 @@
 .tr .tr-take{margin:var(--cds-gap-xs) 0 0;max-width:62rem;line-height:1.5}
 .tr .tr-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md);line-height:1.45}
 .tr .tr-head-note{margin-bottom:0}
+.tr .tr-head-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.tr .tr-head-note a:hover{color:var(--color-fg)}
 .tr .tr-tabs{display:flex;gap:var(--cds-gap-xs);border-bottom:1px solid var(--color-border-line);flex-wrap:wrap}
 .tr .tr-tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:var(--cds-pad-sm) var(--cds-pad-md);font:inherit;color:var(--color-fg-muted);cursor:pointer}
 .tr .tr-tab[aria-selected="true"]{color:var(--color-fg);border-bottom-color:var(--color-fg)}
@@ -122,9 +124,9 @@
 
 <div class="tr" id="race-season" lang="fr">
   <header id="overview">
-    <h1>THE RACE 2026 — bilan de la saison</h1>
+    <h1 id="head-title" data-source="standings" data-field="week" data-row="0">THE RACE 2026</h1>
     <p class="tr-take" id="takeaway"><span class="dash-skeleton">—</span></p>
-    <p class="tr-note tr-head-note">Instantané du classeur THE RACE 2026 après la mise à jour validée du <span id="head-asof" data-source="standings" data-field="date" data-row="0">—</span> ; il est actualisé chaque semaine. Bilans de matchs, titres, duels, classements et Elo : Tennis Abstract et Tennis Explorer.</p>
+    <p class="tr-note tr-head-note">Sources : <a href="https://www.tennisabstract.com/" target="_blank" rel="noopener">Tennis Abstract</a> et <a href="https://www.tennisexplorer.com/" target="_blank" rel="noopener">Tennis Explorer</a></p>
   </header>
 
   <nav class="tr-tabs" role="tablist" aria-label="Pages du tableau de bord">
@@ -1112,17 +1114,30 @@ dash.calc('player_events', {
   const drawHeader = () => {
     const el = $('takeaway');
     const st = TR.state('standings');
-    const asof = $('head-asof');
     if (st !== 'ok') { if (st === 'error') el.textContent = "Les totaux d'équipe n'ont pas pu être chargés."; return; }
     const rows = dash.data('standings').data;
     if (!rows.length) return;
-    asof.textContent = TR.dateY(rows[0].date);
     const lead = rows[0], second = rows[1];
-    el.replaceChildren(TR.text('Après la semaine '), TR.span(String(lead.week), 'standings', 'week', { team: lead.team }), TR.text(` (${TR.dateY(lead.date)}), ${lead.team} mène avec `), TR.span(TR.fmt(lead.total), 'standings', 'total', { team: lead.team }), TR.text(' points'));
-    if (second) el.append(TR.text(', '), TR.span(TR.fmt(second.gap_to_next), 'standings', 'gap_to_next', { team: second.team }), TR.text(` devant ${second.team}.`));
-    else el.append(TR.text('.'));
+    $('head-title').textContent = `THE RACE 2026 — Bilan ${lead.week}e semaine`;
+    el.replaceChildren(TR.text('Après la semaine '), TR.span(String(lead.week), 'standings', 'week', { team: lead.team }), TR.text(` (${TR.dateY(lead.date)}), ${lead.team} est devant avec `), TR.span(TR.fmt(lead.total), 'standings', 'total', { team: lead.team }), TR.text(' points'));
+    el.append(TR.text(second ? `, suivi de ${second.team}.` : '.'));
     const best = rows.filter((r) => r.change !== null).reduce((a, b) => (!a || b.change > a.change ? b : a), null);
-    if (best && best.change > 0) el.append(TR.text(` Meilleure progression de la semaine : ${best.team} (`), TR.span(TR.fmtS(best.change), 'standings', 'change', { team: best.team }), TR.text(').'));
+    if (!best || best.change <= 0) return;
+    el.append(TR.text(` Meilleure progression de la semaine : ${best.team} (`), TR.span(TR.fmtS(best.change), 'standings', 'change', { team: best.team }), TR.text(')'));
+    // The team's player (lineup line) with the largest credited Race gain this week; ties are all named.
+    const ps = dash.data('player_season');
+    const lines = ps && ps.status === 'ok' ? ps.data.filter((r) => r.team === best.team && r.gain_week !== null && r.gain_week > 0) : [];
+    const top = lines.length ? Math.max(...lines.map((r) => r.gain_week)) : null;
+    const stars = lines.filter((r) => r.gain_week === top);
+    if (stars.length) {
+      const name = (r) => (r.slot ? r.slot.inShort : r.short.replace(/ \((sorti|entré)\)$/, ''));
+      el.append(TR.text(', notamment grâce à '));
+      stars.forEach((r, i) => {
+        if (i) el.append(TR.text(i === stars.length - 1 ? ' et ' : ', '));
+        el.append(TR.text(`${name(r)} (`), TR.span(TR.fmtS(r.gain_week), 'player_season', 'gain_week', { player: r.player }), TR.text(')'));
+      });
+    }
+    el.append(TR.text('.'));
   };
 
   const drawTeams = (order) => {

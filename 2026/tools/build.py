@@ -43,7 +43,7 @@ def main() -> None:
     fragment = (ROOT / "source" / "dashboard.html").read_text(encoding="utf-8")
     version = data_version()
     week, date, leader, total = latest_week()
-    title = "THE RACE 2026 — bilan de la saison"
+    title = f"THE RACE 2026 — Bilan {week}e semaine"
     mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août",
             "septembre", "octobre", "novembre", "décembre"]
     y, m, d = (int(x) for x in date.split("-"))
