@@ -11,9 +11,36 @@ plus a stacked history that runs from 2019 through the current 2026 release.
 | `history/data/` | The same six datasets stacked across 2019–2026, each row tagged with `season` and `scoring_system`, plus `rosters.json` and `seasons.json` |
 | `history/validation.json` | Every reconciliation check run by the converter (value, reference, pass/fail) |
 | `history/data/corrections.json` | Every change made to a recorded workbook value (recorded → corrected, reason, evidence), plus corrections awaiting a league decision |
+| `history/race_history.sqlite`, `history/csv/` | The consolidated database (see below) |
 | `history/tools/` | `build_history.py` + `common.py` (the converter) and `audit_bareme.py` (2019–2021 tournament audit) |
 
 `2026/data/` is untouched; its rows are copied into `history/data/` unchanged.
+
+## Consolidated database
+
+`history/race_history.sqlite` holds everything in one file, rebuilt from `history/data/` by
+`python3 -I history/tools/consolidate.py`. `history/csv/` has the same tables as CSV (for Stata, R or Excel).
+
+| Table | Grain |
+|---|---|
+| `seasons` | One row per edition: scoring system, status, final week/date, champion, notes |
+| `teams`, `season_teams` | Team palette; which teams played each season |
+| `final_standings` | Season × team: rank, race, duels, total |
+| `people` | One row per player ever rostered (`person_key` = `atp:<Sackmann id>`, or `name:<player>` when unknown) |
+| `rosters`, `transfers` | Season stints with start/end dates and frozen credits; in-season swaps |
+| `hebdo` | Season × week × team, with `rank`, `share` and the workbook's original values |
+| `joueurs` | Season × week × team × player credited points |
+| `players` | Season × team × player summary (2026 schema + `league_points`, `slot`) |
+| `matches` | One row per player perspective on a match |
+| `calendar` | Major events per season |
+| `corrections` | Every applied correction, plus the 2020 Vienna case pending a decision |
+
+Views: `v_team_seasons` (team results by season), `v_team_honours` (titles, average rank and share),
+`v_player_careers` (each player across editions), `v_duels` (every scored duel).
+
+```sql
+SELECT * FROM v_team_honours ORDER BY titles DESC, avg_rank;
+```
 
 ## Two scoring eras
 

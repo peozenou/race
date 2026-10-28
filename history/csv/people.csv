@@ -1,0 +1,69 @@
+person_key,atp_id,player,full_name,first_season,last_season,n_seasons,teams
+atp:100644,100644,Zverev Alexander,Alexander Zverev,2019,2026,8,DOC
+atp:104527,104527,Wawrinka Stan,Stan Wawrinka,2019,2020,2,CHAN
+atp:104755,104755,Gasquet Richard,Richard Gasquet,2019,2020,2,CHAN
+atp:104792,104792,Monfils Gael,Gael Monfils,2019,2022,4,DOC
+atp:104918,104918,Murray Andy,Andy Murray,2020,2020,1,CHEF
+atp:104925,104925,Djokovic Novak,Novak Djokovic,2025,2026,2,JULES
+atp:105676,105676,Goffin David,David Goffin,2020,2021,2,DOC
+atp:105777,105777,Dimitrov Grigor,Grigor Dimitrov,2020,2026,3,"PAT,JULES"
+atp:105932,105932,Basilashvili Nikoloz,Nikoloz Basilashvili,2019,2019,1,DOC
+atp:106043,106043,Schwartzman Diego,Diego Schwartzman,2019,2023,5,DOC
+atp:106065,106065,Cecchinato Marco,Marco Cecchinato,2019,2019,1,PAT
+atp:106233,106233,Thiem Dominic,Dominic Thiem,2019,2023,5,PAT
+atp:106234,106234,Karatsev Aslan,Aslan Karatsev,2022,2022,1,CHAN
+atp:106298,106298,Pouille Lucas,Lucas Pouille,2019,2019,1,PAT
+atp:106378,106378,Edmund Kyle,Kyle Edmund,2019,2019,1,DOC
+atp:106401,106401,Kyrgios Nick,Nick Kyrgios,2020,2021,2,CHEF
+atp:106421,106421,Medvedev Daniil,Daniil Medvedev,2019,2026,8,CHAN
+atp:106432,106432,Coric Borna,Borna Coric,2019,2021,3,PAT
+atp:111575,111575,Khachanov Karen,Karen Khachanov,2019,2021,3,CHAN
+atp:111797,111797,Jarry Nicolas,Nicolas Jarry,2024,2024,1,DOC
+atp:111815,111815,Norrie Cameron,Cameron Norrie,2022,2023,2,DOC
+atp:122330,122330,Bublik Alexander,Alexander Bublik,2026,2026,1,JULES
+atp:126094,126094,Rublev Andrey,Andrey Rublev,2020,2026,7,CHEF
+atp:126203,126203,Fritz Taylor,Taylor Fritz,2019,2026,6,"PAT,DOC"
+atp:126205,126205,Paul Tommy,Tommy Paul,2024,2026,3,CHAN
+atp:126207,126207,Tiafoe Frances,Frances Tiafoe,2023,2026,4,"CHAN,JULES"
+atp:126610,126610,Berrettini Matteo,Matteo Berrettini,2020,2023,4,CHEF
+atp:126774,126774,Tsitsipas Stefanos,Stefanos Tsitsipas,2019,2025,7,DOC
+atp:128034,128034,Hurkacz Hubert,Hubert Hurkacz,2020,2025,6,DOC
+atp:133430,133430,Shapovalov Denis,Denis Shapovalov,2019,2023,5,PAT
+atp:134770,134770,Ruud Casper,Casper Ruud,2022,2026,5,PAT
+atp:144869,144869,Etcheverry Tomas Martin,Tomas Martin Etcheverry,2024,2024,1,DOC
+atp:144895,144895,Moutet Corentin,Corentin Moutet,2020,2022,3,PAT
+atp:148679,148679,Bernet Henry,Henry Bernet,2026,2026,1,DOC
+atp:149282,149282,Budkov Kjaer Nicolai,Nicolai Budkov Kjaer,2026,2026,1,DOC
+atp:200000,200000,Auger Aliassime Felix,Felix Auger Aliassime,2019,2024,6,"CHAN,CHEF"
+atp:200005,200005,Humbert Ugo,Ugo Humbert,2020,2026,5,"CHEF,JULES"
+atp:200282,200282,De Minaur Alex,Alex De Minaur,2019,2026,6,"CHAN,PAT"
+atp:200384,200384,Gaston Hugo,Hugo Gaston,2021,2022,2,CHAN
+atp:200615,200615,Popyrin Alexei,Alexei Popyrin,2025,2025,1,JULES
+atp:200624,200624,Korda Sebastian,Sebastian Korda,2021,2024,4,CHAN
+atp:202103,202103,Cerundolo Francisco,Francisco Cerundolo,2024,2024,1,PAT
+atp:202385,202385,Brooksby Jenson,Jenson Brooksby,2022,2023,2,CHEF
+atp:205734,205734,Seyboth Wild Thiago,Thiago Seyboth Wild,2021,2021,1,PAT
+atp:206173,206173,Sinner Jannik,Jannik Sinner,2020,2026,7,CHEF
+atp:206909,206909,Nakashima Brandon,Brandon Nakashima,2022,2023,2,PAT
+atp:207518,207518,Musetti Lorenzo,Lorenzo Musetti,2021,2026,6,"PAT,CHEF,JULES"
+atp:207733,207733,Draper Jack,Jack Draper,2023,2026,4,CHEF
+atp:207830,207830,Machac Tomas,Tomas Machac,2025,2025,1,DOC
+atp:207925,207925,Cobolli Flavio,Flavio Cobolli,2025,2026,2,DOC
+atp:207989,207989,Alcaraz Carlos,Carlos Alcaraz,2021,2026,6,CHAN
+atp:208029,208029,Rune Holger,Holger Rune,2022,2026,5,CHAN
+atp:208103,208103,Lehecka Jiri,Jiri Lehecka,2025,2026,2,CHEF
+atp:208286,208286,Arnaldi Matteo,Matteo Arnaldi,2024,2025,2,"CHEF,PAT"
+atp:208659,208659,Mpetshi Perricard Giovanni,Giovanni Mpetshi Perricard,2024,2025,2,PAT
+atp:209070,209070,Cazaux Arthur,Arthur Cazaux,2025,2025,1,JULES
+atp:209098,209098,Medjedovic Hamad,Hamad Medjedovic,2025,2025,1,PAT
+atp:209950,209950,Fils Arthur,Arthur Fils,2023,2026,4,CHEF
+atp:209992,209992,Shang Juncheng,Juncheng Shang,2023,2025,2,"CHAN,PAT"
+atp:210084,210084,Mensik Jakub,Jakub Mensik,2024,2026,3,CHAN
+atp:210097,210097,Shelton Ben,Ben Shelton,2023,2026,4,"DOC,PAT"
+atp:210464,210464,Blanch Darwin,Darwin Blanch,2026,2026,1,PAT
+atp:210506,210506,Michelsen Alex,Alex Michelsen,2024,2026,3,"PAT,CHAN"
+atp:210530,210530,Tien Learner,Learner Tien,2026,2026,1,PAT
+atp:211514,211514,Engel Justin,Justin Engel,2025,2026,2,PAT
+atp:211663,211663,Fonseca Joao,Joao Fonseca,2024,2026,3,CHEF
+atp:212588,212588,Jodar Rafael,Rafael Jodar,2026,2026,1,CHEF
+name:Kouame Moise,,Kouame Moise,Moise Kouame,2025,2026,2,DOC

@@ -1,0 +1,39 @@
+season,scoring_system,status,n_teams,final_week,final_date,weeks_recorded,n_players,n_matches,champion,coverage_notes,data_issues,source_workbooks
+2019,bareme,complete,3,30,2019-11-11,30,18,1026,PAT,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
+joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.
+matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
+scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points.",[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded.,"RESULTATS-THE RACE 2019, THE RACE 2019"
+2020,bareme,complete,4,19,2020-11-15,19,24,702,DOC,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
+joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.
+matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
+scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points.","[corrected] ATP 500 Hamburg row: CHEF formula used column K instead of H for finalists (Rublev's final, +20). HEBDO now agrees with SCORES (CHEF 430).
+[pending your decision] The 'Vienne' row holds Nur-Sultan results, so Vienna (won by Rublev, +60 CHEF) was never scored; applying it would move CHEF from 4th to 3rd.
+[open] HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8.","RESULTATS-THE RACE 2020, THE RACE 2020"
+2021,bareme,complete,4,37,2021-11-14,37,24,1115,DOC,"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.
+joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.
+matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
+scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points.",[corrected] SLAM tab CHEF formula skipped quarter-finalists; 60 typed at Roland-Garros compensated. Points moved to Wimbledon/US Open weeks; season total unchanged.,"RESULTATS-THE RACE 2021, THE RACE 2021"
+2022,race,complete,4,,,0,24,1325,CHAN,"hebdo/joueurs: only the end-of-season standings survive (THE RACE 2022 › BILAN ATP); no weekly history was kept, so week and date are null.
+matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.
+players.duel_pts: null — only team duel totals survive (BILAN ATP). duel_w/duel_l count duel matches in the Sackmann file, which finds more duels than the league scored (see checks).","[open] Only the final standings survive (no weekly history, no per-player duel points). RACE2022data.dta holds weekly ATP ranking points, not Race points.","RESULTATS-THE RACE 2022, THE RACE 2022"
+2023,race,complete,4,46,2023-11-20,46,27,1322,CHAN,"joueurs: Jenson Brooksby's CHEF slot is credited 0 (HEBDO never counts his Race points); Fils is credited from post-Monte-Carlo with a 354-point entry offset.
+joueurs: rebuilt from the dated Tennis Explorer Race tabs (raw points, minus entry offsets for 2023 transfers); weeks without a dated tab have no player rows. Players absent from a TE table are counted as 0 Race points.
+matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.","[corrected] CHAN was left out of the week-28 update (carried 14,269 to week 32); set to the week-28 Tennis Explorer value.
+[open] 11 smaller week/team gaps between HEBDO and the dated Tennis Explorer tabs (update timing); HEBDO kept.
+[open] Player rows stop at week 37 (last dated tab); HEBDO runs to week 46. LIVE/BILAN Race columns are live formulas, not used.",THE RACE 2023
+2024,race,complete,4,38,2024-11-04,39,29,1557,CHEF,"matches.opponent_rank: filled for 1529 of 1557 matches from the ATP table of the latest dated tab on or before the event date (TA tabs carry no ranks).
+matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).
+players.duel_pts: counts events starting before the final HEBDO week (2024-11-04), matching the HEBDO duel total.
+players.duel_pts: league duel credit from each player tab's duel column (DUELS2025 / D_pts), summed over the player's stint.","[corrected] HEBDO week-2 CHEF read CHAN's cell (615 -> 820); week-24 CHEF read the week-25 tab (13,354 -> 13,023).
+[corrected] Player tabs carry no opponent ranking; ranks taken from the weekly ATP tables (28 of 1,557 matches still without).
+[open] Tab 20241118w39 and the LIVE/BILAN tabs hold live web imports that now return 2026 values; not used. The season ends at week 38 as recorded in HEBDO.
+[open] Final CHEF duel points: 240 in HEBDO vs 230 from the match record; HEBDO kept.",THE RACE 2024
+2025,race,complete,5,35,2025-11-17,36,34,1529,CHAN,"Week 35 Finals points used: Alcaraz Carlos 1000, Sinner Jannik 1500, Fritz Taylor 200, Zverev Alexander 200, Musetti Lorenzo 200, De Minaur Alex 200
+hebdo: week(s) [35] dropped (see data issues).
+matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).
+players.duel_pts: +5 per win over another team's rostered player (rule), through the ATP Finals; replaces the player-tab flags, which missed two Djokovic wins in Geneva.","[corrected] Tab 20251117w35 carried the 2024 Race table; week 35 rebuilt as week 34 + ATP Finals points.
+[corrected] HEBDO week-12 JULES Race typed 4,529; the week's team block sums to 4,579.
+[corrected] HEBDO duel column drifted from the match record; rebuilt from the per-match duel rule.
+[open] Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.
+[open] BILAN and LIVE are not used (BILAN reads LIVE).",THE RACE 2025
+2026,race,in_progress,5,36,2026-10-26,37,31,1549,,Copied unchanged from 2026/data (current published release).,,THE RACE 2026
