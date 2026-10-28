@@ -40,13 +40,17 @@ Keep this wording and these presentation choices in every weekly build. They are
 
 Do not silently modify cleared league data or scoring rules to make the presentation agree. If a data/identity/transfer issue is discovered, return it to the owning data/audit step and wait for the affected state to be verified and cleared again.
 
+### Historique tab
+
+The **Historique** tab reads the league history from `history/data/` (seasons, hebdo, rosters, players, ranks, calendar), loaded only when the tab opens, and takes the current edition from the six weekly files. A routine weekly release needs no history change: the current edition's standings, rosters and transfers update with `2026/data/`. Two inputs are refreshed by hand when useful: `history/data/ranks.json` (`python3 -I history/tools/player_ranks.py SRC_DIR`, current ATP rank from the latest dated tab) and `history/race_history.sqlite` (`python3 -I history/tools/consolidate.py`). The edition notes shown in the tab (`HIST_NOTES` in the source) are French summaries of `history/README.md`. At season end, the finished edition is added to `history/` before the next season's folder is created.
+
 From the repository root, run the existing builder:
 
 ```sh
 python3 2026/tools/build.py
 ```
 
-The builder reads the six JSON files and `2026/source/dashboard.html`, then writes `2026/index.html` with the data-version token and current metadata. Verify the built page references the intended release/version. Do not regenerate the optional preview image or tutorial, or change assets/source unrelated to the release, without a separate need or request.
+The builder reads the six JSON files, the history files used by the Historique tab and `2026/source/dashboard.html`, then writes `2026/index.html` with the data-version token and current metadata. Verify the built page references the intended release/version. Do not regenerate the optional preview image or tutorial, or change assets/source unrelated to the release, without a separate need or request.
 
 ## Publish
 
