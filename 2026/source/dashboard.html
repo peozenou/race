@@ -264,7 +264,7 @@
 
     <div class="tr-card" id="hist-honours-card">
       <h2>Palmarès</h2>
-      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite).</p>
+      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite). * CHEF : pas de classement 2019 dans le classeur, moyenne sur ses éditions classées.</p>
       <div class="tr-scroll">
         <table class="tr-table" id="hist-honours" data-source="hist_honours" data-row-key="team">
           <thead><tr>
@@ -609,6 +609,9 @@ dash.calc('player_events', {
 // Completed editions come from ../history/data (converted workbooks, corrections documented there);
 // the current edition is always read from this season's live data.
 const HIST_CURRENT = 2026;
+// League membership span shown in the palmarès when it starts before the team's first ranked edition
+// (Patrick, 28 Oct 2026: CHEF counts from 2019; the 2019 workbook has no CHEF ranking).
+const HIST_SINCE = { CHEF: 2019 };
 const histBase = (s) => String(s || '').replace(/ \((sorti|entré)\)$/, '');
 
 dash.calc('hist_season_list', {
@@ -660,7 +663,8 @@ dash.calc('hist_honours', {
       const cur = now ? now.standings.find((x) => x.team === t) : null;
       return {
         team: t, editions: eds.length,
-        first: years.length ? Math.min(...years) : null, last: years.length ? Math.max(...years) : null,
+        first: years.length ? Math.min(HIST_SINCE[t] ?? Infinity, ...years) : null, last: years.length ? Math.max(...years) : null,
+        unranked_from: HIST_SINCE[t] !== undefined && years.length && HIST_SINCE[t] < Math.min(...years) ? HIST_SINCE[t] : null,
         titles: eds.filter((e) => e.rank === 1).length, title_years: eds.filter((e) => e.rank === 1).map((e) => e.season),
         second: eds.filter((e) => e.rank === 2).length, third: eds.filter((e) => e.rank === 3).length,
         last_place: eds.filter((e) => e.last).length,
@@ -1865,7 +1869,8 @@ dash.calc('hist_departures', {
       td(h.title_years.length ? h.title_years.join(', ') : '—', true).classList.add('tr-sec');
       [h.second, h.third, h.last_place].forEach((v) => td(String(v)).classList.add('tr-sec'));
       td(`${h.editions} (${TR.years(h.first, h.last)})`, true).classList.add('tr-sec');
-      td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
+      const rc = td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
+      if (h.unranked_from !== null) { const m0 = document.createElement('sup'); m0.className = 'tr-mark'; m0.textContent = '*'; m0.title = `Pas de classement ${h.team} en ${h.unranked_from} dans le classeur : moyenne sur les ${h.editions} éditions classées.`; rc.append(m0); }
       td(TR.pct(h.avg_share));
       td(h.current_rank ? `${TR.ord(h.current_rank)} (sem. ${h.current_week})` : '—');
       return tr;
