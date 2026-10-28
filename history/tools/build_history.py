@@ -463,6 +463,29 @@ def season_blocks(season, fname, layout, teams, week_tabs_skip=(), last_valid_we
         ranks[rec["id"] if rec else k] = {"race_rank": rr, "race_points": rp, "atp_rank": ar, "atp_points": ap}
     lo, hi = f"{season - 1}-12-24", f"{season}-12-31"
     raw_matches, credits = ta_matches(season, book, roster, lo, hi, layout)
+    if layout == 2024:  # TA tabs carry no opponent rank: use the ATP table of that week's dated tab
+        by_date = []
+        for t in tabs:
+            tab_date = iso(t[:8])
+            ranks_t = {}
+            for k, (_, _, ar, _) in te_snapshot(book, t).items():
+                if ar is not None:
+                    ranks_t[k] = ar
+                    ranks_t[" ".join(k.split()[1:] + k.split()[:1])] = ar
+            by_date.append((tab_date, ranks_t))
+        filled = 0
+        for m in raw_matches:
+            if m["opponent_rank"] is None:
+                prior = [r for d, r in by_date if d <= m["event_date"]] or [by_date[0][1]]
+                key = fold(m["opponent"])
+                rk = prior[-1].get(key)
+                if rk is None:  # "first last" vs "last first" with compound surnames
+                    toks = key.split()
+                    rk = next((v for k2, v in prior[-1].items() if set(k2.split()) == set(toks)), None)
+                if rk is not None:
+                    m["opponent_rank"], filled = rk, filled + 1
+        NOTES[season].append(f"matches.opponent_rank: filled for {filled} of {len(raw_matches)} matches from the ATP "
+                             "table of the latest dated tab on or before the event date (TA tabs carry no ranks).")
     matches = finalize_matches(raw_matches)
     cut = week_dates[final_w]
     duel_pts = collections.Counter()
@@ -694,31 +717,153 @@ def calendar_from(matches, season):
     return out
 
 
+# --------------------------------------------------------------------------- corrections
+CORRECTIONS = []          # every change made to a recorded HEBDO value
+PENDING = []              # corrections computed but not applied (need the league's agreement)
+
+
+def set_hebdo(season, hebdo, week, tm, field, value, reason, evidence):
+    h = next((x for x in hebdo if x["week"] == week and x["team"] == tm), None)
+    if h is None or h[field] == value:
+        return
+    h.setdefault("_recorded", {k: h[k] for k in ("race", "duels", "total")})
+    old = h[field]
+    h[field] = value
+    if field != "total" and h["race"] is not None and h["duels"] is not None:
+        h["total"] = h["race"] + h["duels"]
+    CORRECTIONS.append({"season": season, "week": week, "team": tm, "field": field, "recorded": old,
+                        "corrected": value, "total_recorded": h["_recorded"]["total"], "total_corrected": h["total"],
+                        "reason": reason, "evidence": evidence})
+
+
+def rule_duels(matches, cut):
+    """League rule: +5 for a win over a player rostered by another team at match date (tournament start < cut)."""
+    c = collections.Counter()
+    for m in matches:
+        if m["opponent_team"] and m["result"] == "V" and m["event_date"] < cut:
+            c[m["team"]] += 5
+    return c
+
+
+def finals_week_2025(book, roster, joueurs, hebdo, teams):
+    """Rebuild week 35 (17 Nov 2025) = week 34 credited points + ATP Finals points (tab 20251117w35, col R 'TURIN')."""
+    fin = {}
+    cur = None
+    for r in rows(book, "20251117w35", min_col=15, max_col=17):
+        name = r[0]
+        if isinstance(name, str) and name.strip() in teams:
+            cur = name.strip()
+        elif cur and name and len(r) > 2 and num(r[2]) is not None:
+            rec = IDS.resolve(name)
+            fin[(cur, Identity.labels(rec, name)["player"])] = num(r[2])
+    NOTES[2025].append("Week 35 Finals points used: " + ", ".join(f"{p} {v}" for (_, p), v in sorted(fin.items()) if v))
+    w34 = [j for j in joueurs if j["week"] == 34]
+    for j in w34:
+        joueurs.append({"team": j["team"], "player": j["player"], "week": 35,
+                        "race": j["race"] + fin.get((j["team"], j["player"]), 0)})
+    for tm in teams:
+        prev = next(h for h in hebdo if h["week"] == 34 and h["team"] == tm)
+        race = prev["race"] + sum(v for (t, _), v in fin.items() if t == tm)
+        hebdo.append({"week": 35, "date": "2025-11-17", "team": tm, "race": race, "duels": None, "total": None,
+                      "_recorded": {"race": None, "duels": None, "total": None}})
+        CORRECTIONS.append({"season": 2025, "week": 35, "team": tm, "field": "race", "recorded": None, "corrected": race,
+                            "total_recorded": None, "total_corrected": None,
+                            "reason": "Week 35 rebuilt: the workbook tab carried the 2024 Race table. Value = week-34 "
+                                      "credited Race + ATP Finals points of the team's players.",
+                            "evidence": "tab 20251117w35 column Q (TURIN); Finals results in the player tabs"})
+    return fin
+
+
+def apply_corrections(season, hebdo, joueurs, matches, book, roster, teams):
+    ok = lambda c: c[-1]
+    if season in (2024, 2025):  # HEBDO cell errors: use the week's own team block total
+        for chk, w, tm, val, ref, good in list(CHECKS[season]):
+            if chk == "block_total_vs_hebdo" and not good:
+                set_hebdo(season, hebdo, w, tm, "race", val,
+                          "HEBDO cell does not match the week's team block (wrong cell reference or typed value).",
+                          f"team block total in that week's dated tab = {val}")
+    if season == 2025:
+        finals_week_2025(book, roster, joueurs, hebdo, teams)
+        for h in hebdo:  # duels rebuilt from the per-match rule, cumulative by week
+            if h["week"] == 0:
+                continue
+            d = rule_duels(matches, h["date"])[h["team"]]
+            if h["week"] == 35:
+                h["duels"] = d
+                h["total"] = h["race"] + d
+                next(c for c in CORRECTIONS if c["season"] == 2025 and c["week"] == 35 and c["team"] == h["team"]
+                     ).update({"total_corrected": h["total"]})
+            else:
+                set_hebdo(season, hebdo, h["week"], h["team"], "duels", d,
+                          "HEBDO duel column drifted from the match record (e.g. CHEF stuck at 150-155 from June). "
+                          "Rebuilt as +5 per win over another team's rostered player, events starting before the week date.",
+                          "player-tab DUELS2025 flags agree with the rule on 1,527 of 1,529 matches")
+    if season == 2023:
+        w28 = sum(j["race"] for j in joueurs if j["week"] == 28 and j["team"] == "CHAN")
+        for w in range(28, 33):
+            set_hebdo(season, hebdo, w, "CHAN", "race", w28,
+                      "CHAN was left out of the week-28 update and carried its week-27 value until week 33.",
+                      "dated Tennis Explorer tab 20230717 (Alcaraz's Wimbledon title included)")
+    if season == 2020:
+        for h in hebdo:
+            if h["team"] == "CHEF" and h["week"] >= 12:
+                set_hebdo(season, hebdo, h["week"], "CHEF", "total", h["total"] + 20,
+                          "ATP 500 tab, Hamburg row: CHEF formula counts finalists from columns G and K instead of "
+                          "G and H, so Rublev's final (+20) was missed. Restores the SCORES total (430).",
+                          "THE RACE 2020 › ATP 500 row 7; SCORES CHEF total 430")
+        fin = next(h for h in hebdo if h["team"] == "CHEF" and h["week"] == max(x["week"] for x in hebdo))
+        fin["race"], fin["duels"] = fin["total"] - 90, 90  # SCORES split, now that totals agree
+        CHECKS[season].append(("corrected_hebdo_final_vs_scores_total", fin["week"], "CHEF", fin["total"], 430,
+                               fin["total"] == 430))
+        PENDING.append({"season": 2020, "team": "CHEF", "from_week": 16, "delta_total": 60,
+                        "issue": "ATP 500 tab row 'Vienne' holds the Nur-Sultan results (Mannarino, Millman), so the "
+                                 "Vienna 500 was never scored. Rublev won Vienna (SF 10 + F 20 + W 30 = 60 for CHEF); "
+                                 "no other rostered player reached the semi-finals. Duels for that week were scored.",
+                        "impact": "CHEF final 430 -> 490, moving CHEF from 4th to 3rd ahead of CHAN (435)."})
+    if season == 2021:
+        for h in hebdo:
+            if h["team"] == "CHEF" and 17 <= h["week"] <= 28:
+                delta = -40 if h["week"] <= 20 else -20
+                set_hebdo(season, hebdo, h["week"], "CHEF", "total", h["total"] + delta,
+                          "SLAM tab: CHEF formula skips quarter-finalists (Auger-Aliassime at Wimbledon, Berrettini "
+                          "at the US Open); 60 was typed at Roland-Garros instead of 20 to compensate. Points moved to "
+                          "the right weeks; season total unchanged.",
+                          "THE RACE 2021 › SLAM rows 4-6 vs barème recomputation")
+    # post-correction reconciliation
+    hr = {(h["week"], h["team"]): h["race"] for h in hebdo}
+    for w in sorted({j["week"] for j in joueurs if j["week"] is not None}):
+        for tm in teams:
+            tot = sum(j["race"] for j in joueurs if j["week"] == w and j["team"] == tm)
+            if hr.get((w, tm)) is not None and season >= 2023:
+                CHECKS[season].append(("joueurs_vs_corrected_hebdo", w, tm, tot, hr[(w, tm)], tot == hr[(w, tm)]))
+
+
 # --------------------------------------------------------------------------- main
-DATA_ISSUES = {
-    2025: ["Tab 20251117w35 (week 35, 17 Nov 2025) carries the 2024 Race table (e.g. Sinner 10,330, Zverev 7,315, "
-           "Alcaraz 6,810) while its ATP table is 2025, so HEBDO week 35 Race/Total in the workbook are wrong. "
-           "Week 35 is excluded here; the 2025 export ends at week 34 (10 Nov 2025), before the ATP Finals.",
-           "BILAN and LIVE are not used (BILAN reads LIVE).",
-           "Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.",
-           "HEBDO week 12 JULES Race was typed as 4,529; the week-12 team block sums to 4,579.",
-           "HEBDO duel points look stale in the final weeks (790 in total at week 34 vs 920 from the player tabs' "
-           "DUELS2025 columns); hebdo keeps the HEBDO figures, players.duel_pts keeps the player-tab figures."],
-    2024: ["Tab 20241118w39 and the LIVE/BILAN tabs hold live IMPORTHTML formulas that now return 2026 values; "
-           "they are excluded. The 2024 export ends at week 38 (11 Nov 2024), as recorded in HEBDO.",
-           "HEBDO week 2 CHEF reads the CHAN cell of tab 20240115w2 (615 instead of 820) and week 24 CHEF reads tab "
-           "20240805w25 (13,354 instead of 13,023). HEBDO values are kept as the league record; joueurs follow the blocks.",
-           "Player tabs carry no opponent ranking, so best-win fields are empty for 2024."],
-    2023: ["LIVE/BILAN Race columns re-evaluate live formulas; only HEBDO (typed values), the dated Tennis "
-           "Explorer tabs and the DUELS-based duel points are used.",
-           "HEBDO was updated irregularly (values carried forward between updates, e.g. CHAN unchanged weeks 27-32), "
-           "so 12 of 104 week/team checks of the rebuilt player rows differ from HEBDO. Player rows stop at week 37 "
-           "(last dated tab, 18 Sep 2023); HEBDO runs to week 46 (20 Nov 2023)."],
-    2022: ["RACE2022data.dta holds weekly ATP *ranking* points with team flags (not Race points); it is not used "
-           "for standings."],
-    2020: ["HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8 (Feb-Aug 2020).",
-           "CHEF final total is 410 in HEBDO but 430 in SCORES; hebdo keeps 410 and leaves the race/duels split "
-           "empty for CHEF, players/joueurs follow SCORES."],
+DATA_ISSUES = {  # status: "corrected" (see corrections.json) or "open"
+    2025: ["[corrected] Tab 20251117w35 carried the 2024 Race table; week 35 rebuilt as week 34 + ATP Finals points.",
+           "[corrected] HEBDO week-12 JULES Race typed 4,529; the week's team block sums to 4,579.",
+           "[corrected] HEBDO duel column drifted from the match record; rebuilt from the per-match duel rule.",
+           "[open] Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.",
+           "[open] BILAN and LIVE are not used (BILAN reads LIVE)."],
+    2024: ["[corrected] HEBDO week-2 CHEF read CHAN's cell (615 -> 820); week-24 CHEF read the week-25 tab (13,354 -> 13,023).",
+           "[corrected] Player tabs carry no opponent ranking; ranks taken from the weekly ATP tables (28 of 1,557 matches still without).",
+           "[open] Tab 20241118w39 and the LIVE/BILAN tabs hold live web imports that now return 2026 values; not used. "
+           "The season ends at week 38 as recorded in HEBDO.",
+           "[open] Final CHEF duel points: 240 in HEBDO vs 230 from the match record; HEBDO kept."],
+    2023: ["[corrected] CHAN was left out of the week-28 update (carried 14,269 to week 32); set to the week-28 Tennis Explorer value.",
+           "[open] 11 smaller week/team gaps between HEBDO and the dated Tennis Explorer tabs (update timing); HEBDO kept.",
+           "[open] Player rows stop at week 37 (last dated tab); HEBDO runs to week 46. LIVE/BILAN Race columns are live formulas, not used."],
+    2022: ["[open] Only the final standings survive (no weekly history, no per-player duel points). RACE2022data.dta holds "
+           "weekly ATP ranking points, not Race points."],
+    2021: ["[corrected] SLAM tab CHEF formula skipped quarter-finalists; 60 typed at Roland-Garros compensated. Points "
+           "moved to Wimbledon/US Open weeks; season total unchanged."],
+    2020: ["[corrected] ATP 500 Hamburg row: CHEF formula used column K instead of H for finalists (Rublev's final, +20). "
+           "HEBDO now agrees with SCORES (CHEF 430).",
+           "[pending your decision] The 'Vienne' row holds Nur-Sultan results, so Vienna (won by Rublev, +60 CHEF) was "
+           "never scored; applying it would move CHEF from 4th to 3rd.",
+           "[open] HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8."],
+    2019: ["[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES "
+           "(presumably a mid-season roster change); left as recorded."],
 }
 
 
@@ -741,8 +886,20 @@ def build():
             teams = ["PAT", "DOC", "CHAN", "CHEF"] + (["JULES"] if season == 2025 else [])
             res = season_blocks(season, f"THE_RACE_{season}.xlsx", season, teams,
                                 last_valid_week=34 if season == 2025 else 38)
+            if season == 2025:
+                NOTES[season] = [n for n in NOTES[season] if not n.startswith("players.duel_pts")]
             book, roster, hebdo, joueurs, matches, duel_pts, ranks, final_date, final_w = res
             rk_date, scoring = final_date, "race"
+        apply_corrections(season, hebdo, joueurs, matches, book, roster, teams)
+        if season == 2025:
+            final_w, final_date = 35, "2025-11-17"
+            duel_pts = collections.Counter()
+            for m in matches:
+                if m["opponent_team"] and m["result"] == "V" and m["event_date"] < final_date:
+                    duel_pts[(m["team"], m["player"])] += 5
+            NOTES[season].append("players.duel_pts: +5 per win over another team's rostered player (rule), through "
+                                 "the ATP Finals; replaces the player-tab flags, which missed two Djokovic wins in Geneva.")
+        hebdo.sort(key=lambda h: (h["week"] if h["week"] is not None else -1, TEAM_ORDER.index(h["team"])))
         through = max((m["event_date"] for m in matches), default=None)
         # ranks keyed by atp id -> also make name keys available
         players = summarize(season, roster, matches, None, duel_pts, ranks, rk_date, through, scoring)
@@ -764,7 +921,8 @@ def build():
         cal = calendar_from(matches, season)
         colors = [c for c in COLORS if c["team"] in teams]
         d = OUT / str(season) / "data"
-        for name, data in (("hebdo", hebdo), ("joueurs", joueurs), ("players", players), ("matches", matches),
+        clean_hebdo = [{k: v for k, v in h.items() if not k.startswith("_")} for h in hebdo]
+        for name, data in (("hebdo", clean_hebdo), ("joueurs", joueurs), ("players", players), ("matches", matches),
                            ("calendar", cal), ("team_colors", colors)):
             write_json(d / f"{name}.json", data)
         # final standings
@@ -793,7 +951,13 @@ def build():
             tot = sum(h["total"] or 0 for h in hs)
             ranked = sorted(hs, key=lambda h: -(h["total"] or 0))
             for h in hs:
-                out_hist["hebdo"].append({"season": season, "scoring_system": scoring, **h,
+                rec = h.get("_recorded")
+                base = {k: v for k, v in h.items() if not k.startswith("_")}
+                base.update({"corrected": rec is not None,
+                             "race_recorded": rec["race"] if rec else h["race"],
+                             "duels_recorded": rec["duels"] if rec else h["duels"],
+                             "total_recorded": rec["total"] if rec else h["total"]})
+                out_hist["hebdo"].append({"season": season, "scoring_system": scoring, **base,
                                           "rank": ranked.index(h) + 1 if h["total"] is not None else None,
                                           "share": round(h["total"] / tot, 4) if h["total"] is not None and tot else None})
         idmap = {(s["team"], s["player"]): s["atp_id"] for s in roster.stints}
@@ -824,7 +988,9 @@ def add_2026(out_hist, seasons_meta, team_rosters, repo_2026):
         tot = sum(h["total"] for h in hs)
         ranked = sorted(hs, key=lambda h: -h["total"])
         for h in hs:
-            out_hist["hebdo"].append({"season": 2026, "scoring_system": "race", **h, "rank": ranked.index(h) + 1,
+            out_hist["hebdo"].append({"season": 2026, "scoring_system": "race", **h, "corrected": False,
+                                      "race_recorded": h["race"], "duels_recorded": h["duels"], "total_recorded": h["total"],
+                                      "rank": ranked.index(h) + 1,
                                       "share": round(h["total"] / tot, 4) if tot else None})
     final_w = max(h["week"] for h in hebdo)
     fin = {(j["team"], j["player"]): j["race"] for j in joueurs if j["week"] == final_w}
@@ -864,6 +1030,7 @@ if __name__ == "__main__":
         write_json(h / f"{name}.json", data)
     write_json(h / "rosters.json", rosters)
     write_json(h / "seasons.json", meta)
+    write_json(h / "corrections.json", {"applied": CORRECTIONS, "pending_confirmation": PENDING})
     write_json(h / "team_colors.json", COLORS)
     report = {str(s): {"checks": [dict(zip(("check", "week", "team", "value", "reference", "ok"), c)) for c in CHECKS[s]]}
               for s in sorted(CHECKS)}

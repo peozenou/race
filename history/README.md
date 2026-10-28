@@ -10,7 +10,8 @@ plus a stacked history that runs from 2019 through the current 2026 release.
 | `<season>/data/` (2019–2025) | `hebdo`, `joueurs`, `players`, `matches`, `calendar`, `team_colors` — same field names and meanings as `2026/data/` |
 | `history/data/` | The same six datasets stacked across 2019–2026, each row tagged with `season` and `scoring_system`, plus `rosters.json` and `seasons.json` |
 | `history/validation.json` | Every reconciliation check run by the converter (value, reference, pass/fail) |
-| `history/tools/` | `build_history.py` + `common.py`, the converter that produced these files |
+| `history/data/corrections.json` | Every change made to a recorded workbook value (recorded → corrected, reason, evidence), plus corrections awaiting a league decision |
+| `history/tools/` | `build_history.py` + `common.py` (the converter) and `audit_bareme.py` (2019–2021 tournament audit) |
 
 `2026/data/` is untouched; its rows are copied into `history/data/` unchanged.
 
@@ -29,7 +30,7 @@ Points are not comparable across eras. Compare eras with `hebdo.rank` and `hebdo
 | File | Added fields |
 |---|---|
 | all | `season`, `scoring_system` (matches carry `season` and a season-prefixed `mid`, e.g. `2023-M0412`) |
-| `hebdo` | `rank` (1 = leader that week), `share` |
+| `hebdo` | `rank` (1 = leader that week), `share`, `corrected`, `race_recorded` / `duels_recorded` / `total_recorded` (the workbook's original values) |
 | `joueurs`, `players` | `atp_id` (Jeff Sackmann `tennis_atp` player id, stable across seasons) |
 | `players` | `league_points` (player's credited points at the last recorded week), `slot` (2019–2020 roster tags: Top 10, Moins 21, Frenchie) |
 | `rosters` | One row per stint: `season`, `team`, `source_team` (e.g. `REM`), `player`, `atp_id`, `start`, `end`, `frozen_race`, `frozen_duels`, `entry_offset` |
@@ -47,7 +48,7 @@ Team `REM` (2019–2022 sheets) is the same franchise as `DOC` and is coded `DOC
 | 2022 | 4 | final only (`week`/`date` null) | final only | Sackmann tour-level | Only BILAN ATP survives; player duel points not recorded |
 | 2023 | 4 | weekly, 46 weeks | weeks 1–37 (rebuilt from dated TE tabs) | Sackmann tour-level | HEBDO updated irregularly |
 | 2024 | 4 | weeks 0–38 | weeks 1–38 | Tennis Abstract tabs | Ends 11 Nov 2024 (pre-Finals) as recorded |
-| 2025 | 5 | weeks 0–34 | weeks 1–34 | Tennis Abstract tabs | Week 35 excluded (corrupted tab) |
+| 2025 | 5 | weeks 0–35 | weeks 1–35 | Tennis Abstract tabs | Week 35 rebuilt (week 34 + ATP Finals) |
 | 2026 | 5 | current release | current release | current release | In progress |
 
 Fields with no historical source are `null`, never zero: Elo/yElo, serve/return percentages,
@@ -60,14 +61,30 @@ In-season transfers follow the 2026 convention: both players keep their records,
 frozen credit after leaving, and the incoming player is credited net of it, so team sums match HEBDO.
 The ledger used (2023–2025) is in `seasons.json › transfers`.
 
-## Known source issues (kept as recorded, not corrected)
+## Corrections
 
-- **2025** — tab `20251117w35` holds the 2024 Race table, so the workbook's week-35 totals are wrong; excluded. HEBDO week-12 JULES typed as 4,529 (block sums to 4,579). HEBDO duel totals stale in the last weeks.
-- **2024** — HEBDO week-2 CHEF reads CHAN's cell (615 instead of 820); week-24 CHEF reads the week-25 tab. LIVE, BILAN and tab `20241118w39` re-evaluate live web imports (they now show 2026 values) and are not used.
-- **2023** — LIVE/BILAN Race columns are live formulas and are not used.
-- **2020** — CHEF final total differs between HEBDO and SCORES.
+The per-season files carry corrected values; `history/data/hebdo.json` keeps the workbook's
+original figures next to them (`*_recorded`, `corrected`). Only errors provable from the workbook
+itself or from match results were corrected:
 
-Details per check are in `history/validation.json`.
+| Season | Correction | Effect |
+|---|---|---|
+| 2025 | Week-35 tab held the 2024 Race table; rebuilt as week 34 + ATP Finals points (Sinner 1,500, Alcaraz 1,000, Zverev/Fritz/De Minaur/Musetti 200) | Final: CHAN 23,335 · CHEF 22,497 · DOC 13,964 · JULES 13,546 · PAT 13,095 |
+| 2025 | Weekly duel points rebuilt from the per-match rule (+5 per win over another team's rostered player); the HEBDO column had drifted (CHEF stuck at 150–155) | Final duels CHAN 250 · CHEF 245 · PAT 160 · DOC 140 · JULES 135 |
+| 2025 | Week-12 JULES typed 4,529 vs 4,579 in the team block | +50 that week |
+| 2024 | Week-2 CHEF read CHAN's cell; week-24 CHEF read the week-25 tab | Two weeks fixed |
+| 2024 | Opponent ranks filled from the weekly ATP tables | Best-win fields populated |
+| 2023 | CHAN missed in the week-28 update and carried for 5 weeks | CHAN 14,269 → 17,479, weeks 28–32 |
+| 2021 | CHEF Slam points moved to the right weeks (formula skipped quarter-finalists; compensated at Roland-Garros) | Season total unchanged |
+| 2020 | Hamburg CHEF formula bug (Rublev's final, +20) | HEBDO = SCORES = 430 |
+
+**Awaiting a league decision (not applied):** in 2020 the "Vienne" row holds the Nur-Sultan results,
+so Vienna was never scored. Rublev won it (+60 for CHEF), which would move CHEF from 4th to 3rd.
+
+**Still open:** 2022 has only final standings; 2023 player rows stop at week 37 and 11 small HEBDO
+timing gaps remain; Kouame's 2025 tab is empty; 2024 final CHEF duels 240 (HEBDO) vs 230 (matches);
+2019 Auger-Aliassime's early results are excluded consistently (likely a roster change).
+LIVE/BILAN tabs and the 2024 week-39 tab are live web imports and are never used.
 
 ## Rebuilding
 

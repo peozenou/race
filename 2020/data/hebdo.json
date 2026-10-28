@@ -381,7 +381,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 200
+"total": 220
 },
 {
 "week": 13,
@@ -413,7 +413,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 250
+"total": 270
 },
 {
 "week": 14,
@@ -445,7 +445,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 320
+"total": 340
 },
 {
 "week": 15,
@@ -477,7 +477,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 360
+"total": 380
 },
 {
 "week": 16,
@@ -509,7 +509,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 365
+"total": 385
 },
 {
 "week": 17,
@@ -541,7 +541,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 370
+"total": 390
 },
 {
 "week": 18,
@@ -573,7 +573,7 @@
 "team": "CHEF",
 "race": null,
 "duels": null,
-"total": 405
+"total": 425
 },
 {
 "week": 19,
@@ -603,8 +603,8 @@
 "week": 19,
 "date": "2020-11-15",
 "team": "CHEF",
-"race": null,
-"duels": null,
-"total": 410
+"race": 340,
+"duels": 90,
+"total": 430
 }
 ]
