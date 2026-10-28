@@ -1,0 +1,34 @@
+[
+{
+"week": null,
+"date": null,
+"team": "PAT",
+"race": 11740,
+"duels": 100,
+"total": 11840
+},
+{
+"week": null,
+"date": null,
+"team": "DOC",
+"race": 16180,
+"duels": 170,
+"total": 16350
+},
+{
+"week": null,
+"date": null,
+"team": "CHAN",
+"race": 16269,
+"duels": 190,
+"total": 16459
+},
+{
+"week": null,
+"date": null,
+"team": "CHEF",
+"race": 14313,
+"duels": 120,
+"total": 14433
+}
+]

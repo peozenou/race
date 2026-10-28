@@ -1,0 +1,601 @@
+[
+{
+"season": 2019,
+"scoring_system": "bareme",
+"teams": [
+"PAT",
+"DOC",
+"CHAN"
+],
+"status": "complete",
+"final_week": 30,
+"final_date": "2019-11-11",
+"weeks_recorded": 30,
+"players": 18,
+"matches": 1026,
+"final_standings": [
+{
+"rank": 1,
+"team": "PAT",
+"race": 670,
+"duels": 100,
+"total": 770
+},
+{
+"rank": 2,
+"team": "CHAN",
+"race": 655,
+"duels": 90,
+"total": 745
+},
+{
+"rank": 3,
+"team": "DOC",
+"race": 655,
+"duels": 60,
+"total": 715
+}
+],
+"champion": "PAT",
+"transfers": [],
+"coverage_notes": [
+"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.",
+"joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.",
+"matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
+"scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
+],
+"data_issues": [],
+"source_workbooks": [
+"RESULTATS-THE RACE 2019",
+"THE RACE 2019"
+]
+},
+{
+"season": 2020,
+"scoring_system": "bareme",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF"
+],
+"status": "complete",
+"final_week": 19,
+"final_date": "2020-11-15",
+"weeks_recorded": 19,
+"players": 24,
+"matches": 702,
+"final_standings": [
+{
+"rank": 1,
+"team": "DOC",
+"race": 670,
+"duels": 90,
+"total": 760
+},
+{
+"rank": 2,
+"team": "PAT",
+"race": 495,
+"duels": 85,
+"total": 580
+},
+{
+"rank": 3,
+"team": "CHAN",
+"race": 370,
+"duels": 65,
+"total": 435
+},
+{
+"rank": 4,
+"team": "CHEF",
+"race": null,
+"duels": null,
+"total": 410
+}
+],
+"champion": "DOC",
+"transfers": [],
+"coverage_notes": [
+"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.",
+"joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.",
+"matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
+"scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
+],
+"data_issues": [
+"HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8 (Feb-Aug 2020).",
+"CHEF final total is 410 in HEBDO but 430 in SCORES; hebdo keeps 410 and leaves the race/duels split empty for CHEF, players/joueurs follow SCORES."
+],
+"source_workbooks": [
+"RESULTATS-THE RACE 2020",
+"THE RACE 2020"
+]
+},
+{
+"season": 2021,
+"scoring_system": "bareme",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF"
+],
+"status": "complete",
+"final_week": 37,
+"final_date": "2021-11-14",
+"weeks_recorded": 37,
+"players": 24,
+"matches": 1115,
+"final_standings": [
+{
+"rank": 1,
+"team": "DOC",
+"race": 1255,
+"duels": 170,
+"total": 1425
+},
+{
+"rank": 2,
+"team": "CHEF",
+"race": 815,
+"duels": 160,
+"total": 975
+},
+{
+"rank": 3,
+"team": "CHAN",
+"race": 850,
+"duels": 75,
+"total": 925
+},
+{
+"rank": 4,
+"team": "PAT",
+"race": 150,
+"duels": 60,
+"total": 210
+}
+],
+"champion": "DOC",
+"transfers": [],
+"coverage_notes": [
+"hebdo: weekly cumulative team totals; the race/duels split is only known for the final week (from SCORES) and only where SCORES matches HEBDO.",
+"joueurs: final-week barème points per player (SCORES, total minus duel points); weekly per-player history was not kept.",
+"matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
+"scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
+],
+"data_issues": [],
+"source_workbooks": [
+"RESULTATS-THE RACE 2021",
+"THE RACE 2021"
+]
+},
+{
+"season": 2022,
+"scoring_system": "race",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF"
+],
+"status": "complete",
+"final_week": null,
+"final_date": null,
+"weeks_recorded": 0,
+"players": 24,
+"matches": 1325,
+"final_standings": [
+{
+"rank": 1,
+"team": "CHAN",
+"race": 16269,
+"duels": 190,
+"total": 16459
+},
+{
+"rank": 2,
+"team": "DOC",
+"race": 16180,
+"duels": 170,
+"total": 16350
+},
+{
+"rank": 3,
+"team": "CHEF",
+"race": 14313,
+"duels": 120,
+"total": 14433
+},
+{
+"rank": 4,
+"team": "PAT",
+"race": 11740,
+"duels": 100,
+"total": 11840
+}
+],
+"champion": "CHAN",
+"transfers": [],
+"coverage_notes": [
+"hebdo/joueurs: only the end-of-season standings survive (THE RACE 2022 › BILAN ATP); no weekly history was kept, so week and date are null.",
+"matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
+"players.duel_pts: null — only team duel totals survive (BILAN ATP). duel_w/duel_l count duel matches in the Sackmann file, which finds more duels than the league scored (see checks)."
+],
+"data_issues": [
+"RACE2022data.dta holds weekly ATP *ranking* points with team flags (not Race points); it is not used for standings."
+],
+"source_workbooks": [
+"RESULTATS-THE RACE 2022",
+"THE RACE 2022"
+]
+},
+{
+"season": 2023,
+"scoring_system": "race",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF"
+],
+"status": "complete",
+"final_week": 46,
+"final_date": "2023-11-20",
+"weeks_recorded": 46,
+"players": 27,
+"matches": 1322,
+"final_standings": [
+{
+"rank": 1,
+"team": "CHAN",
+"race": 23290,
+"duels": 270,
+"total": 23560
+},
+{
+"rank": 2,
+"team": "DOC",
+"race": 16826,
+"duels": 155,
+"total": 16981
+},
+{
+"rank": 3,
+"team": "CHEF",
+"race": 14062,
+"duels": 160,
+"total": 14222
+},
+{
+"rank": 4,
+"team": "PAT",
+"race": 8036,
+"duels": 65,
+"total": 8101
+}
+],
+"champion": "CHAN",
+"transfers": [
+{
+"team": "PAT",
+"out": "Taylor Fritz",
+"in": "Ben Shelton",
+"date": "2023-01-30",
+"frozen_race_out": 395,
+"frozen_duels_out": 5,
+"entry_offset_in": 540
+},
+{
+"team": "DOC",
+"out": "Ben Shelton",
+"in": "Taylor Fritz",
+"date": "2023-01-30",
+"frozen_race_out": 540,
+"frozen_duels_out": 0,
+"entry_offset_in": 395
+},
+{
+"team": "CHEF",
+"out": "Jenson Brooksby",
+"in": "Arthur Fils",
+"date": "2023-04-17",
+"frozen_race_out": 0,
+"frozen_duels_out": 0,
+"entry_offset_in": 354
+}
+],
+"coverage_notes": [
+"joueurs: Jenson Brooksby's CHEF slot is credited 0 (HEBDO never counts his Race points); Fils is credited from post-Monte-Carlo with a 354-point entry offset.",
+"joueurs: rebuilt from the dated Tennis Explorer Race tabs (raw points, minus entry offsets for 2023 transfers); weeks without a dated tab have no player rows. Players absent from a TE table are counted as 0 Race points.",
+"matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season."
+],
+"data_issues": [
+"LIVE/BILAN Race columns re-evaluate live formulas; only HEBDO (typed values), the dated Tennis Explorer tabs and the DUELS-based duel points are used.",
+"HEBDO was updated irregularly (values carried forward between updates, e.g. CHAN unchanged weeks 27-32), so 12 of 104 week/team checks of the rebuilt player rows differ from HEBDO. Player rows stop at week 37 (last dated tab, 18 Sep 2023); HEBDO runs to week 46 (20 Nov 2023)."
+],
+"source_workbooks": [
+"THE RACE 2023"
+]
+},
+{
+"season": 2024,
+"scoring_system": "race",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF"
+],
+"status": "complete",
+"final_week": 38,
+"final_date": "2024-11-04",
+"weeks_recorded": 39,
+"players": 29,
+"matches": 1557,
+"final_standings": [
+{
+"rank": 1,
+"team": "CHEF",
+"race": 21592,
+"duels": 240,
+"total": 21832
+},
+{
+"rank": 2,
+"team": "DOC",
+"race": 20105,
+"duels": 170,
+"total": 20275
+},
+{
+"rank": 3,
+"team": "CHAN",
+"race": 20032,
+"duels": 190,
+"total": 20222
+},
+{
+"rank": 4,
+"team": "PAT",
+"race": 14376,
+"duels": 205,
+"total": 14581
+}
+],
+"champion": "CHEF",
+"transfers": [
+{
+"team": "PAT",
+"out": "Lorenzo Musetti",
+"in": "Matteo Arnaldi",
+"date": "2024-02-26",
+"frozen_race_out": 150,
+"frozen_duels_out": null,
+"entry_offset_in": 150
+},
+{
+"team": "CHEF",
+"out": "Matteo Arnaldi",
+"in": "Lorenzo Musetti",
+"date": "2024-02-26",
+"frozen_race_out": 150,
+"frozen_duels_out": null,
+"entry_offset_in": 150
+},
+{
+"team": "CHEF",
+"out": "Lorenzo Musetti",
+"in": "Joao Fonseca",
+"date": "2024-06-10",
+"frozen_race_out": 700,
+"frozen_duels_out": null,
+"entry_offset_in": 269
+},
+{
+"team": "CHAN",
+"out": "Frances Tiafoe",
+"in": "Tommy Paul",
+"date": "2024-06-10",
+"frozen_race_out": 620,
+"frozen_duels_out": null,
+"entry_offset_in": 1525
+},
+{
+"team": "PAT",
+"out": "Francisco Cerundolo",
+"in": "Giovanni Mpetshi Perricard",
+"date": "2024-06-10",
+"frozen_race_out": 900,
+"frozen_duels_out": null,
+"entry_offset_in": 630
+}
+],
+"coverage_notes": [
+"matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).",
+"players.duel_pts: counts events starting before the final HEBDO week (2024-11-04), matching the HEBDO duel total.",
+"players.duel_pts: league duel credit from each player tab's duel column (DUELS2025 / D_pts), summed over the player's stint."
+],
+"data_issues": [
+"Tab 20241118w39 and the LIVE/BILAN tabs hold live IMPORTHTML formulas that now return 2026 values; they are excluded. The 2024 export ends at week 38 (11 Nov 2024), as recorded in HEBDO.",
+"HEBDO week 2 CHEF reads the CHAN cell of tab 20240115w2 (615 instead of 820) and week 24 CHEF reads tab 20240805w25 (13,354 instead of 13,023). HEBDO values are kept as the league record; joueurs follow the blocks.",
+"Player tabs carry no opponent ranking, so best-win fields are empty for 2024."
+],
+"source_workbooks": [
+"THE RACE 2024"
+]
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF",
+"JULES"
+],
+"status": "complete",
+"final_week": 34,
+"final_date": "2025-11-10",
+"weeks_recorded": 35,
+"players": 34,
+"matches": 1529,
+"final_standings": [
+{
+"rank": 1,
+"team": "CHAN",
+"race": 22085,
+"duels": 240,
+"total": 22325
+},
+{
+"rank": 2,
+"team": "CHEF",
+"race": 20752,
+"duels": 155,
+"total": 20907
+},
+{
+"rank": 3,
+"team": "DOC",
+"race": 13424,
+"duels": 130,
+"total": 13554
+},
+{
+"rank": 4,
+"team": "JULES",
+"race": 13211,
+"duels": 110,
+"total": 13321
+},
+{
+"rank": 5,
+"team": "PAT",
+"race": 12735,
+"duels": 155,
+"total": 12890
+}
+],
+"champion": "CHAN",
+"transfers": [
+{
+"team": "PAT",
+"out": "Juncheng Shang",
+"in": "Hamad Medjedovic",
+"date": "2025-04-21",
+"frozen_race_out": 110,
+"frozen_duels_out": 0,
+"entry_offset_in": 405
+},
+{
+"team": "PAT",
+"out": "Giovanni Mpetshi Perricard",
+"in": "Justin Engel",
+"date": "2025-06-23",
+"frozen_race_out": 550,
+"frozen_duels_out": 10,
+"entry_offset_in": 156
+},
+{
+"team": "DOC",
+"out": "Hubert Hurkacz",
+"in": "Flavio Cobolli",
+"date": "2025-06-23",
+"frozen_race_out": 775,
+"frozen_duels_out": 15,
+"entry_offset_in": 1210
+},
+{
+"team": "JULES",
+"out": "Arthur Cazaux",
+"in": "Alexei Popyrin",
+"date": "2025-06-23",
+"frozen_race_out": 121,
+"frozen_duels_out": 0,
+"entry_offset_in": 680
+}
+],
+"coverage_notes": [
+"hebdo: week(s) [35] dropped (see data issues).",
+"matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).",
+"players.duel_pts: counts events starting before the final HEBDO week (2025-11-10), matching the HEBDO duel total.",
+"players.duel_pts: league duel credit from each player tab's duel column (DUELS2025 / D_pts), summed over the player's stint."
+],
+"data_issues": [
+"Tab 20251117w35 (week 35, 17 Nov 2025) carries the 2024 Race table (e.g. Sinner 10,330, Zverev 7,315, Alcaraz 6,810) while its ATP table is 2025, so HEBDO week 35 Race/Total in the workbook are wrong. Week 35 is excluded here; the 2025 export ends at week 34 (10 Nov 2025), before the ATP Finals.",
+"BILAN and LIVE are not used (BILAN reads LIVE).",
+"Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.",
+"HEBDO week 12 JULES Race was typed as 4,529; the week-12 team block sums to 4,579.",
+"HEBDO duel points look stale in the final weeks (790 in total at week 34 vs 920 from the player tabs' DUELS2025 columns); hebdo keeps the HEBDO figures, players.duel_pts keeps the player-tab figures."
+],
+"source_workbooks": [
+"THE RACE 2025"
+]
+},
+{
+"season": 2026,
+"scoring_system": "race",
+"teams": [
+"PAT",
+"DOC",
+"CHAN",
+"CHEF",
+"JULES"
+],
+"status": "in_progress",
+"final_week": 36,
+"final_date": "2026-10-26",
+"weeks_recorded": 37,
+"players": 31,
+"matches": 1549,
+"final_standings": [
+{
+"rank": 1,
+"team": "CHEF",
+"race": 18364,
+"duels": 190,
+"total": 18554
+},
+{
+"rank": 2,
+"team": "DOC",
+"race": 16268,
+"duels": 130,
+"total": 16398
+},
+{
+"rank": 3,
+"team": "CHAN",
+"race": 14825,
+"duels": 175,
+"total": 15000
+},
+{
+"rank": 4,
+"team": "PAT",
+"race": 11824,
+"duels": 140,
+"total": 11964
+},
+{
+"rank": 5,
+"team": "JULES",
+"race": 11332,
+"duels": 110,
+"total": 11442
+}
+],
+"champion": null,
+"transfers": [],
+"coverage_notes": [
+"Copied unchanged from 2026/data (current published release)."
+],
+"data_issues": [],
+"source_workbooks": [
+"THE RACE 2026"
+]
+}
+]
