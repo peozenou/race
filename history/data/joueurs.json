@@ -26100,6 +26100,312 @@
 "atp_id": 209070
 },
 {
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Ruud Casper",
+"week": 35,
+"race": 2835,
+"atp_id": 134770
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "De Minaur Alex",
+"week": 35,
+"race": 4135,
+"atp_id": 200282
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Shelton Ben",
+"week": 35,
+"race": 3970,
+"atp_id": 210097
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Arnaldi Matteo",
+"week": 35,
+"race": 883,
+"atp_id": 208286
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Engel Justin",
+"week": 35,
+"race": 139,
+"atp_id": 211514
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Medjedovic Hamad",
+"week": 35,
+"race": 313,
+"atp_id": 209098
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Mpetshi Perricard Giovanni",
+"week": 35,
+"race": 550,
+"atp_id": 208659
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "PAT",
+"player": "Shang Juncheng",
+"week": 35,
+"race": 110,
+"atp_id": 209992
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Tsitsipas Stefanos",
+"week": 35,
+"race": 1470,
+"atp_id": 126774
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Zverev Alexander",
+"week": 35,
+"race": 5160,
+"atp_id": 100644
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Fritz Taylor",
+"week": 35,
+"race": 4135,
+"atp_id": 126203
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Cobolli Flavio",
+"week": 35,
+"race": 815,
+"atp_id": 207925
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Machac Tomas",
+"week": 35,
+"race": 1445,
+"atp_id": 207830
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Kouame Moise",
+"week": 35,
+"race": 24,
+"atp_id": null
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "DOC",
+"player": "Hurkacz Hubert",
+"week": 35,
+"race": 775,
+"atp_id": 128034
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Medvedev Daniil",
+"week": 35,
+"race": 2760,
+"atp_id": 106421
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Rune Holger",
+"week": 35,
+"race": 2600,
+"atp_id": 208029
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Alcaraz Carlos",
+"week": 35,
+"race": 12050,
+"atp_id": 207989
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Michelsen Alex",
+"week": 35,
+"race": 1325,
+"atp_id": 210506
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Paul Tommy",
+"week": 35,
+"race": 2150,
+"atp_id": 126205
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHAN",
+"player": "Mensik Jakub",
+"week": 35,
+"race": 2200,
+"atp_id": 210084
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Lehecka Jiri",
+"week": 35,
+"race": 2325,
+"atp_id": 208103
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Fils Arthur",
+"week": 35,
+"race": 1260,
+"atp_id": 209950
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Rublev Andrey",
+"week": 35,
+"race": 2520,
+"atp_id": 126094
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Draper Jack",
+"week": 35,
+"race": 2990,
+"atp_id": 207733
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Sinner Jannik",
+"week": 35,
+"race": 11500,
+"atp_id": 206173
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "CHEF",
+"player": "Fonseca Joao",
+"week": 35,
+"race": 1657,
+"atp_id": 211663
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Djokovic Novak",
+"week": 35,
+"race": 4830,
+"atp_id": 104925
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Musetti Lorenzo",
+"week": 35,
+"race": 4040,
+"atp_id": 207518
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Dimitrov Grigor",
+"week": 35,
+"race": 1180,
+"atp_id": 105777
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Humbert Ugo",
+"week": 35,
+"race": 1400,
+"atp_id": 200005
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Tiafoe Frances",
+"week": 35,
+"race": 1520,
+"atp_id": 126207
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Popyrin Alexei",
+"week": 35,
+"race": 320,
+"atp_id": 200615
+},
+{
+"season": 2025,
+"scoring_system": "race",
+"team": "JULES",
+"player": "Cazaux Arthur",
+"week": 35,
+"race": 121,
+"atp_id": 209070
+},
+{
 "season": 2026,
 "scoring_system": "race",
 "team": "DOC",

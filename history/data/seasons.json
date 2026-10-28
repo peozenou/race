@@ -44,7 +44,9 @@
 "matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
 "scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
 ],
-"data_issues": [],
+"data_issues": [
+"[open] Auger-Aliassime's results before late June are excluded consistently in the tabs and SCORES (presumably a mid-season roster change); left as recorded."
+],
 "source_workbooks": [
 "RESULTATS-THE RACE 2019",
 "THE RACE 2019"
@@ -90,9 +92,9 @@
 {
 "rank": 4,
 "team": "CHEF",
-"race": null,
-"duels": null,
-"total": 410
+"race": 340,
+"duels": 90,
+"total": 430
 }
 ],
 "champion": "DOC",
@@ -104,8 +106,9 @@
 "scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
 ],
 "data_issues": [
-"HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8 (Feb-Aug 2020).",
-"CHEF final total is 410 in HEBDO but 430 in SCORES; hebdo keeps 410 and leaves the race/duels split empty for CHEF, players/joueurs follow SCORES."
+"[corrected] ATP 500 Hamburg row: CHEF formula used column K instead of H for finalists (Rublev's final, +20). HEBDO now agrees with SCORES (CHEF 430).",
+"[pending your decision] The 'Vienne' row holds Nur-Sultan results, so Vienna (won by Rublev, +60 CHEF) was never scored; applying it would move CHEF from 4th to 3rd.",
+"[open] HEBDO stops at week 19 (15 Nov 2020); COVID suspension between weeks 7 and 8."
 ],
 "source_workbooks": [
 "RESULTATS-THE RACE 2020",
@@ -165,7 +168,9 @@
 "matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season.",
 "scoring: round-reached barème (BAREME tab) plus 5 points per duel; 'race' fields hold barème points, not ATP Race points."
 ],
-"data_issues": [],
+"data_issues": [
+"[corrected] SLAM tab CHEF formula skipped quarter-finalists; 60 typed at Roland-Garros compensated. Points moved to Wimbledon/US Open weeks; season total unchanged."
+],
 "source_workbooks": [
 "RESULTATS-THE RACE 2021",
 "THE RACE 2021"
@@ -224,7 +229,7 @@
 "players.duel_pts: null — only team duel totals survive (BILAN ATP). duel_w/duel_l count duel matches in the Sackmann file, which finds more duels than the league scored (see checks)."
 ],
 "data_issues": [
-"RACE2022data.dta holds weekly ATP *ranking* points with team flags (not Race points); it is not used for standings."
+"[open] Only the final standings survive (no weekly history, no per-player duel points). RACE2022data.dta holds weekly ATP ranking points, not Race points."
 ],
 "source_workbooks": [
 "RESULTATS-THE RACE 2022",
@@ -312,8 +317,9 @@
 "matches: Jeff Sackmann tennis_atp tour-level file (main draws, Davis Cup, team events); Challengers, qualifying and ITF are not included for this season."
 ],
 "data_issues": [
-"LIVE/BILAN Race columns re-evaluate live formulas; only HEBDO (typed values), the dated Tennis Explorer tabs and the DUELS-based duel points are used.",
-"HEBDO was updated irregularly (values carried forward between updates, e.g. CHAN unchanged weeks 27-32), so 12 of 104 week/team checks of the rebuilt player rows differ from HEBDO. Player rows stop at week 37 (last dated tab, 18 Sep 2023); HEBDO runs to week 46 (20 Nov 2023)."
+"[corrected] CHAN was left out of the week-28 update (carried 14,269 to week 32); set to the week-28 Tennis Explorer value.",
+"[open] 11 smaller week/team gaps between HEBDO and the dated Tennis Explorer tabs (update timing); HEBDO kept.",
+"[open] Player rows stop at week 37 (last dated tab); HEBDO runs to week 46. LIVE/BILAN Race columns are live formulas, not used."
 ],
 "source_workbooks": [
 "THE RACE 2023"
@@ -413,14 +419,16 @@
 }
 ],
 "coverage_notes": [
+"matches.opponent_rank: filled for 1529 of 1557 matches from the ATP table of the latest dated tab on or before the event date (TA tabs carry no ranks).",
 "matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).",
 "players.duel_pts: counts events starting before the final HEBDO week (2024-11-04), matching the HEBDO duel total.",
 "players.duel_pts: league duel credit from each player tab's duel column (DUELS2025 / D_pts), summed over the player's stint."
 ],
 "data_issues": [
-"Tab 20241118w39 and the LIVE/BILAN tabs hold live IMPORTHTML formulas that now return 2026 values; they are excluded. The 2024 export ends at week 38 (11 Nov 2024), as recorded in HEBDO.",
-"HEBDO week 2 CHEF reads the CHAN cell of tab 20240115w2 (615 instead of 820) and week 24 CHEF reads tab 20240805w25 (13,354 instead of 13,023). HEBDO values are kept as the league record; joueurs follow the blocks.",
-"Player tabs carry no opponent ranking, so best-win fields are empty for 2024."
+"[corrected] HEBDO week-2 CHEF read CHAN's cell (615 -> 820); week-24 CHEF read the week-25 tab (13,354 -> 13,023).",
+"[corrected] Player tabs carry no opponent ranking; ranks taken from the weekly ATP tables (28 of 1,557 matches still without).",
+"[open] Tab 20241118w39 and the LIVE/BILAN tabs hold live web imports that now return 2026 values; not used. The season ends at week 38 as recorded in HEBDO.",
+"[open] Final CHEF duel points: 240 in HEBDO vs 230 from the match record; HEBDO kept."
 ],
 "source_workbooks": [
 "THE RACE 2024"
@@ -437,46 +445,46 @@
 "JULES"
 ],
 "status": "complete",
-"final_week": 34,
-"final_date": "2025-11-10",
-"weeks_recorded": 35,
+"final_week": 35,
+"final_date": "2025-11-17",
+"weeks_recorded": 36,
 "players": 34,
 "matches": 1529,
 "final_standings": [
 {
 "rank": 1,
 "team": "CHAN",
-"race": 22085,
-"duels": 240,
-"total": 22325
+"race": 23085,
+"duels": 250,
+"total": 23335
 },
 {
 "rank": 2,
 "team": "CHEF",
-"race": 20752,
-"duels": 155,
-"total": 20907
+"race": 22252,
+"duels": 245,
+"total": 22497
 },
 {
 "rank": 3,
 "team": "DOC",
-"race": 13424,
-"duels": 130,
-"total": 13554
+"race": 13824,
+"duels": 140,
+"total": 13964
 },
 {
 "rank": 4,
 "team": "JULES",
-"race": 13211,
-"duels": 110,
-"total": 13321
+"race": 13411,
+"duels": 135,
+"total": 13546
 },
 {
 "rank": 5,
 "team": "PAT",
-"race": 12735,
-"duels": 155,
-"total": 12890
+"race": 12935,
+"duels": 160,
+"total": 13095
 }
 ],
 "champion": "CHAN",
@@ -519,17 +527,17 @@
 }
 ],
 "coverage_notes": [
+"Week 35 Finals points used: Alcaraz Carlos 1000, Sinner Jannik 1500, Fritz Taylor 200, Zverev Alexander 200, Musetti Lorenzo 200, De Minaur Alex 200",
 "hebdo: week(s) [35] dropped (see data issues).",
 "matches: Tennis Abstract per-player tabs in the season workbook (tour, Challenger, qualifying, ITF and team events as displayed by TA).",
-"players.duel_pts: counts events starting before the final HEBDO week (2025-11-10), matching the HEBDO duel total.",
-"players.duel_pts: league duel credit from each player tab's duel column (DUELS2025 / D_pts), summed over the player's stint."
+"players.duel_pts: +5 per win over another team's rostered player (rule), through the ATP Finals; replaces the player-tab flags, which missed two Djokovic wins in Geneva."
 ],
 "data_issues": [
-"Tab 20251117w35 (week 35, 17 Nov 2025) carries the 2024 Race table (e.g. Sinner 10,330, Zverev 7,315, Alcaraz 6,810) while its ATP table is 2025, so HEBDO week 35 Race/Total in the workbook are wrong. Week 35 is excluded here; the 2025 export ends at week 34 (10 Nov 2025), before the ATP Finals.",
-"BILAN and LIVE are not used (BILAN reads LIVE).",
-"Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.",
-"HEBDO week 12 JULES Race was typed as 4,529; the week-12 team block sums to 4,579.",
-"HEBDO duel points look stale in the final weeks (790 in total at week 34 vs 920 from the player tabs' DUELS2025 columns); hebdo keeps the HEBDO figures, players.duel_pts keeps the player-tab figures."
+"[corrected] Tab 20251117w35 carried the 2024 Race table; week 35 rebuilt as week 34 + ATP Finals points.",
+"[corrected] HEBDO week-12 JULES Race typed 4,529; the week's team block sums to 4,579.",
+"[corrected] HEBDO duel column drifted from the match record; rebuilt from the per-match duel rule.",
+"[open] Kouame's Tennis Abstract tab is empty in the workbook, so he has no matches.",
+"[open] BILAN and LIVE are not used (BILAN reads LIVE)."
 ],
 "source_workbooks": [
 "THE RACE 2025"

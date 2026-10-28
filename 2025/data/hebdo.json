@@ -60,8 +60,8 @@
 "date": "2025-01-13",
 "team": "CHAN",
 "race": 495,
-"duels": 10,
-"total": 505
+"duels": 5,
+"total": 500
 },
 {
 "week": 1,
@@ -76,8 +76,8 @@
 "date": "2025-01-13",
 "team": "JULES",
 "race": 495,
-"duels": 5,
-"total": 500
+"duels": 0,
+"total": 495
 },
 {
 "week": 2,
@@ -100,8 +100,8 @@
 "date": "2025-01-27",
 "team": "CHAN",
 "race": 1625,
-"duels": 25,
-"total": 1650
+"duels": 20,
+"total": 1645
 },
 {
 "week": 2,
@@ -140,8 +140,8 @@
 "date": "2025-02-03",
 "team": "CHAN",
 "race": 1625,
-"duels": 25,
-"total": 1650
+"duels": 20,
+"total": 1645
 },
 {
 "week": 3,
@@ -156,32 +156,32 @@
 "date": "2025-02-03",
 "team": "JULES",
 "race": 1510,
-"duels": 25,
-"total": 1535
+"duels": 30,
+"total": 1540
 },
 {
 "week": 4,
 "date": "2025-02-10",
 "team": "PAT",
 "race": 2455,
-"duels": 30,
-"total": 2485
+"duels": 35,
+"total": 2490
 },
 {
 "week": 4,
 "date": "2025-02-10",
 "team": "DOC",
 "race": 2555,
-"duels": 15,
-"total": 2570
+"duels": 25,
+"total": 2580
 },
 {
 "week": 4,
 "date": "2025-02-10",
 "team": "CHAN",
 "race": 2475,
-"duels": 25,
-"total": 2500
+"duels": 30,
+"total": 2505
 },
 {
 "week": 4,
@@ -196,32 +196,32 @@
 "date": "2025-02-10",
 "team": "JULES",
 "race": 1560,
-"duels": 25,
-"total": 1585
+"duels": 30,
+"total": 1590
 },
 {
 "week": 5,
 "date": "2025-02-17",
 "team": "PAT",
 "race": 2555,
-"duels": 30,
-"total": 2585
+"duels": 35,
+"total": 2590
 },
 {
 "week": 5,
 "date": "2025-02-17",
 "team": "DOC",
 "race": 2655,
-"duels": 15,
-"total": 2670
+"duels": 25,
+"total": 2680
 },
 {
 "week": 5,
 "date": "2025-02-17",
 "team": "CHAN",
 "race": 2675,
-"duels": 25,
-"total": 2700
+"duels": 30,
+"total": 2705
 },
 {
 "week": 5,
@@ -236,56 +236,56 @@
 "date": "2025-02-17",
 "team": "JULES",
 "race": 1860,
-"duels": 25,
-"total": 1885
+"duels": 30,
+"total": 1890
 },
 {
 "week": 6,
 "date": "2025-02-24",
 "team": "PAT",
 "race": 2655,
-"duels": 30,
-"total": 2685
+"duels": 35,
+"total": 2690
 },
 {
 "week": 6,
 "date": "2025-02-24",
 "team": "DOC",
 "race": 2757,
-"duels": 15,
-"total": 2772
+"duels": 25,
+"total": 2782
 },
 {
 "week": 6,
 "date": "2025-02-24",
 "team": "CHAN",
 "race": 2875,
-"duels": 25,
-"total": 2900
+"duels": 30,
+"total": 2905
 },
 {
 "week": 6,
 "date": "2025-02-24",
 "team": "CHEF",
 "race": 4617,
-"duels": 30,
-"total": 4647
+"duels": 45,
+"total": 4662
 },
 {
 "week": 6,
 "date": "2025-02-24",
 "team": "JULES",
 "race": 1860,
-"duels": 25,
-"total": 1885
+"duels": 30,
+"total": 1890
 },
 {
 "week": 7,
 "date": "2025-03-03",
 "team": "PAT",
 "race": 2805,
-"duels": 45,
-"total": 2850
+"duels": 35,
+"total": 2840
 },
 {
 "week": 7,
@@ -300,16 +300,16 @@
 "date": "2025-03-03",
 "team": "CHAN",
 "race": 3125,
-"duels": 60,
-"total": 3185
+"duels": 35,
+"total": 3160
 },
 {
 "week": 7,
 "date": "2025-03-03",
 "team": "CHEF",
 "race": 4617,
-"duels": 70,
-"total": 4687
+"duels": 45,
+"total": 4662
 },
 {
 "week": 7,
@@ -340,8 +340,8 @@
 "date": "2025-03-17",
 "team": "CHAN",
 "race": 4805,
-"duels": 60,
-"total": 4865
+"duels": 55,
+"total": 4860
 },
 {
 "week": 8,
@@ -380,8 +380,8 @@
 "date": "2025-03-31",
 "team": "CHAN",
 "race": 5895,
-"duels": 60,
-"total": 5955
+"duels": 55,
+"total": 5950
 },
 {
 "week": 9,
@@ -412,16 +412,16 @@
 "date": "2025-04-07",
 "team": "DOC",
 "race": 4769,
-"duels": 40,
-"total": 4809
+"duels": 45,
+"total": 4814
 },
 {
 "week": 10,
 "date": "2025-04-07",
 "team": "CHAN",
 "race": 6075,
-"duels": 60,
-"total": 6135
+"duels": 55,
+"total": 6130
 },
 {
 "week": 10,
@@ -460,16 +460,16 @@
 "date": "2025-04-14",
 "team": "CHAN",
 "race": 7155,
-"duels": 75,
-"total": 7230
+"duels": 55,
+"total": 7210
 },
 {
 "week": 11,
 "date": "2025-04-14",
 "team": "CHEF",
 "race": 6772,
-"duels": 90,
-"total": 6862
+"duels": 85,
+"total": 6857
 },
 {
 "week": 11,
@@ -484,8 +484,8 @@
 "date": "2025-04-21",
 "team": "PAT",
 "race": 4525,
-"duels": 90,
-"total": 4615
+"duels": 65,
+"total": 4590
 },
 {
 "week": 12,
@@ -500,24 +500,24 @@
 "date": "2025-04-21",
 "team": "CHAN",
 "race": 7985,
-"duels": 85,
-"total": 8070
+"duels": 70,
+"total": 8055
 },
 {
 "week": 12,
 "date": "2025-04-21",
 "team": "CHEF",
 "race": 7022,
-"duels": 105,
-"total": 7127
+"duels": 90,
+"total": 7112
 },
 {
 "week": 12,
 "date": "2025-04-21",
 "team": "JULES",
-"race": 4529,
-"duels": 50,
-"total": 4579
+"race": 4579,
+"duels": 40,
+"total": 4619
 },
 {
 "week": 13,
@@ -532,32 +532,32 @@
 "date": "2025-05-05",
 "team": "DOC",
 "race": 5877,
-"duels": 55,
-"total": 5932
+"duels": 45,
+"total": 5922
 },
 {
 "week": 13,
 "date": "2025-05-05",
 "team": "CHAN",
 "race": 8680,
-"duels": 115,
-"total": 8795
+"duels": 80,
+"total": 8760
 },
 {
 "week": 13,
 "date": "2025-05-05",
 "team": "CHEF",
 "race": 7772,
-"duels": 90,
-"total": 7862
+"duels": 105,
+"total": 7877
 },
 {
 "week": 13,
 "date": "2025-05-05",
 "team": "JULES",
 "race": 5199,
-"duels": 60,
-"total": 5259
+"duels": 50,
+"total": 5249
 },
 {
 "week": 14,
@@ -580,24 +580,24 @@
 "date": "2025-05-19",
 "team": "CHAN",
 "race": 10340,
-"duels": 115,
-"total": 10455
+"duels": 110,
+"total": 10450
 },
 {
 "week": 14,
 "date": "2025-05-19",
 "team": "CHEF",
 "race": 8752,
-"duels": 90,
-"total": 8842
+"duels": 120,
+"total": 8872
 },
 {
 "week": 14,
 "date": "2025-05-19",
 "team": "JULES",
 "race": 5629,
-"duels": 60,
-"total": 5689
+"duels": 70,
+"total": 5699
 },
 {
 "week": 15,
@@ -620,544 +620,544 @@
 "date": "2025-05-26",
 "team": "CHAN",
 "race": 10340,
-"duels": 115,
-"total": 10455
+"duels": 110,
+"total": 10450
 },
 {
 "week": 15,
 "date": "2025-05-26",
 "team": "CHEF",
 "race": 9182,
-"duels": 90,
-"total": 9272
+"duels": 120,
+"total": 9302
 },
 {
 "week": 15,
 "date": "2025-05-26",
 "team": "JULES",
 "race": 5929,
-"duels": 60,
-"total": 5989
+"duels": 70,
+"total": 5999
 },
 {
 "week": 16,
 "date": "2025-06-09",
 "team": "PAT",
 "race": 7010,
-"duels": 140,
-"total": 7150
+"duels": 90,
+"total": 7100
 },
 {
 "week": 16,
 "date": "2025-06-09",
 "team": "DOC",
 "race": 7132,
-"duels": 115,
-"total": 7247
+"duels": 55,
+"total": 7187
 },
 {
 "week": 16,
 "date": "2025-06-09",
 "team": "CHAN",
 "race": 13010,
-"duels": 235,
-"total": 13245
+"duels": 125,
+"total": 13135
 },
 {
 "week": 16,
 "date": "2025-06-09",
 "team": "CHEF",
 "race": 11182,
-"duels": 150,
-"total": 11332
+"duels": 130,
+"total": 11312
 },
 {
 "week": 16,
 "date": "2025-06-09",
 "team": "JULES",
 "race": 7989,
-"duels": 95,
-"total": 8084
+"duels": 80,
+"total": 8069
 },
 {
 "week": 17,
 "date": "2025-06-16",
 "team": "PAT",
 "race": 7135,
-"duels": 140,
-"total": 7275
+"duels": 95,
+"total": 7230
 },
 {
 "week": 17,
 "date": "2025-06-16",
 "team": "DOC",
 "race": 7562,
-"duels": 115,
-"total": 7677
+"duels": 60,
+"total": 7622
 },
 {
 "week": 17,
 "date": "2025-06-16",
 "team": "CHAN",
 "race": 13085,
-"duels": 235,
-"total": 13320
+"duels": 125,
+"total": 13210
 },
 {
 "week": 17,
 "date": "2025-06-16",
 "team": "CHEF",
 "race": 11232,
-"duels": 150,
-"total": 11382
+"duels": 130,
+"total": 11362
 },
 {
 "week": 17,
 "date": "2025-06-16",
 "team": "JULES",
 "race": 8096,
-"duels": 95,
-"total": 8191
+"duels": 80,
+"total": 8176
 },
 {
 "week": 18,
 "date": "2025-06-23",
 "team": "PAT",
 "race": 7135,
-"duels": 140,
-"total": 7275
+"duels": 95,
+"total": 7230
 },
 {
 "week": 18,
 "date": "2025-06-23",
 "team": "DOC",
 "race": 7903,
-"duels": 115,
-"total": 8018
+"duels": 60,
+"total": 7963
 },
 {
 "week": 18,
 "date": "2025-06-23",
 "team": "CHAN",
 "race": 14155,
-"duels": 235,
-"total": 14390
+"duels": 140,
+"total": 14295
 },
 {
 "week": 18,
 "date": "2025-06-23",
 "team": "CHEF",
 "race": 11862,
-"duels": 150,
-"total": 12012
+"duels": 135,
+"total": 11997
 },
 {
 "week": 18,
 "date": "2025-06-23",
 "team": "JULES",
 "race": 8096,
-"duels": 95,
-"total": 8191
+"duels": 80,
+"total": 8176
 },
 {
 "week": 19,
 "date": "2025-06-30",
 "team": "PAT",
 "race": 7225,
-"duels": 140,
-"total": 7365
+"duels": 95,
+"total": 7320
 },
 {
 "week": 19,
 "date": "2025-06-30",
 "team": "DOC",
 "race": 8203,
-"duels": 115,
-"total": 8318
+"duels": 60,
+"total": 8263
 },
 {
 "week": 19,
 "date": "2025-06-30",
 "team": "CHAN",
 "race": 14355,
-"duels": 235,
-"total": 14590
+"duels": 140,
+"total": 14495
 },
 {
 "week": 19,
 "date": "2025-06-30",
 "team": "CHEF",
 "race": 11937,
-"duels": 150,
-"total": 12087
+"duels": 135,
+"total": 12072
 },
 {
 "week": 19,
 "date": "2025-06-30",
 "team": "JULES",
 "race": 8256,
-"duels": 95,
-"total": 8351
+"duels": 80,
+"total": 8336
 },
 {
 "week": 20,
 "date": "2025-07-14",
 "team": "PAT",
 "race": 7805,
-"duels": 140,
-"total": 7945
+"duels": 95,
+"total": 7900
 },
 {
 "week": 20,
 "date": "2025-07-14",
 "team": "DOC",
 "race": 9423,
-"duels": 115,
-"total": 9538
+"duels": 65,
+"total": 9488
 },
 {
 "week": 20,
 "date": "2025-07-14",
 "team": "CHAN",
 "race": 15775,
-"duels": 235,
-"total": 16010
+"duels": 150,
+"total": 15925
 },
 {
 "week": 20,
 "date": "2025-07-14",
 "team": "CHEF",
 "race": 14287,
-"duels": 150,
-"total": 14437
+"duels": 155,
+"total": 14442
 },
 {
 "week": 20,
 "date": "2025-07-14",
 "team": "JULES",
 "race": 9276,
-"duels": 95,
-"total": 9371
+"duels": 90,
+"total": 9366
 },
 {
 "week": 21,
 "date": "2025-07-21",
 "team": "PAT",
 "race": 7871,
-"duels": 140,
-"total": 8011
+"duels": 95,
+"total": 7966
 },
 {
 "week": 21,
 "date": "2025-07-21",
 "team": "DOC",
 "race": 9423,
-"duels": 115,
-"total": 9538
+"duels": 65,
+"total": 9488
 },
 {
 "week": 21,
 "date": "2025-07-21",
 "team": "CHAN",
 "race": 15775,
-"duels": 235,
-"total": 16010
+"duels": 150,
+"total": 15925
 },
 {
 "week": 21,
 "date": "2025-07-21",
 "team": "CHEF",
 "race": 14377,
-"duels": 150,
-"total": 14527
+"duels": 155,
+"total": 14532
 },
 {
 "week": 21,
 "date": "2025-07-21",
 "team": "JULES",
 "race": 9276,
-"duels": 95,
-"total": 9371
+"duels": 90,
+"total": 9366
 },
 {
 "week": 22,
 "date": "2025-07-28",
 "team": "PAT",
 "race": 8661,
-"duels": 140,
-"total": 8801
+"duels": 120,
+"total": 8781
 },
 {
 "week": 22,
 "date": "2025-07-28",
 "team": "DOC",
 "race": 9613,
-"duels": 115,
-"total": 9728
+"duels": 90,
+"total": 9703
 },
 {
 "week": 22,
 "date": "2025-07-28",
 "team": "CHAN",
 "race": 15905,
-"duels": 235,
-"total": 16140
+"duels": 155,
+"total": 16060
 },
 {
 "week": 22,
 "date": "2025-07-28",
 "team": "CHEF",
 "race": 14457,
-"duels": 150,
-"total": 14607
+"duels": 155,
+"total": 14612
 },
 {
 "week": 22,
 "date": "2025-07-28",
 "team": "JULES",
 "race": 9416,
-"duels": 95,
-"total": 9511
+"duels": 105,
+"total": 9521
 },
 {
 "week": 23,
 "date": "2025-08-11",
 "team": "PAT",
 "race": 10107,
-"duels": 140,
-"total": 10247
+"duels": 125,
+"total": 10232
 },
 {
 "week": 23,
 "date": "2025-08-11",
 "team": "DOC",
 "race": 10653,
-"duels": 115,
-"total": 10768
+"duels": 95,
+"total": 10748
 },
 {
 "week": 23,
 "date": "2025-08-11",
 "team": "CHAN",
 "race": 16525,
-"duels": 235,
-"total": 16760
+"duels": 180,
+"total": 16705
 },
 {
 "week": 23,
 "date": "2025-08-11",
 "team": "CHEF",
 "race": 14977,
-"duels": 150,
-"total": 15127
+"duels": 160,
+"total": 15137
 },
 {
 "week": 23,
 "date": "2025-08-11",
 "team": "JULES",
 "race": 9886,
-"duels": 95,
-"total": 9981
+"duels": 105,
+"total": 9991
 },
 {
 "week": 24,
 "date": "2025-08-18",
 "team": "PAT",
 "race": 10270,
-"duels": 140,
-"total": 10410
+"duels": 125,
+"total": 10395
 },
 {
 "week": 24,
 "date": "2025-08-18",
 "team": "DOC",
 "race": 11053,
-"duels": 115,
-"total": 11168
+"duels": 95,
+"total": 11148
 },
 {
 "week": 24,
 "date": "2025-08-18",
 "team": "CHAN",
 "race": 17625,
-"duels": 235,
-"total": 17860
+"duels": 180,
+"total": 17805
 },
 {
 "week": 24,
 "date": "2025-08-18",
 "team": "CHEF",
 "race": 15777,
-"duels": 150,
-"total": 15927
+"duels": 160,
+"total": 15937
 },
 {
 "week": 24,
 "date": "2025-08-18",
 "team": "JULES",
 "race": 9936,
-"duels": 95,
-"total": 10031
+"duels": 105,
+"total": 10041
 },
 {
 "week": 25,
 "date": "2025-08-25",
 "team": "PAT",
 "race": 10397,
-"duels": 140,
-"total": 10537
+"duels": 125,
+"total": 10522
 },
 {
 "week": 25,
 "date": "2025-08-25",
 "team": "DOC",
 "race": 11183,
-"duels": 115,
-"total": 11298
+"duels": 95,
+"total": 11278
 },
 {
 "week": 25,
 "date": "2025-08-25",
 "team": "CHAN",
 "race": 17725,
-"duels": 235,
-"total": 17960
+"duels": 180,
+"total": 17905
 },
 {
 "week": 25,
 "date": "2025-08-25",
 "team": "CHEF",
 "race": 15867,
-"duels": 150,
-"total": 16017
+"duels": 160,
+"total": 16027
 },
 {
 "week": 25,
 "date": "2025-08-25",
 "team": "JULES",
 "race": 10026,
-"duels": 95,
-"total": 10121
+"duels": 105,
+"total": 10131
 },
 {
 "week": 26,
 "date": "2025-09-08",
 "team": "PAT",
 "race": 10909,
-"duels": 140,
-"total": 11049
+"duels": 125,
+"total": 11034
 },
 {
 "week": 26,
 "date": "2025-09-08",
 "team": "DOC",
 "race": 11903,
-"duels": 115,
-"total": 12018
+"duels": 100,
+"total": 12003
 },
 {
 "week": 26,
 "date": "2025-09-08",
 "team": "CHAN",
 "race": 19845,
-"duels": 235,
-"total": 20080
+"duels": 195,
+"total": 20040
 },
 {
 "week": 26,
 "date": "2025-09-08",
 "team": "CHEF",
 "race": 17777,
-"duels": 150,
-"total": 17927
+"duels": 170,
+"total": 17947
 },
 {
 "week": 26,
 "date": "2025-09-08",
 "team": "JULES",
 "race": 11296,
-"duels": 95,
-"total": 11391
+"duels": 115,
+"total": 11411
 },
 {
 "week": 27,
 "date": "2025-09-15",
 "team": "PAT",
 "race": 10909,
-"duels": 140,
-"total": 11049
+"duels": 125,
+"total": 11034
 },
 {
 "week": 27,
 "date": "2025-09-15",
 "team": "DOC",
 "race": 11903,
-"duels": 115,
-"total": 12018
+"duels": 105,
+"total": 12008
 },
 {
 "week": 27,
 "date": "2025-09-15",
 "team": "CHAN",
 "race": 19845,
-"duels": 235,
-"total": 20080
+"duels": 200,
+"total": 20045
 },
 {
 "week": 27,
 "date": "2025-09-15",
 "team": "CHEF",
 "race": 17777,
-"duels": 150,
-"total": 17927
+"duels": 185,
+"total": 17962
 },
 {
 "week": 27,
 "date": "2025-09-15",
 "team": "JULES",
 "race": 11296,
-"duels": 95,
-"total": 11391
+"duels": 115,
+"total": 11411
 },
 {
 "week": 28,
 "date": "2025-09-22",
 "team": "PAT",
 "race": 10930,
-"duels": 140,
-"total": 11070
+"duels": 135,
+"total": 11065
 },
 {
 "week": 28,
 "date": "2025-09-22",
 "team": "DOC",
 "race": 11904,
-"duels": 115,
-"total": 12019
+"duels": 110,
+"total": 12014
 },
 {
 "week": 28,
 "date": "2025-09-22",
 "team": "CHAN",
 "race": 19885,
-"duels": 235,
-"total": 20120
+"duels": 200,
+"total": 20085
 },
 {
 "week": 28,
 "date": "2025-09-22",
 "team": "CHEF",
 "race": 17777,
-"duels": 150,
-"total": 17927
+"duels": 190,
+"total": 17967
 },
 {
 "week": 28,
 "date": "2025-09-22",
 "team": "JULES",
 "race": 11461,
-"duels": 95,
-"total": 11556
+"duels": 115,
+"total": 11576
 },
 {
 "week": 29,
@@ -1180,32 +1180,32 @@
 "date": "2025-09-29",
 "team": "CHAN",
 "race": 20775,
-"duels": 235,
-"total": 21010
+"duels": 220,
+"total": 20995
 },
 {
 "week": 29,
 "date": "2025-09-29",
 "team": "CHEF",
 "race": 18307,
-"duels": 150,
-"total": 18457
+"duels": 195,
+"total": 18502
 },
 {
 "week": 29,
 "date": "2025-09-29",
 "team": "JULES",
 "race": 11601,
-"duels": 95,
-"total": 11696
+"duels": 115,
+"total": 11716
 },
 {
 "week": 30,
 "date": "2025-10-13",
 "team": "PAT",
 "race": 11617,
-"duels": 145,
-"total": 11762
+"duels": 140,
+"total": 11757
 },
 {
 "week": 30,
@@ -1220,104 +1220,104 @@
 "date": "2025-10-13",
 "team": "CHAN",
 "race": 21355,
-"duels": 235,
-"total": 21590
+"duels": 230,
+"total": 21585
 },
 {
 "week": 30,
 "date": "2025-10-13",
 "team": "CHEF",
 "race": 18437,
-"duels": 150,
-"total": 18587
+"duels": 195,
+"total": 18632
 },
 {
 "week": 30,
 "date": "2025-10-13",
 "team": "JULES",
 "race": 12121,
-"duels": 95,
-"total": 12216
+"duels": 115,
+"total": 12236
 },
 {
 "week": 31,
 "date": "2025-10-20",
 "team": "PAT",
 "race": 11895,
-"duels": 155,
-"total": 12050
+"duels": 145,
+"total": 12040
 },
 {
 "week": 31,
 "date": "2025-10-20",
 "team": "DOC",
 "race": 12514,
-"duels": 130,
-"total": 12644
+"duels": 115,
+"total": 12629
 },
 {
 "week": 31,
 "date": "2025-10-20",
 "team": "CHAN",
 "race": 21745,
-"duels": 240,
-"total": 21985
+"duels": 230,
+"total": 21975
 },
 {
 "week": 31,
 "date": "2025-10-20",
 "team": "CHEF",
 "race": 18592,
-"duels": 155,
-"total": 18747
+"duels": 195,
+"total": 18787
 },
 {
 "week": 31,
 "date": "2025-10-20",
 "team": "JULES",
 "race": 12326,
-"duels": 110,
-"total": 12436
+"duels": 120,
+"total": 12446
 },
 {
 "week": 32,
 "date": "2025-10-27",
 "team": "PAT",
 "race": 12355,
-"duels": 155,
-"total": 12510
+"duels": 145,
+"total": 12500
 },
 {
 "week": 32,
 "date": "2025-10-27",
 "team": "DOC",
 "race": 12859,
-"duels": 130,
-"total": 12989
+"duels": 125,
+"total": 12984
 },
 {
 "week": 32,
 "date": "2025-10-27",
 "team": "CHAN",
 "race": 21865,
-"duels": 240,
-"total": 22105
+"duels": 230,
+"total": 22095
 },
 {
 "week": 32,
 "date": "2025-10-27",
 "team": "CHEF",
 "race": 19632,
-"duels": 155,
-"total": 19787
+"duels": 215,
+"total": 19847
 },
 {
 "week": 32,
 "date": "2025-10-27",
 "team": "JULES",
 "race": 12746,
-"duels": 110,
-"total": 12856
+"duels": 130,
+"total": 12876
 },
 {
 "week": 33,
@@ -1340,63 +1340,103 @@
 "date": "2025-11-03",
 "team": "CHAN",
 "race": 21995,
-"duels": 240,
-"total": 22235
+"duels": 235,
+"total": 22230
 },
 {
 "week": 33,
 "date": "2025-11-03",
 "team": "CHEF",
 "race": 20752,
-"duels": 155,
-"total": 20907
+"duels": 225,
+"total": 20977
 },
 {
 "week": 33,
 "date": "2025-11-03",
 "team": "JULES",
 "race": 12786,
-"duels": 110,
-"total": 12896
+"duels": 130,
+"total": 12916
 },
 {
 "week": 34,
 "date": "2025-11-10",
 "team": "PAT",
 "race": 12735,
-"duels": 155,
-"total": 12890
+"duels": 160,
+"total": 12895
 },
 {
 "week": 34,
 "date": "2025-11-10",
 "team": "DOC",
 "race": 13424,
-"duels": 130,
-"total": 13554
+"duels": 140,
+"total": 13564
 },
 {
 "week": 34,
 "date": "2025-11-10",
 "team": "CHAN",
 "race": 22085,
-"duels": 240,
-"total": 22325
+"duels": 250,
+"total": 22335
 },
 {
 "week": 34,
 "date": "2025-11-10",
 "team": "CHEF",
 "race": 20752,
-"duels": 155,
-"total": 20907
+"duels": 245,
+"total": 20997
 },
 {
 "week": 34,
 "date": "2025-11-10",
 "team": "JULES",
 "race": 13211,
-"duels": 110,
-"total": 13321
+"duels": 135,
+"total": 13346
+},
+{
+"week": 35,
+"date": "2025-11-17",
+"team": "PAT",
+"race": 12935,
+"duels": 160,
+"total": 13095
+},
+{
+"week": 35,
+"date": "2025-11-17",
+"team": "DOC",
+"race": 13824,
+"duels": 140,
+"total": 13964
+},
+{
+"week": 35,
+"date": "2025-11-17",
+"team": "CHAN",
+"race": 23085,
+"duels": 250,
+"total": 23335
+},
+{
+"week": 35,
+"date": "2025-11-17",
+"team": "CHEF",
+"race": 22252,
+"duels": 245,
+"total": 22497
+},
+{
+"week": 35,
+"date": "2025-11-17",
+"team": "JULES",
+"race": 13411,
+"duels": 135,
+"total": 13546
 }
 ]
