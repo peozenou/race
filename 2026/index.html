@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="4311541b7713">
+  <meta name="data-version" content="d1cd2b8565df">
   <title>THE RACE 2026 — Bilan 36e semaine</title>
   <meta name="description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — Bilan 36e semaine">
   <meta property="og:description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=4311541b7713">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=d1cd2b8565df">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=4311541b7713">
+  <link rel="stylesheet" href="assets/theme.css?v=d1cd2b8565df">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=4311541b7713"></script>
+  <script src="assets/runtime.js?v=d1cd2b8565df"></script>
 </head>
 <body>
 <main class="site">
@@ -142,6 +142,44 @@
 .tr .tr-path{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px}
 .tr .tr-seg{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
 .tr .tr-gap{color:var(--color-fg-muted);font-style:italic;white-space:nowrap}
+.tr .tr-ed{position:relative}
+.tr .tr-ed-pie{display:flex;align-items:center;gap:var(--cds-gap-sm);margin-top:2px}
+.tr .tr-ed-pie svg{flex:none}
+.tr .tr-ed-pie .tr-ed-c{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.35}
+.tr .tr-ed-pie .tr-ed-c b{display:block;white-space:nowrap;color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.tr .tr-ed-best{font-size:var(--cds-font-size-caption);line-height:1.35;border-top:1px solid var(--color-border-line);padding-top:var(--cds-pad-xs);margin-top:2px}
+.tr .tr-ed-best span{color:var(--color-fg-muted)}
+.tr .tr-ed-best b{font-weight:var(--cds-font-weight-medium)}
+.tr .tr-pie-lbl{font-size:10px;fill:#1f1f1f;pointer-events:none;font-weight:500}
+.tr .tr-xf-box{position:relative}
+.tr .tr-xf-axis text{font-size:var(--cds-font-size-caption);fill:var(--color-fg-muted)}
+.tr .tr-xf-list{display:flex;flex-direction:column;gap:6px;margin-top:var(--cds-gap-xs)}
+.tr .tr-xf{display:grid;grid-template-columns:5.6rem 4.4rem 1fr;align-items:center;gap:var(--cds-gap-xs);font-size:var(--cds-font-size-caption)}
+.tr .tr-xf-d{color:var(--color-fg-muted);white-space:nowrap}
+.tr .tr-xf-sw{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+.tr .tr-xf-p{border-radius:999px;padding:1px 8px;white-space:nowrap;border:1px solid transparent}
+.tr .tr-xf-a{color:var(--color-fg-muted)}
+.tr .tr-pill{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:0 7px;white-space:nowrap}
+.tr .tr-mv.tr-in{color:var(--color-ok);font-weight:var(--cds-font-weight-medium)}
+.tr .tr-mv.tr-out{color:var(--color-bad);font-weight:var(--cds-font-weight-medium)}
+.tr .tr-ex{border-radius:999px;padding:0 5px}
+.tr .tr-tcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12.5rem),1fr));gap:var(--cds-gap-sm);align-items:start}
+.tr .tr-tcol{border:1px solid var(--color-border-line);border-top-width:4px;border-radius:var(--cds-radius);overflow:hidden}
+.tr .tr-tcol-h{display:flex;justify-content:space-between;align-items:baseline;gap:var(--cds-gap-xs);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-weight:var(--cds-font-weight-medium)}
+.tr .tr-tcol-h span.tr-tcol-n{font-weight:400;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.tr .tr-tcol ol{list-style:none;margin:0;padding:0}
+.tr .tr-ten{padding:4px var(--cds-pad-sm);border-top:1px solid var(--color-border-line);font-size:var(--cds-font-size-caption);line-height:1.4}
+.tr .tr-ten-n{display:flex;justify-content:space-between;gap:var(--cds-gap-xs)}
+.tr .tr-ten-n b{font-weight:var(--cds-font-weight-medium);font-size:var(--cds-font-size-body)}
+.tr .tr-ten-n b.tr-ten-old{font-weight:400}
+.tr .tr-ten-y{color:var(--color-fg-muted);white-space:nowrap}
+.tr .tr-ten-d{color:var(--color-fg-muted)}
+.tr .tr-ten-x{margin-top:1px}
+.tr .tr-ten.tr-hl{background:var(--color-fg);color:var(--color-panel)}
+.tr .tr-ten.tr-hl .tr-ten-y,.tr .tr-ten.tr-hl .tr-ten-d,.tr .tr-ten.tr-hl .tr-mv{color:inherit}
+.tr .tr-notes-y{display:grid;grid-template-columns:3.5rem 1fr;gap:var(--cds-gap-sm);padding:var(--cds-pad-xs) 0;border-top:1px solid var(--color-border-line)}
+.tr .tr-notes-y b{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-body)}
+.tr .tr-notes-y ul{margin:0}
 </style>
 
 <div class="tr" id="race-season" lang="fr">
@@ -288,7 +326,7 @@
   <section class="tr-page" id="history" role="tabpanel" aria-labelledby="tab-history" hidden>
     <div class="tr-card" id="hist-honours-card">
       <h2>Palmarès</h2>
-      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite).</p>
+      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. Le % total pts est la part moyenne de l'équipe dans le total des points de toutes les équipes ; il compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite).</p>
       <div class="tr-scroll">
         <table class="tr-table" id="hist-honours" data-source="hist_honours" data-row-key="team">
           <thead><tr>
@@ -296,11 +334,8 @@
             <th><span class="tr-th">Titres</span></th>
             <th class="tr-l tr-sec"><span class="tr-th">Années</span></th>
             <th class="tr-sec"><span class="tr-th">2e</span></th>
-            <th class="tr-sec"><span class="tr-th">3e</span></th>
-            <th class="tr-sec"><span class="tr-th">Dernière place</span></th>
-            <th class="tr-l tr-sec"><span class="tr-th">Éditions</span></th>
             <th class="tr-l"><span class="tr-th">Rang moyen</span></th>
-            <th><span class="tr-th">Part moyenne</span></th>
+            <th><span class="tr-th">% total pts</span></th>
             <th><span class="tr-th">2026 (en cours)</span></th>
           </tr></thead>
           <tbody></tbody>
@@ -315,9 +350,9 @@
     </div>
 
     <div class="tr-card" id="hist-editions-card">
-      <h2>Les éditions une à une</h2>
-      <p class="tr-note">Choisissez une édition pour voir sa course, ses meilleurs joueurs et ses transferts.</p>
-      <div class="tr-hgrid" id="hist-editions" data-source="hist_season_list"></div>
+      <h2>Éditions</h2>
+      <p class="tr-note">Cliquer sur chaque édition pour voir les détails.</p>
+      <div class="tr-hgrid" id="hist-editions" data-source="hist_season_list hist_players player_season team_colors"></div>
       <div id="hist-season" hidden>
         <h3 id="hist-season-title"></h3>
         <p class="tr-take" id="hist-season-take"></p>
@@ -346,18 +381,26 @@
           </div>
           <div>
             <h3>Transferts en cours de saison</h3>
-            <div class="tr-prose" id="hist-transfers"></div>
-            <h3>Remarques sur les données</h3>
-            <div class="tr-prose tr-note" id="hist-issues"></div>
+            <p class="tr-note" id="hist-transfers-note">Date de chaque transfert dans la saison ; couleur de l'équipe pour le joueur sortant, teinte plus foncée pour le joueur entrant.</p>
+            <div class="tr-xf-box" id="hist-transfers" data-source="hist_season_list team_colors"></div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="tr-card" id="hist-rosters-card">
-      <h2>Compositions des équipes</h2>
-      <p class="tr-note">Les six joueurs de chaque équipe à chaque édition. « ex-… » signale un joueur passé auparavant par une autre équipe ; ↗ arrivé et ↘ parti en cours de saison. Survolez un nom pour le retrouver dans les autres éditions. * Édition en cours.</p>
+      <div class="tr-card-head">
+        <div>
+          <h2>Compositions des équipes</h2>
+          <p class="tr-note" id="hist-rosters-note"></p>
+        </div>
+        <div class="tr-filter" id="hist-roster-view" role="group" aria-label="Présentation">
+          <button type="button" class="tr-chip" data-view="season" aria-pressed="true">Par édition</button>
+          <button type="button" class="tr-chip" data-view="team" aria-pressed="false">Par équipe</button>
+        </div>
+      </div>
       <div class="tr-matrix-box dash-skeleton" id="hist-rosters" data-source="hist_roster_all team_colors"></div>
+      <div class="tr-tcols dash-skeleton" id="hist-tenures" data-source="hist_tenures team_colors" hidden></div>
     </div>
 
     <div class="tr-card" id="hist-movers-card">
@@ -428,6 +471,11 @@
           <dt>Historique</dt><dd>Classeurs THE RACE 2019 à 2025 convertis au format de ce tableau, corrections documentées (dossier <a href="https://github.com/peozenou/race/tree/main/history" target="_blank" rel="noopener">history</a>) ; 2026 à la dernière mise à jour. Classements ATP de fin d'année : Jeff Sackmann (2019 à 2023), Tennis Explorer (2024 à 2026).</dd>
         </dl>
       </div>
+    </div>
+    <div class="tr-card tr-prose" id="data-notes-card">
+      <h2>Notes sur les données</h2>
+      <p class="tr-note">Corrections et réserves sur les données de chaque édition ; le détail figure dans le dossier <a href="https://github.com/peozenou/race/tree/main/history" target="_blank" rel="noopener">history</a>.</p>
+      <div id="data-notes"></div>
     </div>
 
   </section>
@@ -740,6 +788,35 @@ dash.calc('hist_movers', {
       out.push({ key, player: st[st.length - 1].full, short: st[st.length - 1].short, teams: teams.length, segs, first: st[0].season });
     });
     return out.sort((a, b) => b.teams - a.teams || a.first - b.first || a.short.localeCompare(b.short, 'fr'));
+  },
+});
+
+dash.calc('hist_tenures', {
+  inputs: ['hist_roster_all'],
+  title: 'Passages des joueurs dans chaque équipe',
+  description: "Chaque passage d'un joueur dans une équipe, éditions consécutives regroupées : première et dernière édition, date d'arrivée ou de départ en cours de saison, joueur remplacé à l'arrivée et remplaçant au départ (même équipe, même date), et s'il est encore dans l'équipe.",
+  fn: (hist_roster_all) => {
+    const rows = hist_roster_all.slice().sort((a, b) => a.season - b.season || String(a.start || '').localeCompare(String(b.start || '')));
+    const by = new Map();
+    rows.forEach((r) => { const k = r.team + '|' + r.key; if (!by.has(k)) by.set(k, []); by.get(k).push(r); });
+    const out = [];
+    by.forEach((st) => {
+      let cur = null;
+      st.forEach((r) => {
+        if (cur && !cur.end && !r.start && r.season === cur.to + 1) { cur.to = r.season; cur.end = r.end; cur.seasons += 1; cur.short = r.short; return; }
+        cur = { team: r.team, key: r.key, player: r.full, short: r.short, from: r.season, to: r.season, start: r.start, end: r.end, seasons: 1 };
+        out.push(cur);
+      });
+    });
+    out.forEach((t) => {
+      const rep0 = t.start ? hist_roster_all.find((x) => x.team === t.team && x.season === t.from && x.end === t.start && x.key !== t.key) : null;
+      const rep1 = t.end ? hist_roster_all.find((x) => x.team === t.team && x.season === t.to && x.start === t.end && x.key !== t.key) : null;
+      t.replaces = rep0 ? rep0.short : null;
+      t.replaced_by = rep1 ? rep1.short : null;
+      t.current = t.to === HIST_CURRENT && !t.end;
+      t.id = [t.team, t.key, t.from, t.start || ''].join('|');
+    });
+    return out.sort((a, b) => a.team.localeCompare(b.team) || a.from - b.from || String(a.start || '').localeCompare(String(b.start || '')) || b.seasons - a.seasons || a.short.localeCompare(b.short, 'fr'));
   },
 });
 
@@ -1398,7 +1475,7 @@ dash.calc('hist_departures', {
   };
 
   /* Une carte par édition */
-  TR.drawEditions = (el, list, order, pick) => {
+  TR.drawEditions = (el, list, order, pick, bests) => {
     el.replaceChildren(...list.map((s) => {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'tr-ed'; b.dataset.season = s.season;
       b.setAttribute('aria-pressed', String(s.season === pick));
@@ -1412,16 +1489,121 @@ dash.calc('hist_departures', {
       const champ = document.createElement('div'); champ.className = 'tr-sub';
       champ.textContent = s.status === 'complete' ? `Champion : ${s.champion}` : `En tête : ${lead ? lead.team : '—'}`;
       b.append(champ);
-      const ol = document.createElement('ol');
-      s.standings.forEach((r) => {
-        const li = document.createElement('li');
-        const nm = document.createElement('span'); nm.append(TR.text(TR.ord(r.rank) + ' '), TR.teamTag(r.team, order));
-        const v = document.createElement('span'); v.textContent = TR.fmt(r.total);
-        li.append(nm, v); ol.append(li);
-      });
-      b.append(ol);
+      // Share of all teams' points, one slice per team, in finishing order from 12 o'clock.
+      const sum = d3.sum(s.standings, (r) => r.total || 0);
+      const wrap = document.createElement('div'); wrap.className = 'tr-ed-pie';
+      const R = 40, r0 = 17;
+      const svg = d3.create('svg').attr('width', 2 * R).attr('height', 2 * R).attr('viewBox', `${-R} ${-R} ${2 * R} ${2 * R}`).attr('role', 'img')
+        .attr('aria-label', `Répartition des points ${s.season} : ` + s.standings.map((r) => `${r.team} ${sum ? Math.round(100 * (r.total || 0) / sum) : 0} %`).join(', '));
+      const arcs = d3.pie().sort(null).value((r) => r.total || 0)(s.standings.filter((r) => (r.total || 0) > 0));
+      const arc = d3.arc().innerRadius(r0).outerRadius(R - 1).padAngle(0.015);
+      const tip = TR.tip(b);
+      svg.append('g').selectAll('path').data(arcs).join('path')
+        .attr('d', arc).attr('fill', (a) => TR.color(a.data.team, order)).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1)
+        .on('pointermove', (ev, a) => { const [x, y] = d3.pointer(ev, b); TR.showTip(tip, b, x, y, `${s.season} · ${TR.ord(a.data.rank)}`, [{ name: a.data.team, value: `${TR.fmt(a.data.total)} pts · ${TR.pct(a.data.total / sum)}`, color: TR.color(a.data.team, order) }]); })
+        .on('pointerleave', () => TR.hideTip(tip));
+      svg.append('g').selectAll('text').data(arcs.filter((a) => a.endAngle - a.startAngle > 0.5)).join('text')
+        .attr('class', 'tr-pie-lbl').attr('text-anchor', 'middle').attr('dy', '0.35em')
+        .attr('transform', (a) => `translate(${d3.arc().innerRadius((r0 + R) / 2).outerRadius((r0 + R) / 2).centroid(a)})`)
+        .text((a) => Math.round(100 * a.data.total / sum));
+      const top1 = s.standings[0];
+      const c = document.createElement('div'); c.className = 'tr-ed-c';
+      const cb = document.createElement('b'); cb.textContent = top1 ? `${top1.team} ${TR.pct(sum ? top1.total / sum : null)}` : '—';
+      c.append(cb, TR.text(top1 ? `${TR.fmt(top1.total)} pts` : ''));
+      wrap.append(svg.node(), c); b.append(wrap);
+      const best = bests ? bests.get(s.season) : null;
+      const bd = document.createElement('div'); bd.className = 'tr-ed-best';
+      const lab = document.createElement('span'); lab.textContent = 'Meilleur joueur : ';
+      const nm = document.createElement('b'); nm.textContent = best ? best.short : '—';
+      bd.append(lab, nm);
+      if (best) bd.append(TR.text(` (${TR.fmt(best.pts)})`));
+      b.append(bd);
       return b;
     }));
+  };
+
+  /* Transferts d'une édition : frise de la saison et une ligne par échange */
+  TR.drawTransfers = (el, transfers, season, order) => {
+    el.replaceChildren();
+    if (!transfers.length) { const p0 = document.createElement('p'); p0.className = 'tr-empty-msg'; p0.textContent = 'Aucun transfert en cours de saison.'; el.append(p0); return; }
+    const list = transfers.slice().sort((a, b) => a.date.localeCompare(b.date) || a.team.localeCompare(b.team));
+    const W = Math.max(260, el.clientWidth || 360), m = { l: 6, r: 6 };
+    const byDate = d3.group(list, (t) => t.date);
+    const stack = d3.max([...byDate.values()], (v) => v.length) || 1;
+    const H = 26 + stack * 13;
+    const x = d3.scaleUtc([new Date(Date.UTC(season, 0, 1)), new Date(Date.UTC(season, 11, 31))], [m.l, W - m.r]);
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+      .attr('aria-label', `Frise des transferts ${season}`);
+    const base = H - 18;
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', base).attr('y2', base).attr('class', 'tr-grid-line');
+    const ax = svg.append('g').attr('class', 'tr-xf-axis');
+    d3.utcMonths(new Date(Date.UTC(season, 0, 1)), new Date(Date.UTC(season, 11, 31))).forEach((d, i) => {
+      ax.append('line').attr('x1', x(d)).attr('x2', x(d)).attr('y1', base - 3).attr('y2', base + 3).attr('class', 'tr-grid-line');
+      if (W > 420 || i % 2 === 0) ax.append('text').attr('x', x(d) + 2).attr('y', base + 14).text(TR.month(d).replace('.', ''));
+    });
+    const tip = TR.tip(el);
+    byDate.forEach((v, d) => v.forEach((t, k) => {
+      const c = TR.color(t.team, order);
+      svg.append('circle').attr('cx', x(TR.parse(d))).attr('cy', base - 8 - k * 13).attr('r', 5.5).attr('fill', TR.shade(c)).attr('stroke', c).attr('stroke-width', 2)
+        .on('pointermove', (ev) => { const [px, py] = d3.pointer(ev, el); TR.showTip(tip, el, px, py, `${t.team} · ${TR.dateY(t.date)}`, [{ name: 'Sort', value: t.out, color: c }, { name: 'Entre', value: t.in, color: TR.shade(c) }]); })
+        .on('pointerleave', () => TR.hideTip(tip));
+    }));
+    el.append(svg.node());
+    const ul = document.createElement('div'); ul.className = 'tr-xf-list';
+    list.forEach((t) => {
+      const c = TR.color(t.team, order), dk = TR.shade(c);
+      const row = document.createElement('div'); row.className = 'tr-xf';
+      const d0 = document.createElement('span'); d0.className = 'tr-xf-d'; d0.textContent = TR.date(t.date);
+      const sw = document.createElement('span'); sw.className = 'tr-xf-sw';
+      const po = document.createElement('span'); po.className = 'tr-xf-p'; po.textContent = t.out; po.title = `Sort de ${t.team}`;
+      po.style.background = `color-mix(in srgb, ${c} 22%, transparent)`; po.style.borderColor = c;
+      const ar = document.createElement('span'); ar.className = 'tr-xf-a'; ar.textContent = '→'; ar.setAttribute('aria-label', 'remplacé par');
+      const pi = document.createElement('span'); pi.className = 'tr-xf-p'; pi.textContent = t.in; pi.title = `Entre à ${t.team}`;
+      pi.style.background = `color-mix(in srgb, ${dk} 30%, transparent)`; pi.style.borderColor = dk;
+      sw.append(po, ar, pi);
+      row.append(d0, TR.teamTag(t.team, order), sw); ul.append(row);
+    });
+    el.append(ul);
+  };
+
+  /* Pastille teintée de la couleur d'une équipe */
+  TR.teamPill = (team, order, text) => {
+    const s = TR.teamTag(team, order); s.classList.add('tr-pill');
+    s.style.background = `color-mix(in srgb, ${TR.color(team, order)} 16%, transparent)`;
+    if (text) s.append(TR.text(text));
+    return s;
+  };
+
+  /* Compositions par équipe : une colonne par équipe, chaque passage avec ses dates */
+  TR.drawTenures = (el, rows, order) => {
+    el.replaceChildren(...order.filter((t) => rows.some((r) => r.team === t)).map((t) => {
+      const c = TR.color(t, order);
+      const col = document.createElement('div'); col.className = 'tr-tcol'; col.style.borderTopColor = c;
+      const st = rows.filter((r) => r.team === t);
+      const h = document.createElement('div'); h.className = 'tr-tcol-h'; h.style.background = `color-mix(in srgb, ${c} 14%, transparent)`;
+      const n = document.createElement('span'); n.className = 'tr-tcol-n'; n.textContent = `${new Set(st.map((r) => r.key)).size} joueurs`;
+      h.append(TR.teamTag(t, order), n); col.append(h);
+      const ol = document.createElement('ol');
+      st.forEach((r) => {
+        const li = document.createElement('li'); li.className = 'tr-ten'; li.dataset.key = r.key;
+        if (r.current) li.style.boxShadow = `inset 3px 0 0 ${c}`;
+        const l1 = document.createElement('div'); l1.className = 'tr-ten-n';
+        const nm = document.createElement('b'); nm.textContent = r.short; if (!r.current) nm.className = 'tr-ten-old';
+        const yy = document.createElement('span'); yy.className = 'tr-ten-y'; yy.textContent = TR.years(r.from, r.to);
+        l1.append(nm, yy);
+        li.append(l1);
+        const det = (cls, arrow, txt) => { const l = document.createElement('div'); l.className = 'tr-ten-d'; l.append(TR.span(arrow + ' ', null, null, null, 'tr-mv ' + cls), TR.text(txt)); li.append(l); };
+        if (r.start) det('tr-in', '↗', `arrivé le ${TR.dateY(r.start)}${r.replaces ? `, remplace ${r.replaces}` : ''}`);
+        if (r.end) det('tr-out', '↘', `parti le ${TR.dateY(r.end)}${r.replaced_by ? `, remplacé par ${r.replaced_by}` : ''}`);
+        li.title = r.player;
+        ol.append(li);
+      });
+      col.append(ol);
+      return col;
+    }));
+    const hl = (key, on) => el.querySelectorAll(`.tr-ten[data-key="${CSS.escape(key)}"]`).forEach((x) => x.classList.toggle('tr-hl', on));
+    el.onpointerover = (e) => { const li = e.target.closest('.tr-ten'); if (li) hl(li.dataset.key, true); };
+    el.onpointerout = (e) => { const li = e.target.closest('.tr-ten'); if (li) hl(li.dataset.key, false); };
   };
 
   /* Compositions : équipes en lignes, éditions en colonnes */
@@ -1446,9 +1628,10 @@ dash.calc('hist_departures', {
         st.forEach((r) => {
           const sp = document.createElement('span'); sp.className = 'tr-pl'; sp.dataset.key = r.key; sp.textContent = r.short;
           const prev = rows.filter((x) => x.key === r.key && x.team !== r.team && before(r, x)).sort((a, b) => a.season - b.season).pop();
-          if (r.start) { const mv = document.createElement('span'); mv.className = 'tr-mv'; mv.textContent = '↗'; mv.title = `Arrivé le ${TR.dateY(r.start)}`; sp.append(mv); }
-          if (r.end) { const mv = document.createElement('span'); mv.className = 'tr-mv'; mv.textContent = '↘'; mv.title = `Parti le ${TR.dateY(r.end)}`; sp.append(mv); }
-          if (prev) { const ex = document.createElement('span'); ex.className = 'tr-ex'; ex.textContent = 'ex-' + prev.team; ex.title = `${prev.team} en ${prev.season}`; sp.append(ex); }
+          if (r.start) { const mv = document.createElement('span'); mv.className = 'tr-mv tr-in'; mv.textContent = '↗'; mv.title = `Arrivé le ${TR.dateY(r.start)}`; sp.append(mv); }
+          if (r.end) { const mv = document.createElement('span'); mv.className = 'tr-mv tr-out'; mv.textContent = '↘'; mv.title = `Parti le ${TR.dateY(r.end)}`; sp.append(mv); }
+          if (prev) { const ex = document.createElement('span'); ex.className = 'tr-ex'; ex.textContent = 'ex-' + prev.team; ex.title = `${prev.team} en ${prev.season}`;
+            const pc = TR.color(prev.team, order); ex.style.background = `color-mix(in srgb, ${pc} 28%, transparent)`; ex.style.color = 'var(--color-fg)'; sp.append(ex); }
           sp.title = r.full + (r.start ? `, arrivé le ${TR.dateY(r.start)}` : '') + (r.end ? `, parti le ${TR.dateY(r.end)}` : '');
           td.append(sp);
         });
@@ -1489,6 +1672,7 @@ dash.calc('hist_departures', {
   let slotPick = 'in'; // season shown in the detail of a replacement line: incoming ('in') or outgoing ('out') player
   let histPick = null; // edition shown in the Historique detail (default: last completed edition)
   let histDepTeam = 'All'; // team filter of the departures table
+  let histRosterView = 'season'; // Compositions: 'season' (teams × editions) or 'team' (one column per team)
 
   const show = (tab, link) => {
     active = PAGES.includes(tab) ? tab : 'teams';
@@ -1520,6 +1704,10 @@ dash.calc('hist_departures', {
   $('hist-editions').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-season]');
     if (b) { histPick = Number(b.dataset.season); render(); }
+  });
+  $('hist-roster-view').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-view]');
+    if (b) { histRosterView = b.dataset.view; render(); }
   });
   $('hist-dep-filter').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-team]');
@@ -1863,8 +2051,7 @@ dash.calc('hist_departures', {
       td(TR.teamTag(h.team, teams), true);
       td(String(h.titles));
       td(h.title_years.length ? h.title_years.join(', ') : '—', true).classList.add('tr-sec');
-      [h.second, h.third, h.last_place].forEach((v) => td(String(v)).classList.add('tr-sec'));
-      td(`${h.editions} (${TR.years(h.first, h.last)})`, true).classList.add('tr-sec');
+      td(String(h.second)).classList.add('tr-sec');
       td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
       td(TR.pct(h.avg_share));
       td(h.current_rank ? `${TR.ord(h.current_rank)} (sem. ${h.current_week})` : '—');
@@ -1876,7 +2063,17 @@ dash.calc('hist_departures', {
     TR.drawBump($('hist-bump'), list, teams);
 
     // Éditions
-    TR.drawEditions($('hist-editions'), list, teams, histPick);
+    // Best player of each edition's champion (leader for the current edition)
+    const bests = new Map();
+    const hpAll = dash.data('hist_players'), psAll = dash.data('player_season');
+    list.forEach((s) => {
+      const lead = s.standings[0]; if (!lead) return;
+      const cand = s.status === 'complete'
+        ? (hpAll.status === 'ok' ? hpAll.data.filter((r) => r.season === s.season && r.team === lead.team && r.league_points !== null).map((r) => ({ short: String(r.short || '').replace(/ \((sorti|entré)\)$/, ''), pts: r.league_points })) : [])
+        : (psAll.status === 'ok' ? psAll.data.filter((r) => r.team === lead.team && r.race !== null).map((r) => ({ short: r.short, pts: r.race })) : []);
+      if (cand.length) bests.set(s.season, cand.reduce((a, b) => (b.pts > a.pts ? b : a)));
+    });
+    TR.drawEditions($('hist-editions'), list, teams, histPick, bests);
     const ed = list.find((x) => x.season === histPick);
     $('hist-season').hidden = !ed;
     if (ed) {
@@ -1930,14 +2127,9 @@ dash.calc('hist_departures', {
         { f: 'titles', fmt: (v) => (v ?? '—') },
         { f: 'rank', fmt: (v) => (v ? TR.ord(v) : '—') },
       ], (r) => r.team + '|' + r.short);
-      // transfers and notes
-      const tf = $('hist-transfers');
-      tf.replaceChildren();
-      if (!ed.transfers.length) { const p0 = document.createElement('p'); p0.className = 'tr-empty-msg'; p0.textContent = 'Aucun transfert en cours de saison.'; tf.append(p0); }
-      else { const ul = document.createElement('ul'); ed.transfers.forEach((t) => { const li = document.createElement('li'); li.append(TR.teamTag(t.team, teams), TR.text(` : ${t.out} sort, ${t.in} entre le ${TR.dateY(t.date)}.`)); ul.append(li); }); tf.append(ul); }
-      const is = $('hist-issues');
-      const ul = document.createElement('ul'); (HIST_NOTES[y] || []).forEach((t) => { const li = document.createElement('li'); li.textContent = t; ul.append(li); });
-      is.replaceChildren(ul);
+      // transfers
+      $('hist-transfers-note').hidden = !ed.transfers.length;
+      TR.drawTransfers($('hist-transfers'), ed.transfers, y, teams);
     }
 
     // Compositions
@@ -1945,6 +2137,18 @@ dash.calc('hist_departures', {
     if (ra === 'error') TR.fail($('hist-rosters'));
     else if (ra !== 'ok') TR.wait($('hist-rosters'));
     else { TR.ready($('hist-rosters')); TR.drawRosterMatrix($('hist-rosters'), rost, teams, list.map((s) => s.season)); }
+    const byTeam = histRosterView === 'team';
+    $('hist-roster-view').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === histRosterView)));
+    $('hist-rosters').hidden = byTeam; $('hist-tenures').hidden = !byTeam;
+    $('hist-rosters-note').textContent = byTeam
+      ? "Tous les joueurs passés par chaque équipe, dans l'ordre d'arrivée, avec les éditions disputées ; ↗ arrivée et ↘ départ en cours de saison, avec le joueur remplacé. Liseré et nom en gras : joueur encore dans l'équipe. Survolez un nom pour le retrouver dans les autres équipes."
+      : "Les six joueurs de chaque équipe à chaque édition. « ex-… », sur la couleur de l'équipe précédente, signale un joueur passé auparavant par une autre équipe ; ↗ arrivé et ↘ parti en cours de saison. Survolez un nom pour le retrouver dans les autres éditions. * Édition en cours.";
+    if (byTeam) {
+      const ts = TR.state('hist_tenures');
+      if (ts === 'error') TR.fail($('hist-tenures'));
+      else if (ts !== 'ok') TR.wait($('hist-tenures'));
+      else { TR.ready($('hist-tenures')); TR.drawTenures($('hist-tenures'), dash.data('hist_tenures').data, teams); }
+    }
 
     // Joueurs passés par plusieurs équipes
     const mt = $('hist-movers').querySelector('tbody');
@@ -1955,8 +2159,7 @@ dash.calc('hist_departures', {
         r.segs.forEach((g, i) => {
           if (i) w.append(TR.text('→'));
           if (g.gap) { const s0 = document.createElement('span'); s0.className = 'tr-gap'; s0.textContent = `sans équipe ${TR.years(g.from, g.to)}`; w.append(s0); return; }
-          const s1 = TR.teamTag(g.team, teams);
-          s1.append(TR.text(' ' + TR.years(g.from, g.to) + (g.start ? ` (dès le ${TR.date(g.start)})` : '') + (g.end ? ` (jusqu’au ${TR.date(g.end)})` : '')));
+          const s1 = TR.teamPill(g.team, teams, ' ' + TR.years(g.from, g.to) + (g.start ? ` (dès le ${TR.date(g.start)})` : '') + (g.end ? ` (jusqu’au ${TR.date(g.end)})` : ''));
           w.append(s1);
         });
         return w;
@@ -1975,12 +2178,12 @@ dash.calc('hist_departures', {
     const dr = deps.filter((d) => histDepTeam === 'All' || d.team === histDepTeam);
     fillTable($('hist-departures').querySelector('tbody'), dr, [
       { f: 'short', l: true },
-      { f: 'team', l: true, node: (r) => TR.teamTag(r.team, teams) },
+      { f: 'team', l: true, node: (r) => TR.teamPill(r.team, teams) },
       { f: 'date', l: true, node: (r) => TR.text(r.mid ? TR.dateY(r.end) : `fin ${r.season}`) },
       { f: 'rank_at', node: (r) => { const s0 = TR.span(r.rank_at ? TR.ord(r.rank_at) : '—'); s0.title = `Classement ATP de fin ${r.season}`; return s0; } },
       { f: 'next_team', l: true, node: (r) => {
         if (!r.next_team) return TR.span('aucune équipe', null, null, null, 'tr-muted');
-        const w = document.createElement('span'); w.className = 'tr-seg'; w.append(TR.teamTag(r.next_team, teams), TR.text(` ${r.next_season}${r.next_team === r.team ? ' (retour)' : ''}`)); return w;
+        return TR.teamPill(r.next_team, teams, ` ${r.next_season}${r.next_team === r.team ? ' (retour)' : ''}`);
       } },
       { f: 'later', l: true, sec: true, node: (r) => {
         const w = document.createElement('span'); w.className = 'tr-seg';
@@ -2003,6 +2206,15 @@ dash.calc('hist_departures', {
     $('hist-dep-src').textContent = `Rang ATP de fin d'année : Jeff Sackmann (2019 à 2023) et Tennis Explorer (2024, 2025). Rang actuel : Tennis Explorer au ${cur ? TR.dateY(cur.ranking_date) : '—'}. Les classements Tennis Explorer s'arrêtent au top 500. Points pleins sur la courbe : saisons dans une équipe ; points creux : sans équipe.`;
   };
 
+  const drawDataNotes = () => {
+    $('data-notes').replaceChildren(...Object.keys(HIST_NOTES).map(Number).sort((a, b) => a - b).map((y) => {
+      const row = document.createElement('div'); row.className = 'tr-notes-y';
+      const yb = document.createElement('b'); yb.textContent = y;
+      const ul = document.createElement('ul'); HIST_NOTES[y].forEach((t) => { const li = document.createElement('li'); li.textContent = t; ul.append(li); });
+      row.append(yb, ul); return row;
+    }));
+  };
+
   function render() {
     TR.loadColors();
     const order = TR.order();
@@ -2010,7 +2222,7 @@ dash.calc('hist_departures', {
     if (active === 'teams') drawTeams(order);
     if (active === 'players') drawPlayers(order);
     if (active === 'history') drawHistory(order);
-    if (active === 'notes') drawNotes();
+    if (active === 'notes') { drawNotes(); drawDataNotes(); }
   }
 
   dash.onData(render);
