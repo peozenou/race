@@ -261,7 +261,7 @@
   <section class="tr-page" id="history" role="tabpanel" aria-labelledby="tab-history" hidden>
     <div class="tr-card" id="hist-honours-card">
       <h2>Palmarès</h2>
-      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes est passé de 4 (2019 à 2024) à 5 (depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite). * CHEF a fini 4e en 2019 sans que ses points soient conservés : sa part moyenne est calculée de 2020 à 2025.</p>
+      <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes a changé (3 en 2019, 4 de 2020 à 2024, 5 depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite).</p>
       <div class="tr-scroll">
         <table class="tr-table" id="hist-honours" data-source="hist_honours" data-row-key="team">
           <thead><tr>
@@ -651,7 +651,7 @@ dash.calc('hist_honours', {
         const f = s.standings.find((x) => x.team === t);
         if (!f) return null;
         const sum = s.standings.reduce((a, x) => a + (x.total || 0), 0);
-        return { season: s.season, rank: f.rank, last: f.rank === s.standings.length, share: sum && f.total !== null ? f.total / sum : null };
+        return { season: s.season, rank: f.rank, last: f.rank === s.standings.length, share: sum ? f.total / sum : null };
       }).filter(Boolean);
       const years = eds.map((e) => e.season);
       const cur = now ? now.standings.find((x) => x.team === t) : null;
@@ -662,8 +662,7 @@ dash.calc('hist_honours', {
         second: eds.filter((e) => e.rank === 2).length, third: eds.filter((e) => e.rank === 3).length,
         last_place: eds.filter((e) => e.last).length,
         avg_rank: eds.length ? eds.reduce((a, e) => a + e.rank, 0) / eds.length : null,
-        avg_share: eds.some((e) => e.share !== null) ? d3.mean(eds.filter((e) => e.share !== null), (e) => e.share) : null,
-        share_from: eds.some((e) => e.share === null) ? Math.min(...eds.filter((e) => e.share !== null).map((e) => e.season)) : null,
+        avg_share: eds.length ? eds.reduce((a, e) => a + (e.share || 0), 0) / eds.length : null,
         current_rank: cur ? cur.rank : null, current_week: now ? now.week : null,
       };
     }).sort((a, b) => b.titles - a.titles || b.second - a.second || (a.avg_rank ?? 99) - (b.avg_rank ?? 99));
@@ -1801,7 +1800,7 @@ dash.calc('hist_departures', {
 
   // French notes on each edition's data (detail in history/README.md and history/data/corrections.json).
   const HIST_NOTES = {
-    2019: ["CHEF a terminé 4e ; le classeur n'a conservé que PAT, DOC (alors REM) et CHAN, si bien que CHEF n'a ni effectif ni points pour 2019.", "Les résultats d'Auger-Aliassime avant fin juin ne sont pas comptés dans le classeur, sans doute un changement d'effectif ; laissés tels quels."],
+    2019: ["Trois équipes. Les résultats d'Auger-Aliassime avant fin juin ne sont pas comptés dans le classeur, sans doute un changement d'effectif ; laissés tels quels."],
     2020: ["Saison interrompue par le Covid entre février et août.", "Corrigé : à Hambourg, la formule de CHEF oubliait la finale de Rublev (+20) ; le total de CHEF rejoint celui de SCORES (430).", "En attente de décision : la ligne « Vienne » contient les résultats de Nour-Soultan, si bien que Vienne (gagné par Rublev) n'a jamais été compté. Les +60 points de CHEF le feraient passer de la 4e à la 3e place."],
     2021: ["Corrigé : la formule des Grands Chelems de CHEF oubliait les quarts de finale, compensés par un 60 saisi à Roland-Garros ; points replacés aux bonnes semaines, total inchangé."],
     2022: ["Seul le classement final a été conservé : pas de course semaine par semaine ni de points de duel par joueur."],
@@ -1840,8 +1839,7 @@ dash.calc('hist_departures', {
       [h.second, h.third, h.last_place].forEach((v) => td(String(v)).classList.add('tr-sec'));
       td(`${h.editions} (${TR.years(h.first, h.last)})`, true).classList.add('tr-sec');
       td(h.avg_rank === null ? '—' : `${TR.dec1(h.avg_rank)} (${TR.years(h.first, h.last)})`, true);
-      const sc = td(TR.pct(h.avg_share));
-      if (h.share_from) { const m0 = document.createElement('sup'); m0.className = 'tr-mark'; m0.textContent = '*'; m0.title = `Part moyenne calculée de ${h.share_from} à ${h.last} : pas de points enregistrés avant.`; sc.append(m0); }
+      td(TR.pct(h.avg_share));
       td(h.current_rank ? `${TR.ord(h.current_rank)} (sem. ${h.current_week})` : '—');
       return tr;
     }));

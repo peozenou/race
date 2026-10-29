@@ -77,7 +77,7 @@ Team `REM` (2019–2022 sheets) is the same franchise as `DOC` and is coded `DOC
 
 | Season | Teams | hebdo | joueurs | matches | Notes |
 |---|---|---|---|---|---|
-| 2019 | 4 | weekly, 30 weeks (totals only) | final week | Sackmann tour-level | Race/duels split only in the final week; CHEF 4th by league record, no roster or points in the workbook |
+| 2019 | 3 | weekly, 30 weeks (totals only) | final week | Sackmann tour-level | Race/duels split only in the final week |
 | 2020 | 4 | weekly, 19 weeks | final week | Sackmann tour-level | COVID gap Feb–Aug; CHEF final 410 (HEBDO) vs 430 (SCORES) |
 | 2021 | 4 | weekly, 37 weeks | final week | Sackmann tour-level | |
 | 2022 | 4 | final only (`week`/`date` null) | final only | Sackmann tour-level | Only BILAN ATP survives; player duel points not recorded |
@@ -112,7 +112,6 @@ itself or from match results were corrected:
 | 2023 | CHAN missed in the week-28 update and carried for 5 weeks | CHAN 14,269 → 17,479, weeks 28–32 |
 | 2021 | CHEF Slam points moved to the right weeks (formula skipped quarter-finalists; compensated at Roland-Garros) | Season total unchanged |
 | 2020 | Hamburg CHEF formula bug (Rublev's final, +20) | HEBDO = SCORES = 430 |
-| 2019 | League record (Patrick): CHEF finished 4th; the workbook kept only three teams | CHEF added to the final standings, no points |
 
 **Awaiting a league decision (not applied):** in 2020 the "Vienne" row holds the Nur-Sultan results,
 so Vienna was never scored. Rublev won it (+60 for CHEF), which would move CHEF from 4th to 3rd.

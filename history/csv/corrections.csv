@@ -1,5 +1,4 @@
 status,season,week,team,field,recorded,corrected,total_recorded,total_corrected,reason,evidence
-applied,2019,,CHEF,rank,,4,,,"[league record] CHEF finished 4th in 2019; the workbook kept only PAT, REM (DOC) and CHAN, so CHEF has no roster, points or weekly totals for 2019.","Patrick, 28 Oct 2026"
 applied,2020,12,CHEF,total,200,220,200,220,"ATP 500 tab, Hamburg row: CHEF formula counts finalists from columns G and K instead of G and H, so Rublev's final (+20) was missed. Restores the SCORES total (430).",THE RACE 2020 › ATP 500 row 7; SCORES CHEF total 430
 applied,2020,13,CHEF,total,250,270,250,270,"ATP 500 tab, Hamburg row: CHEF formula counts finalists from columns G and K instead of G and H, so Rublev's final (+20) was missed. Restores the SCORES total (430).",THE RACE 2020 › ATP 500 row 7; SCORES CHEF total 430
 applied,2020,14,CHEF,total,320,340,320,340,"ATP 500 tab, Hamburg row: CHEF formula counts finalists from columns G and K instead of G and H, so Rublev's final (+20) was missed. Restores the SCORES total (430).",THE RACE 2020 › ATP 500 row 7; SCORES CHEF total 430
