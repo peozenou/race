@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="852a85f45b5b">
+  <meta name="data-version" content="cdbafbadae0a">
   <title>THE RACE 2026 — Bilan 36e semaine</title>
   <meta name="description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — Bilan 36e semaine">
   <meta property="og:description" content="Classement après la semaine 36 (26 octobre 2026) : CHEF en tête avec 18 554 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=852a85f45b5b">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=cdbafbadae0a">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=852a85f45b5b">
+  <link rel="stylesheet" href="assets/theme.css?v=cdbafbadae0a">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=852a85f45b5b"></script>
+  <script src="assets/runtime.js?v=cdbafbadae0a"></script>
 </head>
 <body>
 <main class="site">
@@ -286,9 +286,6 @@
   </section>
 
   <section class="tr-page" id="history" role="tabpanel" aria-labelledby="tab-history" hidden>
-    <p class="tr-take" id="hist-take"><span class="dash-skeleton">—</span></p>
-    <div class="tr-kpis" id="hist-kpis"></div>
-
     <div class="tr-card" id="hist-honours-card">
       <h2>Palmarès</h2>
       <p class="tr-note">Classements finaux des éditions terminées, de 2019 à 2025 ; chaque équipe est jugée sur les éditions qu'elle a disputées, indiquées avec son rang moyen. Le nombre d'équipes est passé de 4 (2019 à 2024) à 5 (depuis 2025), si bien qu'un même rang moyen n'a pas tout à fait le même poids. La part moyenne compare les éditions malgré le changement de barème en 2022 (points par tour atteint jusqu'en 2021, points ATP Race ensuite). * CHEF a fini 4e en 2019 sans que ses points soient conservés : sa part moyenne est calculée de 2020 à 2025.</p>
@@ -1843,10 +1840,9 @@ dash.calc('hist_departures', {
 
   const drawHistory = (order) => {
     const st = TR.state('hist_season_list', 'hist_honours');
-    const take = $('hist-take');
     const boxes = [$('hist-bump'), $('hist-rosters')];
     if (st !== 'ok') {
-      if (st === 'error') { boxes.forEach(TR.fail); take.textContent = "L'historique n'a pas pu être chargé."; } else boxes.forEach(TR.wait);
+      if (st === 'error') { boxes.forEach(TR.fail); } else boxes.forEach(TR.wait);
       return;
     }
     const list = dash.data('hist_season_list').data;
@@ -1856,32 +1852,9 @@ dash.calc('hist_departures', {
     const now = list.find((s) => s.status !== 'complete');
     if (histPick === null || !list.some((s) => s.season === histPick)) histPick = done.length ? done[done.length - 1].season : list[list.length - 1].season;
 
-    // Header
-    const winners = hon.filter((h) => h.titles > 0);
-    const nil = hon.filter((h) => h.titles === 0);
-    const yl = (h) => h.title_years.join(', ');
-    take.replaceChildren(TR.text(`${list.length} éditions depuis ${list[0].season}. `));
-    if (winners.length) {
-      const [a, ...rest] = winners;
-      take.append(TR.text(`${a.team} compte le plus de titres (${a.titles} : ${yl(a)})`));
-      if (rest.length) take.append(TR.text(', devant ' + rest.map((h) => `${h.team} (${h.titles} : ${yl(h)})`).join(', ')));
-      take.append(TR.text('.'));
-    }
-    if (nil.length) take.append(TR.text(' ' + nil.map((h) => `${h.team}, arrivé en ${h.first}, n'a pas encore de titre`).join(' ; ') + '.'));
-    if (now && now.standings.length) take.append(TR.text(` En ${now.season}, ${now.standings[0].team} mène après la semaine ${now.week}.`));
-
-    // KPIs
     const rost = TR.state('hist_roster_all') === 'ok' ? dash.data('hist_roster_all').data : [];
     const movers = TR.state('hist_movers') === 'ok' ? dash.data('hist_movers').data : [];
     const deps = TR.state('hist_departures') === 'ok' ? dash.data('hist_departures').data : [];
-    const kpi = (v, l) => { const d = document.createElement('div'); const a = document.createElement('div'); a.className = 'tr-kpi-v'; a.textContent = v; const b = document.createElement('div'); b.className = 'tr-kpi-l'; b.textContent = l; d.append(a, b); return d; };
-    $('hist-kpis').replaceChildren(
-      kpi(String(list.length), `éditions (${TR.years(list[0].season, list[list.length - 1].season)})`),
-      kpi(String(teams.length), 'équipes'),
-      kpi(rost.length ? String(new Set(rost.map((r) => r.key)).size) : '—', 'joueurs sélectionnés'),
-      kpi(movers.length ? String(movers.length) : '—', 'passés par plusieurs équipes'),
-      kpi(deps.length ? String(deps.length) : '—', 'départs suivis'),
-    );
 
     // Palmarès
     const htb = $('hist-honours').querySelector('tbody');
