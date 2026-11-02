@@ -1,0 +1,124 @@
+{
+ "url": "https://peozenou.github.io/race/2026/",
+ "browser": "Claude desktop built-in browser (Chromium) on the live URL; dark and light colour schemes; desktop 1024 px and mobile 375 px",
+ "started_at": "2026-11-02T17:59:50-05:00",
+ "completed_at": "2026-11-02T18:02:34-05:00",
+ "data_version": "6eef7f8c31de",
+ "checks": {
+  "no_console_errors": {
+   "pass": true,
+   "detail": "0 error-level console messages on every load (dark desktop, light mobile, light desktop)"
+  },
+  "data_requests_versioned": {
+   "pass": true,
+   "detail": "all six data/<name>.json?v=6eef7f8c31de requested; history/data/*.json?v=6eef7f8c31de 200 on opening Historique"
+  },
+  "inpage_hashes_match": {
+   "pass": true,
+   "detail": {
+    "hebdo": "bd28076246549a7b6934150fc199e58ad05f4136d1edc9526d6bfc856b1baa6a",
+    "joueurs": "75f79e050b00a4060f7b2efefb0d14c3bb0b21e633eedfe77a6c8f65abb839d4",
+    "players": "f37f92ec9d987604e3f7b12334c042800c4e0d955529abbe432eaca87965c31b",
+    "matches": "721922e5ebd1a1caa6be2a979b94b29d91882349481788599c0de36996b39250",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+   }
+  },
+  "header_title_takeaway": {
+   "pass": true,
+   "detail": [
+    "THE RACE 2026 — Bilan 37e semaine",
+    "Après la semaine 37 (2 nov. 2026), CHEF est devant avec 19 004 points, suivi de DOC. Meilleure progression de la semaine : CHAN (+940), notamment grâce à Alcaraz (+510)."
+   ]
+  },
+  "standings_cards": {
+   "pass": true,
+   "detail": [
+    "1er · CHEF | 19 004 | Race 18 809 · Duels 195 | +450",
+    "2e · DOC | 16 950 | Race 16 800 · Duels 150 | +542",
+    "3e · CHAN | 15 940 | Race 15 755 · Duels 185 | +940",
+    "4e · PAT | 13 143 | Race 12 993 · Duels 150 | +489",
+    "5e · JULES | 11 682 | Race 11 572 · Duels 110 | +240"
+   ]
+  },
+  "season_chart_tooltip": {
+   "pass": true,
+   "detail": "Semaine 36 · 26 oct. 2026 | CHEF 18 554 | DOC 16 408 | CHAN 15 000 | PAT 12 654 | JULES 11 442"
+  },
+  "duel_matrix": {
+   "pass": true,
+   "detail": "row totals 30/30/37/39/22 wins = 150/150/185/195/110 pts; 'Tournois commencés jusqu'au 2 nov. 2026'"
+  },
+  "players_table": {
+   "pass": true,
+   "detail": "30 lineup lines from 32 player records; Rang column present"
+  },
+  "team_filter_six_per_team": {
+   "pass": true,
+   "detail": {
+    "PAT": "Shelton, De Minaur, Tien, Ruud, Engel/Blockx, Blanch",
+    "DOC": "Zverev, Cobolli, Fritz, Kouame, Budkov Kjaer, Bernet",
+    "CHAN": "Alcaraz, Medvedev, Paul, Mensik, Michelsen, Rune",
+    "CHEF": "Sinner/Lehecka, Fils, Jodar, Rublev, Fonseca, Draper",
+    "JULES": "Tiafoe, Djokovic, Bublik, Musetti, Humbert, Dimitrov"
+   }
+  },
+  "search_and_sort": {
+   "pass": true,
+   "detail": "'bloc' -> Engel/Blockx; 'sinner' -> Sinner/Lehecka; Rang ATP sort -> Zverev, Alcaraz, Shelton, Medvedev, Cobolli"
+  },
+  "composition_two_shades": {
+   "pass": true,
+   "detail": "CHEF #93c47d + #678958 (Sinner/Lehecka); PAT #8e7cc3 + #635789 (Engel/Blockx); legend lists both posts"
+  },
+  "composition_tooltip_engel_blockx": {
+   "pass": true,
+   "detail": "PAT · Engel/Blockx | Engel (sorti) 62 | Blockx (entré) 695 | Total du poste 757 | Part de l'équipe 6 %"
+  },
+  "detail_sinner_lehecka": {
+   "pass": true,
+   "detail": "post 8 435 (7 950 + 485), 75 duel pts; post chart bands #93c47d/#678958; switch to Sinner shows 'classements au 5 oct. 2026', 44–3, 6 titles"
+  },
+  "detail_engel_blockx": {
+   "pass": true,
+   "detail": "post 757 (62 + 695), 5 duel pts (Blockx), post chart bands #8e7cc3/#635789; switch to Engel shows 6–14 and 'classements au 26 oct. 2026'"
+  },
+  "kouame_adjustment": {
+   "pass": true,
+   "detail": "449* with note: 425 raw TE Race + approved +24, applied once"
+  },
+  "rune_nulls": {
+   "pass": true,
+   "detail": "Elo, yElo and age shown as '—'"
+  },
+  "no_nan_or_null_text": {
+   "pass": true,
+   "detail": "page text contains no NaN/undefined/null; null aggregate rates (tpw, rpw, ace_pct, first_won, second_won) not displayed"
+  },
+  "notes_sources_dates": {
+   "pass": true,
+   "detail": "HEBDO semaine 37, 2 nov. 2026; matches through 2 nov. 2026; Tennis Explorer 2 nov. 2026 with retained Engel (sorti) 26 oct. 2026 and Sinner (sorti) 5 oct. 2026; Elo/yElo 28 sept. 2026; both transfers described"
+  },
+  "historique_tab": {
+   "pass": true,
+   "detail": "2026 edition 'en cours · sem. 37', CHEF 19 004; palmarès current column 'sem. 37'; rang actuel labelled 'Tennis Explorer au 26 oct. 2026' (history/data/ranks.json, not refreshed by this release)"
+  },
+  "tab_navigation": {
+   "pass": true,
+   "detail": "Équipes, Joueurs, Historique, Barème et sources; hashes #teams/#players/#history/#notes"
+  },
+  "mobile_375px_no_horizontal_scroll": {
+   "pass": true,
+   "detail": "scrollWidth = clientWidth = 375 on all four tabs (light)"
+  },
+  "tutoriel_mp4_served": {
+   "pass": true,
+   "detail": "200, 6 536 024 bytes, byte-identical to repository"
+  },
+  "landing_page": {
+   "pass": true,
+   "detail": "200, byte-identical to repository"
+  }
+ },
+ "failed": 0
+}

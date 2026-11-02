@@ -1,0 +1,152 @@
+{
+  "owner": "Claude",
+  "step": 6,
+  "run_id": "2026-11-02-w37",
+  "production_status": "LIVE_DASHBOARD_VERIFIED",
+  "release_id": "2026-11-02-w37-r1",
+  "release_branch": "data/2026-11-02-w37-r1",
+  "data_commit_sha": "005231791f39eb6397c331726b4eeb8c9fc04e21",
+  "previous_production_commit": "b04ca981a34f212c3426c021214b99d424a5119b",
+  "dashboard_commit_sha": "7eadc7b130149fe2eecb86a4af1d3088f3faf44d",
+  "dashboard_commit_parent_chain": "b04ca98 (previous main, Historique rework) -> 0052317 (release data, fast-forward) -> 7eadc7b (week-37 build)",
+  "dashboard_url": "https://peozenou.github.io/race/2026/",
+  "handoff_hashes_verified_before_use": true,
+  "handoff_hash_source": "The step-6 request named the release ID, branch and commit but listed no SHA-256 values; approved hashes are those of the six files at release commit 0052317, read from git before use.",
+  "release_diff_scope": "0052317 changes only 2026/data/hebdo.json, joueurs.json, matches.json and players.json; calendar.json and team_colors.json unchanged. Weeks 0-36 of hebdo and joueurs unchanged; 1,607 previous match perspectives kept in order plus 69 new (M1608-M1676); one earlier perspective (M1549) has opponent_rank 65 -> 60 as cleared.",
+  "live_data_sha256": {
+    "hebdo": "bd28076246549a7b6934150fc199e58ad05f4136d1edc9526d6bfc856b1baa6a",
+    "joueurs": "75f79e050b00a4060f7b2efefb0d14c3bb0b21e633eedfe77a6c8f65abb839d4",
+    "players": "f37f92ec9d987604e3f7b12334c042800c4e0d955529abbe432eaca87965c31b",
+    "matches": "721922e5ebd1a1caa6be2a979b94b29d91882349481788599c0de36996b39250",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "live_data_sha256_match_approved": true,
+  "live_data_checked_variants": [
+    "canonical /data/<name>.json",
+    "page-requested /data/<name>.json?v=6eef7f8c31de",
+    "in-page fetch + crypto.subtle SHA-256 in the browser"
+  ],
+  "live_row_counts": {
+    "hebdo": 190,
+    "joueurs": 1136,
+    "players": 32,
+    "matches": 1676,
+    "calendar": 13,
+    "team_colors": 5
+  },
+  "build_data_version": "6eef7f8c31de",
+  "live_data_version": "6eef7f8c31de",
+  "live_index_html_sha256": "6ff07a462493ce0636f30a24b6c0975ebbec186df9582e1bf3ddf6383cdd428f",
+  "live_index_matches_commit": true,
+  "live_week": 37,
+  "live_competition_date": "2026-11-02",
+  "live_totals": {
+    "PAT": 13143,
+    "DOC": 16950,
+    "CHAN": 15940,
+    "CHEF": 19004,
+    "JULES": 11682
+  },
+  "live_weekly_gains": {
+    "PAT": 489,
+    "DOC": 542,
+    "CHAN": 940,
+    "CHEF": 450,
+    "JULES": 240
+  },
+  "live_race_duels": {
+    "PAT": [
+      12993,
+      150
+    ],
+    "DOC": [
+      16800,
+      150
+    ],
+    "CHAN": [
+      15755,
+      185
+    ],
+    "CHEF": [
+      18809,
+      195
+    ],
+    "JULES": [
+      11572,
+      110
+    ]
+  },
+  "live_grand_total": 76719,
+  "live_grand_total_change": 2661,
+  "live_source_labels": {
+    "rankings": "Tennis Explorer, 2 nov. 2026; Engel (sorti) retained at 26 oct. 2026; Sinner (sorti) retained at 5 oct. 2026",
+    "elo_yelo": "Tennis Abstract, 28 sept. 2026",
+    "matches_through": "2 nov. 2026",
+    "competition_update": "semaine 37, 2 nov. 2026"
+  },
+  "transfer_and_qualification_presentation": {
+    "sinner_lehecka": "One CHEF line credited 8 435 (Sinner 7 950 in #93c47d + Lehecka 485 in #678958) and 75 duel points; composition bar, post chart and player switch show both parts.",
+    "engel_blockx": "One PAT line credited 757 (Engel 62 in #8e7cc3 + Blockx 695 in #635789) and 5 duel points (Blockx); composition tooltip, post chart and player switch show both parts.",
+    "kouame": "Credited 449 shown with note: 425 raw TE Race + approved +24, applied once.",
+    "rune": "Elo, yElo and age shown as '—' (null), not zero.",
+    "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won remain null in players.json and are not displayed."
+  },
+  "dashboard_source_changes": "RACE_QUAL comment now references release 2026-11-02-w37-r1; entries unchanged (Kouame 'adjust' only). No new hold or adjustment was named. Interface, design, navigation, Historique and tutorial unchanged. Six datasets incorporated unmodified; history/ not touched.",
+  "ui_checks_verified": true,
+  "ui_checks": {
+    "total_checks": 23,
+    "failed": 0,
+    "console_errors": 0,
+    "color_schemes": [
+      "dark",
+      "light"
+    ],
+    "widths": [
+      "desktop 1024 px",
+      "mobile 375 px"
+    ]
+  },
+  "live_verified_at": "2026-11-02T18:02:34-05:00",
+  "observations": [
+    {
+      "what": "fetch of page, six datasets (two variants), assets, tutorial and landing page (7eadc7b)",
+      "at": "2026-11-02T17:59:26-05:00"
+    },
+    {
+      "what": "browser checks on the live URL, dark desktop, light mobile, light desktop (7eadc7b), completed",
+      "at": "2026-11-02T18:02:34-05:00"
+    }
+  ],
+  "deployment": {
+    "route": "GitHub Pages, deploy from branch main (existing 'pages build and deployment' workflow)",
+    "actions_run_id": 41541660989,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/41541660989",
+    "jobs": {
+      "build": "success",
+      "report-build-status": "success",
+      "deploy": "success"
+    },
+    "deployment_id": 7505559597,
+    "deployment_created_at": "2026-11-02T22:58:33Z",
+    "deploy_completed_at": "2026-11-02T22:59:08Z",
+    "served_last_modified": "Mon, 02 Nov 2026 22:58:40 GMT"
+  },
+  "push": {
+    "ref": "main",
+    "from": "b04ca98",
+    "to": "7eadc7b",
+    "force": false,
+    "at": "2026-11-02T22:58:19Z"
+  },
+  "accepted_qualifications_carried": [
+    "69 historical zero cells lack matching saved source rows; not a general missing-equals-zero rule",
+    "Tennis Abstract omits the known Kouame loss at Jingshan",
+    "Elo/yElo remains dated 28 September 2026",
+    "Historique 'rang actuel' reads history/data/ranks.json, still dated 26 October 2026 and labelled so on the page; the history export was not refreshed by this release"
+  ],
+  "public_repo_private_material_scan": "No workbook fingerprint, approval record, junior or personal data in the production diff or evidence.",
+  "step7": "Unblocked: use https://peozenou.github.io/race/2026/ bound to dashboard commit 7eadc7b (data version 6eef7f8c31de). No email drafted or sent by Claude.",
+  "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage.",
+  "presentation_revision": 1
+}
