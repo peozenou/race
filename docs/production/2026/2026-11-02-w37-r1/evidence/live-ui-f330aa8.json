@@ -1,0 +1,61 @@
+{
+ "url": "https://peozenou.github.io/race/2026/",
+ "browser": "Claude desktop built-in browser (Chromium), live URL; light 1024 px and dark 375 px. The pane was hidden (session not on screen), which pauses requestAnimationFrame, so data-driven redraws were re-triggered by switching tabs; with that, every chart drew.",
+ "data_version": "3565c4654c57",
+ "completed_at": "2026-11-02T21:55:26-05:00",
+ "checks": {
+  "no_console_errors": {
+   "pass": true
+  },
+  "inpage_hashes_match": {
+   "pass": true,
+   "detail": "six in-page SHA-256 equal the release (same values as live-data-f330aa8.json)"
+  },
+  "header_and_standings": {
+   "pass": true,
+   "detail": "Bilan 37e semaine; CHEF 19 004, DOC 16 950, CHAN 15 940, PAT 13 143, JULES 11 682"
+  },
+  "players_unchanged": {
+   "pass": true,
+   "detail": "30 lineup lines; composition fills include #93c47d/#678958 and #8e7cc3/#635789; replacement-line note present"
+  },
+  "notes_source_dates": {
+   "pass": true,
+   "detail": "Tennis Explorer, 2 nov. 2026"
+  },
+  "historique_existing_charts": {
+   "pass": true,
+   "detail": "bump chart 33 points; 8 edition cards; 2026 card 'en cours · sem. 37', CHEF 19 004"
+  },
+  "heatmap_values": {
+   "pass": true,
+   "detail": "40 cells match shares recomputed from seasons.json and 2026 hebdo week 37; ★ on the 7 champions; 2026 column outlined",
+   "tooltip": "Édition 2021 | DOC · 1er sur 4 | 40 % | Points au barème | 1 425"
+  },
+  "lollipop_values": {
+   "pass": true,
+   "detail": "PAT +3,4 % · DOC +31 % · DOC +46 % · CHAN +0,7 % · CHAN +39 % · CHEF +7,7 % · CHAN +3,7 % · CHEF +12 % (recomputed independently)",
+   "tooltip": "2026 · en cours, semaine 37 | 1er CHEF 19 004 | 2e DOC 16 950 | Écart : 2 054 points (+12 %)"
+  },
+  "waffle_values": {
+   "pass": true,
+   "detail": "242 updates, no ties; legend CHAN 93, DOC 63, CHEF 60, PAT 26 (recomputed independently); 2022 'classement final seulement'",
+   "tooltip": "2026 · semaine 37 (2 nov.) | CHEF en tête | 19 004 | Avance : 2 054 sur DOC"
+  },
+  "mobile_375_dark": {
+   "pass": true,
+   "detail": "new cards end at 359 px; heatmap years shortened to 19…26 *; waffle squares 8 px, rows wrapped"
+  },
+  "mobile_overflow_preexisting": {
+   "pass": false,
+   "detail": "Historique scrollWidth 379 > 375, caused only by the existing 2025 transfer label (.tr-xf-sw / .tr-xf-p, 'Giovanni Mpetshi Perricard→Justin Engel'); same on 7eadc7b; not caused by the new charts"
+  },
+  "history_files_served": {
+   "pass": true,
+   "detail": "six history/data files 200 and byte-identical to the repository"
+  },
+  "tutorial_and_landing": {
+   "pass": true
+  }
+ }
+}

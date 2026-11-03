@@ -7,17 +7,19 @@ Owner: **Claude**. Prepared 2 November 2026, America/New_York. This is the publi
 | Field | Value |
 |---|---|
 | `owner` | Claude |
-| `production_status` | `LIVE_DASHBOARD_VERIFIED` |
+| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 2) |
 | `release_id` | `2026-11-02-w37-r1` (branch `data/2026-11-02-w37-r1`) |
 | `data_commit_sha` | [`005231791f39eb6397c331726b4eeb8c9fc04e21`](https://github.com/peozenou/race/commit/005231791f39eb6397c331726b4eeb8c9fc04e21) |
-| `dashboard_commit_sha` | [`7eadc7b130149fe2eecb86a4af1d3088f3faf44d`](https://github.com/peozenou/race/commit/7eadc7b130149fe2eecb86a4af1d3088f3faf44d) |
-| Production history | `b04ca98` (previous main, Historique rework) → `0052317` (release data, fast-forward) → `7eadc7b` (week-37 build). The release branch sat directly on `b04ca98`, so all concurrent dashboard and history work on `main` is kept. |
+| `dashboard_commit_sha` | [`f330aa81a93e759ab180bc22e1a4a4073286b3e7`](https://github.com/peozenou/race/commit/f330aa81a93e759ab180bc22e1a4a4073286b3e7) |
+| Production history | `b04ca98` (previous main, Historique rework) → `0052317` (release data, fast-forward) → [`7eadc7b`](https://github.com/peozenou/race/commit/7eadc7b130149fe2eecb86a4af1d3088f3faf44d) (week-37 build) → `a9d6317` (docs only) → `f330aa8` (Historique heatmap, lollipop and waffle). The release branch sat directly on `b04ca98`, so all concurrent dashboard and history work on `main` is kept. |
 | `dashboard_url` | https://peozenou.github.io/race/2026/ |
-| `build_data_version` / `live_data_version` | `6eef7f8c31de` / `6eef7f8c31de` |
+| `build_data_version` / `live_data_version` | `3565c4654c57` / `3565c4654c57` |
 | `live_week` | 37, Monday 2 November 2026 (competition week, not ISO week) |
-| `ui_checks_verified` | true (23 checks, 0 failures, dark and light, desktop and 375 px) |
-| `live_verified_at` | 2026-11-02T18:02:34-05:00 (data fetch 17:59:26-05:00) |
-| Deployment | GitHub Pages run [41541660989](https://github.com/peozenou/race/actions/runs/41541660989): build, report-build-status and deploy all success; deployment 7505559597, deploy job finished 2026-11-02T22:59:08Z. Served `index.html` byte-identical to the commit (SHA-256 `6ff07a462493ce0636f30a24b6c0975ebbec186df9582e1bf3ddf6383cdd428f`). |
+| `ui_checks_verified` | true (see the checks below, including one pre-existing mobile-width issue) |
+| `live_verified_at` | 2026-11-02T21:55:26-05:00 (data fetch 21:53:03-05:00) |
+| Deployment | GitHub Pages run [41568762676](https://github.com/peozenou/race/actions/runs/41568762676): build, report-build-status and deploy all success; deployment 7509118257, deploy job finished 2026-11-03T02:52:47Z. Served `index.html` byte-identical to the commit (SHA-256 `6967fc94b892855ba4bbfce88f6529c28bb5e891f84f7e52cb3839c80b364159`). |
+
+The first week-37 build, `7eadc7b` (data version `6eef7f8c31de`, run [41541660989](https://github.com/peozenou/race/actions/runs/41541660989)), was verified live at 2026-11-02T18:02:34-05:00 and superseded the same evening by revision 2 at Patrick's request. Both kept the six approved datasets unchanged.
 
 ### Live datasets
 
@@ -54,11 +56,23 @@ Grand total 76,719, up 2,661. Order CHEF, DOC, CHAN, PAT, JULES; CHEF leads DOC 
 - **Source dates**, shown separately from the competition Monday: Tennis Explorer rankings 2 Nov 2026 (retained: Engel 26 Oct, Sinner 5 Oct); Elo/yElo 28 Sep 2026; matches through 2 Nov 2026.
 - **Historique.** The 2026 edition shows "en cours · sem. 37" with CHEF at 19,004, and the palmarès current column reads "sem. 37". The current edition is read from `2026/data`.
 
-Browser checks (Claude desktop built-in browser, Chromium, on the live URL): 0 console errors; versioned data and history requests; standings cards and gains; season chart tooltip; duel matrix; 30-line player table, six per team under each team filter; search; sorting; composition two shades for both posts with tooltip; detail and player switch for Sinner/Lehecka and Engel/Blockx; Kouame and Rune details; Barème et sources tab; Historique tab; navigation between the four tabs; 375 px mobile width without horizontal scroll on every tab; `tutoriel.mp4` and the landing page served byte-identical to the repository.
+Browser checks (Claude desktop built-in browser, Chromium, on the live URL): 0 console errors; versioned data and history requests; standings cards and gains; season chart tooltip; duel matrix; 30-line player table, six per team under each team filter; search; sorting; composition two shades for both posts with tooltip; detail and player switch for Sinner/Lehecka and Engel/Blockx; Kouame and Rune details; Barème et sources tab; Historique tab; navigation between the four tabs; 375 px mobile width (see the correction below for the Historique tab); `tutoriel.mp4` and the landing page served byte-identical to the repository.
 
 ### Dashboard source changes (datasets untouched)
 
-The only change is the `RACE_QUAL` comment in `2026/source/dashboard.html`, which now references this release. Its entries are unchanged (Kouame's `adjust` only), since the handoff named no new hold or adjustment. The French interface, design, navigation, Historique tab, `history/` data and tutorial are unchanged. The preview image and tutorial were not regenerated.
+**Revision 1 (`7eadc7b`).** The only change is the `RACE_QUAL` comment in `2026/source/dashboard.html`, which now references this release. Its entries are unchanged (Kouame's `adjust` only), since the handoff named no new hold or adjustment. The preview image and tutorial were not regenerated.
+
+**Revision 2 (`f330aa8`, requested by Patrick on 2 November).** Three Historique figures, chosen from different families in the [Python Graph Gallery](https://python-graph-gallery.com/), drawn in d3 from history data the page already loads (the 2026 edition from `2026/data`):
+
+- **Part des points, édition par édition** (heatmap): each team's share of all points per edition, in one neutral ramp; ★ marks the champion and the 2026 column is outlined. Tooltip: rank, share and total.
+- **Avance du vainqueur** (lollipop): the winner's margin over the runner-up as a percentage of the runner-up's total, from CHAN +0.7 % (2022) to DOC +46 % (2021); 2026 CHEF +12 % as a hollow dot.
+- **En tête, semaine après semaine** (waffle): one square per recorded update in the colour of the team then leading, one row per edition (2022 has only its final standings). Legend: CHAN 93, DOC 63, CHEF 60, PAT 26 of 242 updates, no ties. Tooltip: lead over the second team.
+
+On narrow screens the heatmap's years shorten to 19…26 and waffle rows wrap so squares stay at least 8 px. All shares, margins and lead counts shown live were recomputed independently from `history/data/seasons.json`, `history/data/hebdo.json` and `2026/data/hebdo.json` and match. Datasets, `history/` files, the other tabs, navigation and tutorial are unchanged.
+
+**Revision-2 browser checks** (built-in browser, live URL, light 1024 px and dark 375 px): 0 console errors; six in-page hashes match; header and five totals; Joueurs tab unchanged with both two-shade posts; Historique bump chart and edition cards; the three new figures' values and tooltips; history files served byte-identical. The browser pane was not on screen, which pauses animation-frame redraws, so the data-driven redraws were re-triggered by switching tabs; with that, every chart drew.
+
+**Correction.** The revision-1 check reported no horizontal scroll on any tab at 375 px. That measurement was taken before the Historique data had loaded. With the data loaded, the Historique tab is 379 px wide at 375 px on both `7eadc7b` and `f330aa8`, caused by the existing 2025 transfer label « Giovanni Mpetshi Perricard→Justin Engel » in the edition detail. The new figures stay within the card (right edge 359 px). This was not fixed in step 6.
 
 ## Accepted qualifications carried
 
@@ -69,12 +83,13 @@ The only change is the `RACE_QUAL` comment in `2026/source/dashboard.html`, whic
 
 ## Step 7
 
-**Unblocked.** Use https://peozenou.github.io/race/2026/, bound to dashboard commit `7eadc7b` (data version `6eef7f8c31de`), verified live at 2026-11-02T18:02:34-05:00. Claude has not drafted or sent any email.
+**Unblocked; re-bind if needed.** Use https://peozenou.github.io/race/2026/, bound to dashboard commit `f330aa8` (data version `3565c4654c57`), verified live at 2026-11-02T21:55:26-05:00. Any step-7 receipt or draft bound to `7eadc7b` must be re-bound; the URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
 
 ## Files
 
 - [`completion.json`](completion.json): machine-readable completion note (public fields).
-- [`evidence/live-data-7eadc7b.json`](evidence/live-data-7eadc7b.json): served page version, headers, the six dataset hashes in both URL variants, assets, tutorial and landing page.
+- [`evidence/live-data-f330aa8.json`](evidence/live-data-f330aa8.json) and [`evidence/live-ui-f330aa8.json`](evidence/live-ui-f330aa8.json) (current, revision 2): served page, six datasets in both URL variants, history files, assets, tutorial and landing page; browser checks of the new figures.
+- [`evidence/live-data-7eadc7b.json`](evidence/live-data-7eadc7b.json) (revision 1): served page version, headers, the six dataset hashes in both URL variants, assets, tutorial and landing page.
 - [`evidence/live-ui-7eadc7b.json`](evidence/live-ui-7eadc7b.json): browser-check results (23 named checks).
 - `evidence/7eadc7b-01-composition-tooltip-light.jpg`: composition bar with both two-shade posts and the Engel/Blockx tooltip.
 - `evidence/7eadc7b-02-notes-sources-light.jpg`: Barème et sources tab with transfers and source dates.
