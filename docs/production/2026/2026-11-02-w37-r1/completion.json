@@ -7,8 +7,8 @@
   "release_branch": "data/2026-11-02-w37-r1",
   "data_commit_sha": "005231791f39eb6397c331726b4eeb8c9fc04e21",
   "previous_production_commit": "b04ca981a34f212c3426c021214b99d424a5119b",
-  "dashboard_commit_sha": "f330aa81a93e759ab180bc22e1a4a4073286b3e7",
-  "dashboard_commit_parent_chain": "b04ca98 (previous main) -> 0052317 (release data, fast-forward) -> 7eadc7b (week-37 build) -> a9d6317 (docs only) -> f330aa8 (Historique heatmap, lollipop and waffle)",
+  "dashboard_commit_sha": "aab1ce9798db008f166e182e5f6ad74ac83873dd",
+  "dashboard_commit_parent_chain": "b04ca98 (previous main) -> 0052317 (release data, fast-forward) -> 7eadc7b (week-37 build) -> a9d6317 (docs only) -> f330aa8 (Historique heatmap, lollipop and waffle) -> e31df13 (docs only) -> aab1ce9 (wrap long transfer names on Historique)",
   "dashboard_url": "https://peozenou.github.io/race/2026/",
   "handoff_hashes_verified_before_use": true,
   "handoff_hash_source": "The step-6 request named the release ID, branch and commit but listed no SHA-256 values; approved hashes are those of the six files at release commit 0052317, read from git before use.",
@@ -35,9 +35,9 @@
     "calendar": 13,
     "team_colors": 5
   },
-  "build_data_version": "3565c4654c57",
-  "live_data_version": "3565c4654c57",
-  "live_index_html_sha256": "6967fc94b892855ba4bbfce88f6529c28bb5e891f84f7e52cb3839c80b364159",
+  "build_data_version": "f130955966ac",
+  "live_data_version": "f130955966ac",
+  "live_index_html_sha256": "51f149d2030597f5c54ba035b5562c614dfae267856e7f34c21c9785d2d4b6f0",
   "live_index_matches_commit": true,
   "live_week": 37,
   "live_competition_date": "2026-11-02",
@@ -92,13 +92,18 @@
     "rune": "Elo, yElo and age shown as '—' (null), not zero.",
     "null_aggregates": "tpw, rpw, ace_pct, first_won, second_won remain null in players.json and are not displayed."
   },
-  "dashboard_source_changes": "RACE_QUAL comment now references release 2026-11-02-w37-r1; entries unchanged (Kouame 'adjust' only). No new hold or adjustment was named. Interface, design, navigation, Historique and tutorial unchanged. Six datasets incorporated unmodified; history/ not touched. Revision 2 (f330aa8, requested by Patrick on 2 Nov): three Historique figures inspired by the Python Graph Gallery, drawn from history data the page already loads (2026 from 2026/data): 'Part des points, édition par édition' (team × edition heatmap of share of all points, champion starred, 2026 outlined), 'Avance du vainqueur' (lollipop of the winner's margin over the runner-up, % of the runner-up's total) and 'En tête, semaine après semaine' (one square per recorded update in the leader's colour, legend with lead counts). Hover tooltips on all three; year labels shorten and waffle rows wrap on narrow screens. Datasets and history files unchanged.",
+  "dashboard_source_changes": "RACE_QUAL comment now references release 2026-11-02-w37-r1; entries unchanged (Kouame 'adjust' only). No new hold or adjustment was named. Interface, design, navigation, Historique and tutorial unchanged. Six datasets incorporated unmodified; history/ not touched. Revision 2 (f330aa8, requested by Patrick on 2 Nov): three Historique figures inspired by the Python Graph Gallery, drawn from history data the page already loads (2026 from 2026/data): 'Part des points, édition par édition' (team × edition heatmap of share of all points, champion starred, 2026 outlined), 'Avance du vainqueur' (lollipop of the winner's margin over the runner-up, % of the runner-up's total) and 'En tête, semaine après semaine' (one square per recorded update in the leader's colour, legend with lead counts). Hover tooltips on all three; year labels shorten and waffle rows wrap on narrow screens. Datasets and history files unchanged. Revision 3 (aab1ce9, requested by Patrick on 2 Nov): the Historique transfer list's name column can now shrink (minmax(0,1fr)) and long names wrap inside their pill (radius 9px), removing the 4 px horizontal overflow at 375 px.",
   "ui_checks_verified": true,
   "ui_checks": {
+    "revision_3": {
+      "total_checks": 5,
+      "failed": 0,
+      "console_errors": 0
+    },
     "revision_2": {
       "total_checks": 13,
       "failed": 1,
-      "failed_detail": "pre-existing 4 px mobile overflow on Historique (2025 transfer label), not caused by this release or revision",
+      "failed_detail": "pre-existing 4 px mobile overflow on Historique (2025 transfer label), not caused by this release or revision; fixed in revision 3",
       "console_errors": 0,
       "color_schemes": [
         "light",
@@ -123,8 +128,16 @@
       ]
     }
   },
-  "live_verified_at": "2026-11-02T21:55:26-05:00",
+  "live_verified_at": "2026-11-02T22:05:29-05:00",
   "observations": [
+    {
+      "what": "fetch of page, six datasets (two variants) and history files (aab1ce9)",
+      "at": "2026-11-02T22:04:48-05:00"
+    },
+    {
+      "what": "browser checks at 375 px dark on the live URL (aab1ce9), completed",
+      "at": "2026-11-02T22:05:29-05:00"
+    },
     {
       "what": "fetch of page, six datasets (two variants), history files, assets, tutorial and landing page (f330aa8)",
       "at": "2026-11-02T21:53:03-05:00"
@@ -144,31 +157,36 @@
   ],
   "deployment": {
     "route": "GitHub Pages, deploy from branch main (existing 'pages build and deployment' workflow)",
-    "actions_run_id": 41568762676,
-    "actions_run_url": "https://github.com/peozenou/race/actions/runs/41568762676",
+    "actions_run_id": 41569939158,
+    "actions_run_url": "https://github.com/peozenou/race/actions/runs/41569939158",
     "jobs": {
       "build": "success",
       "report-build-status": "success",
       "deploy": "success"
     },
-    "deployment_id": 7509118257,
-    "deployment_created_at": "2026-11-03T02:52:36Z",
-    "deploy_completed_at": "2026-11-03T02:52:47Z",
-    "served_last_modified": "Tue, 03 Nov 2026 02:52:43 GMT",
+    "deployment_id": 7509276187,
+    "deployment_created_at": "2026-11-03T03:04:23Z",
+    "deploy_completed_at": "2026-11-03T03:04:34Z",
+    "served_last_modified": "Tue, 03 Nov 2026 03:04:30 GMT",
     "previous": [
       {
         "commit": "7eadc7b",
         "actions_run_id": 41541660989,
         "deployment_id": 7505559597
+      },
+      {
+        "commit": "f330aa8",
+        "actions_run_id": 41568762676,
+        "deployment_id": 7509118257
       }
     ]
   },
   "push": {
     "ref": "main",
-    "from": "a9d6317",
-    "to": "f330aa8",
+    "from": "e31df13",
+    "to": "aab1ce9",
     "force": false,
-    "at": "2026-11-03T02:52:22Z"
+    "committed_at": "2026-11-03T03:04:08Z"
   },
   "accepted_qualifications_carried": [
     "69 historical zero cells lack matching saved source rows; not a general missing-equals-zero rule",
@@ -177,15 +195,23 @@
     "Historique 'rang actuel' reads history/data/ranks.json, still dated 26 October 2026 and labelled so on the page; the history export was not refreshed by this release"
   ],
   "public_repo_private_material_scan": "No workbook fingerprint, approval record, junior or personal data in the production diff or evidence.",
-  "step7": "Re-bind required if a draft or receipt was bound to 7eadc7b: use https://peozenou.github.io/race/2026/ bound to dashboard commit f330aa8 (data version 3565c4654c57). URL, week, datasets and totals unchanged. No email drafted or sent by Claude.",
+  "step7": "Re-bind required if a draft or receipt was bound to 7eadc7b or f330aa8: use https://peozenou.github.io/race/2026/ bound to dashboard commit aab1ce9 (data version f130955966ac). URL, week, datasets and totals unchanged. No email drafted or sent by Claude.",
   "public_copy": "Private fields (cleared workbook fingerprint, approval records) are held in private run storage.",
-  "presentation_revision": 2,
-  "ui_check_correction": "The revision-1 claim 'scrollWidth = clientWidth = 375 on all four tabs' was measured before the Historique data had loaded. With the data loaded, Historique is 379 px wide at 375 px on both 7eadc7b and f330aa8 because of the existing 2025 transfer label in the edition detail. Not fixed in step 6.",
+  "presentation_revision": 3,
+  "ui_check_correction": "The revision-1 claim 'scrollWidth = clientWidth = 375 on all four tabs' was measured before the Historique data had loaded. With the data loaded, Historique is 379 px wide at 375 px on both 7eadc7b and f330aa8 because of the existing 2025 transfer label in the edition detail. Fixed in revision 3 (aab1ce9): scrollWidth 375 on every tab and edition.",
   "superseded_production": {
     "dashboard_commit_sha": "7eadc7b130149fe2eecb86a4af1d3088f3faf44d",
     "live_index_html_sha256": "6ff07a462493ce0636f30a24b6c0975ebbec186df9582e1bf3ddf6383cdd428f",
     "live_verified_at": "2026-11-02T18:02:34-05:00",
     "data_version": "6eef7f8c31de",
     "superseded_by": "Historique figures requested by Patrick on 2026-11-02; datasets unchanged"
-  }
+  },
+  "superseded_production_history": [
+    {
+      "dashboard_commit_sha": "f330aa81a93e759ab180bc22e1a4a4073286b3e7",
+      "data_version": "3565c4654c57",
+      "live_index_html_sha256": "6967fc94b892855ba4bbfce88f6529c28bb5e891f84f7e52cb3839c80b364159",
+      "live_verified_at": "2026-11-02T21:55:26-05:00"
+    }
+  ]
 }

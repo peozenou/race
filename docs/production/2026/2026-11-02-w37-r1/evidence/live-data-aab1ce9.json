@@ -1,0 +1,104 @@
+{
+ "fetched_at": "2026-11-02T22:04:48-05:00",
+ "base": "https://peozenou.github.io/race/2026/",
+ "release_commit": "005231791f39eb6397c331726b4eeb8c9fc04e21",
+ "production_commit": "aab1ce9798db008f166e182e5f6ad74ac83873dd",
+ "index": {
+  "status": 200,
+  "sha256": "51f149d2030597f5c54ba035b5562c614dfae267856e7f34c21c9785d2d4b6f0",
+  "bytes": 169197,
+  "matches_commit": true,
+  "data_version": "f130955966ac",
+  "last_modified": "Tue, 03 Nov 2026 03:04:30 GMT",
+  "x_cache": "MISS",
+  "has_wrap_fix": true
+ },
+ "datasets": {
+  "hebdo": {
+   "approved": "bd28076246549a7b6934150fc199e58ad05f4136d1edc9526d6bfc856b1baa6a",
+   "canonical": {
+    "status": 200,
+    "sha256": "bd28076246549a7b6934150fc199e58ad05f4136d1edc9526d6bfc856b1baa6a",
+    "rows": 190
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "bd28076246549a7b6934150fc199e58ad05f4136d1edc9526d6bfc856b1baa6a",
+    "rows": 190
+   },
+   "match": true
+  },
+  "joueurs": {
+   "approved": "75f79e050b00a4060f7b2efefb0d14c3bb0b21e633eedfe77a6c8f65abb839d4",
+   "canonical": {
+    "status": 200,
+    "sha256": "75f79e050b00a4060f7b2efefb0d14c3bb0b21e633eedfe77a6c8f65abb839d4",
+    "rows": 1136
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "75f79e050b00a4060f7b2efefb0d14c3bb0b21e633eedfe77a6c8f65abb839d4",
+    "rows": 1136
+   },
+   "match": true
+  },
+  "players": {
+   "approved": "f37f92ec9d987604e3f7b12334c042800c4e0d955529abbe432eaca87965c31b",
+   "canonical": {
+    "status": 200,
+    "sha256": "f37f92ec9d987604e3f7b12334c042800c4e0d955529abbe432eaca87965c31b",
+    "rows": 32
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "f37f92ec9d987604e3f7b12334c042800c4e0d955529abbe432eaca87965c31b",
+    "rows": 32
+   },
+   "match": true
+  },
+  "matches": {
+   "approved": "721922e5ebd1a1caa6be2a979b94b29d91882349481788599c0de36996b39250",
+   "canonical": {
+    "status": 200,
+    "sha256": "721922e5ebd1a1caa6be2a979b94b29d91882349481788599c0de36996b39250",
+    "rows": 1676
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "721922e5ebd1a1caa6be2a979b94b29d91882349481788599c0de36996b39250",
+    "rows": 1676
+   },
+   "match": true
+  },
+  "calendar": {
+   "approved": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "canonical": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "rows": 13
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "rows": 13
+   },
+   "match": true
+  },
+  "team_colors": {
+   "approved": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "canonical": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "rows": 5
+   },
+   "page_versioned": {
+    "status": 200,
+    "sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "rows": 5
+   },
+   "match": true
+  }
+ },
+ "all_six_match": true,
+ "history_files_identical": true
+}

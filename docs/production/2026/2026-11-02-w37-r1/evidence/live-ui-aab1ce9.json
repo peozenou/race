@@ -1,0 +1,35 @@
+{
+ "url": "https://peozenou.github.io/race/2026/",
+ "browser": "Claude desktop built-in browser (Chromium), live URL, dark 375 px; redraws re-triggered by switching tabs (pane hidden)",
+ "data_version": "f130955966ac",
+ "completed_at": "2026-11-02T22:05:29-05:00",
+ "checks": {
+  "no_console_errors": {
+   "pass": true
+  },
+  "scroll_width_375": {
+   "pass": true,
+   "detail": {
+    "teams": 375,
+    "players": 375,
+    "notes": 375,
+    "history_2023": 375,
+    "history_2024": 375,
+    "history_2025": 375,
+    "history_2026": 375
+   }
+  },
+  "historique_charts_draw": {
+   "pass": true,
+   "detail": "bump 33 points, heatmap 33 cells, waffle 242 squares"
+  },
+  "local_all_editions_375": {
+   "pass": true,
+   "detail": "before publishing: scrollWidth 375 for editions 2019-2026 and all tabs; long names wrap to two lines inside their pill (21 px -> 38 px)"
+  },
+  "datasets_and_history": {
+   "pass": true,
+   "detail": "six datasets match the release; six history files byte-identical (live-data-aab1ce9.json)"
+  }
+ }
+}

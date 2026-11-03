@@ -29,7 +29,7 @@
   },
   "heatmap_values": {
    "pass": true,
-   "detail": "40 cells match shares recomputed from seasons.json and 2026 hebdo week 37; ★ on the 7 champions; 2026 column outlined",
+   "detail": "33 cells (40 team × edition slots, 7 where the team did not play) match shares recomputed from seasons.json and 2026 hebdo week 37; ★ on the 7 champions; 2026 column outlined",
    "tooltip": "Édition 2021 | DOC · 1er sur 4 | 40 % | Points au barème | 1 425"
   },
   "lollipop_values": {

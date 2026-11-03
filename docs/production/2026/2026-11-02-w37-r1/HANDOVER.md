@@ -7,19 +7,19 @@ Owner: **Claude**. Prepared 2 November 2026, America/New_York. This is the publi
 | Field | Value |
 |---|---|
 | `owner` | Claude |
-| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 2) |
+| `production_status` | `LIVE_DASHBOARD_VERIFIED` for release r1 (presentation revision 3) |
 | `release_id` | `2026-11-02-w37-r1` (branch `data/2026-11-02-w37-r1`) |
 | `data_commit_sha` | [`005231791f39eb6397c331726b4eeb8c9fc04e21`](https://github.com/peozenou/race/commit/005231791f39eb6397c331726b4eeb8c9fc04e21) |
-| `dashboard_commit_sha` | [`f330aa81a93e759ab180bc22e1a4a4073286b3e7`](https://github.com/peozenou/race/commit/f330aa81a93e759ab180bc22e1a4a4073286b3e7) |
-| Production history | `b04ca98` (previous main, Historique rework) → `0052317` (release data, fast-forward) → [`7eadc7b`](https://github.com/peozenou/race/commit/7eadc7b130149fe2eecb86a4af1d3088f3faf44d) (week-37 build) → `a9d6317` (docs only) → `f330aa8` (Historique heatmap, lollipop and waffle). The release branch sat directly on `b04ca98`, so all concurrent dashboard and history work on `main` is kept. |
+| `dashboard_commit_sha` | [`aab1ce9798db008f166e182e5f6ad74ac83873dd`](https://github.com/peozenou/race/commit/aab1ce9798db008f166e182e5f6ad74ac83873dd) |
+| Production history | `b04ca98` (previous main, Historique rework) → `0052317` (release data, fast-forward) → [`7eadc7b`](https://github.com/peozenou/race/commit/7eadc7b130149fe2eecb86a4af1d3088f3faf44d) (week-37 build) → `a9d6317` (docs only) → [`f330aa8`](https://github.com/peozenou/race/commit/f330aa81a93e759ab180bc22e1a4a4073286b3e7) (Historique heatmap, lollipop and waffle) → `e31df13` (docs only) → `aab1ce9` (wrap long transfer names). The release branch sat directly on `b04ca98`, so all concurrent dashboard and history work on `main` is kept. |
 | `dashboard_url` | https://peozenou.github.io/race/2026/ |
-| `build_data_version` / `live_data_version` | `3565c4654c57` / `3565c4654c57` |
+| `build_data_version` / `live_data_version` | `f130955966ac` / `f130955966ac` |
 | `live_week` | 37, Monday 2 November 2026 (competition week, not ISO week) |
-| `ui_checks_verified` | true (see the checks below, including one pre-existing mobile-width issue) |
-| `live_verified_at` | 2026-11-02T21:55:26-05:00 (data fetch 21:53:03-05:00) |
-| Deployment | GitHub Pages run [41568762676](https://github.com/peozenou/race/actions/runs/41568762676): build, report-build-status and deploy all success; deployment 7509118257, deploy job finished 2026-11-03T02:52:47Z. Served `index.html` byte-identical to the commit (SHA-256 `6967fc94b892855ba4bbfce88f6529c28bb5e891f84f7e52cb3839c80b364159`). |
+| `ui_checks_verified` | true (no remaining failures; every tab and edition fits a 375 px screen) |
+| `live_verified_at` | 2026-11-02T22:05:29-05:00 (data fetch 22:04:48-05:00) |
+| Deployment | GitHub Pages run [41569939158](https://github.com/peozenou/race/actions/runs/41569939158): build, report-build-status and deploy all success; deployment 7509276187, deploy job finished 2026-11-03T03:04:34Z. Served `index.html` byte-identical to the commit (SHA-256 `51f149d2030597f5c54ba035b5562c614dfae267856e7f34c21c9785d2d4b6f0`). |
 
-The first week-37 build, `7eadc7b` (data version `6eef7f8c31de`, run [41541660989](https://github.com/peozenou/race/actions/runs/41541660989)), was verified live at 2026-11-02T18:02:34-05:00 and superseded the same evening by revision 2 at Patrick's request. Both kept the six approved datasets unchanged.
+Earlier week-37 states, each verified live and superseded the same evening at Patrick's request: `7eadc7b` (data version `6eef7f8c31de`, run [41541660989](https://github.com/peozenou/race/actions/runs/41541660989)) at 2026-11-02T18:02:34-05:00, and `f330aa8` (data version `3565c4654c57`, run [41568762676](https://github.com/peozenou/race/actions/runs/41568762676)) at 21:55:26-05:00. All kept the six approved datasets unchanged.
 
 ### Live datasets
 
@@ -72,7 +72,9 @@ On narrow screens the heatmap's years shorten to 19…26 and waffle rows wrap so
 
 **Revision-2 browser checks** (built-in browser, live URL, light 1024 px and dark 375 px): 0 console errors; six in-page hashes match; header and five totals; Joueurs tab unchanged with both two-shade posts; Historique bump chart and edition cards; the three new figures' values and tooltips; history files served byte-identical. The browser pane was not on screen, which pauses animation-frame redraws, so the data-driven redraws were re-triggered by switching tabs; with that, every chart drew.
 
-**Correction.** The revision-1 check reported no horizontal scroll on any tab at 375 px. That measurement was taken before the Historique data had loaded. With the data loaded, the Historique tab is 379 px wide at 375 px on both `7eadc7b` and `f330aa8`, caused by the existing 2025 transfer label « Giovanni Mpetshi Perricard→Justin Engel » in the edition detail. The new figures stay within the card (right edge 359 px). This was not fixed in step 6.
+**Correction.** The revision-1 check reported no horizontal scroll on any tab at 375 px. That measurement was taken before the Historique data had loaded. With the data loaded, the Historique tab is 379 px wide at 375 px on both `7eadc7b` and `f330aa8`, caused by the existing 2025 transfer label « Giovanni Mpetshi Perricard→Justin Engel » in the edition detail. The new figures stay within the card (right edge 359 px).
+
+**Revision 3 (`aab1ce9`, requested by Patrick on 2 November).** The transfer list's name column can now shrink (`minmax(0,1fr)`) and a long name wraps inside its pill (radius 9 px, so one-line pills look as before). « Giovanni Mpetshi Perricard » now takes two lines. Live at 375 px in dark mode, the page is exactly 375 px wide on Équipes, Joueurs, Barème et sources and Historique, including the 2023–2026 edition details; locally, before publishing, all editions 2019–2026 were checked the same way. 0 console errors; the Historique charts draw; datasets and history files unchanged.
 
 ## Accepted qualifications carried
 
@@ -83,12 +85,13 @@ On narrow screens the heatmap's years shorten to 19…26 and waffle rows wrap so
 
 ## Step 7
 
-**Unblocked; re-bind if needed.** Use https://peozenou.github.io/race/2026/, bound to dashboard commit `f330aa8` (data version `3565c4654c57`), verified live at 2026-11-02T21:55:26-05:00. Any step-7 receipt or draft bound to `7eadc7b` must be re-bound; the URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
+**Unblocked; re-bind if needed.** Use https://peozenou.github.io/race/2026/, bound to dashboard commit `aab1ce9` (data version `f130955966ac`), verified live at 2026-11-02T22:05:29-05:00. Any step-7 receipt or draft bound to `7eadc7b` or `f330aa8` must be re-bound; the URL, week, datasets and totals are unchanged. Claude has not drafted or sent any email.
 
 ## Files
 
 - [`completion.json`](completion.json): machine-readable completion note (public fields).
-- [`evidence/live-data-f330aa8.json`](evidence/live-data-f330aa8.json) and [`evidence/live-ui-f330aa8.json`](evidence/live-ui-f330aa8.json) (current, revision 2): served page, six datasets in both URL variants, history files, assets, tutorial and landing page; browser checks of the new figures.
+- [`evidence/live-data-aab1ce9.json`](evidence/live-data-aab1ce9.json) and [`evidence/live-ui-aab1ce9.json`](evidence/live-ui-aab1ce9.json) (current, revision 3): served page, datasets, history files; 375 px width checks.
+- [`evidence/live-data-f330aa8.json`](evidence/live-data-f330aa8.json) and [`evidence/live-ui-f330aa8.json`](evidence/live-ui-f330aa8.json) (revision 2): served page, six datasets in both URL variants, history files, assets, tutorial and landing page; browser checks of the new figures.
 - [`evidence/live-data-7eadc7b.json`](evidence/live-data-7eadc7b.json) (revision 1): served page version, headers, the six dataset hashes in both URL variants, assets, tutorial and landing page.
 - [`evidence/live-ui-7eadc7b.json`](evidence/live-ui-7eadc7b.json): browser-check results (23 named checks).
 - `evidence/7eadc7b-01-composition-tooltip-light.jpg`: composition bar with both two-shade posts and the Engel/Blockx tooltip.
