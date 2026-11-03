@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="6eef7f8c31de">
+  <meta name="data-version" content="3565c4654c57">
   <title>THE RACE 2026 — Bilan 37e semaine</title>
   <meta name="description" content="Classement après la semaine 37 (2 novembre 2026) : CHEF en tête avec 19 004 points.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="THE RACE 2026 — Bilan 37e semaine">
   <meta property="og:description" content="Classement après la semaine 37 (2 novembre 2026) : CHEF en tête avec 19 004 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=6eef7f8c31de">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=3565c4654c57">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=6eef7f8c31de">
+  <link rel="stylesheet" href="assets/theme.css?v=3565c4654c57">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=6eef7f8c31de"></script>
+  <script src="assets/runtime.js?v=3565c4654c57"></script>
 </head>
 <body>
 <main class="site">
@@ -54,6 +54,8 @@
 .tr .tr-muted{color:var(--color-fg-muted);font-style:italic}
 .tr .tr-mark{color:var(--color-fg-muted);margin-left:1px;cursor:help}
 .tr .tr-chart{position:relative;min-height:260px}
+.tr .tr-chart-auto{min-height:120px}
+.tr .tr-heat-v{font-size:var(--cds-font-size-caption);pointer-events:none}
 .tr .tr-chart svg,.tr .tr-mult svg{display:block}
 .tr .tr-tick{fill:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
 .tr .tr-axis .domain{stroke:var(--cds-chart-axis)}
@@ -347,6 +349,26 @@
       <h2>Classement final de chaque édition</h2>
       <p class="tr-note">Position de chaque équipe à la fin de chaque édition ; 2026 en pointillé, à la dernière mise à jour. Survolez pour voir les totaux.</p>
       <div class="tr-chart dash-skeleton" id="hist-bump" data-source="hist_season_list team_colors"></div>
+    </div>
+
+    <div class="tr-grid">
+      <div class="tr-card" id="hist-heat-card">
+        <h2>Part des points, édition par édition</h2>
+        <p class="tr-note">Part de chaque équipe dans le total des points de toutes les équipes, en fin d'édition (2026 : dernière mise à jour). Plus la case est contrastée, plus la part est grande ; ★ : champion. La part compare les éditions malgré le changement de barème et du nombre d'équipes. Survolez une case pour le détail.</p>
+        <div class="tr-chart tr-chart-auto dash-skeleton" id="hist-heat" data-source="hist_season_list team_colors"></div>
+      </div>
+      <div class="tr-card" id="hist-margin-card">
+        <h2>Avance du vainqueur</h2>
+        <p class="tr-note">Écart entre le premier et le deuxième en fin d'édition, en pourcentage du total du deuxième ; 2026 en point creux, à la dernière mise à jour. Survolez une ligne pour les totaux.</p>
+        <div class="tr-chart tr-chart-auto dash-skeleton" id="hist-margin" data-source="hist_season_list team_colors"></div>
+      </div>
+    </div>
+
+    <div class="tr-card" id="hist-lead-card">
+      <h2>En tête, semaine après semaine</h2>
+      <p class="tr-note">Un carré par mise à jour enregistrée, dans l'ordre de la saison, à la couleur de l'équipe alors en tête ; un carré partagé en deux signale une égalité. 2022 n'a gardé que le classement final. Le total compte les mises à jour passées en tête sur toutes les éditions. Survolez un carré pour l'écart avec le deuxième.</p>
+      <div class="tr-legend" id="hist-lead-legend"></div>
+      <div class="tr-chart tr-chart-auto dash-skeleton" id="hist-lead" data-source="hist_hebdo team_weeks team_colors"></div>
     </div>
 
     <div class="tr-card" id="hist-editions-card">
@@ -1474,6 +1496,140 @@ dash.calc('hist_departures', {
       .on('pointerleave', () => { rule.style('display', 'none'); TR.hideTip(tip); });
   };
 
+  /* Part des points de chaque équipe à chaque édition (carte de chaleur, une seule teinte neutre) */
+  TR.drawHeat = (el, list, order) => {
+    const W = el.clientWidth; if (!W) return;
+    const seasons = list.map((s) => s.season);
+    const cells = list.flatMap((s) => {
+      const sum = d3.sum(s.standings, (r) => r.total);
+      return s.standings.map((r) => ({ season: s.season, team: r.team, rank: r.rank, total: r.total, share: sum ? r.total / sum : null, n: s.standings.length, live: s.status !== 'complete', scoring: s.scoring }));
+    });
+    const teams = order.filter((t) => cells.some((c) => c.team === t));
+    const head = 22, rowH = 34;
+    const H = head + teams.length * rowH + 2;
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, "Part de chaque équipe dans le total des points de toutes les équipes, édition par édition");
+    const lw = TR.textWidth(svg, teams, 'tr-tick') + 10;
+    const x = d3.scaleBand(seasons, [lw, W]);
+    const y = d3.scaleBand(teams, [head, head + teams.length * rowH]);
+    const [lo, hi] = d3.extent(cells, (c) => c.share);
+    const mix = (v) => 6 + 64 * (hi > lo ? (v - lo) / (hi - lo) : 0.5);
+    const cw = x.bandwidth() - 2, ch = y.bandwidth() - 2;
+    svg.append('g').selectAll('text').data(seasons).join('text').attr('class', 'tr-tick').attr('x', (d) => x(d) + x.bandwidth() / 2).attr('y', 12).attr('text-anchor', 'middle')
+      .attr('font-style', (d) => (d === HIST_CURRENT ? 'italic' : null)).text((d) => (x.bandwidth() < 44 ? String(d).slice(2) : d) + (d === HIST_CURRENT ? ' *' : ''));
+    svg.append('g').selectAll('text').data(teams).join('text').attr('class', 'tr-tick').attr('x', 0).attr('y', (d) => y(d) + y.bandwidth() / 2).attr('dy', '0.32em').text((d) => d);
+    const absent = teams.flatMap((t) => seasons.filter((s) => !cells.some((c) => c.team === t && c.season === s)).map((s) => ({ team: t, season: s })));
+    svg.append('g').selectAll('text').data(absent).join('text').attr('class', 'tr-tick').attr('x', (d) => x(d.season) + x.bandwidth() / 2).attr('y', (d) => y(d.team) + y.bandwidth() / 2)
+      .attr('dy', '0.32em').attr('text-anchor', 'middle').text('—');
+    const cell = svg.append('g').selectAll('g').data(cells).join('g').attr('transform', (c) => `translate(${x(c.season) + 1},${y(c.team) + 1})`);
+    cell.append('rect').attr('width', cw).attr('height', ch).attr('rx', 4)
+      .style('fill', (c) => `color-mix(in srgb, var(--color-fg) ${mix(c.share)}%, var(--color-panel))`)
+      .style('stroke', (c) => (c.live ? 'var(--cds-chart-reference)' : null)).attr('stroke-dasharray', (c) => (c.live ? '3 3' : null));
+    const unit = cw < 46 ? '' : ' %';
+    cell.append('text').attr('class', 'tr-heat-v').attr('x', cw / 2).attr('y', ch / 2).attr('dy', '0.32em').attr('text-anchor', 'middle')
+      .style('fill', (c) => (mix(c.share) > 40 ? 'var(--color-panel)' : 'var(--color-fg)'))
+      .text((c) => (c.rank === 1 && !c.live ? '★ ' : '') + Math.round(c.share * 100) + unit);
+    const tip = TR.tip(el);
+    cell.on('pointermove', (ev, c) => {
+      const [bx, by] = d3.pointer(ev, el);
+      TR.showTip(tip, el, bx, by, c.live ? `${c.season} · en cours` : `Édition ${c.season}`,
+        [{ color: TR.color(c.team, order), name: `${c.team} · ${TR.ord(c.rank)} sur ${c.n}`, value: TR.pct(c.share) },
+          { name: c.scoring === 'bareme' ? 'Points au barème' : 'Points', value: TR.fmt(c.total) }]);
+    }).on('pointerleave', () => TR.hideTip(tip));
+  };
+
+  /* Avance du vainqueur sur le deuxième, en % du total du deuxième (sucettes) */
+  TR.drawMargin = (el, list, order) => {
+    const W = el.clientWidth; if (!W) return;
+    const rows = list.filter((s) => s.standings.length > 1).map((s) => {
+      const [a, b] = s.standings;
+      return { season: s.season, a, b, v: b.total ? (a.total - b.total) / b.total : 0, live: s.status !== 'complete', scoring: s.scoring };
+    });
+    const rowH = 30, axisH = 22;
+    const H = rows.length * rowH + axisH + 6;
+    el.replaceChildren(); el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, "Écart entre le premier et le deuxième de chaque édition, en pourcentage du total du deuxième");
+    const fmtM = (v) => (v < 0.1 ? TR.dec1(v * 100) + ' %' : TR.pct(v));
+    const label = (r) => `${r.a.team} +${fmtM(r.v)}`;
+    const lw = TR.textWidth(svg, rows.map((r) => r.season + ' *'), 'tr-tick') + 10;
+    const rw = TR.textWidth(svg, rows.map(label), 'tr-endlabel') + 14;
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => r.v) || 1], [lw + 6, W - rw]).nice();
+    const y = d3.scaleBand(rows.map((r) => r.season), [6, 6 + rows.length * rowH]);
+    const yc = (r) => y(r.season) + y.bandwidth() / 2;
+    const ticks = x.ticks(Math.max(2, Math.min(5, Math.floor((W - lw - rw) / 70))));
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('class', 'tr-grid-line').attr('x1', x).attr('x2', x).attr('y1', 6).attr('y2', H - axisH);
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('class', 'tr-tick').attr('x', x).attr('y', H - 6).attr('text-anchor', 'middle').text((d) => TR.pct(d));
+    svg.append('g').selectAll('text').data(rows).join('text').attr('class', 'tr-tick').attr('x', 0).attr('y', yc).attr('dy', '0.32em')
+      .attr('font-style', (r) => (r.live ? 'italic' : null)).text((r) => (r.live ? r.season + ' *' : r.season));
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('line').attr('x1', x(0)).attr('x2', (r) => x(r.v)).attr('y1', yc).attr('y2', yc).attr('stroke', 'var(--cds-chart-axis)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
+    g.append('circle').attr('cx', (r) => x(r.v)).attr('cy', yc).attr('r', 6)
+      .attr('fill', (r) => (r.live ? 'var(--color-panel)' : TR.color(r.a.team, order))).attr('stroke', (r) => TR.color(r.a.team, order)).attr('stroke-width', 2);
+    g.append('text').attr('class', 'tr-endlabel').attr('x', (r) => x(r.v) + 12).attr('y', yc).attr('dy', '0.32em').text(label);
+    const tip = TR.tip(el);
+    g.append('rect').attr('x', 0).attr('y', (r) => y(r.season)).attr('width', W).attr('height', y.bandwidth()).attr('fill', 'transparent')
+      .on('pointermove', (ev, r) => {
+        const [bx, by] = d3.pointer(ev, el);
+        const unit = r.scoring === 'bareme' ? 'points au barème' : 'points';
+        TR.showTip(tip, el, bx, by, r.live ? `${r.season} · en cours, semaine ${list.find((s) => s.season === r.season).week}` : `Édition ${r.season}`,
+          [r.a, r.b].map((t) => ({ color: TR.color(t.team, order), name: `${TR.ord(t.rank)} ${t.team}`, value: TR.fmt(t.total) })),
+          `Écart : ${TR.fmt(r.a.total - r.b.total)} ${unit} (+${fmtM(r.v)})`);
+      })
+      .on('pointerleave', () => TR.hideTip(tip));
+  };
+
+  /* Équipe en tête à chaque mise à jour, une rangée de carrés par édition (gaufre chronologique) */
+  TR.drawLead = (el, leg, list, rows, order) => {
+    const W = el.clientWidth; if (!W) return;
+    const by = d3.group(rows.filter((r) => r.week > 0 && r.total !== null), (r) => r.season, (r) => r.week);
+    const strips = list.map((s) => ({
+      season: s.season, live: s.status !== 'complete',
+      weeks: [...(by.get(s.season) || new Map()).entries()].sort((p, q) => p[0] - q[0]).map(([week, rs]) => {
+        const srt = rs.slice().sort((p, q) => q.total - p.total);
+        const top = srt[0].total;
+        return { week, date: srt[0].date, top, lead: srt.filter((r) => r.total === top).map((r) => r.team), next: srt.find((r) => r.total < top) || null };
+      }),
+    }));
+    const count = new Map();
+    strips.forEach((s) => s.weeks.forEach((w) => w.lead.forEach((t) => count.set(t, (count.get(t) || 0) + 1))));
+    leg.replaceChildren(...[...count.entries()].sort((p, q) => q[1] - p[1] || order.indexOf(p[0]) - order.indexOf(q[0])).map(([t, n]) => {
+      const s = document.createElement('span'); s.append(TR.swatch(TR.color(t, order)), TR.text(`${t} : ${n}`)); return s;
+    }));
+    const maxN = d3.max(strips, (s) => s.weeks.length) || 1;
+    const gap = 2;
+    el.replaceChildren();
+    const probe = TR.svg(el, W, 10, '');
+    const lw = TR.textWidth(probe, strips.map((s) => s.season + ' *'), 'tr-tick') + 10;
+    probe.remove();
+    // Squares stay at least 8 px: on a narrow screen an edition wraps onto several lines.
+    const sz = Math.max(8, Math.min(14, Math.floor((W - lw) / maxN) - gap));
+    const cols = Math.max(1, Math.floor((W - lw + gap) / (sz + gap)));
+    const lineH = sz + gap, sep = 8;
+    const tops = []; let H = 0;
+    strips.forEach((s) => { tops.push(H); H += Math.max(1, Math.ceil(s.weeks.length / cols)) * lineH + sep; });
+    el.style.minHeight = H + 'px';
+    const svg = TR.svg(el, W, H, "Équipe en tête à chaque mise à jour, une rangée par édition de THE RACE");
+    const tip = TR.tip(el);
+    strips.forEach((s, i) => {
+      const y0 = tops[i] + sep / 2;
+      svg.append('text').attr('class', 'tr-tick').attr('x', 0).attr('y', y0 + sz / 2).attr('dy', '0.32em').attr('font-style', s.live ? 'italic' : null).text(s.live ? s.season + ' *' : s.season);
+      if (!s.weeks.length) { svg.append('text').attr('class', 'tr-tick').attr('x', lw).attr('y', y0 + sz / 2).attr('dy', '0.32em').text('classement final seulement'); return; }
+      const sq = svg.append('g').selectAll('g').data(s.weeks).join('g').attr('transform', (w, k) => `translate(${lw + (k % cols) * lineH},${y0 + Math.floor(k / cols) * lineH})`);
+      sq.each(function (w) {
+        const part = sz / w.lead.length;
+        w.lead.forEach((t, k) => d3.select(this).append('rect').attr('x', k * part).attr('width', part).attr('height', sz).attr('rx', w.lead.length > 1 ? 0 : Math.min(2, sz / 4)).attr('fill', TR.color(t, order)));
+      });
+      sq.append('rect').attr('x', -gap / 2).attr('y', -gap / 2).attr('width', lineH).attr('height', lineH).attr('fill', 'transparent')
+        .on('pointermove', (ev, w) => {
+          const [bx, by2] = d3.pointer(ev, el);
+          TR.showTip(tip, el, bx, by2, `${s.season} · semaine ${w.week} (${TR.date(w.date)})`,
+            w.lead.map((t) => ({ color: TR.color(t, order), name: w.lead.length > 1 ? `${t} (à égalité)` : `${t} en tête`, value: TR.fmt(w.top) })),
+            w.next ? `Avance : ${TR.fmt(w.top - w.next.total)} sur ${w.next.team}` : null);
+        })
+        .on('pointerleave', () => TR.hideTip(tip));
+    });
+  };
+
   /* Une carte par édition */
   TR.drawEditions = (el, list, order, pick, bests) => {
     el.replaceChildren(...list.map((s) => {
@@ -2027,7 +2183,7 @@ dash.calc('hist_departures', {
 
   const drawHistory = (order) => {
     const st = TR.state('hist_season_list', 'hist_honours');
-    const boxes = [$('hist-bump'), $('hist-rosters')];
+    const boxes = [$('hist-bump'), $('hist-heat'), $('hist-margin'), $('hist-lead'), $('hist-rosters')];
     if (st !== 'ok') {
       if (st === 'error') { boxes.forEach(TR.fail); } else boxes.forEach(TR.wait);
       return;
@@ -2061,6 +2217,22 @@ dash.calc('hist_departures', {
     // Classement final de chaque édition
     TR.ready($('hist-bump'));
     TR.drawBump($('hist-bump'), list, teams);
+
+    // Part des points, avance du vainqueur, équipe en tête à chaque mise à jour (2026 : données de la saison)
+    TR.ready($('hist-heat'));
+    TR.drawHeat($('hist-heat'), list, teams);
+    TR.ready($('hist-margin'));
+    TR.drawMargin($('hist-margin'), list, teams);
+    const lh = dash.data('hist_hebdo'), lw = dash.data('team_weeks');
+    if (lh.status === 'error' || lw.status === 'error') TR.fail($('hist-lead'));
+    else if (lh.status === 'ok' && lw.status === 'ok') {
+      const leadRows = [
+        ...lh.data.filter((r) => r.season < HIST_CURRENT && r.week !== null).map((r) => ({ season: r.season, week: r.week, date: r.date, team: r.team, total: r.total })),
+        ...lw.data.map((r) => ({ season: HIST_CURRENT, week: r.week, date: r.date, team: r.team, total: r.total })),
+      ];
+      TR.ready($('hist-lead'));
+      TR.drawLead($('hist-lead'), $('hist-lead-legend'), list, leadRows, teams);
+    }
 
     // Éditions
     // Best player of each edition's champion (leader for the current edition)
