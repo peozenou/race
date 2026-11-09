@@ -1,0 +1,392 @@
+{
+ "url": "https://peozenou.github.io/race/2026/",
+ "browser": "Headless Google Chrome (Playwright) in Claude's cloud workspace, on the live canonical URL; light 1280 px and dark 375 px",
+ "started_at": "2026-11-09T18:56:24-05:00",
+ "completed_at": "2026-11-09T18:57:37-05:00",
+ "data_version": "a6518298bcdb",
+ "checks": {
+  "no_console_errors": {
+   "pass": true,
+   "detail": "0 error-level console messages or page errors on every load (light 1280 px, dark 375 px)"
+  },
+  "data_requests_versioned": {
+   "pass": true,
+   "detail": [
+    "2026/data/calendar.json?v=a6518298bcdb 200",
+    "2026/data/hebdo.json?v=a6518298bcdb 200",
+    "2026/data/joueurs.json?v=a6518298bcdb 200",
+    "2026/data/matches.json?v=a6518298bcdb 200",
+    "2026/data/players.json?v=a6518298bcdb 200",
+    "2026/data/team_colors.json?v=a6518298bcdb 200",
+    "history/data/calendar.json?v=a6518298bcdb 200",
+    "history/data/hebdo.json?v=a6518298bcdb 200",
+    "history/data/players.json?v=a6518298bcdb 200",
+    "history/data/ranks.json?v=a6518298bcdb 200",
+    "history/data/rosters.json?v=a6518298bcdb 200",
+    "history/data/seasons.json?v=a6518298bcdb 200"
+   ]
+  },
+  "inpage_hashes_match": {
+   "pass": true,
+   "detail": {
+    "hebdo": "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2",
+    "joueurs": "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4",
+    "players": "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4",
+    "matches": "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+   }
+  },
+  "data_version": {
+   "pass": true,
+   "detail": "meta data-version a6518298bcdb = build output"
+  },
+  "header_title_takeaway": {
+   "pass": true,
+   "detail": [
+    "THE RACE 2026 — Bilan 38e semaine",
+    "Après la semaine 38 (9 nov. 2026), CHEF est devant avec 19 134 points, suivi de DOC. Meilleure progression de la semaine : CHAN (+1 140), notamment grâce à Alcaraz (+990).",
+    "Sources : Tennis Abstract et Tennis Explorer"
+   ]
+  },
+  "standings_cards": {
+   "pass": true,
+   "detail": "1er · CHEF\n19 134\nRace 18 939 · Duels 195\n+130 depuis la dernière mise à jour\nEn tête\n2e · DOC\n17 126\nRace 16 971 · Duels 155\n+176 depuis la dernière mise à jour\n2 008 derrière la tête\n3e · CHAN\n17 080\nRace 16 875 · Duels 205\n+1 140 depuis la dernière mise à jour\n2 054 derrière la tête\n4e · PAT\n14 213\nRace 14 053 · Duels 160\n+1 070 depuis la dernière mise à jour\n4 921 derrière la tête\n5e · JULES\n11 707\nRace 11 592 · Duels 115\n+25 depuis la dernière mise à jour\n7 427 derrière la tête"
+  },
+  "season_chart_tooltip": {
+   "pass": true,
+   "detail": "Semaine 17 · 15 juin 2026\nCHEF\n12 159\nCHAN\n10 120\nDOC\n9 193\nPAT\n6 938\nJULES\n5 885"
+  },
+  "duel_matrix_asof": {
+   "pass": true,
+   "detail": "9 nov. 2026"
+  },
+  "players_table": {
+   "pass": true,
+   "detail": {
+    "rows": 30,
+    "header": [
+     "Rang",
+     "Joueur",
+     "Équipe",
+     "Pts Race",
+     "Part de l'équipe",
+     "Dern. sem.",
+     "4 dern. sem.",
+     "Tendance",
+     "V–D",
+     "Titres",
+     "Pts duels",
+     "Rang ATP",
+     "Elo"
+    ],
+    "rang_column": [
+     "1 =",
+     "2 =",
+     "3 =",
+     "4 =",
+     "5 =",
+     "6 =",
+     "7 =",
+     "8 =",
+     "9 =",
+     "10 =",
+     "11 ▲1",
+     "12 ▼1",
+     "13 =",
+     "14 =",
+     "15 ▲2",
+     "16 ▼1",
+     "17 ▼1",
+     "18 =",
+     "19 =",
+     "20 =",
+     "21 =",
+     "22 =",
+     "23 =",
+     "24 =",
+     "25 =",
+     "26 =",
+     "27 =",
+     "28 =",
+     "29 =",
+     "30 ="
+    ]
+   }
+  },
+  "players_take": {
+   "pass": true,
+   "detail": "Zverev (DOC) compte le plus de points Race (9 350) ; Sinner (sorti) (CHEF) a le meilleur rendement, avec 883 points par tournoi."
+  },
+  "team_filter_six_per_team": {
+   "pass": true,
+   "detail": {
+    "PAT": [
+     "Shelton",
+     "De Minaur",
+     "Ruud",
+     "Tien",
+     "Engel/Blockx",
+     "Blanch"
+    ],
+    "DOC": [
+     "Zverev",
+     "Cobolli",
+     "Fritz",
+     "Kouame",
+     "Budkov Kjaer",
+     "Bernet"
+    ],
+    "CHAN": [
+     "Alcaraz",
+     "Medvedev",
+     "Paul",
+     "Mensik",
+     "Michelsen",
+     "Rune"
+    ],
+    "CHEF": [
+     "Sinner/Lehecka",
+     "Fils",
+     "Jodar",
+     "Rublev",
+     "Fonseca",
+     "Draper"
+    ],
+    "JULES": [
+     "Tiafoe",
+     "Djokovic",
+     "Bublik",
+     "Musetti",
+     "Humbert",
+     "Dimitrov"
+    ]
+   }
+  },
+  "search": {
+   "pass": true,
+   "detail": {
+    "search_bloc": [
+     [
+      "23 =",
+      "Engel/Blockx",
+      "PAT",
+      "747",
+      "5 %",
+      "−10",
+      "+10",
+      "",
+      "37–19",
+      "1",
+      "5",
+      "n° 28",
+      "1 894"
+     ]
+    ],
+    "search_sinner": [
+     [
+      "2 =",
+      "Sinner/Lehecka",
+      "CHEF",
+      "8 435",
+      "45 %",
+      "0",
+      "+485",
+      "",
+      "40–22",
+      "0",
+      "75",
+      "n° 15",
+      "1 949"
+     ]
+    ],
+    "search_kouame": [
+     [
+      "24 =",
+      "Kouame",
+      "DOC",
+      "449*",
+      "3 %",
+      "0",
+      "+156",
+      "",
+      "37–22",
+      "4",
+      "0",
+      "n° 132",
+      "1 463"
+     ]
+    ],
+    "search_rune": [
+     [
+      "30 =",
+      "Rune",
+      "CHAN",
+      "120",
+      "1 %",
+      "0",
+      "+120",
+      "",
+      "4–4",
+      "0",
+      "5",
+      "n° 406",
+      "—"
+     ]
+    ]
+   }
+  },
+  "composition_two_shades": {
+   "pass": true,
+   "detail": {
+    "fills": [
+     "rgb(11, 11, 11)",
+     "rgb(147, 196, 125)",
+     "rgb(103, 137, 88)",
+     "rgb(31, 31, 31)",
+     "rgb(246, 178, 107)",
+     "rgb(111, 168, 220)",
+     "rgb(142, 124, 195)",
+     "rgb(99, 87, 137)",
+     "rgb(153, 153, 153)",
+     "rgb(255, 255, 255)"
+    ],
+    "legend": "CHEF, poste Sinner/Lehecka :\nSinner (jusqu’au 12 oct.)\nLehecka (depuis le 12 oct.)\nPAT, poste Engel/Blockx :\nEngel (jusqu’au 8 juin)\nBlockx (depuis le 8 juin)"
+   }
+  },
+  "composition_tooltips": {
+   "pass": true,
+   "detail": {
+    "Engel/Blockx": [
+     "PAT · Engel/Blockx\nEngel (sorti)\n62\nBlockx (entré)\n685\nTotal du poste\n747\nPart de l'équipe\n5 %"
+    ],
+    "Sinner/Lehecka": [
+     "CHEF · Sinner/Lehecka\nSinner (sorti)\n7 950\nLehecka (entré)\n485\nTotal du poste\n8 435\nPart de l'équipe\n45 %"
+    ],
+    "note": "Engel's 62-point segment is too narrow to hover on its own; the post tooltip from the Blockx segment shows both parts"
+   }
+  },
+  "detail_sinner_lehecka": {
+   "pass": true,
+   "detail": {
+    "name": "Sinner/Lehecka",
+    "sub": "Jiri Lehecka · CHEF · ATP n° 15 · Race n° 14 · 24,8 ans",
+    "kpis": "8 435\nPoints Race comptés (poste)\n40–22\nVictoires–défaites\n0 / 3\nTitres / finales\n0\nPoints de duel\n1 949\nElo\n1 966\nyElo",
+    "qual": "Lehecka remplace Sinner depuis le 12 oct. 2026 : CHEF garde les 7 950 points Race et les 75 points de duel de Sinner ; Lehecka y ajoute 485 points Race comptés depuis son arrivée.",
+    "race_title": "Points Race comptés pour le poste Sinner/Lehecka à chaque mise à jour",
+    "race_fills": [
+     "rgb(147, 196, 125)",
+     "rgb(103, 137, 88)",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "pick": [
+     "Lehecka (depuis le 12 oct.)",
+     "Sinner (jusqu’au 12 oct.)"
+    ],
+    "switch": {
+     "Sinner": {
+      "sub": "Jannik Sinner · CHEF · ATP n° 1 · Race n° 2 · 24,8 ans · classements au 5 oct. 2026",
+      "kpis": "8 435\nPoints Race comptés (poste)\n44–3\nVictoires–défaites\n6 / 6\nTitres / finales\n75\nPoints de duel\n2 297\nElo\n2 323\nyElo",
+      "matches_rows": 13
+     },
+     "Lehecka": {
+      "sub": "Jiri Lehecka · CHEF · ATP n° 15 · Race n° 14 · 24,8 ans",
+      "kpis": "8 435\nPoints Race comptés (poste)\n40–22\nVictoires–défaites\n0 / 3\nTitres / finales\n0\nPoints de duel\n1 949\nElo\n1 966\nyElo",
+      "matches_rows": 13
+     }
+    }
+   }
+  },
+  "detail_engel_blockx": {
+   "pass": true,
+   "detail": {
+    "name": "Engel/Blockx",
+    "sub": "Alexander Blockx · PAT · ATP n° 28 · Race n° 28 · 21,3 ans",
+    "kpis": "747\nPoints Race comptés (poste)\n37–19\nVictoires–défaites\n1 / 3\nTitres / finales\n5\nPoints de duel\n1 894\nElo\n1 916\nyElo",
+    "qual": "Blockx remplace Engel depuis le 8 juin 2026 : PAT garde les 62 points Race et les 0 points de duel de Engel ; Blockx y ajoute 685 points Race comptés depuis son arrivée.",
+    "race_title": "Points Race comptés pour le poste Engel/Blockx à chaque mise à jour",
+    "race_fills": [
+     "rgb(142, 124, 195)",
+     "rgb(99, 87, 137)",
+     "rgba(0, 0, 0, 0)"
+    ],
+    "pick": [
+     "Blockx (depuis le 8 juin)",
+     "Engel (jusqu’au 8 juin)"
+    ],
+    "switch": {
+     "Engel": {
+      "sub": "Justin Engel · PAT · ATP n° 607 · Race n° 594 · 18,6 ans · classements au 26 oct. 2026",
+      "kpis": "747\nPoints Race comptés (poste)\n6–14\nVictoires–défaites\n0 / 0\nTitres / finales\n0\nPoints de duel\n1 411\nElo\n1 344\nyElo",
+      "matches_rows": 13
+     },
+     "Blockx": {
+      "sub": "Alexander Blockx · PAT · ATP n° 28 · Race n° 28 · 21,3 ans",
+      "kpis": "747\nPoints Race comptés (poste)\n37–19\nVictoires–défaites\n1 / 3\nTitres / finales\n5\nPoints de duel\n1 894\nElo\n1 916\nyElo",
+      "matches_rows": 13
+     }
+    }
+   }
+  },
+  "kouame_adjustment": {
+   "pass": true,
+   "detail": [
+    "Kouame: contribution comptée de 449, soit ses 425 points Race Tennis Explorer et un ajustement approuvé de +24."
+   ]
+  },
+  "player_qual_note": {
+   "pass": true,
+   "detail": "Sinner/Lehecka (CHEF) : Lehecka remplace Sinner depuis le 12 oct. 2026 ; la ligne additionne les points Race et de duel comptés pour les deux joueurs, avec le bilan, le rang et l'Elo de Lehecka. * Kouame (DOC) : contribution comptée de 449, soit ses 425 points Race Tennis Explorer et un ajustement approuvé de +24. Engel/Blockx (PAT) : Blockx remplace Engel depuis le 8 juin 2026 ; la ligne additionne les points Race et de duel comptés pour les deux joueurs, avec le bilan, le rang et l'Elo de Blockx."
+  },
+  "rune_nulls": {
+   "pass": true,
+   "detail": "Elo shown as '—' in the table (null, not zero)"
+  },
+  "no_nan_or_null_text": {
+   "pass": true,
+   "detail": "no NaN/undefined/null/Infinity in page text after visiting all four tabs; null aggregate rates (tpw, rpw, ace_pct, first_won, second_won) are not displayed"
+  },
+  "notes_sources_dates": {
+   "pass": true,
+   "detail": {
+    "src-week": "semaine 38, 9 nov. 2026",
+    "src-matches": "9 nov. 2026",
+    "src-rank": "9 nov. 2026",
+    "src-rank-out": " Classements conservés à une autre date : Engel (sorti), 26 oct. 2026 ; Sinner (sorti), 5 oct. 2026.",
+    "src-elo": "28 sept. 2026"
+   }
+  },
+  "historique_tab": {
+   "pass": true,
+   "detail": {
+    "honours": "Équipe\n\t\nTitres\n\t\nAnnées\n\t\n2e\n\t\nRang moyen\n\t\n% total pts\n\t\n2026 (en cours)\n\n\nCHAN\t3\t2022, 2023, 2025\t1\t2,0 (2019–2025)\t28 %\t3e (sem. 38)\n\nDOC\t2\t2020, 2021\t3\t2,0 (2019–2025)\t29 %\t2e (sem. 38)\n\nCHEF\t1\t2024\t2\t2,5 (2020–2025)\t25 %\t1er (sem. 38)\n\nPAT\t1\t2019\t1\t3,4 (2019–2025)\t19 %\t4e (sem. 38)\n\nJULES\t0\t—\t0\t4,0 (2025)\t16 %\t5e (sem. 38)",
+    "charts_drawn": {
+     "hist-heat": 124,
+     "hist-margin": 65,
+     "hist-lead": 746,
+     "hist-bump": 91,
+     "hist-season-chart": 103
+    }
+   }
+  },
+  "tab_navigation": {
+   "pass": true,
+   "detail": "Équipes, Joueurs, Historique, Barème et sources all opened and rendered"
+  },
+  "mobile_375px_no_horizontal_scroll": {
+   "pass": true,
+   "detail": {
+    "sw_teams": 375,
+    "sw_players": 375,
+    "sw_notes": 375,
+    "sw_history": 375
+   }
+  },
+  "desktop_1280px_no_horizontal_scroll": {
+   "pass": true,
+   "detail": "scrollWidth 1280 on all four tabs"
+  }
+ },
+ "failed": 0,
+ "total_checks": 25
+}

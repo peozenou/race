@@ -1,0 +1,97 @@
+{
+ "fetched_at": "2026-11-09T18:57:46-05:00",
+ "first_fetch_at": "2026-11-09T18:55:58-05:00",
+ "base": "https://peozenou.github.io/race/2026/",
+ "release_commit": "80dd9c93e80f058cfd2cc7dca31dd2f17b9341ef",
+ "production_commit": "28ed160e1c87beeaaf567e42fca96e824821bc86",
+ "index": {
+  "status": 200,
+  "sha256": "100f1d11aa61aac58e180b87b8d7852fb80d2d5849261507f939ea6401fdb7ca",
+  "matches_commit": true,
+  "data_version": "a6518298bcdb",
+  "title": "THE RACE 2026 — Bilan 38e semaine",
+  "last_modified": "Mon, 09 Nov 2026 23:55:17 GMT"
+ },
+ "datasets": {
+  "hebdo": {
+   "approved": "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2",
+   "canonical_sha256": "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2",
+   "page_versioned_sha256": "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2",
+   "inpage_browser_sha256": [
+    "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2",
+    "0ab8245921f138b8f6f30160d1565780a0db615dbdc43eedf971092746515da2"
+   ],
+   "rows": 195,
+   "match": true
+  },
+  "joueurs": {
+   "approved": "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4",
+   "canonical_sha256": "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4",
+   "page_versioned_sha256": "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4",
+   "inpage_browser_sha256": [
+    "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4",
+    "054a9835699f79150d2b826a829fa7628929b47210d50a9805c0e0e0e01917f4"
+   ],
+   "rows": 1168,
+   "match": true
+  },
+  "players": {
+   "approved": "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4",
+   "canonical_sha256": "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4",
+   "page_versioned_sha256": "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4",
+   "inpage_browser_sha256": [
+    "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4",
+    "f0982f1a5f0f9ab9da22877eaed9df9001174c2c09eff197655472ffa243e7f4"
+   ],
+   "rows": 32,
+   "match": true
+  },
+  "matches": {
+   "approved": "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349",
+   "canonical_sha256": "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349",
+   "page_versioned_sha256": "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349",
+   "inpage_browser_sha256": [
+    "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349",
+    "3375a378f65d05f46957d6f49e746e67e09eeeff3a33bb369972bb0efaee0349"
+   ],
+   "rows": 1726,
+   "match": true
+  },
+  "calendar": {
+   "approved": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "canonical_sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "page_versioned_sha256": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "inpage_browser_sha256": [
+    "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a"
+   ],
+   "rows": 13,
+   "match": true
+  },
+  "team_colors": {
+   "approved": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "canonical_sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "page_versioned_sha256": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "inpage_browser_sha256": [
+    "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+    "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+   ],
+   "rows": 5,
+   "match": true
+  }
+ },
+ "assets": {
+  "assets/theme.css?v=a6518298bcdb": "byte-identical to commit",
+  "assets/runtime.js?v=a6518298bcdb": "byte-identical to commit"
+ },
+ "tutoriel_mp4": {
+  "status": 200,
+  "bytes": 6536024,
+  "byte_identical": true
+ },
+ "landing_page": {
+  "status": 200,
+  "byte_identical": true
+ },
+ "mixed_cache": "none: canonical, ?v= and in-page variants all return the approved bytes"
+}
