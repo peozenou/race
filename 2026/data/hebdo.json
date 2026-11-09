@@ -1518,5 +1518,45 @@
 "race": 11572,
 "duels": 110,
 "total": 11682
+},
+{
+"week": 38,
+"date": "2026-11-09",
+"team": "PAT",
+"race": 14053,
+"duels": 160,
+"total": 14213
+},
+{
+"week": 38,
+"date": "2026-11-09",
+"team": "DOC",
+"race": 16971,
+"duels": 155,
+"total": 17126
+},
+{
+"week": 38,
+"date": "2026-11-09",
+"team": "CHAN",
+"race": 16875,
+"duels": 205,
+"total": 17080
+},
+{
+"week": 38,
+"date": "2026-11-09",
+"team": "CHEF",
+"race": 18939,
+"duels": 195,
+"total": 19134
+},
+{
+"week": 38,
+"date": "2026-11-09",
+"team": "JULES",
+"race": 11592,
+"duels": 115,
+"total": 11707
 }
 ]
