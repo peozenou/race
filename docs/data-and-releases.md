@@ -1,6 +1,6 @@
 # Dashboard data and release contract
 
-The dashboard uses the existing six-file JSON data store in `2026/data/`. Google Sheets is the operational review surface; a public JSON release is a downstream export of a cleared workbook state. A data refresh should preserve the consumed schemas and source meanings.
+The dashboard uses the existing six-file JSON data store in `2026/data/`. Google Sheets is the operational review surface; a public JSON release is a downstream export of a source-audited, frozen and approved release snapshot. A data refresh should preserve the consumed schemas and source meanings.
 
 ## Source authority
 
@@ -33,7 +33,7 @@ The match schema includes `mid`, `player`, `short`, `team`, `event_date`, `event
 
 ## Identities, dates and transfers
 
-There are 30 active selections, six per team. Historical public datasets may contain more players or current-week contribution rows because outgoing earned credit is retained. A transfer does not authorize deletion of the outgoing player's matches, points or history. The 2026 Sinner/Lehecka transfer illustrates this distinction: `players.json` holds 31 player records, while the dashboard shows 30 lineup lines. Do not enforce a blanket 30-row limit on public files.
+There are 30 active selections, six per team. Historical public datasets may contain more players or current-week contribution rows because outgoing earned credit is retained. A transfer does not authorize deletion of the outgoing player's matches, points or history. The current edition retains both Sinner/Lehecka and Engel/Blockx lineage; resolve its actual published membership from the approved registry/ledger, while the dashboard shows 30 lineup lines. Do not enforce a blanket 30-row limit on public files.
 
 Maintain an explicit source-to-export identity and transfer mapping. Display names and labels such as “entered” or “left” are not a substitute for the approved ledger. Distinguish a player's raw TE points, outgoing credit kept by a team, incoming gains after entry and a deliberately held incoming contribution. An unknown entry baseline is not an observed zero. Keep the baseline unresolved and guard the dependent gains until verified.
 
@@ -48,9 +48,9 @@ The dashboard keeps six posts per team by showing an in-season replacement as on
 - **Colours.** The outgoing player's part keeps the team colour from `team_colors.json`. The incoming player's part uses a darker shade of it, the team colour darkened one step (CHEF `#93c47d` becomes `#678958`). This applies to the team composition bar (one segment split in two, with a legend and per-player tooltip), the post chart in the detail (stacked bands), and the detail's player buttons and surface bars. No colour is added to `team_colors.json`.
 - **Held incoming contribution.** While the incoming player's credited JOUEURS value is 0 under an unresolved entry baseline, the line shows his part as pending. It shows no gains and gives his darker segment no width, and notes that his raw TE Race points are not yet counted. The display switches off by itself once a cleared release credits him.
 
-**Export contract for step 5:** keep both player records, the ` (sorti)` / ` (entré)` labels and one shared `transfer_date` for the pair. Keep both players' JOUEURS rows. No schema change is involved.
+**Phase-3 export contract:** keep both player records, the ` (sorti)` / ` (entré)` labels and one shared `transfer_date` for the pair. Keep both players' JOUEURS rows. No schema change is involved.
 
-Per-player display qualifications (a held incoming contribution, an approved Race adjustment such as Kouame's +24) are listed in the dashboard source (`RACE_QUAL` in `2026/source/dashboard.html`). When a release introduces a new hold or adjustment, the step-5 handoff names it, so Claude can add it in step 6.
+Per-player display qualifications (a held incoming contribution, an approved Race adjustment such as Kouame's +24) are listed in the dashboard source (`RACE_QUAL` in `2026/source/dashboard.html`). When a release introduces a new hold or adjustment, the release handoff names it, so Claude can add it in phase 4.
 
 Keep competition dates and actual ranking/rating publication dates separate. `hebdo.date` retains the approved workbook's competition/update-date meaning. Do not relabel a competition Monday to an earlier ranking publication date. `rankings_date` and `elo_date` retain the selected source dates. TA's `event_date` may be the tournament start date; it is not automatically the match's completion timestamp.
 
@@ -64,43 +64,26 @@ Prefer approved effective summary cells to a fresh calculation. When recomputati
 
 Reconcile each team's Race, Duels and any explicit adjustment to Total. An adjustment already included in Race must not be added again. Do not expect unadjusted current-player TE sums to equal a team total when retained transfer credit or approved offsets apply.
 
-## Step-5 release procedure
+## Candidate sealing and phase-3 release
 
-1. **Confirm clearance and state.** Read Patrick's exact final review approval and its workbook/source/roster/rules/cutoff fingerprint. Freshly reread the relevant Sheet values before extraction. A changed dependency returns to its owning step for verification and renewed affected clearance.
-2. **Read current repository state.** Check remote HEAD, current schemas and any concurrent data/dashboard changes. Build on that state; a local checkout can be stale.
-3. **Prepare an immutable candidate.** Include all six datasets and a private manifest, source-to-export comparison and Claude handoff note. Preserve unchanged calendar/colors and the current source/dashboard design unless separately in scope.
-4. **Validate all fields and coverage.** Compare exported values against independently prepared cleared-source evidence, not an expected file generated from the candidate itself. Run structural and internal checks as well as the source comparison.
-5. **Review the bounded data diff.** Keep it to the six intended data files on a dedicated release branch. Detect concurrent edits. Prefer one commit for the complete data release; production publication and generated page output belong to Claude in step 6.
-6. **Commit, read back and hand off.** Verify all six hashes at the release-branch commit. Save release ID/branch/commit, previous version, counts and the Claude handoff in the private receipt. Keep production pending until Claude completes step 6.
-The step-5 handoff is not dashboard production. Pass the exact release to Claude for the required step 6 described below.
+1. **Before sealing, verify source and operational state.** Use the approved Start/profile scope, fresh bounded prestate/readback and complete primary-source comparison. Establish protected-history baseline or verified routine deltas. A changed actual dependency invalidates only its affected checks.
+2. **Read current repository state.** Inspect remote HEAD, schemas and concurrent dashboard/data work. Preserve unrelated changes.
+3. **Seal one immutable candidate.** Include all six datasets and private source/roster/rules/transfers/cutoff manifests, frozen export-value cells, independent reconciliation, qualifications, backup proof and a candidate digest. Calendar/colors remain unchanged unless separately in scope.
+4. **Obtain the exact release decision.** Patrick approves the concrete reviewed candidate hash. A required failed or unexamined scope cannot pass. Start authorization and final candidate approval remain separate.
+5. **Commit coherently and read back.** Publish the six-file data state in one dedicated release-branch transaction where possible. Verify all six hashes at the resulting immutable commit and save release ID, branch/commit, counts, actual source dates and prior-version rollback reference.
+6. **Prepare the Claude handoff.** Generate one compact brief from that manifest. Production remains awaiting Claude until the actual served release is verified. Patrick invokes Claude explicitly; no automatic assistant messaging is configured.
 
-Required validation includes unique grains, five teams, 30 active selections, explicit archived membership, complete expected historical/current contribution sets, correct source dates, all five totals, consistent transfer rules, native types, missingness and no private fields. Exact public row counts come from the approved release contract rather than a hardcoded historical count.
+After sealing, approved source/release evidence is authoritative. Volatile LIVE IMPORTHTML health is separate: a later fetch outage does not revoke an unchanged frozen release or its production receipt. A real frozen-value/rule/output correction creates a linked candidate revision and renewed affected approval; never silently rebind.
 
-The locally installed `check_dashboard.py` helper checks six-file structure/internal consistency against an independently prepared expectation contract. It does not read Sheets or establish source truth by itself. It is part of the Codex skill environment and is not assumed to exist after cloning this repository.
+Validation covers every exported field against independently source-derived expectations, unique grains, five teams, 30 active selections plus explicit outgoing membership, complete history/current contribution sets, correct dates, transfer/duel rules, null/type meanings and absence of private fields. The installed check_dashboard.py helper adds structure/internal checks; candidate equality alone does not prove source truth.
 
-## Step 6 — Claude build, publication and live verification
+## Phase 4 — Claude build and live verification
 
-Claude owns this production step. Read the [production runbook](claude-dashboard-production.md), the exact approved data release and current remote HEAD. Incorporate that release, make the data-driven dashboard update and run the existing builder from the repository root:
+Claude reads the approved six-file release and current production HEAD, preserves unrelated source/design/history/tutorial work, runs **python3 2026/tools/build.py**, and publishes the approved data with its necessary generated page/source changes through the configured Pages route. The builder also hashes the history/runtime inputs its current implementation reads; inspect that implementation rather than assuming an old build contract.
 
-```sh
-python3 2026/tools/build.py
-```
+Read the [production runbook](claude-dashboard-production.md). Verify successful deployment, the canonical URL, all six served dataset hashes, matching build/live version, competition week/date and five totals, source-date/qualification/transfer presentation and affected desktop/mobile browser behavior. A successful build, push or pending deployment is insufficient. Only verified production completes the weekly run; there is no email task afterward.
 
-The existing builder reads the six datasets and `2026/source/dashboard.html`, computes a data-version hash and writes `2026/index.html`. The generated page's metadata and asset/data cache version must match the release. Keep changes to Claude's dashboard source intentional; do not overwrite concurrent source, runtime, theme, tutorial or landing-page changes with a stale local copy.
-
-Documentation-only commits do not need a dashboard rebuild. Social-preview generation and tutorial recording are optional separate work. Do not treat the removed weekly HEBDO/BILAN PNG step as a requirement to regenerate these existing site assets.
-
-Track outcomes separately:
-
-| Outcome | Evidence |
-|---|---|
-| Candidate staged | Complete local bundle and validation evidence |
-| GitHub data export verified | Resulting commit and readback hashes of the intended data files |
-| Claude handoff prepared | Release note with source/date/scope/check instructions |
-| Dashboard rebuilt | Generated page and data-version match the intended release |
-| Live verified | Served page and datasets match the recorded release/version |
-
-Step 5 is complete at the verified release-branch export with its prepared handoff. Step 6 remains `awaiting_claude` until Claude publishes and verifies the updated live dashboard. Step 7 is blocked until that production receipt matches the approved release, then saves an unsent Gmail draft containing the verified live dashboard link. Do not contact another assistant automatically.
+Keep these outcomes distinct: candidate staged; data commit verified; handoff prepared; dashboard built; production deployed; served release and UI verified. Documentation-only commits need no dashboard rebuild. Preview images/tutorial regeneration are separate optional tasks.
 
 ## Claude handoff and rollback
 

@@ -1,145 +1,79 @@
-# Weekly update workflow
+# Weekly update workflow v2
 
-Process version: 18 October 2026.
+**Approved 10 November 2026; applies to new runs.** Four visible phases replace the former seven-step routine. New runs end at verified live production. Preserve legacy ledgers, releases and existing email drafts; do not renumber historical evidence or create a new email task.
 
-The weekly Race update consists of seven ordered tasks. Each task has a specific owner, a completion record and an individual skill trigger. Elo and private player development statistics run independently. A failed source blocks the output that depends on it; it does not undo verified work in unrelated modules.
+## Phases and decisions
 
-## Sequence and write ownership
+| Phase | Owner and modules | Completion | Weight |
+|---|---|---|---:|
+| Collect | GPT: TA/TE acquisition and operational inputs | Primary evidence, cutoff/source coverage, bounded Sheet writes/readback | 35% |
+| Validate and review | GPT summary/audit; Patrick release decision | Independent source/protection checks; exact candidate approved | 30% |
+| Release and hand over | GPT export | One data-only release, six remote hashes and compact handoff | 10% |
+| Publish and verify | Claude; GPT records returned evidence | Actual deployment/live hashes/version/totals and UI checks | 25% |
 
-| Step | Skill | Owns | Complete when |
-|---|---|---|---|
-| 1 | `$race-update-ta` | Current-season player statistics from displayed TA Serve/Return tables | All 30 selected players, eligible inputs, cutoff, types and protected history are verified |
-| 2 | `$race-update-te` | Raw Race/ATP ranking tables in LIVE and the dated frozen weekly snapshot | Actual source dates, saved ranking values and all 60 selected-player Race/ATP joins are verified |
-| 3 | `$race-update-summary` | Derived team blocks in LIVE/snapshot; HEBDO, TEAMS, JOUEURS and BILAN | Formulas, five team totals, transfer rules, week alignment and historical protection are verified |
-| 4 | `$race-audit` | Independent external/internal checks and the final review packet | Required checks support the release and Patrick clears that exact reviewed state |
-| 5 | `$race-export-dashboard` | The cleared professional-player data release in this repository | The full source-to-export comparison and GitHub commit readback are verified; the Claude handoff is prepared |
-| 6 | Claude — `$race-publish-dashboard` coordinates the handoff/result | Update, build, publish and verify the live Race dashboard from step 5 | Claude completion/deployment evidence and live data/version match the approved release; production URL is verified |
-| 7 | `$race-draft-email` | One unsent Gmail draft linking the updated dashboard | Step-6 production is verified and the saved draft's dashboard link, recipients, body and unsent status have been read back |
+1. **Start:** Patrick names the week and approved profile version. This authorizes routine acquisition, verified backups, exact bounded TA/TE/summary writes and readback under the [write profile](standard-write-profile.md). Generate/save diffs without asking separately for each unchanged submodule.
+2. **Approve release:** Patrick clears the concrete independent review and exact candidate hash, including explicit qualifications. Only that candidate can be released.
 
-The order is **1 → 2 → 3 → 4 → Patrick's clearance → 5 → Claude production (6) → Gmail draft (7)**. Read-only preparation may overlap, but publication follows that sequence. Copying a prior snapshot's derived team blocks during step 2 does not make those calculations current; step 3 owns them.
+A changed roster/rule/transfer baseline, new material exception, historical rewrite or expanded schema/destination needs its own concrete decision. A Start, a source-ready alert or a model's PASS is not final release approval. Conversely, do not invent extra permission gates for listed routine operations already authorized by Start.
 
-TEAMS may be a worksheet, named table or equivalent team block in the actual workbook. Resolve that mapping before claiming it was updated. Do not create an assumed tab solely to match the process label.
+Patrick still passes the generated handoff to Claude. Handoff preparation is not automatic cross-assistant messaging or proof of production. See [Claude production](claude-dashboard-production.md).
 
 ## Contributors and handoff
 
-**ChatGPT/Codex and Claude are both contributors.** Their primary responsibilities are complementary:
+GPT acquires primary sources, updates operational Sheets, independently verifies source truth and internal coherence, maintains private evidence/progress and exports the cleared six-file release. Claude reads current HEAD and that exact release, makes only release-driven dashboard changes, builds, publishes and verifies live. Patrick makes the two routine decisions and any consequential out-of-profile decisions.
 
-| Contributor | Responsibility |
-|---|---|
-| ChatGPT / Codex | Prepare and verify source data, update Google Sheets, maintain progress and evidence, perform the audit, export the cleared GitHub release and prepare the unsent Gmail draft. Also handle the independent Elo and private-statistics tasks. |
-| Claude | Own step 6: update/build the dashboard from the exact approved release, publish it to production and verify the live data, version and presentation before Gmail drafting. |
-| Patrick | Clear the final reviewed data state, decide roster/scoring changes and explicitly authorize any email sending. |
+Both contributors preserve concurrent repository work. A dashboard-side data/rule discrepancy returns to the owning data/audit work; it is not silently patched in presentation code. Detailed approvals, private fingerprints and junior data stay outside public handoff notes.
 
-The Codex skills implement the task sequence in Patrick's installed environment. ChatGPT can contribute to planning, review and analysis using the access available in its session; contributor roles do not imply that every assistant has the same tools or private-data access.
+## Readiness watch, Sunday and Monday
 
-GitHub provides the shared, versioned handoff. After Patrick clears step 4, the step-5 handoff identifies the verified data commit, source dates, scope and remaining dashboard checks. Claude uses that identified release for the mandatory step-6 production stage. The coordinator records `awaiting_claude` and keeps step 7 pending until the production completion evidence is verified. Preparing the handoff does not automatically notify or start Claude; Patrick explicitly triggers the next contributor. No automatic ChatGPT/Codex–Claude communication is configured.
+Approved checkpoints: **Sunday 18:00/21:00 and Monday 00:30/08:30 America/New_York**. These are bounded checks, not continuous observation or a promised TA publication time. Manual Check now remains available.
 
-Before editing or publishing, either contributor checks the current remote HEAD and the latest relevant documentation, then preserves the other's concurrent changes. Both can update repository documentation and make scoped technical fixes when asked. Dashboard work does not silently change cleared data or league rules: a discovered data issue returns to the owning update/audit step, with affected clearance and release status reviewed again.
+Resolve the 30-player roster, competition week, prior verified source state and relevant event/match watchlist. Include Challenger, qualifying, relevant ITF and team competition. Cheap closure/result probes precede affected-player displayed Serve/Return checks. All roster/watchlist coverage must be reconciled; a headline ATP final alone is insufficient. Missing expected results, unpaired views, unfinished play, source blocks and uncertain completion remain NOT_READY or UNKNOWN.
 
-Patrick's step-4 clearance, Claude's step-6 production verification, step-7 draft validation and email-sending authorization remain separate records. Keep private junior information and detailed approval evidence outside the public handoff.
+Readiness offers **Start**, not release. Sunday acquisition is provisional. On Monday verify the exclusive completed-match cutoff and source updates, then wait for the actual dated TE ranking publication as needed. Resume the same authorized run without another Start decision. Event-start dates are not completion timestamps. No older publication is relabeled fresh; a proposed older-source carry-forward is an explicit release exception.
 
-## Coordinator and individual triggers
+Emit at most one weekly actionable Start request, persisted privately by season/week/event type. A notification/tap is not approval. If readiness evidence changes before approval, refresh/supersede the pending payload and reject the stale request without another push. Stop that week's readiness alerts after Start/completion. At the final unresolved checkpoint, record one consolidated attention item and manual resume route rather than looping identical messages.
 
-Use `$update-the-race` to identify the run, display progress or continue an overall weekly update. Use a task's own skill to perform only that task. A one-step request stops at that step's verified result and progress summary. An overall update continues in order through the existing approval boundaries.
+**Activation remains pending pilot.** The scheduler needs verified unattended source access, private state and an actual iPhone delivery/permission/deduplication test. A desktop/inbox alert is not proof of phone delivery. See [pilot acceptance](notification-pilot.md).
 
-Examples:
+## Evidence, dates and scope
 
-| Request | Expected action |
-|---|---|
-| “Start this week's Race update.” | Resolve one target Monday and competition week, show progress and begin the next authorized step |
-| “Run step 2 only for the same run.” | Verify step 1's completion; run the TE module without silently executing other steps |
-| “Show the weekly progress.” | Show all seven steps and exact blockers; do not repeat writes |
-| “Continue.” | Resume the identified run from its first incomplete step using verified evidence and unchanged approvals |
-| “Audit the update.” | Execute step 4 and present the exact state for Patrick's clearance |
-| “Continue after clearance.” | Prepare the step-5 release/handoff, await Claude's verified step-6 production, then prepare step 7 |
-| “Run dashboard production in Claude.” | Give Claude the exact release and [step-6 runbook](claude-dashboard-production.md); return its completion evidence to the coordinator |
+Resolve once: season, target Monday, competition week from workbook history (not ISO), exclusive Monday 00:00 America/New_York cutoff, workbook timezone, roster/identity and scoring/transfer versions. Keep publication, tournament-start, actual completion, capture and ingestion times separate.
 
-If more than one run is unresolved, identify the candidates before resuming. Do not choose a run from a folder timestamp alone. These skills are local Codex capabilities; the documentation does not install them into another assistant's environment.
+Persist primary bytes and hashes before normalization. TA displayed evidence owns B:X inputs; hidden raw tables must not fill visible blanks. Preserve completed retirements/walkovers even where stats are missing; exclude unfinished/postcutoff rows explicitly. TE pagination/lookups must cover actual roster identities including required tails beyond a top-500 boundary. Errors/missing joins are not zero.
 
-## Sunday and Monday
+Resolve TEAMS or its real equivalent before reporting it. Use one verified weekly snapshot across HEBDO, JOUEURS, BILAN, TEAMS and derived blocks. Reconcile 30 player paths, +5 contest credits, incoming guards, retained outgoing credits and five Race/Duels/adjustment/Total paths without double counting.
 
-Step 1 can start on Sunday once relevant completed results are available. Capture both full-season displayed views for each selected player, preserve their timestamps and record ongoing or unplayed relevant matches in a watchlist. Sunday work remains provisional until the required cutoff recheck is complete.
+## Lean verification and release authority
 
-On Monday, check the watchlist, newly completed results and changed source rows against the approved exclusive match-completion cutoff. Reuse unchanged verified captures and collect supplements for affected players. Do not recapture all 30 solely because the calendar date changed. TA's displayed tournament date is not, by itself, proof of actual match completion before the cutoff.
+Maintain acquisition health, mutable candidate revision, immutable approved release and production as distinct domains. Reuse raw/parsed evidence and check results only when every source/parser/roster/rule/cutoff/protected-state dependency matches. Verify changed player pairs and retain complete roster coverage. Source truth is independent of a candidate matching its own payload.
 
-After step 1 is complete, step 2 uses the actual TE publication. If the new ranking has not been published, record the last check and retained source date and hold dependent publication. Step 3's formula preview may be prepared read-only. Elo and the private statistics workflow remain available independently.
+Establish a full protected-history baseline initially and after structural/history changes. Routine weeks prove that baseline plus verified bounded deltas before sealing; use a full check whenever dependency coverage is insufficient. Do not repeatedly reread every historical grid at unaffected handoffs.
 
-Patrick may explicitly approve a qualified release using an older published ranking for that week. Record both the target competition Monday and the actual publication date. Never turn an older observation into a true transfer entry-date baseline or carry that approval into a future week automatically.
+Seal source manifests, frozen operational/export-value scope, roster/rules/transfers/cutoff, audit checks/exceptions and six candidate dataset hashes. Review includes five totals/deltas, source dates, change/exclusion counts, backup evidence, holds and proposed public scope. Required FAIL/NOT_CHECKED/BLOCKED cannot earn clearance; bounded qualifications name their effect and are accepted for this exact release.
 
-## Intake and evidence
+After approval, the frozen snapshot and immutable release commit/hashes are authoritative. A later LIVE IMPORTHTML failure is maintenance health only and does not erase unchanged approved/released work. In-profile one-attempt recovery is permitted with backup/prestate and exact recovered-value proof. A real frozen input/rule/output correction creates a linked revision and renewed affected approval; never silently rebind.
 
-Resolve these once per run and reuse confirmed answers:
+## Progress, runner and recovery
 
-- Season, target Monday, competition week and the previous completed run.
-- Exclusive completed-match cutoff and the `America/New_York` workflow timezone, preserving each workbook's own timezone.
-- Confirmed roster, unique player identities, scoring version and approved transfer ledger.
-- Actual source and destination access, current worksheet headers, formulas and table boundaries.
+Use the [v2 runner](../tools/race_v2/README.md) for private checksummed state, evidence links, Start/release approval, immutable sealing, release/production binding and append-only events. Connector/source/write actions remain skills-owned; the runner does not authenticate a human or certify source truth from a boolean alone.
 
-Competition weeks are workbook competition weeks, not ISO weeks. Keep publication date, event/tournament date, actual match-completion time, capture timestamp and as-of cutoff separate. The snapshot naming convention is `YYYYMMDDwNN`; the date in its name does not prove the source was published that day.
+One progress view shows four phase weights 35/30/10/25, verified/required work units, current owner, source freshness, last observed time, exact blocker and next action. It is not an elapsed-time estimate. Unknown work totals remain indeterminate; a changed denominator requires an explicit workset revision. Approval is a work barrier; only verified production reaches 100%.
 
-Create a fresh durable folder each week. Save original raw sources before normalization, retain hashes and explicit null reasons, and preserve correction revisions. Resume only the exact verified run with unchanged input/configuration/roster/code fingerprints and valid checkpoints. Respect persisted source cooldowns and retry limits.
+Use module names for new work rather than interpreting old step numbers as new phases. A request for one module ends at its verified outcome. Status is read-only; Continue resumes the exact identified run. If several runs are unresolved, resolve the ambiguity rather than choosing by folder timestamp.
 
-Private run folders contain source inventories, previews, approvals, backup receipts, native Sheet readbacks, audit evidence and progress. They are not uploaded wholesale to this public repository.
+Measure source requests/captures/bytes, retries, check reuse, writes/backups, model calls/tokens when available, approval decisions and active/wait times. No percentage token/time/cost saving is promised before comparable weeks are observed.
 
-## Sheet writes and final clearance
+## Independent weekly lanes
 
-The established write procedure is: prepare an exact-range preview, reuse or obtain approval for that scope, check for edits since the preview, verify a backup, apply bounded changes and independently read them back. Preserve unrelated cells, formats, formulas, previous-season data and frozen history.
+**Elo + yElo:** check both complete TA reports weekly, preferably with the Sunday readiness work. Preserve each actual report date, verify all rows/fields independently and append a new extraction-date pair only when advanced. A verified unchanged pair is NO_SOURCE_ADVANCE with zero writes. A mixed-date pair is explicit, never fabricated. The Race candidate selects one frozen rating pair; a later independent update does not alter an already sealed release.
 
-Step 1 writes verified current-season B:X inputs. Preserve A, Y and Z:AD. Keep breakpoint fractions as text, percentages numeric and displayed missing statistics or durations blank. Insert rows at the lower season boundary and verify formula propagation. Completed retirements/walkovers are retained even when statistics are unavailable; unfinished or postcutoff records are separately withheld.
+**Tiago UTR:** consolidate the request for the weekly user-supplied value/week meaning into the owner intake only if not already provided. A value is never scraped or carried forward as a new observation. Back up, deduplicate/upsert with provenance, read back protected private history and update the private dashboard. Exact measurement time/rating type stay unknown unless supplied. No user input means pending, not zero.
 
-Step 2 validates TE table selectors, pagination, source dates and identities. Lookup ranges must cover the entire saved ranking table needed for the roster, including players beyond a top-500 boundary. A failed or missing lookup is not a published zero.
+Consolidate one optional pending UTR value/week field into the Start request rather than sending another intake ping. A configured independent Elo append may proceed under Start only when its own private binding/scope is included in that profile; otherwise the scheduled check may acquire/stage read-only. Reuse direct same-scope authorization already given.
 
-Step 3 uses one verified weekly snapshot across all summaries. Recompute qualifying +5 duel credit under the approved roster and transfer rules. Preserve retained outgoing credit, offsets and frozen history. Guard incoming gains when an entry baseline is unresolved. Report all five Race/Duels/adjustment/Total paths without double-counting adjustments.
+Show Elo, UTR and MatchTrack separately beneath the Race bar, outside its denominator. Missing UTR and unchanged/delayed independent Elo do not block Race. MatchTrack remains a separately requested genuine-export workflow. No private observations or junior data enter this repository, public dashboard or source bundles.
 
-Step 4 performs separate external source comparisons and internal coherence checks. A successful write or comparison with its own payload is insufficient. The review packet includes source dates/cutoff, counts, changes and exclusions, all five totals/deltas, workbook/backup links, formula/history checks, transfer holds, exceptions and the proposed public export scope.
+## Legacy migration
 
-Use PASS only for checked evidence, QUALIFIED for an explicit bounded exception, FAIL for a failed requirement, and NOT_CHECKED/BLOCKED for unperformed or unavailable checks. Required failed or unexamined scopes cannot earn clearance. An approved historical exception does not become a general missing-equals-zero policy.
-
-**Patrick's explicit clearance is required after this final review.** Earlier approval to write a preview, an audit PASS or “continue” without that final review does not supply it. Reuse existing clearance only for the unchanged reviewed state. Record the exact human instruction and the review/workbook fingerprint.
-
-## Progress and recovery
-
-Every stage completion, blocker, review and resume shows the same seven-row table. Include the verified completed count out of seven, actual source/capture dates, current step, exact next action and resume location. Independent tasks appear separately and do not change the denominator.
-
-| Status | Meaning |
-|---|---|
-| Pending | Not yet performed |
-| Provisional | Sunday or cutoff-dependent work awaiting its recheck |
-| Staged | Evidence or a concrete preview prepared; dependent publication incomplete |
-| Awaiting write approval | Exact Sheet preview ready for Patrick |
-| Blocked | Named missing input, source or failed check prevents the dependent action |
-| Awaiting review | Step-4 audit packet ready; Patrick's clearance pending |
-| Awaiting Claude | Step-5 handoff ready; Claude's step-6 production or its live verification is pending |
-| Done / qualified | Named completion criteria verified, with any bounded qualification explicit |
-| Stale | A changed upstream dependency invalidates the previous result |
-
-A staged local export is not a GitHub export. A local email preview is not a Gmail draft. Step 4 is complete only after clearance; step 6 is complete only after Claude's production is verified live; step 7 is complete when the draft containing that verified dashboard link is saved and read back. Optional draft validation and sending remain separate outcomes.
-
-When a source, roster, rule or affected workbook value changes, invalidate the owning step and its dependents, preserve earlier receipts and review the affected scope again. Fresh Sheet reads before export and drafting detect edits outside the run. Local receipt hashes alone cannot detect external changes. A previously published release or saved draft remains a historical artifact and is deliberately superseded; invalidation does not erase it.
-
-## Independent tasks
-
-**Elo — `$tennis-update-elo`.** Import both complete men's Elo/yElo reports, with each report's own publication date and full row/field comparison. Preserve previous dated pairs. Verified unchanged reports produce an explicit no-source-advance outcome with zero writes. A later Elo update does not silently replace the frozen rating snapshot chosen for an already cleared Race release.
-
-**Private statistics — `$tiago-update-data`.** MatchTrack imports and user-supplied UTR observations have separate statuses and destinations. Validate real export schemas, scoring progression, final scores, duplicates, revisions and partial coverage. Missing observations stay missing. An unresolved match record does not block the supplied-UTR submodule or any Race/Elo task. Keep all junior measurements, raw files, observations and private run evidence outside this repository and the league email.
-
-## Data export, Claude production and email
-
-After clearance, step 5 freshly verifies that the reviewed source state is unchanged, prepares all six existing JSON files and reconciles every exported field. Export the data to a dedicated release branch and verify the exact release commit/hashes; production publication belongs to Claude in step 6. Start from current remote HEAD rather than a potentially stale local checkout. Preserve transfer lineage and unrelated dashboard changes. Keep both records of a transferred pair, their ` (sorti)` / ` (entré)` labels and one shared `transfer_date`: the dashboard uses them to build its replacement line. See the [data and release contract](data-and-releases.md).
-
-The handoff to Claude identifies the cleared release ID/branch/commit, source dates/cutoff, all six data hashes, changed counts, five totals, qualifications, transfer holds, previous production version and required dashboard checks. Preparing the handoff does not automatically message or start Claude; Patrick explicitly triggers that contributor.
-
-**Step 6 is production owned by Claude.** Follow [Claude dashboard production](claude-dashboard-production.md). Claude incorporates the exact approved data, performs the release-driven dashboard update, runs the existing build, publishes the data and required generated page/source changes together to production, then verifies the live URL, all six data hashes, build/data version, competition week/date, totals and UI behavior. Preserve unrelated source/design/tutorial changes. Data/rule discrepancies return to the owning data/audit step for revised clearance.
-
-A successful build, commit or deployment still in progress does not complete step 6. Record `awaiting_claude` or the exact production blocker until the served dashboard matches. The coordinator requires Claude's actual completion evidence, production commit/URL, live version/hashes, verification timestamp and browser checks. A stale/wrong release cannot pass under a freshness qualification.
-
-Step 7 locates the previous relevant sent league email for actual recipient headers and style, preserves intended multiple addresses, checks for an existing current-run draft and saves one unsent draft. Use only cleared facts and include the updated live dashboard link verified in step 6. Recheck the production version before saving. If production is pending, stale or failed, keep drafting blocked; an export-only link or disclosure of an old dashboard does not satisfy this step. Exclude junior information and stale attachments. Draft validation is separate from authorization to send.
-
-Routine PNG production and automatic image replacement are outside this weekly process. Preserve historical images. Skill installation and these documents do not create a scheduler, source-specific one-click launcher or proof that a live weekly run has occurred.
-
-
-## Migrating earlier progress records
-
-New runs use seven steps. Existing six-step ledgers retain a byte-for-byte legacy backup and their earlier Gmail result as history: old step 6 is not evidence of Claude production. The explicit `race_run.py migrate-seven` operation preserves verified steps 1–5 and unchanged audit clearance, inserts pending Claude production as step 6 and pending Gmail as step 7. Recheck any existing draft after production before reusing it. Missing legacy release/hash metadata is reverified in a new step-5 receipt without unnecessary Sheet writes.
-
-Production-only changes invalidate steps 6–7 while preserving the unchanged cleared data/export. Changes to actual source data, rules or workbook values invalidate the owning earlier stage and affected clearance. Completed historical weeks are not reopened or relabeled automatically.
+Schema-3 seven-step ledgers and older records remain immutable historical evidence. Use a read-only compatibility view; do not rewrite closed runs or make email absence a new failure. New runs use the v2 state contract and stop at phase 4. Preserve existing drafts unchanged; the deprecated email skill is explicit legacy-only and never automatically invoked. No installation or process approval authorizes sending mail.

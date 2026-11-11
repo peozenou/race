@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Audit"
+  short_description: "Audit the complete Race candidate in phase 2 and obtain Patric"
+  default_prompt: "Use $race-audit for the next authorized task in its documented scope."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tennis acquisition and readiness"
+  short_description: "Prepare source bundles and exact acquisition resumes"
+  default_prompt: "Use $tennis-weekly-data for the requested bounded scope and current shared contracts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Update Summary"
+  short_description: "Reconcile all Race player/team summaries during phase 2 from t"
+  default_prompt: "Use $race-update-summary for the next authorized task in its documented scope."

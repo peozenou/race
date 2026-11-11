@@ -1,90 +1,71 @@
 # THE RACE
 
-THE RACE is a fantasy tennis league with five teams. This repository holds the public season dashboards and the approved professional-player data they use.
+THE RACE is a five-team fantasy tennis league. This repository holds the public dashboards, approved professional-player datasets and the versioned weekly workflow.
 
 [All seasons](https://peozenou.github.io/race/) · [2026 dashboard](https://peozenou.github.io/race/2026/)
 
-Repository documentation is maintained in English. Existing worksheet names, JSON field names and the dashboard's French interface retain their established names.
+## Weekly workflow v2
+
+Patrick approved this design on **10 November 2026**. New weekly runs have four visible phases and two routine decisions. The former email task is removed. Historical seven-step runs and existing email drafts remain unchanged.
+
+| Phase | Owner | Verified result | Weight |
+|---|---|---|---:|
+| 1. Collect | GPT | Complete source evidence and bounded, verified Sheet updates | 35% |
+| 2. Validate and review | GPT; Patrick approves | Independent checks and approval of the exact frozen candidate | 30% |
+| 3. Release and hand over | GPT | Six-file data commit, remote readback and Claude handoff | 10% |
+| 4. Publish and verify | Claude | Successful deployment, matching served data/version and browser checks | 25% |
+
+The two routine decisions are **Start under the approved write profile** and **Approve this exact release**. Routine in-profile TA, TE and summary writes do not each require another permission request. A new roster/rule/history change or other out-of-profile exception still needs a specific decision. Patrick currently invokes Claude explicitly with the prepared handoff; automatic cross-assistant dispatch is not implemented.
+
+The progress bar counts verified work, not elapsed time. A source/approval/Claude wait stops the bar and names the next action. Only verified live production reaches 100%.
 
 ## Start here
 
-- [Weekly update workflow](docs/weekly-workflow.md): the seven-step sequence, individual skill triggers, Sunday/Monday handoff, audit clearance and progress tracking.
-- [Claude dashboard production](docs/claude-dashboard-production.md): the step-6 update, build, publication and live-verification runbook.
-- [Dashboard data and release contract](docs/data-and-releases.md): the six JSON datasets, source authority, transfer history, validation and the handoff to Claude.
+- [Weekly operating workflow](docs/weekly-workflow.md): phases, approvals, weekly independent lanes, recovery and progress.
+- [Approved write profile](docs/standard-write-profile.md): permitted routine operations and exceptions.
+- [Data and release contract](docs/data-and-releases.md): source authority, six schemas, transfers and immutable release boundary.
+- [Claude production runbook](docs/claude-dashboard-production.md): phase-4 build, publication and live checks.
+- [Runner and receipt contracts](tools/race_v2/README.md): deterministic private-state runner; actual connector actions remain skills-owned.
+- [Reference deck](docs/workflow-v2-review/process.html) · [PDF](docs/workflow-v2-review/process.pdf) · [Quarto source](docs/workflow-v2-review/process.qmd).
+- [Progress preview](docs/workflow-v2-review/progress.html): synthetic examples, not a live monitor.
+- [Installable skills](skills/README.md): portable package without private configuration or credentials.
 
-## Contributors and responsibilities
+## Sunday watch and independent weekly lanes
 
-ChatGPT/Codex and Claude contribute to the process, with Patrick making the final decisions.
+The approved readiness checkpoints are **Sunday 18:00 and 21:00; Monday 00:30 and 08:30, America/New_York**. The watch checks the relevant roster results on TA, requests Start once per competition week, and never treats notification delivery as approval. Sunday Start is provisional until Monday cutoff and actual TE publication are verified.
 
-| Contributor | Main responsibilities |
-|---|---|
-| ChatGPT / Codex | Source acquisition, Google Sheets updates, audits, progress tracking, cleared GitHub data exports and unsent Gmail drafts; independent Elo and private-statistics workflows |
-| Claude | Own step 6: update, build, publish and verify the live Race dashboard using the approved step-5 release |
-| Patrick | Final data clearance, roster/scoring decisions and explicit email-sending authorization |
+**Notification activation is pending the pilot.** Documentation and inactive schedule suggestions do not prove unattended TA access or iPhone delivery. The computer/app, source adapter, private state and real phone delivery/deduplication tests must pass before activation. See [readiness and notification pilot](docs/notification-pilot.md).
 
-GitHub is the shared handoff point. Each contributor checks the latest repository state and preserves the other's changes. Handoffs are explicitly triggered; automatic communication between ChatGPT/Codex and Claude is not configured. See [contributors and handoff](docs/weekly-workflow.md#contributors-and-handoff) for the collaboration contract.
+Two weekly lanes run independently of Race and each other:
 
-## Weekly process
+- **Elo + yElo:** GPT checks both complete TA reports, preserves their actual dates, imports a new verified dated pair when advanced, and makes zero writes when unchanged. A Race release explicitly selects one frozen pair; a later Elo update cannot silently replace it.
+- **Tiago UTR:** Patrick supplies the weekly value and date/week meaning. GPT updates the private Sheet and private dashboard, with backup/provenance/readback. Missing input remains pending; no UTR scraping or fabricated observation. MatchTrack remains a separate private submodule.
 
-The Race update runs in this order:
+The Start request can include the pending UTR value/week input so no separate ping is needed. A configured independent Elo append runs under Start only if its own private binding/scope is included. Show these statuses beneath the Race progress bar, outside its percentage denominator. Missing UTR or unchanged/delayed independent Elo does not block Race. No junior data is published here.
 
-| Step | Task | Owner / entry point |
-|---|---|---|
-| 1 | Update player statistics from Tennis Abstract's displayed Serve/Return tables | `$race-update-ta` |
-| 2 | Update Tennis Explorer ranking tables in LIVE and the frozen weekly snapshot | `$race-update-te` |
-| 3 | Update HEBDO, TEAMS, JOUEURS, BILAN and derived team calculations | `$race-update-summary` |
-| 4 | Verify steps 1–3 and obtain Patrick's clearance of the reviewed state | `$race-audit` |
-| 5 | Export the cleared data to this repository's existing JSON data store | `$race-export-dashboard` |
-| 6 | Update, publish and verify the live Race dashboard from the approved release | Claude — [production runbook](docs/claude-dashboard-production.md); `$race-publish-dashboard` tracks the handoff/result |
-| 7 | Prepare and verify an unsent Gmail draft linking the updated dashboard | `$race-draft-email` |
+## Authority and ownership
 
-`$update-the-race` coordinates the sequence, displays all seven steps and resumes the first incomplete step of the identified run. Each step can also be triggered separately. Step 5 waits for Patrick's explicit clearance at step 4. Step 6 is owned by Claude. Step 7 waits for verified dashboard production and includes that updated dashboard link.
+TA displayed Serve/Return tables own match statistics; complete TA Elo/yElo reports own ratings; Tennis Explorer owns Race/ATP rankings; approved rules and transfers own league scoring. Preserve blanks, actual publication dates and earned outgoing credit. Thirty active selections do not imply 30 public rows: resolve the current complete active/archived set from the registry and ledger.
 
-Two tasks run independently of that sequence and each other:
+After approval, the immutable source/release snapshot and six commit hashes are the authority. A later volatile LIVE import outage is a maintenance warning, not a reason to revoke an unchanged frozen release. A real correction creates a linked revision and renewed affected review.
 
-- `$tennis-update-elo`: update the separate Elo-Import workbook from both complete Tennis Abstract Elo/yElo reports. Unchanged reports do not hold up Race.
-- `$tiago-update-data`: maintain private MatchTrack statistics and user-supplied UTR observations. Its two submodules have separate outcomes; their data stays outside this public repository.
+GPT owns acquisition, data checks and release. Claude owns dashboard changes, build, production and live verification. Patrick owns Start, release clearance and nonroutine decisions. There is no automatic email task or authority to send existing drafts.
 
-Step 1 can begin provisionally on Sunday. Monday's cutoff and pending-result recheck completes it before steps 2–7 proceed. These are on-demand workflows; documenting them does not configure a schedule. Routine HEBDO/BILAN PNG production has been removed.
-
-The skills and local progress helpers are installed in Patrick's Codex environment. This repository documents their operating contract; cloning it does not install skills or grant access to Sheets, Gmail or private data.
-
-## Repository layout
+## Repository layout and build
 
 | Path | Purpose |
 |---|---|
-| `index.html` | Season landing page |
-| `2026/` | Published 2026 dashboard |
-| `2026/data/` | Approved JSON data for the dashboard |
-| `2026/source/dashboard.html` | Dashboard source maintained with Claude |
-| `2026/assets/` | Data-loading runtime, theme and vendored d3 v7.9.0 |
-| `2026/tools/build.py` | Build `2026/index.html` and its data-version token |
-| `2026/tools/preview.py` | Optional social-preview image generation |
-| `2026/tools/tutorial.py` | Optional tutorial recording |
-| `2026/tutoriel.mp4` | Dashboard navigation tutorial |
-| `docs/` | Workflow and data-release documentation |
-| `docs/production/` | Claude's public step-6 production notes and live evidence, one folder per release |
+| 2026/data/ | Existing six approved JSON datasets |
+| 2026/source/dashboard.html | Claude-maintained French dashboard source |
+| 2026/tools/build.py | Existing generated-page/version builder |
+| 2026/assets/ | Runtime, theme and vendored d3 |
+| history/ | Historical edition inputs; preserve unrelated work |
+| docs/production/ | Public production notes/evidence, without private approvals |
+| tools/race_v2/ | Deterministic four-phase private-state runner and tests |
+| skills/ | Versioned installable skills and shared public contracts |
 
-A historical season can have its own directory, such as `2025/`, and a corresponding landing-page entry. Resolve its actual workbook and data contract before adding it. Current acquisition adapters are season-specific.
+From the repository root, run **python3 2026/tools/build.py** after an approved data/source change. Claude verifies and publishes the matching data/generated page together. Documentation-only changes do not require rebuilding the dashboard. Preview images and tutorial regeneration are separate optional tasks.
 
-## Publish an approved data release
+This repository must not contain private workbook configuration, approvals, junior statistics, mail records, credentials or notification subscriptions. A future private owner app and a public read-only companion can share versioned run/release contracts; GitHub Pages alone is not an authenticated approval backend. Free app distribution does not imply free model/backend operation.
 
-After steps 1–4 and Patrick's clearance, step 5 prepares a complete candidate release from the reviewed workbook state, validates all six JSON datasets and checks the current repository head. It commits the six approved data files to a dedicated release branch, verifies them from GitHub and prepares the exact handoff. Claude then owns step 6: incorporate the release, update/build the dashboard, publish to production and verify the served version/data before step 7.
-
-When data or dashboard source changes, rebuild the generated page from the repository root:
-
-```sh
-python3 2026/tools/build.py
-```
-
-The builder reads all six JSON files and `2026/source/dashboard.html`. It updates the generated page's metadata and cache-version token. A documentation-only change does not require this build. Preview images and tutorial recordings are separate, optional tasks.
-
-Keep three outcomes distinct: **data exported to GitHub**, **dashboard rebuilt**, and **live dashboard verified**. Check the served data and page version before claiming the live site contains a release. Step 7 prepares the email only after Claude's step-6 production is verified and links the updated live dashboard. A pending, stale or failed deployment blocks drafting. A saved or validated draft is not authorization to send it.
-
-## Sources and history
-
-Tennis Abstract's displayed player tables own match statistics; its complete Elo/yElo reports own ratings. Tennis Explorer owns Race/ATP ranking snapshots. Approved league rules and transfer records own fantasy scoring. Preserve their separate source dates and missing-value meanings.
-
-There are 30 active selections, six per team. Published history can include outgoing players as well as the active roster, so public datasets can contain more than 30 player records. Preserve approved transfer credit and frozen history rather than filtering everything down to the current selection. The dashboard shows each in-season replacement as one lineup line, such as Sinner/Lehecka, so every team lists six posts. In its charts, the outgoing player's credited points keep the team colour and the incoming player's take a darker shade. See [replacement lines](docs/data-and-releases.md#replacement-lines-on-the-dashboard).
-
-See the [data and release contract](docs/data-and-releases.md) for validation, publication and rollback details. d3 is distributed under the ISC license, copyright Mike Bostock.
+Repository documentation is English; existing worksheet names, JSON keys and French interface wording stay established. d3 is distributed under the ISC license, copyright Mike Bostock.

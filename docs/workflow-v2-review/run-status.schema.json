@@ -1,0 +1,578 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:race:workflow-v2-review:synthetic-run-status:1",
+  "title": "Synthetic Race workflow status proposal",
+  "description": "Offline review contract only. Python validates cross-field counts, phase order and computed arithmetic; schema alone is not a source or authorization proof. All identities are synthetic.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mode",
+    "run_id",
+    "season",
+    "competition_week",
+    "profile_hash",
+    "roster_hash",
+    "status",
+    "production_verified",
+    "readiness",
+    "phases",
+    "progress",
+    "workset_events",
+    "outbox"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "race-workflow-proposal/1"
+    },
+    "mode": {
+      "const": "synthetic"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^synthetic-"
+    },
+    "season": {
+      "type": "integer",
+      "minimum": 2000
+    },
+    "competition_week": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "profile_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "roster_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "enum": [
+        "awaiting_owner_start",
+        "acquiring",
+        "awaiting_TE",
+        "validating",
+        "awaiting_release_approval",
+        "release_ready",
+        "awaiting_Claude",
+        "publishing",
+        "failed",
+        "completed"
+      ]
+    },
+    "production_verified": {
+      "type": "boolean"
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "ready_to_start",
+        "release_sources_ready",
+        "release_waits",
+        "problems",
+        "pending",
+        "readiness_hash",
+        "context"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "UNKNOWN",
+            "NOT_READY",
+            "READY_TO_START"
+          ]
+        },
+        "ready_to_start": {
+          "type": "boolean"
+        },
+        "release_sources_ready": {
+          "type": "boolean"
+        },
+        "release_waits": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "cutoff_recheck",
+              "dated_TE_release"
+            ]
+          }
+        },
+        "problems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pending": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "readiness_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "context": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "season",
+            "competition_week",
+            "profile_hash",
+            "roster_hash"
+          ],
+          "properties": {
+            "season": {
+              "type": "integer",
+              "minimum": 2000
+            },
+            "competition_week": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "profile_hash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "roster_hash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "release_sources_ready": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ready_to_start": {
+                "const": true
+              },
+              "release_waits": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "UNKNOWN",
+                  "NOT_READY"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "ready_to_start": {
+                "const": false
+              },
+              "release_sources_ready": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "phases": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "acquire",
+        "validate",
+        "release",
+        "production"
+      ],
+      "properties": {
+        "acquire": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "total",
+            "verified",
+            "status",
+            "workset_revision"
+          ],
+          "properties": {
+            "total": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "verified": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "running",
+                "waiting",
+                "failed",
+                "completed"
+              ]
+            },
+            "workset_revision": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "validate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "total",
+            "verified",
+            "status",
+            "workset_revision"
+          ],
+          "properties": {
+            "total": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "verified": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "running",
+                "waiting",
+                "failed",
+                "completed"
+              ]
+            },
+            "workset_revision": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "release": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "total",
+            "verified",
+            "status",
+            "workset_revision"
+          ],
+          "properties": {
+            "total": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "verified": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "running",
+                "waiting",
+                "failed",
+                "completed"
+              ]
+            },
+            "workset_revision": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "production": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "total",
+            "verified",
+            "status",
+            "workset_revision"
+          ],
+          "properties": {
+            "total": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "verified": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "running",
+                "waiting",
+                "failed",
+                "completed"
+              ]
+            },
+            "workset_revision": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    },
+    "progress": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "percent",
+        "verified_floor_percent",
+        "indeterminate",
+        "complete",
+        "basis"
+      ],
+      "properties": {
+        "percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "verified_floor_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "indeterminate": {
+          "type": "boolean"
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "basis": {
+          "const": "weighted verified work units, not elapsed time"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "indeterminate": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "percent": {
+                "const": null
+              },
+              "complete": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "wait_reason": {
+      "type": "string"
+    },
+    "workset_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "phase",
+          "old_revision",
+          "new_revision",
+          "old_total",
+          "new_total",
+          "reason"
+        ],
+        "properties": {
+          "phase": {
+            "enum": [
+              "acquire",
+              "validate",
+              "release",
+              "production"
+            ]
+          },
+          "old_revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "new_revision": {
+            "type": "integer",
+            "minimum": 2
+          },
+          "old_total": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "new_total": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outbox": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dedupe_key",
+          "request_id",
+          "readiness_hash",
+          "context",
+          "delivery_status",
+          "approval_status"
+        ],
+        "properties": {
+          "dedupe_key": {
+            "type": "string"
+          },
+          "request_id": {
+            "type": "string"
+          },
+          "readiness_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "context": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "season",
+              "competition_week",
+              "profile_hash",
+              "roster_hash"
+            ],
+            "properties": {
+              "season": {
+                "type": "integer",
+                "minimum": 2000
+              },
+              "competition_week": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "profile_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "roster_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "delivery_status": {
+            "const": "NOT_DELIVERED_PROTOTYPE"
+          },
+          "approval_status": {
+            "const": "PENDING"
+          },
+          "superseded_request_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{24}$"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "progress": {
+            "properties": {
+              "percent": {
+                "const": 100
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "production_verified": {
+            "const": true
+          },
+          "status": {
+            "const": "completed"
+          },
+          "progress": {
+            "properties": {
+              "complete": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "production_verified": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "progress": {
+            "properties": {
+              "complete": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

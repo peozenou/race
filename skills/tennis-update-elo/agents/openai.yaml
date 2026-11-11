@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tennis Update Elo"
+  short_description: "Complete independent TA Elo and yElo update"
+  default_prompt: "Use $tennis-update-elo for the next authorized task in its documented scope."

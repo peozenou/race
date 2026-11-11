@@ -1,12 +1,12 @@
-# Step 6 — Claude dashboard production
+# Phase 4 — Claude dashboard production
 
-**Owner: Claude.** Update, build, publish and verify the Race dashboard from the exact data release handed off at step 5. Gmail drafting is step 7 and waits for verified production.
+**Owner: Claude.** Update, build, publish and verify the Race dashboard from the exact approved data release handed off in phase 3. This is the final phase of workflow v2; there is no weekly email task.
 
-The sequence is: **steps 1–4 and Patrick's clearance → step-5 data release/handoff → Claude production (6) → Gmail draft with the updated dashboard link (7)**.
+The sequence is: **GPT collects → GPT validates and Patrick approves the exact candidate → GPT releases and prepares the handoff → Claude publishes and verifies live**. Patrick explicitly invokes Claude with that handoff.
 
 ## Required handoff
 
-Before starting, obtain the step-5 handoff through Patrick or the agreed repository release context:
+Before starting, obtain the phase-3 handoff through Patrick or the agreed repository release context:
 
 - Release ID and dedicated data-release branch/commit.
 - SHA-256 hashes for all six approved JSON files: hebdo, joueurs, players, matches, calendar and team_colors.
@@ -56,20 +56,20 @@ The builder reads the six JSON files, the history files used by the Historique t
 
 Check current production HEAD immediately before publishing. Incorporate the approved data and required generated page/source changes together into the production commit, preserving concurrent changes. Keep the release commit traceable in the production note. Use the repository's actual configured GitHub Pages publication route; do not invent a deployment workflow or assume a fixed completion delay.
 
-A successful commit, push or build is an intermediate result. If deployment is still running, failed or serving cached older files, record the exact status and resume point. Do not claim production complete or unblock Gmail until the actual served result is checked. No background monitor is configured merely by this runbook.
+A successful commit, push or build is an intermediate result. If deployment is still running, failed or serving cached older files, record the exact status and resume point. Do not claim production complete until the actual served result is checked. No background monitor is configured merely by this runbook.
 
 ## Verify the live dashboard
 
 Verify the canonical public dashboard URL in a browser and compare it with the release and production commits:
 
-1. All six served JSON datasets match the approved step-5 hashes. Confirm that a mixture of old/new cached files is not being served.
+1. All six served JSON datasets match the approved phase-3 hashes. Confirm that a mixture of old/new cached files is not being served.
 2. The served page's data-version token matches the verified build, and the page loads without release-related errors.
 3. The intended competition week/date and all five team totals match the approved release. Preserve true source dates separately from the competition Monday.
 4. Player/team filters, ranking/statistics tables, player history and team-history charts work with the actual active/archived transfer representation. Each team shows six lineup lines. A replacement line adds both players' credited points, shows its two shades in the composition bar and post chart, and switches between the two players in its detail view.
 5. Approved source qualifications, retained outgoing credit, incoming holds and null meanings are represented accurately. Missing data is not silently presented as an observed zero.
 6. Existing navigation, tooltip and tutorial behavior remains intact within the affected scope.
 
-Save actual verification time and evidence. A cache-busting request can help diagnose stale publication, but the Gmail draft must use the verified canonical public dashboard link. A stale or wrong release is a failed/pending production check, not an acceptable freshness qualification.
+Save actual verification time and evidence. A cache-busting request can help diagnose stale publication, but the verified completion note must identify the canonical public dashboard link. A stale or wrong release is a failed/pending production check, not an acceptable freshness qualification.
 
 ## Completion handoff to ChatGPT/Codex
 
@@ -79,9 +79,9 @@ Return a concrete completion note to Patrick/the coordinator. Include:
 |---|---|
 | `owner` | `Claude` |
 | `production_status` | `LIVE_DASHBOARD_VERIFIED` only after the checks above |
-| `release_id`, `data_commit_sha` | The exact approved step-5 data release |
+| `release_id`, `data_commit_sha` | The exact approved phase-3 data release |
 | `dashboard_commit_sha` | The actual production build/publication commit |
-| `dashboard_url` | The verified canonical public season URL to include in Gmail |
+| `dashboard_url` | The verified canonical public season URL for the completed release |
 | `live_data_sha256` | All six served dataset hashes matching the approved release |
 | `build_data_version`, `live_data_version` | Matching built and served versions |
 | `live_week` | The verified competition week |
@@ -91,11 +91,11 @@ Return a concrete completion note to Patrick/the coordinator. Include:
 
 Claude also saves a public copy of the completion note, without the workbook fingerprint or approval records, with its live evidence under `docs/production/<season>/<release_id>/` (for example [2026-10-19-w35-r1](production/2026/2026-10-19-w35-r1/HANDOVER.md)).
 
-The private coordinator receipt also binds the same cleared workbook fingerprint, saves Claude's actual completion evidence and records the immutable receipt hash. Do not upload private approvals, junior data or personal account details merely to supply that evidence. A receipt's assertion is not a substitute for inspecting the real result.
+The private coordinator receipt also binds the same approved release snapshot digest, saves Claude's actual completion evidence and records the immutable receipt hash. Do not upload private approvals, junior data or personal account details merely to supply that evidence. A receipt's assertion is not a substitute for inspecting the real result.
 
-After verification, step 6 becomes done (or a specifically accepted bounded qualification with the correct live release). Step 7 can then create the unsent Gmail draft with that exact updated dashboard URL and bind it to this production receipt/commit. Optional draft validation and permission to send remain separate.
+After verification, phase 4 becomes done (or a specifically accepted bounded qualification with the correct live release) and the v2 weekly run is complete. Do not create or send email, or touch existing drafts.
 
-If production changes after verification, invalidate steps 6–7 and reverify before drafting/reusing a draft. If the cleared data changes, invalidate the earliest affected data stage and obtain the required renewed clearance. Preserve previous commits, completion notes and draft history.
+If production changes after verification, reverify the affected production state while preserving the immutable approved data release. A volatile LIVE import outage alone does not revoke it. A real correction to frozen data or rules creates a linked candidate revision and renewed affected approval. Preserve prior commits and completion notes; legacy drafts remain untouched.
 
 ## Ownership and invocation
 
@@ -103,4 +103,10 @@ Patrick explicitly invokes Claude for this production task. Preparing a handoff 
 
 Example request to Claude:
 
-> Run step 6 using the approved step-5 release identified in this handoff. Follow `docs/claude-dashboard-production.md`: update, build, publish and verify the Race dashboard, preserve concurrent work, and return the production commit, verified dashboard URL, data/version evidence and completion note for step 7.
+> Run phase 4 using the approved phase-3 release identified in this handoff. Follow `docs/claude-dashboard-production.md`: update, build, publish and verify the Race dashboard, preserve concurrent work, and return the production commit, verified dashboard URL, data/version evidence and completion note to finish the weekly run.
+
+## Implementation and notification state
+
+Workflow v2 was approved on 10 November 2026. The private v2 runner records phase 4 only from evidence consistent with phase 3 and the sealed release. It does not impersonate Claude or independently certify source truth. Read its [receipt contract](../tools/race_v2/README.md) before returning the completion payload. Historical production notes may retain their original step-6/step-7 terminology; they are immutable evidence, not current instructions.
+
+The readiness notification pilot and scheduler activation are separate from dashboard publication. A production completion note does not assert that an iPhone notification was delivered.

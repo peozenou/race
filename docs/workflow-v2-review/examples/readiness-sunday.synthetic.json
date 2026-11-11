@@ -1,0 +1,418 @@
+{
+  "mode": "synthetic",
+  "expected_context": {
+    "season": 2026,
+    "competition_week": 39,
+    "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "observation": {
+    "season": 2026,
+    "competition_week": 39,
+    "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "expected_players": [
+      "synthetic-player-01",
+      "synthetic-player-02",
+      "synthetic-player-03",
+      "synthetic-player-04",
+      "synthetic-player-05",
+      "synthetic-player-06",
+      "synthetic-player-07",
+      "synthetic-player-08",
+      "synthetic-player-09",
+      "synthetic-player-10",
+      "synthetic-player-11",
+      "synthetic-player-12",
+      "synthetic-player-13",
+      "synthetic-player-14",
+      "synthetic-player-15",
+      "synthetic-player-16",
+      "synthetic-player-17",
+      "synthetic-player-18",
+      "synthetic-player-19",
+      "synthetic-player-20",
+      "synthetic-player-21",
+      "synthetic-player-22",
+      "synthetic-player-23",
+      "synthetic-player-24",
+      "synthetic-player-25",
+      "synthetic-player-26",
+      "synthetic-player-27",
+      "synthetic-player-28",
+      "synthetic-player-29",
+      "synthetic-player-30"
+    ],
+    "source_errors": [],
+    "event_scope_verified": true,
+    "watchlist_scope_verified": true,
+    "players": [
+      {
+        "player_id": "synthetic-player-01",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-02",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-03",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-04",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-05",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-06",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-07",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-08",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-09",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-10",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-11",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-12",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-13",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-14",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-15",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-16",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-17",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-18",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-19",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-20",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-21",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-22",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-23",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-24",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-25",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-26",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-27",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-28",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-29",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      },
+      {
+        "player_id": "synthetic-player-30",
+        "serve_verified": true,
+        "return_verified": true,
+        "serve_result_ids": [
+          "synthetic-final"
+        ],
+        "return_result_ids": [
+          "synthetic-final"
+        ]
+      }
+    ],
+    "relevant_events": [
+      {
+        "event_id": "synthetic-event",
+        "closure": "COMPLETE",
+        "watched_results": [
+          {
+            "result_id": "synthetic-final",
+            "status": "COMPLETED",
+            "selected_players": [
+              "synthetic-player-01",
+              "synthetic-player-02"
+            ]
+          }
+        ]
+      }
+    ],
+    "cutoff_recheck_verified": false,
+    "dated_TE_release_verified": false
+  },
+  "expected_assessment": {
+    "status": "READY_TO_START",
+    "ready_to_start": true,
+    "release_sources_ready": false,
+    "release_waits": [
+      "cutoff_recheck",
+      "dated_TE_release"
+    ],
+    "problems": [],
+    "pending": [],
+    "readiness_hash": "e5f712044da07ff6cccfd3b0cf6f28c13c4c2803dc908463cefc1bd21e53e119",
+    "context": {
+      "season": 2026,
+      "competition_week": 39,
+      "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  }
+}

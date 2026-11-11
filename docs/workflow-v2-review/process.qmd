@@ -1,0 +1,251 @@
+---
+title: "THE RACE"
+subtitle: "A simpler weekly update"
+author: "Workflow v2 · approved by Patrick"
+date: "2026-11-10"
+format:
+  revealjs:
+    theme: [default, slides.scss]
+    width: 1280
+    height: 720
+    margin: 0.07
+    center: false
+    slide-number: c/t
+    transition: none
+    navigation-mode: linear
+    controls: true
+    progress: true
+    hash: true
+    history: false
+    embed-resources: true
+    pdf-separate-fragments: false
+    footer: "WORKFLOW v2 · Approved · Notifications pending pilot"
+    title-slide-attributes:
+      class: title-slide
+lang: en
+---
+
+## Fewer decisions, the same evidence
+
+<div class="big-statement">7 tasks → 4 visible phases</div>
+
+- Remove the weekly email task entirely.
+- Keep acquisition and validation with **GPT**.
+- Keep dashboard publication and live checks with **Claude**.
+- Target **two routine approval decisions**, with one explicit Claude handoff.
+
+<div class="takeaway">Approved for new runs · notification activation follows a successful pilot.</div>
+
+::: {.notes}
+The previous workflow has seven separately tracked tasks, ending with an unsent Gmail draft. The proposal groups those tasks into four visible phases and removes email from future weekly runs. The already-saved week-38 draft is left untouched. “Two decisions” means approval to start the scoped update, then approval of the exact release. Patrick still invokes Claude explicitly by pasting the handoff until a separate integration is implemented and authorized. This is not a claim that GPT or Claude resource use has already fallen by a measured percentage.
+:::
+
+## One process, clear ownership
+
+| Phase | Owner | Verified outcome | Weight |
+|---|---|---|---:|
+| 1 · Collect | GPT | Complete source bundle and bounded Sheet update | 35% |
+| 2 · Validate & review | GPT + Patrick | Source checks pass; exact release approved | 30% |
+| 3 · Release & hand over | GPT | Six-file GitHub release and Claude brief | 10% |
+| 4 · Publish & verify | Claude | Correct dashboard served live | 25% |
+
+**Alongside Race:** weekly Elo + yElo checks and manually supplied UTR.
+
+**Before phase 1:** a lightweight readiness watch; no automatic writes.
+
+::: {.notes}
+Weights are proposed progress weights, not estimates of elapsed time, cost, or complexity. Readiness monitoring is separate from a weekly update run. The approved roster, competition week, exclusive completed-match cutoff, ranking publication dates and source semantics remain explicit. Elo+yElo and private UTR remain independent weekly lanes. Check both complete TA rating reports, preserving actual dates and no-source-advance. Consolidate a pending user-supplied UTR value/week field into the owner intake; missing UTR never blocks Race. A later Elo import cannot silently replace the frozen rating pair selected for a sealed release.
+:::
+
+## Sunday readiness: check the relevant results
+
+<div class="eyebrow">READ-ONLY WATCH</div>
+
+1. Resolve the **30-player roster** and relevant weekly events.
+2. Confirm the players’ final completed rounds or tournament finals.
+3. Check that TA’s displayed **Serve and Return** views agree.
+4. Retain pending matches and publication gaps in a small watchlist.
+
+A major-tour final is insufficient if relevant Challenger, qualifying,
+ITF or team-event results are still outstanding.
+
+::: {.notes}
+“Final results” means the final relevant completed result for every roster player, not only the winner of a headline tournament. TA event dates can be tournament-start dates, so completion eligibility needs separate evidence. Reuse the existing roster registry, saved source evidence and polite capture cooldowns. Initially use explicit readiness rules and existing acquisition adapters, not a broad model-driven search of all tennis events. Keep missing coverage visible; never infer an empty season from a failed fetch.
+:::
+
+## Notify once when approval is useful
+
+**Approved schedule · America/New_York**
+
+Sunday **18:00 → 21:00** · Monday **00:30 → 08:30**
+
+- Stop checking once the week has one readiness notice.
+- Sunday readiness permits a **provisional start**, not final release.
+- Monday cutoff reconciliation and dated TE reports remain required.
+- If still incomplete Monday, give one exception summary.
+
+<div class="takeaway">iPhone delivery must pass the pilot before schedules are activated.</div>
+
+::: {.notes}
+The approved schedule is bounded, not a promise that TA updates at those times. Its activation depends on the documented pilot. A local Codex automation requires the supported local execution environment to be available. Notification permission and actual iPhone delivery must be verified before claiming mobile push works. A scheduler result is not itself an authenticated approval action. Deduplicate by season, competition week and readiness-evidence version; retain state across process restarts. Do not emit empty success or repeated “completed” notices. Web Push on an installed iPhone Home Screen web app requires user permission and supported iOS; see https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/ .
+:::
+
+## Approval 1: start the weekly update
+
+<div class="big-statement">“Start this week’s update”</div>
+
+The approval covers a concrete **standard update profile**:
+
+- named week, cutoff, roster and scoring rules;
+- source acquisition, verified backup and bounded routine Sheet writes;
+- source validation, a frozen candidate and its review packet.
+
+**New roster rules, history repairs and expanded public scope still pause.**
+
+::: {.notes}
+Under the approved process, this scoped start authorization replaces repeated routine write-preview questions for unchanged standard operations. The routine profile must be reviewable before activation and identify the exact allowed workbook ranges, structural changes and rollback requirements. It does not authorize arbitrary historical repair or a changed release after final approval. Sunday approval can permit provisional acquisition; dependent actions wait for actual Monday prerequisites without requesting the same approval again.
+:::
+
+## Phase 1 · Collect with GPT
+
+**Acquire only what changed. Validate the whole required scope.**
+
+- Reuse verified captures whose full dependencies are unchanged.
+- Recapture affected players and outstanding results.
+- Parse the required TE pages once; resolve all **60 ranking joins**.
+- Batch independent reads; stage exact changes and back up before writes.
+
+<div class="metric-line">Week-38 reference: 60 TA views · 27 TE pages · 30 active selections</div>
+
+::: {.notes}
+The week-38 audit checked 1,659 active-player perspectives and 38,157 typed B:X fields. These are reference counts, not permanent assumptions. Every run derives observed counts from its actual roster, source pages and eligible rows. “Incremental” acquisition is not partial validation: unchanged artifacts can be reused only if all dependent source hashes, roster, rules, dates and mappings still match. Preserve TA displayed blanks, retirement and walkover rules, actual source dates and archived outgoing-player credit. No hidden table is substituted for displayed TA evidence.
+:::
+
+## Phase 2 · Validate and review once
+
+<div class="eyebrow">DETERMINISTIC CHECKS FIRST · MODEL REVIEW FOR EXCEPTIONS</div>
+
+- Source equality, missing/extra/duplicate rows and native types.
+- Transfer guards, +5 duels and all five team totals.
+- Historical protection, formula ranges and source-date coverage.
+- All exported fields, six schemas and explicit null meanings.
+
+**Approval 2:** Patrick approves one exact, frozen release summary.
+
+::: {.notes}
+Keep source truth and internal consistency as separate checks. Comparing a candidate with itself is not validation. The final review must include five Race/Duels/Total paths, weekly deltas, observed coverage, exclusions, transfer holds, source dates and bounded qualifications. A required failed or unexamined scope cannot pass. Deterministic validators produce compact reports; GPT investigates differences and writes a short decision summary. Approval is bound to the release fingerprint and is reused only for that identical scope and payload.
+:::
+
+## Phase 3 · Release and hand over
+
+<div class="file-line">hebdo · joueurs · players · matches · calendar · team_colors</div>
+
+1. Commit one coherent, data-only release on a dedicated branch.
+2. Read back all six hashes from the immutable commit.
+3. Generate Claude’s short brief from the same manifest.
+4. Patrick passes that brief to Claude.
+
+**Preserve schema, transfer lineage and unrelated repository work.**
+
+::: {.notes}
+The current public dataset contains 32 players: 30 active selections plus Sinner and Engel. Never hardcode 30 published rows or remove outgoing earned history. The release manifest records immutable source hashes, roster and scoring versions, all six output hashes, row counts, source dates, prior production version and rollback reference. Detailed approvals, workbook fingerprints and private source evidence remain outside the public repository. Public handoff context contains professional-player data only. Claude is not contacted automatically by this proposal.
+:::
+
+## Phase 4 · Claude publishes and verifies
+
+<div class="eyebrow">ONE DATA RELEASE · ONE PRODUCTION OWNER</div>
+
+- Read current HEAD and the approved six-file hashes.
+- Incorporate the release; run the existing dashboard builder.
+- Publish without unrelated redesign or tutorial regeneration.
+- Verify served hashes, version, week, totals, filters and mobile layout.
+
+<div class="takeaway">100% means the correct release is live—not merely committed or built.</div>
+
+::: {.notes}
+Claude owns dashboard source changes, build, publication and browser checks. Retain existing French wording, six lineup posts per team, two-shade transfer lines, null handling, source dates and history behavior. Use desktop and narrow mobile checks where changes can affect them. Store a compact completion receipt with data commit, production commit, URL, live six hashes, build/live version equality, verified week, UI result and actual observation time. Failed deployment or stale caches remain incomplete. There is no Gmail task afterward.
+:::
+
+## A single progress view
+
+<div class="eyebrow">ILLUSTRATIVE STATE · WAITING FOR RELEASE APPROVAL</div>
+
+<div class="progress-example"><div style="width:60%"></div></div>
+<div class="progress-number">60% verified</div>
+
+<div class="phase-line"><span>Collect ✓</span><span>Validate 5/6</span><span>Release ○</span><span>Live ○</span></div>
+
+Show the current phase, verified units, source freshness, next action
+and **who is needed**. Display pauses separately from progress.
+
+::: {.notes}
+This is a demonstrator, not the live state of a weekly run. Define progress from phase weights and verified work units in the run manifest. A stage does not advance just because a model reports that it is working. Ready and approval are states; waiting time is not remaining-work percentage. A blocked dependency freezes the bar and names the failure. Completion is monotonic within an immutable run attempt; a changed payload creates a linked revision rather than making an already-published release disappear. The same status JSON will drive the Codex summary and future owner app.
+:::
+
+## Reduce repeated model work
+
+| Today’s repeated work | Proposed replacement |
+|---|---|
+| Long histories reread in every conversation | Immutable source artifacts + dependency hashes |
+| Ad hoc parsing and reconciliation | Reusable, tested deterministic scripts |
+| Reconstructed handoff narratives | Short manifest-generated Claude brief |
+| Full-roster recapture after a small source change | Changed-player capture + complete validation |
+| Weekly Gmail preparation and readback | Removed from the workflow |
+
+**Measure savings:** model calls, tokens, source requests and retries per run.
+
+::: {.notes}
+The step count reduction and removal of email work are design facts. Token, cost, elapsed-time and energy savings are not measured yet and should not be advertised as fixed percentages. Record a baseline from representative runs, then compare the same source coverage and success criteria. Use cache keys that include every dependency required for correctness; a hash of a partial scope is insufficient. Prefer cheap code-based scheduling/readiness checks before waking a language model. Keep task-specific prompts small and avoid rerunning Claude when data and dashboard dependencies are unchanged.
+:::
+
+## Frozen releases separate data from live imports
+
+<div class="big-statement">A transient LIVE error is an operational warning</div>
+
+After release approval, the authoritative inputs are the **frozen source
+bundle, dated snapshot and release manifest**.
+
+- A failing volatile import does not rewrite published history.
+- A changed frozen value, rule or released file does require a revision.
+- Repair LIVE separately, with its own bounded authorization and evidence.
+
+::: {.notes}
+This directly addresses the week-38 incident: a later LIVE IMPORTHTML fetch failure triggered invalidation of otherwise unchanged frozen data, audit and release receipts. The proposed dependency model uses immutable source and release fingerprints for release validity and checks mutable workbook state only where it remains an actual input. Continue to compare expected Sheet writes and protect history during acquisition. Do not weaken source validation or conceal a real data change. Operational health and release validity are separate fields in the future state contract.
+:::
+
+## Build toward two iPhone experiences
+
+<div class="two-columns">
+<div>
+<h3>Patrick · owner view</h3>
+<p>Readiness notice, start approval, progress, exceptions and release approval.</p>
+<p><strong>Private authenticated actions.</strong></p>
+</div>
+<div>
+<h3>Friends · companion view</h3>
+<p>Current standings, players, history, source dates and last verified update.</p>
+<p><strong>Public read-only dashboard data.</strong></p>
+</div>
+</div>
+
+Begin with an installable web app. Keep the same run and approval contracts
+if a native Apple app is added later.
+
+::: {.notes}
+A free-to-use PWA is the first development target; the user has not asked to implement the apps in this proposal. It can reuse the existing public dashboard rather than duplicate a frontend and data store. The owner control plane needs authentication, authorization, idempotent action handling, replay protection and a trusted executor; public GitHub Pages alone is not a secure approval backend. No GPT, Claude, push or repository credentials belong in an iPhone client. An app being free to install does not imply free model/API usage, execution infrastructure or Apple distribution. Current Apple and WebKit requirements must be verified before selecting the native route. Sources: https://developer.apple.com/support/compare-memberships/ and https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/ .
+:::
+
+## Approved design and rollout
+
+**Approved design**
+
+- Four phases, two routine decisions and explicit Claude handoff.
+- The standard write profile and immutable release boundary.
+- Sunday/Monday check times and one actionable notification per week.
+- Progress contract and future owner/public app separation.
+
+**After approval:** version the skills and guidelines, test notification delivery, activate schedules, then run one monitored week before wider rollout.
+
+::: {.notes}
+Patrick approved workflow v2, the bounded profile and checkpoint times on 10 November 2026. Installation/publication and pilot results are separate evidence; schedules remain paused until actual source and iPhone tests pass. The completed week-38 run remains unchanged. Existing historical records remain immutable; the new process version applies to new runs and linked revisions. Remove future email routing without deleting the already-saved draft. Activation includes a dry-run readiness case, a pending-source case, one notification deduplication test, an expired approval/revised-payload case, a failed-deployment case and a verified-live completion case. The reference deck is authored in Quarto: https://quarto.org/docs/presentations/revealjs/ .
+:::

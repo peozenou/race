@@ -1,0 +1,61 @@
+{
+  "schema_version": "race-workflow-proposal/1",
+  "mode": "synthetic",
+  "run_id": "synthetic-2026-w39",
+  "season": 2026,
+  "competition_week": 39,
+  "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "status": "completed",
+  "production_verified": true,
+  "readiness": {
+    "status": "READY_TO_START",
+    "ready_to_start": true,
+    "release_sources_ready": true,
+    "release_waits": [],
+    "problems": [],
+    "pending": [],
+    "readiness_hash": "7f3558004b6364d3647390ecbafcea27bf1f59d6af9fd0373478c76cf6358c6c",
+    "context": {
+      "season": 2026,
+      "competition_week": 39,
+      "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  },
+  "phases": {
+    "acquire": {
+      "total": 4,
+      "verified": 4,
+      "status": "completed",
+      "workset_revision": 1
+    },
+    "validate": {
+      "total": 4,
+      "verified": 4,
+      "status": "completed",
+      "workset_revision": 1
+    },
+    "release": {
+      "total": 4,
+      "verified": 4,
+      "status": "completed",
+      "workset_revision": 1
+    },
+    "production": {
+      "total": 4,
+      "verified": 4,
+      "status": "completed",
+      "workset_revision": 1
+    }
+  },
+  "workset_events": [],
+  "outbox": [],
+  "progress": {
+    "percent": 100.0,
+    "verified_floor_percent": 100.0,
+    "indeterminate": false,
+    "complete": true,
+    "basis": "weighted verified work units, not elapsed time"
+  }
+}

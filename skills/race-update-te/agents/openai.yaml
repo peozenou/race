@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Update Te"
+  short_description: "Acquire dated Race and ATP rankings and a frozen weekly snapsh"
+  default_prompt: "Use $race-update-te for the next authorized task in its documented scope."

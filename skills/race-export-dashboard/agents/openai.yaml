@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Export Dashboard"
+  short_description: "Commit and verify the approved six-file Race candidate during "
+  default_prompt: "Use $race-export-dashboard for the next authorized task in its documented scope."

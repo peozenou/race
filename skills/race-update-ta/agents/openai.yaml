@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Update Ta"
+  short_description: "Acquire and verify Race Tennis Abstract displayed Serve/Return"
+  default_prompt: "Use $race-update-ta for the next authorized task in its documented scope."

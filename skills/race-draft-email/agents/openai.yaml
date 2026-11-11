@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Draft Email"
+  short_description: "Legacy drafts only; no new weekly email"
+  default_prompt: "Use $race-draft-email for the next authorized task in its documented scope."

@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+$body-bg: #f6f3eb;
+$body-color: #172b3b;
+$link-color: #28785c;
+$presentation-heading-color: #172b3b;
+$presentation-font-size-root: 29px;
+$presentation-h1-font-size: 2.5em;
+$presentation-h2-font-size: 1.65em;
+$presentation-heading-font: "Aptos", "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Aptos", "Helvetica Neue", Arial, sans-serif;
+$code-color: #215f4b;
+
+/*-- scss:rules --*/
+.reveal { font-weight: 400; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 { font-weight: 650; letter-spacing: -0.035em; text-transform: none; }
+.reveal h2 { margin-bottom: 0.7em; max-width: 1100px; }
+.reveal h3 { font-size: 1.05em; letter-spacing: -0.02em; }
+.reveal p { line-height: 1.35; }
+.reveal strong { color: #20674f; font-weight: 650; }
+.reveal ul, .reveal ol { margin-left: 1.05em; }
+.reveal li { padding-left: 0.12em; margin-bottom: 0.45em; line-height: 1.3; }
+.reveal table { margin: 0.2em 0 1em; width: 100%; font-size: 0.85em; border-collapse: collapse; }
+.reveal table th { color: #28785c; border-bottom: 2px solid #28785c; font-weight: 650; padding: 0.5em 0.6em 0.5em 0; }
+.reveal table td { padding: 0.55em 0.6em 0.55em 0; border-bottom: 1px solid #cbd4ce; line-height: 1.25; vertical-align: top; }
+.reveal .title-slide { padding-top: 1.2em; }
+.reveal .title-slide h1 { color: #172b3b; font-size: 3.5em; letter-spacing: -0.055em; margin-bottom: 0.12em; }
+.reveal .title-slide .subtitle { color: #28785c; font-size: 1.25em; margin-bottom: 2em; }
+.reveal .quarto-title-author-name, .reveal .date { font-size: 0.7em; color: #52636b; }
+.reveal .big-statement { font-size: 1.65em; font-weight: 600; letter-spacing: -0.035em; line-height: 1.15; color: #28785c; margin: 0.25em 0 0.65em; max-width: 1050px; }
+.reveal .eyebrow { font-size: 0.58em; font-weight: 700; letter-spacing: 0.13em; color: #28785c; margin: 0 0 1.1em; }
+.reveal .takeaway { margin-top: 1.05em; padding-top: 0.65em; border-top: 2px solid #8fb69a; font-size: 0.86em; color: #335a4c; line-height: 1.3; }
+.reveal .metric-line { margin-top: 1em; color: #28785c; font-size: 0.8em; }
+.reveal .file-line { font-size: 1.13em; color: #28785c; font-weight: 550; margin-bottom: 1.1em; }
+.reveal .two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; border-top: 2px solid #8fb69a; padding-top: 1em; margin-bottom: 0.8em; }
+.reveal .two-columns p { font-size: 0.9em; }
+.reveal .progress-example { height: 22px; width: 100%; background: #dce2d8; margin: 1em 0 0.35em; }
+.reveal .progress-example > div { height: 22px; background: #28785c; }
+.reveal .progress-number { font-size: 1.8em; color: #28785c; font-weight: 600; letter-spacing: -0.03em; margin-bottom: 0.6em; }
+.reveal .phase-line { display: flex; justify-content: space-between; border-bottom: 1px solid #bfcbbf; padding-bottom: 0.8em; font-size: 0.79em; margin-bottom: 0.8em; }
+.reveal .footer { font-size: 13px; color: #6b786e; bottom: 14px; }
+.reveal .slide-number { background: transparent; color: #61716a; font-size: 15px; bottom: 15px; right: 18px; }
+.reveal .progress { color: #28785c; height: 4px; }
+.reveal .controls { color: #28785c; }
+@media print { .reveal .slides section { box-shadow: none !important; } }

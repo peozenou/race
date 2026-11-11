@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update The Race"
+  short_description: "Four-phase Race update and verified progress"
+  default_prompt: "Use $update-the-race for the next authorized task in its documented scope."

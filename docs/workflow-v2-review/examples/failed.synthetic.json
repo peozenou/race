@@ -1,0 +1,67 @@
+{
+  "schema_version": "race-workflow-proposal/1",
+  "mode": "synthetic",
+  "run_id": "synthetic-2026-w39",
+  "season": 2026,
+  "competition_week": 39,
+  "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "status": "failed",
+  "production_verified": false,
+  "readiness": {
+    "status": "UNKNOWN",
+    "ready_to_start": false,
+    "release_sources_ready": false,
+    "release_waits": [
+      "cutoff_recheck",
+      "dated_TE_release"
+    ],
+    "problems": [
+      "source_error"
+    ],
+    "pending": [],
+    "readiness_hash": "d1f8edeb27e068a6a57a5d7a1e535c703c262287c2d1196ed47223b0973cd50a",
+    "context": {
+      "season": 2026,
+      "competition_week": 39,
+      "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  },
+  "phases": {
+    "acquire": {
+      "total": 4,
+      "verified": 2,
+      "status": "failed",
+      "workset_revision": 1
+    },
+    "validate": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    },
+    "release": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    },
+    "production": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    }
+  },
+  "workset_events": [],
+  "outbox": [],
+  "wait_reason": "Synthetic source fetch failed. Existing completed work remains counted; resume only affected units.",
+  "progress": {
+    "percent": 17.5,
+    "verified_floor_percent": 17.5,
+    "indeterminate": false,
+    "complete": false,
+    "basis": "weighted verified work units, not elapsed time"
+  }
+}

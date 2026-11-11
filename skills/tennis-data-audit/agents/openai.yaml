@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tennis data audit"
+  short_description: "Audit sources, methods and frozen release evidence"
+  default_prompt: "Use $tennis-data-audit for the requested bounded scope and current shared contracts."

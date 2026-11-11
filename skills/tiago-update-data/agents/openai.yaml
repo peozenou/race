@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tiago Update Data"
+  short_description: "Private weekly UTR and genuine match data"
+  default_prompt: "Use $tiago-update-data for the next authorized task in its documented scope."

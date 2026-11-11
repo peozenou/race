@@ -1,0 +1,97 @@
+{
+  "proposal_id": "race-workflow-v2-review-2026-11-09",
+  "status": "APPROVED_IMPLEMENTED_INSTALLED_PILOT_PENDING",
+  "new_runs_only": true,
+  "visible_phases": 4,
+  "routine_approval_decisions": 2,
+  "phase_weights": [
+    35,
+    30,
+    10,
+    25
+  ],
+  "email_for_new_runs": false,
+  "existing_drafts_action": "LEAVE_UNTOUCHED",
+  "existing_runs_action": "PRESERVE_IMMUTABLE_LEGACY_RECORDS",
+  "github_publication": "AUTHORIZED_WORKFLOW_ONLY_PUBLICATION",
+  "local_skill_installation": "VERIFIED_13_SKILLS_52_FILES",
+  "automation_activation": "PENDING_SOURCE_AND_IPHONE_PILOT",
+  "automation_timezone": "America/New_York",
+  "maximum_automatic_ready_requests_per_week": 1,
+  "cross_assistant_dispatch": "EXPLICIT_MANUAL_CLAUDE_INVOCATION_UNTIL_SEPARATE_INTEGRATION",
+  "repository_documentation_targets": [
+    "README.md",
+    "docs/weekly-workflow.md",
+    "docs/data-and-releases.md",
+    "docs/claude-dashboard-production.md",
+    "docs/workflow-v2-review/"
+  ],
+  "installed_skill_targets": [
+    "update-the-race",
+    "race-update-ta",
+    "race-update-te",
+    "race-update-summary",
+    "race-audit",
+    "race-export-dashboard",
+    "race-publish-dashboard",
+    "race-check-ready",
+    "race-draft-email (legacy-only)",
+    "tennis-update-elo",
+    "tiago-update-data",
+    "tennis-weekly-data",
+    "tennis-data-audit"
+  ],
+  "affected_coordinator_references": [
+    "run-contract",
+    "audit-contract",
+    "ta-contract",
+    "tennis-explorer",
+    "sheets-contract",
+    "dashboard-contract",
+    "production-contract",
+    "email-contract (legacy-only)",
+    "known-state and setup routing",
+    "applicable UI metadata and module references found by a reference scan"
+  ],
+  "runtime_work_after_approval": [
+    "Versioned bounded write profile and exact allowed ranges",
+    "New-schema runner adapter, preserving schema-3 ledgers",
+    "Deterministic source adapters and source-derived export expectations",
+    "Immutable release sealing and dependency-based check cache",
+    "Private progress events, approval commands and deduplicated notification outbox",
+    "Readiness adapter and current-source no-write pilot",
+    "One manifest-generated Claude handoff",
+    "Offline transition tests and supervised next-week pilot"
+  ],
+  "not_authorized_by_design_approval_alone": [
+    "Start a weekly data update",
+    "Change an existing released dataset",
+    "Send or delete an existing email draft",
+    "Purchase memberships or services",
+    "Publish private run state, approval records, credentials or junior data"
+  ],
+  "automation_review_cards": {
+    "status": "SUGGESTIONS_ONLY_NOT_ACTIVATED",
+    "creation_mode": "suggested_create",
+    "requested_status": "PAUSED",
+    "names": [
+      "THE RACE \u2014 Sunday readiness review",
+      "THE RACE \u2014 Monday readiness fallback"
+    ],
+    "actual_iphone_delivery_tested": false
+  },
+  "approved_date": "2026-11-10",
+  "approved_checkpoints": [
+    "Sunday 18:00",
+    "Sunday 21:00",
+    "Monday 00:30",
+    "Monday 08:30"
+  ],
+  "notification_pilot": {
+    "source_paired_access": "ONE_SELECTED_PLAYER_PASSED_2026_11_10",
+    "full_unattended_roster_event_scope": "PENDING",
+    "iphone_delivery": "PENDING",
+    "platform_quiet_dedupe_behavior": "PENDING",
+    "active_recurring_schedules": false
+  }
+}

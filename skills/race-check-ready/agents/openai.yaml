@@ -1,0 +1,4 @@
+interface:
+  display_name: "Race Check Ready"
+  short_description: "Check TA readiness and one weekly Start request"
+  default_prompt: "Use $race-check-ready for the next authorized task in its documented scope."

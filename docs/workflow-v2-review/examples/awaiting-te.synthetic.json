@@ -1,0 +1,65 @@
+{
+  "schema_version": "race-workflow-proposal/1",
+  "mode": "synthetic",
+  "run_id": "synthetic-2026-w39",
+  "season": 2026,
+  "competition_week": 39,
+  "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "status": "awaiting_TE",
+  "production_verified": false,
+  "readiness": {
+    "status": "READY_TO_START",
+    "ready_to_start": true,
+    "release_sources_ready": false,
+    "release_waits": [
+      "cutoff_recheck",
+      "dated_TE_release"
+    ],
+    "problems": [],
+    "pending": [],
+    "readiness_hash": "e5f712044da07ff6cccfd3b0cf6f28c13c4c2803dc908463cefc1bd21e53e119",
+    "context": {
+      "season": 2026,
+      "competition_week": 39,
+      "profile_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "roster_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  },
+  "phases": {
+    "acquire": {
+      "total": 4,
+      "verified": 3,
+      "status": "waiting",
+      "workset_revision": 1
+    },
+    "validate": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    },
+    "release": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    },
+    "production": {
+      "total": 4,
+      "verified": 0,
+      "status": "pending",
+      "workset_revision": 1
+    }
+  },
+  "workset_events": [],
+  "outbox": [],
+  "wait_reason": "Dated Monday TE publication not verified; Sunday start readiness is not release readiness.",
+  "progress": {
+    "percent": 26.25,
+    "verified_floor_percent": 26.25,
+    "indeterminate": false,
+    "complete": false,
+    "basis": "weighted verified work units, not elapsed time"
+  }
+}
