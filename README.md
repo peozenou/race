@@ -69,3 +69,6 @@ From the repository root, run **python3 2026/tools/build.py** after an approved 
 This repository must not contain private workbook configuration, approvals, junior statistics, mail records, credentials or notification subscriptions. A future private owner app and a public read-only companion can share versioned run/release contracts; GitHub Pages alone is not an authenticated approval backend. Free app distribution does not imply free model/backend operation.
 
 Repository documentation is English; existing worksheet names, JSON keys and French interface wording stay established. d3 is distributed under the ISC license, copyright Mike Bostock.
+## Monitored Sunday run
+
+The first v2 run is prepared for Sunday 15 November 2026, targeting Monday 16 November / competition week 39. See the [weekend run guide](docs/weekend-run.md). The source and phone pilots remain activation gates; saved checkpoint tasks are paused.

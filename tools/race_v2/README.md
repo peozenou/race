@@ -4,6 +4,8 @@ This standard-library package implements the approved four-phase evidence/state 
 
 Run directories contain private source/approval evidence and **must be outside the public repository**. Do not commit the generated configuration, state, status page, outbox, approval files, source snapshots or screenshots.
 
+Use weekend.py to prepare the next private run from native metadata, HEBDO and transfer reads, the approved profile/registry, existing scoring contract and six published baseline files. See [weekend preparation](https://github.com/peozenou/race/blob/main/docs/weekend-run.md). It derives the competition week from reconciled league history, binds native sheet IDs, creates the actual private progress page and source worklist, and grants no Start approval. Identical preparation is idempotent; changed inputs require a linked revision.
+
 ## What is implemented
 
 - Four ordered phases, weighted 35/30/10/25; verified work units, source waits and the approval unit are explicit.

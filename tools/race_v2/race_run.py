@@ -850,7 +850,7 @@ def status(state):
             "blocker": current_receipt.get("summary") if current_receipt.get("state") in {"waiting_source", "blocked"} else None,
             "percent": None if indeterminate else round(percent, 2),
             "verified_floor_percent": round(percent, 2), "weights": WEIGHTS,
-            "phases": {n: {k: v for k, v in p.items() if k not in {"receipt", "artifacts"}} for n, p in state["phases"].items()},
+            "phases": {n: {k: v for k, v in state["phases"][n].items() if k not in {"receipt", "artifacts"}} for n in PHASES},
             "candidate_sha256": state["candidate"]["sha256"] if state["candidate"] else None,
             "release_id": state["candidate"]["release_id"] if state["candidate"] else None,
             "health": {n: x["report"]["status"] for n, x in state["health"].items()},
@@ -867,6 +867,13 @@ def status(state):
 
 def checked_status(root, state):
     report = status(state)
+    if not state['start_approval']:
+        ready = bool(state.get('readiness') and state['readiness']['assessment'].get('ready_to_start'))
+        report.update(state='waiting_start_approval' if ready else 'waiting_readiness',
+                      owner='Patrick' if ready else 'GPT',
+                      blocker='Weekly Start has not been approved.' if ready else 'Read-only source readiness has not been verified.',
+                      next_action='Ask Patrick to approve the exact week/profile; optional UTR may be supplied together.' if ready
+                      else 'Complete the read-only readiness check, then offer Start. Preparation is not approval.')
     errors = []
     refs = []
     if state["start_approval"]:

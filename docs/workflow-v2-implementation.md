@@ -1,5 +1,7 @@
 # Workflow v2 implementation status
 
+12 November increment: a tested private run preparer now creates the first monitored week-39 packet from reconciled native/published week-38 evidence. The suite now passes 33 tests. Two actual Sunday/Monday checkpoint tasks have been saved paused; they are not active. See the [weekend run guide](weekend-run.md). A prepared packet is not Start approval or proof of unattended execution.
+
 10 November 2026: the design, bounded write profile and checkpoint times are approved. The revised instructions and runner are implemented and installed. **Notification activation remains pending the real pilot.**
 
 ## Delivered
