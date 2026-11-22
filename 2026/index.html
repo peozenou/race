@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="data-version" content="a6518298bcdb">
-  <title>THE RACE 2026 — Bilan 38e semaine</title>
-  <meta name="description" content="Classement après la semaine 38 (9 novembre 2026) : CHEF en tête avec 19 134 points.">
+  <meta name="data-version" content="03791704d6b6">
+  <title>THE RACE 2026 — Bilan 39e semaine</title>
+  <meta name="description" content="Classement après la semaine 39 (16 novembre 2026) : CHEF en tête avec 19 134 points.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="THE RACE 2026 — Bilan 38e semaine">
-  <meta property="og:description" content="Classement après la semaine 38 (9 novembre 2026) : CHEF en tête avec 19 134 points.">
+  <meta property="og:title" content="THE RACE 2026 — Bilan 39e semaine">
+  <meta property="og:description" content="Classement après la semaine 39 (16 novembre 2026) : CHEF en tête avec 19 134 points.">
   <meta property="og:url" content="https://peozenou.github.io/race/2026/">
-  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=a6518298bcdb">
+  <meta property="og:image" content="https://peozenou.github.io/race/2026/preview.png?v=03791704d6b6">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/theme.css?v=a6518298bcdb">
+  <link rel="stylesheet" href="assets/theme.css?v=03791704d6b6">
   <script src="assets/d3.min.js"></script>
-  <script src="assets/runtime.js?v=a6518298bcdb"></script>
+  <script src="assets/runtime.js?v=03791704d6b6"></script>
 </head>
 <body>
 <main class="site">
@@ -667,7 +667,7 @@ dash.calc('duel_matrix', {
 dash.calc('player_levels', {
   inputs: ['matches'],
   title: 'Bilan par catégorie de tournoi',
-  description: "Victoires et défaites par joueur et par catégorie de tournoi (Grand Chelem, Masters 1000, ATP 500/250, compétitions par équipes, qualifications, Challenger, ITF), hors forfaits.",
+  description: "Victoires et défaites par joueur et par catégorie de tournoi (Grand Chelem, Finales ATP, Masters 1000, ATP 500/250, compétitions par équipes, qualifications, Challenger, ITF), hors forfaits.",
   fn: (matches) => {
     const by = new Map();
     matches.forEach((m) => {
@@ -2047,7 +2047,7 @@ dash.calc('hist_departures', {
     drawDetail(sel, ps, ord);
   };
 
-  const LEVELS = ['Grand Chelem', 'Masters 1000', 'ATP 500/250', 'Compétition par équipes', 'Qualifications', 'Challenger', 'ITF'];
+  const LEVELS = ['Grand Chelem', 'Finales ATP', 'Masters 1000', 'ATP 500/250', 'Compétition par équipes', 'Qualifications', 'Challenger', 'ITF'];
   const ROUNDS = { F: 9, '1/2': 8, '1/4': 7, Poule: 6.5, '1/8': 6, '1/16': 5, '1/32': 4, '1/64': 3, Q3: 2, Q2: 1, Q1: 0 };
 
   const drawDetail = (name, ps, order) => {

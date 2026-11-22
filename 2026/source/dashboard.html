@@ -640,7 +640,7 @@ dash.calc('duel_matrix', {
 dash.calc('player_levels', {
   inputs: ['matches'],
   title: 'Bilan par catégorie de tournoi',
-  description: "Victoires et défaites par joueur et par catégorie de tournoi (Grand Chelem, Masters 1000, ATP 500/250, compétitions par équipes, qualifications, Challenger, ITF), hors forfaits.",
+  description: "Victoires et défaites par joueur et par catégorie de tournoi (Grand Chelem, Finales ATP, Masters 1000, ATP 500/250, compétitions par équipes, qualifications, Challenger, ITF), hors forfaits.",
   fn: (matches) => {
     const by = new Map();
     matches.forEach((m) => {
@@ -2020,7 +2020,7 @@ dash.calc('hist_departures', {
     drawDetail(sel, ps, ord);
   };
 
-  const LEVELS = ['Grand Chelem', 'Masters 1000', 'ATP 500/250', 'Compétition par équipes', 'Qualifications', 'Challenger', 'ITF'];
+  const LEVELS = ['Grand Chelem', 'Finales ATP', 'Masters 1000', 'ATP 500/250', 'Compétition par équipes', 'Qualifications', 'Challenger', 'ITF'];
   const ROUNDS = { F: 9, '1/2': 8, '1/4': 7, Poule: 6.5, '1/8': 6, '1/16': 5, '1/32': 4, '1/64': 3, Q3: 2, Q2: 1, Q1: 0 };
 
   const drawDetail = (name, ps, order) => {
