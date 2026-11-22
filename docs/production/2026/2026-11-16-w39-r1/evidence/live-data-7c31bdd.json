@@ -1,0 +1,52 @@
+{
+ "observed_at": "2026-11-22T10:43:46-05:00",
+ "files": {
+  "hebdo.json": {
+   "plain": "fbf69817fd76b85df67874a9af820e1530455c3dcb9881946402728bc07e3168",
+   "versioned": "fbf69817fd76b85df67874a9af820e1530455c3dcb9881946402728bc07e3168",
+   "rows": 200
+  },
+  "joueurs.json": {
+   "plain": "44b39816a2a1706fb3ba57ee709d2ba8a5fb6b30096ee9e1d8801c934ccafe1b",
+   "versioned": "44b39816a2a1706fb3ba57ee709d2ba8a5fb6b30096ee9e1d8801c934ccafe1b",
+   "rows": 1200
+  },
+  "players.json": {
+   "plain": "698af91176a32a600602af45eb3500eaf9d3652e9cfbae5be80065db70af7b24",
+   "versioned": "698af91176a32a600602af45eb3500eaf9d3652e9cfbae5be80065db70af7b24",
+   "rows": 32
+  },
+  "matches.json": {
+   "plain": "527d0dbdafc12dd84aff01ce9ec32070765cdc5ee57db8fcf9d2e88c7a996fdc",
+   "versioned": "527d0dbdafc12dd84aff01ce9ec32070765cdc5ee57db8fcf9d2e88c7a996fdc",
+   "rows": 1751
+  },
+  "calendar.json": {
+   "plain": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "versioned": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "rows": 13
+  },
+  "team_colors.json": {
+   "plain": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "versioned": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "rows": 5
+  }
+ },
+ "index_sha256": "944f29d2dc6c684dd749ee9deef695f00a461c1b1cb7c77af038c9bcb7d081dc",
+ "index_matches_commit": true,
+ "served_data_version": "03791704d6b6",
+ "assets": {
+  "tutoriel.mp4": true,
+  "assets/runtime.js": true,
+  "assets/theme.css": true,
+  "assets/d3.min.js": true,
+  "source/dashboard.html": true
+ },
+ "landing_matches": true,
+ "url": "https://peozenou.github.io/race/2026/",
+ "dashboard_commit": "7c31bddbbdcad4455008148668edf411bd22558d",
+ "variants": [
+  "canonical /data/<name>.json (no-cache)",
+  "page-requested /data/<name>.json?v=03791704d6b6"
+ ]
+}

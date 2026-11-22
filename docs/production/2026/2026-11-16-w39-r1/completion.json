@@ -1,0 +1,84 @@
+{
+  "owner": "Claude",
+  "phase": 4,
+  "run_id": "2026-11-16-w39",
+  "production_status": "LIVE_DASHBOARD_VERIFIED",
+  "release_id": "2026-11-16-w39-r1",
+  "release_branch": "codex/data/2026-11-16-w39-r1",
+  "data_commit_sha": "10ef84eac40fe82d66c16ab4505b22f479f53eb0",
+  "previous_production_commit": "67626ef1d3fc036b31db0c91f80dc35abc57fffc",
+  "previous_data_version": "a6518298bcdb",
+  "dashboard_commit_sha": "7c31bddbbdcad4455008148668edf411bd22558d",
+  "dashboard_commit_parent_chain": "67626ef (previous main = remote HEAD at start and immediately before push) -> 10ef84e (release data, fast-forward) -> 7c31bdd (week-39 build)",
+  "dashboard_url": "https://peozenou.github.io/race/2026/",
+  "handoff_hashes_verified_before_use": true,
+  "release_diff_scope": "10ef84e changes only 2026/data/hebdo.json, joueurs.json, matches.json and players.json; calendar.json and team_colors.json byte-identical. hebdo weeks 0-38 unchanged (+5 rows); all previous joueurs rows kept (+32 week-39 rows, each equal to its week-38 value); 1,726 previous match perspectives kept in order with IDs and results unchanged, 156 of them changing only 'level' from Qualifications (91 ATP 500/250, 42 Masters 1000, 23 Grand Chelem), plus 25 new (M1727-M1751) including four 'Finales ATP' perspectives dated 2026-11-15. Main-tour W/L changes for 26 players: the 25 with relabelled matches, plus Rune from three new week-39 ATP 500/250 matches only.",
+  "dashboard_source_change": "atp-finals-category-2026: 'Finales ATP' added to the existing LEVELS display order (after Grand Chelem, by ranking-points tier) and to the player_levels accessible description. No new JSON keys, design, preview, tutorial or history change. RACE_QUAL unchanged.",
+  "live_data_sha256": {
+    "hebdo": "fbf69817fd76b85df67874a9af820e1530455c3dcb9881946402728bc07e3168",
+    "joueurs": "44b39816a2a1706fb3ba57ee709d2ba8a5fb6b30096ee9e1d8801c934ccafe1b",
+    "players": "698af91176a32a600602af45eb3500eaf9d3652e9cfbae5be80065db70af7b24",
+    "matches": "527d0dbdafc12dd84aff01ce9ec32070765cdc5ee57db8fcf9d2e88c7a996fdc",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "live_data_sha256_match_approved": true,
+  "live_data_checked_variants": [
+    "canonical /data/<name>.json (no-cache)",
+    "page-requested /data/<name>.json?v=03791704d6b6",
+    "in-page fetch + crypto.subtle SHA-256 in the browser"
+  ],
+  "live_row_counts": {
+    "hebdo": 200,
+    "joueurs": 1200,
+    "players": 32,
+    "matches": 1751,
+    "calendar": 13,
+    "team_colors": 5
+  },
+  "build_data_version": "03791704d6b6",
+  "live_data_version": "03791704d6b6",
+  "live_index_html_sha256": "944f29d2dc6c684dd749ee9deef695f00a461c1b1cb7c77af038c9bcb7d081dc",
+  "live_index_matches_commit": true,
+  "live_week": 39,
+  "live_competition_date": "2026-11-16",
+  "live_totals": {
+    "PAT": 14218,
+    "DOC": 17141,
+    "CHAN": 17080,
+    "CHEF": 19134,
+    "JULES": 11707
+  },
+  "live_race_duels": {
+    "PAT": [14053, 165],
+    "DOC": [16971, 170],
+    "CHAN": [16875, 205],
+    "CHEF": [18939, 195],
+    "JULES": [11592, 115]
+  },
+  "live_weekly_gains": {
+    "PAT": 5,
+    "DOC": 15,
+    "CHAN": 0,
+    "CHEF": 0,
+    "JULES": 0
+  },
+  "live_source_dates": {
+    "rankings_date": "2026-11-16",
+    "elo_date": "2026-11-16",
+    "matches_through": "2026-11-16",
+    "retained_outgoing_rankings": {"Engel": "2026-10-26", "Sinner": "2026-10-05"}
+  },
+  "deployment": {
+    "route": "GitHub Pages, branch main (pages build and deployment)",
+    "run_id": 45039801511,
+    "jobs": {"build": "success", "report-build-status": "success", "deploy": "success"},
+    "deploy_completed_at": "2026-11-22T15:43:09Z",
+    "deployment_id": 7981033570
+  },
+  "ui_checks_verified": true,
+  "console_errors": 0,
+  "live_verified_at": "2026-11-22T10:44:22-05:00",
+  "live_data_observed_at": "2026-11-22T10:43:46-05:00",
+  "email": "none; no step 7 in workflow v2"
+}

@@ -1,0 +1,71 @@
+{
+ "version": "03791704d6b6",
+ "header": "THE RACE 2026 — Bilan 39e semaine\n\nAprès la semaine 39 (16 nov. 2026), CHEF est devant avec 19 134 points, suivi de DOC. Meilleure progression de la semaine : DOC (+15).\n\nSources : Tennis Abstract et Tennis Explorer",
+ "inpage_sha": {
+  "hebdo": "fbf69817fd76b85df67874a9af820e1530455c3dcb9881946402728bc07e3168",
+  "joueurs": "44b39816a2a1706fb3ba57ee709d2ba8a5fb6b30096ee9e1d8801c934ccafe1b",
+  "players": "698af91176a32a600602af45eb3500eaf9d3652e9cfbae5be80065db70af7b24",
+  "matches": "527d0dbdafc12dd84aff01ce9ec32070765cdc5ee57db8fcf9d2e88c7a996fdc",
+  "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+  "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+ },
+ "bad_tokens": [],
+ "team_filter_buttons": [
+  "Toutes les équipes",
+  "PAT",
+  "DOC",
+  "CHAN",
+  "CHEF",
+  "JULES"
+ ],
+ "pat_filtered_rows": 6,
+ "player_rows": 30,
+ "replacement_rows": [
+  "Lehecka Jiri",
+  "Blockx Alexander"
+ ],
+ "fils_levels": [
+  "Grand Chelem 1 2",
+  "Finales ATP 0 1",
+  "Masters 1000 22 7",
+  "ATP 500/250 16 7",
+  "Qualifications 2 0"
+ ],
+ "fils_recent": [
+  "15 nov. Finales ATP (Turin) Poule Dur D Ben Shelton n° 4 6-2 3-6 6-3",
+  "2 nov. Paris 1/8 Dur D Taylor Fritz n° 12 6-3 6-4"
+ ],
+ "slot_pick_buttons": [
+  "Lehecka (depuis le 12 oct.)",
+  "Sinner (jusqu’au 12 oct.)"
+ ],
+ "tooltip_visible": true,
+ "history_bad": [],
+ "history_svgs": 104,
+ "sources": {
+  "src-week": "semaine 39, 16 nov. 2026",
+  "src-matches": "16 nov. 2026",
+  "src-rank": "16 nov. 2026",
+  "src-rank-out": " Classements conservés à une autre date : Engel (sorti), 26 oct. 2026 ; Sinner (sorti), 5 oct. 2026.",
+  "src-elo": "16 nov. 2026"
+ },
+ "errors": [],
+ "mobile_hscroll": false,
+ "mobile_hscroll_history": false,
+ "mobile_errors": [],
+ "totals_on_page_normalized_spaces": {
+  "PAT": "14 218",
+  "DOC": "17 141",
+  "CHAN": "17 080",
+  "CHEF": "19 134",
+  "JULES": "11 707",
+  "all_present": true,
+  "race_splits_present": true
+ },
+ "url": "https://peozenou.github.io/race/2026/",
+ "dashboard_commit": "7c31bddbbdcad4455008148668edf411bd22558d",
+ "data_version": "03791704d6b6",
+ "week": 39,
+ "observed_at": "2026-11-22T10:44:22-05:00",
+ "browser": "headless Google Chrome (Playwright), Claude cloud workspace; 1400x1000 and 390x844"
+}
