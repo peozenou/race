@@ -1,0 +1,112 @@
+{
+  "owner": "Claude",
+  "phase": 4,
+  "run_id": "2026-11-23-w40",
+  "production_status": "LIVE_DASHBOARD_VERIFIED",
+  "release_id": "2026-11-23-w40-r2",
+  "release_branch": "claude/data/2026-11-23-w40-r2",
+  "data_commit_sha": "db44c9fc74d006be39b2e80a105304ec63ca38fb",
+  "supersedes": {
+    "release_id": "2026-11-23-w40-r1",
+    "release_branch": "codex/data/2026-11-23-w40-r1",
+    "data_commit_sha": "997221e31b05565ea2c05c2bb26a7d964c9ae802",
+    "handoff_hashes_verified_before_use": true,
+    "published": false
+  },
+  "revision_reason": "Patrick, 23 Nov 2026 (phase-4 review): 'Hold. Update the totals based on the Turin matches, then update w40 dashboard.' r1 kept Race at week-39 values although it adds the complete ATP Finals results.",
+  "revision_method": "Turin Race points from the release's own Finales ATP match records: round-robin win 200, semi-final win 400, final win 500. Alcaraz 1500, Zverev 1000, Shelton 400, Medvedev 400, Fils 200, Tiafoe 200, Cobolli 0, Jodar 0; each equals the change in the release's TE 23 Nov ATP points (Zverev +1030 includes a pre-existing +30 rolling difference). Credited in week 40 (including the four 15 Nov round-robin perspectives already in week 39). Challenger results of the week (Blanch, Budkov Kjaer) not credited. The TE Race table itself was not independently read in this phase.",
+  "revision_scope": "hebdo week-40 race/total (5 rows), joueurs week-40 race (6 rows), players race_points (6) and race_rank (Fils 7->6, Cobolli 6->7). Weeks 0-39, duels, matches, calendar, team_colors unchanged.",
+  "previous_production_commit": "0c3febbfc6ef1372215a36a9d09a7193d7066ef9",
+  "previous_data_version": "03791704d6b6",
+  "dashboard_commit_sha": "e02e1cb6eefb931268d387d3ca0f0b8b070d935a",
+  "dashboard_commit_parent_chain": "0c3febb (previous main = remote HEAD at start and immediately before push) -> 997221e (r1 data) -> db44c9f (r2 data) -> e02e1cb (week-40 build)",
+  "dashboard_url": "https://peozenou.github.io/race/2026/",
+  "dashboard_source_change": "none (no new keys or level values); RACE_QUAL unchanged",
+  "live_data_sha256": {
+    "hebdo": "93909b7ec455a04f3632bcc513d1ae1b180ee630d06367f628482b9f0c181405",
+    "joueurs": "96d05e917a4db3cf000e473f3c75e3d817038aa81ab66ef5bfca4cd612b20510",
+    "players": "7f7b2b10d4d96ebd36a8b52f4f1e2aad7d3573da56adfc154965b080970c5d87",
+    "matches": "2084d9376b5794813f033cbb6a8ff866e82f3b6fa77cc709f80b3a7752de4c1b",
+    "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+    "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "live_data_sha256_match_release": true,
+  "live_data_checked_variants": [
+    "curl /data/<name>.json",
+    "in-page fetch (cache: reload) plain and ?v=bb024041c6c2, desktop and mobile"
+  ],
+  "live_row_counts": {
+    "hebdo": 205,
+    "joueurs": 1232,
+    "players": 32,
+    "matches": 1783,
+    "calendar": 13,
+    "team_colors": 5
+  },
+  "build_data_version": "bb024041c6c2",
+  "live_data_version": "bb024041c6c2",
+  "live_index_html_sha256": "6e5be039915514c4ed278f0ccdbfcc18a11e27ef5773af3240038e91fe416e72",
+  "live_index_matches_commit": true,
+  "live_week": 40,
+  "live_competition_date": "2026-11-23",
+  "live_totals": {
+    "CHEF": 19334,
+    "CHAN": 19010,
+    "DOC": 18156,
+    "PAT": 14623,
+    "JULES": 11912
+  },
+  "live_race_duels": {
+    "CHEF": [
+      19139,
+      195
+    ],
+    "CHAN": [
+      18775,
+      235
+    ],
+    "DOC": [
+      17971,
+      185
+    ],
+    "PAT": [
+      14453,
+      170
+    ],
+    "JULES": [
+      11792,
+      120
+    ]
+  },
+  "live_weekly_gains": {
+    "CHEF": 200,
+    "CHAN": 1930,
+    "DOC": 1015,
+    "PAT": 405,
+    "JULES": 205
+  },
+  "duels_reconciled_to_matches": "CHAN +30 (Alcaraz 4, Medvedev 2 wins over rostered opponents), DOC +15 (Zverev 3), PAT +5 (Shelton d. Jodar), JULES +5 (Tiafoe d. Cobolli), CHEF 0 (Fils-Jodar same team)",
+  "live_source_dates": {
+    "rankings_date": "2026-11-23",
+    "elo_date": "2026-11-16",
+    "matches_through": "2026-11-23",
+    "retained_outgoing_rankings": {
+      "Engel": "2026-10-26",
+      "Sinner": "2026-10-05"
+    }
+  },
+  "deployment": {
+    "route": "GitHub Pages, branch main (pages build and deployment)",
+    "run_id": 45319869617,
+    "jobs": {
+      "build": "success",
+      "report-build-status": "success",
+      "deploy": "success"
+    },
+    "deploy_completed_at": "2026-11-24T03:29:56Z"
+  },
+  "ui_checks_verified": true,
+  "console_errors": 0,
+  "live_verified_at": "2026-11-23T22:31:31-05:00",
+  "email": "none; no email task in workflow v2"
+}

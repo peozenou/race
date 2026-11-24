@@ -1,0 +1,118 @@
+{
+ "1400": {
+  "console_errors": [],
+  "version": "bb024041c6c2",
+  "title": "THE RACE 2026 — Bilan 40e semaine",
+  "header": "THE RACE 2026 — Bilan 40e semaine\n\nAprès la semaine 40 (23 nov. 2026), CHEF est devant avec 19 334 points, suivi de CHAN. Meilleure progression de la semaine : CHAN (+1 930), notamment grâce à Alcaraz (+1 500).\n\nSources : Tennis Abstract et Tennis Explorer",
+  "takeaway": "Après la semaine 40 (23 nov. 2026), CHEF est devant avec 19 334 points, suivi de CHAN. Meilleure progression de la semaine : CHAN (+1 930), notamment grâce à Alcaraz (+1 500).",
+  "sources": {
+   "src-week": "—",
+   "src-rank": "—",
+   "src-rank-out": "",
+   "src-elo": "—",
+   "src-matches": "—"
+  },
+  "inpage_sha": {
+   "hebdo": "93909b7ec455a04f3632bcc513d1ae1b180ee630d06367f628482b9f0c181405",
+   "hebdo@v": "93909b7ec455a04f3632bcc513d1ae1b180ee630d06367f628482b9f0c181405",
+   "joueurs": "96d05e917a4db3cf000e473f3c75e3d817038aa81ab66ef5bfca4cd612b20510",
+   "joueurs@v": "96d05e917a4db3cf000e473f3c75e3d817038aa81ab66ef5bfca4cd612b20510",
+   "players": "7f7b2b10d4d96ebd36a8b52f4f1e2aad7d3573da56adfc154965b080970c5d87",
+   "players@v": "7f7b2b10d4d96ebd36a8b52f4f1e2aad7d3573da56adfc154965b080970c5d87",
+   "matches": "2084d9376b5794813f033cbb6a8ff866e82f3b6fa77cc709f80b3a7752de4c1b",
+   "matches@v": "2084d9376b5794813f033cbb6a8ff866e82f3b6fa77cc709f80b3a7752de4c1b",
+   "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "calendar@v": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "team_colors@v": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "bad_tokens": [],
+  "totals_card": "Total de points au fil de la saison\n\nRace + Duels, cumulés, tels qu'enregistrés dans HEBDO après chaque mise à jour du lundi. Les bandes marquent les tournois du Grand Chelem et les Masters 1000 ; celles après la dernière mise à jour sont les tournois à venir. Survolez pour voir toutes les équipes.\n\nGrand Chelem\nMasters 1000\nDernière mise à jour\nAO\nIW\nMIA\nMC\nMAD\nROM\nRG\nWIM\nCAN\nCIN\nUSO\nSHA\nPAR\n0\n5 000\n10 000\n15 000\n20 000\njanv.\nfévr.\nmars\navr.\nmai\njuin\njuil.\naoût\nsept.\noct.\nnov.\nCHEF 19 334\nCHAN 19 010\nDOC 18 156\nPAT 14 623\nJULES 11 912",
+  "team_filter_buttons": [],
+  "players_take": "Zverev (DOC) compte le plus de points Race (10 350) ; Sinner (sorti) (CHEF) a le meilleur rendement, avec 883 points par tournoi.",
+  "player_rows": 30,
+  "first_rows": [
+   "1 = | Zverev | DOC | 10 350 | 58 % | +1 000 | +1 200 |  | 69–19 | 2 | 80 | n° 1 | 2 090",
+   "2 = | Sinner/Lehecka | CHEF | 8 435 | 44 % | 0 | +290 |  | 40–22 | 0 | 75 | n° 14 | 1 947",
+   "3 = | Alcaraz | CHAN | 7 600 | 40 % | +1 500 | +3 000 |  | 47–5 | 6 | 90 | n° 3 | 2 195",
+   "4 = | Shelton | PAT | 5 570 | 39 % | +400 | +1 090 |  | 47–21 | 4 | 65 | n° 4 | 1 988",
+   "5 = | Medvedev | CHAN | 4 220 | 22 % | +400 | +560 |  | 54–22 | 4 | 35 | n° 5 | 1 989"
+  ],
+  "pat_filtered_rows": 6,
+  "all_rows_after_reset": 30,
+  "detail_name": "Sinner/Lehecka",
+  "slot_pick_buttons": [
+   "Lehecka (depuis le 12 oct.)",
+   "Sinner (jusqu’au 12 oct.)"
+  ],
+  "sources_notes": {
+   "src-week": "semaine 40, 23 nov. 2026",
+   "src-rank": "23 nov. 2026",
+   "src-rank-out": " Classements conservés à une autre date : Engel (sorti), 26 oct. 2026 ; Sinner (sorti), 5 oct. 2026.",
+   "src-elo": "16 nov. 2026",
+   "src-matches": "23 nov. 2026"
+  },
+  "notes_bad": [],
+  "history_svgs": 64,
+  "history_bad": [],
+  "hscroll": false
+ },
+ "390": {
+  "console_errors": [],
+  "version": "bb024041c6c2",
+  "title": "THE RACE 2026 — Bilan 40e semaine",
+  "header": "THE RACE 2026 — Bilan 40e semaine\n\nAprès la semaine 40 (23 nov. 2026), CHEF est devant avec 19 334 points, suivi de CHAN. Meilleure progression de la semaine : CHAN (+1 930), notamment grâce à Alcaraz (+1 500).\n\nSources : Tennis Abstract et Tennis Explorer",
+  "takeaway": "Après la semaine 40 (23 nov. 2026), CHEF est devant avec 19 334 points, suivi de CHAN. Meilleure progression de la semaine : CHAN (+1 930), notamment grâce à Alcaraz (+1 500).",
+  "sources": {
+   "src-week": "—",
+   "src-rank": "—",
+   "src-rank-out": "",
+   "src-elo": "—",
+   "src-matches": "—"
+  },
+  "inpage_sha": {
+   "hebdo": "93909b7ec455a04f3632bcc513d1ae1b180ee630d06367f628482b9f0c181405",
+   "hebdo@v": "93909b7ec455a04f3632bcc513d1ae1b180ee630d06367f628482b9f0c181405",
+   "joueurs": "96d05e917a4db3cf000e473f3c75e3d817038aa81ab66ef5bfca4cd612b20510",
+   "joueurs@v": "96d05e917a4db3cf000e473f3c75e3d817038aa81ab66ef5bfca4cd612b20510",
+   "players": "7f7b2b10d4d96ebd36a8b52f4f1e2aad7d3573da56adfc154965b080970c5d87",
+   "players@v": "7f7b2b10d4d96ebd36a8b52f4f1e2aad7d3573da56adfc154965b080970c5d87",
+   "matches": "2084d9376b5794813f033cbb6a8ff866e82f3b6fa77cc709f80b3a7752de4c1b",
+   "matches@v": "2084d9376b5794813f033cbb6a8ff866e82f3b6fa77cc709f80b3a7752de4c1b",
+   "calendar": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "calendar@v": "a5b40cae611cf05229e6b7b572c035e7f19ec081a881804c64b611cdc7c9ba1a",
+   "team_colors": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7",
+   "team_colors@v": "3ee69192269cf441b532cbeb47432effae3f202e1d02707ede686718ab315ca7"
+  },
+  "bad_tokens": [],
+  "totals_card": "Total de points au fil de la saison\n\nRace + Duels, cumulés, tels qu'enregistrés dans HEBDO après chaque mise à jour du lundi. Les bandes marquent les tournois du Grand Chelem et les Masters 1000 ; celles après la dernière mise à jour sont les tournois à venir. Survolez pour voir toutes les équipes.\n\nGrand Chelem\nMasters 1000\nDernière mise à jour\nAO\nIW\nMIA\nROM\nRG\nCAN\nCIN\nSHA\nPAR\n0\n5 000\n10 000\n15 000\n20 000\njanv.\nmai\nsept.\nCHEF 19 334\nCHAN 19 010\nDOC 18 156\nPAT 14 623\nJULES 11 912",
+  "team_filter_buttons": [],
+  "players_take": "Zverev (DOC) compte le plus de points Race (10 350) ; Sinner (sorti) (CHEF) a le meilleur rendement, avec 883 points par tournoi.",
+  "player_rows": 30,
+  "first_rows": [
+   "1 = | Zverev | DOC | 10 350 | 58 % | +1 000 | 69–19 | 80",
+   "2 = | Sinner/Lehecka | CHEF | 8 435 | 44 % | 0 | 40–22 | 75",
+   "3 = | Alcaraz | CHAN | 7 600 | 40 % | +1 500 | 47–5 | 90",
+   "4 = | Shelton | PAT | 5 570 | 39 % | +400 | 47–21 | 65",
+   "5 = | Medvedev | CHAN | 4 220 | 22 % | +400 | 54–22 | 35"
+  ],
+  "pat_filtered_rows": 6,
+  "all_rows_after_reset": 30,
+  "detail_name": "Sinner/Lehecka",
+  "slot_pick_buttons": [
+   "Lehecka (depuis le 12 oct.)",
+   "Sinner (jusqu’au 12 oct.)"
+  ],
+  "sources_notes": {
+   "src-week": "semaine 40, 23 nov. 2026",
+   "src-rank": "23 nov. 2026",
+   "src-rank-out": " Classements conservés à une autre date : Engel (sorti), 26 oct. 2026 ; Sinner (sorti), 5 oct. 2026.",
+   "src-elo": "16 nov. 2026",
+   "src-matches": "23 nov. 2026"
+  },
+  "notes_bad": [],
+  "history_svgs": 64,
+  "history_bad": [],
+  "hscroll": false
+ }
+}
