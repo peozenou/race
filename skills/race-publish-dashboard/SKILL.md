@@ -1,6 +1,6 @@
 ---
 name: race-publish-dashboard
-description: "Coordinate and verify Claude-owned phase-4 Race build, deployment and live release checks; finish the weekly run without email."
+description: "Coordinate and verify Claude-owned phase-4 Race build, deployment and live release checks; finish the weekly run."
 ---
 
 # Race v2 Claude production
@@ -11,6 +11,6 @@ Claude verifies the approved six hashes/current HEAD, preserves concurrent work,
 
 Publish through the existing Pages route. Completion requires an actual deployment result, dashboard/data commits, six matching served hashes, equal built/served version, correct week/date/five totals and relevant desktop/mobile browser checks. Reuse unchanged evidence only with identical dependencies. A build/push or old cached site is not completion.
 
-Record Claude ownership and concrete production evidence in the private run state; save sanitized public completion evidence separately. Only then show 100% and finish the weekly run. There is no step 7, recipient lookup, Gmail draft or send action. Independent Elo/private workflows are unaffected.
+Record Claude ownership and concrete production evidence in the private run state; save sanitized public completion evidence separately. Only then show 100% and finish the weekly run. Independent Elo/private workflows are unaffected.
 
 Read the [production receipt/runbook](../update-the-race/references/production-contract.md).

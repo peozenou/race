@@ -34,8 +34,6 @@ Check intended use, population/grain, definitions, availability timing, future-d
 
 If a separately requested PWOL audit applies, state winner-higher/eligible paired denominator with ties/missingness; a separately labeled lower-is-better transformation does not make 100 minus PWOL equal loser-higher when ties exist.
 
-For a separately requested figure, bind plotted values, endpoints, labels/colors and cutoff to the exact reviewed source; distinguish rendered artifact, delivered file and any manual insertion confirmation. A routine Race run requires no PNG or email work.
-
 ## Evidence report
 
 Each record includes check ID/purpose, run/release/module, season/week/cutoff, source/destination references and digests, mapping/version, expected/observed counts, field/row denominator, discrepancies, scoped verdict, consequence and next action. Summary lists examined modules, exact coverage, withheld outputs, bounded exceptions, unresolved checks, totals only when actually recomputed, backup/repair scope and remaining gates. Private junior details stay outside public pro artifacts. Audit creation, live access, executed checks, repair authorization, verified write and release approval are distinct evidence events.

@@ -6,7 +6,7 @@ THE RACE is a five-team fantasy tennis league. This repository holds the public 
 
 ## Weekly workflow v2
 
-Patrick approved this design on **10 November 2026**. New weekly runs have four visible phases and two routine decisions. The former email task is removed. Historical seven-step runs and existing email drafts remain unchanged.
+Patrick approved this design on **10 November 2026**. New weekly runs have four visible phases and two routine decisions.
 
 | Phase | Owner | Verified result | Weight |
 |---|---|---|---:|
@@ -26,8 +26,6 @@ The progress bar counts verified work, not elapsed time. A source/approval/Claud
 - [Data and release contract](docs/data-and-releases.md): source authority, six schemas, transfers and immutable release boundary.
 - [Claude production runbook](docs/claude-dashboard-production.md): phase-4 build, publication and live checks.
 - [Runner and receipt contracts](tools/race_v2/README.md): deterministic private-state runner; actual connector actions remain skills-owned.
-- [Reference deck](docs/workflow-v2-review/process.html) · [PDF](docs/workflow-v2-review/process.pdf) · [Quarto source](docs/workflow-v2-review/process.qmd).
-- [Progress preview](docs/workflow-v2-review/progress.html): synthetic examples, not a live monitor.
 - [Installable skills](skills/README.md): portable package without private configuration or credentials.
 
 ## Sunday watch and independent weekly lanes
@@ -49,7 +47,7 @@ TA displayed Serve/Return tables own match statistics; complete TA Elo/yElo repo
 
 After approval, the immutable source/release snapshot and six commit hashes are the authority. A later volatile LIVE import outage is a maintenance warning, not a reason to revoke an unchanged frozen release. A real correction creates a linked revision and renewed affected review.
 
-GPT owns acquisition, data checks and release. Claude owns dashboard changes, build, production and live verification. Patrick owns Start, release clearance and nonroutine decisions. There is no automatic email task or authority to send existing drafts.
+GPT owns acquisition, data checks and release. Claude owns dashboard changes, build, production and live verification. Patrick owns Start, release clearance and nonroutine decisions.
 
 ## Repository layout and build
 
@@ -69,6 +67,3 @@ From the repository root, run **python3 2026/tools/build.py** after an approved 
 This repository must not contain private workbook configuration, approvals, junior statistics, mail records, credentials or notification subscriptions. A future private owner app and a public read-only companion can share versioned run/release contracts; GitHub Pages alone is not an authenticated approval backend. Free app distribution does not imply free model/backend operation.
 
 Repository documentation is English; existing worksheet names, JSON keys and French interface wording stay established. d3 is distributed under the ISC license, copyright Mike Bostock.
-## Monitored Sunday run
-
-The first v2 run is prepared for Sunday 15 November 2026, targeting Monday 16 November / competition week 39. See the [weekend run guide](docs/weekend-run.md). The source and phone pilots remain activation gates; saved checkpoint tasks are paused.

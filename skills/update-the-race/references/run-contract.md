@@ -1,6 +1,6 @@
 # Race v2 operating contract
 
-Approved by Patrick on 10 November 2026. Apply to new runs after installation validation; preserve completed legacy records and existing drafts. Notification activation remains PENDING_PILOT.
+Approved by Patrick on 10 November 2026. Apply to new runs after installation validation; preserve completed legacy records. Notification activation remains PENDING_PILOT.
 
 ## Four phases and two decisions
 
@@ -73,7 +73,7 @@ Claude owns build, publication and live verification of that exact release. Pres
 
 Use the installed scripts/race_v2/race_run.py with its own README. Its public source/receipt contracts are at tools/race_v2/ in the repository. Commands cover init/status, explicit Start, acquire/validate records, candidate sealing/release approval, verified release/production, health, readiness/outbox and linked revision. Supply actual human evidence; a file or boolean does not authenticate a human. Keep private state outside the public repository.
 
-Keep schema-3 and older ledgers, audit decisions, releases, production records and drafts immutable. Use the read-only legacy compatibility view, not in-place renumbering. New runs finish with production; race-draft-email is deprecated for new runs and never automatically invoked. No workflow approval authorizes mail sending.
+Keep schema-3 and older ledgers, audit decisions, releases and production records immutable. Use the read-only legacy compatibility view, not in-place renumbering. Runs finish with verified production.
 
 Installed source helpers remain available. Read adapters.md for exact existing interfaces and bounds; a clone of this public repository does not grant private service access. The v2 runner records evidence/progress, not automatic TA scraping, Sheets credentials or Claude execution.
 

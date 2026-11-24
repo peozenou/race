@@ -1,6 +1,6 @@
 # Weekly update workflow v2
 
-**Approved 10 November 2026; applies to new runs.** Four visible phases replace the former seven-step routine. New runs end at verified live production. Preserve legacy ledgers, releases and existing email drafts; do not renumber historical evidence or create a new email task.
+**Approved 10 November 2026; applies to new runs.** Four visible phases replace the former seven-step routine. New runs end at verified live production. Preserve legacy ledgers and releases; do not renumber historical evidence.
 
 ## Phases and decisions
 
@@ -74,6 +74,6 @@ Consolidate one optional pending UTR value/week field into the Start request rat
 
 Show Elo, UTR and MatchTrack separately beneath the Race bar, outside its denominator. Missing UTR and unchanged/delayed independent Elo do not block Race. MatchTrack remains a separately requested genuine-export workflow. No private observations or junior data enter this repository, public dashboard or source bundles.
 
-## Legacy migration
+## Historical records
 
-Schema-3 seven-step ledgers and older records remain immutable historical evidence. Use a read-only compatibility view; do not rewrite closed runs or make email absence a new failure. New runs use the v2 state contract and stop at phase 4. Preserve existing drafts unchanged; the deprecated email skill is explicit legacy-only and never automatically invoked. No installation or process approval authorizes sending mail.
+Schema-3 seven-step ledgers and older records remain immutable historical evidence. Use a read-only compatibility view; do not rewrite closed runs. Runs use the v2 state contract and stop at phase 4.

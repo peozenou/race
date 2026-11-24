@@ -5,7 +5,7 @@ description: "Prepare and validate tennis source bundles or resume an exact inte
 
 # Tennis acquisition and readiness
 
-For weekly Race execution use update-the-race: Collect → Validate and review → Release and hand over → Claude publish/live verification. New runs end there, with no email task. Race has two routine decisions: Start under the bounded profile and approval of the exact frozen candidate. Read the [shared contract](../update-the-race/references/run-contract.md) and [adapter inventory](../update-the-race/references/adapters.md).
+For weekly Race execution use update-the-race: Collect → Validate and review → Release and hand over → Claude publish/live verification. Runs end there. Race has two routine decisions: Start under the bounded profile and approval of the exact frozen candidate. Read the [shared contract](../update-the-race/references/run-contract.md) and [adapter inventory](../update-the-race/references/adapters.md).
 
 A readiness/acquisition-only request produces immutable evidence, typed candidates, scoped checks and the next action. It does not authorize Sheet writes, release, production or automatic Claude dispatch. Use race-check-ready for the Sunday/Monday watch; its source/access and actual iPhone pilot must pass before scheduling activation. Notification delivery does not approve Start.
 
