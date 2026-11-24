@@ -108,5 +108,15 @@
   "ui_checks_verified": true,
   "console_errors": 0,
   "live_verified_at": "2026-11-23T22:31:31-05:00",
-  "email": "none; no email task in workflow v2"
+  "email": "none; no email task in workflow v2",
+  "post_verification_change": {
+    "dashboard_commit_sha": "def6e09",
+    "reason": "season-close line requested by Patrick; week 40 is the last update of THE RACE 2026",
+    "data_unchanged": true,
+    "build_data_version": "fed23d76429e",
+    "live_data_version": "fed23d76429e",
+    "pages_run_id": 45320664505,
+    "live_reverified_at": "2026-11-23T22:37:19-05:00",
+    "console_errors": 0
+  }
 }

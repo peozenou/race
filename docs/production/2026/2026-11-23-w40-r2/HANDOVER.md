@@ -63,3 +63,7 @@ Evidence: [teams 1400 px](evidence/e02e1cb-01-teams-1400.jpg), [joueurs 1400 px]
 - The r1 note that retained outgoing snapshots repeat the previous week's active TE date is a text erratum; the explicit dates above apply.
 - Qualifications carried from week 39 are unchanged (Kouame +24 adjustment applied once; historical zeros without saved rows are not a general missing-equals-zero rule; five aggregate percentage fields null for active players; outgoing identities keep older source dates).
 - r2 is a Claude-derived revision on Patrick's instruction; the GPT data step should re-audit it against the TE Race table and bind it in private release storage.
+
+## Addendum — season close (23 Nov 2026, 22:37 America/New_York)
+
+At Patrick's request, [`def6e09`](https://github.com/peozenou/race/commit/def6e09) adds a season-close line under the header summary: « Dernière mise à jour de la saison : ce bilan de la 40e semaine est le classement final de THE RACE 2026. CHEF remporte l'édition avec 19 334 points. » It is driven by `SEASON_FINAL_WEEK = 40` in `2026/source/dashboard.html` and the leader in the standings. Title, summary wording and the six datasets are unchanged (same r2 hashes). Re-verified live: Pages run 45320664505 success, served `index.html` byte-identical to the commit, data version `fed23d76429e`, line shown at 1400 px and 390 px, 0 console errors, no horizontal scroll.
