@@ -21,7 +21,7 @@ The progress bar counts verified work, not elapsed time. A source/approval/Claud
 
 ## Next: pipeline v3 (in review)
 
-From the 2027 season, a one-button GitHub Actions pipeline with a single approval and a [live progress page](https://peozenou.github.io/race/run/) is planned to replace the four-phase process: [design](docs/race-v3-design.md) · [API for Patrick, ChatGPT and Claude](docs/race-v3-api.md). Workflow v2 below stays in force until v3's first live week.
+From the 2027 season, a one-button GitHub Actions pipeline with a single approval and a [live progress page](https://peozenou.github.io/race/run/) is planned to replace the four-phase process: [design](docs/race-v3-design.md) · [API for Patrick, ChatGPT and Claude](docs/race-v3-api.md) · [process deck](docs/race-process-deck/process.html) ([PDF](docs/race-process-deck/process.pdf), [Quarto source](docs/race-process-deck/process.qmd)). Workflow v2 below stays in force until v3's first live week.
 
 ## Start here
 

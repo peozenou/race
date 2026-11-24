@@ -1,0 +1,74 @@
+/*-- scss:defaults --*/
+$body-bg: #f9f9f7;
+$body-color: #0b0b0b;
+$link-color: #1a6fd6;
+$font-family-sans-serif: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-font: "Source Serif 4", Georgia, "Times New Roman", serif;
+$presentation-heading-font-weight: 400;
+$presentation-heading-color: #0b0b0b;
+$presentation-font-size-root: 30px;
+$presentation-h2-font-size: 1.45em;
+$presentation-h3-font-size: 1.05em;
+$code-block-font-size: 0.6em;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap");
+
+.reveal .slides section { text-align: left; }
+.reveal h2 { margin-bottom: 0.45em; letter-spacing: 0.005em; }
+.reveal p, .reveal li { line-height: 1.35; }
+.reveal ul { margin-left: 0.9em; }
+.reveal li { margin: 0.18em 0; }
+.reveal .muted { color: #6d6b67; }
+.reveal .small { font-size: 0.72em; }
+.reveal .tiny { font-size: 0.58em; color: #6d6b67; }
+.reveal .kicker { font-size: 0.55em; letter-spacing: 0.08em; text-transform: uppercase; color: #6d6b67; margin: 0 0 0.2em; }
+
+.reveal table { font-size: 0.6em; border-collapse: collapse; width: 100%; }
+.reveal table th { font-weight: 600; border-bottom: 2px solid #0b0b0b !important; text-align: left; padding: 0.3em 0.5em; }
+.reveal table td { border-bottom: 1px solid rgba(11, 11, 11, 0.12); padding: 0.28em 0.5em; vertical-align: top; }
+
+/* Flow diagrams built from boxes */
+.flow { display: flex; align-items: stretch; gap: 0.35em; margin: 0.4em 0 0.6em; }
+.flow .box { flex: 1; background: #fff; border: 1px solid rgba(11, 11, 11, 0.14); border-radius: 10px; padding: 0.45em 0.55em; font-size: 0.55em; line-height: 1.3; }
+.flow .box b { display: block; font-size: 1.15em; margin-bottom: 0.2em; }
+.flow > p { margin: 0; align-self: center; flex: 0 0 auto; }
+.flow .arrow { align-self: center; color: #9a988f; font-size: 0.9em; }
+.flow .gate { flex: 0 0 auto; align-self: center; background: #0b0b0b; color: #fff; border-radius: 999px; padding: 0.2em 0.6em; font-size: 0.45em; font-weight: 600; }
+.flow .human { border-color: #d0701c; background: #fff6ee; }
+.flow .acq { border-top: 6px solid #6fa8dc; }
+.flow .ana { border-top: 6px solid #93c47d; }
+.flow .pro { border-top: 6px solid #8e7cc3; }
+
+.layers { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.6em; margin-top: 0.4em; }
+.layer { background: #fff; border: 1px solid rgba(11, 11, 11, 0.14); border-radius: 12px; padding: 0.55em 0.7em; font-size: 0.56em; }
+.layer h4 { font-family: "Source Serif 4", Georgia, serif; font-weight: 500; font-size: 1.35em; margin: 0 0 0.3em; text-transform: none; }
+.layer.acq { border-top: 8px solid #6fa8dc; }
+.layer.ana { border-top: 8px solid #93c47d; }
+.layer.pro { border-top: 8px solid #8e7cc3; }
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.55em; }
+.cards.three { grid-template-columns: repeat(3, 1fr); }
+.card { background: #fff; border: 1px solid rgba(11, 11, 11, 0.14); border-radius: 10px; padding: 0.5em 0.7em; font-size: 0.58em; }
+.card b { display: block; font-size: 1.1em; margin-bottom: 0.15em; }
+
+.pill { display: inline-block; border-radius: 999px; padding: 0.05em 0.55em; font-size: 0.8em; font-weight: 600; }
+.pill.ok { background: #e3f1e5; color: #2e6b37; }
+.pill.todo { background: #fbeee2; color: #9a4c10; }
+.pill.off { background: #ececea; color: #55534f; }
+
+.gatebar { background: #0b0b0b; color: #fff; border-radius: 10px; padding: 0.4em 0.8em; font-size: 0.62em; margin: 0.4em 0; }
+.gatebar b { color: #c8d94a; }
+
+.phone { width: 15em; margin: 0 auto; border: 2px solid #0b0b0b; border-radius: 22px; padding: 0.8em 0.7em; background: #fff; font-size: 0.48em; }
+.phone .row { display: flex; gap: 0.5em; align-items: center; padding: 0.3em 0; border-bottom: 1px solid rgba(11, 11, 11, 0.1); }
+.phone .dot { width: 0.9em; height: 0.9em; border-radius: 50%; flex: 0 0 auto; }
+.phone .btn { background: #0b0b0b; color: #fff; border-radius: 8px; padding: 0.45em; text-align: center; margin: 0.3em 0; font-weight: 600; }
+.phone .btn.o { background: #d0701c; }
+
+.reveal pre code { max-height: 520px; }
+.reveal .slide-number { font-size: 0.45em; }
+.reveal .footer { font-size: 0.4em; color: #6d6b67; }
+
+.layer .lh { font-family: "Source Serif 4", Georgia, serif; font-size: 1.35em; margin: 0 0 0.3em; }
+.reveal .smaller .gatebar { font-size: 0.55em; }

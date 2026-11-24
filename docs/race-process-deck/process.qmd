@@ -1,0 +1,471 @@
+---
+title: "THE RACE — weekly update process"
+subtitle: "From sources to the live dashboard: one button, one approval, six verified progress points"
+author: "Patrick Eozenou · prepared with Claude"
+date: "24 November 2026"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1280
+    height: 720
+    margin: 0.06
+    slide-number: c/t
+    embed-resources: true
+    footer: "THE RACE · weekly update process · pipeline v3"
+    transition: none
+    hash-type: number
+---
+
+## The process at a glance
+
+::: {.flow}
+::: {.box .acq}
+<b>1 · Collecte</b>Tennis Explorer, Tennis Abstract, roster registry → players + matches
+:::
+
+[→]{.arrow}
+
+::: {.box .ana}
+<b>2 · Calcul et contrôles</b>Credited Race, duels, totals; blocking checks; release manifest
+:::
+
+[→]{.arrow}
+
+::: {.box .human}
+<b>3 · Validation</b>Patrick sees the five totals and taps Approve
+:::
+
+[→]{.arrow}
+
+::: {.box .pro}
+<b>4 · Publication</b>Hash-checked staging, build, one commit to main
+:::
+
+[→]{.arrow}
+
+::: {.box .pro}
+<b>5 · Vérification</b>Live site serves the six approved files
+:::
+
+[→]{.arrow}
+
+::: {.box}
+<b>6 · Export Sheet</b>Reference copy in the Google Sheet
+:::
+:::
+
+- **One button** starts the week. It works from the live page, the GitHub app, ChatGPT or Claude.
+- **One human decision**: approve the computed totals before anything is published.
+- **Six critical points** are shown live, each closing only on verified evidence.
+- **The same code runs for every operator**: GitHub Actions executes it, and the assistants only drive it through the API.
+
+::: {.tiny}
+v3 skeleton in pull request #3 (not yet in weekly use). The 2026 season ran on workflow v2: four phases, GPT for data and Claude for production, two approvals.
+:::
+
+## Principles
+
+::: {.cards}
+::: {.card}
+<b>Each source owns its facts</b>Tennis Explorer owns Race and ATP rankings. Tennis Abstract's displayed Serve/Return tables own match records and statistics. Its complete Elo and yElo reports own ratings. League rules own scoring.
+:::
+::: {.card}
+<b>History is append-only</b>A week adds rows. Past HEBDO and JOUEURS rows and released matches never change silently; a real correction is a linked revision (as for week 40 r2).
+:::
+::: {.card}
+<b>Machines check before people approve</b>Every blocking check runs before the approval request. Patrick is asked only about numbers that already passed.
+:::
+::: {.card}
+<b>Approve exactly what ships</b>Approval binds the six file hashes in the manifest. Staging refuses any file that changed after approval, and the live check compares the same hashes.
+:::
+::: {.card}
+<b>Progress means verified work</b>A point turns green on evidence: records parsed, checks passed, commit pushed, live hashes matched. Waiting is shown as waiting, never as progress.
+:::
+::: {.card}
+<b>Private stays private</b>Tiago's UTR and MatchTrack data, emails and credentials never enter the public repository, inputs or progress messages.
+:::
+:::
+
+## Who does what
+
+| | Before (v2, 2026 season) | After (v3) |
+|---|---|---|
+| **Patrick** | Approves Start, approves the release, passes the brief to Claude | Presses the button (or asks an assistant); approves the totals once |
+| **Pipeline (GitHub Actions)** | — | Collects, computes, checks, publishes, verifies, copies to the Sheet |
+| **ChatGPT** | Owns phases 1–3: sources, Sheet writes, release | Optional operator through a GPT Action; may start runs and report progress |
+| **Claude** | Owns phase 4: build, publish, live checks | Optional operator through `gh`; maintains the dashboard and the code |
+| **Google Sheet** | Master: formulas compute totals | Output only: copy written after publication |
+| **Live dashboard** | Built and pushed by Claude | Built and pushed by job 4, verified by job 5 |
+
+::: {.small .muted}
+Either assistant can approve publication only after Patrick has seen the totals and said yes in the conversation.
+:::
+
+## Three layers, four gates
+
+::: {.layers}
+::: {.layer .acq}
+<p class="lh">Data acquisition</p>
+Fetch the week's sources up to the Monday cutoff. Parse players' Race/ATP rankings, ratings, match records and statistics into `players.json` and `matches.json`, keeping every source date.
+:::
+::: {.layer .ana}
+<p class="lh">Analytics</p>
+Derive the new week's credited Race per player, duel points and team totals. Append HEBDO and JOUEURS rows, run the blocking checks and write the release manifest.
+:::
+::: {.layer .pro}
+<p class="lh">Dashboard production</p>
+Stage the approved files and build the page with the existing builder. Push one commit, let GitHub Pages deploy, then prove the live site matches.
+:::
+:::
+
+::: {.gatebar}
+<b>V1</b> source evidence complete (end of acquisition) · <b>V2</b> blocking checks pass (end of analytics) · <b>V3</b> Patrick approves the exact release · <b>V4</b> live site equals the approved hashes
+:::
+
+::: {.small .muted}
+A failed gate stops the run where it failed. Nothing downstream runs on unverified input.
+:::
+
+# Data acquisition layer {background-color="#eaf2fb"}
+
+## Sources and what each one supplies
+
+| Source | Fields | Date kept |
+|---|---|---|
+| **Tennis Explorer** Race table | `race_points`, `race_rank` | `rankings_date` (actual publication) |
+| **Tennis Explorer** ATP ranking | `atp_points`, `atp_rank` | `rankings_date` |
+| **Tennis Abstract** displayed Serve/Return, per player | wins/losses by surface and level, titles, finals, `tpw`, `rpw`, `dr`, ace %, first/second serve won, best win; one row per match | `matches_through` |
+| **Tennis Abstract** complete Elo and yElo reports | `elo`, `hard_elo`, `clay_elo`, `grass_elo`, `yelo`, `elo_rank` | `elo_date` (report date) |
+| **Roster registry and transfers** (league decisions) | team, active or outgoing, transfer date and baseline | decision date |
+| **Season calendar** | Grand Slams and Masters 1000 (dates, surface, city) | season |
+
+::: {.small}
+Output of the layer: **players.json** (32 records in 2026: 30 active selections plus 2 outgoing players with retained snapshots) and **matches.json** (1,783 match perspectives in 2026), each match with a stable `M` id and the opponent's team when rostered.
+:::
+
+## Acquisition rules and gate V1
+
+- **Cutoff.** The cutoff is exclusive: Monday 00:00, America/New_York. Matches dated on or after it wait for next week, and competition weeks are not ISO weeks.
+- **Displayed tables only.** Hidden raw Tennis Abstract data never fills a blank in a displayed table. Missing values stay `null` with their reason.
+- **True dates.** Each source keeps its own date: Tennis Explorer 23 Nov and Elo 16 Nov were both valid for week 40.
+- **Outgoing players keep their retained snapshot.** For example, Sinner's is frozen at 5 Oct and Engel's at 26 Oct.
+- **Identity.** Players are keyed by team plus full name. A name that isn't in the previous release is a roster change, not a typo to fix.
+
+::: {.gatebar}
+<b>Gate V1</b> · all 30 active selections and both outgoing records present · source pages fetched with HTTP 200 · each source date recorded · new matches only before the cutoff · runs on GitHub's servers if the source pilot passes, otherwise on Patrick's Mac
+:::
+
+
+# Analytics layer {background-color="#edf6ea"}
+
+## Scoring, as the code computes it
+
+::: {.cards}
+::: {.card}
+<b>Credited Race (JOUEURS)</b>
+credited<sub>w</sub> = credited<sub>w−1</sub> + (TE Race<sub>w</sub> − TE Race<sub>w−1</sub>)
+
+Approved transfer baselines carry over without being restated (Lehecka counted from 2,055 at week 34), and so do adjustments (Kouame +24). Outgoing players do not move.
+:::
+::: {.card}
+<b>Duels</b>
+5 points per win (walkovers included) over a player from **another** team, before the cutoff. Wins between teammates (Fils–Jodar) count nothing.
+
+Week 40: CHAN +30, DOC +15, PAT +5, JULES +5, CHEF 0.
+:::
+::: {.card}
+<b>Team totals (HEBDO)</b>
+Race = Σ credited Race of the team's players
+Total = Race + duels
+
+One row per team per competition week, with the Monday date.
+:::
+::: {.card}
+<b>Roster changes stop the run</b>
+A player who wasn't in the previous release triggers "Roster change needs a decision". Transfers stay deliberate decisions with a recorded baseline.
+:::
+:::
+
+## Analytics outputs and gate V2
+
+**The release: six files plus a manifest**
+
+| File | Content (end of 2026) |
+|---|---|
+| `hebdo.json` | 205 rows: 41 weeks × 5 teams |
+| `joueurs.json` | 1,232 rows: credited Race per player per week |
+| `players.json`, `matches.json` | from acquisition, unchanged |
+| `calendar.json`, `team_colors.json` | season constants, copied byte for byte |
+| `release.json` | week, Monday, cutoff, totals, weekly change, source dates, warnings, six SHA-256 hashes |
+
+::: {.gatebar}
+<b>Gate V2: blocking checks</b> · history unchanged · no lost or duplicate match · nothing on or after the cutoff · 5 teams × 6 active, nobody twice · Race + duels = Total · JOUEURS sum = HEBDO Race · players' duel points = HEBDO duels · duels never decrease
+:::
+
+::: {.small .muted}
+A team's Race falling is reported as a warning rather than a block (it can be a Tennis Explorer correction). Patrick sees every warning before approving.
+:::
+
+## Evidence that the analytics layer is right
+
+| Replay | Result |
+|---|---|
+| Week 39 release → week 40 (r1) | All files identical; checks pass |
+| Week 39 release → week 40 (r2, with Turin points) | All six SHA-256 hashes identical to the approved release |
+| Week 38 → week 39 | Identical; checks pass |
+| Week 37 → week 38 | Identical; checks pass |
+| Week 36 → week 37 | Stopped: "Roster change needs a decision" (the Engel→Blockx correction) |
+
+- 9 automated tests cover the replay and each blocking rule: roster change, Monday must advance, duel rule, history edit, late match, duplicate selection, staging after a changed file.
+- The tests run offline from a 16 KB fixture of the week-39 release.
+
+::: {.small .muted}
+Replays use the git history of the public releases. They prove the arithmetic and checks; they do not prove that live parsing is correct, which the source pilot and a side-by-side week will test.
+:::
+
+## Gate V3: Patrick's approval
+
+::: {.cards .three}
+::: {.card}
+<b>What he sees</b>
+The five totals with this week's change, the Tennis Explorer and Elo dates, the number of new matches, and any warning. All of it appears on the live page and in the run summary.
+:::
+::: {.card}
+<b>What he does</b>
+One tap: **Valider la publication**, then *Approve and deploy* in GitHub. Rejecting stops the run, and nothing is published.
+:::
+::: {.card}
+<b>What approval means</b>
+"Publish exactly these six files." The manifest's hashes are fixed, and publication refuses anything else.
+:::
+:::
+
+::: {.small}
+- The pause uses GitHub's environment protection (`race-release`, with Patrick as required reviewer). GitHub notifies him by email or in the app when a run is waiting.
+- Assistants never approve on their own. Starting a run is not approval, and neither is silence.
+- A dry run (the default) stops before this gate. It is the safe way to see the numbers.
+:::
+
+# Dashboard production layer {background-color="#f1eef8"}
+
+## Publication
+
+::: {.flow}
+::: {.box .pro}
+<b>Stage</b>Copy the six files into `2026/data` after re-checking each hash against the approved manifest
+:::
+
+[→]{.arrow}
+
+::: {.box .pro}
+<b>Build</b>`python3 2026/tools/build.py` writes `index.html` and a data version covering data, history, source and runtime
+:::
+
+[→]{.arrow}
+
+::: {.box .pro}
+<b>Commit</b>One commit on main with the week, the totals and a link to the run
+:::
+
+[→]{.arrow}
+
+::: {.box .pro}
+<b>Deploy</b>GitHub Pages builds from main; about half a minute for week 40
+:::
+:::
+
+- The dashboard source and builder are unchanged. Approved wording such as "Bilan <n>e semaine" and the season-close line stays in the source, which Claude maintains.
+- Design changes are separate commits, reviewed as usual, never mixed into a data week.
+- If the push races another commit, the job fails rather than overwriting it.
+
+## Gate V4: live verification, then the Sheet copy
+
+::: {.gatebar}
+<b>Gate V4</b> · all six served files have the approved SHA-256 · the page title shows "Bilan <n>e semaine" · retried every 20 s, for up to 15 minutes
+:::
+
+- Job 5 fetches the files from `peozenou.github.io/race/2026/` with cache-busting, exactly as a friend's browser would.
+- A mismatch after 15 minutes fails the run and names the file. The approved release stays intact for a re-publish.
+- **Sheet copy (job 6).** Writes HEBDO by week and team to an `EXPORT` tab through a Google service account. The Sheet is no longer an input, so nothing there changes the published numbers. It is skipped until the secret is configured.
+- **Deeper browser checks remain available** through `tools/race_v2/check_dashboard.py` and Claude's UI checks: console errors, mobile width, transfer lines. These are used when the dashboard source itself changes.
+
+::: {.small .muted}
+Run on 24 Nov against the real site, this check passed for week 40.
+:::
+
+# API construction {background-color="#f4f2ee"}
+
+## GitHub Actions is the API
+
+::: {.flow}
+::: {.box}
+<b>Callers</b>Live page button · GitHub app · ChatGPT (GPT Action) · Claude (`gh`)
+:::
+
+[→]{.arrow}
+
+::: {.box}
+<b>GitHub REST</b>`workflow_dispatch` starts `race-week.yml` with inputs
+:::
+
+[→]{.arrow}
+
+::: {.box}
+<b>Runner</b>Six jobs run `tools/race_v3/race_week.py` subcommands
+:::
+
+[→]{.arrow}
+
+::: {.box}
+<b>Progress</b>Each job writes annotations, which the public API exposes
+:::
+
+[→]{.arrow}
+
+::: {.box .human}
+<b>Approval</b>The `race-release` environment pauses job 3 until Patrick approves
+:::
+:::
+
+- **No server to host or secure.** GitHub provides authentication, logs, retries, notifications and the approval record.
+- **Inputs.** `monday` (empty = this week), `dry_run` (default true), `source` (`live` or `replay:<dir>`), `baseline`, `season`.
+- **Concurrency.** One weekly run at a time (`concurrency: race-week`); a second press waits.
+- **Same CLI everywhere.** Every job is a plain command that can also run locally: `collect`, `compute`, `check`, `stage`, `verify-live`, `export-sheet`, `pilot`.
+
+## API operations
+
+| Operation | REST call | Who uses it |
+|---|---|---|
+| `startWeeklyUpdate` | `POST …/actions/workflows/race-week.yml/dispatches` | button, ChatGPT, Claude |
+| `listRuns` | `GET …/actions/workflows/race-week.yml/runs` | live page, assistants |
+| `listProgressPoints` | `GET …/actions/runs/{run_id}/jobs` | live page, assistants |
+| `listProgressDetails` | `GET …/check-runs/{job_id}/annotations` | live page (totals, checks, warnings) |
+| `getPendingApproval` | `GET …/actions/runs/{run_id}/pending_deployments` | assistants |
+| `approvePublication` | `POST …/actions/runs/{run_id}/pending_deployments` | Patrick, or an assistant on his explicit yes |
+| `cancelRun` | `POST …/actions/runs/{run_id}/cancel` | anyone with the token |
+
+::: {.small}
+- **ChatGPT.** Imports `tools/race_v3/openapi.yaml` (OpenAPI 3.1, validated) as a GPT Action. It authenticates with a fine-grained token limited to `peozenou/race`: Actions read/write, Deployments read/write, Contents read.
+- **Claude.** Calls the same endpoints with `gh workflow run`, `gh run watch` and `gh api`.
+- **Public reads.** Progress reads need no token, because the repository is public.
+:::
+
+## Progress events
+
+Each critical point writes one line in three places:
+
+```text
+JSON line  {"at":"2026-11-24T12:31:46+00:00","point":"2 Calcul","status":"ok",
+            "detail":"semaine 40: CHEF 19,334 · CHAN 19,010 · DOC 18,156 · PAT 14,623 · JULES 11,912", ...}
+Annotation ::notice title=2 Calcul · ok::semaine 40: CHEF 19,334 · CHAN 19,010 · …
+Summary    ✅ **2 Calcul** — semaine 40: CHEF 19,334 · …
+```
+
+- **Statuses.** `start`, `ok`, `warn`, `fail`. A `fail` also ends the job, so the point turns red.
+- **Live page** (`/race/run/`). It polls the run and its jobs every 15 seconds while a run is active and every 2 minutes otherwise. It uses ETags, so unchanged responses don't count against GitHub's unauthenticated limit of 60 requests an hour. It reads each finished job's annotations once.
+- **Bar weights.** Collect 30, Calculate 20, Approve 5, Publish 15, Verify 25, Sheet 5. The bar reaches 100% only when the run succeeds.
+- **Run summary.** The run page shows the totals table, source dates and warnings, and is kept with the run.
+
+# End-user experience {background-color="#fbf3ea"}
+
+## Patrick's Monday {.smaller}
+
+:::: {.columns}
+::: {.column width="58%"}
+1. Opens **peozenou.github.io/race/run/**, taps **▶ Lancer la semaine**, then *Run workflow* with *Essai à blanc* unticked.
+2. Watches *Collecte des sources* and then *Calcul et contrôles* turn green.
+3. Reads the five totals on the page. GitHub notifies him that a review is waiting.
+4. Taps **✓ Valider la publication** → *Approve and deploy*.
+5. The last three points turn green and the bar reaches 100%.
+6. Friends open the usual dashboard link and see the new week. Nothing else changes for them.
+
+::: {.small .muted}
+If a point turns red, its message says why: source unreachable, a check failed with the team and numbers, or a roster change. Nothing has been published at that point.
+:::
+:::
+
+::: {.column width="42%"}
+::: {.phone}
+<b style="font-family:'Source Serif 4',serif;font-size:1.4em">THE RACE — mise à jour</b>
+<div class="btn">▶ Lancer la semaine</div>
+<div class="btn o">✓ Valider la publication</div>
+<div class="row"><span class="dot" style="background:#2e8b3e"></span>Collecte des sources</div>
+<div class="row"><span class="dot" style="background:#2e8b3e"></span>Calcul et contrôles<br>CHEF 19,334 · CHAN 19,010 …</div>
+<div class="row"><span class="dot" style="background:#d0701c"></span>Validation de Patrick — en attente</div>
+<div class="row"><span class="dot" style="border:2px solid #b8b6b0"></span>Publication</div>
+<div class="row"><span class="dot" style="border:2px solid #b8b6b0"></span>Vérification du site en ligne</div>
+<div class="row"><span class="dot" style="border:2px solid #b8b6b0"></span>Copie dans le Google Sheet</div>
+:::
+:::
+::::
+
+## Working through an assistant {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+**With ChatGPT (GPT Action)**
+
+> **Patrick:** Lance la mise à jour de la semaine.
+>
+> **ChatGPT:** *startWeeklyUpdate* (dry_run false) → … → "Calcul et contrôles passed: CHEF 19,334, CHAN 19,010, DOC 18,156, PAT 14,623, JULES 11,912. No warnings. Shall I publish?"
+>
+> **Patrick:** Oui, publie.
+>
+> **ChatGPT:** *approvePublication* → … → "Live site verified: week 40 is online."
+:::
+
+::: {.column width="50%"}
+**With Claude (`gh`)**
+
+```bash
+gh workflow run race-week.yml -R peozenou/race \
+  -f dry_run=false
+gh run watch <id> -R peozenou/race
+# after Patrick says yes:
+gh api -X POST \
+  repos/peozenou/race/actions/runs/<id>/pending_deployments \
+  -F environment_ids[]=<env> -f state=approved \
+  -f comment="Approved by Patrick in chat"
+```
+
+Claude also maintains the dashboard design and the pipeline code, and reviews any failed run.
+:::
+::::
+
+::: {.small .muted}
+Both assistants follow the same written rules (docs/race-v3-api.md): start freely, approve only on Patrick's explicit yes, never retry with changed inputs to make a check pass, and never put private data in inputs.
+:::
+
+## When something goes wrong
+
+| Situation | Where it stops | What happens next |
+|---|---|---|
+| Source unreachable or blocked | 1 · Collecte | Retry later; if it persists, move collection to the Mac runner |
+| A Tennis Explorer correction lowers a team's Race | 2 (warning) | Shown to Patrick before approval |
+| Totals inconsistent, history edited, late or duplicate match | 2 (blocking) | Red point with the team and numbers; fix the source or code, then rerun |
+| Transfer or new player | 2 (blocking) | Patrick decides the baseline; recorded in the roster registry |
+| Patrick rejects | 3 | Nothing published; rerun after the fix |
+| Push conflict | 4 | Job fails; no overwrite |
+| Live site not updated within 15 minutes | 5 | Run fails and names the file; re-publish the same approved release |
+| Correction after publication | — | Linked revision (r2) with a new approval, as for the Turin points |
+
+# Status and next steps {background-color="#f4f2ee"}
+
+## Where v3 stands (24 November 2026)
+
+| Component | Status |
+|---|---|
+| Pipeline: compute, checks, manifest, staging, live verification, progress | [Implemented, tested]{.pill .ok} |
+| Workflow: six jobs, approval gate, dry run by default; actionlint clean | [Implemented]{.pill .ok} |
+| Live progress page and API (OpenAPI for ChatGPT, `gh` for Claude) | [Implemented]{.pill .ok} |
+| Repository cleanup: email, PNG and review leftovers removed | [Done on main]{.pill .ok} |
+| Merge pull request #3; create the `race-release` environment | [Patrick]{.pill .todo} |
+| Source pilot and first dry run on GitHub | [After merge]{.pill .todo} |
+| Live Tennis Abstract and Tennis Explorer parsers ported from the v2 helpers | [To build]{.pill .todo} |
+| Sheet export service account | [Optional]{.pill .off} |
+| 2027 season folder and rosters after the draft | [After the draft]{.pill .off} |
+| First real week: v3 alongside v2, totals compared, then switch | [2027 week 1]{.pill .off} |
+
+::: {.small .muted}
+Code and documents: `tools/race_v3/`, `.github/workflows/race-week.yml`, `run/index.html`, `docs/race-v3-design.md`, `docs/race-v3-api.md`. Out of scope: Tiago's UTR and MatchTrack (private), and the Elo-Import workbook, which stays a separate lane.
+:::
