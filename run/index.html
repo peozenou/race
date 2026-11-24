@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>THE RACE — mise à jour en direct</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23c8d94a'/%3E%3Cpath d='M10 22c14 6 30 6 44 0M10 42c14-6 30-6 44 0' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+  <style>
+    :root {
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --serif: "Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
+      --bg: #f9f9f7; --panel: #ffffff; --fg: #0b0b0b; --muted: #6d6b67; --line: rgba(11, 11, 11, 0.10);
+      --ok: #2e8b3e; --run: #c8a400; --wait: #d0701c; --fail: #c0392b; --skip: #b8b6b0;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b0b0b; --panel: #1a1a19; --fg: #f0efec; --muted: #9a988f; --line: rgba(255, 255, 255, 0.10); }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.45; }
+    main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem; }
+    h1 { font-family: var(--serif); font-weight: 400; font-size: 2rem; margin: 0 0 .25rem; }
+    .lede { color: var(--muted); margin: 0 0 1.5rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 1.75rem; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.2rem; border-radius: .5rem; text-decoration: none;
+      font-weight: 500; border: 1px solid var(--line); color: var(--fg); background: var(--panel); }
+    .btn.primary { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+    .btn.approve { background: var(--wait); color: #fff; border-color: var(--wait); }
+    .btn[hidden] { display: none; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: .5rem; padding: 1.1rem 1.25rem; }
+    .runhead { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; flex-wrap: wrap; margin-bottom: .75rem; }
+    .runtitle { font-family: var(--serif); font-size: 1.35rem; }
+    .meta { color: var(--muted); font-size: .85rem; }
+    .bar { height: .5rem; background: var(--line); border-radius: 1rem; overflow: hidden; margin: .25rem 0 1rem; }
+    .bar > i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .6s; }
+    ol { list-style: none; padding: 0; margin: 0; }
+    li { display: grid; grid-template-columns: 1.6rem 1fr auto; gap: .6rem; padding: .7rem 0; border-top: 1px solid var(--line); align-items: start; }
+    li:first-child { border-top: 0; }
+    .dot { width: 1.1rem; height: 1.1rem; border-radius: 50%; margin-top: .15rem; background: var(--skip); position: relative; }
+    .s-ok .dot { background: var(--ok); } .s-run .dot { background: var(--run); animation: pulse 1.2s infinite; }
+    .s-wait .dot { background: var(--wait); animation: pulse 1.6s infinite; } .s-fail .dot { background: var(--fail); }
+    .s-todo .dot { background: transparent; border: 2px solid var(--skip); }
+    @keyframes pulse { 50% { opacity: .35; } }
+    .name { font-weight: 500; } .detail { color: var(--muted); font-size: .88rem; margin-top: .15rem; white-space: pre-line; }
+    .when { color: var(--muted); font-size: .8rem; white-space: nowrap; }
+    .totals { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: .5rem; margin-top: 1rem; }
+    .totals div { border: 1px solid var(--line); border-radius: .4rem; padding: .5rem .7rem; }
+    .totals b { display: block; font-family: var(--serif); font-size: 1.2rem; font-weight: 500; }
+    .totals span { font-size: .8rem; color: var(--muted); }
+    .note { color: var(--muted); font-size: .8rem; margin-top: 1rem; }
+    footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .75rem; color: var(--muted); }
+    a { color: inherit; }
+    @media (max-width: 640px) { main { padding: 2rem 1rem; } li { grid-template-columns: 1.4rem 1fr; } .when { grid-column: 2; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>THE RACE — mise à jour</h1>
+  <p class="lede">Suivi en direct de la mise à jour hebdomadaire : un bouton pour lancer, une validation avant publication.</p>
+
+  <div class="actions">
+    <a class="btn primary" id="launch" href="https://github.com/peozenou/race/actions/workflows/race-week.yml" target="_blank" rel="noopener">▶ Lancer la semaine</a>
+    <a class="btn approve" id="approve" hidden target="_blank" rel="noopener">✓ Valider la publication</a>
+    <a class="btn" href="../2026/">Tableau de bord</a>
+  </div>
+
+  <section class="card" aria-live="polite">
+    <div class="runhead">
+      <div class="runtitle" id="runtitle">Chargement…</div>
+      <div class="meta" id="runmeta"></div>
+    </div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="bar"><i id="barfill"></i></div>
+    <ol id="points"></ol>
+    <div class="totals" id="totals" hidden></div>
+    <p class="note" id="note"></p>
+  </section>
+
+  <footer>Les étapes viennent de GitHub Actions (workflow « THE RACE — semaine »). La page se met à jour toutes les 15 secondes pendant une exécution.</footer>
+</main>
+<script>
+(() => {
+  const REPO = 'peozenou/race', WF = 'race-week.yml', API = 'https://api.github.com';
+  // Critical points = workflow jobs, in order, with the share of the bar each one completes.
+  const POINTS = [
+    { job: '1 · Collecte', label: 'Collecte des sources', w: 30 },
+    { job: '2 · Calcul et contrôles', label: 'Calcul et contrôles', w: 20 },
+    { job: '3 · Validation', label: 'Validation de Patrick', w: 5 },
+    { job: '4 · Publication', label: 'Publication', w: 15 },
+    { job: '5 · Vérification en ligne', label: 'Vérification du site en ligne', w: 25 },
+    { job: '6 · Export Sheet', label: 'Copie dans le Google Sheet', w: 5 },
+  ];
+  const $ = (id) => document.getElementById(id);
+  const etags = new Map(), cache = new Map(), notes = new Map();
+  const fmt = new Intl.DateTimeFormat('fr-FR', { timeZone: 'America/New_York', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  const n = (v) => v.toLocaleString('fr-FR');
+
+  async function gh(path) {
+    const headers = { Accept: 'application/vnd.github+json' };
+    if (etags.has(path)) headers['If-None-Match'] = etags.get(path);   // 304s do not use the rate limit
+    const r = await fetch(API + path, { headers });
+    if (r.status === 304) return cache.get(path);
+    if (!r.ok) throw new Error(r.status === 403 ? 'Limite de requêtes GitHub atteinte ; nouvel essai dans une minute.' : `GitHub ${r.status}`);
+    const body = await r.json();
+    if (r.headers.get('ETag')) etags.set(path, r.headers.get('ETag'));
+    cache.set(path, body);
+    return body;
+  }
+
+  function stateOf(job, run) {
+    if (!job) return run && run.status === 'completed' ? 'skip' : 'todo';
+    if (job.status === 'completed') return { success: 'ok', skipped: 'skip', failure: 'fail', cancelled: 'fail', timed_out: 'fail' }[job.conclusion] || 'skip';
+    if (job.status === 'waiting') return 'wait';
+    if (job.status === 'in_progress') return 'run';
+    return 'todo';
+  }
+
+  async function annotations(job) {
+    if (!job || job.status !== 'completed' || notes.has(job.id)) return notes.get(job && job.id) || [];
+    try { notes.set(job.id, await gh(`/repos/${REPO}/check-runs/${job.id}/annotations`)); } catch { notes.set(job.id, []); }
+    return notes.get(job.id);
+  }
+
+  function render(run, jobs, details) {
+    if (!run) {
+      $('runtitle').textContent = 'Aucune exécution pour l’instant';
+      $('runmeta').textContent = '';
+      $('points').innerHTML = '';
+      $('note').textContent = 'Appuyez sur « Lancer la semaine », puis sur « Run workflow ».';
+      return;
+    }
+    const dry = /dry_run|essai/i.test(run.display_title || '') ;
+    $('runtitle').textContent = `Exécution n° ${run.run_number}`;
+    $('runmeta').innerHTML = `${fmt.format(new Date(run.created_at))} · <a href="${run.html_url}" target="_blank" rel="noopener">détails</a>`;
+    let done = 0, waitJob = null;
+    const items = POINTS.map((p, i) => {
+      const job = jobs.find((j) => j.name === p.job);
+      const s = stateOf(job, run);
+      if (s === 'ok' || s === 'skip') done += p.w;
+      if (s === 'wait') waitJob = job;
+      const when = job && job.completed_at ? fmt.format(new Date(job.completed_at)) : job && job.started_at ? 'depuis ' + fmt.format(new Date(job.started_at)) : '';
+      const text = { ok: '', run: 'En cours…', wait: 'En attente de votre validation', fail: 'Échec — voir les détails', skip: 'Non exécuté', todo: '' }[s];
+      const det = (details[i] || []).filter((a) => a.annotation_level !== 'notice' || / · ok$/.test(a.title || '')).map((a) => a.message).join('\n');
+      return `<li class="s-${s}"><span class="dot" aria-hidden="true"></span><div><div class="name">${p.label}</div><div class="detail">${[text, det].filter(Boolean).join('\n')}</div></div><div class="when">${when}</div></li>`;
+    });
+    $('points').innerHTML = items.join('');
+    const pct = run.status === 'completed' && run.conclusion === 'success' ? 100 : Math.min(done, 99);
+    $('barfill').style.width = pct + '%'; $('bar').setAttribute('aria-valuenow', pct);
+    $('barfill').style.background = run.conclusion === 'failure' ? 'var(--fail)' : 'var(--ok)';
+    const approve = $('approve');
+    approve.hidden = !waitJob; if (waitJob) approve.href = run.html_url;
+    // Totals from the "2 Calcul · ok" annotation
+    const calc = (details[1] || []).find((a) => /^2 Calcul · ok/.test(a.title || ''));
+    const box = $('totals');
+    if (calc) {
+      const pairs = [...calc.message.matchAll(/([A-Z]+) ([\d,]+)/g)].map((m) => [m[1], +m[2].replace(/,/g, '')]);
+      box.innerHTML = pairs.map(([t, v]) => `<div><span>${t}</span><b>${n(v)}</b></div>`).join('');
+      box.hidden = !pairs.length;
+    } else box.hidden = true;
+    const status = { queued: 'En file d’attente', in_progress: 'En cours', waiting: 'En attente de validation', completed: run.conclusion === 'success' ? 'Terminé' : 'Arrêté' }[run.status] || run.status;
+    $('note').textContent = `${status}${run.status === 'completed' && !jobs.some((j) => j.name === POINTS[3].job && j.conclusion === 'success') && run.conclusion === 'success' ? ' (essai à blanc : rien n’a été publié)' : ''}.`;
+    return run.status !== 'completed';
+  }
+
+  async function tick() {
+    let active = false;
+    try {
+      const runs = await gh(`/repos/${REPO}/actions/workflows/${WF}/runs?per_page=1`);
+      const run = runs && runs.workflow_runs && runs.workflow_runs[0];
+      if (!run) { render(null); }
+      else {
+        const jobs = (await gh(`/repos/${REPO}/actions/runs/${run.id}/jobs?per_page=20`)).jobs || [];
+        const details = await Promise.all(POINTS.map((p) => annotations(jobs.find((j) => j.name === p.job))));
+        active = render(run, jobs, details);
+      }
+    } catch (e) { $('note').textContent = e.message; }
+    setTimeout(tick, active ? 15000 : 120000);
+  }
+
+  // ?demo shows a synthetic run so the page can be checked before the first real run.
+  if (new URLSearchParams(location.search).has('demo')) {
+    const t = new Date().toISOString();
+    const job = (name, status, conclusion) => ({ id: name, name, status, conclusion, started_at: t, completed_at: status === 'completed' ? t : null });
+    render({ run_number: 1, created_at: t, html_url: '#', status: 'waiting' }, [
+      job('1 · Collecte', 'completed', 'success'), job('2 · Calcul et contrôles', 'completed', 'success'), job('3 · Validation', 'waiting', null),
+    ], [[{ title: '1 Collecte · ok', message: '32 player records, 1783 match perspectives' }],
+        [{ title: '2 Calcul · ok', message: 'semaine 40: CHEF 19,334 · CHAN 19,010 · DOC 18,156 · PAT 14,623 · JULES 11,912' },
+         { title: '3 Contrôles · ok', message: 'all checks passed (0 warning(s)); release ready for approval' }]]);
+    return;
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
