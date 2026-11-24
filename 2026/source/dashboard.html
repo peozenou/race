@@ -6,6 +6,7 @@
 .tr .tr-take{margin:var(--cds-gap-xs) 0 0;max-width:62rem;line-height:1.5}
 .tr .tr-note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md);line-height:1.45}
 .tr .tr-head-note{margin-bottom:0}
+.tr .tr-final{margin:var(--cds-gap-xs) 0 0;max-width:62rem;line-height:1.5;font-weight:600}
 .tr .tr-head-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .tr .tr-head-note a:hover{color:var(--color-fg)}
 .tr .tr-tabs{display:flex;gap:var(--cds-gap-xs);border-bottom:1px solid var(--color-border-line);flex-wrap:wrap}
@@ -161,6 +162,7 @@
   <header id="overview">
     <h1 id="head-title" data-source="standings" data-field="week" data-row="0">THE RACE 2026</h1>
     <p class="tr-take" id="takeaway"><span class="dash-skeleton">—</span></p>
+    <p class="tr-final" id="season-final" hidden></p>
     <p class="tr-note tr-head-note">Sources : <a href="https://www.tennisabstract.com/" target="_blank" rel="noopener">Tennis Abstract</a> et <a href="https://www.tennisexplorer.com/" target="_blank" rel="noopener">Tennis Explorer</a></p>
   </header>
 
@@ -1864,6 +1866,7 @@ dash.calc('hist_departures', {
   };
   const enc = (s) => encodeURIComponent(String(s));
 
+  const SEASON_FINAL_WEEK = 40; // last competition week of the 2026 season
   const drawHeader = () => {
     const el = $('takeaway');
     const st = TR.state('standings');
@@ -1872,6 +1875,12 @@ dash.calc('hist_departures', {
     if (!rows.length) return;
     const lead = rows[0], second = rows[1];
     $('head-title').textContent = `THE RACE 2026 — Bilan ${lead.week}e semaine`;
+    // Season close (Patrick, 23 Nov 2026): week 40 is the last update of THE RACE 2026.
+    const fin = $('season-final');
+    if (lead.week >= SEASON_FINAL_WEEK) {
+      fin.replaceChildren(TR.text(`Dernière mise à jour de la saison : ce bilan de la ${lead.week}e semaine est le classement final de THE RACE 2026. ${lead.team} remporte l'édition avec `), TR.span(TR.fmt(lead.total), 'standings', 'total', { team: lead.team }), TR.text(' points.'));
+      fin.hidden = false;
+    } else { fin.hidden = true; }
     el.replaceChildren(TR.text('Après la semaine '), TR.span(String(lead.week), 'standings', 'week', { team: lead.team }), TR.text(` (${TR.dateY(lead.date)}), ${lead.team} est devant avec `), TR.span(TR.fmt(lead.total), 'standings', 'total', { team: lead.team }), TR.text(' points'));
     el.append(TR.text(second ? `, suivi de ${second.team}.` : '.'));
     const best = rows.filter((r) => r.change !== null).reduce((a, b) => (!a || b.change > a.change ? b : a), null);
