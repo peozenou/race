@@ -1,0 +1,182 @@
+# THE RACE — one-button weekly update (pipeline v3).
+# Trigger: "Run workflow" in GitHub (web or mobile app), or the API in docs/race-v3-api.md
+# (ChatGPT Action / Claude). Each job is one critical progress point; the live page
+# https://peozenou.github.io/race/run/ follows them through the public Actions API.
+name: "THE RACE — semaine"
+
+on:
+  workflow_dispatch:
+    inputs:
+      monday:
+        description: "Lundi de compétition (AAAA-MM-JJ). Vide = lundi de cette semaine."
+        required: false
+        default: ""
+      dry_run:
+        description: "Essai à blanc : calcule et contrôle, puis s'arrête avant la validation."
+        type: boolean
+        default: true
+      source:
+        description: "Source des données : live, ou replay:<dossier> pour rejouer une semaine."
+        required: false
+        default: "live"
+      baseline:
+        description: "Release précédente (dossier ou bundle .json.gz). Vide = <saison>/data."
+        required: false
+        default: ""
+      season:
+        description: "Saison"
+        required: false
+        default: "2026"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: race-week
+  cancel-in-progress: false
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PIPELINE: tools/race_v3/race_week.py
+
+jobs:
+  collect:
+    name: "1 · Collecte"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Collecter joueurs et matchs
+        env: { PROGRESS_FILE: progress.jsonl }
+        run: python3 -I "$PIPELINE" collect --source "${{ inputs.source }}" --out collected
+      - uses: actions/upload-artifact@v4
+        with: { name: collected, path: "collected/\nprogress.jsonl", retention-days: 30 }
+
+  compute:
+    name: "2 · Calcul et contrôles"
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      week: ${{ steps.manifest.outputs.week }}
+      totals: ${{ steps.manifest.outputs.totals }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/download-artifact@v4
+        with: { name: collected, path: . }
+      - name: Calculer la semaine et contrôler la release
+        env: { PROGRESS_FILE: progress.jsonl }
+        run: |
+          base="${{ inputs.baseline }}"; base="${base:-${{ inputs.season }}/data}"
+          python3 -I "$PIPELINE" compute --baseline "$base" --collected collected \
+            --static "${{ inputs.season }}/data" --monday "${{ inputs.monday }}" --out release
+      - id: manifest
+        name: Résumé pour la validation
+        run: |
+          python3 -I - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          m = json.load(open("release/release.json"))
+          print("week=%s" % m["week"])
+          print("totals=%s" % json.dumps(m["totals"]))
+          PY
+          python3 -I - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          m = json.load(open("release/release.json"))
+          print(f"### Semaine {m['week']} — lundi {m['monday']}\n")
+          print("| Équipe | Total | Semaine |\n|---|---:|---:|")
+          for t, v in sorted(m["totals"].items(), key=lambda kv: -kv[1]):
+              print(f"| {t} | {v:,} | {m['weekly_change'][t]:+,} |")
+          print(f"\nSources : TE {m['rankings_date']}, Elo {m['elo_date']} · {m['new_matches']} nouveaux matchs")
+          for w in m["warnings"]:
+              print(f"\n⚠️ {w}")
+          PY
+      - uses: actions/upload-artifact@v4
+        with: { name: release, path: "release/\nprogress.jsonl", retention-days: 90 }
+
+  approve:
+    name: "3 · Validation"
+    needs: compute
+    if: ${{ !inputs.dry_run }}
+    runs-on: ubuntu-latest
+    # Required reviewer = Patrick. GitHub pauses here until he taps "Approve and deploy".
+    environment: race-release
+    steps:
+      - name: Release approuvée
+        run: echo "::notice title=3 Validation · ok::Semaine ${{ needs.compute.outputs.week }} approuvée — ${{ needs.compute.outputs.totals }}"
+
+  publish:
+    name: "4 · Publication"
+    needs: [compute, approve]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.push.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/download-artifact@v4
+        with: { name: release, path: . }
+      - name: Installer les six fichiers approuvés et construire le tableau de bord
+        env: { PROGRESS_FILE: progress.jsonl }
+        run: |
+          python3 -I "$PIPELINE" stage --release release --dest "${{ inputs.season }}/data"
+          python3 "${{ inputs.season }}/tools/build.py"
+      - id: push
+        name: Commit et push
+        run: |
+          git config user.name "race-pipeline"
+          git config user.email "race-pipeline@users.noreply.github.com"
+          git add "${{ inputs.season }}/data" "${{ inputs.season }}/index.html"
+          git commit -m "data(${{ inputs.season }}): week ${{ needs.compute.outputs.week }} via pipeline v3" \
+                     -m "Totals: ${{ needs.compute.outputs.totals }}" \
+                     -m "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git push origin HEAD:main
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "::notice title=4 Publication · ok::Commit $(git rev-parse --short HEAD) poussé sur main"
+
+  verify:
+    name: "5 · Vérification en ligne"
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/download-artifact@v4
+        with: { name: release, path: . }
+      - name: Demander la construction GitHub Pages
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || echo "Pages build request not accepted; waiting for the automatic build"
+      - name: Comparer le site en ligne avec la release approuvée
+        env: { PROGRESS_FILE: progress.jsonl }
+        run: python3 -I "$PIPELINE" verify-live --release release --site "https://peozenou.github.io/race/${{ inputs.season }}/" --timeout 900
+
+  sheet:
+    name: "6 · Export Sheet"
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/download-artifact@v4
+        with: { name: release, path: . }
+      - name: Écrire la copie de référence dans le Google Sheet
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          RACE_SPREADSHEET_ID: ${{ vars.RACE_SPREADSHEET_ID }}
+        run: |
+          if [ -n "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then pip install --quiet google-auth requests; fi
+          python3 "$PIPELINE" export-sheet --release release --tab "EXPORT"

@@ -1,0 +1,162 @@
+openapi: 3.1.0
+info:
+  title: THE RACE weekly update
+  version: "3.0.0"
+  description: >
+    The weekly update is a GitHub Actions workflow (race-week.yml) in peozenou/race.
+    These five GitHub REST operations are the whole API: start a run, read its
+    progress points, read their details, approve publication, cancel.
+    Import this file as a ChatGPT custom GPT Action. Authentication: Bearer token =
+    a fine-grained GitHub token limited to peozenou/race with Actions (read/write),
+    Deployments (read/write) and Contents (read). Approve only when Patrick has
+    explicitly approved the totals shown to him in the conversation.
+servers:
+  - url: https://api.github.com
+components:
+  securitySchemes:
+    github:
+      type: http
+      scheme: bearer
+  schemas:
+    Job:
+      type: object
+      properties:
+        id: { type: integer, description: "Also the check-run id used by listProgressDetails" }
+        name: { type: string, description: "Progress point, e.g. '2 · Calcul et contrôles'" }
+        status: { type: string, enum: [queued, in_progress, waiting, completed] }
+        conclusion: { type: [string, "null"], enum: [success, failure, cancelled, skipped, timed_out, null] }
+        started_at: { type: [string, "null"] }
+        completed_at: { type: [string, "null"] }
+security:
+  - github: []
+paths:
+  /repos/peozenou/race/actions/workflows/race-week.yml/dispatches:
+    post:
+      operationId: startWeeklyUpdate
+      summary: Start the weekly update (the one button)
+      description: >
+        dry_run "true" computes and checks, then stops; "false" continues to the approval
+        gate, publication and live verification. Leave monday empty for this week.
+        Returns 204 with no body; then call listRuns to get the new run id.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [ref, inputs]
+              properties:
+                ref: { type: string, enum: [main] }
+                inputs:
+                  type: object
+                  properties:
+                    monday: { type: string, description: "YYYY-MM-DD; empty = this week's Monday" }
+                    dry_run: { type: string, enum: ["true", "false"] }
+                    source: { type: string, description: "live, or replay:<dir>" }
+                    baseline: { type: string }
+                    season: { type: string }
+      responses:
+        "204": { description: Run requested }
+  /repos/peozenou/race/actions/workflows/race-week.yml/runs:
+    get:
+      operationId: listRuns
+      summary: Latest weekly-update runs (newest first)
+      parameters:
+        - { name: per_page, in: query, schema: { type: integer, default: 3 } }
+      responses:
+        "200":
+          description: Runs
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  workflow_runs:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: integer }
+                        run_number: { type: integer }
+                        status: { type: string, enum: [queued, in_progress, waiting, completed] }
+                        conclusion: { type: [string, "null"] }
+                        created_at: { type: string }
+                        html_url: { type: string }
+  /repos/peozenou/race/actions/runs/{run_id}/jobs:
+    get:
+      operationId: listProgressPoints
+      summary: The six progress points of a run and their state
+      parameters:
+        - { name: run_id, in: path, required: true, schema: { type: integer } }
+      responses:
+        "200":
+          description: Jobs, one per progress point
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  jobs: { type: array, items: { $ref: "#/components/schemas/Job" } }
+  /repos/peozenou/race/check-runs/{job_id}/annotations:
+    get:
+      operationId: listProgressDetails
+      summary: Messages of one progress point (totals, checks, warnings, failures)
+      parameters:
+        - { name: job_id, in: path, required: true, schema: { type: integer } }
+      responses:
+        "200":
+          description: Annotations written by the pipeline
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    title: { type: string, description: "'<point> · ok|warn|fail|start'" }
+                    message: { type: string }
+                    annotation_level: { type: string }
+  /repos/peozenou/race/actions/runs/{run_id}/pending_deployments:
+    get:
+      operationId: getPendingApproval
+      summary: Is the run waiting at "3 · Validation"? Returns the environment id to approve.
+      parameters:
+        - { name: run_id, in: path, required: true, schema: { type: integer } }
+      responses:
+        "200":
+          description: Pending environments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    environment: { type: object, properties: { id: { type: integer }, name: { type: string } } }
+    post:
+      operationId: approvePublication
+      summary: Approve (or reject) publication of the computed release
+      description: Only after Patrick explicitly approves the totals in the conversation.
+      parameters:
+        - { name: run_id, in: path, required: true, schema: { type: integer } }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [environment_ids, state, comment]
+              properties:
+                environment_ids: { type: array, items: { type: integer } }
+                state: { type: string, enum: [approved, rejected] }
+                comment: { type: string }
+      responses:
+        "200": { description: Decision recorded }
+  /repos/peozenou/race/actions/runs/{run_id}/cancel:
+    post:
+      operationId: cancelRun
+      summary: Stop a run
+      parameters:
+        - { name: run_id, in: path, required: true, schema: { type: integer } }
+      responses:
+        "202": { description: Cancellation requested }

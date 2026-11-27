@@ -1,0 +1,23 @@
+# Source pilot: can GitHub's runners reach Tennis Abstract and Tennis Explorer?
+# Read-only; run once before relying on "source: live".
+name: "THE RACE — pilote des sources"
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    name: "Pilote TA / TE"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Tester l'accès aux sources
+        run: python3 -I tools/race_v3/race_week.py pilot --out pilot.json || echo "::warning::At least one source was not reachable from GitHub runners"
+      - uses: actions/upload-artifact@v4
+        with: { name: pilot, path: pilot.json }
